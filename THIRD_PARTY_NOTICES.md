@@ -29,3 +29,12 @@ The external-source helper downloads eight pinned objects directly from their di
 No mathematical result, model, controller, checker source, or historical verdict was regenerated for publication. All retained archive members have their original bytes. The public archive hashes differ because of source omissions and ZIP packaging. After successful source restoration, the complete historical member tree has its original byte identities. The historical archive container hash is a separate identity.
 
 Older inner `LICENSES_AND_SCOPE.txt` files describe the earlier private-preparation stage and remain unchanged for provenance. The current outer license grants rights only for original artifact contributions; the included corpus retains its own BSD terms, and the identified third-party source files are fetched externally.
+
+
+## Lift causal extension
+
+The preceding packaging statement concerns the original three archives. This fourth archive adds experiments completed before packaging; its reader qualification recomputes saved-input checks without producing new native controllers.
+
+The separately versioned fourth archive omits the upstream-derived extractor sources, seven paper-derived specification files, the derived maintenance specification, compiled producer classes, upstream JARs, native libraries and paper PDFs. Its source-restoration helper retrieves the pinned original HTML and GR1 JAR, then applies original edit operations to reconstruct fourteen exact source files. The two included Java templates are original artifact wrapper/observer code; no full upstream extractor template is bundled. Downloaded material keeps its publisher's terms. Source restoration grants no new redistribution rights.
+
+Saved models, graphs, BDD exports, original checker code and original experiment records remain in the fourth archive. The original/copy ledger discloses private-path sanitization; the omissions ledger separately identifies excluded bulk logs and recorded class hashes. Archived class hashes are not a claim that producer bytecode is included or recreated. See LIFT_CAUSAL_EXTENSION.md for the distinction between saved-semantics replay and producer provenance.

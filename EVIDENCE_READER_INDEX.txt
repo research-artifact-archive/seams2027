@@ -292,3 +292,18 @@ checker_sources:
 Expected saved result: Direct original view 136 states/958 edges, strict=true, cooperative=false, 16 environmental dead ends, both original initial inputs covered; 42 route comparisons agree. Whole-model original/released correspondence fails; correspondence-gated outcomes and whole-model verdict transfer remain UNKNOWN.
 Execution boundary: Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout.
 
+
+
+Fourth addendum: Lift causal comparison and modeled adaptation
+Archive root: seams2027-lift-causal-extension
+Version identifier: lift-causal-evidence-20261021-v1
+See LIFT_CAUSAL_EXTENSION.md and CLAIM_TO_FILE_INDEX.json for exact paths.
+LIFT-T-CAUSAL: fixed same-game/memory extraction comparison; original graphs
+154/1170 strict=true, cooperative=false and 154/1176 with both true.
+SIX-DORMANT-CONTROLS: all six prespecified successful controls retain both
+properties, with zero candidate refinements.
+LIFT-MODELED-ADAPTATION: completed episode04 and independent audit; failed
+attempts01-03 retained. Known prefix and initial-compatible stopped handoff.
+The Python-only reader recomputes saved mathematics and event semantics;
+producer class/runtime/process/same-object facts remain archived evidence.
+Historical claims above and their denominators are unchanged.

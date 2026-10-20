@@ -16,7 +16,8 @@
       "archive": "lift-direct-static-public-20261020-v1.zip",
       "member_prefix": "seams2027-lift-direct-static-evidence/",
       "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip"
-    }
+    },
+    "LiftCausal": "seams2027-lift-causal-extension"
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
   "rows": [
@@ -509,6 +510,137 @@
       ],
       "expected_saved_result": "Direct original view 136 states/958 edges, strict=true, cooperative=false, 16 environmental dead ends, both original initial inputs covered; 42 route comparisons agree. Whole-model original/released correspondence fails; correspondence-gated outcomes and whole-model verdict transfer remain UNKNOWN.",
       "execution_scope": "Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout."
+    },
+    {
+      "id": "LIFT-T-CAUSAL",
+      "claim": "For this fixed transformed game and raw memory, the experimental extraction preference changes full-original Lift T cooperation from false to true while retaining strictness.",
+      "input_models": [
+        "evidence/runs/baseline_01/native/model.json",
+        "evidence/runs/continuation_01/lift__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/lift__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/runs/continuation_01/lift__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/lift__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/CAUSAL_COMPARISON_CLOSURE.json",
+        "evidence/core_recompute_01/RESULT.json",
+        "evidence/core_recompute_01/memory_compare_01/RESULT.json",
+        "evidence/runs/paired_observer_02/RESULT.json",
+        "evidence/runs/paired_observer_02/native/observer_trace.json",
+        "evidence/TRACE_CAUSAL_ANALYSIS.json",
+        "evidence/runs/continuation_01/lift__trivial_1/PAIRED_EVIDENCE.json",
+        "evidence/runs/continuation_01/lift__trivial_1/audits/RESULT.json"
+      ],
+      "expected_saved_result": "Raw4FP full typed region 2048/2048; 28 memory sets/57344 memberships match. Original graphs 154/1170 strict=true/cooperative=false and 154/1176 strict=true/cooperative=true.",
+      "limitations": [
+        "Fixed-instance intervention; no general repair theorem.",
+        "Intervention same-object/model-memory equality is archived producer evidence; separate raw-core and observed-memory comparisons are independent saved-data calculations."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "SIX-DORMANT-CONTROLS",
+      "claim": "All six prespecified returned native-success controls remain strict and cooperative in both arms.",
+      "input_models": [
+        "evidence/runs/continuation_01/arbiter__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/native/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/variant/model.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/native/model.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/variant/model.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/runs/continuation_01/arbiter__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/native/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/native/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/PRESPECIFIED_SUCCESS_CONTROLS.json",
+        "evidence/SUCCESS_CONTROLS_RESULT.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/audits/RESULT.json"
+      ],
+      "expected_saved_result": "6 pass, 0 failure, 0 unknown; preference refined zero candidates in every control.",
+      "limitations": [
+        "Dormant preference regression coverage; no active repair coverage from these six cases."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "LIFT-MODELED-ADAPTATION",
+      "claim": "One executed in-process maintenance-to-normal episode installs actual candidate controllers; strict-only reaches an original-ENV dead end while strict-plus-cooperation executes a fair continuation.",
+      "input_models": [
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/native/model.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/native/controller.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/adaptation_episode_04/PLAN.json",
+        "evidence/adaptation_episode_04/execution/EVENTS.jsonl",
+        "evidence/adaptation_episode_04/execution/RESULT.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/audits/RESULT.json",
+        "evidence/adaptation_episode_04/independent/AUDIT_RESULT_attempt01.json",
+        "evidence/adaptation_episode_04/EXECUTION_RECEIPT.json",
+        "evidence/ADAPTATION_ATTEMPT01_FOLLOWUP.json",
+        "evidence/ADAPTATION_ATTEMPT02_FOLLOWUP.json",
+        "evidence/ADAPTATION_ATTEMPT03_FOLLOWUP.json"
+      ],
+      "expected_saved_result": "COMPLETE_EXECUTED_EPISODE and independent PASS; strict-only node 680 has zero legal ENV successors among 16 typed inputs; cooperative tail 680→524→544→434→434 hits all three SYS justices.",
+      "limitations": [
+        "Constructed in-process model, initial-compatible paused handoff, known failure prefix.",
+        "No hardware, arbitrary-state migration, held-out result or timing benchmark.",
+        "One executed lasso is separate from complete-graph judgments.",
+        "Failed attempts 01–03 remain preserved."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
     }
   ],
   "directory_member_references": 230,
@@ -615,5 +747,20 @@
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.jtlv/src/net/sf/javabdd/BDDFactory.java",
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/design_review_10_cooperation_authority/isolated/input/PRIMARY_THEOREMS.txt",
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/slugs_baseline_feasibility/work/slugs-ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c"
+  ],
+  "extensions": [
+    {
+      "version_tag": "lift-causal-evidence-20261021-v1",
+      "archive": "archives/lift-causal-extension-public-20261021-v1.zip",
+      "claims": [
+        "LIFT-T-CAUSAL",
+        "SIX-DORMANT-CONTROLS",
+        "LIFT-MODELED-ADAPTATION"
+      ],
+      "descriptor": "LIFT_CAUSAL_EXTENSION_MANIFEST.json",
+      "saved_semantics_replay": "PASS_ISOLATED_NO_JDK_SAVED_SEMANTICS",
+      "source_restoration": "source_restoration/fetch_lift_causal_sources.py inside the fourth archive",
+      "producer_invocation_recreated": false
+    }
   ]
 }

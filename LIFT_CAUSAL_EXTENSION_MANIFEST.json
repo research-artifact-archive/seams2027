@@ -1,0 +1,14 @@
+{
+  "schema": "lift-causal-public-extension-release-v1",
+  "status": "VERIFIED_SAVED_EVIDENCE_EXTENSION",
+  "archive": {
+    "bytes": 2986678,
+    "sha256": "64ba40d58edd2b5b04a7583c4e5ee32fe184b9d5c264026201fcfa5b4b747d07",
+    "members": 1181,
+    "uncompressed_bytes": 33506797,
+    "path": "archives/lift-causal-extension-public-20261021-v1.zip"
+  },
+  "member_prefix": "seams2027-lift-causal-extension/",
+  "version_tag": "lift-causal-evidence-20261021-v1",
+  "scope": "Saved semantics replay qualified; producer/runtime identity remains archived evidence. No publication claim is made by this descriptor."
+}

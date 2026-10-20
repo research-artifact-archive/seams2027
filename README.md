@@ -2,12 +2,16 @@
 
 An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging and source retrieval add no scientific runs.
 
+## Lift causal extension
+
+The separate [Lift causal extension](LIFT_CAUSAL_EXTENSION.md) adds a fixed-instance extraction comparison, six dormant controls, and an executed modeled adaptation episode. Its fourth ZIP has a Python-only saved-semantics replay, exact source restoration, and an explicit archived-producer trust boundary. [CLAIM_TO_FILE_INDEX.json](CLAIM_TO_FILE_INDEX.json) includes both the historical claims and these new groups. The original three downloads and their tags below remain unchanged.
+
 ## Start with the public files
 
-Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/saved-evidence-20261020-v1). All three ZIPs are included in `archives/`. Python 3.10 or newer and its standard library are sufficient for this first check:
+Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/lift-causal-evidence-20261021-v1), which includes all four ZIPs in `archives/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md). Python 3.10 or newer and its standard library are sufficient for this first check:
 
 ```sh
-git clone --branch saved-evidence-20261020-v1 --depth 1 \
+git clone --branch lift-causal-evidence-20261021-v1 --depth 1 \
   https://github.com/research-artifact-archive/seams2027.git
 cd seams2027
 python3 -I -S -B tools/verify_public.py --archive-dir archives

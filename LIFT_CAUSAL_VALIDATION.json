@@ -1,0 +1,153 @@
+{
+  "schema": "lift-causal-public-reader-validation-v1",
+  "status": "PASS_ISOLATED_SAVED_SEMANTICS_AND_SOURCE_RESTORATION",
+  "archive": {
+    "bytes": 2986678,
+    "sha256": "64ba40d58edd2b5b04a7583c4e5ee32fe184b9d5c264026201fcfa5b4b747d07",
+    "members": 1181,
+    "uncompressed_bytes": 33506797,
+    "path": "archives/lift-causal-extension-public-20261021-v1.zip"
+  },
+  "isolated_reader": {
+    "status": "PASS_ISOLATED_NO_JDK_SAVED_SEMANTICS",
+    "started_utc": "2026-10-20T18:16:43.370655+00:00",
+    "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "platform": "darwin",
+    "PATH": "",
+    "JAVA_HOME": "",
+    "phases": [
+      {
+        "name": "integrity_extract",
+        "returncode": 0,
+        "stdout_bytes": 132,
+        "stdout_sha256": "69e3770d6eec27d761d7cfc10c9301baea21fb48c66736dc3eb5a9a09918397a",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "restore_sources",
+        "returncode": 0,
+        "stdout_bytes": 219,
+        "stdout_sha256": "1b10be77e7202c2f156d8319778c49ad2f5cae571871232db43b7ee9fc05dead",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "saved_semantics",
+        "returncode": 0,
+        "stdout_bytes": 502,
+        "stdout_sha256": "94626707b60695e4ac0ec4f95ee20cdfd44ec3c1c0aedb0dddfd97bfcad27701",
+        "stderr_bytes": 0,
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "native_runs": 0,
+    "summary": {
+      "status": "PASS_SAVED_SEMANTICS_REPLAY",
+      "graph_arms": 16,
+      "mathematical_graph_checker_runs": 32,
+      "raw4fp_recomputations": 1,
+      "memory_sets_compared": 28,
+      "episode_event_replays": 1,
+      "native_solver_runs": 0,
+      "Java_processes": 0,
+      "controller_extractions": 0,
+      "episode_executions": 0,
+      "producer_identity_recreated": false,
+      "scope": "Saved source/model/controller and event semantics are recomputed. Archived producer/runtime/process/class evidence is consistency-checked only; no new producer was run."
+    },
+    "archive": {
+      "bytes": 2986678,
+      "sha256": "64ba40d58edd2b5b04a7583c4e5ee32fe184b9d5c264026201fcfa5b4b747d07",
+      "members": 1181,
+      "uncompressed_bytes": 33506797,
+      "path": "archives/lift-causal-extension-public-20261021-v1.zip"
+    },
+    "full_replay_result_bytes": 105024,
+    "full_replay_result_sha256": "3c3426b8c090989e923b7c8bf24dc1ff6be38d35e1879abedbc1f5de0d30b08a",
+    "finished_utc": "2026-10-20T18:17:29.598054+00:00"
+  },
+  "boundary_checks": {
+    "status": "PASS_ARCHIVE_READER_BOUNDARIES",
+    "negative_tests": [
+      {
+        "test": "forged_original_model_pin",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Historical pin does not match original/copy ledger"
+      },
+      {
+        "test": "undeclared_local_path",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: No declared origin/copy mapping: origin:workspace/experiment/lift_t_causal_diagnosis_20261021/public_extension_stage_01/check_boundaries.py"
+      },
+      {
+        "test": "forged_archived_class_pin",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Recorded class identity mismatch"
+      },
+      {
+        "test": "intermediate_source_directory_escape",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Restored source escapes the declared source directory"
+      },
+      {
+        "test": "modified_saved_BDD",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Bundle content mismatch: evidence/runs/baseline_01/native/original_rhoE.bdd"
+      },
+      {
+        "test": "changed_outer_archive",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Archive byte count or SHA-256 mismatch"
+      },
+      {
+        "test": "unsafe_ZIP_path_even_with_matching_outer_hash",
+        "status": "PASS_REJECTED",
+        "reason": "ValueError: Unsafe archive member"
+      }
+    ],
+    "source_component_negative_tests": [
+      {
+        "test": "existing_output_refused_without_changes",
+        "pass": true
+      },
+      {
+        "test": "corrupt_upstream_cache_refused_before_output",
+        "pass": true
+      },
+      {
+        "test": "tampered_original_template_refused_before_output",
+        "pass": true
+      }
+    ],
+    "unmodified_mathematical_code_files": 23,
+    "claim_index_file_references": 73,
+    "forbidden_binary_or_upstream_spec_files": [],
+    "original_artifact_Java_templates_only": [
+      "source_restoration/templates/ReleasedKindJobProducer.java",
+      "source_restoration/templates/GR1ExtractionObserver.java"
+    ],
+    "source_files_restored_and_checked": 14,
+    "actual_producer_class_bytes_checked": false,
+    "scope": "Reader boundary/inventory checks only. No graph mathematics, native process or episode was executed by this check.",
+    "scientific_runs": 0,
+    "native_runs": 0
+  },
+  "fresh_source_download": {
+    "status": "PASS_FRESH_NETWORK_SOURCE_RESTORATION",
+    "started_utc": "2026-10-20T18:13:33.292857+00:00",
+    "finished_utc": "2026-10-20T18:13:35.828027+00:00",
+    "elapsed_seconds": 2.535042,
+    "cache_initially_empty": true,
+    "upstream_requests": "Python urllib HTTPS GET with User-Agent only; no authorization or cookie header supplied by this helper.",
+    "both_objects_network_fetched": true,
+    "source_files_restored": 14,
+    "helper_manifest_unchanged": true,
+    "java_runs": 0,
+    "compiles": 0,
+    "scientific_runs": 0,
+    "hash_relaxations": 0
+  },
+  "classification": "Verification of existing saved inputs; no additional native synthesis, extraction, episode execution, scientific candidate or case.",
+  "producer_identity_recreated": false
+}
