@@ -1,0 +1,199 @@
+{
+  "schema": "native-regeneration-public-validation-v1",
+  "status": "PASS_EXECUTED_CONTROL_QUALIFICATION_WITH_METADATA_PRESENTATION_EXPORT",
+  "kit_archive": {
+    "path": "archives/lift-native-regeneration-public-20261021-v1.zip",
+    "bytes": 164041,
+    "sha256": "6f66808cfd27c49385306eea6eab089a0fd09981f6517a1257077e56178273a0",
+    "members": 32,
+    "uncompressed_bytes": 693501
+  },
+  "qualification_scope": "The qualified original package was executed once for native regeneration and once for the focused check. Every executable control and scientific input in this public package retains those exact executed bytes. Only three metadata members subsequently changed: eight path-display strings and six dependent identity fields. The final 32-member serialization was not rerun as a whole. Bootstrap kit not fetched from public hosting; same recorded host and installed runtime only.",
+  "native": {
+    "status": "COMPLETE_PUBLIC_SOURCE_DEPENDENCY_REGENERATION_INSTALLED_JDK_BOTH_AUDITS_AGREE",
+    "started_utc": "2026-10-20T21:54:05.731233+00:00",
+    "finished_utc": "2026-10-20T21:59:10.059907+00:00",
+    "fetch_attempts": 165,
+    "http_get_attempts": 165,
+    "fresh_public_payload_bytes": 113412497,
+    "native_pair_attempts": 1,
+    "audit_attempts": 4,
+    "baseline": {
+      "strict": true,
+      "cooperative": false,
+      "original_states": 154,
+      "original_edges": 1170
+    },
+    "variant": {
+      "strict": true,
+      "cooperative": true,
+      "original_states": 154,
+      "original_edges": 1176
+    },
+    "input_integrity": "PASS",
+    "complete_process_receipts": 176,
+    "owned_processes_or_groups_remaining": [],
+    "fresh_sources": 6,
+    "fresh_classes": 19,
+    "class_origin_probe_count": 47,
+    "actual_native_custom_classes": 6,
+    "actual_native_released_classes": 28,
+    "same_memory_object": true,
+    "same_model_object": true,
+    "memory_and_model_all_BDDs_equal": true,
+    "variable_order_unchanged": true,
+    "historical_parity": [
+      {
+        "arm": "native",
+        "model_equal_except_input_path": true,
+        "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+        "BDD_files": 20,
+        "printer_equal": true
+      },
+      {
+        "arm": "variant",
+        "model_equal_except_input_path": true,
+        "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+        "BDD_files": 21,
+        "printer_equal": true
+      }
+    ],
+    "sealed_files": 1377,
+    "sealed_bytes": 562133694
+  },
+  "focused": {
+    "status": "PASS_EXACT_DISTRIBUTED_FOCUSED_WRAPPER_ON_PUBLIC_SAVED_INPUTS",
+    "started_utc": "2026-10-20T21:53:28.437743+00:00",
+    "finished_utc": "2026-10-20T21:53:29.418877+00:00",
+    "scientific_checks_started": 1,
+    "native_runs": 0,
+    "compiler_runs": 0,
+    "network_calls": 0,
+    "source_node": "680",
+    "raw_core_membership": true,
+    "original_C_at_node": true,
+    "safe_responses_per_source_input": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "original_legal_next_input_count": 0,
+    "native_legal_next_input_count": 16,
+    "every_native_legal_input_flips_helper": true,
+    "model_bindings": {
+      "all_nodes_typed_bit_valuation_consistent": true,
+      "all_ranks_valid": true,
+      "original_relation_hashes_verified": true,
+      "sole_original_and_solver_ENV_justice_identical": true,
+      "ENV_justice_exhaustively_NOT_helper": true,
+      "justice_assignments": 2048
+    },
+    "residual_graph": {
+      "states": 321,
+      "edges": 5136,
+      "exact_legal_input_coverage": true,
+      "unique_response": true,
+      "all_edges_native_environment_and_system_safe": true,
+      "all_successor_states_helper_true": true,
+      "helper_environment_justice_false_on_every_successor_state": true
+    },
+    "strict_membership_conclusion": "The saved private memory gives a safe complete continuation from the full source valuation with helper=false. Every legal first input flips helper, every future state keeps helper=true and falsifies the sole ENV justice. Therefore this state belongs to the actual saved transformed strict W_R; initial-state reachability is not required for state winning.",
+    "attribution_boundary": "Raw core membership is separate. This does not identify the entire raw core with W_R, recompute all-region winning, prove extraction the unique root cause, or establish a general repair.",
+    "independence_limit": "Reuses the pinned public BDD decoder and saved graph/model. New explicit type/bit/justice binding checks do not constitute an independent compiler.",
+    "input_integrity": "PASS",
+    "sealed_files": 1245
+  },
+  "limits": {
+    "runtime": "Exact supplied installed JDK565-entry relative inventory and Python executable hashes verified; Python standard library, macOS, CA store and platform libraries remain host supplied.",
+    "isolation": "Sandbox deliberately establishes old-workspace-read exclusion; it does not inventory or recreate every macOS library, CA store, Python library or host filesystem read outside the workspace",
+    "native_tree_cap": "Sampled 2 GiB cap applies to qualification_01 only; immutable package, focused input/output, and prior experiment overhead are separate. No whole-parent 2 GiB claim.",
+    "qualification_location": "One generated local configuration; anonymous distributed launcher and focused wrapper bytes match exactly. Bootstrap kit was not fetched from public hosting by this qualification.",
+    "focused_source": "Prepared copies of previously freshly restored public sources and the public causal-extension package; this focused stage performed zero network calls.",
+    "not_claimed": [
+      "No all-region winning recomputation",
+      "No general repair result",
+      "No fully hermetic runtime",
+      "No claim that output relocation or anonymization alone establishes qualification",
+      "No new runtime execution after result receipt export"
+    ]
+  },
+  "independent_static_review": {
+    "path": "evidence/validation/native-regeneration-20261021/INDEPENDENT_STATIC_REVIEW.json",
+    "bytes": 22735,
+    "sha256": "5b978f47f9319e310e047b2a77d62461b2f72441156bd3b4900e5b76c91e9bac"
+  },
+  "independent_result_review": {
+    "status": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS",
+    "path": "evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+    "bytes": 28633,
+    "sha256": "3e88ce737cb900bccf40c208346d2f951bc3b3532888a1a33f59562506328bb1",
+    "blocking_findings": []
+  },
+  "archive_integrity": {
+    "status": "PASS_NATIVE_REGENERATION_ARCHIVE_INTEGRITY_ONLY",
+    "path": "evidence/validation/native-regeneration-20261021/ARCHIVE_INTEGRITY.json",
+    "bytes": 1227,
+    "sha256": "6c60bbcceea20072331c438bc8a6aa8f5598154ac812e63b21bd709a92280332"
+  },
+  "receipt_ledger": {
+    "path": "evidence/validation/native-regeneration-20261021/PRESENTATION_TRANSFORMATIONS.json",
+    "bytes": 584294,
+    "sha256": "476e891f5ed8e18e6bf1ca8f3597bf48afa489544492a9ee163a21058288a7a7"
+  },
+  "historical_status_preservation": "The retained kit README and historical attestations preserve their earlier qualification statements and statuses. RESULT_HANDOFF and PAIR_RESULT retain provisional statuses at their creation time. This outer record gives the later reviewed qualification and separate metadata-only publication derivation.",
+  "new_scientific_executions_for_public_export": 0,
+  "old_releases_unchanged": true,
+  "scientific_denominators_unchanged": true,
+  "result_adoption": {
+    "status": "ADOPTED_SCOPED_SUCCESS_READY_FOR_ANONYMOUS_PUBLIC_CANDIDATE_REVIEW",
+    "path": "evidence/validation/native-regeneration-20261021/RESULT_ADOPTION.json",
+    "bytes": 4165,
+    "sha256": "f490060c100c4636cb3427ece2c024ae7251e0cbf623a25d6459889970e0e3b7"
+  },
+  "qualified_original_kit_manifest": {
+    "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+  },
+  "public_kit_manifest": {
+    "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+  },
+  "metadata_publication_derivation": {
+    "scope": "The qualified original package was executed once for native regeneration and once for the focused check. Every executable control and scientific input in this public package retains those exact executed bytes. Only three metadata members subsequently changed: eight path-display strings and six dependent identity fields. The final 32-member serialization was not rerun as a whole.",
+    "qualified_original_inner_manifest": {
+      "bytes": 5358,
+      "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+    },
+    "public_inner_manifest": {
+      "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+      "bytes": 5358,
+      "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+    },
+    "metadata_derivation_ledger": {
+      "path": "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json",
+      "bytes": 13980,
+      "sha256": "589a0363c22ed8519e657f37f32227f1cfa01db454dd85fb3bd0515c12654f3a"
+    },
+    "byte_identical_members": 29,
+    "metadata_members_changed": 3,
+    "whole_final_package_reexecution": false
+  },
+  "recorded_native_pairs_for_qualified_original_kit": 1,
+  "recorded_focused_saved_state_checks_for_qualified_original_kit": 1,
+  "limits_context": "The limits reproduced above describe the recorded original qualification; the separate qualification_basis describes the public metadata derivative."
+}

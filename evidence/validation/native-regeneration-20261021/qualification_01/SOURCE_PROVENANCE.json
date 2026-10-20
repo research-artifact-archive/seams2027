@@ -1,0 +1,26 @@
+{
+  "status": "PASS_PUBLIC_SOURCE_AND_DEPENDENCIES_UNDER_INSTALLED_JDK",
+  "fresh_fetches": {
+    "path": "origin:kit-workspace/qualification_01/ACQUISITION_RESULT.json",
+    "bytes": 192240,
+    "sha256": "465503a789c3e2b492fdfd457e078b42530bb08e60d19d350f254c61a6b04dd8"
+  },
+  "selective_extraction": {
+    "path": "origin:kit-workspace/qualification_01/ARCHIVE_EXTRACTION_RECEIPT.json",
+    "bytes": 11490,
+    "sha256": "41beafc5624fb74fd85599fc43dcb68cecf9add24d03c1335e6fa287f9faa748"
+  },
+  "source_restoration": {
+    "path": "origin:kit-workspace/qualification_01/restored/SOURCE_RESTORATION_RECEIPT.json",
+    "bytes": 3504,
+    "sha256": "9c70549a61811587630d563408af0f01c289f2823a5990e8b06a2e0523133f36"
+  },
+  "inventory": {
+    "path": "origin:kit-workspace/qualification_01/INPUT_INVENTORY.json",
+    "bytes": 444782,
+    "sha256": "057eceac6d3622908427079b85d6dfa7b0648f0ec2e42b6955bf5984bb60b8b9"
+  },
+  "historical_scientific_payload_copied_into_run": false,
+  "host_supplied_runtime": "Exact supplied installed JDK565-entry relative inventory and Python executable hashes verified; Python standard library, macOS, CA store and platform libraries remain host supplied.",
+  "not_hermetic": "Sandbox deliberately establishes old-workspace-read exclusion; it does not inventory or recreate every macOS library, CA store, Python library or host filesystem read outside the workspace"
+}

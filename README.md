@@ -1,17 +1,23 @@
 # Saved Controller Evidence
 
-An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging and source retrieval add no scientific runs.
+An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure.
 
 ## Lift causal extension
 
 The separate [Lift causal extension](LIFT_CAUSAL_EXTENSION.md) adds a fixed-instance extraction comparison, six dormant controls, and an executed modeled adaptation episode. Its fourth ZIP has a Python-only saved-semantics replay, exact source restoration, and an explicit archived-producer trust boundary. [CLAIM_TO_FILE_INDEX.json](CLAIM_TO_FILE_INDEX.json) includes both the historical claims and these new groups. The original three downloads and their tags below remain unchanged.
 
+## Native regeneration and technical appendix
+
+The [fifth addendum](NATIVE_REGENERATION.md) supplies the fixed Lift public-source regeneration and saved node 680 certificate. Its controls and scientific inputs are byte-identical to those used in one completed native configuration and one separate saved-state check on the recorded installed runtime. Three metadata files received a subsequent path-privacy correction; the final 32-file ZIP was not rerun as a whole. [The qualification record](NATIVE_REGENERATION_VALIDATION.json) gives the current review status and same-host limits. The previous four downloads and twelve claim groups keep their original scope.
+
+The [generic technical appendix PDF](documents/technical-appendix-v43.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v43.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json).
+
 ## Start with the public files
 
-Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/lift-causal-evidence-20261021-v1), which includes all four ZIPs in `archives/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md). Python 3.10 or newer and its standard library are sufficient for this first check:
+Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/native-regeneration-evidence-20261021-v1), which includes all five scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md). Python 3.10 or newer and its standard library are sufficient for this first check:
 
 ```sh
-git clone --branch lift-causal-evidence-20261021-v1 --depth 1 \
+git clone --branch native-regeneration-evidence-20261021-v1 --depth 1 \
   https://github.com/research-artifact-archive/seams2027.git
 cd seams2027
 python3 -I -S -B tools/verify_public.py --archive-dir archives
@@ -34,7 +40,7 @@ The destination must not already exist. Allow approximately 340 MB for extractio
 | [Verification addendum](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/verification-addendum-public-20261020-v1.zip) | Vehicle evidence, source-equation checks, and bounded reader recipes |
 | [Lift direct static evidence](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/lift-direct-static-public-20261020-v1.zip) | Direct source certificate, graphs, source-route history, and explicit qualification limits |
 
-[SHA256SUMS](SHA256SUMS) and [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) bind these exact downloads. The manifest also gives the original historical archive names and hashes. The version tag fixes the repository files and all three downloads; future corrections use a new tag.
+[SHA256SUMS](SHA256SUMS) lists all five archive and two document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the two later archives and document snapshot have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all five archives and the document snapshot; earlier tags and download bytes remain unchanged.
 
 ## Find a result
 
@@ -97,6 +103,8 @@ adc9466569209fab91ecd0085ccca41633409bca8d1e7ad80d4d782fb48d3607
 ```
 
 Use the `package` directory as the recipe's working directory. The historical tested environment is macOS with Python 3.10.9. Bounded execution uses POSIX process facilities; no new operating-system qualification is claimed by this release. Native synthesis binaries are not distributed, and the source-fetch helpers do not execute them.
+
+Historical records retain generic anonymized directory labels as provenance. The new kit metadata correction and selected qualification-copy rules are recorded in their separate exact ledgers; this release does not claim that all historical directory labels were removed.
 
 Historical inner README files and receipts retain the preparation status that was true when they were written. This outer release supplies the public access and licensing decision. Original hash fields and scientific statuses have not been relabeled. The old anonymous TeX fragments are historical evidence, not the current submitted manuscript.
 

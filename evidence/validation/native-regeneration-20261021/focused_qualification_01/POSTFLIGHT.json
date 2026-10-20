@@ -1,0 +1,28 @@
+{
+  "status": "PASS_FOCUSED_POSTFLIGHT",
+  "created_utc": "2026-10-20T21:54:32.205927+00:00",
+  "summary": {
+    "path": "origin:kit-workspace/focused_qualification_01/SUMMARY.json",
+    "bytes": 1541,
+    "sha256": "1f3b1bb0c8548b6acc1e66f2e7d23fd2d3af12b629154a74d7698426debdc461"
+  },
+  "result": {
+    "path": "origin:kit-workspace/focused_qualification_01/result/RESULT.json",
+    "bytes": 9887,
+    "sha256": "f1c75e79f2368b7a27a9a1da4ce262857fe6580dff3f3e269e30eb308b5167aa"
+  },
+  "frozen_inputs_verified": 1207,
+  "owned_pids": [
+    17874,
+    17877
+  ],
+  "owned_process_groups": [
+    17874,
+    17877
+  ],
+  "remaining": [],
+  "all_exact_children_reaped": true,
+  "all_recorded_groups_absent": true,
+  "new_process_table_check_absent": true,
+  "scientific_rechecks": 0
+}

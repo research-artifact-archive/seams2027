@@ -1,0 +1,625 @@
+{
+  "status": "PASS",
+  "actual": {
+    "ReleasedKindJobProducer$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "4f2a2efbdc23cc38b0c5c6cf3591dc5db7ae11dd8d048c42e9bde0aab78401ed"
+    },
+    "ReleasedKindJobProducer$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "c4921a7157283f7785bfb3f9845f55d87e778d17279ad05d74f79febc7fd1967"
+    },
+    "ReleasedKindJobProducer$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "ef2737b572e1c6b583b165ff0673e9a2a05da34382dbc9c125f8493b772066ec"
+    },
+    "ReleasedKindJobProducer$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "45fb30d01f9dcbad14f91d924f72412cf36b56372cd5b1544e57f00a27b05431"
+    },
+    "ReleasedKindJobProducer": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "99a0a46261d243e057ba01be9cbb2bed800bb934d3ee0d8a1bb7588c9a2934dc"
+    },
+    "PairedLiftDiagnostic$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "6c681ad5bc5f052b654464414d9cc528fd7ba684a3523a638665d7217f56a6be"
+    },
+    "PairedLiftDiagnostic$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "b33d3e491afa1188422db74f3fc28205ec5a276b588926088779efa49938cead"
+    },
+    "PairedLiftDiagnostic$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "1c9053de3f36c999418975811099e4aadf2210b772c36c35085d048fce95d298"
+    },
+    "PairedLiftDiagnostic$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "43c77edb848a1ed5f697ea5415a95969a7e809fb9916251c96e280a297c97b21"
+    },
+    "PairedLiftDiagnostic": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "f228eecd11f3fbd9b62afd84fe34195b78c57f6d4ebed9bc8e2fbbea507a9fe3"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver$Snapshot": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "7b71aa643dcca8a06806433d747311519a85bb9ee851b4e85aae6aa2872311a6"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "00849ed974c10319429871984890e1e51dd38aaa3b74fd0ef5b7bfa2470ef152"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ObservedControllerConstructionSkip": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "387d115789a1031a95c756cfaead04ad341269f6337867999518de6385ac9a26"
+    },
+    "PairedContinuationDiagnostic$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "df52f3fddb70822ad1087e4e405204f5e4f468db19d932936b69568e9853edcc"
+    },
+    "PairedContinuationDiagnostic$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "403a05b5b44740ab5187a07eb2af2863d9cb0ddf972263454757eae5604c2e2f"
+    },
+    "PairedContinuationDiagnostic$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "e7af0ccbb438f75e4404975daafc5f4b8b84f417140a6f248ae127ecd7480e4c"
+    },
+    "PairedContinuationDiagnostic$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "55e2f771a97c21b7e07ce87f5f73514dd091036decd39e297717398649ccaf8a"
+    },
+    "PairedContinuationDiagnostic": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "262c240f3f37be1a2ea58cf257393d1f88c13ac5cd12c7c69c1ed4beca42d29a"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ContinuationPreferenceConstruction": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "5a4e4032c71ec61e0a457e0efbd65dff94f93be7beaafcd242088ea9cd02437b"
+    },
+    "net.sf.javabdd.JTLVJavaFactory": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "2b40dc25900931fcc92697bae1bde527f0920258e17993baa56513c0089a8763"
+    },
+    "tau.smlab.syntech.SpectraRuntimeModule": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "1eb7a4f0a0d9015ebb91190ae30bd30b8c34a2ad37c14057160c055f2165fd47"
+    },
+    "tau.smlab.syntech.SpectraStandaloneSetup": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "9f54c81e4dfae8742d278cf3dc8c032e86c7bc801ee2b2c139797901ca3022db"
+    },
+    "tau.smlab.syntech.bddgenerator.BDDGenerator": {
+      "path": "origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar",
+      "sha256": "34b92e4ce73e572aed7900015772e4ac55600c4ba91549e39c2f38ae481f92ff"
+    },
+    "tau.smlab.syntech.gameinput.kind.PitermanSyntacticReduction": {
+      "path": "origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+      "sha256": "07653479c3d5d3ecbef32d66fce58edfd4103928858434327ce5e25913c4b466"
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.DefaultTranslators": {
+      "path": "origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+      "sha256": "472c0180c4d06a0d3a32a6940070fa22c1fc002fff119dcd573127b786f4d355"
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.StateInvTranslator": {
+      "path": "origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+      "sha256": "2017d9d879dcdb92f0aaf93b3149805c17c1506bb259a7f28b8b16c6a9065837"
+    },
+    "tau.smlab.syntech.gamemodel.GameModel": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "684df9f570a6e82be8b69ce1d04816b2909f47621d8436cef73f821c6f295b6a"
+    },
+    "tau.smlab.syntech.gamemodel.PlayerModule": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "15f8d253db1d0c4669e1836108af15706849722d79530e641f43774748b7f3b2"
+    },
+    "tau.smlab.syntech.gamemodel.util.PitermanSemanticReduction": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "b6ad1e5c1259e7615ad0687fee7934f592c3061e5fac31ea8332594adc12905e"
+    },
+    "tau.smlab.syntech.games.GameSolver": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "d78334a06b4406ada831515165ade57a96d2dd02c55ee8f4898eb37835a61d7e"
+    },
+    "tau.smlab.syntech.games.gr1.GR1Game": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "c070dbfa62fd2ffd93717a9512d553b8e262c5a7c89deac85795396cfa3bfafc"
+    },
+    "tau.smlab.syntech.games.gr1.GR1SeparatedGame": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "6ce9b49dc638e4b03de10662c5dcd28ef470019f25cb7e2151afac77d0d7b502"
+    },
+    "tau.smlab.syntech.jtlv.BDDPackage": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "52641c95396850f74941c473883ebc84dc079637dfca4420b79bd7a24f8b47a7"
+    },
+    "tau.smlab.syntech.jtlv.CoreUtil": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "a2efe86a158f4c4e6424c14d691e36e484c30fdf0f3b0c86fbf212241f9f24da"
+    },
+    "tau.smlab.syntech.jtlv.Env": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "f95b0b4e5c3b480a3556674731b461e2fde8ec290eae03d2b1a17630a914484a"
+    },
+    "tau.smlab.syntech.parser.antlr.SpectraParser": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "c18ec26323d6dcaebc4f287852f484596feb0187046503927153a542b1ad907e"
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProvider": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "060f0da06f5019a5e0c0ab70b3d518c279a409a652b5f541aeb819822fa49870"
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "79021a0c02e1191457961e363e5bcd75099337df3da520b208f94d5a8cce2d73"
+    },
+    "tau.smlab.syntech.spectragameinput.translator.Spectra2GameInputTranslator": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "1b461eef47c5c7c0c039234028562048aebed843840d515ec8bca178a7699b5f"
+    },
+    "net.sf.javabdd.BDDFactory": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "3d7270dfdad706a54a7f7697b3792a0e6e06fa4ba65c5b44516dfcd099ae84b1"
+    },
+    "net.sf.javabdd.BDDFactory$GCStats": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "6a8b22052c447d09dea77766b7e38b18acecafda92cde565e7eb4fcc01d8c840"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ConceteControllerConstructionSkip": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "34cdae8f0f46977f1a9674761489b87224a55f2e237828cf31887d77b51ab721"
+    },
+    "tau.smlab.syntech.games.gr1.GR1Memory": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "aa46fcee8299187145a9872aa6abea4a3d1a7bed09563e93cf9a13259e557da9"
+    },
+    "tau.smlab.syntech.games.gr1.GR1RankInfo": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "bb1842730872b5d7c7dcf10442b4c4d40fedcea8cbf2826ca1998982c82341ed"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStrategyImpl": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "e0890e05a63c24d9009ea2af8e511dc0882a1351c4fcec785de82424ce1867de"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStateI": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "623554693f0306005c99148c16775b7f72d1ec917070c47458623a14743b31ef"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.printers.SimpleTextPrinter": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "4b9f6e9990f18e482a1848afc61836ff90ba4cde6e167493f08b50e8e5a957f7"
+    }
+  },
+  "expected": {
+    "net.sf.javabdd.JTLVJavaFactory": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "2b40dc25900931fcc92697bae1bde527f0920258e17993baa56513c0089a8763"
+    },
+    "tau.smlab.syntech.SpectraRuntimeModule": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "1eb7a4f0a0d9015ebb91190ae30bd30b8c34a2ad37c14057160c055f2165fd47"
+    },
+    "tau.smlab.syntech.SpectraStandaloneSetup": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "9f54c81e4dfae8742d278cf3dc8c032e86c7bc801ee2b2c139797901ca3022db"
+    },
+    "tau.smlab.syntech.bddgenerator.BDDGenerator": {
+      "path": "origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar",
+      "sha256": "34b92e4ce73e572aed7900015772e4ac55600c4ba91549e39c2f38ae481f92ff"
+    },
+    "tau.smlab.syntech.gameinput.kind.PitermanSyntacticReduction": {
+      "path": "origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+      "sha256": "07653479c3d5d3ecbef32d66fce58edfd4103928858434327ce5e25913c4b466"
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.DefaultTranslators": {
+      "path": "origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+      "sha256": "472c0180c4d06a0d3a32a6940070fa22c1fc002fff119dcd573127b786f4d355"
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.StateInvTranslator": {
+      "path": "origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+      "sha256": "2017d9d879dcdb92f0aaf93b3149805c17c1506bb259a7f28b8b16c6a9065837"
+    },
+    "tau.smlab.syntech.gamemodel.GameModel": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "684df9f570a6e82be8b69ce1d04816b2909f47621d8436cef73f821c6f295b6a"
+    },
+    "tau.smlab.syntech.gamemodel.PlayerModule": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "15f8d253db1d0c4669e1836108af15706849722d79530e641f43774748b7f3b2"
+    },
+    "tau.smlab.syntech.gamemodel.util.PitermanSemanticReduction": {
+      "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "sha256": "b6ad1e5c1259e7615ad0687fee7934f592c3061e5fac31ea8332594adc12905e"
+    },
+    "tau.smlab.syntech.games.GameSolver": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "d78334a06b4406ada831515165ade57a96d2dd02c55ee8f4898eb37835a61d7e"
+    },
+    "tau.smlab.syntech.games.gr1.GR1Game": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "c070dbfa62fd2ffd93717a9512d553b8e262c5a7c89deac85795396cfa3bfafc"
+    },
+    "tau.smlab.syntech.games.gr1.GR1SeparatedGame": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "6ce9b49dc638e4b03de10662c5dcd28ef470019f25cb7e2151afac77d0d7b502"
+    },
+    "tau.smlab.syntech.jtlv.BDDPackage": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "52641c95396850f74941c473883ebc84dc079637dfca4420b79bd7a24f8b47a7"
+    },
+    "tau.smlab.syntech.jtlv.CoreUtil": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "a2efe86a158f4c4e6424c14d691e36e484c30fdf0f3b0c86fbf212241f9f24da"
+    },
+    "tau.smlab.syntech.jtlv.Env": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "f95b0b4e5c3b480a3556674731b461e2fde8ec290eae03d2b1a17630a914484a"
+    },
+    "tau.smlab.syntech.parser.antlr.SpectraParser": {
+      "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+      "sha256": "c18ec26323d6dcaebc4f287852f484596feb0187046503927153a542b1ad907e"
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProvider": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "060f0da06f5019a5e0c0ab70b3d518c279a409a652b5f541aeb819822fa49870"
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "79021a0c02e1191457961e363e5bcd75099337df3da520b208f94d5a8cce2d73"
+    },
+    "tau.smlab.syntech.spectragameinput.translator.Spectra2GameInputTranslator": {
+      "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+      "sha256": "1b461eef47c5c7c0c039234028562048aebed843840d515ec8bca178a7699b5f"
+    },
+    "net.sf.javabdd.BDDFactory": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "3d7270dfdad706a54a7f7697b3792a0e6e06fa4ba65c5b44516dfcd099ae84b1"
+    },
+    "net.sf.javabdd.BDDFactory$GCStats": {
+      "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "sha256": "6a8b22052c447d09dea77766b7e38b18acecafda92cde565e7eb4fcc01d8c840"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ConceteControllerConstructionSkip": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "34cdae8f0f46977f1a9674761489b87224a55f2e237828cf31887d77b51ab721"
+    },
+    "tau.smlab.syntech.games.gr1.GR1Memory": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "aa46fcee8299187145a9872aa6abea4a3d1a7bed09563e93cf9a13259e557da9"
+    },
+    "tau.smlab.syntech.games.gr1.GR1RankInfo": {
+      "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "sha256": "bb1842730872b5d7c7dcf10442b4c4d40fedcea8cbf2826ca1998982c82341ed"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStrategyImpl": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "e0890e05a63c24d9009ea2af8e511dc0882a1351c4fcec785de82424ce1867de"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStateI": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "623554693f0306005c99148c16775b7f72d1ec917070c47458623a14743b31ef"
+    },
+    "tau.smlab.syntech.games.controller.enumerate.printers.SimpleTextPrinter": {
+      "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "sha256": "4b9f6e9990f18e482a1848afc61836ff90ba4cde6e167493f08b50e8e5a957f7"
+    },
+    "ReleasedKindJobProducer$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "4f2a2efbdc23cc38b0c5c6cf3591dc5db7ae11dd8d048c42e9bde0aab78401ed"
+    },
+    "ReleasedKindJobProducer$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "c4921a7157283f7785bfb3f9845f55d87e778d17279ad05d74f79febc7fd1967"
+    },
+    "ReleasedKindJobProducer$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "ef2737b572e1c6b583b165ff0673e9a2a05da34382dbc9c125f8493b772066ec"
+    },
+    "ReleasedKindJobProducer$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "45fb30d01f9dcbad14f91d924f72412cf36b56372cd5b1544e57f00a27b05431"
+    },
+    "ReleasedKindJobProducer": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "99a0a46261d243e057ba01be9cbb2bed800bb934d3ee0d8a1bb7588c9a2934dc"
+    },
+    "PairedLiftDiagnostic$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "6c681ad5bc5f052b654464414d9cc528fd7ba684a3523a638665d7217f56a6be"
+    },
+    "PairedLiftDiagnostic$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "b33d3e491afa1188422db74f3fc28205ec5a276b588926088779efa49938cead"
+    },
+    "PairedLiftDiagnostic$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "1c9053de3f36c999418975811099e4aadf2210b772c36c35085d048fce95d298"
+    },
+    "PairedLiftDiagnostic$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "43c77edb848a1ed5f697ea5415a95969a7e809fb9916251c96e280a297c97b21"
+    },
+    "PairedLiftDiagnostic": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "f228eecd11f3fbd9b62afd84fe34195b78c57f6d4ebed9bc8e2fbbea507a9fe3"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver$Snapshot": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "7b71aa643dcca8a06806433d747311519a85bb9ee851b4e85aae6aa2872311a6"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "00849ed974c10319429871984890e1e51dd38aaa3b74fd0ef5b7bfa2470ef152"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ObservedControllerConstructionSkip": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "387d115789a1031a95c756cfaead04ad341269f6337867999518de6385ac9a26"
+    },
+    "PairedContinuationDiagnostic$1": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "df52f3fddb70822ad1087e4e405204f5e4f468db19d932936b69568e9853edcc"
+    },
+    "PairedContinuationDiagnostic$InvariantMismatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "403a05b5b44740ab5187a07eb2af2863d9cb0ddf972263454757eae5604c2e2f"
+    },
+    "PairedContinuationDiagnostic$UnsupportedDomain": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "e7af0ccbb438f75e4404975daafc5f4b8b84f417140a6f248ae127ecd7480e4c"
+    },
+    "PairedContinuationDiagnostic$ValidationLogWatch": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "55e2f771a97c21b7e07ce87f5f73514dd091036decd39e297717398649ccaf8a"
+    },
+    "PairedContinuationDiagnostic": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "262c240f3f37be1a2ea58cf257393d1f88c13ac5cd12c7c69c1ed4beca42d29a"
+    },
+    "tau.smlab.syntech.games.gr1.GR1ContinuationPreferenceConstruction": {
+      "path": "origin:kit-workspace/qualification_01/build/classes",
+      "sha256": "5a4e4032c71ec61e0a457e0efbd65dff94f93be7beaafcd242088ea9cd02437b"
+    }
+  },
+  "checks": {
+    "net.sf.javabdd.JTLVJavaFactory": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.SpectraRuntimeModule": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.SpectraStandaloneSetup": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.bddgenerator.BDDGenerator": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gameinput.kind.PitermanSyntacticReduction": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.DefaultTranslators": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gameinputtrans.translator.StateInvTranslator": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gamemodel.GameModel": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gamemodel.PlayerModule": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.gamemodel.util.PitermanSemanticReduction": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.GameSolver": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1Game": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1SeparatedGame": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.jtlv.BDDPackage": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.jtlv.CoreUtil": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.jtlv.Env": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.parser.antlr.SpectraParser": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProvider": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.spectragameinput.translator.Spectra2GameInputTranslator": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "net.sf.javabdd.BDDFactory": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "net.sf.javabdd.BDDFactory$GCStats": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1ConceteControllerConstructionSkip": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1Memory": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1RankInfo": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStrategyImpl": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.controller.enumerate.EnumStateI": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.controller.enumerate.printers.SimpleTextPrinter": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "ReleasedKindJobProducer$1": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "ReleasedKindJobProducer$InvariantMismatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "ReleasedKindJobProducer$UnsupportedDomain": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "ReleasedKindJobProducer$ValidationLogWatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "ReleasedKindJobProducer": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedLiftDiagnostic$1": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedLiftDiagnostic$InvariantMismatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedLiftDiagnostic$UnsupportedDomain": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedLiftDiagnostic$ValidationLogWatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedLiftDiagnostic": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver$Snapshot": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1ExtractionObserver": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1ObservedControllerConstructionSkip": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedContinuationDiagnostic$1": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedContinuationDiagnostic$InvariantMismatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedContinuationDiagnostic$UnsupportedDomain": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedContinuationDiagnostic$ValidationLogWatch": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "PairedContinuationDiagnostic": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    },
+    "tau.smlab.syntech.games.gr1.GR1ContinuationPreferenceConstruction": {
+      "same_file": true,
+      "same_class_bytes": true,
+      "raw_path_string_equal": false
+    }
+  },
+  "process": {
+    "path": "origin:kit-workspace/qualification_01/processes/origin_probe/PROCESS_RECEIPT.json",
+    "bytes": 45297,
+    "sha256": "0f465a47bfd8596e3745e2fa19d6f965dd729b46ae7d74036f270284b905be1c"
+  }
+}

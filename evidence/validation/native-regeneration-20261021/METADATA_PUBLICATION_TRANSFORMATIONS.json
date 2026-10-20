@@ -1,0 +1,327 @@
+{
+  "schema": "kit-metadata-publication-transformation-v1",
+  "status": "PRESENTATION_ONLY_CONTROL_AND_SCIENTIFIC_BYTES_UNCHANGED",
+  "reason": "A final normalized privacy review found that four path strings in a prior attestation and their four ledger mirrors retained a private workspace suffix after username-only replacement. The earlier privacy PASS reports are retained as historical records; this corrective derivation supersedes that limited finding.",
+  "qualified_original_archive": {
+    "bytes": 164233,
+    "sha256": "b9ec5e85d63ba2ae2c7b7051025bd4cbc09c7fdccaa2c45f2afe4698a8241658"
+  },
+  "qualified_original_inner_manifest": {
+    "bytes": 5358,
+    "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+  },
+  "public_archive": {
+    "path": "archives/lift-native-regeneration-public-20261021-v1.zip",
+    "bytes": 164041,
+    "sha256": "6f66808cfd27c49385306eea6eab089a0fd09981f6517a1257077e56178273a0"
+  },
+  "public_inner_manifest": {
+    "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+  },
+  "membership": {
+    "original": 32,
+    "public": 32,
+    "byte_identical": 29,
+    "metadata_files_changed": 3
+  },
+  "scope": "The recorded native and focused executions used the qualified original package. All executable controls and scientific inputs in the public package retain those exact executed bytes. Three metadata files subsequently changed only in eight private-path displays and six dependent copy/manifest identity fields. The final 32-member serialization was not rerun as a whole.",
+  "changed_files": [
+    {
+      "member": "evidence/local_qualification/POSTFLIGHT.json",
+      "qualified_original": {
+        "bytes": 51418,
+        "sha256": "535ea50c4463713580c0a574592ed082d8660f9e1efd1dcab3d313a113730bd9"
+      },
+      "public": {
+        "bytes": 51066,
+        "sha256": "321dcb5583ec592c4436050743c4791a516862bef5affa1d462f7c8d40c35e61"
+      },
+      "changed_fields": [
+        {
+          "json_pointer": "/historical_parity/native/model_path_relocation/historical",
+          "original_json_value_bytes": 157,
+          "original_json_value_sha256": "7c7f6f624e860185cf9d30e080fab32b1facc6182cd0e40129947a10da50c195",
+          "public_value": "origin:producer-workspace/attempt_02/inputs/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/historical_parity/native/model_path_relocation/fresh",
+          "original_json_value_bytes": 179,
+          "original_json_value_sha256": "60c9fb2918cc01be3ff2e9107e91b8de9026e801849a011e86553eee55e413df",
+          "public_value": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/historical_parity/variant/model_path_relocation/historical",
+          "original_json_value_bytes": 157,
+          "original_json_value_sha256": "7c7f6f624e860185cf9d30e080fab32b1facc6182cd0e40129947a10da50c195",
+          "public_value": "origin:producer-workspace/attempt_02/inputs/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/historical_parity/variant/model_path_relocation/fresh",
+          "original_json_value_bytes": 179,
+          "original_json_value_sha256": "60c9fb2918cc01be3ff2e9107e91b8de9026e801849a011e86553eee55e413df",
+          "public_value": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        }
+      ]
+    },
+    {
+      "member": "ORIGINAL_COPY_LEDGER.json",
+      "qualified_original": {
+        "bytes": 107750,
+        "sha256": "68507666c169828168d20a06df4e3bf1c8c6c43ff7c4f8fbc40b02123af1a4a4"
+      },
+      "public": {
+        "bytes": 107398,
+        "sha256": "b86e59b2d1eaa1955f76426e30a64358eaa9bd1495ff096f98bbd20ea5914e55"
+      },
+      "changed_fields": [
+        {
+          "json_pointer": "/files/15/public_bytes",
+          "original_json_value_bytes": 5,
+          "original_json_value_sha256": "a5a47421c3ca9bbaa611e913410eb04a919fa2ed94c2bea1a49c538413d5f690",
+          "public_value": 51066,
+          "kind": "dependent_public_copy_identity",
+          "original_value": 51418
+        },
+        {
+          "json_pointer": "/files/15/public_sha256",
+          "original_json_value_bytes": 66,
+          "original_json_value_sha256": "6960354bb15289c6ec14469c658e7f63e72cc7c6025e0e36f4f0a50f1cc6b7f0",
+          "public_value": "321dcb5583ec592c4436050743c4791a516862bef5affa1d462f7c8d40c35e61",
+          "kind": "dependent_public_copy_identity",
+          "original_value": "535ea50c4463713580c0a574592ed082d8660f9e1efd1dcab3d313a113730bd9"
+        },
+        {
+          "json_pointer": "/files/15/explicit_field_transformations/2/new_value",
+          "original_json_value_bytes": 157,
+          "original_json_value_sha256": "7c7f6f624e860185cf9d30e080fab32b1facc6182cd0e40129947a10da50c195",
+          "public_value": "origin:producer-workspace/attempt_02/inputs/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/files/15/explicit_field_transformations/3/new_value",
+          "original_json_value_bytes": 179,
+          "original_json_value_sha256": "60c9fb2918cc01be3ff2e9107e91b8de9026e801849a011e86553eee55e413df",
+          "public_value": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/files/15/explicit_field_transformations/4/new_value",
+          "original_json_value_bytes": 157,
+          "original_json_value_sha256": "7c7f6f624e860185cf9d30e080fab32b1facc6182cd0e40129947a10da50c195",
+          "public_value": "origin:producer-workspace/attempt_02/inputs/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        },
+        {
+          "json_pointer": "/files/15/explicit_field_transformations/5/new_value",
+          "original_json_value_bytes": 179,
+          "original_json_value_sha256": "60c9fb2918cc01be3ff2e9107e91b8de9026e801849a011e86553eee55e413df",
+          "public_value": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+          "kind": "private_workspace_path_presentation"
+        }
+      ]
+    },
+    {
+      "member": "MANIFEST.json",
+      "qualified_original": {
+        "bytes": 5358,
+        "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+      },
+      "public": {
+        "bytes": 5358,
+        "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+      },
+      "changed_fields": [
+        {
+          "json_pointer": "/files/1/bytes",
+          "original_json_value_bytes": 6,
+          "original_json_value_sha256": "ac6185a851118b7dd17e45d12926fe3c87cc8ae0acf32e8611afdce54fad1729",
+          "public_value": 107398,
+          "kind": "dependent_public_copy_identity",
+          "original_value": 107750
+        },
+        {
+          "json_pointer": "/files/1/sha256",
+          "original_json_value_bytes": 66,
+          "original_json_value_sha256": "7bbc0dfa6cd59d16edef067289736441a4504a4fc1339ac0a64b671fda236fb4",
+          "public_value": "b86e59b2d1eaa1955f76426e30a64358eaa9bd1495ff096f98bbd20ea5914e55",
+          "kind": "dependent_public_copy_identity",
+          "original_value": "68507666c169828168d20a06df4e3bf1c8c6c43ff7c4f8fbc40b02123af1a4a4"
+        },
+        {
+          "json_pointer": "/files/8/bytes",
+          "original_json_value_bytes": 5,
+          "original_json_value_sha256": "a5a47421c3ca9bbaa611e913410eb04a919fa2ed94c2bea1a49c538413d5f690",
+          "public_value": 51066,
+          "kind": "dependent_public_copy_identity",
+          "original_value": 51418
+        },
+        {
+          "json_pointer": "/files/8/sha256",
+          "original_json_value_bytes": 66,
+          "original_json_value_sha256": "6960354bb15289c6ec14469c658e7f63e72cc7c6025e0e36f4f0a50f1cc6b7f0",
+          "public_value": "321dcb5583ec592c4436050743c4791a516862bef5affa1d462f7c8d40c35e61",
+          "kind": "dependent_public_copy_identity",
+          "original_value": "535ea50c4463713580c0a574592ed082d8660f9e1efd1dcab3d313a113730bd9"
+        }
+      ]
+    }
+  ],
+  "unchanged_members": [
+    {
+      "path": "OMISSIONS.json",
+      "bytes": 707,
+      "sha256": "a9f57c0c0758667b8bff09a8f9d94cb3fac5bb89a5f638e9679c109e04cede41"
+    },
+    {
+      "path": "README.md",
+      "bytes": 7376,
+      "sha256": "01a00c5f9ff371ec7cd0ee4cc9788892f16130deb1b093fc3af7bf1cb4d8e761"
+    },
+    {
+      "path": "configure_run.py",
+      "bytes": 10397,
+      "sha256": "56014698d1f8159abbd021c8bc639671e3d2fb20f2f84483f36995cf20a802a0"
+    },
+    {
+      "path": "evidence/focused_original/V42_B42_NODE680_SAVED_RESIDUAL_CHECK.json",
+      "bytes": 4116,
+      "sha256": "6a455bdc3d22a1d290a72bb0ffb51efff0f70b1bcbacb7860f5f34982645cafe"
+    },
+    {
+      "path": "evidence/focused_original/check_v42_b42_node680.py",
+      "bytes": 6721,
+      "sha256": "2e6f9cdcaced41498bb85b51a043cc2bc598877342d95610aa0db6d116bf34b8"
+    },
+    {
+      "path": "evidence/local_qualification/INDEPENDENT_RESULT_REVIEW.json",
+      "bytes": 16820,
+      "sha256": "daca5f68465030c412e39fda5228ed376c82c91dbaf93fbf4551591b160fc60f"
+    },
+    {
+      "path": "evidence/local_qualification/OWNED_PROCESS_POSTFLIGHT.json",
+      "bytes": 4078,
+      "sha256": "d5ccea9423df31c4eee67ff20bde96da6eb5fd5950348f5cf26e7cece0fddf20"
+    },
+    {
+      "path": "evidence/local_qualification/STATIC_REVIEW.json",
+      "bytes": 20063,
+      "sha256": "8319298e4593fb85935ca12b90d7ba9912bc7a46b42e70e1cf31259697f0093a"
+    },
+    {
+      "path": "evidence/local_qualification/SUMMARY.json",
+      "bytes": 4651,
+      "sha256": "45892def507f85f93598f909ce805686634d39f6dc973390821a3ec34ab2693e"
+    },
+    {
+      "path": "focused/INPUTS.json",
+      "bytes": 3993,
+      "sha256": "edab6fdfb7e5567bc099e81078873cb4adc04a9c055ffd82f4520c1c45503a6d"
+    },
+    {
+      "path": "focused/check_node680.py",
+      "bytes": 13021,
+      "sha256": "378a1af4a441469a197461966c129dcb7b7183dea29fe2ef2f14eaaf340f68bc"
+    },
+    {
+      "path": "focused/model_bindings.py",
+      "bytes": 7038,
+      "sha256": "f76dd4e38ce19475b248628e4667c08027665b207622b2bc6980de89b2616040"
+    },
+    {
+      "path": "host_runtime/INSTALLED_RUNTIME_PINS.json",
+      "bytes": 155772,
+      "sha256": "c4b4e36a200fc825ae28503f44377e0cf7d888a74a5523c896d883a80137929c"
+    },
+    {
+      "path": "manifests/ARCHIVE_SELECTION.json",
+      "bytes": 6451,
+      "sha256": "01ca2416cf0e6fb507855bc4273d3f8f7b4181e7a333f5e54ca62628c669c567"
+    },
+    {
+      "path": "manifests/FETCH_MANIFEST.json",
+      "bytes": 117164,
+      "sha256": "33031297f79943abc4a57cee986a2fa9ae78c9089efc95992f7f2a902aaa715d"
+    },
+    {
+      "path": "manifests/ORIGIN_ROSTER.txt",
+      "bytes": 2099,
+      "sha256": "ee519b8f4c376b24ced19049eb4894310f9ee49df245752a526d15fcef8d19bc"
+    },
+    {
+      "path": "manifests/PLAN_TEMPLATE.json",
+      "bytes": 5046,
+      "sha256": "37c05ada620be5ac246edc98dd4300880edce4bc0f92af5eb179e0e5c24f574a"
+    },
+    {
+      "path": "manifests/PUBLIC_PAYLOAD_MAP.json",
+      "bytes": 12231,
+      "sha256": "25c843b4e267320c0cb1e141dbd27b323ac4494d66b26237ebb4daf0846a6013"
+    },
+    {
+      "path": "manifests/RUNTIME_SCIENCE_EXPECTATIONS.json",
+      "bytes": 15484,
+      "sha256": "d6fc53701862b2155c2ba1e2725b889d7035fbe902fb7800bff4ef8b79f3dbc0"
+    },
+    {
+      "path": "regenerate/OriginProbe.java",
+      "bytes": 729,
+      "sha256": "09a83142dcd24d5a2e310e1d1ea4bd47c54360977702e600327d580e3d390ff9"
+    },
+    {
+      "path": "regenerate/bootstrap/bounded_process.py",
+      "bytes": 19294,
+      "sha256": "ee08963ad88b0259c744cbed732f339536fd504a89342c5e661449ffc0e367c9"
+    },
+    {
+      "path": "regenerate/bootstrap/dispatch.py",
+      "bytes": 31072,
+      "sha256": "380c45269a1815141fd326651b22373d4d3c57c9277ae5e882991f95bc3eccc9"
+    },
+    {
+      "path": "regenerate/bootstrap/owned_process.py",
+      "bytes": 11011,
+      "sha256": "20ce5ef1912afd9ff144a9c4c102d347e09e5006596372d38bd3e05ad3b57596"
+    },
+    {
+      "path": "regenerate/fetch_one.py",
+      "bytes": 5566,
+      "sha256": "34ab0cb06ec503c888fb3a347f75f8078356c225e1e3f8079fa447a17d15048f"
+    },
+    {
+      "path": "regenerate/launch_public.py",
+      "bytes": 23503,
+      "sha256": "e372f40d691fff33f5964ed594630ab562434cc345c2f256dd06568c8e1787b5"
+    },
+    {
+      "path": "regenerate/public_payload.py",
+      "bytes": 7433,
+      "sha256": "6b263ca7ef1e62948ee0bca2e5a54256779134e8d44592260892a38b9b08244b"
+    },
+    {
+      "path": "regenerate/qualify_isolation.py",
+      "bytes": 540,
+      "sha256": "0a1e03009e98223a6e69903520e6764b1d5c1847bd07ed08fcd71444889a4a0f"
+    },
+    {
+      "path": "regenerate/qualify_public_guards.py",
+      "bytes": 8050,
+      "sha256": "f304dc28fee1d35c6773ed2a01fd01cdec7a0cbdcf4358e323166a90f1c7a151"
+    },
+    {
+      "path": "tests/check_static.py",
+      "bytes": 9253,
+      "sha256": "78c456388e96c1abde383f7fb22dd5d1c96e980a690eebdadd9b56f019d22770"
+    }
+  ],
+  "read_only_dependency_review": "configure_run.py dynamically checks the kit manifest; it copies only regenerate controls and four named acquisition manifests into the run. The two edited attestation/ledger files are not scientific runtime inputs. The focused wrapper binds the separate fourth archive and its unchanged local controls.",
+  "new_native_executions": 0,
+  "new_focused_executions": 0,
+  "new_compiler_invocations": 0,
+  "original_frozen_package_and_results_preserved": true
+}

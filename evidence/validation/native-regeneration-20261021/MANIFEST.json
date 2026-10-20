@@ -1,0 +1,153 @@
+{
+  "schema": "selected-public-qualification-records-manifest-v1",
+  "status": "FROZEN_PUBLIC_PRESENTATION_COPIES",
+  "files": [
+    {
+      "path": "ARCHIVE_INTEGRITY.json",
+      "bytes": 1227,
+      "sha256": "6c60bbcceea20072331c438bc8a6aa8f5598154ac812e63b21bd709a92280332"
+    },
+    {
+      "path": "INDEPENDENT_RESULT_REVIEW.json",
+      "bytes": 28633,
+      "sha256": "3e88ce737cb900bccf40c208346d2f951bc3b3532888a1a33f59562506328bb1"
+    },
+    {
+      "path": "INDEPENDENT_STATIC_REVIEW.json",
+      "bytes": 22735,
+      "sha256": "5b978f47f9319e310e047b2a77d62461b2f72441156bd3b4900e5b76c91e9bac"
+    },
+    {
+      "path": "METADATA_PUBLICATION_TRANSFORMATIONS.json",
+      "bytes": 13980,
+      "sha256": "589a0363c22ed8519e657f37f32227f1cfa01db454dd85fb3bd0515c12654f3a"
+    },
+    {
+      "path": "OMISSIONS.json",
+      "bytes": 3868,
+      "sha256": "37bd8ab937b31d53e4dc40c142f99c05436e37dcd021cb076b2c48cd9938ffe9"
+    },
+    {
+      "path": "PRESENTATION_TRANSFORMATIONS.json",
+      "bytes": 584294,
+      "sha256": "476e891f5ed8e18e6bf1ca8f3597bf48afa489544492a9ee163a21058288a7a7"
+    },
+    {
+      "path": "PRIVACY_CORRECTION.json",
+      "bytes": 2104,
+      "sha256": "2e0c9e728e5ffed8b2918d1748d2e6b25876e686618b1c3fb917bb647d170b21"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2478,
+      "sha256": "524b55b3453953679eec34892b3db6a17ecc8305c5b374974f2f645da6d75d5c"
+    },
+    {
+      "path": "RESULT_ADOPTION.json",
+      "bytes": 4165,
+      "sha256": "f490060c100c4636cb3427ece2c024ae7251e0cbf623a25d6459889970e0e3b7"
+    },
+    {
+      "path": "RESULT_HANDOFF.json",
+      "bytes": 14905,
+      "sha256": "a74622dc3a55f58adb11b810a21e9e84a699749aea99754615bf04cc33f4d42d"
+    },
+    {
+      "path": "focused_qualification_01/POSTFLIGHT.json",
+      "bytes": 784,
+      "sha256": "2e1dca9c66090922dd5c6b013206f7098719afb4df87a0a8e86eaaf8625cc74e"
+    },
+    {
+      "path": "focused_qualification_01/SUMMARY.json",
+      "bytes": 1181,
+      "sha256": "32d7eeea8ed2298234c6b02d3eda84ba88371e32648fa4b4fce877b0eb43a329"
+    },
+    {
+      "path": "focused_qualification_01/result/RESULT.json",
+      "bytes": 7487,
+      "sha256": "89cd626e2124246082e85f7a48b01bbe3fe8dba9766962182825ec4b27652c3e"
+    },
+    {
+      "path": "qualification_01/ACQUISITION_RESULT.json",
+      "bytes": 132840,
+      "sha256": "362873ed0de21aeebd761532355df291e6c0f7ae8e57eae3127cf8ea530f6e21"
+    },
+    {
+      "path": "qualification_01/BUILD_RECEIPT.json",
+      "bytes": 25270,
+      "sha256": "1cb598a4834e84213bf36e97ff066cee96acf6755653726264e3d442ffb37293"
+    },
+    {
+      "path": "qualification_01/CLASS_ORIGIN_RESULT.json",
+      "bytes": 30096,
+      "sha256": "4d59689a0d7d4c41bf3f1c1364330bf52aae8d6f2fb79db203df3d4bb4608a1e"
+    },
+    {
+      "path": "qualification_01/INITIAL_ISOLATION_RESULT.json",
+      "bytes": 5779,
+      "sha256": "ef8976c7b84da192b1aa7fc471a09d22d2956623f7298f6955904ea304abbf04"
+    },
+    {
+      "path": "qualification_01/ISOLATION_RESULT.json",
+      "bytes": 6276,
+      "sha256": "353e52533e351fa0d82a9cdaa346310c1fbe4ab4378ac319a3562dd581e367f0"
+    },
+    {
+      "path": "qualification_01/POSTFLIGHT.json",
+      "bytes": 76339,
+      "sha256": "c755ba68ae0a65c59fe48ef8c00dbe902d7f5d6f55f50c0a7970d854592c1d6f"
+    },
+    {
+      "path": "qualification_01/SOURCE_PROVENANCE.json",
+      "bytes": 1401,
+      "sha256": "41d4ec6686d554dd30d5139638ab13845a73962b8fbc3f68f025a75efb943a80"
+    },
+    {
+      "path": "qualification_01/SUMMARY.json",
+      "bytes": 4267,
+      "sha256": "fd5617f89e27b5af250bb160c26dff795cc019b18d92ed6baf9d80f9836b2199"
+    },
+    {
+      "path": "qualification_01/run_01/NATIVE_CLASS_ORIGINS.json",
+      "bytes": 14815,
+      "sha256": "25b480b3700824f0c96e7e35f3550b836858959254793e4f4473e416d1648557"
+    },
+    {
+      "path": "qualification_01/run_01/PAIRED_EVIDENCE.json",
+      "bytes": 3587,
+      "sha256": "8aeec987fdda3a75ca82bca33d9629ae9fd70871f3739ebf6e01c3bd6ce63cc6"
+    },
+    {
+      "path": "qualification_01/run_01/PAIR_RESULT.json",
+      "bytes": 2238,
+      "sha256": "373d2066ad968610161be6543966538312822095968b7ec7085c83fc24cf9f21"
+    },
+    {
+      "path": "qualification_01/run_01/audits/RESULT.json",
+      "bytes": 3307,
+      "sha256": "31404f3a406bab41ae1a1f9418d1ef4e2f943f4359f4cea5c18c654f5f6a138b"
+    },
+    {
+      "path": "qualification_01/run_01/audits/baseline_independent/AUDIT_RESULT.json",
+      "bytes": 14791,
+      "sha256": "4b8daaeb1212876142202b0606f88ec9ae2f54c4592651dc98ec10d867bbe8fe"
+    },
+    {
+      "path": "qualification_01/run_01/audits/baseline_production/certificate.json",
+      "bytes": 11152,
+      "sha256": "660a6c9423fad5c9cf33e727c8db71bc25d19ab8231870fa4a5376106885525e"
+    },
+    {
+      "path": "qualification_01/run_01/audits/variant_independent/AUDIT_RESULT.json",
+      "bytes": 18773,
+      "sha256": "05fc6a47d2f439c15b4eeab6e9ee2562f707cf9ec60f8d1c2a8adfa4ca0dced4"
+    },
+    {
+      "path": "qualification_01/run_01/audits/variant_production/certificate.json",
+      "bytes": 15452,
+      "sha256": "338bc7d86f8bbd92eadffcf57374dd62803a8c9ab81c45766203180fb931bd58"
+    }
+  ],
+  "manifest_self_excluded": true,
+  "scope": "Selected outer qualification records; original execution identities and subsequent metadata publication derivation are separate."
+}

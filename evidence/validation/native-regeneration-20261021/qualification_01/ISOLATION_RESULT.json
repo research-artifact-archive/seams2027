@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "path": "origin:research-workspace/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/classes/ReleasedKindJobProducer$1.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment/lift_t_causal_diagnosis_20261021/classes/PairedLiftDiagnostic.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment/lift_t_causal_diagnosis_20261021/classes_variant/PairedContinuationDiagnostic.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment/seams_establishment_20261013/current_build_preparation/released_plugins/tau.smlab.syntech.Spectra.ide_1.0.0.202402072123.jar",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/attempt_02/src/ReleasedKindJobProducer.java",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/build/classes/PairedContinuationDiagnostic.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/build/probe_classes/OriginProbe.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/attempt_02/build/classes/PairedContinuationDiagnostic.class",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment/lift_t_causal_diagnosis_20261021/public_extension_stage_01/package/seams2027-lift-causal-extension/source_restoration/fetch_lift_causal_sources.py",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/inputs/lift__trivial_1.spectra",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/model.json",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace/public_regeneration_01/run_01/native/controller.json",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "host:JDK_HOME/bin/java",
+      "operation": "read",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/OriginProbe.java",
+      "operation": "read",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace",
+      "operation": "stat",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace",
+      "operation": "list",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace",
+      "operation": "stat",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:producer-workspace",
+      "operation": "list",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment",
+      "operation": "stat",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace/experiment",
+      "operation": "list",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace",
+      "operation": "stat",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    },
+    {
+      "path": "origin:research-workspace",
+      "operation": "list",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/downloads/source-package.zip",
+      "operation": "read",
+      "expected_allowed": false,
+      "observed_allowed": false,
+      "error": "PermissionError",
+      "pass_check": true
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/ReleasedKindJobProducer.java",
+      "operation": "read",
+      "expected_allowed": true,
+      "observed_allowed": true,
+      "error": null,
+      "pass_check": true
+    }
+  ],
+  "process": {
+    "path": "origin:kit-workspace/qualification_01/processes/offline_isolation_controls/PROCESS_RECEIPT.json",
+    "bytes": 9337,
+    "sha256": "c5b380f34499ff05ace9dedd25096628a1443193411ac556a91a048b29edf4b3"
+  }
+}

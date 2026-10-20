@@ -1,0 +1,36 @@
+{
+  "status": "PASS_EXACT_DISTRIBUTED_FOCUSED_WRAPPER_ON_PUBLIC_SAVED_INPUTS",
+  "started_utc": "2026-10-20T21:53:28.437743+00:00",
+  "processes": [
+    {
+      "label": "isolation_process",
+      "receipt": {
+        "path": "origin:kit-workspace/focused_qualification_01/isolation_process/PROCESS_RECEIPT.json",
+        "bytes": 9440,
+        "sha256": "04fc25d20ed47997c42f06e872dc0c40f1d675641a709ca29fd70a5f45ee8b63"
+      },
+      "complete": true
+    },
+    {
+      "label": "checker_process",
+      "receipt": {
+        "path": "origin:kit-workspace/focused_qualification_01/checker_process/PROCESS_RECEIPT.json",
+        "bytes": 16287,
+        "sha256": "005a74fbd75c036507374f95c61a1ac12dc062adc580f560d5aff937ec40a488"
+      },
+      "complete": true
+    }
+  ],
+  "native_runs": 0,
+  "compiler_runs": 0,
+  "network_calls": 0,
+  "scientific_checks_started": 1,
+  "result": {
+    "path": "origin:kit-workspace/focused_qualification_01/result/RESULT.json",
+    "bytes": 9887,
+    "sha256": "f1c75e79f2368b7a27a9a1da4ce262857fe6580dff3f3e269e30eb308b5167aa"
+  },
+  "isolation_checks": 13,
+  "input_integrity": "PASS",
+  "finished_utc": "2026-10-20T21:53:29.418877+00:00"
+}

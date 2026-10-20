@@ -1,0 +1,357 @@
+{
+  "schema": "exact-distributed-public-kit-combined-result-handoff-v1",
+  "status": "AUTHOR_POSTFLIGHT_PASS_AWAITING_INDEPENDENT_RESULT_REVIEW",
+  "created_utc": "2026-10-20T22:00:52.876023+00:00",
+  "scope": "Local qualification of the exact anonymous public-kit control bytes and prepared public saved inputs under a pinned installed host runtime. This is an internal handoff, not an anonymized public receipt.",
+  "package": {
+    "root": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit",
+    "members_including_manifest": 32,
+    "manifest": {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/MANIFEST.json",
+      "bytes": 5358,
+      "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+    },
+    "immutable": true,
+    "all_files_preserved_byte_exact": true,
+    "qualification_material_must_remain_outside_package": true
+  },
+  "key_references": [
+    {
+      "path": "origin:kit-workspace/QUALIFICATION_PLAN.json",
+      "bytes": 5147,
+      "sha256": "6f870c4da9e49a35eba4c583c4e3f7870daf6aff26bcf1f9a4c108fdfb5f8424"
+    },
+    {
+      "path": "origin:kit-workspace/IMPLEMENTATION_FREEZE.json",
+      "bytes": 531761,
+      "sha256": "0d22c96845673dadb15ad88f9092b395a134bb3ba889b10c319fc6e0fb4f3610"
+    },
+    {
+      "path": "origin:kit-workspace/SOURCE_BUILD_LEDGER.json",
+      "bytes": 107736,
+      "sha256": "1ea93bfc365cdb92bf8693cd62e1e3f02c1ef065ba2ef93aec7dc666053e251a"
+    },
+    {
+      "path": "origin:kit-workspace/native_postflight.py",
+      "bytes": 6955,
+      "sha256": "6ba27fac352dd391727f8277efbb9fce797b7d47ea6a3841641bb02e8eacdc65"
+    },
+    {
+      "path": "origin:producer-workspace/PUBLIC_KIT_INDEPENDENT_STATIC_REVIEW.json",
+      "bytes": 30031,
+      "sha256": "076de8e96160b9317075318eb1d34b929ec7b21f35970ea93f721f038de9486e"
+    },
+    {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/MANIFEST.json",
+      "bytes": 5358,
+      "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/ROOT_GO.json",
+      "bytes": 3019,
+      "sha256": "221e53f306769ba7529c863de8f0f77981bffd41f68acb6aa063b729583e9aa7"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/PLAN.json",
+      "bytes": 5542,
+      "sha256": "dc1d06e9b8afff30bb0894131738ea247a8a9ca804569db5cc0f2e97b75581cc"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/FROZEN_INPUTS.json",
+      "bytes": 503725,
+      "sha256": "c5c5a3cd570f6f5b64d3947c80864e8713bb38873453bc229cb11c8a08b88159"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/INPUT_PREPARATION.json",
+      "bytes": 1089268,
+      "sha256": "9b2205c3256da9d052bffee7cd26d440a09bc311484f186d1874c03f69ad11ce"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/SUMMARY.json",
+      "bytes": 1541,
+      "sha256": "1f3b1bb0c8548b6acc1e66f2e7d23fd2d3af12b629154a74d7698426debdc461"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/result/RESULT.json",
+      "bytes": 9887,
+      "sha256": "f1c75e79f2368b7a27a9a1da4ce262857fe6580dff3f3e269e30eb308b5167aa"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/POSTFLIGHT.json",
+      "bytes": 1024,
+      "sha256": "71da0a69acfeba0927f07700b0cd296b1ec1f083251972ed75b68fc1bd33fd73"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/RESULT_MANIFEST.json",
+      "bytes": 516894,
+      "sha256": "67561a1a3b882c71858cbbab075c762f55107840938d47b54b32a6a1dc092acb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/EXECUTION_AUTHORIZATION.json",
+      "bytes": 3697,
+      "sha256": "67407dac32cf8eabf124344ba21d82c76e6931d8272856426b7c3e7327deb61b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/PLAN.json",
+      "bytes": 9324,
+      "sha256": "2dc871f609e4b29c6ef577c0d13c758ec56d363240666a24f703cde8bb524c12"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/FROZEN_LAUNCHER.json",
+      "bytes": 6540,
+      "sha256": "d86efb5e7c1aba6387ceb2f8003727d295a4cfc2d4a3fe9877c8df07fa88419f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/CONFIGURATION_RECEIPT.json",
+      "bytes": 1125,
+      "sha256": "0e3ff19850a741a21d3ca6a5c744a7735c0a3c0371cfb838b53dd6c96b5a89b2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/SUMMARY.json",
+      "bytes": 5227,
+      "sha256": "cac5f5831e57097ce7412eec80725d028a197541d6c0cfc20c1021c78d3a20ce"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/ACQUISITION_RESULT.json",
+      "bytes": 192240,
+      "sha256": "465503a789c3e2b492fdfd457e078b42530bb08e60d19d350f254c61a6b04dd8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/SOURCE_PROVENANCE.json",
+      "bytes": 1881,
+      "sha256": "31a0bdb8b0dd8a179daaf3f4fe4de008d798404e37e3441f32ae02fc730d4448"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/INITIAL_ISOLATION_RESULT.json",
+      "bytes": 7557,
+      "sha256": "118830a02b30782b2f9ef9fad1707a69666d74aa5bf1fdebe2533021998f38ae"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/ISOLATION_RESULT.json",
+      "bytes": 8294,
+      "sha256": "9afb6bf78aa88013f8af22d41968d160259ed7d8ebf63eff3b3c0e69db454c68"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/BUILD_RECEIPT.json",
+      "bytes": 49090,
+      "sha256": "2ace1e40b713e1d87f39c01150edc9e2216875e27fe7eab2907fae4d0feccc62"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/CLASS_ORIGIN_RESULT.json",
+      "bytes": 41355,
+      "sha256": "86565e993b0957e4fcdcf3f3e9039eba142b36ac0a3193b3a16ef0bd934fec92"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/PAIR_RESULT.json",
+      "bytes": 2358,
+      "sha256": "de0ebb5d5dfae073a327faab7dbf74ea8ece9e61422c2a250ab1e976a852bc37"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/PAIRED_EVIDENCE.json",
+      "bytes": 3947,
+      "sha256": "287ad471aa6317e3bf3f1efec4783f3f944f028cf6d107d06f5b87cf272a2fc3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/NATIVE_CLASS_ORIGINS.json",
+      "bytes": 25708,
+      "sha256": "631b081ff259b7d3d5074eef8a860b36d95b702458ea54a3b7c9a32ea22f913c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/POSTFLIGHT.json",
+      "bytes": 110783,
+      "sha256": "af4b013ab54d3b85a1ea268b8a4b5dcb383436cbbb1b8d431fa88ea93619aa76"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/RESULT_MANIFEST.json",
+      "bytes": 462347,
+      "sha256": "4977fbc6bcd0977a1145534bca7290348704bb35acbf0a0080b93950ba7414e3"
+    }
+  ],
+  "focused": {
+    "status": "PASS_EXACT_DISTRIBUTED_FOCUSED_WRAPPER_ON_PUBLIC_SAVED_INPUTS",
+    "started_utc": "2026-10-20T21:53:28.437743+00:00",
+    "finished_utc": "2026-10-20T21:53:29.418877+00:00",
+    "scientific_checks_started": 1,
+    "native_runs": 0,
+    "compiler_runs": 0,
+    "network_calls": 0,
+    "source_node": "680",
+    "raw_core_membership": true,
+    "original_C_at_node": true,
+    "safe_responses_per_source_input": [
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3,
+      3
+    ],
+    "original_legal_next_input_count": 0,
+    "native_legal_next_input_count": 16,
+    "every_native_legal_input_flips_helper": true,
+    "model_bindings": {
+      "all_nodes_typed_bit_valuation_consistent": true,
+      "all_ranks_valid": true,
+      "original_relation_hashes_verified": true,
+      "sole_original_and_solver_ENV_justice_identical": true,
+      "ENV_justice_exhaustively_NOT_helper": true,
+      "justice_assignments": 2048
+    },
+    "residual_graph": {
+      "states": 321,
+      "edges": 5136,
+      "exact_legal_input_coverage": true,
+      "unique_response": true,
+      "all_edges_native_environment_and_system_safe": true,
+      "all_successor_states_helper_true": true,
+      "helper_environment_justice_false_on_every_successor_state": true
+    },
+    "strict_membership_conclusion": "The saved private memory gives a safe complete continuation from the full source valuation with helper=false. Every legal first input flips helper, every future state keeps helper=true and falsifies the sole ENV justice. Therefore this state belongs to the actual saved transformed strict W_R; initial-state reachability is not required for state winning.",
+    "attribution_boundary": "Raw core membership is separate. This does not identify the entire raw core with W_R, recompute all-region winning, prove extraction the unique root cause, or establish a general repair.",
+    "independence_limit": "Reuses the pinned public BDD decoder and saved graph/model. New explicit type/bit/justice binding checks do not constitute an independent compiler.",
+    "input_integrity": "PASS",
+    "sealed_files": 1245
+  },
+  "native": {
+    "status": "COMPLETE_PUBLIC_SOURCE_DEPENDENCY_REGENERATION_INSTALLED_JDK_BOTH_AUDITS_AGREE",
+    "started_utc": "2026-10-20T21:54:05.731233+00:00",
+    "finished_utc": "2026-10-20T21:59:10.059907+00:00",
+    "fetch_attempts": 165,
+    "http_get_attempts": 165,
+    "fresh_public_payload_bytes": 113412497,
+    "native_pair_attempts": 1,
+    "audit_attempts": 4,
+    "baseline": {
+      "strict": true,
+      "cooperative": false,
+      "original_states": 154,
+      "original_edges": 1170
+    },
+    "variant": {
+      "strict": true,
+      "cooperative": true,
+      "original_states": 154,
+      "original_edges": 1176
+    },
+    "input_integrity": "PASS",
+    "complete_process_receipts": 176,
+    "owned_processes_or_groups_remaining": [],
+    "fresh_sources": 6,
+    "fresh_classes": 19,
+    "class_origin_probe_count": 47,
+    "actual_native_custom_classes": 6,
+    "actual_native_released_classes": 28,
+    "same_memory_object": true,
+    "same_model_object": true,
+    "memory_and_model_all_BDDs_equal": true,
+    "variable_order_unchanged": true,
+    "historical_parity": [
+      {
+        "arm": "native",
+        "model_equal_except_input_path": true,
+        "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+        "BDD_files": 20,
+        "printer_equal": true
+      },
+      {
+        "arm": "variant",
+        "model_equal_except_input_path": true,
+        "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+        "BDD_files": 21,
+        "printer_equal": true
+      }
+    ],
+    "sealed_files": 1377,
+    "sealed_bytes": 562133694
+  },
+  "preservation": [
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/FIRST_ATTEMPT_FREEZE.json",
+        "bytes": 90912,
+        "sha256": "4ef95f8b4e26a267f504de902085f60063a333fc91245c098cac119f2780f492"
+      },
+      "verified_files": 302
+    },
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/attempt_02/RESULT_MANIFEST.json",
+        "bytes": 125458,
+        "sha256": "7fe5b2c816f792fdc5a7fcffa8e551cef4cce8b6588b27f84badc61cb93c1783"
+      },
+      "verified_files": 403
+    },
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/public_regeneration_01/RESULT_MANIFEST.json",
+        "bytes": 438130,
+        "sha256": "6691dd37bf06322b7aa1e9f06e51e14ebddf4bd276abaac3078a04d69458be66"
+      },
+      "verified_files": 1389
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/IMPLEMENTATION_FREEZE.json",
+        "bytes": 531761,
+        "sha256": "0d22c96845673dadb15ad88f9092b395a134bb3ba889b10c319fc6e0fb4f3610"
+      },
+      "verified_files": 1290
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/focused_qualification_01/RESULT_MANIFEST.json",
+        "bytes": 516894,
+        "sha256": "67561a1a3b882c71858cbbab075c762f55107840938d47b54b32a6a1dc092acb"
+      },
+      "verified_files": 1245
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/qualification_01/FROZEN_LAUNCHER.json",
+        "bytes": 6540,
+        "sha256": "d86efb5e7c1aba6387ceb2f8003727d295a4cfc2d4a3fe9877c8df07fa88419f"
+      },
+      "verified_files": 19
+    }
+  ],
+  "limits": {
+    "runtime": "Exact supplied installed JDK565-entry relative inventory and Python executable hashes verified; Python standard library, macOS, CA store and platform libraries remain host supplied.",
+    "isolation": "Sandbox deliberately establishes old-workspace-read exclusion; it does not inventory or recreate every macOS library, CA store, Python library or host filesystem read outside the workspace",
+    "native_tree_cap": "Sampled 2 GiB cap applies to qualification_01 only; immutable package, focused input/output, and prior experiment overhead are separate. No whole-parent 2 GiB claim.",
+    "qualification_location": "One generated local configuration; anonymous distributed launcher and focused wrapper bytes match exactly. Bootstrap kit was not fetched from public hosting by this qualification.",
+    "focused_source": "Prepared copies of previously freshly restored public sources and the public causal-extension package; this focused stage performed zero network calls.",
+    "not_claimed": [
+      "No all-region winning recomputation",
+      "No general repair result",
+      "No fully hermetic runtime",
+      "No claim that output relocation or anonymization alone establishes qualification",
+      "No new runtime execution after result receipt export"
+    ]
+  },
+  "independent_review": {
+    "status": "PENDING",
+    "required": [
+      "Read full focused result and verify exact distributed code, input closure, semantic bindings, residual coverage and scope",
+      "Read full native result, all 176 process receipts, public acquisition/build/origins and all four complete audits",
+      "Verify complete model, graph, BDD and printer parity against sealed previous public run with only declared exceptions",
+      "Rehash focused and native result seals, all prior preservation manifests and immutable 32-file package",
+      "Write new independent review outside both sealed qualification directories"
+    ]
+  },
+  "publication_handoff": {
+    "status": "PENDING_INDEPENDENT_REVIEW",
+    "required": "Export anonymous summary and independent QA only outside the unchanged 32-file kit ZIP, under outer release evidence/validation, with exact kit manifest and executable pins. Do not mutate executable/scientific files or package documentation; do not rerun science for documentation.",
+    "private_receipt_material": "Absolute local paths and host labels in this handoff and native/focused receipts require explicit presentation-only redaction before public export. Preserve science values, counts, binding claims, code pins and claim boundaries; record a field-level transformation ledger.",
+    "no_additional_execution_authorized": true
+  }
+}

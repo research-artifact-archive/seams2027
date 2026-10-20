@@ -1,0 +1,1945 @@
+{
+  "schema": "exact-public-kit-native-postflight-v1",
+  "status": "PASS_EXACT_DISTRIBUTED_NATIVE_QUALIFICATION_POSTFLIGHT",
+  "created_utc": "2026-10-20T21:59:31.453230+00:00",
+  "scientific_reruns": 0,
+  "summary": {
+    "path": "origin:kit-workspace/qualification_01/SUMMARY.json",
+    "bytes": 5227,
+    "sha256": "cac5f5831e57097ce7412eec80725d028a197541d6c0cfc20c1021c78d3a20ce"
+  },
+  "acquisition": {
+    "path": "origin:kit-workspace/qualification_01/ACQUISITION_RESULT.json",
+    "bytes": 192240,
+    "sha256": "465503a789c3e2b492fdfd457e078b42530bb08e60d19d350f254c61a6b04dd8"
+  },
+  "processes": [
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/compile_all_six/PROCESS_RECEIPT.json",
+      "bytes": 54922,
+      "sha256": "2d4d5eecc62955c0fc97757265f6ba92d7412d75b9a81ddd967914bcc21d4e13"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/compile_origin_probe/PROCESS_RECEIPT.json",
+      "bytes": 11676,
+      "sha256": "a84edf521d589febdb357f393454e2adc8ac8b8caca1b6473322cbd0c975d00a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_001/PROCESS_RECEIPT.json",
+      "bytes": 36269,
+      "sha256": "641ec8f199aeddf6a67fd9d3c00cf501e1391ad6a13fc5d96f147bb49294b713"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_002/PROCESS_RECEIPT.json",
+      "bytes": 34144,
+      "sha256": "05aad126f204d02f8f8eb5351574686569d061436388edf392e9e5d6500a044a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_003/PROCESS_RECEIPT.json",
+      "bytes": 55048,
+      "sha256": "3f60520354ed801b3cbfa27b8165dc087debd2b4aa62a45f2db588a16cd3de75"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_004/PROCESS_RECEIPT.json",
+      "bytes": 34170,
+      "sha256": "e47202dee5efca07e14664aa628102ecf67a1012fc5853071f94970373c80d6f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_005/PROCESS_RECEIPT.json",
+      "bytes": 21653,
+      "sha256": "ea80f05dd9d3c74ddbe7084c55435363cb99aa583c2ccdda5405a96af494c5eb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_006/PROCESS_RECEIPT.json",
+      "bytes": 30003,
+      "sha256": "35446558b4ccce918e046769ad8736f362e7019a4b8c1f82aaf78d0f908111ed"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_007/PROCESS_RECEIPT.json",
+      "bytes": 30008,
+      "sha256": "1585bd3ceb6af77cd5a8b415a1a0397491e194dfdb7d1499c895d24d8bd87620"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_008/PROCESS_RECEIPT.json",
+      "bytes": 23769,
+      "sha256": "8404de0fd08017c1318fb2a7761c3e1f2aec212d6b29ed2cc4c8189e83ed86a6"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_009/PROCESS_RECEIPT.json",
+      "bytes": 25807,
+      "sha256": "dde8cf27efab796985cc2ad8013256180cd0f54e70b9cfc230ff051eb9b5666e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_010/PROCESS_RECEIPT.json",
+      "bytes": 21653,
+      "sha256": "ee6b7207b005289532e19e0f934c4700d32f335751ad0bb84089782ac0587260"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_011/PROCESS_RECEIPT.json",
+      "bytes": 21696,
+      "sha256": "24dc66a258f562491313d950e9387839b17dfd32ce6a17e1e607eb0e7dd27d46"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_012/PROCESS_RECEIPT.json",
+      "bytes": 27973,
+      "sha256": "661b0f067ebe79ed4561cb872c0f9c69da7ba4874f7a46769cb7ba2b9a179d8b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_013/PROCESS_RECEIPT.json",
+      "bytes": 30031,
+      "sha256": "0af08e5bd000b24754639a6e3ac1cb6be833158a1d081c65ddfd5e97703724f7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_014/PROCESS_RECEIPT.json",
+      "bytes": 57229,
+      "sha256": "cd81733e31c8d58c7c5ce7669d6be7981bd26f088e4dbe97508ab7ba6e5ee65a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_015/PROCESS_RECEIPT.json",
+      "bytes": 21667,
+      "sha256": "d43a50ace84c3ac752c536c674c0e686ee2de222b788dfad965bffa36359cef2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_016/PROCESS_RECEIPT.json",
+      "bytes": 21678,
+      "sha256": "f1f13248c876c6c9cfa56d513ed6a0587b2105d5a6626533106c551c3455c550"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_017/PROCESS_RECEIPT.json",
+      "bytes": 21671,
+      "sha256": "e6331c923114bd5be05be93b3b2a89ac368b7a32bce0a02cf41c75090b659858"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_018/PROCESS_RECEIPT.json",
+      "bytes": 27875,
+      "sha256": "a69e5dbb9beac56200d39e6c5d89edd08f6f5aaaadd1fb2f76b8ae674d289106"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_019/PROCESS_RECEIPT.json",
+      "bytes": 21695,
+      "sha256": "1b763078f75caedc11946d3dce1a96e8093ee5a6a25390fca19b89705ec128b8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_020/PROCESS_RECEIPT.json",
+      "bytes": 25854,
+      "sha256": "cedf957c39f1f788beda5ebd0a082d54f83ba808f3f9ff01bd91ace2e45b7fcb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_021/PROCESS_RECEIPT.json",
+      "bytes": 25874,
+      "sha256": "6f70c970d1f4373fc1c3b67ae384daacbf50c906b36b9c0b56a82e5af4ccf882"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_022/PROCESS_RECEIPT.json",
+      "bytes": 36315,
+      "sha256": "d004ee6812409a2f5725796b0450bf00243ef6c3c060d1318d0a41a1188c034c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_023/PROCESS_RECEIPT.json",
+      "bytes": 17534,
+      "sha256": "d3112ee31694f47792ccca51d5aed44396de7fabca55fd983fdf1fa69923139f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_024/PROCESS_RECEIPT.json",
+      "bytes": 23796,
+      "sha256": "9d059cb31677d7f3481ccc9e4644b5c8c20fd918b5d4da778d31a93453a534d4"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_025/PROCESS_RECEIPT.json",
+      "bytes": 17532,
+      "sha256": "13439d7db1c6c3a716ded0307066d91217b9f9942af57552b4dd64d66db8dffa"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_026/PROCESS_RECEIPT.json",
+      "bytes": 32172,
+      "sha256": "bb74d88e188db251b2dff26763ece03f693e7dfc65d978c9d98bc50a4a383118"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_027/PROCESS_RECEIPT.json",
+      "bytes": 25854,
+      "sha256": "495402111f85108e4b39f220f6b8cc384931f155ef71ed67e9eb9c93b657a18f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_028/PROCESS_RECEIPT.json",
+      "bytes": 42562,
+      "sha256": "c444f81869f82714b98110050a07b4dbf379654e7a022ebc27e852f48f9f820b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_029/PROCESS_RECEIPT.json",
+      "bytes": 27971,
+      "sha256": "8067a610ad2276f164bd76ae884e96fe77ac1403aa09b290612c618d3ad4b177"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_030/PROCESS_RECEIPT.json",
+      "bytes": 30085,
+      "sha256": "1b7e0037d1dcc87270b14ddbefcd97488b8ad0b48f9e4a1f8789ae38b11258d3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_031/PROCESS_RECEIPT.json",
+      "bytes": 25876,
+      "sha256": "422f715e023e18374681577c345702c68cb592afb2e0a9d3d47e6246f8c4a9d7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_032/PROCESS_RECEIPT.json",
+      "bytes": 19590,
+      "sha256": "e16f48a0a4c82841d277c84d48b8ee24e23ee75d3ee33ef0a52d6b541acaeb22"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_033/PROCESS_RECEIPT.json",
+      "bytes": 17486,
+      "sha256": "6d61051d2061f953a5f8b217e6044f84933b68841efc84936ffcbd85a04e1b1e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_034/PROCESS_RECEIPT.json",
+      "bytes": 17512,
+      "sha256": "0d0179d2e731e2484af4bfb533f050dce5e4de9063899882d46f5896c047a7f2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_035/PROCESS_RECEIPT.json",
+      "bytes": 17498,
+      "sha256": "692b8d9376ae7feac1669a5f6d3cd9611dff4d2be1704f51472cb3619107c6a1"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_036/PROCESS_RECEIPT.json",
+      "bytes": 21680,
+      "sha256": "dc7faeb89c97ba4bba631124274854115c0f4199de5a14d0c54524ca1d9d1f50"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_037/PROCESS_RECEIPT.json",
+      "bytes": 17517,
+      "sha256": "8e1e164ec250029f5f415b59667d0804f455c2fc6d8fe259dd3384c2165520b8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_038/PROCESS_RECEIPT.json",
+      "bytes": 17512,
+      "sha256": "bd581911fe47cc3dfe4c57e73d45c1fe234d6b02ac06d026f67a2f6bacf2d37c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_039/PROCESS_RECEIPT.json",
+      "bytes": 23767,
+      "sha256": "edcf9d636ff0b06a5f32c131a423ef22682a7b17dce82629ce8cc3672b8065b2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_040/PROCESS_RECEIPT.json",
+      "bytes": 17570,
+      "sha256": "5511c1cf420f7e2149c2f633ab4162eb76191f86ed4a711812ef3d591b295099"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_041/PROCESS_RECEIPT.json",
+      "bytes": 21784,
+      "sha256": "62fa7445a849c623c64dc4162cd29bfafb72646fd07f1da776c8f18a98c3e0f9"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_042/PROCESS_RECEIPT.json",
+      "bytes": 25853,
+      "sha256": "aed316f4ce1e04f12f6e49bbd6b3219ff7dbd22a1802c275f295a976faf87d49"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_043/PROCESS_RECEIPT.json",
+      "bytes": 23764,
+      "sha256": "3a11d5200c904413b2f4ab4332262ac5f00e661c179dd227140078588d8221f3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_044/PROCESS_RECEIPT.json",
+      "bytes": 25826,
+      "sha256": "bd923f869e9ee164d845a47a49392ac066ebf8fd3fa3131d86fdb182d696fbc9"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_045/PROCESS_RECEIPT.json",
+      "bytes": 23811,
+      "sha256": "6a8ba7231215ca3a57723c69873580a53b5704ad3ed5460b8e77f4b64deb7e99"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_046/PROCESS_RECEIPT.json",
+      "bytes": 21664,
+      "sha256": "fa4aec12c1e1b58f8b2fd90380e69f06f6be75e0e3779301e5fea50640865d6f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_047/PROCESS_RECEIPT.json",
+      "bytes": 23793,
+      "sha256": "ddedcf91ddf77502ffaea3ff920c0ea728e364af398d623bec2ada8d4089914a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_048/PROCESS_RECEIPT.json",
+      "bytes": 25866,
+      "sha256": "668f1d9f253e010e997068027aeaf5fdeb27401216d13b0e136ab3dfc05b6dee"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_049/PROCESS_RECEIPT.json",
+      "bytes": 19591,
+      "sha256": "94e5559b03a3b4b068a97b90e40e3b309e6cbacaea473d02f6a794a24391e793"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_050/PROCESS_RECEIPT.json",
+      "bytes": 25830,
+      "sha256": "7fe0a06897cdbdb6f71c1522b83869aa4d9d6e01a6713a89b0ceb024dc730da7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_051/PROCESS_RECEIPT.json",
+      "bytes": 23759,
+      "sha256": "3e053e4b3eea20cc68849063ea02d0683a6480615e996bb4c01be2ad581b163a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_052/PROCESS_RECEIPT.json",
+      "bytes": 21755,
+      "sha256": "fa361e79f3a9d403a9a38452999429012f13e2f84504f4bac6d581a1047f2fc2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_053/PROCESS_RECEIPT.json",
+      "bytes": 23753,
+      "sha256": "25600af4613fa10565f1c6ad74c0d4a7b79476cc174d9a6f950ae11328df00a9"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_054/PROCESS_RECEIPT.json",
+      "bytes": 21709,
+      "sha256": "2a12823c4ada8722a98505857bc2231c53ce4738ff50012a1858056510721cd7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_055/PROCESS_RECEIPT.json",
+      "bytes": 23731,
+      "sha256": "3b090b398fc9b851e3fef65ae25c8e20bda64e51f719866f7679b3f7f6afcc19"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_056/PROCESS_RECEIPT.json",
+      "bytes": 21640,
+      "sha256": "6cbf69512479acb10a5eef930967e7eec04da83e0e3c5b51019f2875eb0caa11"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_057/PROCESS_RECEIPT.json",
+      "bytes": 21708,
+      "sha256": "c04f9925502201b094d52cc3b92f8c9fbe88be7fc4f90d1e9948a316fd86cf82"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_058/PROCESS_RECEIPT.json",
+      "bytes": 19642,
+      "sha256": "64ae9d87063b3121cb68aa478c7d78b6a71bbcd6f37af33e07cbf2095343724d"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_059/PROCESS_RECEIPT.json",
+      "bytes": 21709,
+      "sha256": "788ef60462ed929369b1ad0f0ac6216ed27b9cd0529161a871dc17bc275fa066"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_060/PROCESS_RECEIPT.json",
+      "bytes": 27897,
+      "sha256": "6792665f55b90cebeb296bf0a87e3fdee35a9d11da742b40e0c06a0a5afa4d52"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_061/PROCESS_RECEIPT.json",
+      "bytes": 19648,
+      "sha256": "e1c4c73051578656de50d2c20f250cbda5a3e58c249490e16d8a034164b4202b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_062/PROCESS_RECEIPT.json",
+      "bytes": 17505,
+      "sha256": "75a266157a51cb68635312b96b941324b3a8116a0e9f2ae6458deb9a530081bf"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_063/PROCESS_RECEIPT.json",
+      "bytes": 23798,
+      "sha256": "50b5bb6795b9147b97659f800bb976ba6335598826ba2f64eb510616c52df0cb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_064/PROCESS_RECEIPT.json",
+      "bytes": 30034,
+      "sha256": "410babfa7df0e0008fc8944a703d69869299c74278de4994b81affb9b9e22144"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_065/PROCESS_RECEIPT.json",
+      "bytes": 17505,
+      "sha256": "9a038e0addbd3707f47ee63d52d13729fc0db094b364e90c27c5cd82778a5421"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_066/PROCESS_RECEIPT.json",
+      "bytes": 19556,
+      "sha256": "07666a96dc666698cf54ca85319c1bccc13b7ff73a7bdc2bc8c1af64c346752c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_067/PROCESS_RECEIPT.json",
+      "bytes": 15423,
+      "sha256": "647bd0bd911e7c953f5e111ba19a3626906b807d15df4bff9f0d6c94412708d7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_068/PROCESS_RECEIPT.json",
+      "bytes": 17533,
+      "sha256": "d519b132d6f95e3afd7967af6d8c178b0630450374b3e46b930f969a5a6b8ecd"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_069/PROCESS_RECEIPT.json",
+      "bytes": 17534,
+      "sha256": "d4bfaeada3eb01a8d3ce8b37ad2db81dd8c0f0d941bf20f10416288af815547a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_070/PROCESS_RECEIPT.json",
+      "bytes": 19592,
+      "sha256": "c63aab7044dc1fe61a812697c79bbfa2bef305085afb2f895d0138003e23a9d0"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_071/PROCESS_RECEIPT.json",
+      "bytes": 19600,
+      "sha256": "c7491801037bc6e748ee99b639c96ee86bf1f0afab0b9742cb82d664ad47d88c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_072/PROCESS_RECEIPT.json",
+      "bytes": 19579,
+      "sha256": "930747a8f13711183d3c6e3c456f32b4c14d549f6c7aa2c67c49e7eb52e8c17f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_073/PROCESS_RECEIPT.json",
+      "bytes": 19586,
+      "sha256": "1ec9f8288681420cfc3cf2f230363e221af85f5ab4cc9bc669b03ca371a7fb6f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_074/PROCESS_RECEIPT.json",
+      "bytes": 23779,
+      "sha256": "c8e0579f3a49c44ce178c2c4c4427c9350f8e26a681bb0bacf761cd83b58a4b1"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_075/PROCESS_RECEIPT.json",
+      "bytes": 17533,
+      "sha256": "88dcfa2705b1b79288c5364ae29157fe20519d7413d4cf3df5ee6fc745eb100c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_076/PROCESS_RECEIPT.json",
+      "bytes": 21645,
+      "sha256": "6b7f15112e786244b1d006400c48107a3c884ff0a2db05b2c643e9cda2cbab80"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_077/PROCESS_RECEIPT.json",
+      "bytes": 17480,
+      "sha256": "c4ac6f38011310da457e0017b369456ca0dddff75c598410c0f7788b6e01e239"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_078/PROCESS_RECEIPT.json",
+      "bytes": 19627,
+      "sha256": "06507e03f0a07b6c082102a814898ba505d920bf605147520f7da5d0aedfe691"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_079/PROCESS_RECEIPT.json",
+      "bytes": 17510,
+      "sha256": "0c1d7a5ef2d497c0fc36766d30e7e0c42c15973fda4b31667f4ae1149c4d0dce"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_080/PROCESS_RECEIPT.json",
+      "bytes": 23749,
+      "sha256": "23794a2c593f621593fb3ce31e299d568e6d979996010661d83c05ba000f46e4"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_081/PROCESS_RECEIPT.json",
+      "bytes": 17483,
+      "sha256": "4f7d0b52429bba7ff7b613a941f254604c70abfafa7cf3307579fc80cfd13b1c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_082/PROCESS_RECEIPT.json",
+      "bytes": 17568,
+      "sha256": "919d4ba0ff603e196492a99a72ca370c5687cde443f08a1056c9ebb335a0c815"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_083/PROCESS_RECEIPT.json",
+      "bytes": 21684,
+      "sha256": "6d034e2fe5f94260af1726e6ab3b3838059c0321e05267a5ee1bd97a1bf477d4"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_084/PROCESS_RECEIPT.json",
+      "bytes": 23795,
+      "sha256": "8c4f762cb78ad5ff6392adf555b5fb0fac1c7119b9313fd8a0ca2d3010ffb972"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_085/PROCESS_RECEIPT.json",
+      "bytes": 21651,
+      "sha256": "5340b5c904694dbefb5466ee491aa28227561c3fe3a2856f8553421cc7dd71f4"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_086/PROCESS_RECEIPT.json",
+      "bytes": 17493,
+      "sha256": "880b50ccc43237b3a16a8eb7d2bd6c6edc39caa3d42f65ca4c67ec28ee969c43"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_087/PROCESS_RECEIPT.json",
+      "bytes": 23806,
+      "sha256": "46e53ffb90d38f414ef6efe1e2c9ad3129bc941a476063070f92f0ad50c286e2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_088/PROCESS_RECEIPT.json",
+      "bytes": 21707,
+      "sha256": "55a94bb9c9f2fb7d0d80cc43c873f68831d740c726abb62841a853fbec21a6ba"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_089/PROCESS_RECEIPT.json",
+      "bytes": 23809,
+      "sha256": "361639336e115b1b358fc1eea4e278086df4d70433368d87a9beac1afb44ca8d"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_090/PROCESS_RECEIPT.json",
+      "bytes": 19632,
+      "sha256": "1e7bef66e067d8196e27b63b3ee4f1e48d614d5245f624ace3813488ab9396c3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_091/PROCESS_RECEIPT.json",
+      "bytes": 23768,
+      "sha256": "250638376ca86c231a85643cc4ae29849004ba3af8addabbb03465bd15c5750f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_092/PROCESS_RECEIPT.json",
+      "bytes": 27905,
+      "sha256": "37b3322463a382d7f311f4d159d414981c11f14324688b6d4dc577da73b9a6bb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_093/PROCESS_RECEIPT.json",
+      "bytes": 23763,
+      "sha256": "6815b696f8f83a36faa5a49756e3d380a812a2792b986bac453c0a8847da75c3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_094/PROCESS_RECEIPT.json",
+      "bytes": 23791,
+      "sha256": "da2d9796d5babb51216ef7b7bc0272e2f9d2f59f40d6bf79fb6c726fc017dd83"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_095/PROCESS_RECEIPT.json",
+      "bytes": 19602,
+      "sha256": "8c0582691a1fbdd083d80bd0aee2959bbf5f3764a943505928cd89487ebb3d81"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_096/PROCESS_RECEIPT.json",
+      "bytes": 19568,
+      "sha256": "96e575987806b6cc80e804665a19d57b022ab8b3757e1651d35f90eed6cf5dcd"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_097/PROCESS_RECEIPT.json",
+      "bytes": 21724,
+      "sha256": "ebbfd4924c5a099e6b0c83ac930ab18ccec01129b4d9ef57d6fc73a68a314ef1"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_098/PROCESS_RECEIPT.json",
+      "bytes": 21773,
+      "sha256": "ab96a090ea1c9197c584d84f5b08316010f275e3c2dbd495006fd1f88ea4d0b5"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_099/PROCESS_RECEIPT.json",
+      "bytes": 19615,
+      "sha256": "127064404e7518b61db0fc21d809d47c4a28d4093ba116d97bd4f25a4dc86d50"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_100/PROCESS_RECEIPT.json",
+      "bytes": 23772,
+      "sha256": "1a86f6d3120f119c29ed45eab88fc30105b2532423ccd4d43482a8bfad33c803"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_101/PROCESS_RECEIPT.json",
+      "bytes": 19600,
+      "sha256": "3134e13e9ce048f1f6c2da5d1c35ebe4ba902ac703e570d32d1ad9b1fee07c37"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_102/PROCESS_RECEIPT.json",
+      "bytes": 21707,
+      "sha256": "3c9cf452e65bc7974cce8d29e8ffff90b13567fb047ca4f0dfb0f07fa48b0c14"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_103/PROCESS_RECEIPT.json",
+      "bytes": 23798,
+      "sha256": "0913559bfd68cb6ebed97a93163ca2e669421eaf96d358cc793b9a46699fb42f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_104/PROCESS_RECEIPT.json",
+      "bytes": 21678,
+      "sha256": "068311b9d23c77893585e91e79a39e211e0e89a9988723e4edf40a3f1dc1264a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_105/PROCESS_RECEIPT.json",
+      "bytes": 21701,
+      "sha256": "d202397178f888367729eaf19c66629b4fbced670a8b744fae91e328b26a9bbd"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_106/PROCESS_RECEIPT.json",
+      "bytes": 21755,
+      "sha256": "9d9265b57645884b24b80ae646b2b4446d2afbc63956be33ee2dc3b0db2c78f7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_107/PROCESS_RECEIPT.json",
+      "bytes": 21671,
+      "sha256": "8f1e69c0f572df4095eafc978d3d36e1d21848c29efcf8861d03939b6eb216d4"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_108/PROCESS_RECEIPT.json",
+      "bytes": 23782,
+      "sha256": "c357045c613c6fd851d39d9ffa591df8cf08900ff53496861b0aebc1c18424de"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_109/PROCESS_RECEIPT.json",
+      "bytes": 27975,
+      "sha256": "a2a973f132ca855c9fda688600a59adf4e3b2d54a20ddc03bfd060b15a0c4ca6"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_110/PROCESS_RECEIPT.json",
+      "bytes": 32133,
+      "sha256": "b9bd8dfea99f9d0a9125d25c30c336eb8a0d3cd2b99cd6328b35083773248740"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_111/PROCESS_RECEIPT.json",
+      "bytes": 30005,
+      "sha256": "9f8eb2b9e77be72b7bbc3e6b87b40e110e90be6e8ac9ce6e2af4860bd9bbe94f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_112/PROCESS_RECEIPT.json",
+      "bytes": 25925,
+      "sha256": "38a188b963d6d9039d196a908d12aea45ed368472ed00191a171d4bfb133dc2b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_113/PROCESS_RECEIPT.json",
+      "bytes": 25874,
+      "sha256": "8a08b572f6d1b7322c93083cf1ccd72123f444897767a808a7f67dd91a89cfae"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_114/PROCESS_RECEIPT.json",
+      "bytes": 36343,
+      "sha256": "16dd62ef1fab9bc44864ab732ab0e67b8473f03b860c36c091d6f869b2b632af"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_115/PROCESS_RECEIPT.json",
+      "bytes": 23780,
+      "sha256": "534c6d1480fe815b5b5c8f35ee806172ddd728fc84a91db58aa60edf507f7ac8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_116/PROCESS_RECEIPT.json",
+      "bytes": 27958,
+      "sha256": "bda25f256ac7a6333ed0c56c8acce3e127752af7c1712d743f63ef9f121d803c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_117/PROCESS_RECEIPT.json",
+      "bytes": 25880,
+      "sha256": "29f6012c2aef2e47813537c119e5713b7417cd8e6748f08bf0e87a300b49e99f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_118/PROCESS_RECEIPT.json",
+      "bytes": 21711,
+      "sha256": "58938aa9aa8113fa1ba78d6ae2f2ff4bce7e9e22e0fa65442d02efb04fe372e7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_119/PROCESS_RECEIPT.json",
+      "bytes": 27995,
+      "sha256": "c6cf420662a69c0f1b1e4cda8997be66e31602952d23a1698f1edf7a06402409"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_120/PROCESS_RECEIPT.json",
+      "bytes": 23784,
+      "sha256": "af2dea2ccaa8542cbb49855e6165f3520b4a3622fb137b2f6efd0036e40b1628"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_121/PROCESS_RECEIPT.json",
+      "bytes": 25864,
+      "sha256": "8bee6a3c7813634ae60875157bdb1e84c362a1ca0ef0ee17f290140d85a96b6e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_122/PROCESS_RECEIPT.json",
+      "bytes": 21707,
+      "sha256": "11a87ff0f7a10d7d29e50a26149075ff8e0aa035ff30922e76e91fcc3d475003"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_123/PROCESS_RECEIPT.json",
+      "bytes": 28019,
+      "sha256": "b56fb1e50f81842d712b66a05866b9aee389ba4791d2fb18c577baf52a9348e8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_124/PROCESS_RECEIPT.json",
+      "bytes": 19632,
+      "sha256": "ed4683b5d2851736541e874ac0ff47efa4a091d3cb032ee61f2c5d1413139424"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_125/PROCESS_RECEIPT.json",
+      "bytes": 25949,
+      "sha256": "8bf599db2561801a75435015931cc5c7219c46b861d1efb21877a9db1963dbbf"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_126/PROCESS_RECEIPT.json",
+      "bytes": 30062,
+      "sha256": "1b7c5407d6e9a9381c30291cb884838eeb2e76343af8698f37166fd60b29131d"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_127/PROCESS_RECEIPT.json",
+      "bytes": 17485,
+      "sha256": "075d158676360d3157fae9de180dae3df687a5c1fd92e354ee0ec1523a95175f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_128/PROCESS_RECEIPT.json",
+      "bytes": 23787,
+      "sha256": "f4a608fd0dfee2bdf9d934fb4a4c4c777f621a20ff22312354cbd57ef19e46e5"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_129/PROCESS_RECEIPT.json",
+      "bytes": 28040,
+      "sha256": "679f2f514c49aeddadef4a41e526654cb575bab7267d639cda88f98387cd8e83"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_130/PROCESS_RECEIPT.json",
+      "bytes": 23807,
+      "sha256": "3f9e7619c233df70ec3916f5a8378083cce978f1df6b32f19f51ae6baf881e14"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_131/PROCESS_RECEIPT.json",
+      "bytes": 23802,
+      "sha256": "0c20c32cee40544964ba4f703d1183db1afde49a1bc7734036d5b847c2d4d265"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_132/PROCESS_RECEIPT.json",
+      "bytes": 25910,
+      "sha256": "2f07256112aaa446d5807fb1710f39b6f81ad2306357a55ade2383fb3eb168a6"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_133/PROCESS_RECEIPT.json",
+      "bytes": 23799,
+      "sha256": "f5a988c9768ab578e676a15ee37964b8d396a27eef986ee6e7263c21956eb43c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_134/PROCESS_RECEIPT.json",
+      "bytes": 30087,
+      "sha256": "07b31ca1603abdaa076116ea8fe415bdc1026703233df421e29bc0dde352f78e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_135/PROCESS_RECEIPT.json",
+      "bytes": 21698,
+      "sha256": "1f000587936056d5279ae926e71a5b1cf6f130e0cc024c936920528287d98ea3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_136/PROCESS_RECEIPT.json",
+      "bytes": 23793,
+      "sha256": "c5cd4362323780336cadba0862c7564d524ef5b6ac674fa65caba756dc66ab81"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_137/PROCESS_RECEIPT.json",
+      "bytes": 21691,
+      "sha256": "6897296abe436b76953c52c8f7cb6b1c98b407a1c4167401e25bfefcf0a64826"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_138/PROCESS_RECEIPT.json",
+      "bytes": 21673,
+      "sha256": "a1f11daea25fc073e25d7666e07a7d0fcf4ba959c50064733b5dad16d2f36bac"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_139/PROCESS_RECEIPT.json",
+      "bytes": 25892,
+      "sha256": "cc9afdc45df7a76dbb5c7cf6cc9b2da2367a4311662ee91a787c45a6cea52d77"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_140/PROCESS_RECEIPT.json",
+      "bytes": 32203,
+      "sha256": "68a04873c95b0c1ff5ac374ea216bee7f4eb6147e491e5ec17658c459fbff552"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_141/PROCESS_RECEIPT.json",
+      "bytes": 23849,
+      "sha256": "4fae17c50dd8cc23adff374863f8a585b19fd31a82b5ea042c35ebc13a6b4e41"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_142/PROCESS_RECEIPT.json",
+      "bytes": 19670,
+      "sha256": "0cc1066a5dcbefcde0522ecd6dbbdf2ee6f11e7abe92b596f864d27faba0d513"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_143/PROCESS_RECEIPT.json",
+      "bytes": 19661,
+      "sha256": "ae20de6da0e98b7ba503180c2aa883dbe4ba297571dd801c98b304df9d6523f1"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_144/PROCESS_RECEIPT.json",
+      "bytes": 21709,
+      "sha256": "56ef85e819ca8ec0e4b5ca1fd61bb65eedf164bea71197d30ae9aaad96866a98"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_145/PROCESS_RECEIPT.json",
+      "bytes": 23782,
+      "sha256": "9a7a4da467ca05af97f16235ccc411f595984f687df0ec7fa1135258eaf0b8a5"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_146/PROCESS_RECEIPT.json",
+      "bytes": 23823,
+      "sha256": "7ca7c8e45ffe2cf7c492f104ce813fe151d9b3c0582e03b336bb0df6f589e48f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_147/PROCESS_RECEIPT.json",
+      "bytes": 25960,
+      "sha256": "f9f1fbcc5f6fb7a08d8caa19e2ecd304fa33c18111caf44f276bec835466bc56"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_148/PROCESS_RECEIPT.json",
+      "bytes": 25888,
+      "sha256": "7a8cbef0fdb561680f7884bce768f48baecb36276837fbabaa5c46a375504421"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_149/PROCESS_RECEIPT.json",
+      "bytes": 17546,
+      "sha256": "03407f0acfec9272a35dd38bc239d12ad814c711f8c8ce0637c3354389f20edb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_150/PROCESS_RECEIPT.json",
+      "bytes": 21737,
+      "sha256": "1cef28a368f07173c2520ebaf582912684505d5144077dba616348f198ff2a1c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_151/PROCESS_RECEIPT.json",
+      "bytes": 21711,
+      "sha256": "ddc1ef80a3ba28110bc24279094cdac8dddc8e48ddc80ab9740c09f6950e23a5"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_152/PROCESS_RECEIPT.json",
+      "bytes": 21728,
+      "sha256": "130ba2f27b1fd0fa057a030c10353478f143d15bd7a328845b186973e1abed1f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_153/PROCESS_RECEIPT.json",
+      "bytes": 19695,
+      "sha256": "8814b5160bc0cdd1ba885dec80e36737992fa03cba3400cd798563b0f3bb459d"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_154/PROCESS_RECEIPT.json",
+      "bytes": 30167,
+      "sha256": "ed423a513d6cc6bceeb7e000e3351b291575c2a085058331cc37708df0550a3a"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_155/PROCESS_RECEIPT.json",
+      "bytes": 23835,
+      "sha256": "c2736589f6994ad5d946e79d0b0ddb4419db5451fe97e128f0c0f0c4d61d3304"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_156/PROCESS_RECEIPT.json",
+      "bytes": 25911,
+      "sha256": "22435c11df417f88cd96a0f242141e384857b578546ef18c502ee7c61be8efae"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_157/PROCESS_RECEIPT.json",
+      "bytes": 21728,
+      "sha256": "d9501b20e9ad73afe9473b63babef67d5f8be110c0f13fe2fee8af9ac04da041"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_158/PROCESS_RECEIPT.json",
+      "bytes": 30076,
+      "sha256": "027559f97757d41328a30b22d6c422699d23aabdd709ae894c9c5d8be748406b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_159/PROCESS_RECEIPT.json",
+      "bytes": 30135,
+      "sha256": "d3cfc66723b3da40de8a32ca7fb38ad1418b52965344dafa7e2344955c84013e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_160/PROCESS_RECEIPT.json",
+      "bytes": 21739,
+      "sha256": "fa1d7c48f4d63f47ea5661550c32846bd95c3556c6882c7a8b692d7eb13c4a75"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_161/PROCESS_RECEIPT.json",
+      "bytes": 19621,
+      "sha256": "df3326e6e147865a5295e32e585ecdc127ea349bb0330a2c3f32662714bc5812"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_162/PROCESS_RECEIPT.json",
+      "bytes": 17596,
+      "sha256": "56f512b6ab9c1be401e52a8988d3ea3a3f70630152abd6925c94d919ea2d1e94"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_163/PROCESS_RECEIPT.json",
+      "bytes": 21733,
+      "sha256": "28a0c651e0476fe37fff4dc95f8c56680521e1d498dc1e814fd75034f5c16906"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_paper_html/PROCESS_RECEIPT.json",
+      "bytes": 9148,
+      "sha256": "589af09e0a27ed9a993de74199267524e69cb848191e291201ef626663ef66d6"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/fetch_public_source_and_checker_archive/PROCESS_RECEIPT.json",
+      "bytes": 11283,
+      "sha256": "65aebc149df549c4c9c4d87ff31add44ece3553da3e3826a4e9ca15e58f263c7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/initial_isolation_controls/PROCESS_RECEIPT.json",
+      "bytes": 9326,
+      "sha256": "bee4d30bdb2a7a239f8de0222b5bbf317956383937b917df4116f5019b7737a2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/offline_isolation_controls/PROCESS_RECEIPT.json",
+      "bytes": 9337,
+      "sha256": "c5b380f34499ff05ace9dedd25096628a1443193411ac556a91a048b29edf4b3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/origin_probe/PROCESS_RECEIPT.json",
+      "bytes": 45297,
+      "sha256": "0f465a47bfd8596e3745e2fa19d6f965dd729b46ae7d74036f270284b905be1c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/processes/restore_public_sources/PROCESS_RECEIPT.json",
+      "bytes": 9629,
+      "sha256": "672c262bce3ee000ef44d86ee34aa737993199a048d4c5f41d62b4cfd1d8f718"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_independent_process/PROCESS_RECEIPT.json",
+      "bytes": 89476,
+      "sha256": "25d328beba1c6776a02efcf9405608783e97b523e20c242582b83f684e4bf467"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_production_process/PROCESS_RECEIPT.json",
+      "bytes": 9910,
+      "sha256": "55b5271c51344045753438f986435b452e62681d4b9b28c06c22671d009286e7"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_independent_process/PROCESS_RECEIPT.json",
+      "bytes": 91546,
+      "sha256": "76a7627bf5d21eb6df7c1ff1e62b395aa5a59151065ea3e88aa8c62cc3dfae97"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_production_process/PROCESS_RECEIPT.json",
+      "bytes": 9555,
+      "sha256": "da869c3edbee020fba82ae4773c30b3991ba581df5cfa920506cb2cb461bf6f6"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/native/PROCESS_RECEIPT.json",
+      "bytes": 157095,
+      "sha256": "b7f7fdc71684a2d70ed9a5ebc0af2b86702f0229b4c21246b2d4a8571220388f"
+    }
+  ],
+  "owned_process_postflight": {
+    "pids": [
+      20261,
+      20272,
+      18056,
+      18080,
+      18136,
+      18166,
+      18184,
+      18193,
+      18213,
+      18228,
+      18243,
+      18256,
+      18266,
+      18275,
+      18321,
+      18334,
+      18361,
+      18373,
+      18388,
+      18397,
+      18421,
+      18432,
+      18443,
+      18454,
+      18470,
+      18477,
+      18490,
+      18497,
+      18513,
+      18525,
+      18550,
+      18563,
+      18615,
+      18626,
+      18634,
+      18641,
+      18653,
+      18660,
+      18672,
+      18679,
+      18686,
+      18696,
+      18704,
+      18715,
+      18727,
+      18737,
+      18748,
+      18789,
+      18798,
+      18808,
+      18819,
+      18827,
+      18838,
+      18849,
+      18858,
+      18868,
+      18877,
+      18887,
+      18898,
+      18907,
+      18915,
+      18925,
+      18938,
+      18946,
+      18953,
+      18964,
+      18978,
+      18985,
+      18993,
+      19000,
+      19011,
+      19018,
+      19028,
+      19036,
+      19044,
+      19052,
+      19062,
+      19069,
+      19080,
+      19087,
+      19097,
+      19104,
+      19114,
+      19121,
+      19128,
+      19137,
+      19147,
+      19156,
+      19163,
+      19175,
+      19184,
+      19194,
+      19202,
+      19212,
+      19224,
+      19235,
+      19245,
+      19255,
+      19263,
+      19272,
+      19281,
+      19291,
+      19301,
+      19310,
+      19319,
+      19329,
+      19338,
+      19347,
+      19358,
+      19367,
+      19377,
+      19391,
+      19408,
+      19421,
+      19434,
+      19518,
+      19540,
+      19550,
+      19564,
+      19579,
+      19588,
+      19632,
+      19642,
+      19684,
+      19695,
+      19708,
+      19716,
+      19729,
+      19753,
+      19760,
+      19771,
+      19783,
+      19793,
+      19805,
+      19816,
+      19828,
+      19841,
+      19850,
+      19860,
+      19870,
+      19879,
+      19892,
+      19939,
+      19949,
+      19957,
+      19965,
+      19975,
+      19985,
+      19995,
+      20008,
+      20019,
+      20026,
+      20037,
+      20079,
+      20088,
+      20096,
+      20109,
+      20119,
+      20130,
+      20139,
+      20154,
+      20167,
+      20210,
+      20218,
+      20227,
+      20238,
+      18052,
+      18049,
+      20256,
+      20276,
+      20243,
+      20380,
+      20377,
+      20474,
+      20471,
+      20279
+    ],
+    "groups": [
+      20261,
+      20272,
+      18056,
+      18080,
+      18136,
+      18166,
+      18184,
+      18193,
+      18213,
+      18228,
+      18243,
+      18256,
+      18266,
+      18275,
+      18321,
+      18334,
+      18361,
+      18373,
+      18388,
+      18397,
+      18421,
+      18432,
+      18443,
+      18454,
+      18470,
+      18477,
+      18490,
+      18497,
+      18513,
+      18525,
+      18550,
+      18563,
+      18615,
+      18626,
+      18634,
+      18641,
+      18653,
+      18660,
+      18672,
+      18679,
+      18686,
+      18696,
+      18704,
+      18715,
+      18727,
+      18737,
+      18748,
+      18789,
+      18798,
+      18808,
+      18819,
+      18827,
+      18838,
+      18849,
+      18858,
+      18868,
+      18877,
+      18887,
+      18898,
+      18907,
+      18915,
+      18925,
+      18938,
+      18946,
+      18953,
+      18964,
+      18978,
+      18985,
+      18993,
+      19000,
+      19011,
+      19018,
+      19028,
+      19036,
+      19044,
+      19052,
+      19062,
+      19069,
+      19080,
+      19087,
+      19097,
+      19104,
+      19114,
+      19121,
+      19128,
+      19137,
+      19147,
+      19156,
+      19163,
+      19175,
+      19184,
+      19194,
+      19202,
+      19212,
+      19224,
+      19235,
+      19245,
+      19255,
+      19263,
+      19272,
+      19281,
+      19291,
+      19301,
+      19310,
+      19319,
+      19329,
+      19338,
+      19347,
+      19358,
+      19367,
+      19377,
+      19391,
+      19408,
+      19421,
+      19434,
+      19518,
+      19540,
+      19550,
+      19564,
+      19579,
+      19588,
+      19632,
+      19642,
+      19684,
+      19695,
+      19708,
+      19716,
+      19729,
+      19753,
+      19760,
+      19771,
+      19783,
+      19793,
+      19805,
+      19816,
+      19828,
+      19841,
+      19850,
+      19860,
+      19870,
+      19879,
+      19892,
+      19939,
+      19949,
+      19957,
+      19965,
+      19975,
+      19985,
+      19995,
+      20008,
+      20019,
+      20026,
+      20037,
+      20079,
+      20088,
+      20096,
+      20109,
+      20119,
+      20130,
+      20139,
+      20154,
+      20167,
+      20210,
+      20218,
+      20227,
+      20238,
+      18052,
+      18049,
+      20256,
+      20276,
+      20243,
+      20380,
+      20377,
+      20474,
+      20471,
+      20279
+    ],
+    "remaining": [],
+    "checked_utc": "2026-10-20T21:59:31.553141+00:00"
+  },
+  "preserved": [
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/FIRST_ATTEMPT_FREEZE.json",
+        "bytes": 90912,
+        "sha256": "4ef95f8b4e26a267f504de902085f60063a333fc91245c098cac119f2780f492"
+      },
+      "verified_files": 302
+    },
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/attempt_02/RESULT_MANIFEST.json",
+        "bytes": 125458,
+        "sha256": "7fe5b2c816f792fdc5a7fcffa8e551cef4cce8b6588b27f84badc61cb93c1783"
+      },
+      "verified_files": 403
+    },
+    {
+      "manifest": {
+        "path": "origin:producer-workspace/public_regeneration_01/RESULT_MANIFEST.json",
+        "bytes": 438130,
+        "sha256": "6691dd37bf06322b7aa1e9f06e51e14ebddf4bd276abaac3078a04d69458be66"
+      },
+      "verified_files": 1389
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/IMPLEMENTATION_FREEZE.json",
+        "bytes": 531761,
+        "sha256": "0d22c96845673dadb15ad88f9092b395a134bb3ba889b10c319fc6e0fb4f3610"
+      },
+      "verified_files": 1290
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/focused_qualification_01/RESULT_MANIFEST.json",
+        "bytes": 516894,
+        "sha256": "67561a1a3b882c71858cbbab075c762f55107840938d47b54b32a6a1dc092acb"
+      },
+      "verified_files": 1245
+    },
+    {
+      "manifest": {
+        "path": "origin:kit-workspace/qualification_01/FROZEN_LAUNCHER.json",
+        "bytes": 6540,
+        "sha256": "d86efb5e7c1aba6387ceb2f8003727d295a4cfc2d4a3fe9877c8df07fa88419f"
+      },
+      "verified_files": 19
+    }
+  ],
+  "exact_distributed_controls": [
+    {
+      "name": "launch_public.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/launch_public.py",
+        "bytes": 23503,
+        "sha256": "e372f40d691fff33f5964ed594630ab562434cc345c2f256dd06568c8e1787b5"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/launch_public.py",
+        "bytes": 23503,
+        "sha256": "e372f40d691fff33f5964ed594630ab562434cc345c2f256dd06568c8e1787b5"
+      }
+    },
+    {
+      "name": "fetch_one.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/fetch_one.py",
+        "bytes": 5566,
+        "sha256": "34ab0cb06ec503c888fb3a347f75f8078356c225e1e3f8079fa447a17d15048f"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/fetch_one.py",
+        "bytes": 5566,
+        "sha256": "34ab0cb06ec503c888fb3a347f75f8078356c225e1e3f8079fa447a17d15048f"
+      }
+    },
+    {
+      "name": "public_payload.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/public_payload.py",
+        "bytes": 7433,
+        "sha256": "6b263ca7ef1e62948ee0bca2e5a54256779134e8d44592260892a38b9b08244b"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/public_payload.py",
+        "bytes": 7433,
+        "sha256": "6b263ca7ef1e62948ee0bca2e5a54256779134e8d44592260892a38b9b08244b"
+      }
+    },
+    {
+      "name": "OriginProbe.java",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/OriginProbe.java",
+        "bytes": 729,
+        "sha256": "09a83142dcd24d5a2e310e1d1ea4bd47c54360977702e600327d580e3d390ff9"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/OriginProbe.java",
+        "bytes": 729,
+        "sha256": "09a83142dcd24d5a2e310e1d1ea4bd47c54360977702e600327d580e3d390ff9"
+      }
+    },
+    {
+      "name": "qualify_isolation.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/qualify_isolation.py",
+        "bytes": 540,
+        "sha256": "0a1e03009e98223a6e69903520e6764b1d5c1847bd07ed08fcd71444889a4a0f"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/qualify_isolation.py",
+        "bytes": 540,
+        "sha256": "0a1e03009e98223a6e69903520e6764b1d5c1847bd07ed08fcd71444889a4a0f"
+      }
+    },
+    {
+      "name": "qualify_public_guards.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/qualify_public_guards.py",
+        "bytes": 8050,
+        "sha256": "f304dc28fee1d35c6773ed2a01fd01cdec7a0cbdcf4358e323166a90f1c7a151"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/qualify_public_guards.py",
+        "bytes": 8050,
+        "sha256": "f304dc28fee1d35c6773ed2a01fd01cdec7a0cbdcf4358e323166a90f1c7a151"
+      }
+    },
+    {
+      "name": "bootstrap/dispatch.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/bootstrap/dispatch.py",
+        "bytes": 31072,
+        "sha256": "380c45269a1815141fd326651b22373d4d3c57c9277ae5e882991f95bc3eccc9"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/bootstrap/dispatch.py",
+        "bytes": 31072,
+        "sha256": "380c45269a1815141fd326651b22373d4d3c57c9277ae5e882991f95bc3eccc9"
+      }
+    },
+    {
+      "name": "bootstrap/bounded_process.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/bootstrap/bounded_process.py",
+        "bytes": 19294,
+        "sha256": "ee08963ad88b0259c744cbed732f339536fd504a89342c5e661449ffc0e367c9"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/bootstrap/bounded_process.py",
+        "bytes": 19294,
+        "sha256": "ee08963ad88b0259c744cbed732f339536fd504a89342c5e661449ffc0e367c9"
+      }
+    },
+    {
+      "name": "bootstrap/owned_process.py",
+      "distributed": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/regenerate/bootstrap/owned_process.py",
+        "bytes": 11011,
+        "sha256": "20ce5ef1912afd9ff144a9c4c102d347e09e5006596372d38bd3e05ad3b57596"
+      },
+      "executed": {
+        "path": "origin:kit-workspace/qualification_01/bootstrap/owned_process.py",
+        "bytes": 11011,
+        "sha256": "20ce5ef1912afd9ff144a9c4c102d347e09e5006596372d38bd3e05ad3b57596"
+      }
+    }
+  ],
+  "unchanged_package_manifest": {
+    "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+  },
+  "historical_parity": [
+    {
+      "arm": "native",
+      "model_equal_except_input_path": true,
+      "old_input_path": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+      "new_input_path": "origin:kit-workspace/qualification_01/restored/sources/lift__trivial_1.spectra",
+      "old_model": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/native/model.json",
+        "bytes": 108592,
+        "sha256": "b5af3442133dd4a0ea78673d31c4cf14cd281d24d5c32f6a99a464b0e89d77b1"
+      },
+      "new_model": {
+        "path": "origin:kit-workspace/qualification_01/run_01/native/model.json",
+        "bytes": 108613,
+        "sha256": "954f2105f2d52d6c5e9de3bd7e77a5118d220c0492f5632bfccf187528771d7a"
+      },
+      "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+      "old_graph": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/native/controller.json",
+        "bytes": 860323,
+        "sha256": "10f2f3ce6219f451650a0e85fde2ab9e7c2e2df5b7e75277e70759f463670357"
+      },
+      "new_graph": {
+        "path": "origin:kit-workspace/qualification_01/run_01/native/controller.json",
+        "bytes": 860323,
+        "sha256": "6a7eb2017dd493232debe8c9d123853a403392abccc0ee5dc21cd746181c17fa"
+      },
+      "BDD_files": 20,
+      "old_BDDs": {
+        "solver_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/solver_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "original_rhoE.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_rhoE.bdd",
+          "bytes": 946,
+          "sha256": "0c17b84e33952d98988899c10b23539579984fd18806bb00e106fa53ea4a3599"
+        },
+        "original_rhoS.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_rhoS.bdd",
+          "bytes": 3618,
+          "sha256": "c7ab11075c578f9071302f8fd93dc494110ed46a70fc1af962f55f2f4c01e368"
+        },
+        "final_region.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/final_region.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "preconstructor_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/preconstructor_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "original_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "preconstructor_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/preconstructor_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "preconstructor_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/preconstructor_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "original_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "preconstructor_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/preconstructor_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain_ENV_next.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/domain_ENV_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "original_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/domain.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "domain_SYS_next.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/domain_SYS_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "solver_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/solver_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "solver_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/solver_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_thetaE.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_thetaE.bdd",
+          "bytes": 99,
+          "sha256": "7b34b127b6273ead0e06fd9a231bcd20400050405ff8aa71164eee81a4adbe24"
+        },
+        "original_thetaS.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/original_thetaS.bdd",
+          "bytes": 134,
+          "sha256": "cba35bd2ca071d01d8b68a66408e6588ead110c8ac664679a1c6660b428a6414"
+        },
+        "solver_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/native/solver_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        }
+      },
+      "new_BDDs": {
+        "solver_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/solver_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "original_rhoE.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_rhoE.bdd",
+          "bytes": 946,
+          "sha256": "0c17b84e33952d98988899c10b23539579984fd18806bb00e106fa53ea4a3599"
+        },
+        "original_rhoS.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_rhoS.bdd",
+          "bytes": 3618,
+          "sha256": "c7ab11075c578f9071302f8fd93dc494110ed46a70fc1af962f55f2f4c01e368"
+        },
+        "final_region.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/final_region.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "preconstructor_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/preconstructor_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "original_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "preconstructor_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/preconstructor_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "preconstructor_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/preconstructor_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "original_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "preconstructor_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/preconstructor_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain_ENV_next.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/domain_ENV_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "original_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/domain.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "domain_SYS_next.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/domain_SYS_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "solver_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/solver_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "solver_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/solver_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_thetaE.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_thetaE.bdd",
+          "bytes": 99,
+          "sha256": "7b34b127b6273ead0e06fd9a231bcd20400050405ff8aa71164eee81a4adbe24"
+        },
+        "original_thetaS.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/original_thetaS.bdd",
+          "bytes": 134,
+          "sha256": "cba35bd2ca071d01d8b68a66408e6588ead110c8ac664679a1c6660b428a6414"
+        },
+        "solver_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/native/solver_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        }
+      },
+      "printer_equal": true,
+      "old_printer": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/native/controller.txt",
+        "bytes": 248315,
+        "sha256": "6b183b4cef92c1f71828a6b353add98e125c8d09ee83043532b9a652553d3514"
+      },
+      "new_printer": {
+        "path": "origin:kit-workspace/qualification_01/run_01/native/controller.txt",
+        "bytes": 248315,
+        "sha256": "6b183b4cef92c1f71828a6b353add98e125c8d09ee83043532b9a652553d3514"
+      }
+    },
+    {
+      "arm": "variant",
+      "model_equal_except_input_path": true,
+      "old_input_path": "origin:producer-workspace/public_regeneration_01/restored/sources/lift__trivial_1.spectra",
+      "new_input_path": "origin:kit-workspace/qualification_01/restored/sources/lift__trivial_1.spectra",
+      "old_model": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/model.json",
+        "bytes": 108592,
+        "sha256": "b5af3442133dd4a0ea78673d31c4cf14cd281d24d5c32f6a99a464b0e89d77b1"
+      },
+      "new_model": {
+        "path": "origin:kit-workspace/qualification_01/run_01/variant/model.json",
+        "bytes": 108613,
+        "sha256": "954f2105f2d52d6c5e9de3bd7e77a5118d220c0492f5632bfccf187528771d7a"
+      },
+      "complete_graph_equal_except_two_object_identities_and_verified_model_hash": true,
+      "old_graph": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/controller.json",
+        "bytes": 843906,
+        "sha256": "6f2321b95b331b13af90338086155d502038ea90c0cd0f2526f9284be49437f6"
+      },
+      "new_graph": {
+        "path": "origin:kit-workspace/qualification_01/run_01/variant/controller.json",
+        "bytes": 843906,
+        "sha256": "116c9f3900ce7adf954f1f6f94120cbf1c2ae3ab59c0003614b47bd29b9af382"
+      },
+      "BDD_files": 21,
+      "old_BDDs": {
+        "solver_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/solver_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "original_rhoE.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_rhoE.bdd",
+          "bytes": 946,
+          "sha256": "0c17b84e33952d98988899c10b23539579984fd18806bb00e106fa53ea4a3599"
+        },
+        "original_rhoS.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_rhoS.bdd",
+          "bytes": 3618,
+          "sha256": "c7ab11075c578f9071302f8fd93dc494110ed46a70fc1af962f55f2f4c01e368"
+        },
+        "final_region.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/final_region.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "preconstructor_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/preconstructor_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "original_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "preconstructor_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/preconstructor_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "preconstructor_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/preconstructor_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "original_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "preconstructor_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/preconstructor_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain_ENV_next.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/domain_ENV_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "original_ENV_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/domain.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "domain_SYS_next.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/domain_SYS_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "solver_SYS_justice_2.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/solver_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "solver_SYS_justice_0.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/solver_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_thetaE.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_thetaE.bdd",
+          "bytes": 99,
+          "sha256": "7b34b127b6273ead0e06fd9a231bcd20400050405ff8aa71164eee81a4adbe24"
+        },
+        "original_thetaS.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/original_thetaS.bdd",
+          "bytes": 134,
+          "sha256": "cba35bd2ca071d01d8b68a66408e6588ead110c8ac664679a1c6660b428a6414"
+        },
+        "selection_preference.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/selection_preference.bdd",
+          "bytes": 132,
+          "sha256": "e030f5334fec29fe619db93d2e4aaa213bc63cb0f51d7e3c7064cd6a4552a7e7"
+        },
+        "solver_SYS_justice_1.bdd": {
+          "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/solver_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        }
+      },
+      "new_BDDs": {
+        "solver_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/solver_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "original_rhoE.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_rhoE.bdd",
+          "bytes": 946,
+          "sha256": "0c17b84e33952d98988899c10b23539579984fd18806bb00e106fa53ea4a3599"
+        },
+        "original_rhoS.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_rhoS.bdd",
+          "bytes": 3618,
+          "sha256": "c7ab11075c578f9071302f8fd93dc494110ed46a70fc1af962f55f2f4c01e368"
+        },
+        "final_region.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/final_region.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "preconstructor_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/preconstructor_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "original_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        },
+        "preconstructor_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/preconstructor_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "preconstructor_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/preconstructor_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "original_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "preconstructor_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/preconstructor_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain_ENV_next.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/domain_ENV_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "original_ENV_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_ENV_justice_0.bdd",
+          "bytes": 69,
+          "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+        },
+        "domain.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/domain.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "domain_SYS_next.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/domain_SYS_next.bdd",
+          "bytes": 4,
+          "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+        },
+        "solver_SYS_justice_2.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/solver_SYS_justice_2.bdd",
+          "bytes": 70,
+          "sha256": "b8fe9da5ac6ecab750b3f934e97a3cab4590ee5203c6478a50f8942f4f372677"
+        },
+        "solver_SYS_justice_0.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/solver_SYS_justice_0.bdd",
+          "bytes": 70,
+          "sha256": "6350b1cbda16d56e7265f91ecd196ef557ace0047e6e40e13d6d6a58b406820e"
+        },
+        "original_thetaE.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_thetaE.bdd",
+          "bytes": 99,
+          "sha256": "7b34b127b6273ead0e06fd9a231bcd20400050405ff8aa71164eee81a4adbe24"
+        },
+        "original_thetaS.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/original_thetaS.bdd",
+          "bytes": 134,
+          "sha256": "cba35bd2ca071d01d8b68a66408e6588ead110c8ac664679a1c6660b428a6414"
+        },
+        "selection_preference.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/selection_preference.bdd",
+          "bytes": 132,
+          "sha256": "e030f5334fec29fe619db93d2e4aaa213bc63cb0f51d7e3c7064cd6a4552a7e7"
+        },
+        "solver_SYS_justice_1.bdd": {
+          "path": "origin:kit-workspace/qualification_01/run_01/variant/solver_SYS_justice_1.bdd",
+          "bytes": 70,
+          "sha256": "450b3535cf7e44c895bd21c350b596af414e4b1941501c7686c9300d691ccecb"
+        }
+      },
+      "printer_equal": true,
+      "old_printer": {
+        "path": "origin:producer-workspace/public_regeneration_01/run_01/variant/controller.txt",
+        "bytes": 243531,
+        "sha256": "2a9be84c7296c5f9283f327e42484decf157669aa59ac871bd8138c1e21403ec"
+      },
+      "new_printer": {
+        "path": "origin:kit-workspace/qualification_01/run_01/variant/controller.txt",
+        "bytes": 243531,
+        "sha256": "2a9be84c7296c5f9283f327e42484decf157669aa59ac871bd8138c1e21403ec"
+      }
+    }
+  ],
+  "baseline": {
+    "strict": true,
+    "cooperative": false,
+    "original_states": 154,
+    "original_edges": 1170
+  },
+  "variant": {
+    "strict": true,
+    "cooperative": true,
+    "original_states": 154,
+    "original_edges": 1176
+  },
+  "mode": "Separate read-only comparison after all scientific subprocesses ended. No historical scientific inputs were provided to the native launcher or child checks.",
+  "claim": "Exact anonymous distributed launcher copy and generated configuration ran once under the pinned installed host runtime; bootstrap package itself was not fetched from public hosting by this qualification.",
+  "finished_utc": "2026-10-20T21:59:32.925714+00:00"
+}

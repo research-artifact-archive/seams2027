@@ -1,0 +1,197 @@
+{
+  "status": "PASS",
+  "released_classes": {
+    "net.sf.javabdd.JTLVJavaFactory": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.SpectraRuntimeModule": "file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.SpectraStandaloneSetup": "file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.bddgenerator.BDDGenerator": "file:origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gameinput.kind.PitermanSyntacticReduction": "file:origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gameinputtrans.translator.DefaultTranslators": "file:origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gameinputtrans.translator.StateInvTranslator": "file:origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gamemodel.GameModel": "file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gamemodel.PlayerModule": "file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.gamemodel.util.PitermanSemanticReduction": "file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.GameSolver": "file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.gr1.GR1Game": "file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.gr1.GR1SeparatedGame": "file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.jtlv.BDDPackage": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.jtlv.CoreUtil": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.jtlv.Env": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.parser.antlr.SpectraParser": "file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.spectragameinput.SpectraInputProvider": "file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE": "file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.spectragameinput.translator.Spectra2GameInputTranslator": "file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+    "net.sf.javabdd.BDDFactory": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "net.sf.javabdd.BDDFactory$GCStats": "file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.gr1.GR1ConceteControllerConstructionSkip": "file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.gr1.GR1Memory": "file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.gr1.GR1RankInfo": "file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.controller.enumerate.EnumStrategyImpl": "file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.controller.enumerate.EnumStateI": "file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+    "tau.smlab.syntech.games.controller.enumerate.printers.SimpleTextPrinter": "file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar"
+  },
+  "custom_classes": {
+    "PairedContinuationDiagnostic": "file:origin:kit-workspace/qualification_01/build/classes/",
+    "PairedContinuationDiagnostic$InvariantMismatch": "file:origin:kit-workspace/qualification_01/build/classes/",
+    "PairedContinuationDiagnostic$1": "file:origin:kit-workspace/qualification_01/build/classes/",
+    "PairedContinuationDiagnostic$UnsupportedDomain": "file:origin:kit-workspace/qualification_01/build/classes/",
+    "PairedContinuationDiagnostic$ValidationLogWatch": "file:origin:kit-workspace/qualification_01/build/classes/",
+    "tau.smlab.syntech.games.gr1.GR1ContinuationPreferenceConstruction": "file:origin:kit-workspace/qualification_01/build/classes/"
+  },
+  "complete_log": {
+    "path": "origin:kit-workspace/qualification_01/run_01/native_class_load.log",
+    "bytes": 930302,
+    "sha256": "46e7047d00a33be8402c1d14eee39bf159bd0574ec7c70efe22d1e0d90358709"
+  },
+  "producer_class_identities": [
+    {
+      "class": "net.sf.javabdd.BDDFactory",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "3d7270dfdad706a54a7f7697b3792a0e6e06fa4ba65c5b44516dfcd099ae84b1"
+    },
+    {
+      "class": "net.sf.javabdd.BDDFactory$GCStats",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "6a8b22052c447d09dea77766b7e38b18acecafda92cde565e7eb4fcc01d8c840"
+    },
+    {
+      "class": "net.sf.javabdd.JTLVJavaFactory",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "2b40dc25900931fcc92697bae1bde527f0920258e17993baa56513c0089a8763"
+    },
+    {
+      "class": "tau.smlab.syntech.SpectraRuntimeModule",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "1eb7a4f0a0d9015ebb91190ae30bd30b8c34a2ad37c14057160c055f2165fd47"
+    },
+    {
+      "class": "tau.smlab.syntech.SpectraStandaloneSetup",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "9f54c81e4dfae8742d278cf3dc8c032e86c7bc801ee2b2c139797901ca3022db"
+    },
+    {
+      "class": "tau.smlab.syntech.bddgenerator.BDDGenerator",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "34b92e4ce73e572aed7900015772e4ac55600c4ba91549e39c2f38ae481f92ff"
+    },
+    {
+      "class": "tau.smlab.syntech.gameinput.kind.PitermanSyntacticReduction",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "07653479c3d5d3ecbef32d66fce58edfd4103928858434327ce5e25913c4b466"
+    },
+    {
+      "class": "tau.smlab.syntech.gameinputtrans.translator.DefaultTranslators",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "472c0180c4d06a0d3a32a6940070fa22c1fc002fff119dcd573127b786f4d355"
+    },
+    {
+      "class": "tau.smlab.syntech.gameinputtrans.translator.StateInvTranslator",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "2017d9d879dcdb92f0aaf93b3149805c17c1506bb259a7f28b8b16c6a9065837"
+    },
+    {
+      "class": "tau.smlab.syntech.gamemodel.GameModel",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "684df9f570a6e82be8b69ce1d04816b2909f47621d8436cef73f821c6f295b6a"
+    },
+    {
+      "class": "tau.smlab.syntech.gamemodel.PlayerModule",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "15f8d253db1d0c4669e1836108af15706849722d79530e641f43774748b7f3b2"
+    },
+    {
+      "class": "tau.smlab.syntech.gamemodel.util.PitermanSemanticReduction",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "b6ad1e5c1259e7615ad0687fee7934f592c3061e5fac31ea8332594adc12905e"
+    },
+    {
+      "class": "tau.smlab.syntech.games.GameSolver",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "d78334a06b4406ada831515165ade57a96d2dd02c55ee8f4898eb37835a61d7e"
+    },
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1Game",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "c070dbfa62fd2ffd93717a9512d553b8e262c5a7c89deac85795396cfa3bfafc"
+    },
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1SeparatedGame",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "6ce9b49dc638e4b03de10662c5dcd28ef470019f25cb7e2151afac77d0d7b502"
+    },
+    {
+      "class": "tau.smlab.syntech.jtlv.BDDPackage",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "52641c95396850f74941c473883ebc84dc079637dfca4420b79bd7a24f8b47a7"
+    },
+    {
+      "class": "tau.smlab.syntech.jtlv.CoreUtil",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "a2efe86a158f4c4e6424c14d691e36e484c30fdf0f3b0c86fbf212241f9f24da"
+    },
+    {
+      "class": "tau.smlab.syntech.jtlv.Env",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "f95b0b4e5c3b480a3556674731b461e2fde8ec290eae03d2b1a17630a914484a"
+    },
+    {
+      "class": "tau.smlab.syntech.parser.antlr.SpectraParser",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "c18ec26323d6dcaebc4f287852f484596feb0187046503927153a542b1ad907e"
+    },
+    {
+      "class": "tau.smlab.syntech.spectragameinput.SpectraInputProvider",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "060f0da06f5019a5e0c0ab70b3d518c279a409a652b5f541aeb819822fa49870"
+    },
+    {
+      "class": "tau.smlab.syntech.spectragameinput.SpectraInputProviderNoIDE",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "79021a0c02e1191457961e363e5bcd75099337df3da520b208f94d5a8cce2d73"
+    },
+    {
+      "class": "tau.smlab.syntech.spectragameinput.translator.Spectra2GameInputTranslator",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "1b461eef47c5c7c0c039234028562048aebed843840d515ec8bca178a7699b5f"
+    }
+  ],
+  "producer_extractor_printer_origins": [
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1ConceteControllerConstructionSkip",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "34cdae8f0f46977f1a9674761489b87224a55f2e237828cf31887d77b51ab721"
+    },
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1Memory",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "aa46fcee8299187145a9872aa6abea4a3d1a7bed09563e93cf9a13259e557da9"
+    },
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1RankInfo",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "bb1842730872b5d7c7dcf10442b4c4d40fedcea8cbf2826ca1998982c82341ed"
+    },
+    {
+      "class": "tau.smlab.syntech.games.controller.enumerate.EnumStrategyImpl",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "e0890e05a63c24d9009ea2af8e511dc0882a1351c4fcec785de82424ce1867de"
+    },
+    {
+      "class": "tau.smlab.syntech.games.controller.enumerate.EnumStateI",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "623554693f0306005c99148c16775b7f72d1ec917070c47458623a14743b31ef"
+    },
+    {
+      "class": "tau.smlab.syntech.games.controller.enumerate.printers.SimpleTextPrinter",
+      "code_source": "(file:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar <no signer certificates>)",
+      "class_sha256": "4b9f6e9990f18e482a1848afc61836ff90ba4cde6e167493f08b50e8e5a957f7"
+    }
+  ],
+  "experimental_class_identities": [
+    {
+      "class": "tau.smlab.syntech.games.gr1.GR1ContinuationPreferenceConstruction",
+      "code_source": "(file:origin:kit-workspace/qualification_01/build/classes/ <no signer certificates>)",
+      "class_sha256": "5a4e4032c71ec61e0a457e0efbd65dff94f93be7beaafcd242088ea9cd02437b"
+    }
+  ]
+}

@@ -1,0 +1,3145 @@
+{
+  "status": "PASS_ALL_165_FRESH_PUBLIC_PAYLOAD_REQUESTS",
+  "initial_payload_requests": 165,
+  "http_get_attempts_including_redirects": 165,
+  "requests": [
+    {
+      "id": "public_source_and_checker_archive",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_public_source_and_checker_archive/PROCESS_RECEIPT.json",
+        "bytes": 11283,
+        "sha256": "65aebc149df549c4c9c4d87ff31add44ece3553da3e3826a4e9ca15e58f263c7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/downloads/source-package.zip",
+        "bytes": 2986678,
+        "sha256": "64ba40d58edd2b5b04a7583c4e5ee32fe184b9d5c264026201fcfa5b4b747d07"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_public_source_and_checker_archive/FETCH_RECEIPT.json",
+        "bytes": 1380,
+        "sha256": "fbff4ee1ee32fbe84de95eb23533a119656104fe7df0dd17930ba1b045fe2e68"
+      }
+    },
+    {
+      "id": "jar_001",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_001/PROCESS_RECEIPT.json",
+        "bytes": 36269,
+        "sha256": "641ec8f199aeddf6a67fd9d3c00cf501e1391ad6a13fc5d96f147bb49294b713"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/001_tau.smlab.syntech.Spectra.ide_1.0.0.202402072123.jar",
+        "bytes": 188522,
+        "sha256": "bd8544cb3d24f068ed1180c22203d39aec2cdd565f625231955aa00d539d491c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_001/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "f105d1279d9450854beac56f32af36992bf9c60f4e8c5c3ef44c7bf40210b26b"
+      }
+    },
+    {
+      "id": "jar_002",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_002/PROCESS_RECEIPT.json",
+        "bytes": 34144,
+        "sha256": "05aad126f204d02f8f8eb5351574686569d061436388edf392e9e5d6500a044a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/002_tau.smlab.syntech.Spectra.ui_1.0.0.202402072123.jar",
+        "bytes": 125574,
+        "sha256": "28b31920299d5e0121a59dda841d6a97219f791b19dd7deb722dc397c76a159e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_002/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "06d05155f7a2979595d6f5780605aa31245a81dd8657681506b8e77a0f2eaa6a"
+      }
+    },
+    {
+      "id": "jar_003",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_003/PROCESS_RECEIPT.json",
+        "bytes": 55048,
+        "sha256": "3f60520354ed801b3cbfa27b8165dc087debd2b4aa62a45f2db588a16cd3de75"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar",
+        "bytes": 1143054,
+        "sha256": "de3a932c05592036b4857392a2b907247b5b4ba10bb69df1558e151c144a1ac1"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_003/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "7e527a18b355334aa9b36e88e7be737d7f0b20ad77e7e6a2b2e134682a2f0d09"
+      }
+    },
+    {
+      "id": "jar_004",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_004/PROCESS_RECEIPT.json",
+        "bytes": 34170,
+        "sha256": "e47202dee5efca07e14664aa628102ecf67a1012fc5853071f94970373c80d6f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar",
+        "bytes": 270556,
+        "sha256": "e29596085fb5a8b726f3debded875c80c01fc03291bcf8fab2af0673ae331e3e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_004/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "4e91b1f2a77518b25c6ad7c7ad46b5c00a74f06246a64ea791239a941f5c8b16"
+      }
+    },
+    {
+      "id": "jar_005",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_005/PROCESS_RECEIPT.json",
+        "bytes": 21653,
+        "sha256": "ea80f05dd9d3c74ddbe7084c55435363cb99aa583c2ccdda5405a96af494c5eb"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/005_tau.smlab.syntech.checks_1.0.0.202402072123.jar",
+        "bytes": 46966,
+        "sha256": "678e601803afd06da8f7688fde179fb4e9b43929d1f634feef345aea15a45698"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_005/FETCH_RECEIPT.json",
+        "bytes": 1238,
+        "sha256": "6609d9267e787cb144f8151b59bece1cda40057fb228d670d77f139980faba40"
+      }
+    },
+    {
+      "id": "jar_006",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_006/PROCESS_RECEIPT.json",
+        "bytes": 30003,
+        "sha256": "35446558b4ccce918e046769ad8736f362e7019a4b8c1f82aaf78d0f908111ed"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+        "bytes": 290128,
+        "sha256": "9eb67e8a16c49241d3a07b3f948dc7bfe72eb2acafae377b8c4d5e9c9f094885"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_006/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "e6e93ff1db65951285aa3b8dce49f3bd41407cf8020dfd8b0db0479ae2b93c4f"
+      }
+    },
+    {
+      "id": "jar_007",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_007/PROCESS_RECEIPT.json",
+        "bytes": 30008,
+        "sha256": "1585bd3ceb6af77cd5a8b415a1a0397491e194dfdb7d1499c895d24d8bd87620"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar",
+        "bytes": 252247,
+        "sha256": "b6c55115f7c7e1eb03297e1f296cdcecf36b2d04769c49c21a7eac7ba3438fd1"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_007/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "c2cbf473889c7706469070a1df3ad3ed066cdfc2e404b707dae4e375794e4d50"
+      }
+    },
+    {
+      "id": "jar_008",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_008/PROCESS_RECEIPT.json",
+        "bytes": 23769,
+        "sha256": "8404de0fd08017c1318fb2a7761c3e1f2aec212d6b29ed2cc4c8189e83ed86a6"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+        "bytes": 70188,
+        "sha256": "e041a895ee5379932daa877454d6d8a887c9a91c470ff2352738917b202c29d1"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_008/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "ade957525ce821d4ed55f75aecc59813a6038349d3cc713466f3aa3e0f54ed16"
+      }
+    },
+    {
+      "id": "jar_009",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_009/PROCESS_RECEIPT.json",
+        "bytes": 25807,
+        "sha256": "dde8cf27efab796985cc2ad8013256180cd0f54e70b9cfc230ff051eb9b5666e"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+        "bytes": 116656,
+        "sha256": "6dd6f56c0863b2f6163a90bf9ab5e750188a36c7b08f7a1a4dbd35e112ca8a5a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_009/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "6334131d47e072d78f5d775640745da453284e1f7991d43f91192e82f4be7884"
+      }
+    },
+    {
+      "id": "jar_010",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_010/PROCESS_RECEIPT.json",
+        "bytes": 21653,
+        "sha256": "ee6b7207b005289532e19e0f934c4700d32f335751ad0bb84089782ac0587260"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/010_tau.smlab.syntech.games.rabin_1.0.0.202402072123.jar",
+        "bytes": 35056,
+        "sha256": "03a16eaddb4e2e0a3b9f75aa9d5b31946b241e435183ba1ce541a6fe0f25117e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_010/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "43b56ff724e32e48acb701148b704638f0d3bdc856cedf16a04b89697369fb08"
+      }
+    },
+    {
+      "id": "jar_011",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_011/PROCESS_RECEIPT.json",
+        "bytes": 21696,
+        "sha256": "24dc66a258f562491313d950e9387839b17dfd32ce6a17e1e607eb0e7dd27d46"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/011_tau.smlab.syntech.games.simple_1.0.0.202402072123.jar",
+        "bytes": 13486,
+        "sha256": "eaf6c9e8ae91aa5011b345f0c6faf39ff51f3035721f6c9f1bdb154f86804c0e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_011/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "392ad095b2041aad0f5d4b76a37ff2e4900414d37aa13a5a8497bc0047891327"
+      }
+    },
+    {
+      "id": "jar_012",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_012/PROCESS_RECEIPT.json",
+        "bytes": 27973,
+        "sha256": "661b0f067ebe79ed4561cb872c0f9c69da7ba4874f7a46769cb7ba2b9a179d8b"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/012_tau.smlab.syntech.games.strategy.MAAprinter_1.0.0.202402072123.jar",
+        "bytes": 166649,
+        "sha256": "856e9e81f302fcbfe96b72a766e1a200353a6cab150b53242b56667feffa8a84"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_012/FETCH_RECEIPT.json",
+        "bytes": 1301,
+        "sha256": "3ae7eaccbb1c9cd804f7f800e7804e258dffc9c9fcbd2d8620f7e95e425796d0"
+      }
+    },
+    {
+      "id": "jar_013",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_013/PROCESS_RECEIPT.json",
+        "bytes": 30031,
+        "sha256": "0af08e5bd000b24754639a6e3ac1cb6be833158a1d081c65ddfd5e97703724f7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar",
+        "bytes": 120895,
+        "sha256": "0b0245420d12c52070278c05bbf489fd1a2713271adb10786f577f04972c3dbe"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_013/FETCH_RECEIPT.json",
+        "bytes": 1241,
+        "sha256": "bcb4dff6562f776b4f3211982ddf682913391fee7f9d91748a515474fc4aa28a"
+      }
+    },
+    {
+      "id": "jar_014",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_014/PROCESS_RECEIPT.json",
+        "bytes": 57229,
+        "sha256": "cd81733e31c8d58c7c5ce7669d6be7981bd26f088e4dbe97508ab7ba6e5ee65a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+        "bytes": 1058213,
+        "sha256": "556686e33f01dbe3552547c261b580e756012825207503aed8dc7825627b1644"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_014/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "c1d38436ce6c104fe5188a5b98a7cc3fa2785ac522ab966e9e9b3ab8bdf05587"
+      }
+    },
+    {
+      "id": "jar_015",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_015/PROCESS_RECEIPT.json",
+        "bytes": 21667,
+        "sha256": "d43a50ace84c3ac752c536c674c0e686ee2de222b788dfad965bffa36359cef2"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/015_tau.smlab.syntech.logs_1.0.0.202402072123.jar",
+        "bytes": 7938,
+        "sha256": "1fd29aa3b55c1576fd784c128ee6d0b74c9b5bf848e210a8ddd18988ab167030"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_015/FETCH_RECEIPT.json",
+        "bytes": 1226,
+        "sha256": "1f397e8cbee6f8f5e0009d1418ba7b40e7aac34882180ec31be67b6b27d93add"
+      }
+    },
+    {
+      "id": "jar_016",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_016/PROCESS_RECEIPT.json",
+        "bytes": 21678,
+        "sha256": "f1f13248c876c6c9cfa56d513ed6a0587b2105d5a6626533106c551c3455c550"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/016_tau.smlab.syntech.modelchecker_1.0.0.202402072123.jar",
+        "bytes": 27054,
+        "sha256": "23019530ffe8b3ef1e14c91f41dc1c460c7419cc0ac4f27f8bcc9c4658d9a52c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_016/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "f51d5cc46793896c3cd28e4ba80f9f4094954d4d2ebe89dca104b8f4d826bca0"
+      }
+    },
+    {
+      "id": "jar_017",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_017/PROCESS_RECEIPT.json",
+        "bytes": 21671,
+        "sha256": "e6331c923114bd5be05be93b3b2a89ac368b7a32bce0a02cf41c75090b659858"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/017_tau.smlab.syntech.sfa_1.0.0.202402072123.jar",
+        "bytes": 71384,
+        "sha256": "9fd1854a09a3a10d322a79b3e3fae55e09d0b2433e251777593977e3b5899cb4"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_017/FETCH_RECEIPT.json",
+        "bytes": 1229,
+        "sha256": "0565c6fa7727483cb70dc26f961f7185e1ce387d4674ceee480f135552e7b2ee"
+      }
+    },
+    {
+      "id": "jar_018",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_018/PROCESS_RECEIPT.json",
+        "bytes": 27875,
+        "sha256": "a69e5dbb9beac56200d39e6c5d89edd08f6f5aaaadd1fb2f76b8ae674d289106"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar",
+        "bytes": 68137,
+        "sha256": "5b8f323e531343a9780aea38e8c86459ea40ac26b63528815a97635c40895cb6"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_018/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "110b4754ee3fb6e16a6a29a332b89460591a7b078adb4cb3e43543204449e3fa"
+      }
+    },
+    {
+      "id": "jar_019",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_019/PROCESS_RECEIPT.json",
+        "bytes": 21695,
+        "sha256": "1b763078f75caedc11946d3dce1a96e8093ee5a6a25390fca19b89705ec128b8"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/019_tau.smlab.syntech.ui.extension_1.0.0.202402072123.jar",
+        "bytes": 12657,
+        "sha256": "bc1fcab03027bccd06d89297d825605b99f47a0e7ab5e16d0c947839076ec290"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_019/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "4b193d24212cb5da8ec81d5b05c9c593d01e510fe9f08f4e410400fa6b4214a5"
+      }
+    },
+    {
+      "id": "jar_020",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_020/PROCESS_RECEIPT.json",
+        "bytes": 25854,
+        "sha256": "cedf957c39f1f788beda5ebd0a082d54f83ba808f3f9ff01bd91ace2e45b7fcb"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/020_tau.smlab.syntech.ui_1.0.0.202402072123.jar",
+        "bytes": 63073,
+        "sha256": "cf8374be8e65c8d45fcd735c37e967381ba8fabd57ee374d85127a3815925d69"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_020/FETCH_RECEIPT.json",
+        "bytes": 1226,
+        "sha256": "0a72e32edd4fa4b7a5939f2e07dbbda191cf017d84679ad18c80c6a698e0d2f8"
+      }
+    },
+    {
+      "id": "jar_021",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_021/PROCESS_RECEIPT.json",
+        "bytes": 25874,
+        "sha256": "6f70c970d1f4373fc1c3b67ae384daacbf50c906b36b9c0b56a82e5af4ccf882"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/021_bcpg_1.77.0.jar",
+        "bytes": 450944,
+        "sha256": "07ae5704f3b729284b646643c798db0984af0126e646233fbd577b34de69fdf2"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_021/FETCH_RECEIPT.json",
+        "bytes": 1154,
+        "sha256": "c2e4605bab77a7a54037fbb12b5012ca5b1a3006ba97e76f9f9aea0f10e05836"
+      }
+    },
+    {
+      "id": "jar_022",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_022/PROCESS_RECEIPT.json",
+        "bytes": 36315,
+        "sha256": "d004ee6812409a2f5725796b0450bf00243ef6c3c060d1318d0a41a1188c034c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/022_bcprov_1.77.0.jar",
+        "bytes": 8372360,
+        "sha256": "dabb98c24d72c9b9f585633d1df9c5cd58d9ad373d0cd681367e6a603a495d58"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_022/FETCH_RECEIPT.json",
+        "bytes": 1166,
+        "sha256": "ac0e9117b5bff242e6b86a7deacfcbfbe77321fd7878dcc977bf78f34113b1ce"
+      }
+    },
+    {
+      "id": "jar_023",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_023/PROCESS_RECEIPT.json",
+        "bytes": 17534,
+        "sha256": "d3112ee31694f47792ccca51d5aed44396de7fabca55fd983fdf1fa69923139f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/023_com.google.errorprone.annotations_2.23.0.jar",
+        "bytes": 16829,
+        "sha256": "ec6f39f068b6ff9ac323c68e28b9299f8c0a80ca512dccb1d4a70f40ac3ec054"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_023/FETCH_RECEIPT.json",
+        "bytes": 1235,
+        "sha256": "b168334752e0722f7ba81fcfe160bdcefb59ec979246b0ba096aec585f8a3719"
+      }
+    },
+    {
+      "id": "jar_024",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_024/PROCESS_RECEIPT.json",
+        "bytes": 23796,
+        "sha256": "9d059cb31677d7f3481ccc9e4644b5c8c20fd918b5d4da778d31a93453a534d4"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/024_com.google.gson_2.10.1.v20230109-0753.jar",
+        "bytes": 316006,
+        "sha256": "84db9a060073d979f09754852fab368836e8712d76e4dc1d72dc17cbf5f4171f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_024/FETCH_RECEIPT.json",
+        "bytes": 1232,
+        "sha256": "23d7c149eb3305707751790bfd55c8de1086f55f36d9e3530b0dfbb0f62a96b8"
+      }
+    },
+    {
+      "id": "jar_025",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_025/PROCESS_RECEIPT.json",
+        "bytes": 17532,
+        "sha256": "13439d7db1c6c3a716ded0307066d91217b9f9942af57552b4dd64d66db8dffa"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/025_com.google.guava.failureaccess_1.0.2.jar",
+        "bytes": 4740,
+        "sha256": "8a8f81cf9b359e3f6dfa691a1e776985c061ef2f223c9b2c80753e1b458e8064"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_025/FETCH_RECEIPT.json",
+        "bytes": 1217,
+        "sha256": "ec45e8de8895238e1b611b5052c9e99193f5b6ba7b027f5f7de159fd3b9e2633"
+      }
+    },
+    {
+      "id": "jar_026",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_026/PROCESS_RECEIPT.json",
+        "bytes": 32172,
+        "sha256": "bb74d88e188db251b2dff26763ece03f693e7dfc65d978c9d98bc50a4a383118"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/026_com.google.guava_32.1.3.jre.jar",
+        "bytes": 3043932,
+        "sha256": "6d4e2b5a118aab62e6e5e29d185a0224eed82c85c40ac3d33cf04a270c3b3744"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_026/FETCH_RECEIPT.json",
+        "bytes": 1208,
+        "sha256": "46924a0014e87e57e77ae671710092995213065ddccbe59767426fcb4f3f4c84"
+      }
+    },
+    {
+      "id": "jar_027",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_027/PROCESS_RECEIPT.json",
+        "bytes": 25854,
+        "sha256": "495402111f85108e4b39f220f6b8cc384931f155ef71ed67e9eb9c93b657a18f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/027_com.google.inject_7.0.0.jar",
+        "bytes": 801785,
+        "sha256": "de5b0e359bd7b03ca42806b368846efd95484380fe05ae2a4ea71bc338c59c00"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_027/FETCH_RECEIPT.json",
+        "bytes": 1190,
+        "sha256": "c6e89bfa6abe0a88a84e07fe59f0ff6888b8c939dfbfa47aa00cef64cfd798fd"
+      }
+    },
+    {
+      "id": "jar_028",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_028/PROCESS_RECEIPT.json",
+        "bytes": 42562,
+        "sha256": "c444f81869f82714b98110050a07b4dbf379654e7a022ebc27e852f48f9f820b"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/028_com.ibm.icu_74.1.0.jar",
+        "bytes": 14311253,
+        "sha256": "c8e670cdd6269a7e078d2ba7e132e6842cb9215d7df01476b73648acca42f314"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_028/FETCH_RECEIPT.json",
+        "bytes": 1187,
+        "sha256": "4a70c3a9efe120c26427ef51c6d2e613dcc3ebddea11c67973a955de193451fc"
+      }
+    },
+    {
+      "id": "jar_029",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_029/PROCESS_RECEIPT.json",
+        "bytes": 27971,
+        "sha256": "8067a610ad2276f164bd76ae884e96fe77ac1403aa09b290612c618d3ad4b177"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/029_com.sun.jna.platform_5.13.0.jar",
+        "bytes": 1363209,
+        "sha256": "474d7b88f6e97009b6ec1d98c3024dd95c23187c65dabfbc35331bcac3d173dd"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_029/FETCH_RECEIPT.json",
+        "bytes": 1208,
+        "sha256": "7bc9783fa1819fb97fde83266f8db76b020d6d76a86bfa83317aa2316e9974bb"
+      }
+    },
+    {
+      "id": "jar_030",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_030/PROCESS_RECEIPT.json",
+        "bytes": 30085,
+        "sha256": "1b7e0037d1dcc87270b14ddbefcd97488b8ad0b48f9e4a1f8789ae38b11258d3"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/030_com.sun.jna_5.13.0.v20230812-1000.jar",
+        "bytes": 1893754,
+        "sha256": "628cdcb2d52787851d5706229b0b36480090dbe37cdaf58cc236a5c8687275ec"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_030/FETCH_RECEIPT.json",
+        "bytes": 1226,
+        "sha256": "1f27fb2b31101afde8e7a7db1adc7b54674f517a39d3af7ab1e9ea70af8f5834"
+      }
+    },
+    {
+      "id": "jar_031",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_031/PROCESS_RECEIPT.json",
+        "bytes": 25876,
+        "sha256": "422f715e023e18374681577c345702c68cb592afb2e0a9d3d47e6246f8c4a9d7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/031_io.github.classgraph.classgraph_4.8.164.jar",
+        "bytes": 561968,
+        "sha256": "e9b3487172ae0267fa820b657efce068f8be0fc04048ae3338ea7d968602eae3"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_031/FETCH_RECEIPT.json",
+        "bytes": 1238,
+        "sha256": "f8ceaf3cdcfc01410458bf7e8e5340eb2a4c4da3691681bf246b0e5bbcc22358"
+      }
+    },
+    {
+      "id": "jar_032",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_032/PROCESS_RECEIPT.json",
+        "bytes": 19590,
+        "sha256": "e16f48a0a4c82841d277c84d48b8ee24e23ee75d3ee33ef0a52d6b541acaeb22"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/032_jakarta.annotation-api_1.3.5.jar",
+        "bytes": 25058,
+        "sha256": "85fb03fc054cdf4efca8efd9b6712bbb418e1ab98241c4539c8585bbc23e1b8a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_032/FETCH_RECEIPT.json",
+        "bytes": 1199,
+        "sha256": "15880c533bbd69ee7c498d7936c656e7a09bc7e268daa79776795df202ea8bf6"
+      }
+    },
+    {
+      "id": "jar_033",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_033/PROCESS_RECEIPT.json",
+        "bytes": 17486,
+        "sha256": "6d61051d2061f953a5f8b217e6044f84933b68841efc84936ffcbd85a04e1b1e"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/033_jakarta.annotation-api_2.1.1.jar",
+        "bytes": 26141,
+        "sha256": "5f65fdaf424eee2b55e1d882ba9bb376be93fb09b37b808be6e22e8851c909fe"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_033/FETCH_RECEIPT.json",
+        "bytes": 1199,
+        "sha256": "bb5d106b0a4074f1cd3a0842cadac2f38ee0bca34866e4860ff6bff71b4e97d3"
+      }
+    },
+    {
+      "id": "jar_034",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_034/PROCESS_RECEIPT.json",
+        "bytes": 17512,
+        "sha256": "0d0179d2e731e2484af4bfb533f050dce5e4de9063899882d46f5896c047a7f2"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/034_jakarta.inject.jakarta.inject-api_1.0.5.jar",
+        "bytes": 10860,
+        "sha256": "a852b0971c589491e24334bd77e92760c048d2c102fc4c68e582e1cd53130f84"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_034/FETCH_RECEIPT.json",
+        "bytes": 1232,
+        "sha256": "42be978f65ad376668a6dc586c0bf9e5538b962b4406a381fe12a9c526ca5d1d"
+      }
+    },
+    {
+      "id": "jar_035",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_035/PROCESS_RECEIPT.json",
+        "bytes": 17498,
+        "sha256": "692b8d9376ae7feac1669a5f6d3cd9611dff4d2be1704f51472cb3619107c6a1"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/035_jakarta.inject.jakarta.inject-api_2.0.1.jar",
+        "bytes": 10681,
+        "sha256": "f7dc98062fccf14126abb751b64fab12c312566e8cbdc8483598bffcea93af7c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_035/FETCH_RECEIPT.json",
+        "bytes": 1232,
+        "sha256": "39cc2e5bbf0ef68ab116808fc1621b0f4908f7ec2e98742ad955d9501c320996"
+      }
+    },
+    {
+      "id": "jar_036",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_036/PROCESS_RECEIPT.json",
+        "bytes": 21680,
+        "sha256": "dc7faeb89c97ba4bba631124274854115c0f4199de5a14d0c54524ca1d9d1f50"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/036_org.antlr.runtime_3.2.0.v20230929-1400.jar",
+        "bytes": 171405,
+        "sha256": "ffe1ddf5396db602af7b34efb5fcaffe8c8821d44c6b0b31c57caba57600c1f5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_036/FETCH_RECEIPT.json",
+        "bytes": 1235,
+        "sha256": "db1fa3afd4087b4812ec1c9c2bb37f0a2929c58dcc281e6c4513424bb23d9e5a"
+      }
+    },
+    {
+      "id": "jar_037",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_037/PROCESS_RECEIPT.json",
+        "bytes": 17517,
+        "sha256": "8e1e164ec250029f5f415b59667d0804f455c2fc6d8fe259dd3384c2165520b8"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/037_org.aopalliance_1.0.0.v20230720-0728.jar",
+        "bytes": 12997,
+        "sha256": "168be5617dbc3db07f8b2befcc97c74cff4c7556861267e0f32f4d9b6388ff7d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_037/FETCH_RECEIPT.json",
+        "bytes": 1223,
+        "sha256": "4582640981176d1279bc79a339d1077d34bd673b1e7415361f332165bf970334"
+      }
+    },
+    {
+      "id": "jar_038",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_038/PROCESS_RECEIPT.json",
+        "bytes": 17512,
+        "sha256": "bd581911fe47cc3dfe4c57e73d45c1fe234d6b02ac06d026f67a2f6bacf2d37c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/038_org.apache.batik.constants_1.17.0.v20231009-1000.jar",
+        "bytes": 16820,
+        "sha256": "3658e74e9d636b596037658df1deeb969d115f3a394db09019b9b22d0f1995fa"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_038/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "643ddd9bd843fa02eb898407d5992fb2ec23271d2119c5bc828a2fa3fc09a59b"
+      }
+    },
+    {
+      "id": "jar_039",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_039/PROCESS_RECEIPT.json",
+        "bytes": 23767,
+        "sha256": "edcf9d636ff0b06a5f32c131a423ef22682a7b17dce82629ce8cc3672b8065b2"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/039_org.apache.batik.css_1.17.0.v20231009-1000.jar",
+        "bytes": 364587,
+        "sha256": "a21cdbd8006736692099caff4b0f85faa9569cb7e193e1d689c1921169bcfa19"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_039/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "b01476aa51a2db397b65d3f418f6c7b01fc7dcba12920f3578b6899c1c99a2c6"
+      }
+    },
+    {
+      "id": "jar_040",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_040/PROCESS_RECEIPT.json",
+        "bytes": 17570,
+        "sha256": "5511c1cf420f7e2149c2f633ab4162eb76191f86ed4a711812ef3d591b295099"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/040_org.apache.batik.i18n_1.17.0.v20231009-1000.jar",
+        "bytes": 20122,
+        "sha256": "58f52c703d17138da22adcbba9cdff44d3ac3175ea354a08ab32b6e2b6240fbf"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_040/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "47f621731f89222bcf311a4a67dc909c3cb4408de6d8a3a9937de8cf0dc8942f"
+      }
+    },
+    {
+      "id": "jar_041",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_041/PROCESS_RECEIPT.json",
+        "bytes": 21784,
+        "sha256": "62fa7445a849c623c64dc4162cd29bfafb72646fd07f1da776c8f18a98c3e0f9"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/041_org.apache.batik.util_1.17.0.v20231009-1000.jar",
+        "bytes": 144286,
+        "sha256": "3479fc1d03c00c649e573585ad47ee95025bbad5c7c333e23b683aa2ae2ed1d6"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_041/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "5ef420d7b3b609950c1a0fe9dcbefcd58a406bed235bda0927cfaf43dbf2d062"
+      }
+    },
+    {
+      "id": "jar_042",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_042/PROCESS_RECEIPT.json",
+        "bytes": 25853,
+        "sha256": "aed316f4ce1e04f12f6e49bbd6b3219ff7dbd22a1802c275f295a976faf87d49"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/042_org.apache.commons.collections_3.2.2.v201511171945.jar",
+        "bytes": 632388,
+        "sha256": "2d517b1bfd957135ecdf54d418a8836273ea4720077bdad65a1da9deeb0dcc53"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_042/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "7db06507ae4c3398fee325903f466a620ce9520c73e3c04306d286c014d68836"
+      }
+    },
+    {
+      "id": "jar_043",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_043/PROCESS_RECEIPT.json",
+        "bytes": 23764,
+        "sha256": "3a11d5200c904413b2f4ab4332262ac5f00e661c179dd227140078588d8221f3"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/043_org.apache.commons.commons-beanutils_1.9.4.jar",
+        "bytes": 246918,
+        "sha256": "7d938c81789028045c08c065e94be75fc280527620d5bd62b519d5838532368a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_043/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "6e874956b10101fd347b9baa412ade7286abdcead3d05ea9d581d7b29eafe875"
+      }
+    },
+    {
+      "id": "jar_044",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_044/PROCESS_RECEIPT.json",
+        "bytes": 25826,
+        "sha256": "bd923f869e9ee164d845a47a49392ac066ebf8fd3fa3131d86fdb182d696fbc9"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/044_org.apache.commons.commons-io_2.15.0.jar",
+        "bytes": 500628,
+        "sha256": "a328dad730921d197b6a9b195dffa00e41c974c2dac8fe37e84d31706bca7792"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_044/FETCH_RECEIPT.json",
+        "bytes": 1229,
+        "sha256": "7d49c9b0af0d3e430d74e437bebfcdd19ecf71b7c2a0ff5442fa70e218bdfd45"
+      }
+    },
+    {
+      "id": "jar_045",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_045/PROCESS_RECEIPT.json",
+        "bytes": 23811,
+        "sha256": "6a8ba7231215ca3a57723c69873580a53b5704ad3ed5460b8e77f4b64deb7e99"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/045_org.apache.commons.jxpath_1.3.0.v200911051830.jar",
+        "bytes": 325431,
+        "sha256": "0278be02a3027aadb3e37a15dd48c536bb27d7327ec9cee7700be19032c0eb98"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_045/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "767927101586c0a6ae250fd30facf78684a58d04228f3bf7d3d68a3e986c1402"
+      }
+    },
+    {
+      "id": "jar_046",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_046/PROCESS_RECEIPT.json",
+        "bytes": 21664,
+        "sha256": "fa4aec12c1e1b58f8b2fd90380e69f06f6be75e0e3779301e5fea50640865d6f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/046_org.apache.commons.logging_1.2.0.v20180409-1502.jar",
+        "bytes": 73163,
+        "sha256": "62efdae1766f89278400ac26132af0f750cc8200c220ed602d527c564677faa2"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_046/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "747c326eb47c41a4eb31c406c7048d027818bc2ded1205dfb3f37d7b9c3e6435"
+      }
+    },
+    {
+      "id": "jar_047",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_047/PROCESS_RECEIPT.json",
+        "bytes": 23793,
+        "sha256": "ddedcf91ddf77502ffaea3ff920c0ea728e364af398d623bec2ada8d4089914a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/047_org.apache.log4j_1.2.24.v20221221-2012.jar",
+        "bytes": 366243,
+        "sha256": "110ea2e967428e998fb68dfe25b9b910803299b4b3196df9b3598527914690a3"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_047/FETCH_RECEIPT.json",
+        "bytes": 1235,
+        "sha256": "a3645c2406c6f09ae5f3568c3ae93328e9ee513bf24dde780c6db1a9f7391d34"
+      }
+    },
+    {
+      "id": "jar_048",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_048/PROCESS_RECEIPT.json",
+        "bytes": 25866,
+        "sha256": "668f1d9f253e010e997068027aeaf5fdeb27401216d13b0e136ab3dfc05b6dee"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/048_org.apache.xmlgraphics_2.9.0.v20230916-1600.jar",
+        "bytes": 729268,
+        "sha256": "d363b9b79214e745b3082c4e2fb6935554e1e045d9f2246eed416ed45da44f4e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_048/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "79b6dc161af335a9bb593d9c19a3d497c5ae52a87fb2f75554d6dc1a5fcba1d1"
+      }
+    },
+    {
+      "id": "jar_049",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_049/PROCESS_RECEIPT.json",
+        "bytes": 19591,
+        "sha256": "94e5559b03a3b4b068a97b90e40e3b309e6cbacaea473d02f6a794a24391e793"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/049_org.eclipse.compare.core_3.8.300.v20231106-1240.jar",
+        "bytes": 71421,
+        "sha256": "aac33e1b01902d2edf6f4ecc37670374d9a2b8db24a0b81f9507ea8bad621be9"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_049/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "904e6c2a5206339cbaf3a57bbbdec8425888db7b34c4509c5be9714c1095c452"
+      }
+    },
+    {
+      "id": "jar_050",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_050/PROCESS_RECEIPT.json",
+        "bytes": 25830,
+        "sha256": "7fe0a06897cdbdb6f71c1522b83869aa4d9d6e01a6713a89b0ceb024dc730da7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/050_org.eclipse.compare_3.9.300.v20231123-2204.jar",
+        "bytes": 828395,
+        "sha256": "427339e1365ba892f0e05d4587fc36d2486bb723f2c6298a2b8dcb637baebf4a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_050/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "6cc9dc2ebaf8dea26899297e218acd270534d216de911e06915cbcd7aeb1dab8"
+      }
+    },
+    {
+      "id": "jar_051",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_051/PROCESS_RECEIPT.json",
+        "bytes": 23759,
+        "sha256": "3e053e4b3eea20cc68849063ea02d0683a6480615e996bb4c01be2ad581b163a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/051_org.eclipse.core.commands_3.11.200.v20231108-1058.jar",
+        "bytes": 120416,
+        "sha256": "ee03c607bf25fc02e1c0e7ff507a5fcfeb21827ba7f90f5dc6ea929db41b6f12"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_051/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "6dda54e781ea68555064158a094efb63a65904cfc43b7c87d192e2601948fcfd"
+      }
+    },
+    {
+      "id": "jar_052",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_052/PROCESS_RECEIPT.json",
+        "bytes": 21755,
+        "sha256": "fa361e79f3a9d403a9a38452999429012f13e2f84504f4bac6d581a1047f2fc2"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/052_org.eclipse.core.contenttype_3.9.200.v20230914-0751.jar",
+        "bytes": 104967,
+        "sha256": "e3906650822f0d088bc65c58f83f01f878b6e0906b65e611159b3f4acb2f5fcb"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_052/FETCH_RECEIPT.json",
+        "bytes": 1274,
+        "sha256": "966a9752d6c91c84253e5dcf63099ac0ecf05a5d450320c9e33288139cbd2c41"
+      }
+    },
+    {
+      "id": "jar_053",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_053/PROCESS_RECEIPT.json",
+        "bytes": 23753,
+        "sha256": "25600af4613fa10565f1c6ad74c0d4a7b79476cc174d9a6f950ae11328df00a9"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/053_org.eclipse.core.databinding.observable_1.13.100.v20230708-0916.jar",
+        "bytes": 322835,
+        "sha256": "6a8904c2d6e2c8a724afce826db97582ca4ccc1652ea87f794b99074fb9b14d2"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_053/FETCH_RECEIPT.json",
+        "bytes": 1310,
+        "sha256": "e839e1ffc78db5df78afe31b86e095212797b66480a3ebb103c390aebd642a65"
+      }
+    },
+    {
+      "id": "jar_054",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_054/PROCESS_RECEIPT.json",
+        "bytes": 21709,
+        "sha256": "2a12823c4ada8722a98505857bc2231c53ce4738ff50012a1858056510721cd7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/054_org.eclipse.core.databinding.property_1.10.100.v20230708-0916.jar",
+        "bytes": 170094,
+        "sha256": "88d3474ef3e5ed75b4722bb88f5f33fbab9118bb96d45dc53cad92179a9751d1"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_054/FETCH_RECEIPT.json",
+        "bytes": 1304,
+        "sha256": "6fe1d6b359fa85ee82589b22f663bb3cab78b571d9ec2263790d1afaad1e40b8"
+      }
+    },
+    {
+      "id": "jar_055",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_055/PROCESS_RECEIPT.json",
+        "bytes": 23731,
+        "sha256": "3b090b398fc9b851e3fef65ae25c8e20bda64e51f719866f7679b3f7f6afcc19"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/055_org.eclipse.core.databinding_1.13.100.v20230708-0916.jar",
+        "bytes": 294651,
+        "sha256": "7eefcf81d11c0ad66eb677df1abff960f447ea825972e665c08dd633968e79ad"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_055/FETCH_RECEIPT.json",
+        "bytes": 1277,
+        "sha256": "baff1ad5e24cd9268180233a58f5b55186eb3bf56c478d0e7a902132b04791e6"
+      }
+    },
+    {
+      "id": "jar_056",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_056/PROCESS_RECEIPT.json",
+        "bytes": 21640,
+        "sha256": "6cbf69512479acb10a5eef930967e7eec04da83e0e3c5b51019f2875eb0caa11"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/056_org.eclipse.core.expressions_3.9.200.v20230921-0857.jar",
+        "bytes": 97576,
+        "sha256": "f24107358c4f76f424317e2ced1d86016e76eedd70e5d8c983707edebdfb448a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_056/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "2e4c078cf125635715b5d3b8ed0fc9ca9d464af257e6cc325d2a51d16244d69d"
+      }
+    },
+    {
+      "id": "jar_057",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_057/PROCESS_RECEIPT.json",
+        "bytes": 21708,
+        "sha256": "c04f9925502201b094d52cc3b92f8c9fbe88be7fc4f90d1e9948a316fd86cf82"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/057_org.eclipse.core.filebuffers_3.8.200.v20230921-0933.jar",
+        "bytes": 119631,
+        "sha256": "1c0a593fdc33367e80c17f077a63041195f6060c34360b4fd76dcb22236ca60b"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_057/FETCH_RECEIPT.json",
+        "bytes": 1274,
+        "sha256": "c59c818c77a4f6db164e69ff62372ba5ce8157e62b7f97e8e1b9afcf3dfa4e80"
+      }
+    },
+    {
+      "id": "jar_058",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_058/PROCESS_RECEIPT.json",
+        "bytes": 19642,
+        "sha256": "64ae9d87063b3121cb68aa478c7d78b6a71bbcd6f37af33e07cbf2095343724d"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/058_org.eclipse.core.filesystem_1.10.200.v20231102-0934.jar",
+        "bytes": 73981,
+        "sha256": "e08024842a115d178eca9536e21d772219e3c1e8d5a030f8ff07594fcd365126"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_058/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "598944c043d637f2488890c9d70b51ea4679492751cfd41ec55c2efa618cc6ef"
+      }
+    },
+    {
+      "id": "jar_059",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_059/PROCESS_RECEIPT.json",
+        "bytes": 21709,
+        "sha256": "788ef60462ed929369b1ad0f0ac6216ed27b9cd0529161a871dc17bc275fa066"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/059_org.eclipse.core.jobs_3.15.100.v20230930-1207.jar",
+        "bytes": 118179,
+        "sha256": "c82b64ff33a236e8d1b6939d851eb41c8afbf683098d471e0bf69fee47e7bcb7"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_059/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "7b24266541d4caff1aca5d8cb96804f3704397db67ee6cd4990c18edda888c41"
+      }
+    },
+    {
+      "id": "jar_060",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_060/PROCESS_RECEIPT.json",
+        "bytes": 27897,
+        "sha256": "6792665f55b90cebeb296bf0a87e3fdee35a9d11da742b40e0c06a0a5afa4d52"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/060_org.eclipse.core.resources_3.20.0.v20231102-0934.jar",
+        "bytes": 944270,
+        "sha256": "16b6805641f16bf7cec7217d7f5d9c084df8b430d5ff6467cb390f513b7af011"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_060/FETCH_RECEIPT.json",
+        "bytes": 1265,
+        "sha256": "eafae4623b460fb5445997b0dee331a55f7968ee7600f82a6d9a83db1e41bb57"
+      }
+    },
+    {
+      "id": "jar_061",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_061/PROCESS_RECEIPT.json",
+        "bytes": 19648,
+        "sha256": "e1c4c73051578656de50d2c20f250cbda5a3e58c249490e16d8a034164b4202b"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/061_org.eclipse.core.runtime_3.30.0.v20231102-0719.jar",
+        "bytes": 81062,
+        "sha256": "9b74cab502e99af34fb395c1acabdd5800aa2a8a08e146b96476d14c5c7e0e31"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_061/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "1d55a3a9a5475c90e946d6cb6e57ce91d027a2eb000bccb91fac5e55fd178395"
+      }
+    },
+    {
+      "id": "jar_062",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_062/PROCESS_RECEIPT.json",
+        "bytes": 17505,
+        "sha256": "75a266157a51cb68635312b96b941324b3a8116a0e9f2ae6458deb9a530081bf"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/062_org.eclipse.core.variables_3.6.200.v20230914-0751.jar",
+        "bytes": 38432,
+        "sha256": "6d91bf01cfaa4dc85a2ef2510de264fef796d0ac16881a1fbd0a22dfa1341ed5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_062/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "4e5458c5f83c23b2c6236f3b560fd51d282e1e9ce3b585bf5c4e4cf226b936e0"
+      }
+    },
+    {
+      "id": "jar_063",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_063/PROCESS_RECEIPT.json",
+        "bytes": 23798,
+        "sha256": "50b5bb6795b9147b97659f800bb976ba6335598826ba2f64eb510616c52df0cb"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/063_org.eclipse.debug.core_3.21.200.v20231021-1513.jar",
+        "bytes": 410681,
+        "sha256": "a3c6ae8faadf7646cd532f695c294a9a5f9ebed9f6974600f62787162f262f55"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_063/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "709ff37e2c8b9b332db18cef533036dba36cd0909d59780287a943a5d535d66a"
+      }
+    },
+    {
+      "id": "jar_064",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_064/PROCESS_RECEIPT.json",
+        "bytes": 30034,
+        "sha256": "410babfa7df0e0008fc8944a703d69869299c74278de4994b81affb9b9e22144"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/064_org.eclipse.debug.ui_3.18.200.v20231106-1112.jar",
+        "bytes": 3188283,
+        "sha256": "f16b6f21edaeb68fd0f5c415de0d9f54707566fe371815f2d88686aa1a2c834c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_064/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "26a239fed010de8c7ed7e59e80068b1b0152d64914e3c3fbb16ac7e13bdfffe1"
+      }
+    },
+    {
+      "id": "jar_065",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_065/PROCESS_RECEIPT.json",
+        "bytes": 17505,
+        "sha256": "9a038e0addbd3707f47ee63d52d13729fc0db094b364e90c27c5cd82778a5421"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/065_org.eclipse.e4.core.commands_1.1.200.v20231108-1058.jar",
+        "bytes": 30056,
+        "sha256": "ac42ef9ae6ae7773a64a9be246a2981d9c801ee573ca0a1972e634ee6936f6af"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_065/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "60ce1d7eb1254ef2bc34dda8b0123f1e548502d13c654ba25c0d8cf2aa6f4d72"
+      }
+    },
+    {
+      "id": "jar_066",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_066/PROCESS_RECEIPT.json",
+        "bytes": 19556,
+        "sha256": "07666a96dc666698cf54ca85319c1bccc13b7ff73a7bdc2bc8c1af64c346752c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/066_org.eclipse.e4.core.contexts_1.12.400.v20231103-2012.jar",
+        "bytes": 58044,
+        "sha256": "9068a1b798062924d589eec73648a05a3e98403d9d1b420d6ef723811b3a13db"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_066/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "ba085d76d24dfd2e8b25ade1fd50f1c8c51957d277385c9649d239b5c7680739"
+      }
+    },
+    {
+      "id": "jar_067",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_067/PROCESS_RECEIPT.json",
+        "bytes": 15423,
+        "sha256": "647bd0bd911e7c953f5e111ba19a3626906b807d15df4bff9f0d6c94412708d7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/067_org.eclipse.e4.core.di.annotations_1.8.200.v20231103-2012.jar",
+        "bytes": 14197,
+        "sha256": "b1dd5c294bd49ef6d84128d2f468ad39f1c450c2af7b7f6678df3d385cbf08d5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_067/FETCH_RECEIPT.json",
+        "bytes": 1286,
+        "sha256": "0b680d411e737b2d6669bd82b610de918277f177a5d0cc17e7efa6f9ed554519"
+      }
+    },
+    {
+      "id": "jar_068",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_068/PROCESS_RECEIPT.json",
+        "bytes": 17533,
+        "sha256": "d519b132d6f95e3afd7967af6d8c178b0630450374b3e46b930f969a5a6b8ecd"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/068_org.eclipse.e4.core.di.extensions.supplier_0.17.300.v20231028-1632.jar",
+        "bytes": 43389,
+        "sha256": "a9da3eaed58a784e398b8072084c8dcec67b3d54bf3104444ec866ea5e4d03ff"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_068/FETCH_RECEIPT.json",
+        "bytes": 1313,
+        "sha256": "0109d423caf76465a573a0504215fb9f1cb8d5a807acd263aa78f0655d181bc5"
+      }
+    },
+    {
+      "id": "jar_069",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_069/PROCESS_RECEIPT.json",
+        "bytes": 17534,
+        "sha256": "d4bfaeada3eb01a8d3ce8b37ad2db81dd8c0f0d941bf20f10416288af815547a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/069_org.eclipse.e4.core.di.extensions_0.18.100.v20231103-2012.jar",
+        "bytes": 13321,
+        "sha256": "66b26e24ee123bded06c6aeef86d99a3526ce73eec7759729dc38c7c2eb5b2ec"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_069/FETCH_RECEIPT.json",
+        "bytes": 1286,
+        "sha256": "9b19a9ebbf2c267b85e270f647c6285445fd365ab49fccaa03658002a79f9c02"
+      }
+    },
+    {
+      "id": "jar_070",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_070/PROCESS_RECEIPT.json",
+        "bytes": 19592,
+        "sha256": "c63aab7044dc1fe61a812697c79bbfa2bef305085afb2f895d0138003e23a9d0"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/070_org.eclipse.e4.core.di_1.9.200.v20231105-0754.jar",
+        "bytes": 64434,
+        "sha256": "9b9025cc49b42926ad6ae067e5d4f36ce5889f18fe2bf6644571d8ffa9d745a0"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_070/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "876a21b08fd8b39ff93638b844f5f30c1cc5c60c50144c23805caf10eca80d87"
+      }
+    },
+    {
+      "id": "jar_071",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_071/PROCESS_RECEIPT.json",
+        "bytes": 19600,
+        "sha256": "c7491801037bc6e748ee99b639c96ee86bf1f0afab0b9742cb82d664ad47d88c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/071_org.eclipse.e4.core.services_2.4.200.v20231103-2012.jar",
+        "bytes": 73470,
+        "sha256": "7fab11af4ad954898067cb8e67c7865d4541b0779a0539baf7e699bb00ed5d2c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_071/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "5f076cc5128a8e06eed5fef6ef037bc94a29fe7a995f0cd9a8ca5c52274777d5"
+      }
+    },
+    {
+      "id": "jar_072",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_072/PROCESS_RECEIPT.json",
+        "bytes": 19579,
+        "sha256": "930747a8f13711183d3c6e3c456f32b4c14d549f6c7aa2c67c49e7eb52e8c17f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/072_org.eclipse.e4.emf.xpath_0.4.100.v20230801-1255.jar",
+        "bytes": 55251,
+        "sha256": "71678f8b9389d4b4c3928ef0e9e049fa2f3bdc42bde4b28b84d300fc4c9e80bd"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_072/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "d0faf537a1a755878db4b17f12a068421320bfac0123084d35365eac4c838552"
+      }
+    },
+    {
+      "id": "jar_073",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_073/PROCESS_RECEIPT.json",
+        "bytes": 19586,
+        "sha256": "1ec9f8288681420cfc3cf2f230363e221af85f5ab4cc9bc669b03ca371a7fb6f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/073_org.eclipse.e4.ui.bindings_0.14.200.v20231030-2045.jar",
+        "bytes": 49675,
+        "sha256": "75a7d5d1e848d8caf6664b6026e400a85046fca9025ce9a8bb86f28966b38f8a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_073/FETCH_RECEIPT.json",
+        "bytes": 1265,
+        "sha256": "45b2b0f0f22c69965f8c7fe83703ac9568e3381d0ddafafbdad9c779ddffb70b"
+      }
+    },
+    {
+      "id": "jar_074",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_074/PROCESS_RECEIPT.json",
+        "bytes": 23779,
+        "sha256": "c8e0579f3a49c44ce178c2c4c4427c9350f8e26a681bb0bacf761cd83b58a4b1"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/074_org.eclipse.e4.ui.css.core_0.14.200.v20231025-0632.jar",
+        "bytes": 224567,
+        "sha256": "8f499ad4fe97be471b8e5ac1d37bdd398b5aef2936aeea8ae2ddb5a575b5a674"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_074/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "5045a40e620fef4e19af8073740a43227c386e640f4963d38d84e4fc759467ec"
+      }
+    },
+    {
+      "id": "jar_075",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_075/PROCESS_RECEIPT.json",
+        "bytes": 17533,
+        "sha256": "88dcfa2705b1b79288c5364ae29157fe20519d7413d4cf3df5ee6fc745eb100c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/075_org.eclipse.e4.ui.css.swt.theme_0.14.200.v20230913-1724.jar",
+        "bytes": 30863,
+        "sha256": "903e4e9d2ccfaa15e1c29ab86531094c17614357eb421f1d13385af0e413dfbc"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_075/FETCH_RECEIPT.json",
+        "bytes": 1280,
+        "sha256": "6d0c01efe723d61bf69cd5d26de543d20ed72e27c34db8677b3473c3c230bea8"
+      }
+    },
+    {
+      "id": "jar_076",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_076/PROCESS_RECEIPT.json",
+        "bytes": 21645,
+        "sha256": "6b7f15112e786244b1d006400c48107a3c884ff0a2db05b2c643e9cda2cbab80"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/076_org.eclipse.e4.ui.css.swt_0.15.200.v20231025-0632.jar",
+        "bytes": 210503,
+        "sha256": "686c407a24b785fbf6c680aad9c48d566a39516854345c64506cfcd1b65f6d68"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_076/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "e92ea7920d91acd0ac7e9f42360c9d8cd3ab754e7a941cdd199576b563f5e734"
+      }
+    },
+    {
+      "id": "jar_077",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_077/PROCESS_RECEIPT.json",
+        "bytes": 17480,
+        "sha256": "c4ac6f38011310da457e0017b369456ca0dddff75c598410c0f7788b6e01e239"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/077_org.eclipse.e4.ui.di_1.5.200.v20231030-2045.jar",
+        "bytes": 18659,
+        "sha256": "6c0bb462230e0df6a60de4c1621bb5b6568583689c84bed86975fbd01ecf7d52"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_077/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "38de9049b03d5b9a9bbf48d0a58a5d40ab250837d3d0f4957df5645e9a089501"
+      }
+    },
+    {
+      "id": "jar_078",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_078/PROCESS_RECEIPT.json",
+        "bytes": 19627,
+        "sha256": "06507e03f0a07b6c082102a814898ba505d920bf605147520f7da5d0aedfe691"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/078_org.eclipse.e4.ui.dialogs_1.4.100.v20230727-0604.jar",
+        "bytes": 60055,
+        "sha256": "95ec54222a494fa64645446a3545a85a106c9529597db77a57daf9be8e19cdf0"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_078/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "d707b69bc6813e1e096d88dfb70f3d54c6a24311c0d617201bcb1607450c419b"
+      }
+    },
+    {
+      "id": "jar_079",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_079/PROCESS_RECEIPT.json",
+        "bytes": 17510,
+        "sha256": "0c1d7a5ef2d497c0fc36766d30e7e0c42c15973fda4b31667f4ae1149c4d0dce"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/079_org.eclipse.e4.ui.ide_3.17.100.v20230727-0604.jar",
+        "bytes": 13598,
+        "sha256": "7323086d8ec6e6b27a5c9e0d2001dec419e7a6abe91c3c7d52ba1ef81861edba"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_079/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "c8a015a7c38ada4578be7b46943d7220ad8bfbdaf898658c3c49f482580ae2de"
+      }
+    },
+    {
+      "id": "jar_080",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_080/PROCESS_RECEIPT.json",
+        "bytes": 23749,
+        "sha256": "23794a2c593f621593fb3ce31e299d568e6d979996010661d83c05ba000f46e4"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/080_org.eclipse.e4.ui.model.workbench_2.4.100.v20230801-1255.jar",
+        "bytes": 406235,
+        "sha256": "59ce1370dec50dc810dc3e29e5e7a4431a10a38a21d91241f21098741120ef5d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_080/FETCH_RECEIPT.json",
+        "bytes": 1289,
+        "sha256": "bc7a7b435790644bc64361fffb86d0b7fd943a89986c93ff300cfdefe8acd254"
+      }
+    },
+    {
+      "id": "jar_081",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_081/PROCESS_RECEIPT.json",
+        "bytes": 17483,
+        "sha256": "4f7d0b52429bba7ff7b613a941f254604c70abfafa7cf3307579fc80cfd13b1c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/081_org.eclipse.e4.ui.services_1.6.200.v20231030-2045.jar",
+        "bytes": 27058,
+        "sha256": "021ad63bec6394e64628d1093274fe0eedfb6177e6ab47cdce23af3e840de597"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_081/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "0d0d9d5a8dc7a3355837f501c3d7660e9820ad0b92994998d106f8638b3fd68f"
+      }
+    },
+    {
+      "id": "jar_082",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_082/PROCESS_RECEIPT.json",
+        "bytes": 17568,
+        "sha256": "919d4ba0ff603e196492a99a72ca370c5687cde443f08a1056c9ebb335a0c815"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/082_org.eclipse.e4.ui.widgets_1.4.0.v20230317-0802.jar",
+        "bytes": 15473,
+        "sha256": "f6dd0fdc8690be85be798de535e6426c318a01ba160f4d8d0cd50fd4a89b8c0b"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_082/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "a5c004cfe4d3b89038918dee935e1db2885e1fb436982ebb1549fc26b73e8a99"
+      }
+    },
+    {
+      "id": "jar_083",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_083/PROCESS_RECEIPT.json",
+        "bytes": 21684,
+        "sha256": "6d034e2fe5f94260af1726e6ab3b3838059c0321e05267a5ee1bd97a1bf477d4"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/083_org.eclipse.e4.ui.workbench.addons.swt_1.5.200.v20231106-1600.jar",
+        "bytes": 123289,
+        "sha256": "4424f3fdbb418f653cb59b658c1070ad720042418f5eb5710c89548397c7a093"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_083/FETCH_RECEIPT.json",
+        "bytes": 1304,
+        "sha256": "6e95ee1dfc89221bf73dbe8e1c07c79b00e415c437ce7a34b89ea443b19df2bb"
+      }
+    },
+    {
+      "id": "jar_084",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_084/PROCESS_RECEIPT.json",
+        "bytes": 23795,
+        "sha256": "8c4f762cb78ad5ff6392adf555b5fb0fac1c7119b9313fd8a0ca2d3010ffb972"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/084_org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045.jar",
+        "bytes": 262723,
+        "sha256": "5308f4aa69b24b25b776388ed19062c98ae48d914cf878c16bebca476c9cc34f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_084/FETCH_RECEIPT.json",
+        "bytes": 1316,
+        "sha256": "492636d1dda25ccfcf2ace1402fc65a46073e43d325cf405fa6327cdbf98b5e0"
+      }
+    },
+    {
+      "id": "jar_085",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_085/PROCESS_RECEIPT.json",
+        "bytes": 21651,
+        "sha256": "5340b5c904694dbefb5466ee491aa28227561c3fe3a2856f8553421cc7dd71f4"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/085_org.eclipse.e4.ui.workbench.swt_0.17.200.v20231030-2045.jar",
+        "bytes": 153895,
+        "sha256": "9305bc25c28d6d4b6ff9f97aa71df06b49bb1da1781b237b203968c742f1351b"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_085/FETCH_RECEIPT.json",
+        "bytes": 1286,
+        "sha256": "e123497f5df67e0ceec0d4b13911e86d56c342b54ca8f55c5ae4888d3282066b"
+      }
+    },
+    {
+      "id": "jar_086",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_086/PROCESS_RECEIPT.json",
+        "bytes": 17493,
+        "sha256": "880b50ccc43237b3a16a8eb7d2bd6c6edc39caa3d42f65ca4c67ec28ee969c43"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/086_org.eclipse.e4.ui.workbench3_0.17.200.v20231025-0632.jar",
+        "bytes": 23769,
+        "sha256": "b95d6d8de537e2362d3ea13148e7ea177c1997b88c5cf43acc556ec8d71e7228"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_086/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "e3eddfcf625245055d9511d356daecdf02a8b21d7c13a29644905b27d208c1d2"
+      }
+    },
+    {
+      "id": "jar_087",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_087/PROCESS_RECEIPT.json",
+        "bytes": 23806,
+        "sha256": "46e53ffb90d38f414ef6efe1e2c9ad3129bc941a476063070f92f0ad50c286e2"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/087_org.eclipse.e4.ui.workbench_1.15.200.v20231030-2045.jar",
+        "bytes": 276775,
+        "sha256": "748af27619bbbf4d9b74259d4f2c73fe3e8c1a18711b8df14dd5cc282a981881"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_087/FETCH_RECEIPT.json",
+        "bytes": 1274,
+        "sha256": "c525ce505132495aa91a87b9b0ce2393b473108dcefe60c64747ffebad01e866"
+      }
+    },
+    {
+      "id": "jar_088",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_088/PROCESS_RECEIPT.json",
+        "bytes": 21707,
+        "sha256": "55a94bb9c9f2fb7d0d80cc43c873f68831d740c726abb62841a853fbec21a6ba"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/088_org.eclipse.emf.common.ui_2.22.0.v20231002-1020.jar",
+        "bytes": 170900,
+        "sha256": "2e33bc421faa9f59b97ecf7b2359a1e166de8b4f51fdd46b923c815cd0af5f10"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_088/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "7c7fcbb84913e5a49316ea43af988cc26abc393c8e0d40f72bc67f6af697a47f"
+      }
+    },
+    {
+      "id": "jar_089",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_089/PROCESS_RECEIPT.json",
+        "bytes": 23809,
+        "sha256": "361639336e115b1b358fc1eea4e278086df4d70433368d87a9beac1afb44ca8d"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/089_org.eclipse.emf.common_2.29.0.v20230916-0637.jar",
+        "bytes": 387431,
+        "sha256": "e20dfbb20741dc4f289c20f0c4a3b1cd4178e83a2796918874e78dc16a9010ca"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_089/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "16d62124a07ae0aba049603c20f5497379f48776c50b9cd467bc409926c30079"
+      }
+    },
+    {
+      "id": "jar_090",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_090/PROCESS_RECEIPT.json",
+        "bytes": 19632,
+        "sha256": "1e7bef66e067d8196e27b63b3ee4f1e48d614d5245f624ace3813488ab9396c3"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/090_org.eclipse.emf.ecore.change_2.15.0.v20230211-1150.jar",
+        "bytes": 93705,
+        "sha256": "5ee06c2309b09a75dd837e5d41de78cd736b730841adc5826d41ae3e5158b820"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_090/FETCH_RECEIPT.json",
+        "bytes": 1265,
+        "sha256": "70e586464ced80896302abc5247859a0aa0b3722885b2345f767da20b23f4def"
+      }
+    },
+    {
+      "id": "jar_091",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_091/PROCESS_RECEIPT.json",
+        "bytes": 23768,
+        "sha256": "250638376ca86c231a85643cc4ae29849004ba3af8addabbb03465bd15c5750f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/091_org.eclipse.emf.ecore.xmi_2.36.0.v20231002-1156.jar",
+        "bytes": 244252,
+        "sha256": "673a9356b19561589ed6a4fa8d81d97cf708877f1f9a0658c3e693ce8e10ba6d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_091/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "5c5b19066635e17e2662beda5275038fbe6c0bfcfdbd55ed247863eafdd26bf2"
+      }
+    },
+    {
+      "id": "jar_092",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_092/PROCESS_RECEIPT.json",
+        "bytes": 27905,
+        "sha256": "37b3322463a382d7f311f4d159d414981c11f14324688b6d4dc577da73b9a6bb"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/092_org.eclipse.emf.ecore_2.35.0.v20230829-0934.jar",
+        "bytes": 1352942,
+        "sha256": "6fa3788c2804b285942ef16aa546ef3c9ce304b45ea970717b977056ff5aea28"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_092/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "cc537a3113ffb9c0aee0eea2f73d49ce90c16b7c349c9b293f8c036c482f0502"
+      }
+    },
+    {
+      "id": "jar_093",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_093/PROCESS_RECEIPT.json",
+        "bytes": 23763,
+        "sha256": "6815b696f8f83a36faa5a49756e3d380a812a2792b986bac453c0a8847da75c3"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/093_org.eclipse.emf.edit.ui_2.23.0.v20230211-1150.jar",
+        "bytes": 361829,
+        "sha256": "f8c131093a23b44883be3992ebc7d44c9e206efed95a82dd19c3bb5fb8df7d28"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_093/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "ac349a4e3a153714699b3cc9b24b0c1c68fabe64ff1c1d59918e4322fc429ab4"
+      }
+    },
+    {
+      "id": "jar_094",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_094/PROCESS_RECEIPT.json",
+        "bytes": 23791,
+        "sha256": "da2d9796d5babb51216ef7b7bc0272e2f9d2f59f40d6bf79fb6c726fc017dd83"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/094_org.eclipse.emf.edit_2.20.0.v20231107-0612.jar",
+        "bytes": 308861,
+        "sha256": "d178a5c93d97f78799950adfabb3ebc882c4c6a817b833d21a5b081b55abcb6f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_094/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "e88701dabccaac59f31b7b115034a1297e88d16f163291e34165b1c194c2bd42"
+      }
+    },
+    {
+      "id": "jar_095",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_095/PROCESS_RECEIPT.json",
+        "bytes": 19602,
+        "sha256": "8c0582691a1fbdd083d80bd0aee2959bbf5f3764a943505928cd89487ebb3d81"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/095_org.eclipse.equinox.app_1.6.400.v20231103-0807.jar",
+        "bytes": 94153,
+        "sha256": "cb30bcf102c48662a8adb91c825f7d3e69ff430e1ccc708ab8a14c142c5041da"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_095/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "26a2e9397a81806aa61c7e7bb53ac5b92810fa9b35843c8aa0575a8386c12503"
+      }
+    },
+    {
+      "id": "jar_096",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_096/PROCESS_RECEIPT.json",
+        "bytes": 19568,
+        "sha256": "96e575987806b6cc80e804665a19d57b022ab8b3757e1651d35f90eed6cf5dcd"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/096_org.eclipse.equinox.bidi_1.4.400.v20231106-0858.jar",
+        "bytes": 54205,
+        "sha256": "34cd536f7f3515c1288ed817d3262e078397582b56643f172d5f94175615539a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_096/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "89603d64bdc5fa4bad05a72f057b423d43421fa468356c34f1663e03002fa21b"
+      }
+    },
+    {
+      "id": "jar_097",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_097/PROCESS_RECEIPT.json",
+        "bytes": 21724,
+        "sha256": "ebbfd4924c5a099e6b0c83ac930ab18ccec01129b4d9ef57d6fc73a68a314ef1"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/097_org.eclipse.equinox.common_3.18.200.v20231106-1826.jar",
+        "bytes": 154417,
+        "sha256": "5bcf739c4d446e17f775ca5122fc445f3f29c274d4e96cb90aab33d3cdec3844"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_097/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "385e278b6d4ccde80009449d2f1c1acf7d66d9066dcbcb21041e9b922482ed2e"
+      }
+    },
+    {
+      "id": "jar_098",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_098/PROCESS_RECEIPT.json",
+        "bytes": 21773,
+        "sha256": "ab96a090ea1c9197c584d84f5b08316010f275e3c2dbd495006fd1f88ea4d0b5"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/098_org.eclipse.equinox.p2.artifact.repository_1.5.200.v20231105-1139.jar",
+        "bytes": 176327,
+        "sha256": "9e5aae0ba887a5959b74d06751d4df2d1441b326ae9e28a80c1781faaa810835"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_098/FETCH_RECEIPT.json",
+        "bytes": 1316,
+        "sha256": "1840bf9a06f0e438c0559b453b390f4c9b19e47c322a377cc65c2880ac9d5fdc"
+      }
+    },
+    {
+      "id": "jar_099",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_099/PROCESS_RECEIPT.json",
+        "bytes": 19615,
+        "sha256": "127064404e7518b61db0fc21d809d47c4a28d4093ba116d97bd4f25a4dc86d50"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/099_org.eclipse.equinox.p2.core_2.10.200.v20231102-1258.jar",
+        "bytes": 82587,
+        "sha256": "0d203feb6225f030ff75b8d6f273360e3f1118bb58c29591117bb84d38866c42"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_099/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "a85b7eefd1e6bdb5fe142ce5920f6cb0ecd6fb4b522b7093b3b5a9e375b296ff"
+      }
+    },
+    {
+      "id": "jar_100",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_100/PROCESS_RECEIPT.json",
+        "bytes": 23772,
+        "sha256": "1a86f6d3120f119c29ed45eab88fc30105b2532423ccd4d43482a8bfad33c803"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/100_org.eclipse.equinox.p2.engine_2.9.0.v20231105-1139.jar",
+        "bytes": 242752,
+        "sha256": "9e3bca55bf55edd70a897c9c8a5250d355b8ef005686d5ea81ff372f1e131a0f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_100/FETCH_RECEIPT.json",
+        "bytes": 1271,
+        "sha256": "b625399be6dea194b054159003b7de3dbebb869a92cc74db1d5ff9a07dbfed9b"
+      }
+    },
+    {
+      "id": "jar_101",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_101/PROCESS_RECEIPT.json",
+        "bytes": 19600,
+        "sha256": "3134e13e9ce048f1f6c2da5d1c35ebe4ba902ac703e570d32d1ad9b1fee07c37"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/101_org.eclipse.equinox.p2.jarprocessor_1.3.200.v20230630-1506.jar",
+        "bytes": 65979,
+        "sha256": "6d3bf754c5e99e90e41b13f557aa18de11281ce2bc33d9e81bd92fa6c1fd12b7"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_101/FETCH_RECEIPT.json",
+        "bytes": 1289,
+        "sha256": "9546cb217400758f754fc303df9e8d431f0f053b2f9ef494b9b767a9c63e59e8"
+      }
+    },
+    {
+      "id": "jar_102",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_102/PROCESS_RECEIPT.json",
+        "bytes": 21707,
+        "sha256": "3c9cf452e65bc7974cce8d29e8ffff90b13567fb047ca4f0dfb0f07fa48b0c14"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/102_org.eclipse.equinox.p2.metadata.repository_1.5.200.v20231021-1438.jar",
+        "bytes": 141168,
+        "sha256": "b23e20aaf2db5f841121a86cddd08149d5dda8f6d36eda3fc052c22a22ac032a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_102/FETCH_RECEIPT.json",
+        "bytes": 1316,
+        "sha256": "ea1a942d30900ce38f4b1f1e25d41507570054ef812f05a1758ebb2f36f078ea"
+      }
+    },
+    {
+      "id": "jar_103",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_103/PROCESS_RECEIPT.json",
+        "bytes": 23798,
+        "sha256": "0913559bfd68cb6ebed97a93163ca2e669421eaf96d358cc793b9a46699fb42f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/103_org.eclipse.equinox.p2.metadata_2.8.0.v20231102-1258.jar",
+        "bytes": 376422,
+        "sha256": "de2405ccb6ed6b043352c5838ef515a30eb713813bd4d6dd825e4199f1392b5a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_103/FETCH_RECEIPT.json",
+        "bytes": 1277,
+        "sha256": "6ed53dca69d309b31e4807e73dd2059afa7ce9d5d0ea90f9f7490129cf966a1d"
+      }
+    },
+    {
+      "id": "jar_104",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_104/PROCESS_RECEIPT.json",
+        "bytes": 21678,
+        "sha256": "068311b9d23c77893585e91e79a39e211e0e89a9988723e4edf40a3f1dc1264a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/104_org.eclipse.equinox.p2.repository_2.8.0.v20231111-1058.jar",
+        "bytes": 193243,
+        "sha256": "2dc9088d7a237c5ba53ff96b81ca73da57efc610a9f2a8296cd4e0d76fe63c0d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_104/FETCH_RECEIPT.json",
+        "bytes": 1283,
+        "sha256": "df4ef7f3dd835786e8db6f75087a48f5901e62060c9e2d6c54f8b67d4e2a54ac"
+      }
+    },
+    {
+      "id": "jar_105",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_105/PROCESS_RECEIPT.json",
+        "bytes": 21701,
+        "sha256": "d202397178f888367729eaf19c66629b4fbced670a8b744fae91e328b26a9bbd"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/105_org.eclipse.equinox.preferences_3.10.400.v20231102-2218.jar",
+        "bytes": 140422,
+        "sha256": "4c84969cc7f2b49ef3f4d3417dae30f4b3c3932f48b437dcb4142d168323a462"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_105/FETCH_RECEIPT.json",
+        "bytes": 1286,
+        "sha256": "be86ff31c71172699441b3ae82bb6aad556a4f90280c37b0e29ed669b3ab893f"
+      }
+    },
+    {
+      "id": "jar_106",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_106/PROCESS_RECEIPT.json",
+        "bytes": 21755,
+        "sha256": "9d9265b57645884b24b80ae646b2b4446d2afbc63956be33ee2dc3b0db2c78f7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/106_org.eclipse.equinox.registry_3.11.400.v20231102-2218.jar",
+        "bytes": 203743,
+        "sha256": "9c25358736de4d163014994973d677862968f7b0cb4cb1ace1c2466d1fd2f543"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_106/FETCH_RECEIPT.json",
+        "bytes": 1277,
+        "sha256": "8b791d590fddb77e0f835c870f13f50d665a656486ded87450264239dddc99c8"
+      }
+    },
+    {
+      "id": "jar_107",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_107/PROCESS_RECEIPT.json",
+        "bytes": 21671,
+        "sha256": "8f1e69c0f572df4095eafc978d3d36e1d21848c29efcf8861d03939b6eb216d4"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/107_org.eclipse.equinox.security_1.4.100.v20231012-1825.jar",
+        "bytes": 118636,
+        "sha256": "bcb3740093558f5c7f2e47ee5e639ed57a5c5ac7463fbd84f00f9f8987791f83"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_107/FETCH_RECEIPT.json",
+        "bytes": 1274,
+        "sha256": "1cdcdcafd53aacc9db574d1b6dff2bc3365fedc8f920025b6dac0cd81d69790a"
+      }
+    },
+    {
+      "id": "jar_108",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_108/PROCESS_RECEIPT.json",
+        "bytes": 23782,
+        "sha256": "c357045c613c6fd851d39d9ffa591df8cf08900ff53496861b0aebc1c18424de"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/108_org.eclipse.help_3.10.200.v20231106-1240.jar",
+        "bytes": 281244,
+        "sha256": "dd0850c7cebe5401f525b3d5457fa6acf58c74538967a90a4afeb6465e9ee13d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_108/FETCH_RECEIPT.json",
+        "bytes": 1241,
+        "sha256": "9761b79aa1078eb43ab2b2601c6eeeceb33e5fe755cca6062153593dac9e6c33"
+      }
+    },
+    {
+      "id": "jar_109",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_109/PROCESS_RECEIPT.json",
+        "bytes": 27975,
+        "sha256": "a2a973f132ca855c9fda688600a59adf4e3b2d54a20ddc03bfd060b15a0c4ca6"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/109_org.eclipse.jdt.core.compiler.batch_3.36.0.v20231114-0937.jar",
+        "bytes": 3234472,
+        "sha256": "a9a969911a55ffd7ad04d3ca4caf4f363b7b80a27701289dba3cc713084080c0"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_109/FETCH_RECEIPT.json",
+        "bytes": 1298,
+        "sha256": "a670a1471df11283d230a7d49a58f867edc291c1f74f5dca87e10b8054f3b75a"
+      }
+    },
+    {
+      "id": "jar_110",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_110/PROCESS_RECEIPT.json",
+        "bytes": 32133,
+        "sha256": "b9bd8dfea99f9d0a9125d25c30c336eb8a0d3cd2b99cd6328b35083773248740"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/110_org.eclipse.jdt.core.manipulation_1.20.0.v20231115-2128.jar",
+        "bytes": 3915806,
+        "sha256": "a10aa61d09614f1a913629d81347050c6c570b1b467f2e2c09fafd6333a5c4ac"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_110/FETCH_RECEIPT.json",
+        "bytes": 1292,
+        "sha256": "a9b9d2d7b25ef89f960dfef9d3e2beff76e82b220989148312aa12f03e4ff36c"
+      }
+    },
+    {
+      "id": "jar_111",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_111/PROCESS_RECEIPT.json",
+        "bytes": 30005,
+        "sha256": "9f8eb2b9e77be72b7bbc3e6b87b40e110e90be6e8ac9ce6e2af4860bd9bbe94f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/111_org.eclipse.jdt.core_3.36.0.v20231115-1055.jar",
+        "bytes": 4237886,
+        "sha256": "0053c9a17b6d0d17dfb6e3d57928b4598bfee6fb4043d2bdc59558b8c68f2bb8"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_111/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "86b0eb9369b6d923fdf89178538605136129c1fd56684cf06ed7aeeda86e94ed"
+      }
+    },
+    {
+      "id": "jar_112",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_112/PROCESS_RECEIPT.json",
+        "bytes": 25925,
+        "sha256": "38a188b963d6d9039d196a908d12aea45ed368472ed00191a171d4bfb133dc2b"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/112_org.eclipse.jdt.debug_3.21.200.v20231103-0755.jar",
+        "bytes": 948425,
+        "sha256": "b1fdb5e6c1b449e36360f40692814f3c84b63505cec75ea8ef1f8eb0ce3daa40"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_112/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "4dfbef9e29197beb286de0ddc00e2ad88f0f144fa9408905aaba5986f2571ce7"
+      }
+    },
+    {
+      "id": "jar_113",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_113/PROCESS_RECEIPT.json",
+        "bytes": 25874,
+        "sha256": "8a08b572f6d1b7322c93083cf1ccd72123f444897767a808a7f67dd91a89cfae"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/113_org.eclipse.jdt.launching_3.21.0.v20231103-0759.jar",
+        "bytes": 595889,
+        "sha256": "ad213fabfac54146e7382c92f9a7e57885b5862905521507bb6c93af972110b5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_113/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "a4a3e28666bd838b23f4cb6b43e1b93dbf3ff985e80eca9ba231951d96b120e5"
+      }
+    },
+    {
+      "id": "jar_114",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_114/PROCESS_RECEIPT.json",
+        "bytes": 36343,
+        "sha256": "16dd62ef1fab9bc44864ab732ab0e67b8473f03b860c36c091d6f869b2b632af"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/114_org.eclipse.jdt.ui_3.31.0.v20231115-2128.jar",
+        "bytes": 10367389,
+        "sha256": "56be2a15c9d122d46a79308186f63d344de04b3b7ba7da9f4adff4cf7d5d08f3"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_114/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "5d16a6065ae0b0544001ec319e6f33a997cc9a86c77783536ae6f4fa32963500"
+      }
+    },
+    {
+      "id": "jar_115",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_115/PROCESS_RECEIPT.json",
+        "bytes": 23780,
+        "sha256": "534c6d1480fe815b5b5c8f35ee806172ddd728fc84a91db58aa60edf507f7ac8"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/115_org.eclipse.jface.databinding_1.15.100.v20230708-0916.jar",
+        "bytes": 299304,
+        "sha256": "ff41f609d2da7f9204597f630eba44b63b664273b8b7882d3f8b926322e92bd6"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_115/FETCH_RECEIPT.json",
+        "bytes": 1280,
+        "sha256": "c33913945438a8617923018386591f459c8b74306377f1bc598961ab434d7c3f"
+      }
+    },
+    {
+      "id": "jar_116",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_116/PROCESS_RECEIPT.json",
+        "bytes": 27958,
+        "sha256": "bda25f256ac7a6333ed0c56c8acce3e127752af7c1712d743f63ef9f121d803c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/116_org.eclipse.jface.text_3.24.200.v20231024-0828.jar",
+        "bytes": 1096661,
+        "sha256": "7fddfd24a6f42d417f8526b0fd538d4526d7eefc593806ed1f1977d67a045c73"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_116/FETCH_RECEIPT.json",
+        "bytes": 1265,
+        "sha256": "b854cbdf582c2a2fe010067f061bd2e645e0345497a48b25cc34c26b31a3e307"
+      }
+    },
+    {
+      "id": "jar_117",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_117/PROCESS_RECEIPT.json",
+        "bytes": 25880,
+        "sha256": "29f6012c2aef2e47813537c119e5713b7417cd8e6748f08bf0e87a300b49e99f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/117_org.eclipse.jface_3.32.0.v20231107-0834.jar",
+        "bytes": 1188819,
+        "sha256": "6c8cfd9e96d17ce6cd42ac3225b92324170969c9affe5d802b59b74b747c534f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_117/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "64ce99ad25d8202b302b0947feda847c81841590d473f2b377a5a7f3432740e0"
+      }
+    },
+    {
+      "id": "jar_118",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_118/PROCESS_RECEIPT.json",
+        "bytes": 21711,
+        "sha256": "58938aa9aa8113fa1ba78d6ae2f2ff4bce7e9e22e0fa65442d02efb04fe372e7"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/118_org.eclipse.lsp4j.jsonrpc_0.21.1.v20230829-0012.jar",
+        "bytes": 138683,
+        "sha256": "a1ed2343f91d290d71dd94f901f13bfdc69c3d36db52a383d8a80f5f432e4358"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_118/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "0421cd9ce51bb7cb4bb35f91dd53e1dce1b856681662568d36f81bc9d3dae301"
+      }
+    },
+    {
+      "id": "jar_119",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_119/PROCESS_RECEIPT.json",
+        "bytes": 27995,
+        "sha256": "c6cf420662a69c0f1b1e4cda8997be66e31602952d23a1698f1edf7a06402409"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/119_org.eclipse.lsp4j_0.21.1.v20230829-0012.jar",
+        "bytes": 1131643,
+        "sha256": "e94b3fa0e5b62eca1970984bb7fd87fc1d2e3f6ca46c3729bb2533f2aade5342"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_119/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "6a9c0e99d4811b5948763c43a1e1d35edfa1d2c15380dd2067eb09e318ac582a"
+      }
+    },
+    {
+      "id": "jar_120",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_120/PROCESS_RECEIPT.json",
+        "bytes": 23784,
+        "sha256": "af2dea2ccaa8542cbb49855e6165f3520b4a3622fb137b2f6efd0036e40b1628"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/120_org.eclipse.ltk.core.refactoring_3.14.200.v20231106-1218.jar",
+        "bytes": 355027,
+        "sha256": "6ffeb2d0475800eb24e84eea8344f2ab78cfad425158d688aae4272a26183a59"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_120/FETCH_RECEIPT.json",
+        "bytes": 1289,
+        "sha256": "2fc8a14d6d6d955a29d26e951ed3ca239c1fd0af7463829ad447b4d1e85610fa"
+      }
+    },
+    {
+      "id": "jar_121",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_121/PROCESS_RECEIPT.json",
+        "bytes": 25864,
+        "sha256": "8bee6a3c7813634ae60875157bdb1e84c362a1ca0ef0ee17f290140d85a96b6e"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/121_org.eclipse.ltk.ui.refactoring_3.13.200.v20231006-1610.jar",
+        "bytes": 482291,
+        "sha256": "2cbc1ddf5f108060486a834bf641f2361289faef31daea68d403fec681485d05"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_121/FETCH_RECEIPT.json",
+        "bytes": 1283,
+        "sha256": "477f035b2bada478d728b04b547375056784e5518d306aa373b6b3ad051e3641"
+      }
+    },
+    {
+      "id": "jar_122",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_122/PROCESS_RECEIPT.json",
+        "bytes": 21707,
+        "sha256": "11a87ff0f7a10d7d29e50a26149075ff8e0aa035ff30922e76e91fcc3d475003"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/122_org.eclipse.orbit.xml-apis-ext_1.0.0.v20230923-0644.jar",
+        "bytes": 144098,
+        "sha256": "ea4eb8e705ce3278fcf38d61fdb412dfab73bc938f06cbb9483a9c8e5dc4bd5d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_122/FETCH_RECEIPT.json",
+        "bytes": 1274,
+        "sha256": "689d582f9fe1036498088005677decd6f7a66afeda934bc6fbcda50f2d2f7607"
+      }
+    },
+    {
+      "id": "jar_123",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_123/PROCESS_RECEIPT.json",
+        "bytes": 28019,
+        "sha256": "b56fb1e50f81842d712b66a05866b9aee389ba4791d2fb18c577baf52a9348e8"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/123_org.eclipse.osgi_3.18.600.v20231110-1900.jar",
+        "bytes": 1541681,
+        "sha256": "9fa6fcd4ac17aed1f70efd4af6863d7e9c12d51f537fe959ab4dbe26cf823b46"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_123/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "ed77671480e455580a28cf709c8733219fc9c050ed03ba70b1f9f07dd2b71676"
+      }
+    },
+    {
+      "id": "jar_124",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_124/PROCESS_RECEIPT.json",
+        "bytes": 19632,
+        "sha256": "ed4683b5d2851736541e874ac0ff47efa4a091d3cb032ee61f2c5d1413139424"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/124_org.eclipse.search.core_3.16.0.v20230921-0933.jar",
+        "bytes": 61997,
+        "sha256": "af780a0b3f6fc6e76fde64a27c0f24d92ab969106eb080b7c8e17c2f9907c048"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_124/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "e237e60d6616989be5446385a1379e1f6d4be286e73092e0779dffd177eb72f4"
+      }
+    },
+    {
+      "id": "jar_125",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_125/PROCESS_RECEIPT.json",
+        "bytes": 25949,
+        "sha256": "8bf599db2561801a75435015931cc5c7219c46b861d1efb21877a9db1963dbbf"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/125_org.eclipse.search_3.16.0.v20230921-2245.jar",
+        "bytes": 475188,
+        "sha256": "c547d8dbb8f756ae07890e718471dd499f99a02f90c56080b0996b0836f90dda"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_125/FETCH_RECEIPT.json",
+        "bytes": 1241,
+        "sha256": "eace68008b908af4e7879fcf19398143c06f3d97625d5869d2ee7d516b03b279"
+      }
+    },
+    {
+      "id": "jar_126",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_126/PROCESS_RECEIPT.json",
+        "bytes": 30062,
+        "sha256": "1b7c5407d6e9a9381c30291cb884838eeb2e76343af8698f37166fd60b29131d"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/126_org.eclipse.swt.cocoa.macosx.aarch64_3.124.200.v20231113-1355.jar",
+        "bytes": 2269813,
+        "sha256": "d0d58d4f244b9f37a55c4a721778f2d3aeabc0ab2fc765c3151ea5110a76d940"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_126/FETCH_RECEIPT.json",
+        "bytes": 1310,
+        "sha256": "54edea8e7c5ad2b1e3eb0393a73e9b9203facce3696264ad96791d44dc55515d"
+      }
+    },
+    {
+      "id": "jar_127",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_127/PROCESS_RECEIPT.json",
+        "bytes": 17485,
+        "sha256": "075d158676360d3157fae9de180dae3df687a5c1fd92e354ee0ec1523a95175f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/127_org.eclipse.swt_3.124.200.v20231113-1355.jar",
+        "bytes": 19241,
+        "sha256": "23ca7f6c0abd7b5e59a336b926b55805c5b28bc5cb8e4b95b0b9a4c2589b6744"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_127/FETCH_RECEIPT.json",
+        "bytes": 1235,
+        "sha256": "b307b084061c13be960dadcdb962f8a53e6c473517bbda8f23cb51eddf20590a"
+      }
+    },
+    {
+      "id": "jar_128",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_128/PROCESS_RECEIPT.json",
+        "bytes": 23787,
+        "sha256": "f4a608fd0dfee2bdf9d934fb4a4c4c777f621a20ff22312354cbd57ef19e46e5"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/128_org.eclipse.team.core_3.10.200.v20231106-1240.jar",
+        "bytes": 414871,
+        "sha256": "2bf693757b9fc0bfa20055ca0fde7b648c0a3353465cbaec02c615c15f61d8f3"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_128/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "e5e23327f979c8d70fa974ae396b4cda4b2c165187a3052c713c6771fff2c389"
+      }
+    },
+    {
+      "id": "jar_129",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_129/PROCESS_RECEIPT.json",
+        "bytes": 28040,
+        "sha256": "679f2f514c49aeddadef4a41e526654cb575bab7267d639cda88f98387cd8e83"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/129_org.eclipse.team.ui_3.10.200.v20231106-1240.jar",
+        "bytes": 1491491,
+        "sha256": "85cc539b32daa0426337b09a141d8bcfdcd7cb432b4109fa567b0a2502c2d845"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_129/FETCH_RECEIPT.json",
+        "bytes": 1256,
+        "sha256": "8adfbbbaffccef3db73bc53833ec18b15275172ca80a478bd575b5700bcc9b3d"
+      }
+    },
+    {
+      "id": "jar_130",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_130/PROCESS_RECEIPT.json",
+        "bytes": 23807,
+        "sha256": "3f9e7619c233df70ec3916f5a8378083cce978f1df6b32f19f51ae6baf881e14"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/130_org.eclipse.text_3.13.100.v20230801-1334.jar",
+        "bytes": 306314,
+        "sha256": "89afa204e8e686eaa5f1464a6ceb65ac1b341ad1d0326cab6716c6733ecaf5ac"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_130/FETCH_RECEIPT.json",
+        "bytes": 1241,
+        "sha256": "f04982b8052a01a8c0d1ab2c50822f51a04feb078a9591b4ed5ee000267abee0"
+      }
+    },
+    {
+      "id": "jar_131",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_131/PROCESS_RECEIPT.json",
+        "bytes": 23802,
+        "sha256": "0c20c32cee40544964ba4f703d1183db1afde49a1bc7734036d5b847c2d4d265"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/131_org.eclipse.ui.console_3.13.100.v20230914-0751.jar",
+        "bytes": 252742,
+        "sha256": "055052bab988a8f9e525ecebf3819878799ab2c8d603e0f2969e01d0a5e1f8a8"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_131/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "642d3c7e185f16de04e0a2295b17a316a9273bce1f3af190e4b6f47485d8a215"
+      }
+    },
+    {
+      "id": "jar_132",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_132/PROCESS_RECEIPT.json",
+        "bytes": 25910,
+        "sha256": "2f07256112aaa446d5807fb1710f39b6f81ad2306357a55ade2383fb3eb168a6"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/132_org.eclipse.ui.editors_3.17.100.v20231106-1600.jar",
+        "bytes": 627825,
+        "sha256": "bcbf7c9fcb7487bf7671dcc1f3feb4cbb341ab399b5813e6080e00adc8cd4d72"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_132/FETCH_RECEIPT.json",
+        "bytes": 1259,
+        "sha256": "624993ad180f670ab49132643b6b4b2f5364cd03eca6e81a4ee68404f422b185"
+      }
+    },
+    {
+      "id": "jar_133",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_133/PROCESS_RECEIPT.json",
+        "bytes": 23799,
+        "sha256": "f5a988c9768ab578e676a15ee37964b8d396a27eef986ee6e7263c21956eb43c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/133_org.eclipse.ui.forms_3.13.100.v20231102-1012.jar",
+        "bytes": 340676,
+        "sha256": "98aaee41267042e6a5cc54487778eedbab08553c32c7a14dff3eda1e4bbb2e08"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_133/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "d917853881209d45b8598eb134ffd628dec464bd898b37700ff82fda22795c87"
+      }
+    },
+    {
+      "id": "jar_134",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_134/PROCESS_RECEIPT.json",
+        "bytes": 30087,
+        "sha256": "07b31ca1603abdaa076116ea8fe415bdc1026703233df421e29bc0dde352f78e"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/134_org.eclipse.ui.ide_3.22.0.v20231102-1012.jar",
+        "bytes": 2421893,
+        "sha256": "ce47388bcfd7a0ccdd7704ba67e73df638e382d1ed78e7cc0efc630ae64b4bd5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_134/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "3656c167a2aebe0ec26080dc32f1a162ebbc587900bc2b5cde35d76493abf690"
+      }
+    },
+    {
+      "id": "jar_135",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_135/PROCESS_RECEIPT.json",
+        "bytes": 21698,
+        "sha256": "1f000587936056d5279ae926e71a5b1cf6f130e0cc024c936920528287d98ea3"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/135_org.eclipse.ui.navigator.resources_3.9.100.v20230821-1342.jar",
+        "bytes": 184648,
+        "sha256": "981706f86598cfbe798351fad103a498a824e58041bd1c6d260f39ff6250a39a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_135/FETCH_RECEIPT.json",
+        "bytes": 1292,
+        "sha256": "d7c186d7fa69a0db3e0a20021ea7d03f1cc9b2d3383f6e06dfe8190946bc1cad"
+      }
+    },
+    {
+      "id": "jar_136",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_136/PROCESS_RECEIPT.json",
+        "bytes": 23793,
+        "sha256": "c5cd4362323780336cadba0862c7564d524ef5b6ac674fa65caba756dc66ab81"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/136_org.eclipse.ui.navigator_3.12.200.v20231019-2116.jar",
+        "bytes": 439128,
+        "sha256": "702b7de1d24530a11611af03d264597ad13a4ff4580c3da0b71eb58762d4c1bb"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_136/FETCH_RECEIPT.json",
+        "bytes": 1265,
+        "sha256": "3ef6857e8211ee18ee4fb40991bc7b97795dca4b0f46433a28b37f5a631ffc95"
+      }
+    },
+    {
+      "id": "jar_137",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_137/PROCESS_RECEIPT.json",
+        "bytes": 21691,
+        "sha256": "6897296abe436b76953c52c8f7cb6b1c98b407a1c4167401e25bfefcf0a64826"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/137_org.eclipse.ui.views.properties.tabbed_3.10.100.v20230727-0604.jar",
+        "bytes": 113236,
+        "sha256": "6a22b36c974407e5d508a763814ddb034313ec76354a1a7bd2ea0ab262652aec"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_137/FETCH_RECEIPT.json",
+        "bytes": 1307,
+        "sha256": "7199d0b5b504b8de353e6faa89d1649aec7925405ce06107646202c21764ac1f"
+      }
+    },
+    {
+      "id": "jar_138",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_138/PROCESS_RECEIPT.json",
+        "bytes": 21673,
+        "sha256": "a1f11daea25fc073e25d7666e07a7d0fcf4ba959c50064733b5dad16d2f36bac"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/138_org.eclipse.ui.views_3.12.100.v20230821-1342.jar",
+        "bytes": 110116,
+        "sha256": "7aeab17a049ad269e0cc79764ae357feaf7c800313eeb44dc0923279a6fbf35a"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_138/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "71b4e344bc62a8610e79378300f417a792dda3cb12a380de8984a93c92804abe"
+      }
+    },
+    {
+      "id": "jar_139",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_139/PROCESS_RECEIPT.json",
+        "bytes": 25892,
+        "sha256": "cc9afdc45df7a76dbb5c7cf6cc9b2da2367a4311662ee91a787c45a6cea52d77"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/139_org.eclipse.ui.workbench.texteditor_3.17.200.v20231106-1600.jar",
+        "bytes": 710309,
+        "sha256": "ee40d4bfe16d2579a2a54e51df99645b6f39052b24a16695d44a1aa4998a8dee"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_139/FETCH_RECEIPT.json",
+        "bytes": 1298,
+        "sha256": "2733a6680a9cfcf8b35562335d4c3c7204a170f024c5799d61500bb98bd07c63"
+      }
+    },
+    {
+      "id": "jar_140",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_140/PROCESS_RECEIPT.json",
+        "bytes": 32203,
+        "sha256": "68a04873c95b0c1ff5ac374ea216bee7f4eb6147e491e5ec17658c459fbff552"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/140_org.eclipse.ui.workbench_3.131.0.v20231201-0512.jar",
+        "bytes": 3688665,
+        "sha256": "bcc775aa8ffc77d94c741219ab5684d543647d31ee356b1fb0874f67810ee56d"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_140/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "b209b263c70c69f4a0f1358b207b5184a11e44bfe8a2c2fe02536326a5e9c9c4"
+      }
+    },
+    {
+      "id": "jar_141",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_141/PROCESS_RECEIPT.json",
+        "bytes": 23849,
+        "sha256": "4fae17c50dd8cc23adff374863f8a585b19fd31a82b5ea042c35ebc13a6b4e41"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/141_org.eclipse.ui_3.205.0.v20230922-1312.jar",
+        "bytes": 444632,
+        "sha256": "b4b1b14cf2f45ed2dc2b6c99513e650ebbb4863fc6377ea7648e367cdd55ceeb"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_141/FETCH_RECEIPT.json",
+        "bytes": 1232,
+        "sha256": "f97c2cff272a49c47033649f99fbaf10a016a8a2e573069a9ca12ec84a2887c8"
+      }
+    },
+    {
+      "id": "jar_142",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_142/PROCESS_RECEIPT.json",
+        "bytes": 19670,
+        "sha256": "0cc1066a5dcbefcde0522ecd6dbbdf2ee6f11e7abe92b596f864d27faba0d513"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/142_org.eclipse.urischeme_1.3.100.v20230727-0604.jar",
+        "bytes": 55470,
+        "sha256": "337c410fafae1d2aacdc3ee1642cdb9c95189939167a2a85a259ff357ebb74d2"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_142/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "d24bcda32af9742c5e0d305a2e72e752e1d397d4368c9de36a5d4a58ccff4d3c"
+      }
+    },
+    {
+      "id": "jar_143",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_143/PROCESS_RECEIPT.json",
+        "bytes": 19661,
+        "sha256": "ae20de6da0e98b7ba503180c2aa883dbe4ba297571dd801c98b304df9d6523f1"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/143_org.eclipse.xtend.lib.macro_2.33.0.v20231121-0955.jar",
+        "bytes": 82122,
+        "sha256": "0d7bfa90695439285a1826e47c13426aca01c9b9561141ccf551bb760b1dc481"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_143/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "a94fab2c9fc4453818996be89cfbc2927840becca70fd6e07020513dff364308"
+      }
+    },
+    {
+      "id": "jar_144",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_144/PROCESS_RECEIPT.json",
+        "bytes": 21709,
+        "sha256": "56ef85e819ca8ec0e4b5ca1fd61bb65eedf164bea71197d30ae9aaad96866a98"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/144_org.eclipse.xtend.lib_2.33.0.v20231121-0955.jar",
+        "bytes": 135085,
+        "sha256": "62bd9728b0157e2ccfbe94f4fc5ff74e53cdade05c221af4f2f5c09afb34c6df"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_144/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "7074742738744797f8db9f84516ec8cd00d6be1c0d9dbe2fb9b7856b20d9cdb7"
+      }
+    },
+    {
+      "id": "jar_145",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_145/PROCESS_RECEIPT.json",
+        "bytes": 23782,
+        "sha256": "9a7a4da467ca05af97f16235ccc411f595984f687df0ec7fa1135258eaf0b8a5"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/145_org.eclipse.xtext.builder_2.33.0.v20231121-0955.jar",
+        "bytes": 406411,
+        "sha256": "30b734348d6c92b4a9407c9cff60e2ef282669039dd606a04c868e5c4c69c983"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_145/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "b81e7d16b4492fe119385a7be52e1ea207c30ab019bfa2f431fada6f882b49c0"
+      }
+    },
+    {
+      "id": "jar_146",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_146/PROCESS_RECEIPT.json",
+        "bytes": 23823,
+        "sha256": "7ca7c8e45ffe2cf7c492f104ce813fe151d9b3c0582e03b336bb0df6f589e48f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/146_org.eclipse.xtext.common.types.ui_2.33.0.v20231121-0955.jar",
+        "bytes": 258584,
+        "sha256": "36ce29f49f4944a6a10011e8358bda71f2f02e28608e2b769f147cad94e9dd08"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_146/FETCH_RECEIPT.json",
+        "bytes": 1286,
+        "sha256": "3b45243f540b9ae0216d18f7463817527b1085b941dc7d56a78dce840cb21ab6"
+      }
+    },
+    {
+      "id": "jar_147",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_147/PROCESS_RECEIPT.json",
+        "bytes": 25960,
+        "sha256": "f9f1fbcc5f6fb7a08d8caa19e2ecd304fa33c18111caf44f276bec835466bc56"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/147_org.eclipse.xtext.common.types_2.33.0.v20231121-0955.jar",
+        "bytes": 517605,
+        "sha256": "d829fe0c779f4d2e8a7f0bd804f8cec3ecb9bd095244fa4f6d26c78ca4471b5c"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_147/FETCH_RECEIPT.json",
+        "bytes": 1277,
+        "sha256": "8fb5a0e9fc7bbe98f177a7f3638d7c5c67e9545c7cb223c63d807780069efa39"
+      }
+    },
+    {
+      "id": "jar_148",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_148/PROCESS_RECEIPT.json",
+        "bytes": 25888,
+        "sha256": "7a8cbef0fdb561680f7884bce768f48baecb36276837fbabaa5c46a375504421"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/148_org.eclipse.xtext.ide_2.33.0.v20231121-0955.jar",
+        "bytes": 507854,
+        "sha256": "882f7ede0b1f518e1f9405674e2303c1670bccd428c4b900b581521d52a52c7f"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_148/FETCH_RECEIPT.json",
+        "bytes": 1250,
+        "sha256": "a00c88edf4afd8e46b0f396584883754dd664a780b6bf9527948f32fbc120968"
+      }
+    },
+    {
+      "id": "jar_149",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_149/PROCESS_RECEIPT.json",
+        "bytes": 17546,
+        "sha256": "03407f0acfec9272a35dd38bc239d12ad814c711f8c8ce0637c3354389f20edb"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/149_org.eclipse.xtext.smap_2.33.0.v20231121-0955.jar",
+        "bytes": 23245,
+        "sha256": "ebc3ca6757ed7ac146004473b94515c91bc4acbc451b2cae0ddc80f8b660b5df"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_149/FETCH_RECEIPT.json",
+        "bytes": 1247,
+        "sha256": "d1765b38ff9442e27a4f0a3405dc64f62ed435d7b2d271d3fc55aab4506cfcdc"
+      }
+    },
+    {
+      "id": "jar_150",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_150/PROCESS_RECEIPT.json",
+        "bytes": 21737,
+        "sha256": "1cef28a368f07173c2520ebaf582912684505d5144077dba616348f198ff2a1c"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/150_org.eclipse.xtext.ui.codetemplates.ide_2.33.0.v20231121-0955.jar",
+        "bytes": 138499,
+        "sha256": "9fa3f4a690fe75be4fed29771d340e2d3b428f8ecff54d9c9eae27f6725ad889"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_150/FETCH_RECEIPT.json",
+        "bytes": 1301,
+        "sha256": "46a6a08386ddb97a637176505016ac800450a6e78038b09dac886a4cdb841750"
+      }
+    },
+    {
+      "id": "jar_151",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_151/PROCESS_RECEIPT.json",
+        "bytes": 21711,
+        "sha256": "ddc1ef80a3ba28110bc24279094cdac8dddc8e48ddc80ab9740c09f6950e23a5"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/151_org.eclipse.xtext.ui.codetemplates.ui_2.33.0.v20231121-0955.jar",
+        "bytes": 138502,
+        "sha256": "65cc9dd29e6329c34fd486233a43b026abeb53944cd2fe37053e78dcc1935728"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_151/FETCH_RECEIPT.json",
+        "bytes": 1298,
+        "sha256": "23c0f615569725353acaeb6043e5e2c73dfd3d42eec93871acffd396e999effe"
+      }
+    },
+    {
+      "id": "jar_152",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_152/PROCESS_RECEIPT.json",
+        "bytes": 21728,
+        "sha256": "130ba2f27b1fd0fa057a030c10353478f143d15bd7a328845b186973e1abed1f"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/152_org.eclipse.xtext.ui.codetemplates_2.33.0.v20231121-0955.jar",
+        "bytes": 201061,
+        "sha256": "2c02e36afb0b3c5de12b1338a6e8336240f6d32df61adde5f2ef2a5f5fd23e71"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_152/FETCH_RECEIPT.json",
+        "bytes": 1289,
+        "sha256": "8eedf7645b84a048d5b41ffd7e54a3267515f8ae8f8bb7f2eefe4d068e41edf3"
+      }
+    },
+    {
+      "id": "jar_153",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_153/PROCESS_RECEIPT.json",
+        "bytes": 19695,
+        "sha256": "8814b5160bc0cdd1ba885dec80e36737992fa03cba3400cd798563b0f3bb459d"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/153_org.eclipse.xtext.ui.shared_2.33.0.v20231121-0955.jar",
+        "bytes": 64201,
+        "sha256": "c79f1bccf3516bde82ad93fff51c1452a45f7dcac1635938f4344ef5905a5a76"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_153/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "65eed27f2efd9b8681183f9457fff466c60a6ce8fecbc9edbd79c065ef880a9a"
+      }
+    },
+    {
+      "id": "jar_154",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_154/PROCESS_RECEIPT.json",
+        "bytes": 30167,
+        "sha256": "ed423a513d6cc6bceeb7e000e3351b291575c2a085058331cc37708df0550a3a"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/154_org.eclipse.xtext.ui_2.33.0.v20231121-0955.jar",
+        "bytes": 1983292,
+        "sha256": "4f061312dc558acd8bff275369f5711c1cb488c4dee635acab8d3467d153ce6b"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_154/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "3bd014980155d89c43b3fc91b4ef9a0ef855a9f2f0664ac86a0756dae43e1074"
+      }
+    },
+    {
+      "id": "jar_155",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_155/PROCESS_RECEIPT.json",
+        "bytes": 23835,
+        "sha256": "c2736589f6994ad5d946e79d0b0ddb4419db5451fe97e128f0c0f0c4d61d3304"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/155_org.eclipse.xtext.util_2.33.0.v20231121-0955.jar",
+        "bytes": 319879,
+        "sha256": "afcf41e534d0cb33ee9cc99a32e848047aa592842ab42ac827416f0c33bcdaa0"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_155/FETCH_RECEIPT.json",
+        "bytes": 1253,
+        "sha256": "c04e102f616da1bb23101b19902de25207a3d019f4811e06c86aed519d1440d6"
+      }
+    },
+    {
+      "id": "jar_156",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_156/PROCESS_RECEIPT.json",
+        "bytes": 25911,
+        "sha256": "22435c11df417f88cd96a0f242141e384857b578546ef18c502ee7c61be8efae"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/156_org.eclipse.xtext.xbase.ide_2.33.0.v20231121-0955.jar",
+        "bytes": 623676,
+        "sha256": "0b5f9f2dad3bb63e327573c6136e275b38bab195d4b52b6bcd800c6999e25904"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_156/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "073155e91e8b80493fc25a7accca5fb20b39096b4e0d0845a02faf1338d12917"
+      }
+    },
+    {
+      "id": "jar_157",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_157/PROCESS_RECEIPT.json",
+        "bytes": 21728,
+        "sha256": "d9501b20e9ad73afe9473b63babef67d5f8be110c0f13fe2fee8af9ac04da041"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/157_org.eclipse.xtext.xbase.lib_2.33.0.v20231121-0955.jar",
+        "bytes": 167059,
+        "sha256": "c9b81dc6daee468a03a8340673ff406935666359ff4b5385a0975b5f0962c453"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_157/FETCH_RECEIPT.json",
+        "bytes": 1268,
+        "sha256": "5862518eca0bc855635a0bdf37951ea3e9a91546dd5a985eea42b0f557bd85be"
+      }
+    },
+    {
+      "id": "jar_158",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_158/PROCESS_RECEIPT.json",
+        "bytes": 30076,
+        "sha256": "027559f97757d41328a30b22d6c422699d23aabdd709ae894c9c5d8be748406b"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/158_org.eclipse.xtext.xbase_2.33.0.v20231121-0955.jar",
+        "bytes": 2616826,
+        "sha256": "59cb3510e171d28193d4c9f2c8c3d36908ddf6164cb4f536c141edcd91fa3419"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_158/FETCH_RECEIPT.json",
+        "bytes": 1262,
+        "sha256": "2a05ea3c905bc767128bed61caf7041748c48a2d243cc61e8f5051849668e117"
+      }
+    },
+    {
+      "id": "jar_159",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_159/PROCESS_RECEIPT.json",
+        "bytes": 30135,
+        "sha256": "d3cfc66723b3da40de8a32ca7fb38ad1418b52965344dafa7e2344955c84013e"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/159_org.eclipse.xtext_2.33.0.v20231121-0955.jar",
+        "bytes": 2761728,
+        "sha256": "c1da96937b65f51423f83ecf5be90de703377ba8bfe59cc24a33ce8384c6d4c6"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_159/FETCH_RECEIPT.json",
+        "bytes": 1244,
+        "sha256": "fc8d64f5f55a5902d7f7b9e48bb9627f0454d9f3bb7d6eeccef0edcd478cfef7"
+      }
+    },
+    {
+      "id": "jar_160",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_160/PROCESS_RECEIPT.json",
+        "bytes": 21739,
+        "sha256": "fa1d7c48f4d63f47ea5661550c32846bd95c3556c6882c7a8b692d7eb13c4a75"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/160_org.objectweb.asm_9.6.0.jar",
+        "bytes": 123598,
+        "sha256": "3c6fac2424db3d4a853b669f4e3d1d9c3c552235e19a319673f887083c2303a1"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_160/FETCH_RECEIPT.json",
+        "bytes": 1190,
+        "sha256": "725f6eee807ccb97e2871ad7b147f45f0b5bed415732c349842f7a5c4e05dfed"
+      }
+    },
+    {
+      "id": "jar_161",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_161/PROCESS_RECEIPT.json",
+        "bytes": 19621,
+        "sha256": "df3326e6e147865a5295e32e585ecdc127ea349bb0330a2c3f32662714bc5812"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/161_org.osgi.service.event_1.4.1.202109301733.jar",
+        "bytes": 47710,
+        "sha256": "9f11c68980dbd931850f3f27fc7c35e1d710ecc728fe872bd6d786cd7e4b7b5e"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_161/FETCH_RECEIPT.json",
+        "bytes": 1238,
+        "sha256": "ce8ca82d5841e5ab8ab4c2be5196d9110f5ad0aa612d80412b68af6917c913f4"
+      }
+    },
+    {
+      "id": "jar_162",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_162/PROCESS_RECEIPT.json",
+        "bytes": 17596,
+        "sha256": "56f512b6ab9c1be401e52a8988d3ea3a3f70630152abd6925c94d919ea2d1e94"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/162_org.osgi.service.prefs_1.1.2.202109301733.jar",
+        "bytes": 20165,
+        "sha256": "43c7c870710e363405d422da653cce0d798a4537f76e4930f79bceadd3a55345"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_162/FETCH_RECEIPT.json",
+        "bytes": 1238,
+        "sha256": "8e23c41ca447dfec3d01a3ba696bef358e54143ed9eb7d47bf4d6f16a3147500"
+      }
+    },
+    {
+      "id": "jar_163",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_163/PROCESS_RECEIPT.json",
+        "bytes": 21733,
+        "sha256": "28a0c651e0476fe37fff4dc95f8c56680521e1d498dc1e814fd75034f5c16906"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/deps/163_org.tukaani.xz_1.9.0.jar",
+        "bytes": 116013,
+        "sha256": "211b306cfc44f8f96df3a0a3ddaf75ba8c5289eed77d60d72f889bb855f535e5"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_jar_163/FETCH_RECEIPT.json",
+        "bytes": 1181,
+        "sha256": "6ec79505e64d466fa5cb57ec7e62d4aa56e9456ba22773dc5e596cc0ee1b4501"
+      }
+    },
+    {
+      "id": "paper_html",
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_paper_html/PROCESS_RECEIPT.json",
+        "bytes": 9148,
+        "sha256": "589af09e0a27ed9a993de74199267524e69cb848191e291201ef626663ef66d6"
+      },
+      "complete_process": true,
+      "payload": {
+        "path": "origin:kit-workspace/qualification_01/source_cache/paper_2609.12231v1.html",
+        "bytes": 1624775,
+        "sha256": "78a3adba587d3179008afefa9ef7cecc9bd9eacc030d64c64a30f9171955b8ee"
+      },
+      "fetch_receipt": {
+        "path": "origin:kit-workspace/qualification_01/processes/fetch_paper_html/FETCH_RECEIPT.json",
+        "bytes": 1084,
+        "sha256": "089fde3f74aa7ff6659329a00a60cf59063781e1540118d3ddca57e9a07d07e6"
+      }
+    }
+  ],
+  "persisted_body_bytes": 113412497,
+  "finished_utc": "2026-10-20T21:58:37.841480+00:00",
+  "network_deadline_utc": "2026-10-20T22:04:05.780379+00:00"
+}

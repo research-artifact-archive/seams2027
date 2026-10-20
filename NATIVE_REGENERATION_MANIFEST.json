@@ -1,0 +1,169 @@
+{
+  "schema": "lift-public-native-regeneration-release-v1",
+  "status": "FROZEN_QUALIFIED_SAME_HOST_NATIVE_AND_SAVED_NODE680",
+  "version_tag": "native-regeneration-evidence-20261021-v1",
+  "member_prefix": "seams2027-lift-public-regeneration-kit/",
+  "archive": {
+    "path": "archives/lift-native-regeneration-public-20261021-v1.zip",
+    "bytes": 164041,
+    "sha256": "6f66808cfd27c49385306eea6eab089a0fd09981f6517a1257077e56178273a0",
+    "members": 32,
+    "uncompressed_bytes": 693501
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf",
+    "schema": "public-reproduction-kit-manifest-v1"
+  },
+  "qualification": {
+    "prior_local_public_source_run": "COMPLETE_PUBLIC_SOURCE_DEPENDENCY_REGENERATION_INSTALLED_JDK_BOTH_AUDITS_AGREE",
+    "anonymous_kit_static_review": "PASS",
+    "independent_result_review": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS",
+    "exact_archive_integrity_check": "PASS_NATIVE_REGENERATION_ARCHIVE_INTEGRITY_ONLY",
+    "root_result_adoption": "ADOPTED_SCOPED_SUCCESS_READY_FOR_ANONYMOUS_PUBLIC_CANDIDATE_REVIEW",
+    "executed_identical_controls_generated_native_run": "COMPLETE_PUBLIC_SOURCE_DEPENDENCY_REGENERATION_INSTALLED_JDK_BOTH_AUDITS_AGREE",
+    "executed_identical_focused_wrapper_check": "PASS_EXACT_DISTRIBUTED_FOCUSED_WRAPPER_ON_PUBLIC_SAVED_INPUTS"
+  },
+  "base_archive": {
+    "path": "archives/lift-causal-extension-public-20261021-v1.zip",
+    "bytes": 2986678,
+    "sha256": "64ba40d58edd2b5b04a7583c4e5ee32fe184b9d5c264026201fcfa5b4b747d07",
+    "url": "https://raw.githubusercontent.com/research-artifact-archive/seams2027/8eec7ac8812a734e1f5813885a4b7bcdd30b9a86/archives/lift-causal-extension-public-20261021-v1.zip"
+  },
+  "limits": [
+    "One generated local configuration of the qualified original kit, with controls and scientific inputs byte-identical to this public package, using the pinned installed JDK and Python on macOS. The subsequent metadata correction does not establish other-host, changed-runtime or cross-OS qualification.",
+    "The bootstrap kit itself was not downloaded from public hosting by this qualification.",
+    "Python standard library, OS/platform libraries, CA store and outside-workspace reads remain host supplied; no fully hermetic claim.",
+    "Focused inputs were prepared copies of prior freshly restored public sources and the public causal-extension package; the focused stage made no network call.",
+    "Fixed Lift instance and nonrelease experimental extractor; no general repair, all-region winning recomputation or unique extraction-root-cause result.",
+    "Saved node680 certificate establishes one actual transformed strict-winning state; it does not equate the whole raw core with the strict winning region.",
+    "Exported receipts are selected presentation copies, not the full sealed native-run asset tree. Historical embedded hashes remain original execution identities."
+  ],
+  "qualified_generated_run": {
+    "fresh_public_requests": 165,
+    "fresh_payload_bytes": 113412497,
+    "restored_source_files": 14,
+    "custom_java_sources": 6,
+    "custom_classes": 19,
+    "dependency_jars": 164,
+    "native_pairs": 1,
+    "BDD_model_memory_comparisons": 36,
+    "checker_jobs": 4,
+    "baseline_original_graph": {
+      "states": 154,
+      "edges": 1170,
+      "strict": true,
+      "cooperative": false
+    },
+    "variant_original_graph": {
+      "states": 154,
+      "edges": 1176,
+      "strict": true,
+      "cooperative": true
+    },
+    "started_utc": "2026-10-20T21:54:05.731233+00:00",
+    "finished_utc": "2026-10-20T21:59:10.059907+00:00",
+    "http_get_attempts": 165
+  },
+  "external_qualification_record": "NATIVE_REGENERATION_VALIDATION.json",
+  "receipt_presentation_ledger": "evidence/validation/native-regeneration-20261021/PRESENTATION_TRANSFORMATIONS.json",
+  "document_snapshot": "DOCUMENT_SNAPSHOT_MANIFEST.json",
+  "distributed_control_pins": [
+    {
+      "path": "configure_run.py",
+      "bytes": 10397,
+      "sha256": "56014698d1f8159abbd021c8bc639671e3d2fb20f2f84483f36995cf20a802a0"
+    },
+    {
+      "path": "evidence/focused_original/check_v42_b42_node680.py",
+      "bytes": 6721,
+      "sha256": "2e6f9cdcaced41498bb85b51a043cc2bc598877342d95610aa0db6d116bf34b8"
+    },
+    {
+      "path": "focused/check_node680.py",
+      "bytes": 13021,
+      "sha256": "378a1af4a441469a197461966c129dcb7b7183dea29fe2ef2f14eaaf340f68bc"
+    },
+    {
+      "path": "focused/model_bindings.py",
+      "bytes": 7038,
+      "sha256": "f76dd4e38ce19475b248628e4667c08027665b207622b2bc6980de89b2616040"
+    },
+    {
+      "path": "regenerate/OriginProbe.java",
+      "bytes": 729,
+      "sha256": "09a83142dcd24d5a2e310e1d1ea4bd47c54360977702e600327d580e3d390ff9"
+    },
+    {
+      "path": "regenerate/bootstrap/bounded_process.py",
+      "bytes": 19294,
+      "sha256": "ee08963ad88b0259c744cbed732f339536fd504a89342c5e661449ffc0e367c9"
+    },
+    {
+      "path": "regenerate/bootstrap/dispatch.py",
+      "bytes": 31072,
+      "sha256": "380c45269a1815141fd326651b22373d4d3c57c9277ae5e882991f95bc3eccc9"
+    },
+    {
+      "path": "regenerate/bootstrap/owned_process.py",
+      "bytes": 11011,
+      "sha256": "20ce5ef1912afd9ff144a9c4c102d347e09e5006596372d38bd3e05ad3b57596"
+    },
+    {
+      "path": "regenerate/fetch_one.py",
+      "bytes": 5566,
+      "sha256": "34ab0cb06ec503c888fb3a347f75f8078356c225e1e3f8079fa447a17d15048f"
+    },
+    {
+      "path": "regenerate/launch_public.py",
+      "bytes": 23503,
+      "sha256": "e372f40d691fff33f5964ed594630ab562434cc345c2f256dd06568c8e1787b5"
+    },
+    {
+      "path": "regenerate/public_payload.py",
+      "bytes": 7433,
+      "sha256": "6b263ca7ef1e62948ee0bca2e5a54256779134e8d44592260892a38b9b08244b"
+    },
+    {
+      "path": "regenerate/qualify_isolation.py",
+      "bytes": 540,
+      "sha256": "0a1e03009e98223a6e69903520e6764b1d5c1847bd07ed08fcd71444889a4a0f"
+    },
+    {
+      "path": "regenerate/qualify_public_guards.py",
+      "bytes": 8050,
+      "sha256": "f304dc28fee1d35c6773ed2a01fd01cdec7a0cbdcf4358e323166a90f1c7a151"
+    },
+    {
+      "path": "tests/check_static.py",
+      "bytes": 9253,
+      "sha256": "78c456388e96c1abde383f7fb22dd5d1c96e980a690eebdadd9b56f019d22770"
+    }
+  ],
+  "external_records_manifest": {
+    "path": "evidence/validation/native-regeneration-20261021/MANIFEST.json",
+    "bytes": 5347,
+    "sha256": "40da39848c94b1172f74e10e0557f4b312c38b00ea40be408dca485ac51472fa"
+  },
+  "qualification_basis": {
+    "scope": "The qualified original package was executed once for native regeneration and once for the focused check. Every executable control and scientific input in this public package retains those exact executed bytes. Only three metadata members subsequently changed: eight path-display strings and six dependent identity fields. The final 32-member serialization was not rerun as a whole.",
+    "qualified_original_inner_manifest": {
+      "bytes": 5358,
+      "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+    },
+    "public_inner_manifest": {
+      "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+      "bytes": 5358,
+      "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+    },
+    "metadata_derivation_ledger": {
+      "path": "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json",
+      "bytes": 13980,
+      "sha256": "589a0363c22ed8519e657f37f32227f1cfa01db454dd85fb3bd0515c12654f3a"
+    },
+    "byte_identical_members": 29,
+    "metadata_members_changed": 3,
+    "whole_final_package_reexecution": false
+  }
+}

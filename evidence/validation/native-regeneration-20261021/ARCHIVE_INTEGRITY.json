@@ -1,0 +1,26 @@
+{
+  "schema": "public-native-archive-integrity-check-v1",
+  "status": "PASS_NATIVE_REGENERATION_ARCHIVE_INTEGRITY_ONLY",
+  "archive": {
+    "path": "archives/lift-native-regeneration-public-20261021-v1.zip",
+    "bytes": 164041,
+    "sha256": "6f66808cfd27c49385306eea6eab089a0fd09981f6517a1257077e56178273a0"
+  },
+  "inner_manifest": {
+    "path": "seams2027-lift-public-regeneration-kit/MANIFEST.json",
+    "bytes": 5358,
+    "sha256": "0bca34e2864f8b77caf2c5a5f57b97d121b816ef50891dd89b1175a4348464bf"
+  },
+  "verifier": {
+    "path": "tools/verify_native_regeneration.py",
+    "bytes": 6203,
+    "sha256": "00c46378dc73ff30b27ae67f4e7d2820c6b8a0ea3018a2fb0620816eb13c1386"
+  },
+  "members": 32,
+  "extracted_to_new_directory": true,
+  "scientific_checks": 0,
+  "native_runs": 0,
+  "meaning": "Exact-byte/ZIP/member-closure verification only. Qualification of the executable kit is established by the separate saved execution records.",
+  "all_extracted_members_match_public_metadata_derivative": true,
+  "qualification_identity": "All controls/scientific inputs match the executed original; 3metadata members differ as declared in METADATA_PUBLICATION_TRANSFORMATIONS.json. Archive integrity is separate from execution."
+}

@@ -1,0 +1,549 @@
+{
+  "schema": "independent-exact-public-kit-result-review-v1",
+  "status": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS",
+  "created_utc": "2026-10-20T22:09:21.339556+00:00",
+  "reviewer": "Independent static/result review agent; separate from the public-kit producer and execution owner",
+  "blocker_free": true,
+  "blocking_findings": [],
+  "decision": "The saved evidence supports one successful local qualification of the exact 32-member distributed kit, under the stated installed-runtime and sandbox limits, and one focused saved-input certificate check. Result QA is complete; preparation of anonymous sibling receipts may proceed without rerunning or changing the sealed science.",
+  "not_a_publication_authorization": true,
+  "scope": {
+    "review_mode": "Read-only review of completed execution records, full saved result structures, local hashes, exact file closure and historical byte/structured comparisons. No producer/checker module was imported or executed by this reviewer.",
+    "scientific_or_native_reruns": 0,
+    "network_requests": 0,
+    "Full_reset_uses": 0,
+    "mutations": "Only independent audit script/data and this report/handoff outside all frozen kit and qualification trees.",
+    "prior_static_review": {
+      "path": "origin:producer-workspace/PUBLIC_KIT_INDEPENDENT_STATIC_REVIEW.json",
+      "bytes": 30031,
+      "sha256": "076de8e96160b9317075318eb1d34b929ec7b21f35970ea93f721f038de9486e"
+    },
+    "local_report_contains_private_paths": "This internal report requires explicit presentation-only redaction before public export."
+  },
+  "findings": [
+    {
+      "id": "R1",
+      "status": "PASS",
+      "subject": "Exact distributed bytes and authorization",
+      "details": "The immutable package contains exactly its manifest plus 31 listed members. All member hashes match. Every regenerate control file matches the executed native copy; the three focused controls match the executed copy byte-for-byte. Both authoritative Root GO records pin the reviewed plans/freezes, predate their stage starts, and impose the stated hard stop. The focused result completed successfully with input integrity before the native stage began.",
+      "package_members": 32,
+      "package_manifest": {
+        "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/MANIFEST.json",
+        "bytes": 5358,
+        "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+      },
+      "authorizations": [
+        {
+          "path": "origin:kit-workspace/focused_qualification_01/ROOT_GO.json",
+          "bytes": 3019,
+          "sha256": "221e53f306769ba7529c863de8f0f77981bffd41f68acb6aa063b729583e9aa7"
+        },
+        {
+          "path": "origin:kit-workspace/qualification_01/EXECUTION_AUTHORIZATION.json",
+          "bytes": 3697,
+          "sha256": "67407dac32cf8eabf124344ba21d82c76e6931d8272856426b7c3e7327deb61b"
+        }
+      ]
+    },
+    {
+      "id": "R2",
+      "status": "PASS",
+      "subject": "Execution lifecycle and resource records",
+      "details": "All 176 native-stage and two focused-stage actual process receipts report complete zero exit, exact child reaping, full captures, no fatal/resource/abort/signal reasons, and final process-group absence. Stream files were rehashed; request argv/limits match receipts; recorded wall/RSS/tree/free-space observations satisfy the corresponding limits. A new bounded process-table observation found none of the 178 owned PIDs or groups. Archived receipts inside the focused public evidence bundle were excluded from this actual-run roster.",
+      "verified": {
+        "native": 176,
+        "focused": 2,
+        "all_completed_zero_reaped_absent": true,
+        "all_full_captures_rehashed": true,
+        "all_recorded_resource_samples_within_bounds": true,
+        "current_pid_group_observation_utc": "2026-10-20T22:07:31.827855+00:00",
+        "current_remaining": []
+      },
+      "metrics": {
+        "native_and_focused_receipts": 178,
+        "maximum_sampled_group_rss_bytes": 553779200,
+        "maximum_exact_child_wait4_rss_bytes": 554188800,
+        "maximum_single_stdout_bytes": 436299781,
+        "maximum_single_stderr_bytes": 1070,
+        "minimum_recorded_free_bytes": 146273865728,
+        "all_stream_bytes_within_caps": true,
+        "all_wait4_rss_within_caps": true
+      },
+      "bound_interpretation": "RSS/tree enforcement is sampled termination plus postcheck, not an exact kernel quota. The native 2 GiB cap covers qualification_01 only; nonnative implementation staging and focused trees are separately bounded overhead. No whole-K or whole-D 2 GiB claim."
+    },
+    {
+      "id": "R3",
+      "status": "PASS",
+      "subject": "Fresh public acquisition, source restoration and build provenance",
+      "details": "All 165 request records match the reviewed fetch roster and pinned final payloads. Each records one HTTPS GET, status 200, no redirects, no retries, exact bytes and SHA-256, and completion within the shared acquisition deadline. Acquisition took 272.110247 seconds; native sequence including four audits took 304.328674 seconds. Eighteen unique selected archive members yield 23 destinations; historical controller members extracted: zero. Fourteen pinned sources were restored from the just-acquired verified cache. Six Java source units compiled to 19 fresh classes; their byte hashes match the historical reference roster. Historical origin:workspace paths were treated as descriptive provenance, not as files needed for execution.",
+      "verified": {
+        "requests": 165,
+        "redirects": 0,
+        "payload_bytes": 113412497,
+        "fresh_request_receipts_checked": 165,
+        "acquisition_elapsed_seconds": 272.110247,
+        "native_sequence_seconds": 304.328674,
+        "isolation_check_counts": [
+          22,
+          24,
+          13
+        ],
+        "unique_selected_members": 18,
+        "destinations": 23,
+        "restored_sources": 14
+      },
+      "build": {
+        "sources": 6,
+        "classes": 19,
+        "JARs": 164,
+        "probe_classes": 47,
+        "actual_custom_classes": 6,
+        "actual_released_classes": 28
+      },
+      "class_origins": "The 47-class probe matches expected origin paths/hashes. Actual pair execution records six custom classes from the fresh class directory and 28 released classes from the acquired JARs. The ordered 164 JARs have no recorded class shadows or manifest Class-Path entries."
+    },
+    {
+      "id": "R4",
+      "status": "PASS",
+      "subject": "One fixed native pair and complete original-graph audits",
+      "details": "The one pair records identical memory/model object use, unchanged variable order, and all 36 pinned BDD equality checks true. The variant records 13,624 candidates examined, 726 refined and zero fallback. Production and independent audits both completed: baseline 154 states/1,170 edges, strict true/cooperative false; variant 154 states/1,176 edges, strict true/cooperative true. Full saved state/start/edge/justice structures agree between implementations, allowing only lexical-versus-numeric ordering within state lists; ordered justice-group identity is preserved.",
+      "verified": {
+        "BDD_semantic_records": 36,
+        "producer_same_object_records_preserved": true,
+        "examined": 13624,
+        "refined": 726,
+        "fallback": 0,
+        "historical_full_parity": [
+          {
+            "arm": "native",
+            "model_equal_except_input_path": true,
+            "complete_graph_equal_except_two_object_ids_and_bound_model_hash": true,
+            "BDD_count": 20,
+            "all_BDD_and_printer_bytes_equal": true
+          },
+          {
+            "arm": "variant",
+            "model_equal_except_input_path": true,
+            "complete_graph_equal_except_two_object_ids_and_bound_model_hash": true,
+            "BDD_count": 21,
+            "all_BDD_and_printer_bytes_equal": true
+          }
+        ],
+        "complete_graph_audits": [
+          {
+            "arm": "baseline",
+            "states": 154,
+            "edges": 1170,
+            "strict": true,
+            "cooperative": false,
+            "full_saved_views_equal_modulo_state_list_order": true,
+            "justice_group_order_preserved": true
+          },
+          {
+            "arm": "variant",
+            "states": 154,
+            "edges": 1176,
+            "strict": true,
+            "cooperative": true,
+            "full_saved_views_equal_modulo_state_list_order": true,
+            "justice_group_order_preserved": true
+          }
+        ]
+      },
+      "independent_checker_scope": "The two independent audit records state production_certificate_read=false, production_checker_imports=0, and source correspondence over 1,048,576 original state pairs plus all 2,048 typed native valuations; these completed checker records were inspected rather than rerun by this review."
+    },
+    {
+      "id": "R5",
+      "status": "PASS",
+      "subject": "Complete comparison with sealed prior public run",
+      "details": "For each arm, full parsed model equality holds after removing only input.path. Full controller equality holds after removing only the two runtime object identities and the verified bound model hash. All BDD files (20 baseline, 21 variant) and complete printer outputs are byte-identical. These are complete comparisons, not matching counts or selected example edges.",
+      "normalization_scope": [
+        "model.input.path",
+        "controller.controller_identity",
+        "controller.native_memory_identity",
+        "controller.model_sha256, separately verified against each actual model file"
+      ]
+    },
+    {
+      "id": "R6",
+      "status": "PASS",
+      "subject": "Focused node-680 saved residual certificate",
+      "details": "The exact focused wrapper ran once for 0.981134 seconds with zero native/compiler/network invocations. The saved result reports raw-core membership and original C membership separately, three safe responses for each of 16 source input valuations, zero original-legal next inputs, and 16 native-legal next inputs all flipping the helper. Its 321-state/5,136-edge residual has exact legal-input coverage, unique responses and native safety on every edge; every successor has helper true and falsifies the sole ENV justice. Explicit typed-bit valuation/rank/relation bindings pass and the ENV justice was checked against NOT helper on all 2,048 assignments. Full public-view bridge comparisons retain all scientific model/controller/BDD/printer content and change only declared binding/hash metadata.",
+      "verified": {
+        "saved_result_matches_fixed_contract": true,
+        "exact_distributed_code": true,
+        "complete_bridge_scientific_equality": true,
+        "original_input_count": 16,
+        "safe_responses_each": 3,
+        "original_legal_inputs": 0,
+        "native_legal_inputs": 16,
+        "ENV_justice_assignments_recorded": 2048,
+        "residual_states": 321,
+        "residual_edges": 5136,
+        "execution_seconds": 0.981134,
+        "proof_not_reexecuted_by_auditor": true
+      },
+      "model_bindings": {
+        "all_nodes_typed_bit_valuation_consistent": true,
+        "all_ranks_valid": true,
+        "original_relation_hashes_verified": true,
+        "sole_original_and_solver_ENV_justice_identical": true,
+        "ENV_justice_exhaustively_NOT_helper": true,
+        "justice_assignments": 2048
+      },
+      "residual_graph": {
+        "states": 321,
+        "edges": 5136,
+        "exact_legal_input_coverage": true,
+        "unique_response": true,
+        "all_edges_native_environment_and_system_safe": true,
+        "all_successor_states_helper_true": true,
+        "helper_environment_justice_false_on_every_successor_state": true
+      },
+      "strict_state_membership_reasoning": "The saved private memory gives a safe complete continuation from the full source valuation with helper=false. Every legal first input flips helper, every future state keeps helper=true and falsifies the sole ENV justice. Therefore this state belongs to the actual saved transformed strict W_R; initial-state reachability is not required for state winning.",
+      "attribution_boundary": "Raw core membership is separate. This does not identify the entire raw core with W_R, recompute all-region winning, prove extraction the unique root cause, or establish a general repair.",
+      "independence_limit": "Reuses the pinned public BDD decoder and saved graph/model. New explicit type/bit/justice binding checks do not constitute an independent compiler."
+    },
+    {
+      "id": "R7",
+      "status": "PASS",
+      "subject": "Preservation and result closure",
+      "details": "All eight declared old/new manifests were independently reconciled, with 4,782 unique sealed files rehashed before and after the audit. Exact focused and native tree closure includes their result manifests and no extra files. Native result manifest covers 1,377 files/562,133,694 bytes; focused result manifest covers 1,245 files. Package, implementation freeze, prior failed/successful attempts and prior public result remain unchanged.",
+      "sealed_sets": [
+        {
+          "manifest": {
+            "path": "origin:producer-workspace/FIRST_ATTEMPT_FREEZE.json",
+            "bytes": 90912,
+            "sha256": "4ef95f8b4e26a267f504de902085f60063a333fc91245c098cac119f2780f492"
+          },
+          "files": 302
+        },
+        {
+          "manifest": {
+            "path": "origin:producer-workspace/attempt_02/RESULT_MANIFEST.json",
+            "bytes": 125458,
+            "sha256": "7fe5b2c816f792fdc5a7fcffa8e551cef4cce8b6588b27f84badc61cb93c1783"
+          },
+          "files": 403
+        },
+        {
+          "manifest": {
+            "path": "origin:producer-workspace/public_regeneration_01/RESULT_MANIFEST.json",
+            "bytes": 438130,
+            "sha256": "6691dd37bf06322b7aa1e9f06e51e14ebddf4bd276abaac3078a04d69458be66"
+          },
+          "files": 1389
+        },
+        {
+          "manifest": {
+            "path": "origin:kit-workspace/IMPLEMENTATION_FREEZE.json",
+            "bytes": 531761,
+            "sha256": "0d22c96845673dadb15ad88f9092b395a134bb3ba889b10c319fc6e0fb4f3610"
+          },
+          "files": 1290
+        },
+        {
+          "manifest": {
+            "path": "origin:kit-workspace/focused_qualification_01/FROZEN_INPUTS.json",
+            "bytes": 503725,
+            "sha256": "c5c5a3cd570f6f5b64d3947c80864e8713bb38873453bc229cb11c8a08b88159"
+          },
+          "files": 1207
+        },
+        {
+          "manifest": {
+            "path": "origin:kit-workspace/focused_qualification_01/RESULT_MANIFEST.json",
+            "bytes": 516894,
+            "sha256": "67561a1a3b882c71858cbbab075c762f55107840938d47b54b32a6a1dc092acb"
+          },
+          "files": 1245
+        },
+        {
+          "manifest": {
+            "path": "origin:kit-workspace/qualification_01/FROZEN_LAUNCHER.json",
+            "bytes": 6540,
+            "sha256": "d86efb5e7c1aba6387ceb2f8003727d295a4cfc2d4a3fe9877c8df07fa88419f"
+          },
+          "files": 19
+        },
+        {
+          "manifest": {
+            "path": "origin:kit-workspace/qualification_01/RESULT_MANIFEST.json",
+            "bytes": 462347,
+            "sha256": "4977fbc6bcd0977a1145534bca7290348704bb35acbf0a0080b93950ba7414e3"
+          },
+          "files": 1377
+        }
+      ],
+      "unique_sealed_files_rehashed_before_and_after": 4782
+    }
+  ],
+  "explicit_limits": [
+    "This qualifies one local generated configuration using exact anonymous distributed control bytes. The bootstrap kit itself was not fetched from public hosting during this qualification.",
+    "The native phase freshly fetched public scientific sources and dependencies. The focused phase used already prepared public saved evidence and restored sources; it performed zero network acquisition.",
+    "The installed JDK 565-entry inventory and Python executable were pinned. Python standard library, macOS, platform libraries and CA store remain host supplied; this is not a fully hermetic runtime.",
+    "Sandbox controls establish exclusion of old-workspace/focused scientific reads in native child processes and offline network denial after acquisition; they do not inventory every host filesystem read.",
+    "Saved same-object and in-process BDD semantic comparisons are producer instrumentation records supported by prior static review and unchanged receipts. This external audit does not observe historical JVM memory directly.",
+    "The independent complete-graph checks and focused checker reuse public saved BDD/model evidence; the focused checker explicitly reuses the pinned decoder and is not an independent compiler.",
+    "The node-680 continuation supports that state in actual saved transformed strict W_R. It does not equate the entire raw core with W_R, recompute all-region winning, prove extraction uniquely caused the issue, or establish a general repair.",
+    "The variant is an experimental nonrelease extractor. Its positive cooperative result on this fixed instance does not change the preserved baseline outcome or establish an upstream fix.",
+    "This read-only QA launches no native/focused/scientific check and grants no additional runtime attempt or publication authority."
+  ],
+  "publication_handoff_requirements": {
+    "immutable_inner_kit": "Keep the 32-member kit byte-exact, including documentation and executable files. Do not insert qualification receipts into that ZIP.",
+    "placement": "Anonymous result summary and independent QA belong as siblings in the outer release evidence/validation area.",
+    "redaction": "Remove private absolute paths and host labels by documented field-level presentation transformation; preserve all scientific values, claim limits, complete graph counts, member hashes and executed-code pins.",
+    "final_packaging_review": "Check transformed receipt provenance and exact inner-ZIP member bytes before accepting the outer release. No science rerun is needed for documentation/export."
+  },
+  "evidence_pins": [
+    {
+      "path": "origin:kit-workspace/QUALIFICATION_PLAN.json",
+      "bytes": 5147,
+      "sha256": "6f870c4da9e49a35eba4c583c4e3f7870daf6aff26bcf1f9a4c108fdfb5f8424"
+    },
+    {
+      "path": "origin:kit-workspace/IMPLEMENTATION_FREEZE.json",
+      "bytes": 531761,
+      "sha256": "0d22c96845673dadb15ad88f9092b395a134bb3ba889b10c319fc6e0fb4f3610"
+    },
+    {
+      "path": "origin:kit-workspace/SOURCE_BUILD_LEDGER.json",
+      "bytes": 107736,
+      "sha256": "1ea93bfc365cdb92bf8693cd62e1e3f02c1ef065ba2ef93aec7dc666053e251a"
+    },
+    {
+      "path": "origin:kit-workspace/native_postflight.py",
+      "bytes": 6955,
+      "sha256": "6ba27fac352dd391727f8277efbb9fce797b7d47ea6a3841641bb02e8eacdc65"
+    },
+    {
+      "path": "origin:producer-workspace/PUBLIC_KIT_INDEPENDENT_STATIC_REVIEW.json",
+      "bytes": 30031,
+      "sha256": "076de8e96160b9317075318eb1d34b929ec7b21f35970ea93f721f038de9486e"
+    },
+    {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/MANIFEST.json",
+      "bytes": 5358,
+      "sha256": "9fb17dababb42ef96e2bb71cedd383d7c556220af4bb545b6f444a29f97986db"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/ROOT_GO.json",
+      "bytes": 3019,
+      "sha256": "221e53f306769ba7529c863de8f0f77981bffd41f68acb6aa063b729583e9aa7"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/PLAN.json",
+      "bytes": 5542,
+      "sha256": "dc1d06e9b8afff30bb0894131738ea247a8a9ca804569db5cc0f2e97b75581cc"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/FROZEN_INPUTS.json",
+      "bytes": 503725,
+      "sha256": "c5c5a3cd570f6f5b64d3947c80864e8713bb38873453bc229cb11c8a08b88159"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/INPUT_PREPARATION.json",
+      "bytes": 1089268,
+      "sha256": "9b2205c3256da9d052bffee7cd26d440a09bc311484f186d1874c03f69ad11ce"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/SUMMARY.json",
+      "bytes": 1541,
+      "sha256": "1f3b1bb0c8548b6acc1e66f2e7d23fd2d3af12b629154a74d7698426debdc461"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/result/RESULT.json",
+      "bytes": 9887,
+      "sha256": "f1c75e79f2368b7a27a9a1da4ce262857fe6580dff3f3e269e30eb308b5167aa"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/POSTFLIGHT.json",
+      "bytes": 1024,
+      "sha256": "71da0a69acfeba0927f07700b0cd296b1ec1f083251972ed75b68fc1bd33fd73"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/RESULT_MANIFEST.json",
+      "bytes": 516894,
+      "sha256": "67561a1a3b882c71858cbbab075c762f55107840938d47b54b32a6a1dc092acb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/EXECUTION_AUTHORIZATION.json",
+      "bytes": 3697,
+      "sha256": "67407dac32cf8eabf124344ba21d82c76e6931d8272856426b7c3e7327deb61b"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/PLAN.json",
+      "bytes": 9324,
+      "sha256": "2dc871f609e4b29c6ef577c0d13c758ec56d363240666a24f703cde8bb524c12"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/FROZEN_LAUNCHER.json",
+      "bytes": 6540,
+      "sha256": "d86efb5e7c1aba6387ceb2f8003727d295a4cfc2d4a3fe9877c8df07fa88419f"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/CONFIGURATION_RECEIPT.json",
+      "bytes": 1125,
+      "sha256": "0e3ff19850a741a21d3ca6a5c744a7735c0a3c0371cfb838b53dd6c96b5a89b2"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/SUMMARY.json",
+      "bytes": 5227,
+      "sha256": "cac5f5831e57097ce7412eec80725d028a197541d6c0cfc20c1021c78d3a20ce"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/ACQUISITION_RESULT.json",
+      "bytes": 192240,
+      "sha256": "465503a789c3e2b492fdfd457e078b42530bb08e60d19d350f254c61a6b04dd8"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/SOURCE_PROVENANCE.json",
+      "bytes": 1881,
+      "sha256": "31a0bdb8b0dd8a179daaf3f4fe4de008d798404e37e3441f32ae02fc730d4448"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/INITIAL_ISOLATION_RESULT.json",
+      "bytes": 7557,
+      "sha256": "118830a02b30782b2f9ef9fad1707a69666d74aa5bf1fdebe2533021998f38ae"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/ISOLATION_RESULT.json",
+      "bytes": 8294,
+      "sha256": "9afb6bf78aa88013f8af22d41968d160259ed7d8ebf63eff3b3c0e69db454c68"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/BUILD_RECEIPT.json",
+      "bytes": 49090,
+      "sha256": "2ace1e40b713e1d87f39c01150edc9e2216875e27fe7eab2907fae4d0feccc62"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/CLASS_ORIGIN_RESULT.json",
+      "bytes": 41355,
+      "sha256": "86565e993b0957e4fcdcf3f3e9039eba142b36ac0a3193b3a16ef0bd934fec92"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/PAIR_RESULT.json",
+      "bytes": 2358,
+      "sha256": "de0ebb5d5dfae073a327faab7dbf74ea8ece9e61422c2a250ab1e976a852bc37"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/PAIRED_EVIDENCE.json",
+      "bytes": 3947,
+      "sha256": "287ad471aa6317e3bf3f1efec4783f3f944f028cf6d107d06f5b87cf272a2fc3"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/NATIVE_CLASS_ORIGINS.json",
+      "bytes": 25708,
+      "sha256": "631b081ff259b7d3d5074eef8a860b36d95b702458ea54a3b7c9a32ea22f913c"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/POSTFLIGHT.json",
+      "bytes": 110783,
+      "sha256": "af4b013ab54d3b85a1ea268b8a4b5dcb383436cbbb1b8d431fa88ea93619aa76"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/RESULT_MANIFEST.json",
+      "bytes": 462347,
+      "sha256": "4977fbc6bcd0977a1145534bca7290348704bb35acbf0a0080b93950ba7414e3"
+    },
+    {
+      "path": "origin:kit-workspace/RESULT_HANDOFF.json",
+      "bytes": 19337,
+      "sha256": "2e9931316799e7d857d526662e37f47edb17b8a631bccdbf68c6a4ec2408632b"
+    },
+    {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/focused/check_node680.py",
+      "bytes": 13021,
+      "sha256": "378a1af4a441469a197461966c129dcb7b7183dea29fe2ef2f14eaaf340f68bc"
+    },
+    {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/focused/model_bindings.py",
+      "bytes": 7038,
+      "sha256": "f76dd4e38ce19475b248628e4667c08027665b207622b2bc6980de89b2616040"
+    },
+    {
+      "path": "origin:kit-workspace/package/seams2027-lift-public-regeneration-kit/focused/INPUTS.json",
+      "bytes": 3993,
+      "sha256": "edab6fdfb7e5567bc099e81078873cb4adc04a9c055ffd82f4520c1c45503a6d"
+    },
+    {
+      "path": "origin:producer-workspace/public_kit_independent_result_01/audit_saved_results.py",
+      "bytes": 18129,
+      "sha256": "fa3c045ab8065022af78a8b2bac681e66e0e190205cdba19a926e3c427a577ce"
+    },
+    {
+      "path": "origin:producer-workspace/public_kit_independent_result_01/INDEPENDENT_DATA_CHECK.json",
+      "bytes": 5843,
+      "sha256": "fcfbc62260948a41dacc8a2b335927ca03b73d508974cc6b46042ab3e4edb7ad"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/FETCH_MANIFEST.json",
+      "bytes": 117164,
+      "sha256": "33031297f79943abc4a57cee986a2fa9ae78c9089efc95992f7f2a902aaa715d"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/ARCHIVE_EXTRACTION_RECEIPT.json",
+      "bytes": 11490,
+      "sha256": "41beafc5624fb74fd85599fc43dcb68cecf9add24d03c1335e6fa287f9faa748"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/SOURCE_RESTORATION_RECEIPT.json",
+      "bytes": 3504,
+      "sha256": "9c70549a61811587630d563408af0f01c289f2823a5990e8b06a2e0523133f36"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/INPUT_INVENTORY.json",
+      "bytes": 444782,
+      "sha256": "057eceac6d3622908427079b85d6dfa7b0648f0ec2e42b6955bf5984bb60b8b9"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/variant/paired_intervention.json",
+      "bytes": 1845,
+      "sha256": "71d6e634d627ee2cd125fcc837e40ba59a7333586fc860b57e57669b9025ca54"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_production/certificate.json",
+      "bytes": 11152,
+      "sha256": "660a6c9423fad5c9cf33e727c8db71bc25d19ab8231870fa4a5376106885525e"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_production/derived_original_graph.json",
+      "bytes": 50384,
+      "sha256": "833147246732f0fa372a980eb38c7ba963906da988c948d9981e9872ef05f2c0"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_independent/AUDIT_RESULT.json",
+      "bytes": 16231,
+      "sha256": "a2fb91d253028cadfeb8df754a6b8eff0bd0f5252fbcd584c6a5d5a6bcd725fd"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_independent/INDEPENDENT_VIEW.json",
+      "bytes": 270735,
+      "sha256": "f75f083d8a1b84fd04820278e68efb65907de0e0f8d04d26b9a65b499e64e0eb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_production/certificate.json",
+      "bytes": 17012,
+      "sha256": "701cd14f9885f1fb371b37e71010b313c2bdbb6c51f6ca7aba8d0a964a9c4674"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_production/derived_original_graph.json",
+      "bytes": 50612,
+      "sha256": "e1c4cfa88a23fbc2baf555ca962e52cfdd6aa1d9a214b9f30981b6da4efe7b26"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_independent/AUDIT_RESULT.json",
+      "bytes": 21533,
+      "sha256": "2c741c0d77a8f5e78b920cd7ee5ec2017e4c35eb81bfaddc9e284955e11471c0"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_independent/INDEPENDENT_VIEW.json",
+      "bytes": 271059,
+      "sha256": "be06f0725d598560ba05700a1d6453b269c984da94f10e44962faddb8fcca194"
+    }
+  ],
+  "audit_implementation_notes": [
+    "Audit development corrected parser assumptions about archived versus actual process receipts, origin: provenance strings, and lexical versus numeric order within state lists. Those checks never mutated or reran scientific artifacts; no scientific mismatch was found.",
+    "The saved independent data check imports only Python standard-library modules and uses a bounded read-only ps observation. Its successful output and source are pinned above."
+  ]
+}

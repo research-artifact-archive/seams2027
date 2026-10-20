@@ -1,5 +1,5 @@
 {
-  "status": "PUBLIC_STATIC_NAVIGATION_EXISTING_SAVED_EVIDENCE",
+  "status": "FIFTH_EXTENSION_QUALIFIED_WITH_SEPARATE_DOCUMENT_SNAPSHOT",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -17,7 +17,11 @@
       "member_prefix": "seams2027-lift-direct-static-evidence/",
       "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip"
     },
-    "LiftCausal": "seams2027-lift-causal-extension"
+    "LiftCausal": "seams2027-lift-causal-extension",
+    "LiftRegeneration": {
+      "archive": "lift-native-regeneration-public-20261021-v1.zip",
+      "member_prefix": "seams2027-lift-public-regeneration-kit/"
+    }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
   "rows": [
@@ -641,6 +645,94 @@
         "evidence/variant_audit/production/certify.py"
       ],
       "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "LIFT-PUBLIC-NATIVE-REGENERATION",
+      "claim": "One generated native configuration used controls and scientific inputs byte-identical to the public kit, retrieved fixed public dependencies, freshly compiled six custom Java sources and regenerated the matched Lift pair; both full-original graph checkers agreed.",
+      "archive": "LiftRegeneration",
+      "input_models": [],
+      "saved_graphs": [],
+      "saved_outputs": [
+        "evidence/local_qualification/SUMMARY.json",
+        "evidence/local_qualification/INDEPENDENT_RESULT_REVIEW.json",
+        "evidence/local_qualification/POSTFLIGHT.json",
+        "evidence/local_qualification/OWNED_PROCESS_POSTFLIGHT.json"
+      ],
+      "checker_sources": [
+        "configure_run.py",
+        "regenerate/launch_public.py",
+        "manifests/FETCH_MANIFEST.json",
+        "manifests/ARCHIVE_SELECTION.json",
+        "manifests/RUNTIME_SCIENCE_EXPECTATIONS.json"
+      ],
+      "expected_saved_result": "Qualified-original generated run: 165 requests, 14 restored sources, 6 compiled sources/19 classes, 164 JARs, 36 equal model/memory BDDs; baseline154/1170 strict true/cooperative false, variant154/1176 both true.",
+      "limitations": [
+        "One generated configuration on the pinned installed JDK/Python/macOS; no other-host/runtime/OS qualification.",
+        "The bootstrap kit itself was not fetched from public hosting; host libraries and CA store remain supplied.",
+        "Outer exported receipts are selected path-label presentation copies; embedded historical hashes do not identify their public serialization.",
+        "One fixed Lift instance with a nonrelease experimental extractor; no general repair.",
+        "Three metadata files were anonymized after execution; all 29 other member bytes are unchanged, and no full final-serialization rerun is claimed."
+      ],
+      "replay_scope": "Public-source acquisition, compilation, one native pair and four full-original graph checks on the declared host; separate from historical saved-semantics replay.",
+      "qualification": {
+        "prior_local": "COMPLETE",
+        "independent_result_review": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS",
+        "identical_controls_generated_configuration": "COMPLETE"
+      },
+      "outer_repository_saved_outputs": [
+        "evidence/validation/native-regeneration-20261021/qualification_01/SUMMARY.json",
+        "evidence/validation/native-regeneration-20261021/qualification_01/POSTFLIGHT.json",
+        "evidence/validation/native-regeneration-20261021/qualification_01/run_01/PAIRED_EVIDENCE.json",
+        "NATIVE_REGENERATION_VALIDATION.json",
+        "evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+        "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json"
+      ]
+    },
+    {
+      "id": "LIFT-NODE680-STRICT-STATE-CERTIFICATE",
+      "claim": "A finite safe residual witnesses actual strict winning at the complete node680 source valuation with helper false, while the original legal successor set is empty.",
+      "archive": "LiftRegeneration",
+      "input_models": [],
+      "saved_graphs": [],
+      "cross_archive_inputs": [
+        {
+          "archive": "LiftCausal",
+          "input_models": [
+            "evidence/runs/continuation_01/lift__trivial_1/native/model.json"
+          ],
+          "saved_graphs": [
+            "evidence/runs/continuation_01/lift__trivial_1/native/controller.json"
+          ]
+        }
+      ],
+      "saved_outputs": [
+        "evidence/focused_original/V42_B42_NODE680_SAVED_RESIDUAL_CHECK.json"
+      ],
+      "checker_sources": [
+        "focused/check_node680.py",
+        "focused/model_bindings.py",
+        "focused/INPUTS.json"
+      ],
+      "expected_saved_result": "Identical-wrapper saved-input check: 16 source inputs with 3 safe responses each and 0 original-legal next inputs; 16 native-legal inputs all flip helper;321-state/5136-edge safe complete residual keeps helper true and sole ENV justice false.",
+      "limitations": [
+        "Executed exact distributed wrapper on prepared public saved inputs; no network/native/compiler run.",
+        "State-winning certificate only; no whole raw-core/strict-region equivalence.",
+        "No initial-reachability requirement; no unique-root-cause or general-repair claim.",
+        "Uses the pinned public decoder and verified metadata bridge, not an independent compiler."
+      ],
+      "replay_scope": "Saved finite-state inspection, separate from native generation.",
+      "qualification": {
+        "original_saved_certificate": "PASS",
+        "exact_distributed_wrapper": "PASS",
+        "independent_result_review": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS"
+      },
+      "outer_repository_saved_outputs": [
+        "evidence/validation/native-regeneration-20261021/focused_qualification_01/result/RESULT.json",
+        "evidence/validation/native-regeneration-20261021/focused_qualification_01/POSTFLIGHT.json",
+        "NATIVE_REGENERATION_VALIDATION.json",
+        "evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+        "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json"
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -761,6 +853,30 @@
       "saved_semantics_replay": "PASS_ISOLATED_NO_JDK_SAVED_SEMANTICS",
       "source_restoration": "source_restoration/fetch_lift_causal_sources.py inside the fourth archive",
       "producer_invocation_recreated": false
+    },
+    {
+      "version_tag": "native-regeneration-evidence-20261021-v1",
+      "archive": "archives/lift-native-regeneration-public-20261021-v1.zip",
+      "claims": [
+        "LIFT-PUBLIC-NATIVE-REGENERATION",
+        "LIFT-NODE680-STRICT-STATE-CERTIFICATE"
+      ],
+      "descriptor": "NATIVE_REGENERATION_MANIFEST.json",
+      "qualification_record": "NATIVE_REGENERATION_VALIDATION.json",
+      "status": "FROZEN_QUALIFIED_SAME_HOST_NATIVE_AND_SAVED_NODE680",
+      "prior_local_public_source_run_complete": true,
+      "anonymous_placement_native_execution_complete": true,
+      "anonymous_placement_focused_execution_complete": true,
+      "qualification_basis": "Identical executed controls/scientific inputs with a subsequent three-member metadata presentation correction; see NATIVE_REGENERATION_VALIDATION.json."
     }
-  ]
+  ],
+  "document_snapshot": {
+    "manifest": "DOCUMENT_SNAPSHOT_MANIFEST.json",
+    "pdf": "documents/technical-appendix-v43.pdf",
+    "source_zip": "documents/technical-appendix-v43.zip",
+    "scope": "Generic appendix document snapshot, separate from the five scientific evidence archives."
+  },
+  "extension_note": "Original twelve row objects remain unchanged. The fifth archive adds two separately scoped rows and outside-ZIP qualification receipts.",
+  "new_extension_references_checked": 26,
+  "new_extension_missing_references": []
 }

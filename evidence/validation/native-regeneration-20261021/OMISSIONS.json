@@ -1,0 +1,45 @@
+{
+  "schema": "selected-qualification-receipt-export-omissions-v1",
+  "scope": "This export supplies selected result and review records, not the full sealed qualification asset tree.",
+  "exported_receipts": [
+    "evidence/validation/native-regeneration-20261021/RESULT_HANDOFF.json",
+    "evidence/validation/native-regeneration-20261021/focused_qualification_01/SUMMARY.json",
+    "evidence/validation/native-regeneration-20261021/focused_qualification_01/result/RESULT.json",
+    "evidence/validation/native-regeneration-20261021/focused_qualification_01/POSTFLIGHT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/SUMMARY.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/POSTFLIGHT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/ACQUISITION_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/SOURCE_PROVENANCE.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/BUILD_RECEIPT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/CLASS_ORIGIN_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/INITIAL_ISOLATION_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/ISOLATION_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/PAIR_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/PAIRED_EVIDENCE.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/NATIVE_CLASS_ORIGINS.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/audits/RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/audits/baseline_production/certificate.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/audits/variant_production/certificate.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/audits/baseline_independent/AUDIT_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/qualification_01/run_01/audits/variant_independent/AUDIT_RESULT.json",
+    "evidence/validation/native-regeneration-20261021/INDEPENDENT_STATIC_REVIEW.json",
+    "evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+    "evidence/validation/native-regeneration-20261021/RESULT_ADOPTION.json"
+  ],
+  "not_exported": [
+    "Downloaded publisher payload bodies, upstream JARs and source caches",
+    "Installed JDK/Python binaries and host libraries",
+    "Fresh compiled .class files and native libraries",
+    "Raw stdout/stderr, class-load streams, and individual process receipts",
+    "Complete fresh model/controller/BDD/printer output trees and intermediate derived graphs",
+    "Bulk original IMPLEMENTATION_FREEZE, input-preparation/frozen-input/result manifest closures, local plans and run-specific execution authorizations"
+  ],
+  "historical_reference_policy": "A path with origin: or host: and an embedded bytes/sha256 pin identifies the retained original execution file; it is not a missing distributable member. The presentation ledger maps every exported original file to its public copy. Unlisted referenced files are not distributed by this selected export.",
+  "public_saved_inputs": "The fourth science archive retains public saved model/controller/BDD data and a hash-checked source-restoration recipe. The fifth kit references that immutable public base.",
+  "claims_not_made": [
+    "No full fresh-result byte tree or runtime distribution",
+    "No public-hosted bootstrap download qualification",
+    "No independent compiler, all-region winning recomputation, general repair, or unique-root-cause theorem"
+  ],
+  "scientific_executions_for_export": 0
+}

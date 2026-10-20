@@ -1,0 +1,50 @@
+{
+  "schema": "public-kit-root-result-adoption-v1",
+  "status": "ADOPTED_SCOPED_SUCCESS_READY_FOR_ANONYMOUS_PUBLIC_CANDIDATE_REVIEW",
+  "created_utc": "2026-10-20T22:10:03.487350+00:00",
+  "review": {
+    "path": "origin:producer-workspace/PUBLIC_KIT_INDEPENDENT_RESULT_REVIEW.json",
+    "bytes": 35729,
+    "sha256": "6742c60748ffea1b54f08b849e70a2a73e2afd277887b512a20e764f16bd7573"
+  },
+  "review_all_semantic_fields_read": true,
+  "review_evidence_pins_rehashed": 49,
+  "pin_drift": 0,
+  "author_handoff": {
+    "path": "origin:kit-workspace/RESULT_HANDOFF.json",
+    "bytes": 19337,
+    "sha256": "2e9931316799e7d857d526662e37f47edb17b8a631bccdbf68c6a4ec2408632b"
+  },
+  "root_result_seal_recheck": {
+    "focused_files": 1245,
+    "focused_bytes": 36872453,
+    "native_files": 1377,
+    "native_bytes": 562133694,
+    "drift": 0
+  },
+  "accepted_claims": [
+    "One exact-copy native qualification regenerated the Lift pair from newly fetched public scientific inputs under the fixed installed runtime, with both complete-graph judges retaining baseline strict/noncooperative and variant strict/cooperative results.",
+    "One exact-copy focused saved-input check certifies node680 in the saved transformed strict winning region; no whole-region equivalence or unique-cause inference."
+  ],
+  "limits_adopted_verbatim": [
+    "This qualifies one local generated configuration using exact anonymous distributed control bytes. The bootstrap kit itself was not fetched from public hosting during this qualification.",
+    "The native phase freshly fetched public scientific sources and dependencies. The focused phase used already prepared public saved evidence and restored sources; it performed zero network acquisition.",
+    "The installed JDK 565-entry inventory and Python executable were pinned. Python standard library, macOS, platform libraries and CA store remain host supplied; this is not a fully hermetic runtime.",
+    "Sandbox controls establish exclusion of old-workspace/focused scientific reads in native child processes and offline network denial after acquisition; they do not inventory every host filesystem read.",
+    "Saved same-object and in-process BDD semantic comparisons are producer instrumentation records supported by prior static review and unchanged receipts. This external audit does not observe historical JVM memory directly.",
+    "The independent complete-graph checks and focused checker reuse public saved BDD/model evidence; the focused checker explicitly reuses the pinned decoder and is not an independent compiler.",
+    "The node-680 continuation supports that state in actual saved transformed strict W_R. It does not equate the entire raw core with W_R, recompute all-region winning, prove extraction uniquely caused the issue, or establish a general repair.",
+    "The variant is an experimental nonrelease extractor. Its positive cooperative result on this fixed instance does not change the preserved baseline outcome or establish an upstream fix.",
+    "This read-only QA launches no native/focused/scientific check and grants no additional runtime attempt or publication authority."
+  ],
+  "publication_requirements": {
+    "immutable_inner_kit": "Keep the 32-member kit byte-exact, including documentation and executable files. Do not insert qualification receipts into that ZIP.",
+    "placement": "Anonymous result summary and independent QA belong as siblings in the outer release evidence/validation area.",
+    "redaction": "Remove private absolute paths and host labels by documented field-level presentation transformation; preserve all scientific values, claim limits, complete graph counts, member hashes and executed-code pins.",
+    "final_packaging_review": "Check transformed receipt provenance and exact inner-ZIP member bytes before accepting the outer release. No science rerun is needed for documentation/export."
+  },
+  "scientific_reruns_by_root": 0,
+  "new_execution_authorized": false,
+  "publication_authorized_by_this_receipt": false,
+  "next": "Finalize anonymous outer receipts and document/kit candidate; exact-byte/privacy/rights Root review precedes versioned public release."
+}

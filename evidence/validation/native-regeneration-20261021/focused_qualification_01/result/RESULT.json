@@ -1,0 +1,169 @@
+{
+  "status": "PASS_PUBLIC_FOCUSED_SAVED_RESIDUAL_CERTIFICATE",
+  "created_utc": "2026-10-20T21:53:29.323653+00:00",
+  "mode": "Offline finite saved evidence inspection; no Java, compiler, solver or controller extraction.",
+  "inputs": [
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/MANIFEST.json",
+      "bytes": 252351,
+      "sha256": "107e701185efe790934838cab4a2945c87a92c04792f7ae960b7a6762b161ac0"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/ORIGINAL_COPY_LEDGER.json",
+      "bytes": 643246,
+      "sha256": "f02ca7bec0200521274051cd9d099972856fb7bf05ebd48d50e892619d9be188"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/consumer/portable_io.py",
+      "bytes": 8583,
+      "sha256": "46e73becc083bcd9268e5522b4e9edd11c8c9212da7dfdb0655825c1c43e9cf1"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/consumer/replay.py",
+      "bytes": 19415,
+      "sha256": "523128902a3fb9143cdf4bb155268fed64e9f3f3594fe3e4df5420c2f259dae9"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/code/released/production/bdd_core.py",
+      "bytes": 6655,
+      "sha256": "f9497519b8a073a29e5748c908cadc804f437080cf12d36558d9e0210462dbac"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/model.json",
+      "bytes": 261805,
+      "sha256": "f44675181c39e811512a518c5f30e65dee5c05498cabfd6cc14aba9206f6e427"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/controller.json",
+      "bytes": 860323,
+      "sha256": "bbee6ff9a32c55691f9b7b58c162e4e2c2af02d22792967537751ccb9d148a1f"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/original_rhoE.bdd",
+      "bytes": 946,
+      "sha256": "0c17b84e33952d98988899c10b23539579984fd18806bb00e106fa53ea4a3599"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/original_rhoS.bdd",
+      "bytes": 3618,
+      "sha256": "c7ab11075c578f9071302f8fd93dc494110ed46a70fc1af962f55f2f4c01e368"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/final_region.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/solver_ENV_justice_0.bdd",
+      "bytes": 69,
+      "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/original_ENV_justice_0.bdd",
+      "bytes": 69,
+      "sha256": "c021e0fe981c32e994f17bd03c3812928ce7444a9580594f52120dae385ed4aa"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/result.json",
+      "bytes": 358190,
+      "sha256": "e6b9a0e726805c7fa5f9f482507f50907f9919ca5a8407dfdc09c57340533bf4"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/seams2027-lift-causal-extension/evidence/runs/continuation_01/lift__trivial_1/native/controller.txt",
+      "bytes": 248315,
+      "sha256": "6b183b4cef92c1f71828a6b353add98e125c8d09ee83043532b9a652553d3514"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/inputs/sources/sources/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    }
+  ],
+  "controls": [
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/control/check_node680.py",
+      "bytes": 13021,
+      "sha256": "378a1af4a441469a197461966c129dcb7b7183dea29fe2ef2f14eaaf340f68bc"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/control/model_bindings.py",
+      "bytes": 7038,
+      "sha256": "f76dd4e38ce19475b248628e4667c08027665b207622b2bc6980de89b2616040"
+    },
+    {
+      "path": "origin:kit-workspace/focused_qualification_01/control/INPUTS.json",
+      "bytes": 3993,
+      "sha256": "edab6fdfb7e5567bc099e81078873cb4adc04a9c055ffd82f4520c1c45503a6d"
+    }
+  ],
+  "authorization": {
+    "path": "origin:kit-workspace/focused_qualification_01/CHECK_AUTHORIZATION.json",
+    "bytes": 1513,
+    "sha256": "edba265125ee18eb257746c0743639e4a1bc186b17b0f460c0738c1e553bd64f"
+  },
+  "bridge": {
+    "path": "origin:kit-workspace/focused_qualification_01/result/BRIDGE_RECEIPT.json",
+    "bytes": 4344,
+    "sha256": "73de8f02f2480dc14b766d79fcfe4b8bc0fa6c80372c784c7bb850c0f16a9e6d"
+  },
+  "model_bindings": {
+    "all_nodes_typed_bit_valuation_consistent": true,
+    "all_ranks_valid": true,
+    "original_relation_hashes_verified": true,
+    "sole_original_and_solver_ENV_justice_identical": true,
+    "ENV_justice_exhaustively_NOT_helper": true,
+    "justice_assignments": 2048
+  },
+  "node_id": "680",
+  "valuation": {
+    "b1": "true",
+    "b2": "false",
+    "b3": "true",
+    "c": "false",
+    "~envHelp": "false",
+    "f1": "false",
+    "f2": "true",
+    "f3": "true",
+    "SYS_CONSTRAINT.0.pRespondsToS.state": "S1",
+    "SYS_CONSTRAINT.1.pRespondsToS.state": "S0",
+    "SYS_CONSTRAINT.2.pRespondsToS.state": "S1"
+  },
+  "raw_core_membership": true,
+  "original_C_at_node": true,
+  "safe_responses_per_source_input": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "original_legal_next_input_count": 0,
+  "native_legal_next_input_count": 16,
+  "every_native_legal_input_flips_helper": true,
+  "residual_graph": {
+    "states": 321,
+    "edges": 5136,
+    "exact_legal_input_coverage": true,
+    "unique_response": true,
+    "all_edges_native_environment_and_system_safe": true,
+    "all_successor_states_helper_true": true,
+    "helper_environment_justice_false_on_every_successor_state": true
+  },
+  "strict_membership_conclusion": "The saved private memory gives a safe complete continuation from the full source valuation with helper=false. Every legal first input flips helper, every future state keeps helper=true and falsifies the sole ENV justice. Therefore this state belongs to the actual saved transformed strict W_R; initial-state reachability is not required for state winning.",
+  "attribution_boundary": "Raw core membership is separate. This does not identify the entire raw core with W_R, recompute all-region winning, prove extraction the unique root cause, or establish a general repair.",
+  "independence_limit": "Reuses the pinned public BDD decoder and saved graph/model. New explicit type/bit/justice binding checks do not constitute an independent compiler.",
+  "native_runs": 0,
+  "compiler_runs": 0,
+  "network_calls": 0
+}

@@ -1,0 +1,93 @@
+{
+  "status": "COMPLETE_BOTH_ARMS_BOTH_AUDITS_AGREE",
+  "checks": [
+    {
+      "name": "baseline_production",
+      "process_complete": true,
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_production_process/PROCESS_RECEIPT.json",
+        "bytes": 9910,
+        "sha256": "55b5271c51344045753438f986435b452e62681d4b9b28c06c22671d009286e7"
+      },
+      "status": "COMPLETE_DERIVED_ORIGINAL_CERTIFICATE",
+      "output": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_production/certificate.json",
+        "bytes": 11152,
+        "sha256": "660a6c9423fad5c9cf33e727c8db71bc25d19ab8231870fa4a5376106885525e"
+      },
+      "strict": true,
+      "cooperative": false,
+      "original_states": 154,
+      "original_edges": 1170
+    },
+    {
+      "name": "baseline_independent",
+      "process_complete": true,
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_independent_process/PROCESS_RECEIPT.json",
+        "bytes": 89476,
+        "sha256": "25d328beba1c6776a02efcf9405608783e97b523e20c242582b83f684e4bf467"
+      },
+      "status": "COMPLETE_INDEPENDENT_RAW_GRAPH_AUDIT",
+      "output": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/baseline_independent/AUDIT_RESULT.json",
+        "bytes": 16231,
+        "sha256": "a2fb91d253028cadfeb8df754a6b8eff0bd0f5252fbcd584c6a5d5a6bcd725fd"
+      },
+      "strict": true,
+      "cooperative": false,
+      "original_states": 154,
+      "original_edges": 1170
+    },
+    {
+      "name": "variant_production",
+      "process_complete": true,
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_production_process/PROCESS_RECEIPT.json",
+        "bytes": 9555,
+        "sha256": "da869c3edbee020fba82ae4773c30b3991ba581df5cfa920506cb2cb461bf6f6"
+      },
+      "status": "COMPLETE_DERIVED_ORIGINAL_CERTIFICATE",
+      "output": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_production/certificate.json",
+        "bytes": 17012,
+        "sha256": "701cd14f9885f1fb371b37e71010b313c2bdbb6c51f6ca7aba8d0a964a9c4674"
+      },
+      "strict": true,
+      "cooperative": true,
+      "original_states": 154,
+      "original_edges": 1176
+    },
+    {
+      "name": "variant_independent",
+      "process_complete": true,
+      "process": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_independent_process/PROCESS_RECEIPT.json",
+        "bytes": 91546,
+        "sha256": "76a7627bf5d21eb6df7c1ff1e62b395aa5a59151065ea3e88aa8c62cc3dfae97"
+      },
+      "status": "COMPLETE_INDEPENDENT_RAW_GRAPH_AUDIT",
+      "output": {
+        "path": "origin:kit-workspace/qualification_01/run_01/audits/variant_independent/AUDIT_RESULT.json",
+        "bytes": 21533,
+        "sha256": "2c741c0d77a8f5e78b920cd7ee5ec2017e4c35eb81bfaddc9e284955e11471c0"
+      },
+      "strict": true,
+      "cooperative": true,
+      "original_states": 154,
+      "original_edges": 1176
+    }
+  ],
+  "baseline": {
+    "strict": true,
+    "cooperative": false,
+    "original_states": 154,
+    "original_edges": 1170
+  },
+  "variant": {
+    "strict": true,
+    "cooperative": true,
+    "original_states": 154,
+    "original_edges": 1176
+  }
+}

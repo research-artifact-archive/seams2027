@@ -8,7 +8,7 @@ The public corpus specifications come from the fixed archive in [Zenodo record 1
 
 The separately supplied [corpus license](https://zenodo.org/records/10553249/files/LICENSE.txt?download=1) is BSD 3-Clause, with the original 2024 Tel Aviv University / Software Modeling Lab notice. An exact copy is provided as [licenses/zenodo10553249-LICENSE.txt](licenses/zenodo10553249-LICENSE.txt), SHA-256 `b5391db405b7121333f9e3b26ca4d29144aee3f3cd2a6e0bb41ac05e68a197ec`. The archived corpus README and source comments remain unchanged.
 
-Historical Slugs and CUDD license notices are also retained in their original evidence paths. Their presence does not grant rights for unrelated dependencies. No synthesis runtime, native binary, JAR file, or PDF is included in the public release assets.
+Historical Slugs and CUDD license notices are also retained in their original evidence paths. Their presence does not grant rights for unrelated dependencies. No synthesis runtime, native binary, JAR file or third-party paper PDF is included in these scientific evidence archives. The separate generic technical appendix is an original document snapshot described below.
 
 ## Retrieved directly by the reader
 
@@ -26,7 +26,7 @@ The external-source helper downloads eight pinned objects directly from their di
 
 ## Unchanged evidence
 
-No mathematical result, model, controller, checker source, or historical verdict was regenerated for publication. All retained archive members have their original bytes. The public archive hashes differ because of source omissions and ZIP packaging. After successful source restoration, the complete historical member tree has its original byte identities. The historical archive container hash is a separate identity.
+For the original three archives, no mathematical result, model, controller, checker source, or historical verdict was regenerated for publication. All retained archive members have their original bytes. The public archive hashes differ because of source omissions and ZIP packaging. After successful source restoration, the complete historical member tree has its original byte identities. The historical archive container hash is a separate identity.
 
 Older inner `LICENSES_AND_SCOPE.txt` files describe the earlier private-preparation stage and remain unchanged for provenance. The current outer license grants rights only for original artifact contributions; the included corpus retains its own BSD terms, and the identified third-party source files are fetched externally.
 
@@ -38,3 +38,16 @@ The preceding packaging statement concerns the original three archives. This fou
 The separately versioned fourth archive omits the upstream-derived extractor sources, seven paper-derived specification files, the derived maintenance specification, compiled producer classes, upstream JARs, native libraries and paper PDFs. Its source-restoration helper retrieves the pinned original HTML and GR1 JAR, then applies original edit operations to reconstruct fourteen exact source files. The two included Java templates are original artifact wrapper/observer code; no full upstream extractor template is bundled. Downloaded material keeps its publisher's terms. Source restoration grants no new redistribution rights.
 
 Saved models, graphs, BDD exports, original checker code and original experiment records remain in the fourth archive. The original/copy ledger discloses private-path sanitization; the omissions ledger separately identifies excluded bulk logs and recorded class hashes. Archived class hashes are not a claim that producer bytecode is included or recreated. See LIFT_CAUSAL_EXTENSION.md for the distinction between saved-semantics replay and producer provenance.
+
+
+## Native regeneration addendum
+
+The fifth archive contains original acquisition, configuration, supervision and verification code, fixed URL/hash manifests, and selected anonymous author attestations. It does not redistribute the installed JDK/Python runtime, upstream JARs, downloaded source caches, original publisher payloads or main-manuscript files. The included OriginProbe helper and finite-state checker are original artifact contributions.
+
+The native entrypoint obtains its fixed public payloads directly from their recorded distributors. The fourth archive supplies the existing source-restoration recipes; upstream-derived extractor and paper specification bytes remain external. Retrieval and reconstruction preserve their original terms and do not extend redistribution rights. The outer BSD license applies only to original artifact contributions.
+
+Installed-runtime hash inventories identify the qualified host contents without granting a license to those external runtimes or supplying them. Anonymous receipt copies have new serialized byte identities recorded in the original/copy ledger. The historical kit receipts attest to the prior local execution; the corrected path displays are documented in the derivation ledger. The later actual execution used controls and scientific inputs byte-identical to the public kit. Three metadata members received a subsequent privacy correction, documented by an exact derivation ledger outside the ZIP. The current qualification record distinguishes executed controls from the final package serialization.
+
+## Technical appendix document snapshot
+
+The generic appendix PDF and appendix-only TeX source ZIP are original documentation supplied separately under `documents/`, with the included original-contribution license. Citations identify external literature without redistributing the cited paper PDFs. The main manuscript and its source tree are not included. `DOCUMENT_SNAPSHOT_MANIFEST.json` binds the document identities; this snapshot is separate from the five scientific evidence archives.

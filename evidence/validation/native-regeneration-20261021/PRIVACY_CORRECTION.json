@@ -1,0 +1,30 @@
+{
+  "schema": "public-kit-privacy-corrective-finding-v1",
+  "status": "CORRECTED_KIT_METADATA_PRIVACY_AND_EXACT_DELTA_VERIFIED",
+  "finding": "Earlier privacy checks removed the username but missed a private workspace suffix in four prior POSTFLIGHT path strings and their four presentation-ledger mirrors. Unicode-normalized matching exposed the remaining suffix.",
+  "earlier_static_review_original": {
+    "bytes": 30031,
+    "sha256": "076de8e96160b9317075318eb1d34b929ec7b21f35970ea93f721f038de9486e"
+  },
+  "earlier_static_review_public_copy": {
+    "path": "evidence/validation/native-regeneration-20261021/INDEPENDENT_STATIC_REVIEW.json",
+    "bytes": 22735,
+    "sha256": "5b978f47f9319e310e047b2a77d62461b2f72441156bd3b4900e5b76c91e9bac"
+  },
+  "original_privacy_failure_review": {
+    "status": "BLOCKED_PENDING_METADATA_PRIVACY_FIX",
+    "bytes": 24106,
+    "sha256": "c1daafc7edfc19f662a49016da0a4edafe019bc448d7711eb2ae4b77af703494"
+  },
+  "preservation": "The original frozen package, execution results, previous ZIP and earlier PASS/BLOCKED reviews remain unchanged privately. Existing public archives and tags remain unchanged.",
+  "remediation": "Only four POSTFLIGHT path displays, four corresponding ledger new_value fields, and six dependent copy/manifest identity fields changed; all 29 other member bytes remain exact.",
+  "derivation_ledger": {
+    "path": "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json",
+    "bytes": 13980,
+    "sha256": "589a0363c22ed8519e657f37f32227f1cfa01db454dd85fb3bd0515c12654f3a"
+  },
+  "new_scientific_execution": 0,
+  "new_package_execution": false,
+  "independent_recheck": "A separate reviewer verified exactly14 changed JSON leaves in3 metadata files,29 byte-identical members,32-member manifest/ZIP closure and zero private markers under NFC/NFD/NFKC and URL-decoded parsed-string scanning of the corrected kit and outer receipts. No scientific rerun was used.",
+  "scope": "Corrective kit-metadata finding; the final combined release and document snapshot also receive separate publication review."
+}

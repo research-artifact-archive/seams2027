@@ -1,0 +1,178 @@
+{
+  "status": "PASS",
+  "sources": [
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/ReleasedKindJobProducer.java",
+      "bytes": 28209,
+      "sha256": "25ac27b6a09557474c3abf0b6928d97143513bf2ab602f15135eb12e428375bd"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/PairedLiftDiagnostic.java",
+      "bytes": 32673,
+      "sha256": "f1bf60f8d13886f4cdd4281be8ce9ed78769afeae952220345ae692f90b43033"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ExtractionObserver.java",
+      "bytes": 12200,
+      "sha256": "2e9bdc6519ef93e86b7a0e6f1dd364a2e294a9956e4362e09e3c2a8260575581"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.java",
+      "bytes": 10860,
+      "sha256": "bb338afe2b38f0371967e2bd1dddf538c68bfc1d5874f98acb5a2ad962d927cb"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/PairedContinuationDiagnostic.java",
+      "bytes": 36724,
+      "sha256": "9a6a31de9a66a838cae7ee2710f32b5325a79c23f11951055b189f89c3057076"
+    },
+    {
+      "path": "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.java",
+      "bytes": 10636,
+      "sha256": "39707e980423e888030c9f36d1251614d84a654e6f4c2d4be0123290bead9aee"
+    }
+  ],
+  "classes": {
+    "PairedContinuationDiagnostic$1.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedContinuationDiagnostic$1.class",
+      "bytes": 442,
+      "sha256": "df52f3fddb70822ad1087e4e405204f5e4f468db19d932936b69568e9853edcc"
+    },
+    "PairedContinuationDiagnostic$InvariantMismatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedContinuationDiagnostic$InvariantMismatch.class",
+      "bytes": 381,
+      "sha256": "403a05b5b44740ab5187a07eb2af2863d9cb0ddf972263454757eae5604c2e2f"
+    },
+    "PairedContinuationDiagnostic$UnsupportedDomain.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedContinuationDiagnostic$UnsupportedDomain.class",
+      "bytes": 381,
+      "sha256": "e7af0ccbb438f75e4404975daafc5f4b8b84f417140a6f248ae127ecd7480e4c"
+    },
+    "PairedContinuationDiagnostic$ValidationLogWatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedContinuationDiagnostic$ValidationLogWatch.class",
+      "bytes": 1607,
+      "sha256": "55e2f771a97c21b7e07ce87f5f73514dd091036decd39e297717398649ccaf8a"
+    },
+    "PairedContinuationDiagnostic.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedContinuationDiagnostic.class",
+      "bytes": 48058,
+      "sha256": "262c240f3f37be1a2ea58cf257393d1f88c13ac5cd12c7c69c1ed4beca42d29a"
+    },
+    "PairedLiftDiagnostic$1.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedLiftDiagnostic$1.class",
+      "bytes": 418,
+      "sha256": "6c681ad5bc5f052b654464414d9cc528fd7ba684a3523a638665d7217f56a6be"
+    },
+    "PairedLiftDiagnostic$InvariantMismatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedLiftDiagnostic$InvariantMismatch.class",
+      "bytes": 357,
+      "sha256": "b33d3e491afa1188422db74f3fc28205ec5a276b588926088779efa49938cead"
+    },
+    "PairedLiftDiagnostic$UnsupportedDomain.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedLiftDiagnostic$UnsupportedDomain.class",
+      "bytes": 357,
+      "sha256": "1c9053de3f36c999418975811099e4aadf2210b772c36c35085d048fce95d298"
+    },
+    "PairedLiftDiagnostic$ValidationLogWatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedLiftDiagnostic$ValidationLogWatch.class",
+      "bytes": 1583,
+      "sha256": "43c77edb848a1ed5f697ea5415a95969a7e809fb9916251c96e280a297c97b21"
+    },
+    "PairedLiftDiagnostic.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/PairedLiftDiagnostic.class",
+      "bytes": 44495,
+      "sha256": "f228eecd11f3fbd9b62afd84fe34195b78c57f6d4ebed9bc8e2fbbea507a9fe3"
+    },
+    "ReleasedKindJobProducer$1.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/ReleasedKindJobProducer$1.class",
+      "bytes": 427,
+      "sha256": "4f2a2efbdc23cc38b0c5c6cf3591dc5db7ae11dd8d048c42e9bde0aab78401ed"
+    },
+    "ReleasedKindJobProducer$InvariantMismatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/ReleasedKindJobProducer$InvariantMismatch.class",
+      "bytes": 366,
+      "sha256": "c4921a7157283f7785bfb3f9845f55d87e778d17279ad05d74f79febc7fd1967"
+    },
+    "ReleasedKindJobProducer$UnsupportedDomain.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/ReleasedKindJobProducer$UnsupportedDomain.class",
+      "bytes": 366,
+      "sha256": "ef2737b572e1c6b583b165ff0673e9a2a05da34382dbc9c125f8493b772066ec"
+    },
+    "ReleasedKindJobProducer$ValidationLogWatch.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/ReleasedKindJobProducer$ValidationLogWatch.class",
+      "bytes": 1592,
+      "sha256": "45fb30d01f9dcbad14f91d924f72412cf36b56372cd5b1544e57f00a27b05431"
+    },
+    "ReleasedKindJobProducer.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/ReleasedKindJobProducer.class",
+      "bytes": 40122,
+      "sha256": "99a0a46261d243e057ba01be9cbb2bed800bb934d3ee0d8a1bb7588c9a2934dc"
+    },
+    "tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.class",
+      "bytes": 10660,
+      "sha256": "5a4e4032c71ec61e0a457e0efbd65dff94f93be7beaafcd242088ea9cd02437b"
+    },
+    "tau/smlab/syntech/games/gr1/GR1ExtractionObserver$Snapshot.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/tau/smlab/syntech/games/gr1/GR1ExtractionObserver$Snapshot.class",
+      "bytes": 447,
+      "sha256": "7b71aa643dcca8a06806433d747311519a85bb9ee851b4e85aae6aa2872311a6"
+    },
+    "tau/smlab/syntech/games/gr1/GR1ExtractionObserver.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/tau/smlab/syntech/games/gr1/GR1ExtractionObserver.class",
+      "bytes": 13869,
+      "sha256": "00849ed974c10319429871984890e1e51dd38aaa3b74fd0ef5b7bfa2470ef152"
+    },
+    "tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.class": {
+      "path": "origin:kit-workspace/qualification_01/build/classes/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.class",
+      "bytes": 11433,
+      "sha256": "387d115789a1031a95c756cfaead04ad341269f6337867999518de6385ac9a26"
+    }
+  },
+  "historical_byte_parity": {
+    "ReleasedKindJobProducer$1.class": true,
+    "ReleasedKindJobProducer$InvariantMismatch.class": true,
+    "ReleasedKindJobProducer$UnsupportedDomain.class": true,
+    "ReleasedKindJobProducer$ValidationLogWatch.class": true,
+    "ReleasedKindJobProducer.class": true,
+    "PairedLiftDiagnostic$1.class": true,
+    "PairedLiftDiagnostic$InvariantMismatch.class": true,
+    "PairedLiftDiagnostic$UnsupportedDomain.class": true,
+    "PairedLiftDiagnostic$ValidationLogWatch.class": true,
+    "PairedLiftDiagnostic.class": true,
+    "tau/smlab/syntech/games/gr1/GR1ExtractionObserver$Snapshot.class": true,
+    "tau/smlab/syntech/games/gr1/GR1ExtractionObserver.class": true,
+    "tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.class": true,
+    "PairedContinuationDiagnostic$1.class": true,
+    "PairedContinuationDiagnostic$InvariantMismatch.class": true,
+    "PairedContinuationDiagnostic$UnsupportedDomain.class": true,
+    "PairedContinuationDiagnostic$ValidationLogWatch.class": true,
+    "PairedContinuationDiagnostic.class": true,
+    "tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.class": true
+  },
+  "command": [
+    "host:JDK_HOME/bin/javac",
+    "-J-Xmx512m",
+    "-encoding",
+    "UTF-8",
+    "-proc:none",
+    "-implicit:none",
+    "-sourcepath",
+    "origin:kit-workspace/qualification_01/build/empty_sourcepath",
+    "-cp",
+    "origin:kit-workspace/qualification_01/deps/001_tau.smlab.syntech.Spectra.ide_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/002_tau.smlab.syntech.Spectra.ui_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/003_tau.smlab.syntech.Spectra_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/004_tau.smlab.syntech.bddgenerator_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/005_tau.smlab.syntech.checks_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/006_tau.smlab.syntech.gameinput_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/007_tau.smlab.syntech.gameinputtrans_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/008_tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/009_tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/010_tau.smlab.syntech.games.rabin_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/011_tau.smlab.syntech.games.simple_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/012_tau.smlab.syntech.games.strategy.MAAprinter_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/013_tau.smlab.syntech.games_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/014_tau.smlab.syntech.jtlv_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/015_tau.smlab.syntech.logs_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/016_tau.smlab.syntech.modelchecker_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/017_tau.smlab.syntech.sfa_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/018_tau.smlab.syntech.spectragameinput_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/019_tau.smlab.syntech.ui.extension_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/020_tau.smlab.syntech.ui_1.0.0.202402072123.jar:origin:kit-workspace/qualification_01/deps/021_bcpg_1.77.0.jar:origin:kit-workspace/qualification_01/deps/022_bcprov_1.77.0.jar:origin:kit-workspace/qualification_01/deps/023_com.google.errorprone.annotations_2.23.0.jar:origin:kit-workspace/qualification_01/deps/024_com.google.gson_2.10.1.v20230109-0753.jar:origin:kit-workspace/qualification_01/deps/025_com.google.guava.failureaccess_1.0.2.jar:origin:kit-workspace/qualification_01/deps/026_com.google.guava_32.1.3.jre.jar:origin:kit-workspace/qualification_01/deps/027_com.google.inject_7.0.0.jar:origin:kit-workspace/qualification_01/deps/028_com.ibm.icu_74.1.0.jar:origin:kit-workspace/qualification_01/deps/029_com.sun.jna.platform_5.13.0.jar:origin:kit-workspace/qualification_01/deps/030_com.sun.jna_5.13.0.v20230812-1000.jar:origin:kit-workspace/qualification_01/deps/031_io.github.classgraph.classgraph_4.8.164.jar:origin:kit-workspace/qualification_01/deps/032_jakarta.annotation-api_1.3.5.jar:origin:kit-workspace/qualification_01/deps/033_jakarta.annotation-api_2.1.1.jar:origin:kit-workspace/qualification_01/deps/034_jakarta.inject.jakarta.inject-api_1.0.5.jar:origin:kit-workspace/qualification_01/deps/035_jakarta.inject.jakarta.inject-api_2.0.1.jar:origin:kit-workspace/qualification_01/deps/036_org.antlr.runtime_3.2.0.v20230929-1400.jar:origin:kit-workspace/qualification_01/deps/037_org.aopalliance_1.0.0.v20230720-0728.jar:origin:kit-workspace/qualification_01/deps/038_org.apache.batik.constants_1.17.0.v20231009-1000.jar:origin:kit-workspace/qualification_01/deps/039_org.apache.batik.css_1.17.0.v20231009-1000.jar:origin:kit-workspace/qualification_01/deps/040_org.apache.batik.i18n_1.17.0.v20231009-1000.jar:origin:kit-workspace/qualification_01/deps/041_org.apache.batik.util_1.17.0.v20231009-1000.jar:origin:kit-workspace/qualification_01/deps/042_org.apache.commons.collections_3.2.2.v201511171945.jar:origin:kit-workspace/qualification_01/deps/043_org.apache.commons.commons-beanutils_1.9.4.jar:origin:kit-workspace/qualification_01/deps/044_org.apache.commons.commons-io_2.15.0.jar:origin:kit-workspace/qualification_01/deps/045_org.apache.commons.jxpath_1.3.0.v200911051830.jar:origin:kit-workspace/qualification_01/deps/046_org.apache.commons.logging_1.2.0.v20180409-1502.jar:origin:kit-workspace/qualification_01/deps/047_org.apache.log4j_1.2.24.v20221221-2012.jar:origin:kit-workspace/qualification_01/deps/048_org.apache.xmlgraphics_2.9.0.v20230916-1600.jar:origin:kit-workspace/qualification_01/deps/049_org.eclipse.compare.core_3.8.300.v20231106-1240.jar:origin:kit-workspace/qualification_01/deps/050_org.eclipse.compare_3.9.300.v20231123-2204.jar:origin:kit-workspace/qualification_01/deps/051_org.eclipse.core.commands_3.11.200.v20231108-1058.jar:origin:kit-workspace/qualification_01/deps/052_org.eclipse.core.contenttype_3.9.200.v20230914-0751.jar:origin:kit-workspace/qualification_01/deps/053_org.eclipse.core.databinding.observable_1.13.100.v20230708-0916.jar:origin:kit-workspace/qualification_01/deps/054_org.eclipse.core.databinding.property_1.10.100.v20230708-0916.jar:origin:kit-workspace/qualification_01/deps/055_org.eclipse.core.databinding_1.13.100.v20230708-0916.jar:origin:kit-workspace/qualification_01/deps/056_org.eclipse.core.expressions_3.9.200.v20230921-0857.jar:origin:kit-workspace/qualification_01/deps/057_org.eclipse.core.filebuffers_3.8.200.v20230921-0933.jar:origin:kit-workspace/qualification_01/deps/058_org.eclipse.core.filesystem_1.10.200.v20231102-0934.jar:origin:kit-workspace/qualification_01/deps/059_org.eclipse.core.jobs_3.15.100.v20230930-1207.jar:origin:kit-workspace/qualification_01/deps/060_org.eclipse.core.resources_3.20.0.v20231102-0934.jar:origin:kit-workspace/qualification_01/deps/061_org.eclipse.core.runtime_3.30.0.v20231102-0719.jar:origin:kit-workspace/qualification_01/deps/062_org.eclipse.core.variables_3.6.200.v20230914-0751.jar:origin:kit-workspace/qualification_01/deps/063_org.eclipse.debug.core_3.21.200.v20231021-1513.jar:origin:kit-workspace/qualification_01/deps/064_org.eclipse.debug.ui_3.18.200.v20231106-1112.jar:origin:kit-workspace/qualification_01/deps/065_org.eclipse.e4.core.commands_1.1.200.v20231108-1058.jar:origin:kit-workspace/qualification_01/deps/066_org.eclipse.e4.core.contexts_1.12.400.v20231103-2012.jar:origin:kit-workspace/qualification_01/deps/067_org.eclipse.e4.core.di.annotations_1.8.200.v20231103-2012.jar:origin:kit-workspace/qualification_01/deps/068_org.eclipse.e4.core.di.extensions.supplier_0.17.300.v20231028-1632.jar:origin:kit-workspace/qualification_01/deps/069_org.eclipse.e4.core.di.extensions_0.18.100.v20231103-2012.jar:origin:kit-workspace/qualification_01/deps/070_org.eclipse.e4.core.di_1.9.200.v20231105-0754.jar:origin:kit-workspace/qualification_01/deps/071_org.eclipse.e4.core.services_2.4.200.v20231103-2012.jar:origin:kit-workspace/qualification_01/deps/072_org.eclipse.e4.emf.xpath_0.4.100.v20230801-1255.jar:origin:kit-workspace/qualification_01/deps/073_org.eclipse.e4.ui.bindings_0.14.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/074_org.eclipse.e4.ui.css.core_0.14.200.v20231025-0632.jar:origin:kit-workspace/qualification_01/deps/075_org.eclipse.e4.ui.css.swt.theme_0.14.200.v20230913-1724.jar:origin:kit-workspace/qualification_01/deps/076_org.eclipse.e4.ui.css.swt_0.15.200.v20231025-0632.jar:origin:kit-workspace/qualification_01/deps/077_org.eclipse.e4.ui.di_1.5.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/078_org.eclipse.e4.ui.dialogs_1.4.100.v20230727-0604.jar:origin:kit-workspace/qualification_01/deps/079_org.eclipse.e4.ui.ide_3.17.100.v20230727-0604.jar:origin:kit-workspace/qualification_01/deps/080_org.eclipse.e4.ui.model.workbench_2.4.100.v20230801-1255.jar:origin:kit-workspace/qualification_01/deps/081_org.eclipse.e4.ui.services_1.6.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/082_org.eclipse.e4.ui.widgets_1.4.0.v20230317-0802.jar:origin:kit-workspace/qualification_01/deps/083_org.eclipse.e4.ui.workbench.addons.swt_1.5.200.v20231106-1600.jar:origin:kit-workspace/qualification_01/deps/084_org.eclipse.e4.ui.workbench.renderers.swt_0.16.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/085_org.eclipse.e4.ui.workbench.swt_0.17.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/086_org.eclipse.e4.ui.workbench3_0.17.200.v20231025-0632.jar:origin:kit-workspace/qualification_01/deps/087_org.eclipse.e4.ui.workbench_1.15.200.v20231030-2045.jar:origin:kit-workspace/qualification_01/deps/088_org.eclipse.emf.common.ui_2.22.0.v20231002-1020.jar:origin:kit-workspace/qualification_01/deps/089_org.eclipse.emf.common_2.29.0.v20230916-0637.jar:origin:kit-workspace/qualification_01/deps/090_org.eclipse.emf.ecore.change_2.15.0.v20230211-1150.jar:origin:kit-workspace/qualification_01/deps/091_org.eclipse.emf.ecore.xmi_2.36.0.v20231002-1156.jar:origin:kit-workspace/qualification_01/deps/092_org.eclipse.emf.ecore_2.35.0.v20230829-0934.jar:origin:kit-workspace/qualification_01/deps/093_org.eclipse.emf.edit.ui_2.23.0.v20230211-1150.jar:origin:kit-workspace/qualification_01/deps/094_org.eclipse.emf.edit_2.20.0.v20231107-0612.jar:origin:kit-workspace/qualification_01/deps/095_org.eclipse.equinox.app_1.6.400.v20231103-0807.jar:origin:kit-workspace/qualification_01/deps/096_org.eclipse.equinox.bidi_1.4.400.v20231106-0858.jar:origin:kit-workspace/qualification_01/deps/097_org.eclipse.equinox.common_3.18.200.v20231106-1826.jar:origin:kit-workspace/qualification_01/deps/098_org.eclipse.equinox.p2.artifact.repository_1.5.200.v20231105-1139.jar:origin:kit-workspace/qualification_01/deps/099_org.eclipse.equinox.p2.core_2.10.200.v20231102-1258.jar:origin:kit-workspace/qualification_01/deps/100_org.eclipse.equinox.p2.engine_2.9.0.v20231105-1139.jar:origin:kit-workspace/qualification_01/deps/101_org.eclipse.equinox.p2.jarprocessor_1.3.200.v20230630-1506.jar:origin:kit-workspace/qualification_01/deps/102_org.eclipse.equinox.p2.metadata.repository_1.5.200.v20231021-1438.jar:origin:kit-workspace/qualification_01/deps/103_org.eclipse.equinox.p2.metadata_2.8.0.v20231102-1258.jar:origin:kit-workspace/qualification_01/deps/104_org.eclipse.equinox.p2.repository_2.8.0.v20231111-1058.jar:origin:kit-workspace/qualification_01/deps/105_org.eclipse.equinox.preferences_3.10.400.v20231102-2218.jar:origin:kit-workspace/qualification_01/deps/106_org.eclipse.equinox.registry_3.11.400.v20231102-2218.jar:origin:kit-workspace/qualification_01/deps/107_org.eclipse.equinox.security_1.4.100.v20231012-1825.jar:origin:kit-workspace/qualification_01/deps/108_org.eclipse.help_3.10.200.v20231106-1240.jar:origin:kit-workspace/qualification_01/deps/109_org.eclipse.jdt.core.compiler.batch_3.36.0.v20231114-0937.jar:origin:kit-workspace/qualification_01/deps/110_org.eclipse.jdt.core.manipulation_1.20.0.v20231115-2128.jar:origin:kit-workspace/qualification_01/deps/111_org.eclipse.jdt.core_3.36.0.v20231115-1055.jar:origin:kit-workspace/qualification_01/deps/112_org.eclipse.jdt.debug_3.21.200.v20231103-0755.jar:origin:kit-workspace/qualification_01/deps/113_org.eclipse.jdt.launching_3.21.0.v20231103-0759.jar:origin:kit-workspace/qualification_01/deps/114_org.eclipse.jdt.ui_3.31.0.v20231115-2128.jar:origin:kit-workspace/qualification_01/deps/115_org.eclipse.jface.databinding_1.15.100.v20230708-0916.jar:origin:kit-workspace/qualification_01/deps/116_org.eclipse.jface.text_3.24.200.v20231024-0828.jar:origin:kit-workspace/qualification_01/deps/117_org.eclipse.jface_3.32.0.v20231107-0834.jar:origin:kit-workspace/qualification_01/deps/118_org.eclipse.lsp4j.jsonrpc_0.21.1.v20230829-0012.jar:origin:kit-workspace/qualification_01/deps/119_org.eclipse.lsp4j_0.21.1.v20230829-0012.jar:origin:kit-workspace/qualification_01/deps/120_org.eclipse.ltk.core.refactoring_3.14.200.v20231106-1218.jar:origin:kit-workspace/qualification_01/deps/121_org.eclipse.ltk.ui.refactoring_3.13.200.v20231006-1610.jar:origin:kit-workspace/qualification_01/deps/122_org.eclipse.orbit.xml-apis-ext_1.0.0.v20230923-0644.jar:origin:kit-workspace/qualification_01/deps/123_org.eclipse.osgi_3.18.600.v20231110-1900.jar:origin:kit-workspace/qualification_01/deps/124_org.eclipse.search.core_3.16.0.v20230921-0933.jar:origin:kit-workspace/qualification_01/deps/125_org.eclipse.search_3.16.0.v20230921-2245.jar:origin:kit-workspace/qualification_01/deps/126_org.eclipse.swt.cocoa.macosx.aarch64_3.124.200.v20231113-1355.jar:origin:kit-workspace/qualification_01/deps/127_org.eclipse.swt_3.124.200.v20231113-1355.jar:origin:kit-workspace/qualification_01/deps/128_org.eclipse.team.core_3.10.200.v20231106-1240.jar:origin:kit-workspace/qualification_01/deps/129_org.eclipse.team.ui_3.10.200.v20231106-1240.jar:origin:kit-workspace/qualification_01/deps/130_org.eclipse.text_3.13.100.v20230801-1334.jar:origin:kit-workspace/qualification_01/deps/131_org.eclipse.ui.console_3.13.100.v20230914-0751.jar:origin:kit-workspace/qualification_01/deps/132_org.eclipse.ui.editors_3.17.100.v20231106-1600.jar:origin:kit-workspace/qualification_01/deps/133_org.eclipse.ui.forms_3.13.100.v20231102-1012.jar:origin:kit-workspace/qualification_01/deps/134_org.eclipse.ui.ide_3.22.0.v20231102-1012.jar:origin:kit-workspace/qualification_01/deps/135_org.eclipse.ui.navigator.resources_3.9.100.v20230821-1342.jar:origin:kit-workspace/qualification_01/deps/136_org.eclipse.ui.navigator_3.12.200.v20231019-2116.jar:origin:kit-workspace/qualification_01/deps/137_org.eclipse.ui.views.properties.tabbed_3.10.100.v20230727-0604.jar:origin:kit-workspace/qualification_01/deps/138_org.eclipse.ui.views_3.12.100.v20230821-1342.jar:origin:kit-workspace/qualification_01/deps/139_org.eclipse.ui.workbench.texteditor_3.17.200.v20231106-1600.jar:origin:kit-workspace/qualification_01/deps/140_org.eclipse.ui.workbench_3.131.0.v20231201-0512.jar:origin:kit-workspace/qualification_01/deps/141_org.eclipse.ui_3.205.0.v20230922-1312.jar:origin:kit-workspace/qualification_01/deps/142_org.eclipse.urischeme_1.3.100.v20230727-0604.jar:origin:kit-workspace/qualification_01/deps/143_org.eclipse.xtend.lib.macro_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/144_org.eclipse.xtend.lib_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/145_org.eclipse.xtext.builder_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/146_org.eclipse.xtext.common.types.ui_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/147_org.eclipse.xtext.common.types_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/148_org.eclipse.xtext.ide_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/149_org.eclipse.xtext.smap_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/150_org.eclipse.xtext.ui.codetemplates.ide_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/151_org.eclipse.xtext.ui.codetemplates.ui_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/152_org.eclipse.xtext.ui.codetemplates_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/153_org.eclipse.xtext.ui.shared_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/154_org.eclipse.xtext.ui_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/155_org.eclipse.xtext.util_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/156_org.eclipse.xtext.xbase.ide_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/157_org.eclipse.xtext.xbase.lib_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/158_org.eclipse.xtext.xbase_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/159_org.eclipse.xtext_2.33.0.v20231121-0955.jar:origin:kit-workspace/qualification_01/deps/160_org.objectweb.asm_9.6.0.jar:origin:kit-workspace/qualification_01/deps/161_org.osgi.service.event_1.4.1.202109301733.jar:origin:kit-workspace/qualification_01/deps/162_org.osgi.service.prefs_1.1.2.202109301733.jar:origin:kit-workspace/qualification_01/deps/163_org.tukaani.xz_1.9.0.jar:origin:kit-workspace/qualification_01/deps/164_automaton_36c7c660c345.jar",
+    "-d",
+    "origin:kit-workspace/qualification_01/build/classes",
+    "origin:kit-workspace/qualification_01/restored/java/ReleasedKindJobProducer.java",
+    "origin:kit-workspace/qualification_01/restored/java/PairedLiftDiagnostic.java",
+    "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ExtractionObserver.java",
+    "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.java",
+    "origin:kit-workspace/qualification_01/restored/java/PairedContinuationDiagnostic.java",
+    "origin:kit-workspace/qualification_01/restored/java/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.java"
+  ],
+  "process": {
+    "path": "origin:kit-workspace/qualification_01/processes/compile_all_six/PROCESS_RECEIPT.json",
+    "bytes": 54922,
+    "sha256": "2d4d5eecc62955c0fc97757265f6ba92d7412d75b9a81ddd967914bcc21d4e13"
+  }
+}

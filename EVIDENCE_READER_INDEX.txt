@@ -307,3 +307,15 @@ attempts01-03 retained. Known prefix and initial-compatible stopped handoff.
 The Python-only reader recomputes saved mathematics and event semantics;
 producer class/runtime/process/same-object facts remain archived evidence.
 Historical claims above and their denominators are unchanged.
+
+
+FIFTH ADDENDUM — EXECUTED CONTROL QUALIFICATION
+
+LIFT-PUBLIC-NATIVE-REGENERATION
+Read NATIVE_REGENERATION.md and NATIVE_REGENERATION_VALIDATION.json, then evidence/validation/native-regeneration-20261021/qualification_01/SUMMARY.json and the independent result review listed in the current validation record. One generated configuration using the identical public control and scientific-input bytes completed 165 requests, six-source compilation, one native pair and four graph checks. Baseline 154/1170 strict true/cooperative false; variant 154/1176 both true. Exact installed runtime/macOS and same-host scope; bootstrap kit itself was not fetched from hosting. Retained inner README and prior receipts keep their historical status. Three metadata members were anonymized afterward; the final 32-file serialization was not rerun. METADATA_PUBLICATION_TRANSFORMATIONS.json records the exact 14-field derivation.
+
+LIFT-NODE680-STRICT-STATE-CERTIFICATE
+Read evidence/validation/native-regeneration-20261021/focused_qualification_01/result/RESULT.json and the kit focused/INPUTS.json. The exact wrapper completed typed-bit/rank and 2048-assignment justice checks, sixteen first-input cases, and the 321-state/5136-edge complete safe residual. This witnesses one actual strict-winning source state, not equality of raw core and the entire strict winning region. Prepared public saved inputs; no new synthesis or compiler claim.
+
+DOCUMENT SNAPSHOT
+The generic 41-page technical appendix PDF and appendix-only TeX source ZIP are under documents/, bound by DOCUMENT_SNAPSHOT_MANIFEST.json. They are separate from the five scientific evidence archives.
