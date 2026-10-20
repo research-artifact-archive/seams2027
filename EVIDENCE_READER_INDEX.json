@@ -87,11 +87,19 @@
       ],
       "input_navigation": [
         "PAPER_EVIDENCE_INDEX.tsv",
-        "package/MANIFEST.json"
+        "package/MANIFEST.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus/ROSTER.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/FROZEN.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/PROTOCOL_JA.txt",
+        "package/base/MANIFEST.json",
+        "package/base/PATH_ADAPTATIONS.json"
       ],
       "saved_outputs": [
         "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/RUN_RECEIPT.json",
-        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/runs/corpus002__original/RESULT.json"
+        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/runs/corpus002__original/RESULT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/RUN_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/STOP_ACK.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/STOP_CASE_FACTS_AUDIT.json"
       ],
       "checker_sources": [
         "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/condition.py",
@@ -99,7 +107,8 @@
         "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/check_case.py"
       ],
       "expected_saved_result": "Aggregate eligible_count=59, 59 PASS rows, W_subset_C true for 49/false for 10. Representative corpus002: status PASS; C=W=300; W_minus_C=0.",
-      "execution_scope": "Historical result/code inspection. No claim that a documented reader recipe reruns all 59 models."
+      "execution_scope": "Historical result/code inspection. No claim that a documented reader recipe reruns all 59 models.",
+      "selection_scope": "ROSTER.json lists 449 source paths and 425 byte-distinct units. The RLE receipt records 70 COMPLETE_SYMBOLIC_INDEPENDENT_PENDING outputs under global_stop=true, with 162 non-complete native cases and 193 unattempted units retained. The independent STOP records retain 59 PASS, 2 UNKNOWN_RESOURCE and 9 FAIL_INTEGRITY among the 70 completed outputs. These are completion/certification stages of a stopped run, not 425 completed cases or a random sample. STOP_ACK identifies the 59 completed PASS case receipts. Historical embedded hashes identify original execution files; use package/base/MANIFEST.json and PATH_ADAPTATIONS.json for the path-adapted public copies."
     },
     {
       "id": "C14",
@@ -371,7 +380,7 @@
       "execution_scope": "Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout."
     }
   ],
-  "directory_member_references": 212,
+  "directory_member_references": 220,
   "missing_member_references": [],
   "index_feasibility": "Existing README/index/manifest/result metadata support this compact claim-to-input-to-saved-result-to-checker-to-expected-result index. Full computational reruns are not implied. Core aggregate rows are historical navigation; bounded reader scopes are labeled explicitly.",
   "created_utc": "2026-10-18T19:22:24.317052+00:00",
