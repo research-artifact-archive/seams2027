@@ -1,0 +1,238 @@
+Saved Controller Evidence — static reader index
+
+Archive names refer to the public release. The original directory prefixes and retained file bytes are unchanged. A source_inputs entry may refer to an externally retrieved source; consult EVIDENCE_READER_INDEX.json:source_fetch_required_for_members. All mathematical models, saved outputs, graphs, and checker-source entries remain in the public archives. Run tools/verify_public.py for the public download check before attempting the historical closed-package recipes. The historical file tree is complete only after both source-fetch helpers and tools/check_restored_tree.py succeed.
+
+C59 — 59 certified public originals: 49 satisfy W subset C; 10 violate it.
+Archive: saved-evidence-public-20261020-v1.zip
+Member prefix: seams2027-saved-evidence/
+input_models:
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus002__original/model.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus003__original/model.json
+  (59 exact members are enumerated in EVIDENCE_READER_INDEX.json.)
+input_navigation:
+  PAPER_EVIDENCE_INDEX.tsv
+  package/MANIFEST.json
+saved_outputs:
+  package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/RUN_RECEIPT.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/runs/corpus002__original/RESULT.json
+checker_sources:
+  package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/condition.py
+  package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/evidence.py
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/check_case.py
+Expected saved result: Aggregate eligible_count=59, 59 PASS rows, W_subset_C true for 49/false for 10. Representative corpus002: status PASS; C=W=300; W_minus_C=0.
+Execution boundary: Historical result/code inspection. No claim that a documented reader recipe reruns all 59 models.
+
+C14 — The same 14 public originals across four synthesis paths.
+Archive: saved-evidence-public-20261020-v1.zip
+Member prefix: seams2027-saved-evidence/
+input_models:
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus002__original/model.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus032__original/model.json
+  (14 exact members are enumerated in EVIDENCE_READER_INDEX.json.)
+input_navigation:
+  PUBLIC_14X4_OUTCOMES.tsv
+  EVIDENCE_FILES.tsv
+  package/base/evidence/experiment/seams_research_reframing_20261017/pcar_source_impossibility/SOURCE_PIN.json
+saved_outputs:
+  package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/RUN_RECEIPT.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/slugs_small_recovery_contained_v2/RUN_RECEIPT.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/runs/corpus032__original/released_kind/controller.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/runs/corpus032__original/released_kind/checker/PROCESS_RECEIPT.json
+  package/base/evidence/experiment/seams_research_reframing_20261017/pcar_source_impossibility/ROOT_CANDIDATE.txt
+checker_sources:
+  package/base/evidence/experiment/seams_research_reframing_20261017/released_kind_corpus_checker/certify.py
+source_inputs:
+  package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus/original/artifact/experiments/specs/syn15/PcarLTL_464_PCar_fixed.spectra
+Expected saved result: Both/strict-only/refusal/UNKNOWN: V-restricted 12/1/1/0; normalized 12/0/2/0; released 11/2/0/1; Slugs 12/0/2/0. The process receipt identifies certify.py and original/job directory binding for the representative released Elevator graph. The PCar source and saved ROOT_CANDIDATE give the initializer-only impossibility argument with arbitrary private memory; no all-carrier extension is claimed.
+Execution boundary: Historical 56-row navigation and representative graph-check binding. No native replay, cross-route rerun or speed/prevalence claim.
+
+R11 — Eleven published replacements; eight cooperative initializers and seven returned graphs passing both checks.
+Archive: saved-evidence-public-20261020-v1.zip
+Member prefix: seams2027-saved-evidence/
+input_models:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/inputs/arbiter__preferred/model.json
+source_inputs:
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__preferred.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__trivial_1.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__preferred.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__trivial_1.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__preferred.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_1.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_2.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__preferred.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__trivial_1.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__preferred.spectra
+  package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__trivial_1.spectra
+input_navigation:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/selected_strategy_text_proposal_01/eleven-candidates.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/ORIGINAL_PROFILES.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/INPUT_MANIFEST.json
+saved_outputs:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/selected_strategy_text_proposal_01/eleven-candidates-compact.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/RESULT.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/arbiter__preferred.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261017/arbiter_preferred_released_kind_resource_followup_02/runs/arbiter__preferred/certificate.json
+checker_sources:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/certify.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/admission_checker.py
+  package/code/route_adapters.py
+  package/code/review.py
+reader_recipe: CONSUMER_RECIPE.txt
+Expected saved result: Fixed-eleven compact table and full join retain their historical correspondence gate. The one representative reader recipe is original_initial_K_V/arbiter__preferred: expected PASS_SAVED_EVIDENCE_RECHECK with I_M_K=false and I_M_V=false. Lift P at the historical gate remains UNKNOWN; the distinct direct certificate is the Lift row below.
+Execution boundary: The eleven-source/index mapping is navigation; do not imply the representative Arbiter recipe executes every candidate or every graph checker.
+
+LIFT-T-SELECTED-POLICY — Lift T: a separate original-initial cooperative source policy, its complete transformed-model extension, and a strict but non-cooperative returned selected graph.
+Archive: saved-evidence-public-20261020-v1.zip
+Member prefix: seams2027-saved-evidence/
+source_inputs:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__trivial_1.spectra
+input_models:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/native/model.json
+saved_graphs:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/positive_witness_01/witness/CONTROLLER.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/native/controller.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/production/derived_original_graph.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent/INDEPENDENT_VIEW.json
+input_navigation:
+  PAPER_EVIDENCE_INDEX.tsv
+  package/MANIFEST.json
+  package/CLAIM_GUIDE.txt
+  CONSUMER_RECIPE.txt
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/ORIGINAL_PROFILES.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/PROSPECTIVE_POLICY.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/INPUTS.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/PROOF_AND_SCOPE.txt
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_witness_closure_01/PROOF_EN.txt
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent_inputs.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/PROTOCOL.json
+saved_outputs:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/positive_witness_01/witness/CERTIFICATE.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/ROOT_RESULT_REVIEW.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/execution_01/output/EXTENSION_RESULT.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/ROOT_RESULT_REVIEW.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/production/certificate.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent/AUDIT_RESULT.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/results_01/RESULT.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/prefix_results_01/RESULT.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/lift__trivial_1.json
+  verification/runs/06/RUN_RECEIPT.json.gz
+  verification/runs/12/RUN_RECEIPT.json.gz
+  verification/runs/15/RUN_RECEIPT.json.gz
+  verification/SAME_MANIFEST_32_RESULTS.tsv
+  verification/ROOT_ALL32_ACCEPTANCE.json.gz
+checker_sources:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/policy.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/witness.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/source_contracts.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/independent_core.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/code/extension_worker.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/frozen_execution_01/code/production/certify.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/frozen_execution_01/code/independent/audit_worker.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/compare.py
+  package/code/route_adapters.py
+  package/code/review.py
+Expected saved result: Positive source certificate: 128 states/1,020 edges, both original initial c values, three source AUX monitors and one private priority bit, all legal inputs/safety/strictness/cooperation pass. Complete extension: 49,152 policy assignments; 2,048 native typed states for initialization/domains/ordered justices; all source and complete native SYS/AUX responses safe; strict transformed strategy from original initialization with cooperative helper-false view. Separate returned native graph: 794 states/13,874 edges; original view 154 states/1,170 edges/two initial nodes; production and independent checks agree strict=true, cooperative=false. Prefix 0->10->339->438->704->680 first exits saved K=316 and V=384 on 704->680; failing nodes 680 and 708. Saved I_M(K)=true. Historical author-side saved-input rechecks for negative graph (06), positive graph (12) and extension (15) record PASS_SAVED_EVIDENCE_RECHECK.
+Execution boundary: This index is static navigation only; no scientific code was executed. Core records registered saved-input routes lift_followup_independent_saved, lift_source_positive_saved_graph and lift_full_native_policy_extension_saved, each with case lift__trivial_1, and their historical author-side same-manifest PASS receipts. CONSUMER_RECIPE.txt gives a concrete one-case Arbiter P recipe plus route/case selection syntax; this row does not establish a new Lift T consumer run or additional portability qualification. Read legacy PROOF_AND_SCOPE planned-run wording with the later completed certificate/root acceptance. Saved K/V correctness remains a prior premise; the positive policy is separate from the selected graph; no post-helper-flip cooperation, arbitrary orphan-AUX liveness, native re-synthesis or selection-cause attribution is claimed.
+
+V188-P1 — Vehicle policy/initialization/continuation loss for the original/literal scope.
+Archive: verification-addendum-public-20261020-v1.zip
+Member prefix: seams2027-verification-addendum/
+input_models:
+  vehicle/p1/closure/inputs/original/model.json
+source_inputs:
+  vehicle/p1/closure/inputs/source.spectra
+input_navigation:
+  vehicle/p1/closure/FROZEN_MANIFEST.json
+  vehicle/p1/closure/INPUT_MANIFEST.json
+saved_outputs:
+  vehicle/p1/closure/expected/RESULT.json
+  vehicle/p1/closure/expected/FUNCTIONS.json
+  vehicle/p1/receipts/actual/worker/TARGET_RESULT.json.gz
+  vehicle/p1/receipts/actual/worker/COMPARISON.json.gz
+  vehicle/p1/receipts/actual/ROOT_ADOPTION.json.gz
+checker_sources:
+  vehicle/p1/closure/code/target_certificate.py
+  vehicle/p1/closure/code/adapter.py
+  vehicle/p1/closure/code/review.py
+reader_recipe: P1_READER_RECIPE.txt
+Expected saved result: 30 target checks, 28 zero-failure roots, 39 canonical functions; original initial cooperation and literal initial W_C true; specified cooperative continuation lost; initial_loss=false.
+Execution boundary: One bounded saved-input scope under recipe qualifications. No full-region or actual released-pair claim from P1 alone.
+
+V188-P2 — Vehicle saved original/released relation pair.
+Archive: verification-addendum-public-20261020-v1.zip
+Member prefix: seams2027-verification-addendum/
+input_models:
+  vehicle/p2/closure/inputs/original/model.json
+  vehicle/p2/closure/inputs/released/model.json
+source_inputs:
+  vehicle/p2/closure/inputs/source.spectra
+input_navigation:
+  vehicle/p2/closure/FROZEN_MANIFEST.json
+  vehicle/p2/closure/INPUT_MANIFEST.json
+saved_outputs:
+  vehicle/p2/closure/expected/CHECK.json
+  vehicle/p2/closure/expected/FUNCTIONS.json.gz
+  vehicle/p2/receipts/actual/worker/PAIR_RESULT.json.gz
+  vehicle/p2/receipts/actual/worker/COMPARISON.json.gz
+  vehicle/p2/receipts/actual/ROOT_ADOPTION.json.gz
+checker_sources:
+  vehicle/p2/closure/code/pair/map_pair.py
+  vehicle/p2/closure/code/pair/relations.py
+  vehicle/p2/closure/code/review.py
+reader_recipe: P2_READER_RECIPE.txt
+Expected saved result: LITERAL_ONLY, all four helper quadrants, equal full-current initializers and ordered justices, 115 canonical functions; no initial-loss claim.
+Execution boundary: One bounded saved pair scope under recipe qualifications; prior original full-region UNKNOWN remains.
+
+V188-P3 — Eleven predicates for the pinned Vehicle original source match the saved original model.
+Archive: verification-addendum-public-20261020-v1.zip
+Member prefix: seams2027-verification-addendum/
+input_models:
+  vehicle/source/closure/inputs/original/model.json
+source_inputs:
+  vehicle/source/closure/inputs/source.spectra
+input_navigation:
+  vehicle/source/closure/FROZEN_MANIFEST.json
+saved_outputs:
+  vehicle/source/receipts/actual/worker/RESULT.json.gz
+  vehicle/source/receipts/actual/ROOT_ADOPTION.json.gz
+checker_sources:
+  vehicle/source/closure/code/source_equations.py
+  vehicle/source/closure/code/independent_core.py
+  vehicle/source/closure/code/audit.py
+  vehicle/source/closure/code/review.py
+reader_recipe: SOURCE_READER_RECIPE.txt
+Expected saved result: 11 equal predicates, zero mismatches; 33,792 typed states and 1,141,899,264 full typed edges represented by exhaustive quotient; 4,729,984 saved-DAG scalar evaluations. The saved ROOT_ADOPTION.json.gz records ADOPTED_EXACT_SOURCE_TO_SAVED_ORIGINAL_CORRESPONDENCE; the worker's provisional status was deliberately left unchanged. Any new reader execution requires its own result review.
+Execution boundary: One pinned Vehicle source, not the eleven replacement cohort and not general compiler correctness.
+
+LIFT-P-DIRECT — Separate direct original-contract Lift P controller certificate and source obstruction.
+Archive: lift-direct-static-public-20261020-v1.zip
+Member prefix: seams2027-lift-direct-static-evidence/
+input_models:
+  source-route/historical-preparation/inputs/model.json.gz
+  reference-route/historical-preparation/inputs/original/model.json.gz
+  (3 exact members are enumerated in EVIDENCE_READER_INDEX.json.)
+source_inputs:
+  source-route/historical-preparation/inputs/source.spectra
+saved_graphs:
+  source-route/historical-preparation/inputs/controller.json.gz
+  source-route/historical-preparation/inputs/controller.txt
+  reference-route/historical-preparation/inputs/native/controller.json.gz
+input_navigation:
+  source-route/historical-preparation/FROZEN_MANIFEST.json.gz
+  reference-route/historical-preparation/FROZEN_MANIFEST.json.gz
+  RECEIPT_INDEX.json.gz
+saved_outputs:
+  source-route/actual/worker/RESULT.json.gz
+  reference-route/actual/worker/RESULT.json.gz
+  independent-comparison/COMPARISON.json.gz
+  root/SELECTED_CONTROLLER_ROOT_ADOPTION.json.gz
+  root/SOURCE_OBSTRUCTION_PROOF_V2.txt
+checker_sources:
+  source-route/historical-preparation/code/audit.py
+  source-route/historical-preparation/code/source_contracts.py
+  reference-route/historical-preparation/code/audit.py
+  reference-route/historical-preparation/code/codec.py
+  reference-route/historical-preparation/code/graph_fairness.py
+Expected saved result: Direct original view 136 states/958 edges, strict=true, cooperative=false, 16 environmental dead ends, both original initial inputs covered; 42 route comparisons agree. Whole-model original/released correspondence fails; correspondence-gated outcomes and whole-model verdict transfer remain UNKNOWN.
+Execution boundary: Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout.
+

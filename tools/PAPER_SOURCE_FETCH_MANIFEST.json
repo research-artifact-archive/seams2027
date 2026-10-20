@@ -1,0 +1,893 @@
+{
+  "schema": "paper-source-fetch-v1",
+  "source_url": "https://arxiv.org/html/2609.12231v1",
+  "historical_html_sha256": "78a3adba587d3179008afefa9ef7cecc9bd9eacc030d64c64a30f9171955b8ee",
+  "scope": "Only retrieve and reconstruct exact public listing bytes; no execution, semantic revalidation, or new scientific result.",
+  "pattern": {
+    "donor_id": "arbiter__original",
+    "start_marker": "pattern pRespondsToS",
+    "bytes": 373,
+    "sha256": "ca371dc9bf32e6dd51b1c501a4f6f3d31d9af3e2b6abf5857154c77d1e93dc79"
+  },
+  "listings": [
+    {
+      "id": "arbiter__original",
+      "listing_id": "LSTx5",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx5",
+      "raw": {
+        "bytes": 730,
+        "sha256": "a02fdbab0bfdd051a46169c4ab184bb99519c69caf9cc4848a0caa02c7f73a94"
+      },
+      "reconstructed": {
+        "bytes": 730,
+        "sha256": "a02fdbab0bfdd051a46169c4ab184bb99519c69caf9cc4848a0caa02c7f73a94"
+      },
+      "diff": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "edits": []
+    },
+    {
+      "id": "arbiter__preferred",
+      "listing_id": "LSTx16",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx16",
+      "raw": {
+        "bytes": 511,
+        "sha256": "aad03b6ab3e228760653b8e770020cc773f030ff2d53cd01bc49462fc5f0f1bc"
+      },
+      "reconstructed": {
+        "bytes": 886,
+        "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+      },
+      "diff": {
+        "bytes": 603,
+        "sha256": "53d61bc713b2a9a90a5e1199cbccb31f0dcf55ce7e9604ff1dbb298c217facd0"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "arbiter__trivial_1",
+      "listing_id": "LSTx10",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx10",
+      "raw": {
+        "bytes": 350,
+        "sha256": "18209288eeeb7f9a4a13a085e2fed8c013059568b1053876138e9df260a396d5"
+      },
+      "reconstructed": {
+        "bytes": 725,
+        "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+      },
+      "diff": {
+        "bytes": 641,
+        "sha256": "b48d7d24cb3069ed7c467ed2aa190fd5005eb0d80d95177fa0fbed88e070e032"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "lift__original",
+      "listing_id": "LSTx6",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx6",
+      "raw": {
+        "bytes": 1516,
+        "sha256": "20f40eb7e98928222d737121f7caa6ac65eec48fd283551656103790e50b4489"
+      },
+      "reconstructed": {
+        "bytes": 1894,
+        "sha256": "5beb28976e62b5ff25db377190bf9d5c297897bcd72aaa5b7e254c2c41bc24dd"
+      },
+      "diff": {
+        "bytes": 1189,
+        "sha256": "629142000d774ec7859f2060cbfe6d4f902761faf25a9b15182a73f7ce85b5ec"
+      },
+      "edits": [
+        {
+          "operation": "declared_typographical_reconstruction",
+          "occurrences": 3,
+          "old": "pRepondsToS",
+          "new": "pRespondsToS",
+          "semantic_claim": "Undefined raw call has no executable semantics; comments and same-paper pattern establish intended response formula."
+        },
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "lift__preferred",
+      "listing_id": "LSTx18",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx18",
+      "raw": {
+        "bytes": 2016,
+        "sha256": "9548d6f0b27cfb791bb45de6e711e75d8021df03ea082ad7ab3388449bfa55c5"
+      },
+      "reconstructed": {
+        "bytes": 2391,
+        "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+      },
+      "diff": {
+        "bytes": 669,
+        "sha256": "c87f15e16532d3f4907acfd35370a33be1ab692e778604503a3a7ef32bdffb03"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "lift__trivial_1",
+      "listing_id": "LSTx13",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx13",
+      "raw": {
+        "bytes": 1843,
+        "sha256": "0a6f102ff5257bab7847a1698d27be61e4db80c35a9203fafe0c9341087aec68"
+      },
+      "reconstructed": {
+        "bytes": 2218,
+        "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+      },
+      "diff": {
+        "bytes": 692,
+        "sha256": "518511a6e98a9baab0b9b340bdb378f8c27ae6600f6bb33909e03ffccad01884"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "minepump__original",
+      "listing_id": "LSTx7",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx7",
+      "raw": {
+        "bytes": 406,
+        "sha256": "9c80efff9df14769c16b6105050aab196fcec85b72fbfaf8b0b1ccc375e2265f"
+      },
+      "reconstructed": {
+        "bytes": 406,
+        "sha256": "9c80efff9df14769c16b6105050aab196fcec85b72fbfaf8b0b1ccc375e2265f"
+      },
+      "diff": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "edits": []
+    },
+    {
+      "id": "minepump__preferred",
+      "listing_id": "LSTx17",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx17",
+      "raw": {
+        "bytes": 675,
+        "sha256": "7f67bc24e6a6f8dbe5078ec574d49a16c2bd72a3779ec17477169a9dd80b6517"
+      },
+      "reconstructed": {
+        "bytes": 1050,
+        "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+      },
+      "diff": {
+        "bytes": 703,
+        "sha256": "db73607a0f3b6938f7c3ede594d36b3aa539f98284f9def7a322fbd363b7599b"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "minepump__trivial_1",
+      "listing_id": "LSTx11",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx11",
+      "raw": {
+        "bytes": 351,
+        "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+      },
+      "reconstructed": {
+        "bytes": 351,
+        "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+      },
+      "diff": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "edits": []
+    },
+    {
+      "id": "minepump__trivial_2",
+      "listing_id": "LSTx12",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx12",
+      "raw": {
+        "bytes": 350,
+        "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+      },
+      "reconstructed": {
+        "bytes": 350,
+        "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+      },
+      "diff": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "edits": []
+    },
+    {
+      "id": "traffic_single__original",
+      "listing_id": "LSTx8",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx8",
+      "raw": {
+        "bytes": 425,
+        "sha256": "8160133022d31e6d3030df016aaa571111776d13aa804900369b4796eb872789"
+      },
+      "reconstructed": {
+        "bytes": 801,
+        "sha256": "b2d75902f64c732c5894e9a13372c9c30081db7a992731253c76fc195463be1b"
+      },
+      "diff": {
+        "bytes": 845,
+        "sha256": "e32472126a52eaa2b5b3323a7cdf10452d0a577edafef439c0982493d775f2ac"
+      },
+      "edits": [
+        {
+          "operation": "declared_typographical_reconstruction",
+          "occurrences": 1,
+          "old": "pRepondsToS",
+          "new": "pRespondsToS",
+          "semantic_claim": "Undefined raw call has no executable semantics; comments and same-paper pattern establish intended response formula."
+        },
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "traffic_single__preferred",
+      "listing_id": "LSTx19",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx19",
+      "raw": {
+        "bytes": 598,
+        "sha256": "4525405b614bc053c6420dd1df1addcfb8c884a97e055a5214f64ce9206e58ee"
+      },
+      "reconstructed": {
+        "bytes": 976,
+        "sha256": "c01b29e6de973c858653aeabb7408b29d886b0fe26c1ef5f16b6b2bdad6756cc"
+      },
+      "diff": {
+        "bytes": 909,
+        "sha256": "06b3bfdfbf557bd4647248937c44a3d429322adbc57dd289b951b27a20561593"
+      },
+      "edits": [
+        {
+          "operation": "infinite_trace_equivalent_response_lowering",
+          "old": "alw((car=true->F(green=true)));",
+          "new": "pRespondsToS(car=true,green=true);"
+        },
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "traffic_single__trivial_1",
+      "listing_id": "LSTx14",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx14",
+      "raw": {
+        "bytes": 351,
+        "sha256": "dd632ebe910617521427d5ea373aba5774884a871c328b18be7a52d34ef5c60a"
+      },
+      "reconstructed": {
+        "bytes": 726,
+        "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+      },
+      "diff": {
+        "bytes": 684,
+        "sha256": "998cff4e2370bddd3a9b13cbc3008786085ebcc6a6f7795d116f066e357eaa73"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "traffic_updated__original",
+      "listing_id": "LSTx9",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx9",
+      "raw": {
+        "bytes": 792,
+        "sha256": "a9202fe27c0b63130646a13be16dc5e0dc141d631c5e5f5276bd3b2b9ebb9af6"
+      },
+      "reconstructed": {
+        "bytes": 1167,
+        "sha256": "57168e07abb34f83f409bb53eded5210947a9492b09505326a6615138025c623"
+      },
+      "diff": {
+        "bytes": 674,
+        "sha256": "58f94671e31c5881a686ae42e805b1c5386224bea88985ebd25ef2d4dc1179e3"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "traffic_updated__preferred",
+      "listing_id": "LSTx20",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx20",
+      "raw": {
+        "bytes": 1867,
+        "sha256": "b70205cc4c114887ea12bca1095f5a9afb343e2995062d22976593fa2a440978"
+      },
+      "reconstructed": {
+        "bytes": 2242,
+        "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+      },
+      "diff": {
+        "bytes": 708,
+        "sha256": "df9ccf921290a9d58d09a87c7ce7933dd1cc57fa4a17ae629c847c56fc061b89"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    },
+    {
+      "id": "traffic_updated__trivial_1",
+      "listing_id": "LSTx15",
+      "source_url": "https://arxiv.org/html/2609.12231v1#LSTx15",
+      "raw": {
+        "bytes": 750,
+        "sha256": "3f7971df403503a6827d896f83c1930d762f6f852db348af7ecb5fbe0e6caf2f"
+      },
+      "reconstructed": {
+        "bytes": 1125,
+        "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+      },
+      "diff": {
+        "bytes": 693,
+        "sha256": "07d77b3b32a60c257141dc77c697588474d8fd75344b596c53f7eff7e731f7dd"
+      },
+      "edits": [
+        {
+          "operation": "append_exact_omitted_pattern"
+        }
+      ]
+    }
+  ],
+  "archive_destinations": [
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_gate/fixtures/sources/pRespondsToS.from_C2_1.spectra",
+      "bytes": 373,
+      "sha256": "ca371dc9bf32e6dd51b1c501a4f6f3d31d9af3e2b6abf5857154c77d1e93dc79"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/arbiter__preferred.spectra.diff",
+      "bytes": 603,
+      "sha256": "53d61bc713b2a9a90a5e1199cbccb31f0dcf55ce7e9604ff1dbb298c217facd0"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/arbiter__trivial_1.spectra.diff",
+      "bytes": 641,
+      "sha256": "b48d7d24cb3069ed7c467ed2aa190fd5005eb0d80d95177fa0fbed88e070e032"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/lift__preferred.spectra.diff",
+      "bytes": 669,
+      "sha256": "c87f15e16532d3f4907acfd35370a33be1ab692e778604503a3a7ef32bdffb03"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/lift__trivial_1.spectra.diff",
+      "bytes": 692,
+      "sha256": "518511a6e98a9baab0b9b340bdb378f8c27ae6600f6bb33909e03ffccad01884"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__preferred.spectra.diff",
+      "bytes": 703,
+      "sha256": "db73607a0f3b6938f7c3ede594d36b3aa539f98284f9def7a322fbd363b7599b"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__trivial_1.spectra.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__trivial_2.spectra.diff",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_single__preferred.spectra.diff",
+      "bytes": 909,
+      "sha256": "06b3bfdfbf557bd4647248937c44a3d429322adbc57dd289b951b27a20561593"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_single__trivial_1.spectra.diff",
+      "bytes": 684,
+      "sha256": "998cff4e2370bddd3a9b13cbc3008786085ebcc6a6f7795d116f066e357eaa73"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_updated__preferred.spectra.diff",
+      "bytes": 708,
+      "sha256": "df9ccf921290a9d58d09a87c7ce7933dd1cc57fa4a17ae629c847c56fc061b89"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_updated__trivial_1.spectra.diff",
+      "bytes": 693,
+      "sha256": "07d77b3b32a60c257141dc77c697588474d8fd75344b596c53f7eff7e731f7dd"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/arbiter__preferred.spectra",
+      "bytes": 511,
+      "sha256": "aad03b6ab3e228760653b8e770020cc773f030ff2d53cd01bc49462fc5f0f1bc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/arbiter__trivial_1.spectra",
+      "bytes": 350,
+      "sha256": "18209288eeeb7f9a4a13a085e2fed8c013059568b1053876138e9df260a396d5"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/lift__preferred.spectra",
+      "bytes": 2016,
+      "sha256": "9548d6f0b27cfb791bb45de6e711e75d8021df03ea082ad7ab3388449bfa55c5"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/lift__trivial_1.spectra",
+      "bytes": 1843,
+      "sha256": "0a6f102ff5257bab7847a1698d27be61e4db80c35a9203fafe0c9341087aec68"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__preferred.spectra",
+      "bytes": 675,
+      "sha256": "7f67bc24e6a6f8dbe5078ec574d49a16c2bd72a3779ec17477169a9dd80b6517"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_single__preferred.spectra",
+      "bytes": 598,
+      "sha256": "4525405b614bc053c6420dd1df1addcfb8c884a97e055a5214f64ce9206e58ee"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_single__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "dd632ebe910617521427d5ea373aba5774884a871c328b18be7a52d34ef5c60a"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_updated__preferred.spectra",
+      "bytes": 1867,
+      "sha256": "b70205cc4c114887ea12bca1095f5a9afb343e2995062d22976593fa2a440978"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_updated__trivial_1.spectra",
+      "bytes": 750,
+      "sha256": "3f7971df403503a6827d896f83c1930d762f6f852db348af7ecb5fbe0e6caf2f"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/arbiter__preferred.spectra",
+      "bytes": 886,
+      "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/arbiter__trivial_1.spectra",
+      "bytes": 725,
+      "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__preferred.spectra",
+      "bytes": 1050,
+      "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_single__preferred.spectra",
+      "bytes": 976,
+      "sha256": "c01b29e6de973c858653aeabb7408b29d886b0fe26c1ef5f16b6b2bdad6756cc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_single__trivial_1.spectra",
+      "bytes": 726,
+      "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_updated__preferred.spectra",
+      "bytes": 2242,
+      "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_updated__trivial_1.spectra",
+      "bytes": 1125,
+      "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/arbiter__preferred.spectra",
+      "bytes": 886,
+      "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/arbiter__trivial_1.spectra",
+      "bytes": 725,
+      "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__preferred.spectra",
+      "bytes": 1050,
+      "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_single__preferred.spectra",
+      "bytes": 976,
+      "sha256": "c01b29e6de973c858653aeabb7408b29d886b0fe26c1ef5f16b6b2bdad6756cc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_single__trivial_1.spectra",
+      "bytes": 726,
+      "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_updated__preferred.spectra",
+      "bytes": 2242,
+      "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_updated__trivial_1.spectra",
+      "bytes": 1125,
+      "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__original.spectra",
+      "bytes": 730,
+      "sha256": "a02fdbab0bfdd051a46169c4ab184bb99519c69caf9cc4848a0caa02c7f73a94"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__preferred.spectra",
+      "bytes": 886,
+      "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__trivial_1.spectra",
+      "bytes": 725,
+      "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__original.spectra",
+      "bytes": 1894,
+      "sha256": "5beb28976e62b5ff25db377190bf9d5c297897bcd72aaa5b7e254c2c41bc24dd"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__original.spectra",
+      "bytes": 406,
+      "sha256": "9c80efff9df14769c16b6105050aab196fcec85b72fbfaf8b0b1ccc375e2265f"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__preferred.spectra",
+      "bytes": 1050,
+      "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__original.spectra",
+      "bytes": 801,
+      "sha256": "b2d75902f64c732c5894e9a13372c9c30081db7a992731253c76fc195463be1b"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__preferred.spectra",
+      "bytes": 976,
+      "sha256": "c01b29e6de973c858653aeabb7408b29d886b0fe26c1ef5f16b6b2bdad6756cc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__trivial_1.spectra",
+      "bytes": 726,
+      "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__original.spectra",
+      "bytes": 1167,
+      "sha256": "57168e07abb34f83f409bb53eded5210947a9492b09505326a6615138025c623"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__preferred.spectra",
+      "bytes": 2242,
+      "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__trivial_1.spectra",
+      "bytes": 1125,
+      "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__preferred.spectra",
+      "bytes": 886,
+      "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__trivial_1.spectra",
+      "bytes": 725,
+      "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__preferred.spectra",
+      "bytes": 1050,
+      "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__preferred.spectra",
+      "bytes": 976,
+      "sha256": "c01b29e6de973c858653aeabb7408b29d886b0fe26c1ef5f16b6b2bdad6756cc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__trivial_1.spectra",
+      "bytes": 726,
+      "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__preferred.spectra",
+      "bytes": 2242,
+      "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__trivial_1.spectra",
+      "bytes": 1125,
+      "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/sources/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/arbiter__trivial_1.spectra",
+      "bytes": 725,
+      "sha256": "e6440379d9bf184f03942ce56abf462c525a5a821696fde1f9098c75d7195aac"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__preferred.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__trivial_1.spectra",
+      "bytes": 2218,
+      "sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__preferred.spectra",
+      "bytes": 1050,
+      "sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__trivial_1.spectra",
+      "bytes": 351,
+      "sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__trivial_2.spectra",
+      "bytes": 350,
+      "sha256": "45f467a8b04e0ce1ab46dd56ea698e38d5c7656fa56f71775bd93b7a8adf3944"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_single__trivial_1.spectra",
+      "bytes": 726,
+      "sha256": "2afcb72d696cb88215df9bf5a0776200757f0794491a2435dccd91cbeda067b8"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_updated__preferred.spectra",
+      "bytes": 2242,
+      "sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_updated__trivial_1.spectra",
+      "bytes": 1125,
+      "sha256": "783fb80c0f2a9fd446fbb169bc46900c30d1e3eca015362e2375f36a44e8d579"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/inputs/source/arbiter__preferred.spectra",
+      "bytes": 886,
+      "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/provenance/arbiter__preferred.raw.spectra",
+      "bytes": 511,
+      "sha256": "aad03b6ab3e228760653b8e770020cc773f030ff2d53cd01bc49462fc5f0f1bc"
+    },
+    {
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/provenance/pRespondsToS.from_C2_1.spectra",
+      "bytes": 373,
+      "sha256": "ca371dc9bf32e6dd51b1c501a4f6f3d31d9af3e2b6abf5857154c77d1e93dc79"
+    },
+    {
+      "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip",
+      "member": "seams2027-lift-direct-static-evidence/reference-route/historical-preparation/inputs/source.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    },
+    {
+      "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip",
+      "member": "seams2027-lift-direct-static-evidence/source-route/historical-preparation/inputs/source.spectra",
+      "bytes": 2391,
+      "sha256": "ff72b88abec4316e9f78f807344748687bcdeb68606817ba34fa975f34482202"
+    }
+  ]
+}

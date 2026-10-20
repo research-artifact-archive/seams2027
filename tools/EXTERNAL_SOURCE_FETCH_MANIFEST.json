@@ -1,0 +1,144 @@
+{
+  "schema": "saved-evidence-external-source-fetch-v1",
+  "scope": "Fetch from original distributors; no redistribution license is granted for these external source bytes. No native or scientific execution.",
+  "required_document_extractor": "pypdf==6.10.0",
+  "upstream_sources": [
+    {
+      "id": "tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+      "url": "https://smlab.cs.tau.ac.il/syntech/spectra/tools/update/plugins/tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+      "bytes": 290128,
+      "sha256": "9eb67e8a16c49241d3a07b3f948dc7bfe72eb2acafae377b8c4d5e9c9f094885"
+    },
+    {
+      "id": "tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "url": "https://smlab.cs.tau.ac.il/syntech/spectra/tools/update/plugins/tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "bytes": 70188,
+      "sha256": "e041a895ee5379932daa877454d6d8a887c9a91c470ff2352738917b202c29d1"
+    },
+    {
+      "id": "tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "url": "https://smlab.cs.tau.ac.il/syntech/spectra/tools/update/plugins/tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "bytes": 116656,
+      "sha256": "6dd6f56c0863b2f6163a90bf9ab5e750188a36c7b08f7a1a4dbd35e112ca8a5a"
+    },
+    {
+      "id": "tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "url": "https://smlab.cs.tau.ac.il/syntech/spectra/tools/update/plugins/tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "bytes": 120895,
+      "sha256": "0b0245420d12c52070278c05bbf489fd1a2713271adb10786f577f04972c3dbe"
+    },
+    {
+      "id": "tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "url": "https://smlab.cs.tau.ac.il/syntech/spectra/tools/update/plugins/tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "bytes": 1058213,
+      "sha256": "556686e33f01dbe3552547c261b580e756012825207503aed8dc7825627b1644"
+    },
+    {
+      "id": "dddmpNodeBdd.c",
+      "url": "https://raw.githubusercontent.com/VerifiableRobotics/slugs/ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c",
+      "bytes": 12142,
+      "sha256": "4b6fdb5a306f24c43c5681e2d169042519337fdb1b7d9f21467ab38880f022a8"
+    },
+    {
+      "id": "friendly2019v1.pdf",
+      "url": "https://arxiv.org/pdf/1902.05629v1",
+      "bytes": 477143,
+      "sha256": "4ac437c0ed154e21754f949ceb1770309db5c63943c3942c07ef811e2cf4cf5f"
+    },
+    {
+      "id": "kind2024-appendices.pdf",
+      "url": "https://zenodo.org/api/records/10553249/files/Paper%20with%20appendices.pdf/content",
+      "bytes": 627756,
+      "sha256": "28d458e8a941fdec8337d68814a8e27ed18c27bae74e6b23d7f425bf04925a1c"
+    }
+  ],
+  "archive_destinations": [
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.gameinput/src/tau/smlab/syntech/gameinput/kind/PitermanSyntacticReduction.java",
+      "bytes": 2014,
+      "sha256": "76fb4b023d9bafc634555a455f7062f9e44d0063a6dca41a3696f3e0e3a85e17",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.gameinput_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/gameinput/kind/PitermanSyntacticReduction.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.gamemodel/src/tau/smlab/syntech/gamemodel/PlayerModule.java",
+      "bytes": 69344,
+      "sha256": "3228924931181df49ad8b63007273f78982331a3b67a12050eb0c1d0a8f81143",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.gamemodel_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/gamemodel/PlayerModule.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1ConceteControllerConstructionSkip.java",
+      "bytes": 9076,
+      "sha256": "5b7e9736490ff9185ab096a4a7d1ccd51289b2f4b691fdae137a9a5f2e90a770",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/games/gr1/GR1ConceteControllerConstructionSkip.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1Game.java",
+      "bytes": 3668,
+      "sha256": "66ce48efe9c5e1b1d7b3a1778843bb81152c38817f374df5a57289c77aad5f1b",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/games/gr1/GR1Game.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1Memory.java",
+      "bytes": 3827,
+      "sha256": "11669976c3bcb56e25f77e6a948fed245243affb1fe246cf4048afb96a0fc98b",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/games/gr1/GR1Memory.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1SeparatedGame.java",
+      "bytes": 2279,
+      "sha256": "b9be5e07e2e9f7a1be9bb537b037b55ba3c47025ecda0951dd1277ac37ba0e1d",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.games.gr1_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/games/gr1/GR1SeparatedGame.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games/src/tau/smlab/syntech/games/GameSolver.java",
+      "bytes": 1460,
+      "sha256": "e18298a9da255a3c7df2b0e59ecf1be57e4df47cadebd8f0727fdd8fe521d212",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.games_1.0.0.202402072123.jar",
+      "source_member": "src/tau/smlab/syntech/games/GameSolver.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.jtlv/src/net/sf/javabdd/BDDFactory.java",
+      "bytes": 67076,
+      "sha256": "a1406b0873c5b20513e04bebe0a679cc86865b49968178618e48bdea97bdf5c9",
+      "kind": "zip_member",
+      "source_id": "tau.smlab.syntech.jtlv_1.0.0.202402072123.jar",
+      "source_member": "src/net/sf/javabdd/BDDFactory.java"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/design_review_10_cooperation_authority/isolated/input/PRIMARY_THEOREMS.txt",
+      "bytes": 117653,
+      "sha256": "18838b6be4da4b89d9c830af9e4290b428864d10bb56e546e24eba45ab9ef900",
+      "kind": "literature_text"
+    },
+    {
+      "archive": "seams2027-saved-evidence-20261018-v7.zip",
+      "member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/slugs_baseline_feasibility/work/slugs-ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c",
+      "bytes": 12142,
+      "sha256": "4b6fdb5a306f24c43c5681e2d169042519337fdb1b7d9f21467ab38880f022a8",
+      "kind": "direct",
+      "source_id": "dddmpNodeBdd.c"
+    }
+  ]
+}

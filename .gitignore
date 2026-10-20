@@ -1,0 +1,7 @@
+downloads/
+source-fetch-cache/
+source-fetch-env/
+evidence-inspection/
+__pycache__/
+*.pyc
+.DS_Store

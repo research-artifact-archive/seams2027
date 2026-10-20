@@ -1,0 +1,53 @@
+{
+  "schema": "public-saved-evidence-release-v1",
+  "title": "Saved Controller Evidence",
+  "release_tag": "saved-evidence-20261020-v1",
+  "repository": "https://github.com/research-artifact-archive/seams2027",
+  "scientific_execution_performed": false,
+  "retained_member_bytes": "Identical to the historical archives",
+  "historical_file_index_sha256": "466d2aec89c8b0b3d89ccdabbe26b4026bf22a871cc3da370449f1611225d30a",
+  "omitted_source_files": 97,
+  "archives": [
+    {
+      "historical_name": "seams2027-saved-evidence-20261018-v7.zip",
+      "historical_bytes": 55221456,
+      "historical_sha256": "f2bf02fa4ff32f47b591873aa58bc910e072743f9b506176cdf5efea999d1f26",
+      "historical_members": 9918,
+      "public_name": "saved-evidence-public-20261020-v1.zip",
+      "public_bytes": 54966104,
+      "public_sha256": "27a069fd31a5f534a4b0a370d70d3077ed338070b632e007d08ea66966bf6f61",
+      "public_members": 9823,
+      "public_uncompressed_bytes": 321089127,
+      "omitted_source_members": 95,
+      "member_prefix": "seams2027-saved-evidence/"
+    },
+    {
+      "historical_name": "seams2027-verification-addendum-20261018-v1.zip",
+      "historical_bytes": 2155640,
+      "historical_sha256": "c8067c6a7d2a8d0fdc90db05f0bc8fa1fe12fe1ca18e5e6fa0e7ff3e13f0d338",
+      "historical_members": 597,
+      "public_name": "verification-addendum-public-20261020-v1.zip",
+      "public_bytes": 2154161,
+      "public_sha256": "41932536fc544197bc0868cfd3bd8e85342b5e268c437d18b1ee4903443bd177",
+      "public_members": 597,
+      "public_uncompressed_bytes": 15285679,
+      "omitted_source_members": 0,
+      "member_prefix": "seams2027-verification-addendum/"
+    },
+    {
+      "historical_name": "seams2027-lift-direct-static-evidence-20261018-v1.zip",
+      "historical_bytes": 713503,
+      "historical_sha256": "0f8142447b44b1c1f2854e9625102587211e5a41b2f0060ecb248e7597b03fe3",
+      "historical_members": 228,
+      "public_name": "lift-direct-static-public-20261020-v1.zip",
+      "public_bytes": 629842,
+      "public_sha256": "e9f4db132e200d0cfb0d4a17941bf9a74f98399060164106a154d6ccd5ec7b18",
+      "public_members": 226,
+      "public_uncompressed_bytes": 1360089,
+      "omitted_source_members": 2,
+      "member_prefix": "seams2027-lift-direct-static-evidence/"
+    }
+  ],
+  "distribution": "Repository files at immutable Git tag; no GitHub Release",
+  "archive_directory": "archives"
+}
