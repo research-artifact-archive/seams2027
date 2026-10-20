@@ -49,7 +49,7 @@ These are saved results. The archives distinguish incomplete runs, resource limi
 
 ## Restore external source files when needed
 
-The public ZIPs omit 97 copies of third-party source text whose redistribution terms are not established here: published specification listings and their diffs, selected upstream Java/C sources, and one literature-text bundle. All retained members are byte-identical to their historical versions. Mathematical outputs, controllers, models, and checker implementations remain in the public downloads.
+The public ZIPs omit 97 copies of third-party source text whose redistribution terms are not established here: published specification listings and their diffs, selected upstream Java/C sources, and one literature-text bundle. All retained archive members are byte-identical to their counterparts in the three earlier anonymous evidence archives named in `RELEASE_MANIFEST.json`. Earlier metadata anonymization and serialization can give these copies different hashes from their original execution files; the inner manifests and original/copy or receipt ledgers distinguish those identities. Mathematical outputs, controllers, models, and checker implementations remain in the public downloads.
 
 These omissions do not prevent reading the saved results. They do mean the original closed-package metadata check is not ready immediately after extraction. The source-fetch helpers retrieve the omitted material directly from its original distributors and verify every restored byte against the historical hash.
 
@@ -75,7 +75,7 @@ Finally check all historical member bytes, including the restored files:
 python3 -I -S -B tools/check_restored_tree.py ../evidence-inspection
 ```
 
-Expected output: `PASS_HISTORICAL_TREE_BYTES_RESTORED_ONLY`. This verifies the complete historical file tree; it does not reproduce the original ZIP container bytes or rerun a scientific computation. Downloads stay in the reader's local cache and retain their original publishers' terms. Any source-byte mismatch stops restoration. See [source retrieval details](tools/PAPER_SOURCE_RETRIEVAL.txt) and [third-party scope](THIRD_PARTY_NOTICES.md).
+Expected output: `PASS_HISTORICAL_TREE_BYTES_RESTORED_ONLY`. This verifies the complete file trees of those earlier anonymous evidence archives; it does not reproduce the original ZIP container bytes or rerun a scientific computation. Downloads stay in the reader's local cache and retain their original publishers' terms. Any source-byte mismatch stops restoration. See [source retrieval details](tools/PAPER_SOURCE_RETRIEVAL.txt) and [third-party scope](THIRD_PARTY_NOTICES.md).
 
 ## Optional saved-input rechecks
 

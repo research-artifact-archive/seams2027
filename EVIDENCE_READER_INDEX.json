@@ -18,7 +18,7 @@
       "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip"
     }
   },
-  "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. All other index entries are distributed byte-identically. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
+  "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
   "rows": [
     {
       "id": "C59",
