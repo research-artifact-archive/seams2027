@@ -1,0 +1,456 @@
+{
+  "schema": "minepump-original-strict-historical-excerpts-v1",
+  "fixture": "minepump__preferred",
+  "record_kind": "Selected historical audit record excerpts and static explanatory inference",
+  "created_utc": "2026-10-20T12:45:27.133534+00:00",
+  "scope": "Two pre-existing independent full-region equality audits for the original Minepump P strict region. Excerpts are not complete original certificates, independently reproducible executions, or a new released-helper theorem-application certificate.",
+  "historical_sources": {
+    "first_result": {
+      "source_file": {
+        "path": "experiment/seams_candidate_search_20261015/population_independent_audit/RESULT.json",
+        "bytes": 52895,
+        "sha256": "179d9d7b99455e9bd34cf914ea88a1a73e75d0237aab570a4883da163650d882"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/status",
+          "value": "PASS_ALL_INDEPENDENT_FINITE_STATE_CHECKS"
+        },
+        {
+          "json_pointer": "/method",
+          "value": "No producer/checker imports. Full Boolean source-vs-native truth vectors; explicit integer-set W, V, K and raw4FP replay; complete original transition enumeration; Kosaraju SCC fairness; saved actual-step graph/binding correspondence. Does not claim saved data establish runtime invocation by themselves."
+        },
+        {
+          "json_pointer": "/original/4",
+          "value": {
+            "fixture": "minepump__preferred",
+            "full_boolean_assignments_compared": 1680,
+            "carrier": 32,
+            "W": 28,
+            "V": 0,
+            "K": 0,
+            "reachable_W_V_minus_K": 0,
+            "all_W_V_minus_K": 0,
+            "entry": {
+              "highwater": "true",
+              "methane": "true",
+              "pump": "false",
+              "SYS_CONSTRAINT.0.pRespondsToS.state": "S0",
+              "PREV_aux_1": "false"
+            },
+            "status": "SEMANTIC_EMPTY_V_REFUSAL",
+            "original_premise": {
+              "all": true,
+              "entry": true,
+              "violations": []
+            }
+          }
+        }
+      ]
+    },
+    "first_individual_record": {
+      "source_file": {
+        "path": "experiment/seams_candidate_search_20261015/population_independent_audit/minepump__preferred_ORIGINAL.json",
+        "bytes": 474,
+        "sha256": "418919f95705595967afa6ba9944bd41c1c2ef54e3b5479ad63840e8d3e60255"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "",
+          "value": {
+            "fixture": "minepump__preferred",
+            "full_boolean_assignments_compared": 1680,
+            "carrier": 32,
+            "W": 28,
+            "V": 0,
+            "K": 0,
+            "reachable_W_V_minus_K": 0,
+            "all_W_V_minus_K": 0,
+            "entry": {
+              "highwater": "true",
+              "methane": "true",
+              "pump": "false",
+              "SYS_CONSTRAINT.0.pRespondsToS.state": "S0",
+              "PREV_aux_1": "false"
+            },
+            "status": "SEMANTIC_EMPTY_V_REFUSAL",
+            "original_premise": {
+              "all": true,
+              "entry": true,
+              "violations": []
+            }
+          }
+        }
+      ]
+    },
+    "first_sealed_manifest": {
+      "source_file": {
+        "path": "experiment/seams_candidate_search_20261015/population_independent_audit/MANIFEST.json",
+        "bytes": 13780,
+        "sha256": "3a8cc72dd02d078a7028622be13869e2a089d4b5f613b3d781ed37fec7c96de6"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/schema",
+          "value": "population-independent-audit-manifest-v1"
+        },
+        {
+          "json_pointer": "/sealed_utc",
+          "value": "2026-10-14T16:41:53.169165+00:00"
+        },
+        {
+          "json_pointer": "/files/7",
+          "value": {
+            "path": "experiment/seams_candidate_search_20261015/population_independent_audit/RESULT.json",
+            "bytes": 52895,
+            "sha256": "179d9d7b99455e9bd34cf914ea88a1a73e75d0237aab570a4883da163650d882"
+          }
+        },
+        {
+          "json_pointer": "/files/30",
+          "value": {
+            "path": "experiment/seams_candidate_search_20261015/population_independent_audit/audit.py",
+            "bytes": 26009,
+            "sha256": "11e5897ce08f4aa51e250dea3de88dc26ba1d0e484c1fc6763e92fe08c068890"
+          }
+        },
+        {
+          "json_pointer": "/files/37",
+          "value": {
+            "path": "experiment/seams_candidate_search_20261015/population_independent_audit/minepump__preferred_ORIGINAL.json",
+            "bytes": 474,
+            "sha256": "418919f95705595967afa6ba9944bd41c1c2ef54e3b5479ad63840e8d3e60255"
+          }
+        }
+      ]
+    },
+    "first_input_roster": {
+      "source_file": {
+        "path": "experiment/seams_candidate_search_20261015/population_expansion/v2/input_rosters/minepump__preferred.json",
+        "bytes": 29295,
+        "sha256": "9ab3d2f30be315bb037d6008d4f2dd923f7f598bda3410a74605b1bffac7bf4a"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/schema",
+          "value": "population-candidate-input-roster-v1"
+        },
+        {
+          "json_pointer": "/fixture",
+          "value": "minepump__preferred"
+        },
+        {
+          "json_pointer": "/files/69",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/final_region.bdd",
+            "bytes": 56,
+            "sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f"
+          }
+        },
+        {
+          "json_pointer": "/files/70",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/model.json",
+            "bytes": 32050,
+            "sha256": "3abda503bef07ade92aae17d08cf2ed0f807d5585f1dc689799fb84069ee0942"
+          }
+        },
+        {
+          "json_pointer": "/files/71",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/native_W.bdd",
+            "bytes": 56,
+            "sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f"
+          }
+        },
+        {
+          "json_pointer": "/files/75",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaE.bdd",
+            "bytes": 41,
+            "sha256": "9b0717fe1d697bbe0357a8811c5cf297c41be94f7be35773681c517a24a0572f"
+          }
+        },
+        {
+          "json_pointer": "/files/76",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaS.bdd",
+            "bytes": 53,
+            "sha256": "f3a01995f52dd28e5006773da22de20bea73f1bb59a5ff4b4bb23afd4cf4f367"
+          }
+        }
+      ]
+    },
+    "first_equality_guard": {
+      "source_file": {
+        "path": "experiment/seams_candidate_search_20261015/population_independent_audit/audit.py",
+        "bytes": 26009,
+        "sha256": "11e5897ce08f4aa51e250dea3de88dc26ba1d0e484c1fc6763e92fe08c068890"
+      },
+      "representation": "One verbatim equality-guard line from the historical artifact audit code; not an executable checker or dependency closure.",
+      "line_start": 349,
+      "line_end": 349,
+      "verbatim_lines": [
+        " K=m.mask(res['final_region']);strictd=ROOT/row['native']['ordinary_strict']['directory'];strictres=read(strictd/'result.json');strictmodel=read(strictd/'model.json');wm=Finite(p,strictmodel,strictd);assignments+=wm.bind();W=wm.mask(strictres['final_region']);need(W==gr1(m),'independent GR1 W')"
+      ]
+    },
+    "second_result": {
+      "source_file": {
+        "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/AUDIT_RESULT.json",
+        "bytes": 52637,
+        "sha256": "a45538443eb159f9da63a72a5456aa96b7cdb0d219b99100e8fbc71718bf3c93"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/status",
+          "value": "PASS"
+        },
+        {
+          "json_pointer": "/started_utc",
+          "value": "2026-10-15T16:06:55.168027+00:00"
+        },
+        {
+          "json_pointer": "/completed_utc",
+          "value": "2026-10-15T16:07:00.392585+00:00"
+        },
+        {
+          "json_pointer": "/methods",
+          "value": [
+            "independent direct native-DAG truth evaluation",
+            "explicit typed-state replay and greatest viability fixed point",
+            "independent explicit ordinary 3FP for both original and V-restricted arenas",
+            "independent Kosaraju graph SCC, input-totality and original safety/justice checks",
+            "exact full memory and decision-trace comparison",
+            "source-only intervention reconstruction and runtime-origin audit"
+          ]
+        },
+        {
+          "json_pointer": "/V_strict/rows/4",
+          "value": {
+            "fixture": "minepump__preferred",
+            "typed_carrier": 32,
+            "V_rounds": 5,
+            "regions": {
+              "V": 0,
+              "V_restricted_strict_region": 0,
+              "W": 28,
+              "K": 0
+            },
+            "V_strict_3FP": {
+              "outer_rounds": 2,
+              "distinct_CPre_evaluations": 3
+            },
+            "original_strict_3FP": {
+              "outer_rounds": 2,
+              "distinct_CPre_evaluations": 7
+            },
+            "diagnostic_paths": [
+              "/source_inventory/parsed/SYS/patterns/0/pattern",
+              "/source_inventory/parsed/SYS/patterns/0/text",
+              "/source_inventory/parsed/SYS/patterns/0/pattern",
+              "/source_inventory/parsed/SYS/patterns/0/text"
+            ],
+            "graph": null,
+            "old_graphs": {}
+          }
+        },
+        {
+          "json_pointer": "/limits",
+          "value": [
+            "Source AST transcription profiles are shared audited inputs, not an independently implemented Spectra compiler.",
+            "The mathematical K theorem and full separated 4FP were not re-proved here; full saved K equality is checked on every typed valuation.",
+            "Original strict and V-restricted strict regions were independently recomputed by finite sets, strengthening but not generalizing this finite-population result.",
+            "Explicit E15 extraction acceptance is prior evidence; no new explicit extractor execution or certificate claim is made here.",
+            "No deployment, Model activation, Model step, physical plant or generic green-preference correctness claim.",
+            "Instrumented bytecode origins are pinned; this audit does not independently rebuild the Java bytecode."
+          ]
+        }
+      ]
+    },
+    "second_sealed_manifest": {
+      "source_file": {
+        "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/DELIVERY_MANIFEST.json",
+        "bytes": 5109,
+        "sha256": "c7f2309cfad6fc7793a6160c9a8d8dc05720757adaf900bece5b0e499d3c21f7"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/status",
+          "value": "SEALED_PASS_MAIN_EXTENSION_AND_OPTIONAL_MATH"
+        },
+        {
+          "json_pointer": "/sealed_utc",
+          "value": "2026-10-15T16:16:19.994323+00:00"
+        },
+        {
+          "json_pointer": "/files/1",
+          "value": {
+            "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/AUDIT_RESULT.json",
+            "bytes": 52637,
+            "sha256": "a45538443eb159f9da63a72a5456aa96b7cdb0d219b99100e8fbc71718bf3c93"
+          }
+        },
+        {
+          "json_pointer": "/files/4",
+          "value": {
+            "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/INPUT_PINS.json",
+            "bytes": 1764408,
+            "sha256": "c101f43bfa86e733a87ad439bcf58991a54a80a9d3c906fe4bf8625e57c30737"
+          }
+        },
+        {
+          "json_pointer": "/files/9",
+          "value": {
+            "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/audit.py",
+            "bytes": 31633,
+            "sha256": "386759f913d150c5d90dac59b8e1e60ebdf987d634390a37fb5426d3c0f1a226"
+          }
+        }
+      ]
+    },
+    "second_input_pins": {
+      "source_file": {
+        "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/INPUT_PINS.json",
+        "bytes": 1764408,
+        "sha256": "c101f43bfa86e733a87ad439bcf58991a54a80a9d3c906fe4bf8625e57c30737"
+      },
+      "representation": "Selected exact JSON values; not the complete original file or a new certificate.",
+      "selections": [
+        {
+          "json_pointer": "/files/82",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/final_region.bdd",
+            "bytes": 56,
+            "sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f"
+          }
+        },
+        {
+          "json_pointer": "/files/83",
+          "value": {
+            "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/model.json",
+            "bytes": 32050,
+            "sha256": "3abda503bef07ade92aae17d08cf2ed0f807d5585f1dc689799fb84069ee0942"
+          }
+        }
+      ]
+    },
+    "second_equality_guard": {
+      "source_file": {
+        "path": "experiment/seams_submission_push_20261016/independent_audits/new_evidence_01/audit.py",
+        "bytes": 31633,
+        "sha256": "386759f913d150c5d90dac59b8e1e60ebdf987d634390a37fb5426d3c0f1a226"
+      },
+      "representation": "One verbatim equality-guard line from the historical artifact audit code; not an executable checker or dependency closure.",
+      "line_start": 275,
+      "line_end": 275,
+      "verbatim_lines": [
+        "        originalw,originalfp=m.strict();need(originalw==oldregions['ordinary_strict'],'original strict 3FP recomputation')"
+      ]
+    }
+  },
+  "public_evidence_binding": {
+    "scientific_tag": "saved-evidence-20261020-v1",
+    "scientific_commit": "9d70c917f3dc5cdfc8ddde5354221da9e7ab30eb",
+    "archive": "archives/saved-evidence-public-20261020-v1.zip",
+    "archive_bytes": 54966104,
+    "archive_sha256": "27a069fd31a5f534a4b0a370d70d3077ed338070b632e007d08ea66966bf6f61",
+    "immutable_download_url": "https://raw.githubusercontent.com/research-artifact-archive/seams2027/saved-evidence-20261020-v1/archives/saved-evidence-public-20261020-v1.zip",
+    "members": [
+      {
+        "historical_file": {
+          "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/native_W.bdd",
+          "bytes": 56,
+          "sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f"
+        },
+        "public_archive_member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/native_W.bdd",
+        "public_bytes": 56,
+        "public_sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f",
+        "byte_identical": true
+      },
+      {
+        "historical_file": {
+          "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/final_region.bdd",
+          "bytes": 56,
+          "sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f"
+        },
+        "public_archive_member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/final_region.bdd",
+        "public_bytes": 56,
+        "public_sha256": "67d7917759e6f586c1a35fe7e6d65ba387718c963ff3a9914081d2069fd21c4f",
+        "byte_identical": true
+      },
+      {
+        "historical_file": {
+          "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaE.bdd",
+          "bytes": 41,
+          "sha256": "9b0717fe1d697bbe0357a8811c5cf297c41be94f7be35773681c517a24a0572f"
+        },
+        "public_archive_member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaE.bdd",
+        "public_bytes": 41,
+        "public_sha256": "9b0717fe1d697bbe0357a8811c5cf297c41be94f7be35773681c517a24a0572f",
+        "byte_identical": true
+      },
+      {
+        "historical_file": {
+          "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaS.bdd",
+          "bytes": 53,
+          "sha256": "f3a01995f52dd28e5006773da22de20bea73f1bb59a5ff4b4bb23afd4cf4f367"
+        },
+        "public_archive_member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/original_thetaS.bdd",
+        "public_bytes": 53,
+        "public_sha256": "f3a01995f52dd28e5006773da22de20bea73f1bb59a5ff4b4bb23afd4cf4f367",
+        "byte_identical": true
+      },
+      {
+        "historical_file": {
+          "path": "experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/model.json",
+          "bytes": 32050,
+          "sha256": "3abda503bef07ade92aae17d08cf2ed0f807d5585f1dc689799fb84069ee0942"
+        },
+        "public_archive_member": "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_admission_activation_preparation/runs/root_k7_ordered_01/minepump_published_trace/ordinary_strict/minepump__preferred/model.json",
+        "public_bytes": 66204,
+        "public_sha256": "58d90b3ba7ac71745fe950e0f9df81e63d1d78504f54550f29790f344d8cbd1c",
+        "byte_identical": false,
+        "different_top_level_fields": [
+          "input"
+        ],
+        "all_other_fields_exactly_equal": true,
+        "interpretation": "The already-public copy anonymizes input metadata and changes serialization. Its full-file hash differs; fields, BDD references, original justices, source inventory, and all other model values are identical."
+      }
+    ],
+    "binding_scope": "Static byte/hash and JSON-value comparisons made for this supplement. They are not an execution of either historical auditor."
+  },
+  "static_initializer_inference": {
+    "kind": "Mathematical explanation from the saved region and original initializers; not a historical printed Boolean and not a new checker result.",
+    "original_strict_W": "not highwater or not methane or pump",
+    "original_thetaE": "not highwater and not methane",
+    "original_thetaS": "not pump and SYS_CONSTRAINT.0.pRespondsToS.state=S0 and PREV_aux_1=false",
+    "current_bit_mapping": {
+      "highwater": 0,
+      "methane": 2,
+      "pump": 4,
+      "SYS_CONSTRAINT.0.pRespondsToS.state": 6,
+      "PREV_aux_1": 8
+    },
+    "argument": "Every legal original environmental initializer has highwater=false and methane=false, so it satisfies W regardless of the system valuation. The original system initializer has a legal witness: pump=false, response-monitor state S0, and PREV_aux_1=false. Therefore the original-initial predicate I_M(W) is true. Both historical records report K empty, so I_M(K) is false. This reasoning uses the original initializer, not the saved residual handoff entry.",
+    "I_M_W": true,
+    "I_M_K": false,
+    "historical_handoff_entry": "highwater=true, methane=true, pump=false, response-monitor state S0, PREV_aux_1=false",
+    "historical_handoff_entry_in_W": false
+  },
+  "limits": [
+    "The two audit implementations share audited source profiles and native exports; they are not independent Spectra compiler implementations.",
+    "The complete original source files named by historical_sources are identified by hashes but are not bundled by this supplement; only explicitly selected JSON values and two code lines are included.",
+    "Equality-guard lines show what the historical successful audits required; these excerpts do not contain all definitions or reproduce either historical execution.",
+    "No solver, native process, graph checker, BDD evaluator, or scientific checker was run to prepare this supplement.",
+    "A reported negative result from a released helper route does not establish original strict unrealizability for this case: the independently equality-certified original W contains its legal original initializer.",
+    "This supplement does not establish all conditions for applying a strict-arena theorem to the current released helper route.",
+    "The three existing archive files and both existing public tags remain unchanged."
+  ],
+  "new_scientific_execution": false
+}

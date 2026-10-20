@@ -89,6 +89,10 @@ checker_sources:
 reader_recipe: CONSUMER_RECIPE.txt
 Expected saved result: Fixed-eleven compact table and full join retain their historical correspondence gate. The one representative reader recipe is original_initial_K_V/arbiter__preferred: expected PASS_SAVED_EVIDENCE_RECHECK with I_M_K=false and I_M_V=false. Lift P at the historical gate remains UNKNOWN; the distinct direct certificate is the Lift row below.
 Execution boundary: The eleven-source/index mapping is navigation; do not imply the representative Arbiter recipe executes every candidate or every graph checker.
+Repository supplement (repository-root paths; outside the historical archives):
+  evidence/minepump-original-strict-records.txt
+  evidence/minepump-original-strict-records.json
+  Selected existing independent W-equality records for Minepump P (28/32 states), public input binding, and a separately labeled static I_M(W)=true inference. These excerpts are not full certificates or a new checker execution.
 
 LIFT-T-SELECTED-POLICY — Lift T: a separate original-initial cooperative source policy, its complete transformed-model extension, and a strict but non-cooperative returned selected graph.
 Archive: saved-evidence-public-20261020-v1.zip

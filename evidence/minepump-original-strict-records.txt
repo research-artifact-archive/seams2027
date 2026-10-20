@@ -1,0 +1,62 @@
+Minepump P: selected historical original-strict records
+
+This supplement provides selected exact values from two existing independent audit
+records for minepump__preferred. Both record W=28 in a typed carrier of 32 and
+V=K=0. Their saved successful audits required equality of the entire original
+strict region with an independent finite-state computation, not only equality
+of counts.
+
+The accompanying JSON separates:
+  1. Historical JSON values, with exact JSON Pointers and whole-source hashes.
+  2. Two verbatim equality-guard lines, with the original code hashes and lines.
+  3. Bindings to the original W, initializers, and model already in the public
+     Core archive at saved-evidence-20261020-v1.
+  4. A static initializer inference explained below.
+
+These are excerpts from saved records, not complete original certificates or a
+runnable dependency bundle. The original files named in historical_sources are
+identified by hashes; those full files are not added here. The records retain
+their original values, including the historical residual handoff entry. All
+selected JSON values are unchanged, with no path substitutions inside them.
+
+The first historical audit records a full-region equality guard against its
+independent GR(1) calculation. Its aggregate PASS result contains the same
+Minepump row as its individual record. The second historical audit records a
+PASS result and an original-strict three-fixed-point recomputation requiring
+full region equality. Their selected sealed-manifest entries bind the recorded
+results and code; selected historical input pins bind the saved original model
+and strict region. Both audits use shared audited source profiles, so this is
+not evidence of independently implemented Spectra compilers.
+
+Original initializer, distinct from the historical handoff entry
+
+The saved original strict region is:
+  W = not highwater or not methane or pump.
+The original environmental initializer is:
+  thetaE = not highwater and not methane.
+The original system initializer is:
+  thetaS = not pump and response-monitor state S0 and PREV_aux_1=false.
+
+Every legal original environmental initializer satisfies W, and thetaS supplies
+a legal system witness. Hence I_M(W)=true. The recorded K is empty, so
+I_M(K)=false. This is a static mathematical inference from the saved region and
+initializers; neither historical audit printed this I_M(W) Boolean, and no
+checker was rerun for this supplement.
+
+The historical handoff entry has highwater=true, methane=true, and pump=false.
+It lies outside W. That residual-entry result is compatible with the positive
+original-initial result above and must not replace it.
+
+Public-file identity
+
+The JSON lists exact Core ZIP member names, byte counts, and SHA-256 hashes.
+W and the initializer BDD files have the original bytes. The already-public
+model differs from its historical original only in the top-level input metadata
+and JSON serialization; every other model field is equal. Its public hash and
+historical hash are both recorded rather than treated as interchangeable.
+
+The excerpt therefore prevents a negative released-helper result from being
+read as original strict unrealizability for this case. It does not supply a
+complete theorem-application certificate for the current released helper arena.
+No new solver, graph, BDD-evaluation, or checker execution was performed.
+The three existing archives and previous public tags are unchanged.

@@ -190,7 +190,24 @@
       ],
       "reader_recipe": "CONSUMER_RECIPE.txt",
       "expected_saved_result": "Fixed-eleven compact table and full join retain their historical correspondence gate. The one representative reader recipe is original_initial_K_V/arbiter__preferred: expected PASS_SAVED_EVIDENCE_RECHECK with I_M_K=false and I_M_V=false. Lift P at the historical gate remains UNKNOWN; the distinct direct certificate is the Lift row below.",
-      "execution_scope": "The eleven-source/index mapping is navigation; do not imply the representative Arbiter recipe executes every candidate or every graph checker."
+      "execution_scope": "The eleven-source/index mapping is navigation; do not imply the representative Arbiter recipe executes every candidate or every graph checker.",
+      "repository_supplement": {
+        "id": "MINEPUMP-ORIGINAL-STRICT",
+        "location_convention": "Repository-root paths; not members added to a historical archive.",
+        "files": [
+          {
+            "path": "evidence/minepump-original-strict-records.json",
+            "bytes": 22626,
+            "sha256": "875b28bfd7f6d85ade71f2b90a632f056824eb149d891a19a2a829364824be72"
+          },
+          {
+            "path": "evidence/minepump-original-strict-records.txt",
+            "bytes": 3436,
+            "sha256": "99d86e1e70141e1740c2357d5d3b44e9976ab85862385da65fdbd85047ae9d5f"
+          }
+        ],
+        "scope": "Selected existing independent original-strict W equality records for Minepump P (28/32 states), public input binding, and a separately labeled static I_M(W)=true inference. Excerpts are not full certificates or a new checker execution."
+      }
     },
     {
       "id": "LIFT-T-SELECTED-POLICY",
