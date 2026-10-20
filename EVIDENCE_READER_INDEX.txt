@@ -94,6 +94,49 @@ Repository supplement (repository-root paths; outside the historical archives):
   evidence/minepump-original-strict-records.json
   Selected existing independent W-equality records for Minepump P (28/32 states), public input binding, and a separately labeled static I_M(W)=true inference. These excerpts are not full certificates or a new checker execution.
 
+GUARD-CONSTRUCTED — Constructed Guard: the configured released route refuses a source contract with a trivial strict cooperative strategy; the refusal mechanism remains unresolved.
+Archive: saved-evidence-public-20261020-v1.zip
+Member prefix: seams2027-saved-evidence/
+Population scope: A constructed mechanism control, separate from the C59 originals, C14 public comparison, R11 replacements, and Vehicle witness. No population count changes.
+Repository supplement (repository-root path, outside the historical ZIP):
+  evidence/transition_guard.spectra — 115 bytes; SHA-256 b1701ea5a0d7e404a376b729bc5025a428df6d19112c1eaada8ae987e3a64d7c
+  The unchanged constructed source was absent from the earlier anonymous archive; it is not one of the 97 omitted third-party copies.
+input_models:
+  package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json
+input_navigation:
+  package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json
+  package/MANIFEST.json
+  package/ORIGIN_DIGESTS.json
+  package/PATH_ADAPTATIONS.json
+saved_outputs:
+  package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json
+  package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json
+checker_sources:
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/certify.py
+  package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/admission_checker.py
+Existing source argument: The unchanged 115-byte source has thetaE=thetaS=true, rhoE=rhoS=x', and no environment or system justice obligations. On the four-state typed carrier D of (x,p), a constant system response p'=false is strict winning. After every legal prefix the environment can continue with x'=true forever, under the same system strategy. Thus W=V=K=D and original cooperative initialization holds. This is the existing source argument, not a newly computed region or a conclusion printed by the initialization-correspondence certificate.
+Evidence roles:
+  source_and_profile: The repository source has the exact input_sha256 recorded by the saved result. ORIGINAL_PROFILES.json:profiles.guard records original formulas, ownership, initializers and empty justice lists.
+  native_result: Records this configured run's refusal and extraction counts; it does not explain the cause.
+  original_certificate: Checks original/helper-false initialization, safety and ordered-justice bindings; no controller was returned.
+  later_certificate: Adds the explicit full-native-domain initialization-correspondence PASS. This is a correspondence check, not a cooperative-winning-region computation.
+  identity_ledgers: Distinguish original execution digests from retained anonymous public-copy digests.
+Record identities (public copy / original execution):
+  original_formula_profile: package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json
+    public 13959 bytes SHA-256 6c0880f4e991378807c5a93e250def1b8a456268bb74306480d6ddffc2f74200; original 13917 bytes SHA-256 86600d175be6b8c9b4a6e8f53afa4ea58dfbc5b1bbbcfbe707168ac45e77363c; PATH_STRINGS_ONLY.
+  observed_native_refusal: package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json
+    public 26816 bytes SHA-256 69277099d8af8a617a6c4fd2f2c6512479ed553e72b17ae7573db0c1e5faf200; original 25935 bytes SHA-256 b03b8b9234557085eb88d779c1a60d096941e57bbe9f6d6cb6482bd57fbc715e; PATH_STRINGS_ONLY.
+  helper_false_correspondence: package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json
+    public 1884 bytes SHA-256 b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51; original 1884 bytes SHA-256 b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51; BYTE_IDENTICAL.
+  saved_model_metadata: package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json
+    public 12952 bytes SHA-256 66e3551e66c380ab42e8a29b51123ece8127e495a942cdb3a82de936329ebdc0; original 7934 bytes SHA-256 c2949ea5384ae67b7c4dcd90094ec6e49d0b0785550ef378b28cfcd4b427b33f; PATH_STRINGS_ONLY.
+  later_initialization_correspondence: package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json
+    public 2205 bytes SHA-256 aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0; original 2205 bytes SHA-256 aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0; BYTE_IDENTICAL.
+Expected saved result: Saved result: pipeline=released_syntactic_kind_job_equivalent, status=JOB_UNREALIZABLE_NO_CONTROLLER, native_initial_verdict=false, initializers_replaced=false, one historical native solver call, zero controller-extraction and printer calls. The original certificate records COMPLETE_NO_CONTROLLER and PASS helper-false correspondence. The later certificate adds initialization_correspondence=PASS over the full native typed environment domain, with original initializers unreplaced.
+Identity scope: The certificate's native_result_sha256 and original_profiles_sha256 identify original execution files, not the path-anonymized public copies. package/ORIGIN_DIGESTS.json, package/MANIFEST.json and package/PATH_ADAPTATIONS.json bind those identities. The Guard profile subtree is unchanged; the complete profile file differs only in two Traffic Single path strings. The native result differs only in input and class-origin path strings. All five listed public members retain the bytes of the earlier anonymous archive.
+Execution boundary: Static inspection of existing records and an unchanged original source only. The helper certificate checks the helper-false slice, and the later certificate checks initialization correspondence; neither establishes a complete Guard released-arena relation audit or identifies the refusal mechanism. No Guard consumer rerun, new native call, experiment, or general claim about the distinct semantic implementation is added.
+
 LIFT-T-SELECTED-POLICY — Lift T: a separate original-initial cooperative source policy, its complete transformed-model extension, and a strict but non-cooperative returned selected graph.
 Archive: saved-evidence-public-20261020-v1.zip
 Member prefix: seams2027-saved-evidence/

@@ -1,0 +1,10 @@
+module TransitionGuard
+
+env boolean x;
+sys boolean p;
+
+asm keep_x:
+  G next(x);
+
+gar same_transition:
+  G next(x);

@@ -41,6 +41,7 @@ The retained scope includes:
 - **C59:** 59 completed public-original models; 49 satisfy the preservation inclusion and 10 violate it.
 - **C14:** the same 14 originals across four synthesis paths, including refusals and unknown results.
 - **R11:** all eleven published replacement candidates, with eight cooperative initializers and seven returned graphs passing both checks.
+- **Guard:** a separate constructed control with an [unchanged 115-byte source](evidence/transition_guard.spectra), a trivial strict cooperative strategy, and a recorded native refusal by the configured route; the refusal mechanism remains unresolved.
 - **Lift T:** the separate positive source policy and complete transformed-model extension, alongside the strict but non-cooperative selected controller.
 - **Vehicle:** policy, initialization, continuation, and source-equation evidence with their individual bounds.
 - **Lift P:** the direct static source certificate. The separate whole-controller correspondence failure remains unknown.

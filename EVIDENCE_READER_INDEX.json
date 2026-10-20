@@ -210,6 +210,120 @@
       }
     },
     {
+      "id": "GUARD-CONSTRUCTED",
+      "archive": "Core",
+      "claim": "Constructed Guard: the configured released route refuses a source contract with a trivial strict cooperative strategy; the refusal mechanism remains unresolved.",
+      "population_scope": "A constructed mechanism control, separate from the C59 originals, C14 public comparison, R11 replacements, and Vehicle witness. No population count changes.",
+      "input_models": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json"
+      ],
+      "input_navigation": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json",
+        "package/MANIFEST.json",
+        "package/ORIGIN_DIGESTS.json",
+        "package/PATH_ADAPTATIONS.json"
+      ],
+      "saved_outputs": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json",
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json"
+      ],
+      "checker_sources": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/certify.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/admission_checker.py"
+      ],
+      "source_argument": "The unchanged 115-byte source has thetaE=thetaS=true, rhoE=rhoS=x', and no environment or system justice obligations. On the four-state typed carrier D of (x,p), a constant system response p'=false is strict winning. After every legal prefix the environment can continue with x'=true forever, under the same system strategy. Thus W=V=K=D and original cooperative initialization holds. This is the existing source argument, not a newly computed region or a conclusion printed by the initialization-correspondence certificate.",
+      "evidence_roles": {
+        "source_and_profile": "The repository source has the exact input_sha256 recorded by the saved result. ORIGINAL_PROFILES.json:profiles.guard records original formulas, ownership, initializers and empty justice lists.",
+        "native_result": "Records this configured run's refusal and extraction counts; it does not explain the cause.",
+        "original_certificate": "Checks original/helper-false initialization, safety and ordered-justice bindings; no controller was returned.",
+        "later_certificate": "Adds the explicit full-native-domain initialization-correspondence PASS. This is a correspondence check, not a cooperative-winning-region computation.",
+        "identity_ledgers": "Distinguish original execution digests from retained anonymous public-copy digests."
+      },
+      "record_identities": [
+        {
+          "role": "original_formula_profile",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json",
+          "public_copy": {
+            "bytes": 13959,
+            "sha256": "6c0880f4e991378807c5a93e250def1b8a456268bb74306480d6ddffc2f74200"
+          },
+          "original_execution": {
+            "bytes": 13917,
+            "sha256": "86600d175be6b8c9b4a6e8f53afa4ea58dfbc5b1bbbcfbe707168ac45e77363c"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "observed_native_refusal",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json",
+          "public_copy": {
+            "bytes": 26816,
+            "sha256": "69277099d8af8a617a6c4fd2f2c6512479ed553e72b17ae7573db0c1e5faf200"
+          },
+          "original_execution": {
+            "bytes": 25935,
+            "sha256": "b03b8b9234557085eb88d779c1a60d096941e57bbe9f6d6cb6482bd57fbc715e"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "helper_false_correspondence",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json",
+          "public_copy": {
+            "bytes": 1884,
+            "sha256": "b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51"
+          },
+          "original_execution": {
+            "bytes": 1884,
+            "sha256": "b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51"
+          },
+          "transformation": "BYTE_IDENTICAL"
+        },
+        {
+          "role": "saved_model_metadata",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json",
+          "public_copy": {
+            "bytes": 12952,
+            "sha256": "66e3551e66c380ab42e8a29b51123ece8127e495a942cdb3a82de936329ebdc0"
+          },
+          "original_execution": {
+            "bytes": 7934,
+            "sha256": "c2949ea5384ae67b7c4dcd90094ec6e49d0b0785550ef378b28cfcd4b427b33f"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "later_initialization_correspondence",
+          "archive_member": "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json",
+          "public_copy": {
+            "bytes": 2205,
+            "sha256": "aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0"
+          },
+          "original_execution": {
+            "bytes": 2205,
+            "sha256": "aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0"
+          },
+          "transformation": "BYTE_IDENTICAL"
+        }
+      ],
+      "repository_supplement": {
+        "id": "GUARD-ORIGINAL-SOURCE",
+        "location_convention": "Repository-root path; not a member added to a historical archive.",
+        "files": [
+          {
+            "path": "evidence/transition_guard.spectra",
+            "bytes": 115,
+            "sha256": "b1701ea5a0d7e404a376b729bc5025a428df6d19112c1eaada8ae987e3a64d7c"
+          }
+        ],
+        "scope": "An exact copy of the already-existing constructed input. It was absent from the earlier anonymous archive and is not one of the 97 omitted third-party source copies."
+      },
+      "expected_saved_result": "Saved result: pipeline=released_syntactic_kind_job_equivalent, status=JOB_UNREALIZABLE_NO_CONTROLLER, native_initial_verdict=false, initializers_replaced=false, one historical native solver call, zero controller-extraction and printer calls. The original certificate records COMPLETE_NO_CONTROLLER and PASS helper-false correspondence. The later certificate adds initialization_correspondence=PASS over the full native typed environment domain, with original initializers unreplaced.",
+      "identity_scope": "The certificate's native_result_sha256 and original_profiles_sha256 identify original execution files, not the path-anonymized public copies. package/ORIGIN_DIGESTS.json, package/MANIFEST.json and package/PATH_ADAPTATIONS.json bind those identities. The Guard profile subtree is unchanged; the complete profile file differs only in two Traffic Single path strings. The native result differs only in input and class-origin path strings. All five listed public members retain the bytes of the earlier anonymous archive.",
+      "execution_scope": "Static inspection of existing records and an unchanged original source only. The helper certificate checks the helper-false slice, and the later certificate checks initialization correspondence; neither establishes a complete Guard released-arena relation audit or identifies the refusal mechanism. No Guard consumer rerun, new native call, experiment, or general claim about the distinct semantic implementation is added."
+    },
+    {
       "id": "LIFT-T-SELECTED-POLICY",
       "archive": "Core",
       "claim": "Lift T: a separate original-initial cooperative source policy, its complete transformed-model extension, and a strict but non-cooperative returned selected graph.",
@@ -397,7 +511,7 @@
       "execution_scope": "Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout."
     }
   ],
-  "directory_member_references": 220,
+  "directory_member_references": 230,
   "missing_member_references": [],
   "index_feasibility": "Existing README/index/manifest/result metadata support this compact claim-to-input-to-saved-result-to-checker-to-expected-result index. Full computational reruns are not implied. Core aggregate rows are historical navigation; bounded reader scopes are labeled explicitly.",
   "created_utc": "2026-10-18T19:22:24.317052+00:00",
