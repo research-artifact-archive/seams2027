@@ -1,0 +1,278 @@
+{
+  "schema": "normalized-eleven-pure-serializer-synthetic-review-v1",
+  "status": "PASS_PURE_SERIALIZER_SYNTHETICS_ONLY",
+  "created_utc": "2026-10-20T23:08:25.374666+00:00",
+  "old_wrapper": {
+    "bytes": 39135,
+    "sha256": "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3"
+  },
+  "new_wrapper": {
+    "bytes": 39722,
+    "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+  },
+  "test_script": {
+    "bytes": 4515,
+    "sha256": "9cf715b93ca1d0cc020c6d4394c1f5c68499b7a7dacb2184c355ba11ce4286aa"
+  },
+  "only_executed_AST_functions": [
+    "need",
+    "relative_output"
+  ],
+  "all_other_wrapper_AST_identical": true,
+  "wrapper_module_imports": 0,
+  "scientific_module_imports": 0,
+  "BDD_graph_operations": 0,
+  "consumer_invocations": 0,
+  "controls": [
+    {
+      "case": "valid_ENV_pattern",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/ENV/patterns/12/pattern",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "valid_ENV_text",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/ENV/patterns/12/text",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "valid_SYS_pattern",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/SYS/patterns/12/pattern",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "valid_SYS_text",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/SYS/patterns/12/text",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "valid_AUX_pattern",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/AUX/patterns/12/pattern",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "valid_AUX_text",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "diagnostic_identity_differences": [
+          {
+            "path": "/source_inventory/parsed/AUX/patterns/12/text",
+            "new": "Pattern@abc",
+            "prior": "Pattern@def",
+            "allowed_change": "Java Pattern object diagnostic identity only"
+          }
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "real_work_file",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "path": "data/model.json"
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "work_Path_object",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "path": "data/model.json"
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "all_nonpath_scalars_and_structure",
+      "pass": true,
+      "expected_rejection": false,
+      "actual": {
+        "n": 4,
+        "negative": -2,
+        "x": 1.5,
+        "truth": true,
+        "false": false,
+        "null": null,
+        "text": "status",
+        "list": [
+          0,
+          false,
+          null,
+          "relative/file"
+        ]
+      },
+      "error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "external_filesystem",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "fake_top_level_context",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "nested_fake_context",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "dict_index_instead_of_list",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "wrong_field_context",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "external_absolute_in_diagnostic_context",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_owner",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_field",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_index",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "diagnostic_nonstring",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "diagnostic_relative_string",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "diagnostic_nonleaf_object",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "work_escape",
+      "pass": true,
+      "expected_rejection": true,
+      "actual": null,
+      "error": "Generated output contains path outside work",
+      "input_unchanged": true
+    }
+  ],
+  "control_count": 22,
+  "qualified_saved_consumer": false
+}

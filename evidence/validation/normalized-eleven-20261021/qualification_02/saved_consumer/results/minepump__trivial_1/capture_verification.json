@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_bytes": 187972,
+  "raw_sha256": "dc6e98e76739c862b5c95098ca910c48f985c469e10b0b248446e18949d4fe79",
+  "repeated_lines": 3476,
+  "data_records": 9,
+  "cap_reached": false,
+  "all_raw_bytes_recoverable": true,
+  "receipt_matches": true,
+  "stderr": {
+    "file": "data/runs/minepump__trivial_1/normalized_kind/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

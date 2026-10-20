@@ -1,0 +1,313 @@
+{
+  "schema": "independent-normalized-eleven-serializer-rev02-review-v1",
+  "status": "PASS_STATIC_DELTA_AND_PURE_SERIALIZER_CONTROLS",
+  "created_utc": "2026-10-20T23:10:26.656760+00:00",
+  "new_freeze": {
+    "bytes": 213370,
+    "sha256": "edc4ddaad79bc7f36c7342bd57fca09c763f3f68f1b00213bb5cb9356a0f6f14"
+  },
+  "new_archive": {
+    "bytes": 10958466,
+    "sha256": "4964794a933d6369400e364ecc417b9ff6c6ae8ea867c02ef57a9a3bb8adb252"
+  },
+  "new_manifest": {
+    "bytes": 209181,
+    "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433"
+  },
+  "new_wrapper": {
+    "bytes": 39722,
+    "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+  },
+  "new_member_count": 1052,
+  "new_expanded_bytes": 92525146,
+  "changed_members": [
+    "MANIFEST.json",
+    "README.md",
+    "consumer/check_saved.py"
+  ],
+  "unchanged_members": 1049,
+  "manifest_changed_leaves": [
+    [
+      "/members/5/bytes",
+      7776,
+      7909
+    ],
+    [
+      "/members/5/sha256",
+      "c91326bdca054b72f23a5dcd1bb3776a0f181517328f9e9539cf766293282131",
+      "fbf3ea1ec18cc1d89aaa239e07967df3b2811056d56dd64a61e6bd8bf2b9b83c"
+    ],
+    [
+      "/members/26/bytes",
+      39135,
+      39722
+    ],
+    [
+      "/members/26/sha256",
+      "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3",
+      "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+    ]
+  ],
+  "all_old_and_new_members_rehashed": true,
+  "both_archives_CRC_and_all_member_bytes_equal": true,
+  "all_other_wrapper_AST_identical": true,
+  "only_executed_AST_functions": [
+    "need",
+    "relative_output"
+  ],
+  "independent_synthetic_control_count": 31,
+  "independent_synthetic_controls": [
+    {
+      "case": "allowed_ENV_pattern",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "allowed_ENV_text",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "allowed_SYS_pattern",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "allowed_SYS_text",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "allowed_AUX_pattern",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "allowed_AUX_text",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "root_scalar_pointer",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "ordinary_path_field",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "other_array",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "nested_diagnostic_key",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "object_string_index",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "wrong_row_field",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "external_filesystem",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "lexical_work_sibling",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "work_dotdot_escape",
+      "PASS": true,
+      "expected_error": "Generated output contains path outside work",
+      "actual_error": "Generated output contains path outside work",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_owner",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_negative_index",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_formula_field",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_extra_suffix",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_newline_suffix",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_relative_pointer",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_real_external_file",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_real_work_file",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_number",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_boolean",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_dict",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "invalid_diagnostic_Path_object",
+      "PASS": true,
+      "expected_error": "Unexpected diagnostic JSON pointer",
+      "actual_error": "Unexpected diagnostic JSON pointer",
+      "input_unchanged": true
+    },
+    {
+      "case": "work_string_conversion",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "work_Path_conversion",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "all_unrelated_JSON_scalars_and_structures",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    },
+    {
+      "case": "actual_four_qualification01_trigger_pointers",
+      "PASS": true,
+      "expected_error": null,
+      "actual_error": null,
+      "input_unchanged": true
+    }
+  ],
+  "actual_failed_pointer_set_preserved": [
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@21325036",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@3c89bb12",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/text",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@21325036 PatternConstraint_parameters: [<VariableReference: variable name: r1, reference name: r1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g1, reference name: g1> EQUALS <PrimitiveValue: true>]",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@3c89bb12 PatternConstraint_parameters: [<VariableReference: variable name: r1, reference name: r1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g1, reference name: g1> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/pattern",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@21325036",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@3c89bb12",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/text",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@21325036 PatternConstraint_parameters: [<VariableReference: variable name: r2, reference name: r2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g2, reference name: g2> EQUALS <PrimitiveValue: true>]",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@3c89bb12 PatternConstraint_parameters: [<VariableReference: variable name: r2, reference name: r2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g2, reference name: g2> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    }
+  ],
+  "publisher_synthetic_controls_read_and_pinned": 22,
+  "scientific_code_and_data_unchanged": true,
+  "old_failure_manifest_and_handoff_unchanged": true,
+  "wrapper_module_imports": 0,
+  "scientific_module_imports": 0,
+  "BDD_graph_operations": 0,
+  "full_consumer_invocations": 0,
+  "qualification02_authorized_by_this_review": false,
+  "qualification02_gate": "Root adjudication required; static/synthetic PASS is not saved-input qualification."
+}

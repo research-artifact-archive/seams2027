@@ -1,0 +1,66 @@
+{
+  "schema": "normalized-eleven-independent-qualification01-failure-review-v1",
+  "status": "CONFIRMED_TECHNICAL_SERIALIZATION_FAILURE_NOT_SCIENTIFIC_REFUSAL",
+  "created_utc": "2026-10-20T23:07:46.241900+00:00",
+  "handoff": {
+    "bytes": 7239,
+    "sha256": "9bfe687f976ab680887fd80c430abfe333393535ae646a4a5901e4b023e4200a"
+  },
+  "output_manifest": {
+    "bytes": 2409166,
+    "sha256": "167d5baac84ba622868825b771892fa4067cdad37c02ead027a135b3d42ab4c7"
+  },
+  "all_output_members_rehashed": 10181,
+  "frozen_bundle_and_archive_unchanged": true,
+  "negative_controls": {
+    "count": 6,
+    "status": "PASS_ALL_EXPECTED_REJECTIONS",
+    "science_executed": false,
+    "errors": {
+      "wrong_source": "ValueError: External reconstructed source pin: arbiter__preferred",
+      "unknown_id": "ValueError: Exact row order",
+      "duplicate_id": "ValueError: Exact row order",
+      "cross_source_comparator": "ValueError: Copied model identity",
+      "stale_controller_model": "ValueError: Current controller/model hash binding",
+      "stale_result_model": "ValueError: Pin mismatch: model.json"
+    }
+  },
+  "normal_invocation": {
+    "attempts": 1,
+    "retries": 0,
+    "exit_code": 2,
+    "outer_timeout": false,
+    "completed_rows": 0,
+    "phase": "arbiter__preferred:arena",
+    "error": "ValueError: Generated output contains path outside work",
+    "first_certificate_status": "VALID_SEMANTIC_REFUSAL",
+    "first_certificate_full_semantic_comparison": "PASS",
+    "whole_consumer_qualification": "INCOMPLETE_NO_PASS",
+    "semantic_refusal_interpretation": "The first saved contract retains its expected empty-V semantic refusal. The invocation failure is a separate technical serialization defect; it is not a new scientific refusal or an eleven-row outcome."
+  },
+  "root_cause": {
+    "function": "consumer/check_saved.py:relative_output",
+    "logic": "Every leading-slash string is currently treated as an absolute filesystem path, including existing diagnostic JSON pointers.",
+    "diagnostic_pointer_examples": [
+      "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "/source_inventory/parsed/SYS/patterns/0/text",
+      "/source_inventory/parsed/SYS/patterns/1/pattern",
+      "/source_inventory/parsed/SYS/patterns/1/text"
+    ],
+    "unchanged_join_contract": "join.model_join adds diagnostic_identity_differences returned by existing model_identity.compare_models; those rows carry an RFC6901-like path field. original_model_join returns only work input pins, not a bundle code pin.",
+    "static_confidence": "Exact serializer branch and all four first-arena JSON pointer values reproduce the rejection condition from saved inputs without invoking BDD or graph code."
+  },
+  "minimal_revision_recommendation": {
+    "scope": "New wrapper revision only; preserve old frozen bundle/archive, original code/data, failure outputs and old review.",
+    "change": "Traverse with structural context; preserve a string only at the top-level diagnostic_identity_differences/<integer>/path position and only when it matches the unchanged exact /source_inventory/parsed/(ENV|SYS|AUX)/patterns/[0-9]+/(pattern|text) grammar. Keep filesystem containment and work-relative conversion everywhere else.",
+    "do_not_change": "No broader filesystem allowance, no scientific equality or diagnostic exception widening.",
+    "synthetic_controls": "AST-extract only serializer helpers for valid pointer, fake context, invalid pointer, external filesystem path, and legitimate work-relative path.",
+    "qualification02": "Wait for independent revision/synthetic review and Root adjudication."
+  },
+  "work_performed": {
+    "artifact_module_imports": 0,
+    "BDD_graph_execution": 0,
+    "wrapper_execution": 0,
+    "source_frozen_output_mutation": 0
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "schema": "original-initializer-independent-graph-certificate-v1",
+  "status": "VALID_SEMANTIC_REFUSAL",
+  "fixture_id": "lift__preferred",
+  "pipeline": "normalized_kind",
+  "entry_mode": "original_initializer",
+  "checker_sha256": "3c465e4253712c6f021920e6a164ef48c63c5bf6cfb3432d17ab95fb5778ebda",
+  "source_freeze_sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10",
+  "model_sha256": "33abc8adf565e5877d17dc01b99f9931c7de6d084bf5d9aa40d7933c594015bd",
+  "result_sha256": "e23743873cf3c5eca8ed8dcc4f843796792ad802705fa84d28d0eb823ef71615",
+  "controller_sha256": null,
+  "strict_controller_pass": null,
+  "nonconflicting_pass": null,
+  "kind_controller_pass": null,
+  "witnesses": [],
+  "failure_stage": null,
+  "refusal_scope": "CANDIDATE_SEMANTIC",
+  "model_validated": true,
+  "controller_defects": [],
+  "trust_boundary": "Static exact exported graph; shared parser-translated BDDs. Historical native invocation and runtime execution are not established by saved JSON.",
+  "source_bindings": {
+    "scope": "exact_eleven_saved_inputs_separately_supplied_sources",
+    "public_source_binding_manifest": {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 13234,
+      "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+    },
+    "source_recipe": {
+      "file": "tools/PAPER_SOURCE_FETCH_MANIFEST.json",
+      "bytes": 10213,
+      "sha256": "b9aeb203c508f60f8d0ed56276d63087dad6ce71e652944b864ca114201bd983"
+    },
+    "external_source_bytes_verified": true,
+    "historical_source_profile_pin": {
+      "role": "origin:source-profile",
+      "profile_key": "lift__preferred",
+      "bytes": 200770,
+      "sha256": "1cc14f2aa4c0c0e3e523d9ff170d6f9f0be449ca7f4d7ed0d718a5f96e6da58b"
+    },
+    "historical_raw_diff_profile_reexecuted": false,
+    "producer_reexecution": false,
+    "independent_source_compiler": false
+  },
+  "original_model_audit": {
+    "status": "PASS",
+    "typed_carrier": 1024,
+    "field_count": 10,
+    "ENV_justice_count": 0,
+    "SYS_justice_count": 3,
+    "source_formula_equivalence": "NOT_INDEPENDENTLY_COMPILED",
+    "trust_boundary": "Pinned source/imports and shared translated BDDs; independent typed encoding, support and exact domain audit."
+  },
+  "initializer_audit": {
+    "ENV_empty": false,
+    "joint_empty": false
+  },
+  "normalization_audit": {
+    "status": "PASS",
+    "V_fixed_point_iterations": 5,
+    "V_empty": true,
+    "source_ENV_justice_copies": 0,
+    "source_initializers_preserved": true
+  },
+  "initial_quantification_audit": {
+    "status": "PASS",
+    "verdict": false,
+    "quantifier": "forall_ENV_exists_SYS_AUX"
+  },
+  "refusal_kind": "EMPTY_V_INDEPENDENTLY_CHECKED"
+}

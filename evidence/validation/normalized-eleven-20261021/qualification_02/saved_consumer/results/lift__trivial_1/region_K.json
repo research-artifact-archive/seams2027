@@ -1,0 +1,17 @@
+{
+  "left": {
+    "path": "data/comparators/lift__trivial_1/K/final_region.bdd",
+    "bytes": 683,
+    "sha256": "6cd9cadbf7871c1206001a63d0648aab7a3187845252e388733c5c7140969364"
+  },
+  "right": {
+    "path": "data/runs/lift__trivial_1/normalized_kind/final_region.bdd",
+    "bytes": 683,
+    "sha256": "4324cfc7cb27125b9c5ff8fb5cb966f6049db3e8ce5e1eeafa34952ab826ce4d"
+  },
+  "exact_function_equal": true,
+  "status": "EXACT_REGION_MATCH",
+  "new_native_original_initializer_verdict": true,
+  "witness": null,
+  "typed_XOR_scope": "Fixed11 full two-valued single-bit carrier, including all AUX values; no untyped encoding exists."
+}

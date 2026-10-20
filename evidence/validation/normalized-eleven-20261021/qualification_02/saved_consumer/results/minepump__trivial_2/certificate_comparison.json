@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": {
+    "all_semantic_fields_equal": true,
+    "status": true,
+    "controller_flags": true,
+    "model_audit": true,
+    "normalization_audit": true,
+    "original_initializer": true,
+    "failure_stage_clear": true,
+    "complete_controller_audit": true
+  },
+  "comparison": "Entire canonical semantic JSON; only listed top-level provenance fields omitted",
+  "omitted_top_level_fields": [
+    "checker_sha256",
+    "controller_sha256",
+    "model_sha256",
+    "result_sha256",
+    "source_bindings",
+    "source_freeze_sha256"
+  ],
+  "generated_semantic_sha256": "6059a5ad6b8d2d8b21d39d0b2adfbee6fc797633b3621d7f77cbd2a9a34442f1",
+  "historical_semantic_sha256": "6059a5ad6b8d2d8b21d39d0b2adfbee6fc797633b3621d7f77cbd2a9a34442f1"
+}

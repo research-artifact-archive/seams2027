@@ -1,0 +1,19 @@
+{
+  "case": "cross_source_comparator",
+  "expected_error_substring": "Copied model identity",
+  "mutations": [
+    {
+      "file": "data/comparators/arbiter__trivial_1/V/model.json",
+      "before": {
+        "bytes": 64389,
+        "sha256": "4ed4b13745cf11abe8ae39d48d676d1174e630095c22a3cddc53d8b8aafcfea4"
+      },
+      "after": {
+        "bytes": 64381,
+        "sha256": "d8c1d641637a9ab39473b0fe31bb54d8c2f52f2cd65f410e68862d3468163679"
+      }
+    }
+  ],
+  "member_manifest_recomputed_to_reach_binding_gate": true,
+  "frozen_bundle_unchanged": true
+}

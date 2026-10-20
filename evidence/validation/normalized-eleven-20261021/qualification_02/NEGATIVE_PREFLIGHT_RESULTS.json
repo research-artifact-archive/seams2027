@@ -1,0 +1,188 @@
+{
+  "status": "PASS_ALL_EXPECTED_REJECTIONS",
+  "rows": [
+    {
+      "case": "wrong_source",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "External reconstructed source pin",
+      "actual_error": "ValueError: External reconstructed source pin: arbiter__preferred",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:48.109156+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 0.32371970801614225,
+        "stdout": {
+          "bytes": 127,
+          "sha256": "9c2423b69a48845d97b47abf18271cf39333b2f1bc3e55f9141695e7f472a986"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_wrong_source/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_wrong_source/work/CONSUMER_RESULT.json",
+          "bytes": 2999,
+          "sha256": "4338b59c97a0bf3cc810b1bf0633e71f88b2c7c3c2171676139ac15556afa086"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    },
+    {
+      "case": "unknown_id",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "Exact row order",
+      "actual_error": "ValueError: Exact row order",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:48.696396+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 0.3075413749902509,
+        "stdout": {
+          "bytes": 127,
+          "sha256": "c32ce37dbea7050f70aee71fe17c072578148a900999230e0ce5b12c7f3fa35c"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_unknown_id/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_unknown_id/work/CONSUMER_RESULT.json",
+          "bytes": 2085,
+          "sha256": "9c18d705a603d81e000f9f2c5071305e7d062428c38968aaf16c6e9f492a08c2"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    },
+    {
+      "case": "duplicate_id",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "Exact row order",
+      "actual_error": "ValueError: Exact row order",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:49.282317+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 0.31218708399683237,
+        "stdout": {
+          "bytes": 128,
+          "sha256": "3b1aafbf451f57a9ebf2eb54422e8a55c35d9b6e0a2cfa1f8ff330e6a4203bb2"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_duplicate_id/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_duplicate_id/work/CONSUMER_RESULT.json",
+          "bytes": 2086,
+          "sha256": "ba9b06f0a2f045dd5319554a52022ab59f1cb4c98674ea6e31817143d2e0625b"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    },
+    {
+      "case": "cross_source_comparator",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "Copied model identity",
+      "actual_error": "ValueError: Copied model identity",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:50.599622+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 1.0082523329765536,
+        "stdout": {
+          "bytes": 127,
+          "sha256": "0e8d1c040e4d9956c1db3eec6eca859289676cf38b56765033d1f896f5df5711"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_cross_source_comparator/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_cross_source_comparator/work/CONSUMER_RESULT.json",
+          "bytes": 2967,
+          "sha256": "8ca36c941b59d505dd067543c0fbb839a8fea18018f61b40e85d193f83d655ae"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    },
+    {
+      "case": "stale_controller_model",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "Current controller/model hash binding",
+      "actual_error": "ValueError: Current controller/model hash binding",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:51.947602+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 1.0604223340051249,
+        "stdout": {
+          "bytes": 127,
+          "sha256": "8c3d1188a7e7bf5be3990ac9b8b384208f71d4662cd457fb65d1d1021bc7fbbd"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_stale_controller_model/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_stale_controller_model/work/CONSUMER_RESULT.json",
+          "bytes": 3067,
+          "sha256": "a866d3ba3f68f7413f723b746b64a5c80f13fdd2dcf07bf76f9000e3d153df10"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    },
+    {
+      "case": "stale_result_model",
+      "passed_expected_rejection": true,
+      "expected_error_substring": "Pin mismatch: model.json",
+      "actual_error": "ValueError: Pin mismatch: model.json",
+      "process": {
+        "finished_utc": "2026-10-20T23:12:53.297077+00:00",
+        "exit_code": 2,
+        "outer_timed_out": false,
+        "outer_elapsed_seconds": 1.0662777079851367,
+        "stdout": {
+          "bytes": 127,
+          "sha256": "c94c98a7bec3dd9d141fb5c4c4d67b3aaa842e0e53ad870a82f900af1e6d4365"
+        },
+        "stderr": {
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "attempts": 1,
+        "retries": 0,
+        "work_dir": "origin:qualification02/preflight_stale_result_model/work",
+        "consumer_result": {
+          "path": "origin:qualification02/preflight_stale_result_model/work/CONSUMER_RESULT.json",
+          "bytes": 3054,
+          "sha256": "7a4fceb1684df2d47263ba89982f1b5022ad68ae99d21838e384505fe85ee292"
+        },
+        "status": "FAIL_OR_INCOMPLETE"
+      },
+      "scientific_checks_executed": false
+    }
+  ],
+  "planned_cases": 6,
+  "scientific_module_imports": 0,
+  "scientific_checks": 0
+}

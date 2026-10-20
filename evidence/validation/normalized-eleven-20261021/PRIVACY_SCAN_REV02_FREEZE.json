@@ -1,0 +1,26 @@
+{
+  "schema": "normalized-eleven-new-material-privacy-scan-v1",
+  "status": "PASS_KNOWN_MARKER_RECURSIVE_SCAN",
+  "created_utc": "2026-10-20T23:08:50.931753+00:00",
+  "package_role": "seams2027-normalized-eleven-evidence",
+  "counts": {
+    "files": 1052,
+    "text_objects": 1986244,
+    "text_bytes": 159242768,
+    "json_values": 919637,
+    "gzip_streams": 11,
+    "base64_capture_records": 81,
+    "zip_archives": 0,
+    "tar_archives": 0
+  },
+  "findings": [],
+  "email_matches": [],
+  "checks": [
+    "Complete file bytes and decoded JSON keys/string values",
+    "Two URL-decode passes and NFC normalization/casefold",
+    "Gunzip and every base64 native capture data record",
+    "Known current username, user-root, study suffix, author folder, host and main-title markers; a short hostname of at most three characters is checked only as a complete decoded JSON string value to avoid matching third-party macosx/macro names"
+  ],
+  "scope_limit": "Known-marker scan only, not universal PII certification. Upstream class namespaces and cited source URLs identify third-party provenance, not the artifact author.",
+  "scientific_execution": 0
+}

@@ -1,33 +1,68 @@
 {
   "schema": "generic-technical-appendix-document-snapshot-v1",
   "status": "FROZEN_DOCUMENT_SNAPSHOT",
-  "version_tag": "native-regeneration-evidence-20261021-v1",
+  "version_tag": "normalized-eleven-evidence-20261021-v1",
   "title": "Technical Appendix",
   "pdf": {
-    "path": "documents/technical-appendix-v43.pdf",
-    "bytes": 681587,
-    "sha256": "9ab48b56172178c03993d3a53a91dd48ee1c89df77f9a08711d2ab33a0a99311",
-    "pages": 41
+    "path": "documents/technical-appendix-v44.pdf",
+    "bytes": 688880,
+    "sha256": "c90022d312f762f3ebe5d0b6839b952aa23a829c37cd7d90556fb8711a047909",
+    "pages": 42
   },
   "source_archive": {
-    "path": "documents/technical-appendix-v43.zip",
-    "bytes": 743323,
-    "sha256": "1133e00c5ea12f0b0ef4ca8a01ec9c586fed47e92df6f53a1314819ae0d17f82",
-    "members": 29,
-    "tex_sources": 25
+    "path": "documents/technical-appendix-v44.zip",
+    "bytes": 753667,
+    "sha256": "75b29c7e44260c588a74b849d9bea604fc937a04993ce9f65ad2c5444bef5403",
+    "members": 30,
+    "tex_sources": 26
   },
   "inner_manifest": {
-    "path": "seams2027-technical-appendix-v43/MANIFEST.json",
-    "bytes": 4672,
-    "sha256": "c2f4bb5d1aa91495f458994d9ab8c0492387061454de6fdec6e54f4c1bc02ba3"
+    "path": "seams2027-technical-appendix-v44/MANIFEST.json",
+    "bytes": 4843,
+    "sha256": "2aae42d8d6ac581396dcf19724e7461d3306a96a33088e9309d9ba3a5572ac7d"
   },
-  "scope": "Companion document snapshot for the current technical appendix, separate from the five scientific evidence archives. Contains the generic-title appendix PDF, appendix-only TeX dependency closure, README, license and manifest.",
+  "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the six scientific evidence archives.",
   "main_manuscript_included": false,
-  "layout_review": "The corrected appendix page was visually reviewed; all other 40 pages were pixel-identical to the previously inspected 41-page snapshot.",
+  "layout_review": "The corrected appendix page 32 was visually reviewed; all other 41 pages were pixel-identical to the previously inspected 42-page snapshot.",
   "identity_metadata": {
     "pdf_title": "",
     "pdf_author": ""
   },
   "scientific_executions_for_packaging": 0,
-  "revision": "v43 metadata-publication scope correction"
+  "revision": "v44 original-initializer normalized-eleven evidence and exact source-fetch scope",
+  "previous_snapshots": [
+    {
+      "schema": "generic-technical-appendix-document-snapshot-v1",
+      "status": "FROZEN_DOCUMENT_SNAPSHOT",
+      "version_tag": "native-regeneration-evidence-20261021-v1",
+      "title": "Technical Appendix",
+      "pdf": {
+        "path": "documents/technical-appendix-v43.pdf",
+        "bytes": 681587,
+        "sha256": "9ab48b56172178c03993d3a53a91dd48ee1c89df77f9a08711d2ab33a0a99311",
+        "pages": 41
+      },
+      "source_archive": {
+        "path": "documents/technical-appendix-v43.zip",
+        "bytes": 743323,
+        "sha256": "1133e00c5ea12f0b0ef4ca8a01ec9c586fed47e92df6f53a1314819ae0d17f82",
+        "members": 29,
+        "tex_sources": 25
+      },
+      "inner_manifest": {
+        "path": "seams2027-technical-appendix-v43/MANIFEST.json",
+        "bytes": 4672,
+        "sha256": "c2f4bb5d1aa91495f458994d9ab8c0492387061454de6fdec6e54f4c1bc02ba3"
+      },
+      "scope": "Companion document snapshot for the current technical appendix, separate from the five scientific evidence archives. Contains the generic-title appendix PDF, appendix-only TeX dependency closure, README, license and manifest.",
+      "main_manuscript_included": false,
+      "layout_review": "The corrected appendix page was visually reviewed; all other 40 pages were pixel-identical to the previously inspected 41-page snapshot.",
+      "identity_metadata": {
+        "pdf_title": "",
+        "pdf_author": ""
+      },
+      "scientific_executions_for_packaging": 0,
+      "revision": "v43 metadata-publication scope correction"
+    }
+  ]
 }

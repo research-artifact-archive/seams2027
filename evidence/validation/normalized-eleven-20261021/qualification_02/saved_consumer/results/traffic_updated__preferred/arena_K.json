@@ -1,0 +1,239 @@
+{
+  "status": "EXACT_ORIGINAL_ARENA_MATCH",
+  "source_sha256": "4a1088626051ae50aa4e9686d03f8e8fdcb119671b9ca7b438b2764c611801ad",
+  "typed_metadata_exact": true,
+  "ordered_justice_lists_preserved": true,
+  "comparisons": [
+    {
+      "predicate": "domain",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_ENV_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_SYS_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "ENV_justice_0",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "ENV_justice_1",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "ENV_justice_2",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_0",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_1",
+      "exact_function_equal": true
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/model.json",
+      "bytes": 215094,
+      "sha256": "b9f991fcf0021c1e92e6f67b1423b35c469d6b570a21869d68b2ae2817158184"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/model.json",
+      "bytes": 215094,
+      "sha256": "fc5a89abf5062e837a26c0fe7ce63efc938462ecfbf8619d814d7ec7068d1113"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_rhoE.bdd",
+      "bytes": 260,
+      "sha256": "88d4993cab9d5424c4eeb74ada477e6cf34e6aaa0ede7abcdd376697e843c3d9"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_rhoE.bdd",
+      "bytes": 260,
+      "sha256": "88d4993cab9d5424c4eeb74ada477e6cf34e6aaa0ede7abcdd376697e843c3d9"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_rhoS.bdd",
+      "bytes": 3665,
+      "sha256": "cb50763bb0f2f9159aa89d38aee0117f36f80a1cbe3755699af6cc19cf328cfc"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_rhoS.bdd",
+      "bytes": 3665,
+      "sha256": "cb50763bb0f2f9159aa89d38aee0117f36f80a1cbe3755699af6cc19cf328cfc"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_thetaE.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_thetaE.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_thetaS.bdd",
+      "bytes": 148,
+      "sha256": "f53f151e2ec1863524641015cfad2ba6ff09c225f7df21cabe9e5192b268fc66"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_thetaS.bdd",
+      "bytes": 148,
+      "sha256": "f53f151e2ec1863524641015cfad2ba6ff09c225f7df21cabe9e5192b268fc66"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_ENV_justice_0.bdd",
+      "bytes": 57,
+      "sha256": "fdc4f99815a71784f7672984f80374be716442dfd5dcc061453d3e249a9f710f"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_ENV_justice_0.bdd",
+      "bytes": 57,
+      "sha256": "fdc4f99815a71784f7672984f80374be716442dfd5dcc061453d3e249a9f710f"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_ENV_justice_1.bdd",
+      "bytes": 58,
+      "sha256": "195e3b2cbdb818ecd0f018a225cdc08aec9cdaa03d0c3e18c7498e1287883c5a"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_ENV_justice_1.bdd",
+      "bytes": 58,
+      "sha256": "195e3b2cbdb818ecd0f018a225cdc08aec9cdaa03d0c3e18c7498e1287883c5a"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_ENV_justice_2.bdd",
+      "bytes": 58,
+      "sha256": "5bc79b7739a87a2c5e009feed41ad508699e627ac66bb5c64e6e4e9a34d0b5d7"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_ENV_justice_2.bdd",
+      "bytes": 58,
+      "sha256": "5bc79b7739a87a2c5e009feed41ad508699e627ac66bb5c64e6e4e9a34d0b5d7"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_SYS_justice_0.bdd",
+      "bytes": 58,
+      "sha256": "04246b7df68c70b4d71594fb33770a3cd540155bc6340552ecb6a5376258963d"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_SYS_justice_0.bdd",
+      "bytes": 58,
+      "sha256": "04246b7df68c70b4d71594fb33770a3cd540155bc6340552ecb6a5376258963d"
+    },
+    {
+      "path": "data/comparators/traffic_updated__preferred/K/original_SYS_justice_1.bdd",
+      "bytes": 58,
+      "sha256": "613aaa555632c78effab4bcdc744e638fc52e466f8d5651df5c6eb60572cde31"
+    },
+    {
+      "path": "data/runs/traffic_updated__preferred/normalized_kind/original_SYS_justice_1.bdd",
+      "bytes": 58,
+      "sha256": "613aaa555632c78effab4bcdc744e638fc52e466f8d5651df5c6eb60572cde31"
+    }
+  ],
+  "method": "Canonical ROBDD equality in common saved bit encoding; no independent source compiler.",
+  "diagnostic_identity_differences": [
+    {
+      "path": "/source_inventory/parsed/ENV/patterns/0/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@70abf9b0",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@43effd89",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/ENV/patterns/0/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@70abf9b0 PatternConstraint_parameters: [<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true> AND <VariableReference: variable name: greenB, reference name: greenB> EQUALS <PrimitiveValue: false>, PRIME(<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true>)]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@43effd89 PatternConstraint_parameters: [<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true> AND <VariableReference: variable name: greenB, reference name: greenB> EQUALS <PrimitiveValue: false>, PRIME(<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true>)]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/ENV/patterns/1/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@70abf9b0",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@43effd89",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/ENV/patterns/1/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@70abf9b0 PatternConstraint_parameters: [<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true> AND <VariableReference: variable name: greenA, reference name: greenA> EQUALS <PrimitiveValue: false>, PRIME(<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true>)]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@43effd89 PatternConstraint_parameters: [<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true> AND <VariableReference: variable name: greenA, reference name: greenA> EQUALS <PrimitiveValue: false>, PRIME(<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true>)]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@70abf9b0",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@43effd89",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@70abf9b0 PatternConstraint_parameters: [<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: greenA, reference name: greenA> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@43effd89 PatternConstraint_parameters: [<VariableReference: variable name: carA, reference name: carA> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: greenA, reference name: greenA> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@70abf9b0",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@43effd89",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@70abf9b0 PatternConstraint_parameters: [<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: greenB, reference name: greenB> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@43effd89 PatternConstraint_parameters: [<VariableReference: variable name: carB, reference name: carB> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: greenB, reference name: greenB> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    }
+  ]
+}

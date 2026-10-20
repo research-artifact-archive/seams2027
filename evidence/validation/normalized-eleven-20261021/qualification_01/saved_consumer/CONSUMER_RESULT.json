@@ -1,0 +1,108 @@
+{
+  "schema": "normalized-eleven-public-saved-consumer-result-v1",
+  "status": "FAIL_OR_INCOMPLETE",
+  "phase": "arbiter__preferred:arena",
+  "fixed_order": [
+    "arbiter__preferred",
+    "arbiter__trivial_1",
+    "lift__preferred",
+    "lift__trivial_1",
+    "minepump__preferred",
+    "minepump__trivial_1",
+    "minepump__trivial_2",
+    "traffic_single__preferred",
+    "traffic_single__trivial_1",
+    "traffic_updated__preferred",
+    "traffic_updated__trivial_1"
+  ],
+  "rows": [
+    {
+      "id": "arbiter__preferred",
+      "status": "INCOMPLETE",
+      "outputs": {
+        "certificate": "results/arbiter__preferred/certificate.json",
+        "certificate_comparison": "results/arbiter__preferred/certificate_comparison.json"
+      },
+      "certificate_status": "VALID_SEMANTIC_REFUSAL",
+      "original_initializer_verdict": false,
+      "error": "ValueError: Generated output contains path outside work"
+    }
+  ],
+  "started_utc": "2026-10-20T23:04:42.931061+00:00",
+  "runtime": {
+    "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "implementation": "cpython",
+    "os": {
+      "sysname": "Darwin",
+      "release": "24.6.0",
+      "version": "Darwin Kernel Version 24.6.0: Tue Jul 21 20:51:32 PDT 2026; root:xnu-11417.140.69.711.44~1/RELEASE_ARM64_T8112",
+      "machine": "arm64"
+    }
+  },
+  "scope": {
+    "producer_reexecution": false,
+    "native_invocations": 0,
+    "network_operations": 0,
+    "scientific_checks_executed": true,
+    "independent_source_compiler": false,
+    "graph_judge_implementations": 1,
+    "fourteen_model_regression_requalified": false,
+    "source_precondition": "Separately supplied exact reconstructed source files",
+    "interpretation": "Rechecks fixed saved inputs; historical process/runtime evidence is not reexecution"
+  },
+  "controls": {
+    "writes": "new work directory only",
+    "network_process_and_ctypes": "blocked by audit hook",
+    "code_origins": "ten pinned modules and Python standard library",
+    "scope": "Defense in depth for pinned code; not a hostile-code sandbox"
+  },
+  "limits": {
+    "wall_seconds": 60,
+    "wall_timer": "SIGALRM/ITIMER_REAL",
+    "file_bytes": 67108864,
+    "bundle_bytes": 268435456,
+    "RLIMIT_CPU": 60,
+    "RLIMIT_FSIZE": 67108864,
+    "RLIMIT_AS": "unavailable; wall and explicit byte caps remain",
+    "RLIMIT_CORE": 0
+  },
+  "integrity": {
+    "manifest": {
+      "file": "MANIFEST.json",
+      "bytes": 209181,
+      "sha256": "0d797ff6d3ea2900f605426c1f57755147fdfd818f8871880bcf2767db8f4c10"
+    },
+    "members": 1051,
+    "member_bytes": 92315245,
+    "closure_complete": true,
+    "self_excluded": [
+      "MANIFEST.json"
+    ]
+  },
+  "input_metadata": {
+    "CONSUMER.json": {
+      "file": "CONSUMER.json",
+      "bytes": 17280,
+      "sha256": "997146f14fec8e1f0c91648422cc30262abd38307fbd8cdcadc619be78d51eb2"
+    },
+    "SOURCE_BINDINGS.json": {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 13234,
+      "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+    },
+    "consumer/check_saved.py": {
+      "file": "consumer/check_saved.py",
+      "bytes": 39135,
+      "sha256": "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3"
+    }
+  },
+  "copied_inputs": {
+    "file": "COPIED_INPUTS.json",
+    "count": 952
+  },
+  "preflight": "PREFLIGHT_RESULT.json",
+  "error": "ValueError: Generated output contains path outside work",
+  "completed_rows": 0,
+  "elapsed_seconds": 1.130934624990914,
+  "finished_utc": "2026-10-20T23:04:44.060610+00:00"
+}

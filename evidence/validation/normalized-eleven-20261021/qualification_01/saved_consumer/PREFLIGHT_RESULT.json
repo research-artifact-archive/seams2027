@@ -1,0 +1,97 @@
+{
+  "schema": "normalized-eleven-public-preflight-v1",
+  "status": "PASS_PREFLIGHT_ONLY",
+  "scientific_modules_imported": 0,
+  "scientific_checks_executed": 0,
+  "rows": [
+    {
+      "id": "arbiter__preferred",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "arbiter__trivial_1",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "lift__preferred",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "lift__trivial_1",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "minepump__preferred",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "minepump__trivial_1",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "minepump__trivial_2",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "traffic_single__preferred",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "traffic_single__trivial_1",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "traffic_updated__preferred",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    },
+    {
+      "id": "traffic_updated__trivial_1",
+      "status": "PASS_INPUT_BINDINGS",
+      "models": 3,
+      "source_identity_and_location": true,
+      "original_predicate_pins": true,
+      "current_result_model_controller_pins": true
+    }
+  ],
+  "scope": "Input closure, source identity, metadata and current derived byte/hash bindings only"
+}

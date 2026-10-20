@@ -1,0 +1,34 @@
+{
+  "utc": "2026-10-20T23:12:47.484701+00:00",
+  "pins": {
+    "preserved_qualification01_files": 10181,
+    "frozen_files": 1052,
+    "all_original_E": 825,
+    "all_original_X": 760,
+    "all_existing_public_files": 68,
+    "sources": 11,
+    "archive": true,
+    "status": "ALL_EXPECTED_PINS_EXACT"
+  },
+  "root_go": {
+    "path": "origin:public-staging/ROOT_QUALIFICATION02_GO.json",
+    "bytes": 6957,
+    "sha256": "060633fd834243c331c01eb52dd9d52d4815a8cc5bfe17a90837a5e208e485a8"
+  },
+  "review": {
+    "path": "origin:public-staging/INDEPENDENT_FROZEN_REV02_STATIC_REVIEW.json",
+    "bytes": 4752,
+    "sha256": "2df2b4ea214bb481ba1867f6c1f9529a147184231562d4d5ab3cdd34d361379c"
+  },
+  "freeze": {
+    "path": "origin:public-staging/EXACT_FREEZE_HANDOFF_REV02.json",
+    "bytes": 213370,
+    "sha256": "edc4ddaad79bc7f36c7342bd57fca09c763f3f68f1b00213bb5cb9356a0f6f14"
+  },
+  "python": {
+    "path": "origin:home/.pyenv/versions/3.10.9/bin/python3.10",
+    "bytes": 33816,
+    "sha256": "b75b3aa92d8a07c630e5480dd2712ef501c422cee93f1954659a3143d5993975"
+  },
+  "retry_limit": 0
+}

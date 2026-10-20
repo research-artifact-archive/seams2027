@@ -1,0 +1,61 @@
+{
+  "schema": "normalized-eleven-public-saved-consumer-result-v1",
+  "status": "FAIL_OR_INCOMPLETE",
+  "phase": "integrity",
+  "fixed_order": [
+    "arbiter__preferred",
+    "arbiter__trivial_1",
+    "lift__preferred",
+    "lift__trivial_1",
+    "minepump__preferred",
+    "minepump__trivial_1",
+    "minepump__trivial_2",
+    "traffic_single__preferred",
+    "traffic_single__trivial_1",
+    "traffic_updated__preferred",
+    "traffic_updated__trivial_1"
+  ],
+  "rows": [],
+  "started_utc": "2026-10-20T23:12:48.419271+00:00",
+  "runtime": {
+    "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+    "implementation": "cpython",
+    "os": {
+      "sysname": "Darwin",
+      "release": "24.6.0",
+      "version": "Darwin Kernel Version 24.6.0: Tue Jul 21 20:51:32 PDT 2026; root:xnu-11417.140.69.711.44~1/RELEASE_ARM64_T8112",
+      "machine": "arm64"
+    }
+  },
+  "scope": {
+    "producer_reexecution": false,
+    "native_invocations": 0,
+    "network_operations": 0,
+    "scientific_checks_executed": false,
+    "independent_source_compiler": false,
+    "graph_judge_implementations": 1,
+    "fourteen_model_regression_requalified": false,
+    "source_precondition": "Separately supplied exact reconstructed source files",
+    "interpretation": "Rechecks fixed saved inputs; historical process/runtime evidence is not reexecution"
+  },
+  "controls": {
+    "writes": "new work directory only",
+    "network_process_and_ctypes": "blocked by audit hook",
+    "code_origins": "ten pinned modules and Python standard library",
+    "scope": "Defense in depth for pinned code; not a hostile-code sandbox"
+  },
+  "limits": {
+    "wall_seconds": 60,
+    "wall_timer": "SIGALRM/ITIMER_REAL",
+    "file_bytes": 67108864,
+    "bundle_bytes": 268435456,
+    "RLIMIT_CPU": 60,
+    "RLIMIT_FSIZE": 67108864,
+    "RLIMIT_AS": "unavailable; wall and explicit byte caps remain",
+    "RLIMIT_CORE": 0
+  },
+  "error": "ValueError: Exact row order",
+  "completed_rows": 0,
+  "elapsed_seconds": 0.2538349580136128,
+  "finished_utc": "2026-10-20T23:12:48.671643+00:00"
+}

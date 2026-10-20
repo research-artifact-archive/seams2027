@@ -1,0 +1,118 @@
+{
+  "schema": "normalized-eleven-independent-frozen-rev02-static-review-v1",
+  "status": "PASS",
+  "findings": [],
+  "created_utc": "2026-10-20T23:11:22.300075+00:00",
+  "freeze": {
+    "file": "EXACT_FREEZE_HANDOFF_REV02.json",
+    "bytes": 213370,
+    "sha256": "edc4ddaad79bc7f36c7342bd57fca09c763f3f68f1b00213bb5cb9356a0f6f14"
+  },
+  "archive": {
+    "bytes": 10958466,
+    "sha256": "4964794a933d6369400e364ecc417b9ff6c6ae8ea867c02ef57a9a3bb8adb252"
+  },
+  "manifest": {
+    "bytes": 209181,
+    "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433"
+  },
+  "wrapper": {
+    "bytes": 39722,
+    "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+  },
+  "complete_members": 1052,
+  "expanded_bytes": 92525146,
+  "review_scope": "Separate serializer revision only, after preserved qualification01 technical failure. No qualification02 execution or publication authorization in this review.",
+  "delta": {
+    "changed_members": [
+      "MANIFEST.json",
+      "README.md",
+      "consumer/check_saved.py"
+    ],
+    "unchanged_members": 1049,
+    "manifest_delta_leaf_count": 4,
+    "all_other_wrapper_AST_identical": true,
+    "all_scientific_modules_and_data_byte_exact_to_reviewed_revision01": true,
+    "old_and_new_ZIP_CRC_and_member_bytes_checked": true,
+    "all_original_copy_ledger_and_exact_allowlist_review_inherited_on_unchanged_bytes": true
+  },
+  "serializer": {
+    "behavior": "Only top-level diagnostic_identity_differences/index/path values that exactly match the existing Pattern diagnostic pointer regex are preserved as JSON pointers. Work path containment/relativization remains unchanged everywhere else.",
+    "independent_pure_function_controls": 31,
+    "actual_qualification01_four_pointer_trigger_preserved": true,
+    "publisher_controls_separately_read_and_pinned": 22,
+    "only_executed_wrapper_AST_functions": [
+      "need",
+      "relative_output"
+    ],
+    "wrapper_module_imports": 0,
+    "scientific_imports": 0,
+    "BDD_graph_operations": 0
+  },
+  "README_change": {
+    "status": "PASS",
+    "scope": "Corrects whole-HTML pin wording: source helper enforces exact raw/reconstructed/diff/output bytes; historical whole-HTML hash equality is reported but not required.",
+    "implementation_verified": "Unchanged fetch_paper_sources.py pin() and reconstruct_sources() enforce identities; report records historical_html_sha256_matches without requiring it.",
+    "no_other_docs_changed": true
+  },
+  "privacy": {
+    "schema": "independent-rev02-recursive-privacy-review-v1",
+    "status": "PASS",
+    "counts": {
+      "text_objects": 1987296,
+      "payloads": 1144,
+      "json_strings": 919637,
+      "files": 1052,
+      "gzip_streams": 11,
+      "base64_records": 81
+    },
+    "findings": [],
+    "email_matches": [],
+    "scope": "Full new1052member bytes and names, decoded JSON keys/strings, triple URL/entity decode NFC/casefold and main titles;11gzip and81base64; known markers only",
+    "source_scanner": {
+      "bytes": 8207,
+      "sha256": "3467a41b7bd76294d7246fc9f0e10d57004ad15b30a09b30017b0def159998a0"
+    }
+  },
+  "old_failure": {
+    "retained": true,
+    "whole_consumer_incomplete_not_new_semantic_refusal": true,
+    "report": {
+      "file": "INDEPENDENT_QUALIFICATION01_FAILURE_REVIEW.json",
+      "bytes": 3777,
+      "sha256": "4602fa47275f8a0d597091be89b86c71e75eaa13ee98c071b22348f714e38a3e"
+    }
+  },
+  "final_rehash": "1052newmembers+archive unchanged after audit",
+  "supporting_reports": [
+    {
+      "file": "INDEPENDENT_SERIALIZER_REV02_REVIEW.json",
+      "bytes": 10875,
+      "sha256": "8295bebeb4d78b184221d279bfa1f00b78faab9d75439d086777909d4d314765"
+    },
+    {
+      "file": "independent_review_rev02/PRIVACY_RESULT.json",
+      "bytes": 588,
+      "sha256": "e13b42c364d9335a41176f76c1e3724d68ce82b344b3824572022582b6d77a93"
+    }
+  ],
+  "review_scripts": [
+    {
+      "file": "independent_review_rev02/independent_normalized_eleven_serializer_rev02_review.py",
+      "bytes": 9175,
+      "sha256": "334525315113a8bbd60dcad4d2fa1057a0392aeae52eed8a821fe2792a65806b"
+    },
+    {
+      "file": "independent_review_rev02/independent_normalized_eleven_frozen_audit_20261021.py",
+      "bytes": 8207,
+      "sha256": "3467a41b7bd76294d7246fc9f0e10d57004ad15b30a09b30017b0def159998a0"
+    }
+  ],
+  "qualification02": "Ready for Root adjudication; not executed or authorized by this review.",
+  "public_publication_GO": false,
+  "scope_limits": [
+    "Same graph judge and shared parser-translated BDDs",
+    "No native, compiler, network, new source fetch, episode, Slugs, or original14 regression extension",
+    "One preserved prior failed saved-consumer invocation; revision02 would be separately recorded"
+  ]
+}

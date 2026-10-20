@@ -1,0 +1,121 @@
+{
+  "schema": "normalized-eleven-public-release-v1",
+  "status": "FROZEN_QUALIFIED_SAVED_INPUT_ELEVEN",
+  "version_tag": "normalized-eleven-evidence-20261021-v1",
+  "member_prefix": "seams2027-normalized-eleven-evidence/",
+  "archive": {
+    "path": "archives/normalized-eleven-public-20261021-v1.zip",
+    "bytes": 10958466,
+    "sha256": "4964794a933d6369400e364ecc417b9ff6c6ae8ea867c02ef57a9a3bb8adb252",
+    "members": 1052,
+    "uncompressed_bytes": 92525146
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 209181,
+    "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433",
+    "schema": "normalized-eleven-member-manifest-v1",
+    "members_excluding_manifest": 1051,
+    "self_excluded": [
+      "MANIFEST.json"
+    ]
+  },
+  "historical_result_index": {
+    "path": "RESULTS.json",
+    "bytes": 12820,
+    "sha256": "ecafc9f29c1d828c648c61068a9eac4479792634f40154f102790823ff9474e3"
+  },
+  "portable_consumer": {
+    "entrypoint": {
+      "path": "consumer/check_saved.py",
+      "bytes": 39722,
+      "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+    },
+    "manifest": {
+      "path": "CONSUMER.json",
+      "bytes": 17280,
+      "sha256": "997146f14fec8e1f0c91648422cc30262abd38307fbd8cdcadc619be78d51eb2"
+    },
+    "source_bindings": {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 13234,
+      "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+    },
+    "python": "3.10+",
+    "platform": "POSIX with setitimer",
+    "whole_invocation_wall_cap_seconds": 60,
+    "individual_file_cap_bytes": 67108864,
+    "bundle_cap_bytes": 268435456,
+    "native_execution": false,
+    "network_execution": false,
+    "independent_source_compiler": false,
+    "graph_judge_implementations": 1
+  },
+  "qualification": {
+    "status": "PASS_FIXED_ELEVEN_SAVED_CONSUMER",
+    "saved_consumer_result": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/CONSUMER_RESULT.json",
+      "bytes": 10974,
+      "sha256": "de83b8a6e362515236290fbf2bbfddb3f47f10e4335b6e100eba03591b581abe"
+    },
+    "saved_consumer_process_receipt": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PROCESS_RECEIPT.json",
+      "bytes": 704,
+      "sha256": "dc4fa1f14bf27c7194de492802c958be5cd3c666278e61efd1b8a66f70c0a915"
+    },
+    "malformed_preflight_controls": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/NEGATIVE_PREFLIGHT_RESULTS.json",
+      "bytes": 7048,
+      "sha256": "997fa3a5e52660475b9ef3ad14f38f0dfeadebb5bab4fbf3c673154e2bbff899"
+    },
+    "independent_result_review": {
+      "status": "PASS",
+      "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION02_RESULT_REVIEW.json",
+      "bytes": 11916,
+      "sha256": "c997f8259a4defc12fe88a6d00561c78536a3bf40c0401f6ba6f107f3743b9f4"
+    },
+    "runtime": {
+      "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "implementation": "cpython",
+      "os": {
+        "sysname": "Darwin",
+        "release": "24.6.0",
+        "version": "Darwin Kernel Version 24.6.0: Tue Jul 21 20:51:32 PDT 2026; root:xnu-11417.140.69.711.44~1/RELEASE_ARM64_T8112",
+        "machine": "arm64"
+      }
+    },
+    "elapsed_seconds": 2.2069513330352493,
+    "external_record": {
+      "path": "NORMALIZED_ELEVEN_VALIDATION.json",
+      "bytes": 12531,
+      "sha256": "f574a1463aeaeb1b1debeed6e36ede8dd931ae27e54cacc00778cb6b048b9eff"
+    },
+    "qualification_pass_claimed": true,
+    "total_normal_invocations_across_revisions": 2,
+    "prior_failure_preserved": true
+  },
+  "scope": "Adopted historical whole-route eight-graph/three-empty-V results with qualified exact saved-input consumer; no new producer execution.",
+  "limits": [
+    "Whole existing original-V-restricted normalized four-fixed-point route, unchanged generic construction and original initializers; no individual algorithm change is isolated.",
+    "Comparator agreement binds original arenas and full V/K functions; no paired same-initializer 8-versus-7 rate, graph-equivalence or timing comparison.",
+    "The same-game/same-memory final-selection intervention remains a sufficient local rescue; necessity and unique extraction cause are not claimed.",
+    "Eight accepted graphs are distinct from three empty-V refusals with null controller flags and false original-initializer verdicts.",
+    "One existing graph judge and shared parser-translated BDDs; no independent source compiler, native/JVM execution or producer reconstruction by this consumer.",
+    "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
+    "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim."
+  ],
+  "distribution": {
+    "kind": "Repository file at versioned Git tag",
+    "tag": "normalized-eleven-evidence-20261021-v1"
+  },
+  "prior_evidence": {
+    "prior_reader_row_count": 14,
+    "prior_scientific_archive_count": 5,
+    "objects_and_archive_bytes_preserved": true
+  },
+  "external_records_manifest": {
+    "path": "evidence/validation/normalized-eleven-20261021/MANIFEST.json",
+    "bytes": 39315,
+    "sha256": "3982d492e2a14ace3f12784e82cf3422a68282007222bfd61d6616aa7bb11ac4"
+  }
+}

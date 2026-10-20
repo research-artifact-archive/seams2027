@@ -1,0 +1,270 @@
+{
+  "schema": "normalized-eleven-public-validation-v1",
+  "status": "PASS_FIXED_ELEVEN_SAVED_CONSUMER_WITH_PRESERVED_PRIOR_FAILURE",
+  "version_tag": "normalized-eleven-evidence-20261021-v1",
+  "archive": {
+    "path": "archives/normalized-eleven-public-20261021-v1.zip",
+    "bytes": 10958466,
+    "sha256": "4964794a933d6369400e364ecc417b9ff6c6ae8ea867c02ef57a9a3bb8adb252",
+    "members": 1052,
+    "uncompressed_bytes": 92525146
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 209181,
+    "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433"
+  },
+  "exact_distributed_wrapper": {
+    "path": "consumer/check_saved.py",
+    "bytes": 39722,
+    "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+  },
+  "qualification_scope": "One complete saved-input consumer invocation on the final exact archive revision, following a separately retained failed invocation on an earlier serializer revision. The full final member serialization was checked and remained unchanged. Exact eleven sources were prepared separately from original local files; bootstrap archive download and fresh source retrieval were not part of qualification.",
+  "result": {
+    "status": "PASS",
+    "fixed_order": [
+      "arbiter__preferred",
+      "arbiter__trivial_1",
+      "lift__preferred",
+      "lift__trivial_1",
+      "minepump__preferred",
+      "minepump__trivial_1",
+      "minepump__trivial_2",
+      "traffic_single__preferred",
+      "traffic_single__trivial_1",
+      "traffic_updated__preferred",
+      "traffic_updated__trivial_1"
+    ],
+    "counts": {
+      "rows": 11,
+      "export_certificates": 8,
+      "semantic_refusals": 3,
+      "arena_comparisons": 22,
+      "full_region_comparisons": 22,
+      "lossless_captures": 11
+    },
+    "all_entire_semantic_certificates_equal": true,
+    "all_original_initializers_preserved": true,
+    "quantifier": "forall_ENV_exists_SYS_AUX",
+    "initial_memory_rank": 0,
+    "graph_controller_flags": "Eight graphs have strict/nonconflicting/kind true; three empty-V refusals have all three controller flags null.",
+    "original_arena_and_full_V_K_function_matches": 11,
+    "final_input_integrity": true
+  },
+  "execution": {
+    "runtime": {
+      "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "implementation": "cpython",
+      "os": {
+        "sysname": "Darwin",
+        "release": "24.6.0",
+        "version": "Darwin Kernel Version 24.6.0: Tue Jul 21 20:51:32 PDT 2026; root:xnu-11417.140.69.711.44~1/RELEASE_ARM64_T8112",
+        "machine": "arm64"
+      }
+    },
+    "python_executable": {
+      "role": "host:Python-3.10.9",
+      "bytes": 33816,
+      "sha256": "b75b3aa92d8a07c630e5480dd2712ef501c422cee93f1954659a3143d5993975"
+    },
+    "started_utc": "2026-10-20T23:12:53.331994+00:00",
+    "finished_utc": "2026-10-20T23:12:55.537533+00:00",
+    "consumer_seconds": 2.2069513330352493,
+    "outer_seconds": 2.294182583980728,
+    "outer_wall_cap_seconds": 300,
+    "consumer_limits": {
+      "wall_seconds": 60,
+      "wall_timer": "SIGALRM/ITIMER_REAL",
+      "file_bytes": 67108864,
+      "bundle_bytes": 268435456,
+      "RLIMIT_CPU": 60,
+      "RLIMIT_FSIZE": 67108864,
+      "RLIMIT_AS": "unavailable; wall and explicit byte caps remain",
+      "RLIMIT_CORE": 0
+    },
+    "exit_code": 0,
+    "outer_timed_out": false,
+    "revision02_normal_invocations": 1,
+    "total_normal_invocations_across_revisions": 2,
+    "automatic_retries": 0,
+    "native": 0,
+    "compiler": 0,
+    "network": 0,
+    "new_source_fetches": 0
+  },
+  "malformed_preflight_controls": {
+    "revision02_cases": 6,
+    "total_cases_across_revisions": 12,
+    "all_expected_rejections": true,
+    "scientific_imports": 0,
+    "scientific_checks": 0,
+    "cases": [
+      {
+        "case": "wrong_source",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: External reconstructed source pin: arbiter__preferred",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      },
+      {
+        "case": "unknown_id",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: Exact row order",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      },
+      {
+        "case": "duplicate_id",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: Exact row order",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      },
+      {
+        "case": "cross_source_comparator",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: Copied model identity",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      },
+      {
+        "case": "stale_controller_model",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: Current controller/model hash binding",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      },
+      {
+        "case": "stale_result_model",
+        "expected_rejection_verified": true,
+        "actual_error": "ValueError: Pin mismatch: model.json",
+        "zero_scientific_checks": true,
+        "repinned_clone_manifest_valid": true
+      }
+    ],
+    "receipt": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/NEGATIVE_PREFLIGHT_RESULTS.json",
+      "bytes": 7048,
+      "sha256": "997fa3a5e52660475b9ef3ad14f38f0dfeadebb5bab4fbf3c673154e2bbff899"
+    }
+  },
+  "prior_failure": {
+    "revision": 1,
+    "status": "FAIL_OR_INCOMPLETE",
+    "completed_rows": 0,
+    "first_certificate_semantics": "PASS; VALID_SEMANTIC_REFUSAL for arbiter preferred",
+    "reason": "The earlier output serializer mistook an unchanged comparator diagnostic JSON pointer for a filesystem path. It stopped during first-arena serialization. This is a technical incomplete consumer run, not an additional scientific refusal.",
+    "repair": "Only the pure serializer now preserves the exact existing diagnostic pointer grammar in its exact output context. All other filesystem containment checks remain. README HTML scope wording and four dependent manifest leaves also changed; all 1,049 other members are byte-identical.",
+    "retained_result": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_01/saved_consumer/CONSUMER_RESULT.json",
+      "bytes": 3557,
+      "sha256": "52cf104dcdb4c9befb1bf7ff1cd6e49e8d18fbe01853d28a2270757510d6ca34"
+    },
+    "independent_failure_review": {
+      "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION01_FAILURE_REVIEW.json",
+      "bytes": 3777,
+      "sha256": "4602fa47275f8a0d597091be89b86c71e75eaa13ee98c071b22348f714e38a3e"
+    },
+    "serializer_delta": {
+      "path": "evidence/validation/normalized-eleven-20261021/SERIALIZER_REV02_DELTA.json",
+      "bytes": 1783,
+      "sha256": "644ea8804609afa5635aa9d0044d2a51003a284f16c2ee15cf87180679abee5e"
+    },
+    "independent_serializer_review": {
+      "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_SERIALIZER_REV02_REVIEW.json",
+      "bytes": 10875,
+      "sha256": "8295bebeb4d78b184221d279bfa1f00b78faab9d75439d086777909d4d314765"
+    },
+    "synthetic_orientation_clarification": {
+      "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_REV02_SYNTHETIC_ORIENTATION_CLARIFICATION.json",
+      "bytes": 1666,
+      "sha256": "39b4c013a6ad93fa14486346a3d68ba989831a9d629676549e64cf1005bf5c35"
+    },
+    "publisher_pure_serializer_controls": 22,
+    "independent_pure_serializer_controls": 31
+  },
+  "input_integrity": {
+    "before": {
+      "preserved_qualification01_files": 10181,
+      "frozen_files": 1052,
+      "all_original_E": 825,
+      "all_original_X": 760,
+      "all_existing_public_files": 68,
+      "sources": 11,
+      "archive": true,
+      "status": "ALL_EXPECTED_PINS_EXACT"
+    },
+    "after": {
+      "preserved_qualification01_files": 10181,
+      "frozen_files": 1052,
+      "all_original_E": 825,
+      "all_original_X": 760,
+      "all_existing_public_files": 68,
+      "sources": 11,
+      "archive": true,
+      "status": "ALL_EXPECTED_PINS_EXACT"
+    },
+    "both_frozen_revisions_and_archives_preserved": true,
+    "public_repository_unchanged_during_qualification": true
+  },
+  "consumer_result": {
+    "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/CONSUMER_RESULT.json",
+    "bytes": 10974,
+    "sha256": "de83b8a6e362515236290fbf2bbfddb3f47f10e4335b6e100eba03591b581abe"
+  },
+  "consumer_process": {
+    "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PROCESS_RECEIPT.json",
+    "bytes": 704,
+    "sha256": "dc4fa1f14bf27c7194de492802c958be5cd3c666278e61efd1b8a66f70c0a915"
+  },
+  "input_preflight": {
+    "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PREFLIGHT_RESULT.json",
+    "bytes": 2933,
+    "sha256": "84f84ebcb977e41e85e75a38a0a99b1f26e228b16dad1bd59a5d4c08e26cb3c7"
+  },
+  "copied_inputs": {
+    "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/COPIED_INPUTS.json",
+    "bytes": 189556,
+    "sha256": "37674594e6951656e16784ecea69402d8e4ed5b685914699160dd1fd797daa1c"
+  },
+  "independent_static_review": {
+    "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_FROZEN_REV02_STATIC_REVIEW.json",
+    "bytes": 4752,
+    "sha256": "2df2b4ea214bb481ba1867f6c1f9529a147184231562d4d5ab3cdd34d361379c"
+  },
+  "independent_result_review": {
+    "status": "PASS",
+    "findings": [],
+    "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION02_RESULT_REVIEW.json",
+    "bytes": 11916,
+    "sha256": "c997f8259a4defc12fe88a6d00561c78536a3bf40c0401f6ba6f107f3743b9f4"
+  },
+  "receipt_manifest": {
+    "path": "evidence/validation/normalized-eleven-20261021/MANIFEST.json",
+    "bytes": 39315,
+    "sha256": "3982d492e2a14ace3f12784e82cf3422a68282007222bfd61d6616aa7bb11ac4"
+  },
+  "receipt_presentation_ledger": {
+    "path": "evidence/validation/normalized-eleven-20261021/PRESENTATION_TRANSFORMATIONS.json",
+    "bytes": 167367,
+    "sha256": "3f9a9d8decdae2e388ad9089c21beb588ed4abbea19b7efbec36786d5b9f875b"
+  },
+  "limits": [
+    "Whole existing original-V-restricted normalized four-fixed-point route, unchanged generic construction and original initializers; no individual algorithm change is isolated.",
+    "Comparator agreement binds original arenas and full V/K functions; no paired same-initializer 8-versus-7 rate, graph-equivalence or timing comparison.",
+    "The same-game/same-memory final-selection intervention remains a sufficient local rescue; necessity and unique extraction cause are not claimed.",
+    "Eight accepted graphs are distinct from three empty-V refusals with null controller flags and false original-initializer verdicts.",
+    "One existing graph judge and shared parser-translated BDDs; no independent source compiler, native/JVM execution or producer reconstruction by this consumer.",
+    "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
+    "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim.",
+    "One observed Python 3.10.9 / Darwin arm64 host; no cross-host or cross-OS qualification and no fully hermetic runtime claim. RLIMIT_AS was unavailable on the qualified host; recorded wall/CPU/file limits remained.",
+    "Source helper enforces listing/reconstructed/diff/output identities and reports whole-HTML historical hash equality without requiring it.",
+    "Selected receipts are exported. Full malformed cloned bundles, copied work trees, external source payloads and private authorization inventories are omitted. Original embedded hashes and paths remain historical identities; exported copies have their own ledger."
+  ],
+  "source_binder": "New exact-source relative binder; original private raw/diff/profile binder not reexecuted. Only checker.load_profile and FREEZE_SHA256 are rebound; ten existing scientific modules are unchanged.",
+  "single_graph_judge": true,
+  "shared_parser_translated_BDDs": true,
+  "independent_source_compiler": false,
+  "original_fourteen_model_regression_extended": false,
+  "new_scientific_executions_for_receipt_export": 0
+}

@@ -1,0 +1,19 @@
+{
+  "case": "stale_result_model",
+  "expected_error_substring": "Pin mismatch: model.json",
+  "mutations": [
+    {
+      "file": "data/runs/arbiter__trivial_1/normalized_kind/result.json",
+      "before": {
+        "bytes": 74944,
+        "sha256": "8ab5b39031d81e6f7bdf9c336fc8da710b8cf1e26c2ba0cd93b6ba4f1c2a471a"
+      },
+      "after": {
+        "bytes": 74944,
+        "sha256": "d79512e61da46e48d9386759774d40500ddc2627769e63a76e88df77d8d5482e"
+      }
+    }
+  ],
+  "member_manifest_recomputed_to_reach_binding_gate": true,
+  "frozen_bundle_unchanged": true
+}

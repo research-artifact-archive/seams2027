@@ -1,0 +1,15 @@
+{
+  "id": "lift__preferred",
+  "status": "PASS",
+  "outputs": {
+    "certificate": "results/lift__preferred/certificate.json",
+    "certificate_comparison": "results/lift__preferred/certificate_comparison.json",
+    "arena_V": "results/lift__preferred/arena_V.json",
+    "arena_K": "results/lift__preferred/arena_K.json",
+    "region_V": "results/lift__preferred/region_V.json",
+    "region_K": "results/lift__preferred/region_K.json",
+    "capture": "results/lift__preferred/capture_verification.json"
+  },
+  "certificate_status": "VALID_SEMANTIC_REFUSAL",
+  "original_initializer_verdict": false
+}

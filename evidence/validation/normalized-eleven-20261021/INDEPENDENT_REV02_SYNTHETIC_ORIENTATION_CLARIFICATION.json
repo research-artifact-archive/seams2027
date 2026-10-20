@@ -1,0 +1,32 @@
+{
+  "schema": "independent-serializer-synthetic-label-orientation-clarification-v1",
+  "status": "CLARIFICATION_NO_CHANGE_TO_PASS_OR_ARTIFACT",
+  "created_utc": "2026-10-20T23:12:36.783617+00:00",
+  "bound_reports": [
+    {
+      "file": "INDEPENDENT_SERIALIZER_REV02_REVIEW.json",
+      "bytes": 10875,
+      "sha256": "8295bebeb4d78b184221d279bfa1f00b78faab9d75439d086777909d4d314765"
+    },
+    {
+      "file": "INDEPENDENT_FROZEN_REV02_STATIC_REVIEW.json",
+      "bytes": 4752,
+      "sha256": "2df2b4ea214bb481ba1867f6c1f9529a147184231562d4d5ab3cdd34d361379c"
+    }
+  ],
+  "clarification": "The synthetic actual_failed_pointer_set_preserved records in the independent serializer report use prior=left comparator and new=right normalized arm. The unchanged compare_models(a,b) implementation actually emits new=a (left comparator) and prior=b (right normalized arm). The four JSON pointer strings and source values are the same; only labels in this synthetic test construction use the opposite orientation. The test correctly requires the serializer to preserve every input diagnostic value unchanged. It is not an actual model_join output receipt.",
+  "actual_existing_call_orientation": {
+    "left_comparator_value_field": "new",
+    "right_normalized_arm_value_field": "prior"
+  },
+  "independent_synthetic_construction_orientation": {
+    "left_comparator_value_field": "prior",
+    "right_normalized_arm_value_field": "new"
+  },
+  "impact": {
+    "pointer_preservation_validation_unchanged": true,
+    "scientific_results_unchanged": true,
+    "frozen_bundle_and_reports_mutated": false,
+    "qualification_or_publication_authorization_added": false
+  }
+}

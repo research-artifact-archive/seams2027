@@ -1,0 +1,23 @@
+{
+  "finished_utc": "2026-10-20T23:04:44.114942+00:00",
+  "exit_code": 2,
+  "outer_timed_out": false,
+  "outer_elapsed_seconds": 1.2171233749832027,
+  "stdout": {
+    "bytes": 126,
+    "sha256": "f85d07d1ab0096128a6e59aaf0c79a045da23c5b4262a40abb7fdba5c86b0973"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "attempts": 1,
+  "retries": 0,
+  "work_dir": "origin:qualification01/saved_consumer/work",
+  "consumer_result": {
+    "path": "origin:qualification01/saved_consumer/work/CONSUMER_RESULT.json",
+    "bytes": 3557,
+    "sha256": "52cf104dcdb4c9befb1bf7ff1cd6e49e8d18fbe01853d28a2270757510d6ca34"
+  },
+  "status": "FAIL_OR_INCOMPLETE"
+}

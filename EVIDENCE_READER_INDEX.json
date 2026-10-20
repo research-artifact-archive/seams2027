@@ -1,5 +1,5 @@
 {
-  "status": "FIFTH_EXTENSION_QUALIFIED_WITH_SEPARATE_DOCUMENT_SNAPSHOT",
+  "status": "SIXTH_EXTENSION_QUALIFIED_SAVED_ELEVEN_WITH_DOCUMENT_SNAPSHOT",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -21,6 +21,10 @@
     "LiftRegeneration": {
       "archive": "lift-native-regeneration-public-20261021-v1.zip",
       "member_prefix": "seams2027-lift-public-regeneration-kit/"
+    },
+    "NormalizedEleven": {
+      "archive": "normalized-eleven-public-20261021-v1.zip",
+      "member_prefix": "seams2027-normalized-eleven-evidence/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -733,6 +737,154 @@
         "evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
         "evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json"
       ]
+    },
+    {
+      "id": "NORMALIZED-ELEVEN-ORIGINAL-INITIALIZER",
+      "claim": "The existing normalized four-fixed-point whole route with unchanged generic construction and original initializers has eight accepted saved graphs and three independently checked empty-V refusals; all eleven original arenas and full V/K functions match saved comparators.",
+      "archive": "NormalizedEleven",
+      "source_inputs": [
+        "sources/arbiter__preferred.spectra",
+        "sources/arbiter__trivial_1.spectra",
+        "sources/lift__preferred.spectra",
+        "sources/lift__trivial_1.spectra",
+        "sources/minepump__preferred.spectra",
+        "sources/minepump__trivial_1.spectra",
+        "sources/minepump__trivial_2.spectra",
+        "sources/traffic_single__preferred.spectra",
+        "sources/traffic_single__trivial_1.spectra",
+        "sources/traffic_updated__preferred.spectra",
+        "sources/traffic_updated__trivial_1.spectra"
+      ],
+      "input_models": [
+        "data/runs/arbiter__preferred/normalized_kind/model.json",
+        "data/comparators/arbiter__preferred/V/model.json",
+        "data/comparators/arbiter__preferred/K/model.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/model.json",
+        "data/comparators/arbiter__trivial_1/V/model.json",
+        "data/comparators/arbiter__trivial_1/K/model.json",
+        "data/runs/lift__preferred/normalized_kind/model.json",
+        "data/comparators/lift__preferred/V/model.json",
+        "data/comparators/lift__preferred/K/model.json",
+        "data/runs/lift__trivial_1/normalized_kind/model.json",
+        "data/comparators/lift__trivial_1/V/model.json",
+        "data/comparators/lift__trivial_1/K/model.json",
+        "data/runs/minepump__preferred/normalized_kind/model.json",
+        "data/comparators/minepump__preferred/V/model.json",
+        "data/comparators/minepump__preferred/K/model.json",
+        "data/runs/minepump__trivial_1/normalized_kind/model.json",
+        "data/comparators/minepump__trivial_1/V/model.json",
+        "data/comparators/minepump__trivial_1/K/model.json",
+        "data/runs/minepump__trivial_2/normalized_kind/model.json",
+        "data/comparators/minepump__trivial_2/V/model.json",
+        "data/comparators/minepump__trivial_2/K/model.json",
+        "data/runs/traffic_single__preferred/normalized_kind/model.json",
+        "data/comparators/traffic_single__preferred/V/model.json",
+        "data/comparators/traffic_single__preferred/K/model.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/model.json",
+        "data/comparators/traffic_single__trivial_1/V/model.json",
+        "data/comparators/traffic_single__trivial_1/K/model.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/model.json",
+        "data/comparators/traffic_updated__preferred/V/model.json",
+        "data/comparators/traffic_updated__preferred/K/model.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/model.json",
+        "data/comparators/traffic_updated__trivial_1/V/model.json",
+        "data/comparators/traffic_updated__trivial_1/K/model.json"
+      ],
+      "saved_graphs": [
+        "data/runs/arbiter__trivial_1/normalized_kind/controller.json",
+        "data/runs/lift__trivial_1/normalized_kind/controller.json",
+        "data/runs/minepump__trivial_1/normalized_kind/controller.json",
+        "data/runs/minepump__trivial_2/normalized_kind/controller.json",
+        "data/runs/traffic_single__preferred/normalized_kind/controller.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/controller.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/controller.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/controller.json"
+      ],
+      "saved_outputs": [
+        "RESULTS.json",
+        "data/runs/arbiter__preferred/normalized_kind/result.json",
+        "data/runs/arbiter__preferred/normalized_kind/certificate.json",
+        "data/runs/arbiter__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/result.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/certificate.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/lift__preferred/normalized_kind/result.json",
+        "data/runs/lift__preferred/normalized_kind/certificate.json",
+        "data/runs/lift__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/lift__trivial_1/normalized_kind/result.json",
+        "data/runs/lift__trivial_1/normalized_kind/certificate.json",
+        "data/runs/lift__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__preferred/normalized_kind/result.json",
+        "data/runs/minepump__preferred/normalized_kind/certificate.json",
+        "data/runs/minepump__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__trivial_1/normalized_kind/result.json",
+        "data/runs/minepump__trivial_1/normalized_kind/certificate.json",
+        "data/runs/minepump__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__trivial_2/normalized_kind/result.json",
+        "data/runs/minepump__trivial_2/normalized_kind/certificate.json",
+        "data/runs/minepump__trivial_2/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_single__preferred/normalized_kind/result.json",
+        "data/runs/traffic_single__preferred/normalized_kind/certificate.json",
+        "data/runs/traffic_single__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/result.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/certificate.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/result.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/certificate.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/result.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/certificate.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/MODEL_JOIN.json"
+      ],
+      "input_navigation": [
+        "CONSUMER.json",
+        "SOURCE_BINDINGS.json",
+        "MANIFEST.json",
+        "ORIGINAL_COPY_LEDGER.json",
+        "METADATA_ALLOWLIST.json",
+        "SOURCE_PIN_MANIFEST.json"
+      ],
+      "checker_sources": [
+        "consumer/check_saved.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/initial_graph_checker.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/bdd_core.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/graph_fairness.py",
+        "code/experiment/normalized_eleven_preparation_20261021/adapters_r2/common.py",
+        "code/experiment/normalized_eleven_preparation_20261021/adapters_r2/join.py",
+        "code/experiment/seams_research_reframing_20261017/corpus_comparison/model_join.py",
+        "code/experiment/seams_research_reframing_20261017/kind_corpus_rle/semantic_qualification.py",
+        "code/experiment/seams_establishment_20261013/k7_controller_independent_preparation/bdd_core.py",
+        "code/experiment/seams_submission_push_20261016/v_restricted_strict/model_identity.py",
+        "code/experiment/seams_research_reframing_20261017/kind_corpus_rle/decode.py"
+      ],
+      "reader_recipe": "README.md",
+      "expected_saved_result": "8 VALID_EXPORT_CERTIFICATE with strict/nonconflicting/kind true; 3 EMPTY_V_INDEPENDENTLY_CHECKED semantic refusals with null controller flags and false original-initializer verdicts. Verified public consumer: 22 exact original-arena matches, 22 full V/K matches, 11 lossless captures and full semantic-certificate agreement.",
+      "replay_scope": "Qualified bounded saved-input consumer on separately supplied exact sources; no native synthesis, source fetch or compilation by the consumer.",
+      "qualification": {
+        "historical_results": "ADOPTED",
+        "exact_frozen_public_consumer": "PASS",
+        "malformed_preflight_controls": "PASS_SIX_EXPECTED_REJECTIONS",
+        "independent_result_review": "PASS",
+        "prior_serializer_failure_retained": true,
+        "total_normal_invocations": 2
+      },
+      "outer_repository_saved_outputs": [
+        "NORMALIZED_ELEVEN_RESULTS.json",
+        "NORMALIZED_ELEVEN_VALIDATION.json",
+        "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/CONSUMER_RESULT.json",
+        "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PREFLIGHT_RESULT.json",
+        "evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION02_RESULT_REVIEW.json",
+        "evidence/validation/normalized-eleven-20261021/qualification_01/saved_consumer/CONSUMER_RESULT.json"
+      ],
+      "limitations": [
+        "Whole existing original-V-restricted normalized four-fixed-point route, unchanged generic construction and original initializers; no individual algorithm change is isolated.",
+        "Comparator agreement binds original arenas and full V/K functions; no paired same-initializer 8-versus-7 rate, graph-equivalence or timing comparison.",
+        "The same-game/same-memory final-selection intervention remains a sufficient local rescue; necessity and unique extraction cause are not claimed.",
+        "Eight accepted graphs are distinct from three empty-V refusals with null controller flags and false original-initializer verdicts.",
+        "One existing graph judge and shared parser-translated BDDs; no independent source compiler, native/JVM execution or producer reconstruction by this consumer.",
+        "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
+        "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -838,7 +990,18 @@
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games/src/tau/smlab/syntech/games/GameSolver.java",
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.jtlv/src/net/sf/javabdd/BDDFactory.java",
     "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/design_review_10_cooperation_authority/isolated/input/PRIMARY_THEOREMS.txt",
-    "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/slugs_baseline_feasibility/work/slugs-ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c"
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/slugs_baseline_feasibility/work/slugs-ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c",
+    "seams2027-normalized-eleven-evidence/sources/arbiter__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/arbiter__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/lift__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/lift__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__trivial_2.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_single__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_single__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_updated__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_updated__trivial_1.spectra"
   ],
   "extensions": [
     {
@@ -868,15 +1031,27 @@
       "anonymous_placement_native_execution_complete": true,
       "anonymous_placement_focused_execution_complete": true,
       "qualification_basis": "Identical executed controls/scientific inputs with a subsequent three-member metadata presentation correction; see NATIVE_REGENERATION_VALIDATION.json."
+    },
+    {
+      "version_tag": "normalized-eleven-evidence-20261021-v1",
+      "archive": "archives/normalized-eleven-public-20261021-v1.zip",
+      "claims": [
+        "NORMALIZED-ELEVEN-ORIGINAL-INITIALIZER"
+      ],
+      "descriptor": "NORMALIZED_ELEVEN_MANIFEST.json",
+      "qualification_record": "NORMALIZED_ELEVEN_VALIDATION.json",
+      "status": "FROZEN_QUALIFIED_SAVED_INPUT_ELEVEN",
+      "producer_invocation_recreated": false,
+      "saved_consumer_qualification": "PASS"
     }
   ],
   "document_snapshot": {
     "manifest": "DOCUMENT_SNAPSHOT_MANIFEST.json",
-    "pdf": "documents/technical-appendix-v43.pdf",
-    "source_zip": "documents/technical-appendix-v43.zip",
-    "scope": "Generic appendix document snapshot, separate from the five scientific evidence archives."
+    "pdf": "documents/technical-appendix-v44.pdf",
+    "source_zip": "documents/technical-appendix-v44.zip",
+    "scope": "Generic appendix snapshot separate from six scientific evidence archives; previous v43 files retained."
   },
-  "extension_note": "Original twelve row objects remain unchanged. The fifth archive adds two separately scoped rows and outside-ZIP qualification receipts.",
-  "new_extension_references_checked": 26,
+  "extension_note": "All 14 prior row objects and five prior scientific archive bytes remain unchanged. The sixth archive adds one separately scoped original-initializer row with saved-input qualification records. Revision 01 failure and revision 02 success are both retained.",
+  "new_extension_references_checked": 110,
   "new_extension_missing_references": []
 }

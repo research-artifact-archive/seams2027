@@ -1,0 +1,1679 @@
+{
+  "schema": "normalized-eleven-private-exhaustive-metadata-audit-v1",
+  "status": "PASS_EXACT_POINTER_ALLOWLIST_AND_ALL_NONMETADATA_INVARIANCE",
+  "created_utc": "2026-10-20T22:57:37.611448+00:00",
+  "allowlist": {
+    "file": "METADATA_ALLOWLIST.json",
+    "bytes": 4332202,
+    "sha256": "c8da78c0bfc8e22672589bdb074cfc4f751b8feed1e39bb69b976ef29cc40f2c"
+  },
+  "ledger": {
+    "file": "ORIGINAL_COPY_LEDGER.json",
+    "bytes": 50057496,
+    "sha256": "42346c2eed7d8949b58dee331a8e7035313885cc9e7a798b0f1855275b518226"
+  },
+  "original_copy_files": 1040,
+  "changed_files": 296,
+  "changed_leaf_count": 102071,
+  "categories": {
+    "exact_non_json": 676,
+    "current_model_source_location": 33,
+    "historical_pin_location": 101115,
+    "historical_process_argument_location": 462,
+    "historical_worker_directory": 55,
+    "historical_capture_location": 44,
+    "exact_json": 68,
+    "historical_runtime_class_location": 305,
+    "current_result_source_location": 11,
+    "current_result_export_identity": 38,
+    "current_controller_model_identity": 8
+  },
+  "pattern_count": 328,
+  "all_originals_read_and_rehashed": true,
+  "all_public_copies_read_and_rehashed": true,
+  "all_unlisted_structure_and_values_equal": true,
+  "all_unchanged_files_byte_exact": true,
+  "patterns": [
+    {
+      "category": "current_controller_model_identity",
+      "pattern": "/model_sha256",
+      "count": 8
+    },
+    {
+      "category": "current_model_source_location",
+      "pattern": "/input/path",
+      "count": 33
+    },
+    {
+      "category": "current_result_export_identity",
+      "pattern": "/controller_export/bytes",
+      "count": 8
+    },
+    {
+      "category": "current_result_export_identity",
+      "pattern": "/controller_export/sha256",
+      "count": 8
+    },
+    {
+      "category": "current_result_export_identity",
+      "pattern": "/model_export/bytes",
+      "count": 11
+    },
+    {
+      "category": "current_result_export_identity",
+      "pattern": "/model_export/sha256",
+      "count": 11
+    },
+    {
+      "category": "current_result_source_location",
+      "pattern": "/input",
+      "count": 11
+    },
+    {
+      "category": "historical_capture_location",
+      "pattern": "/path",
+      "count": 11
+    },
+    {
+      "category": "historical_capture_location",
+      "pattern": "/stdout_capture/path",
+      "count": 22
+    },
+    {
+      "category": "historical_capture_location",
+      "pattern": "/worker_receipt/stdout_capture/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/V_comparison/left/path",
+      "count": 33
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/V_comparison/right/path",
+      "count": 33
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/adapter_freeze/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/NATIVE_CHILD_IDENTITY.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/REQUEST.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/RLE_STDOUT_RECEIPT.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/STDOUT_CAPTURE.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_0_actual.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_0_expected.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_0_xor.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_1_actual.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_1_expected.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_1_xor.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_2_actual.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_2_expected.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_2_xor.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_3_actual.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_3_expected.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_3_xor.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_4_actual.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_4_expected.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_CPre_direct_4_xor.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_1_after.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_1_before.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_2_after.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_2_before.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_3_after.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_3_before.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_4_after.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_4_before.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_5_after.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/V_iteration_5_before.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/alive.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/controller.json/path",
+      "count": 16
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/domain.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/domain_ENV_next.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/domain_SYS_next.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/final_region.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/model.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/native_W.bdd/path",
+      "count": 16
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_ENV_justice_0.bdd/path",
+      "count": 10
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_ENV_justice_1.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_ENV_justice_2.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_SYS_justice_0.bdd/path",
+      "count": 18
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_SYS_justice_1.bdd/path",
+      "count": 14
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_SYS_justice_2.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_initial_witness.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_missing_initials.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_rhoE.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_rhoS.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_thetaE.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/original_thetaS.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_ENV_justice_0.bdd/path",
+      "count": 10
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_ENV_justice_1.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_ENV_justice_2.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_SYS_justice_0.bdd/path",
+      "count": 18
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_SYS_justice_1.bdd/path",
+      "count": 16
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_SYS_justice_2.bdd/path",
+      "count": 12
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_SYS_justice_3.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/preconstructor_SYS_justice_4.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/residual_thetaE.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/residual_thetaS.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/restricted_rhoS.bdd/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/result.json/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_ENV_justice_0.bdd/path",
+      "count": 16
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_ENV_justice_1.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_ENV_justice_2.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_SYS_justice_0.bdd/path",
+      "count": 16
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_SYS_justice_1.bdd/path",
+      "count": 12
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_SYS_justice_2.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_SYS_justice_3.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/solver_SYS_justice_4.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/stderr.txt/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/artifacts/stdout.txt.gz/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/capture_source/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/captures/*/bounded_rle_verification/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/captures/*/capture/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/captures/*/native_stdout/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/captures/*/rle_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/certificate/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/checker_process/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/child_identity_pin/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/decision/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/dependency_manifest/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/durable_region_observations/*/observation/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/durable_region_observations/*/observation/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/durable_region_observations/*/record/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/files/*/path",
+      "count": 1162
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/handoff/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/historical_authority/certificate/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/historical_authority/full_region_comparison/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/historical_authority/process/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/historical_authority/runtime/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/historical_supervisor_source/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/independent_audit/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/adapter_freeze/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/handoff/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/offline_qualification/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/output_manifest/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/postrun_audit/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/prior_offline_result_review/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/prior_static_review/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/result_rows/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/root_decision/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/run_receipt/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/seal/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/source_bindings/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/inputs/supervisor_decision/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/join_process/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/model_join/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/native_child_identity/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/native_region_join_saved_K/left/path",
+      "count": 33
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/native_region_join_saved_K/right/path",
+      "count": 33
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/new_result/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/original_arena/input_pins/*/path",
+      "count": 456
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/output_manifest/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/parent_preparation_manifest/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/parent_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/post_run_audit/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/previous_revision_freeze/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/process_receipts/*/child_identity/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/process_receipts/*/parent_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/process_receipts/*/receipt/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/process_receipts/*/worker_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/python/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/existing_normalized_public002_qualification/certificate/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/existing_normalized_public002_qualification/checker_process/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/existing_normalized_public002_qualification/join_process/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/existing_normalized_public002_qualification/model_join/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/existing_normalized_public002_qualification/parent_receipt/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/qualification_pin/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/qualification_before_execution/existing_saved_controls/saved_model_regression_pin/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/V_comparison/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/V_comparison/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/historical_authority/certificate/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/historical_authority/full_region_comparison/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/historical_authority/process/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/historical_authority/runtime/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/native_region_join_saved_K/left/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/native_region_join_saved_K/right/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/new_result/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/original_arena/input_pins/*/path",
+      "count": 456
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/region_observations/K/left/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/region_observations/K/right/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/region_observations/V/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/region_observations/V/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/record/saved_K_arena/input_pins/*/path",
+      "count": 456
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/region_observations/K/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/region_observations/K/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/region_observations/V/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/region_observations/V/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/result_rows/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/K_observation/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/V_observation/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/certificate/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/missing_environment_initials/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/model/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/model_join/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/native_stderr/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/parent_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/result/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/source/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/stage_processes/*/receipt/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/system_initial_witness/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/results/rows/*/worker_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/root_native_decision/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/V_comparison/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/V_comparison/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/certificate/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/checker_process/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/complete_K_valuations/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/declared_reconstruction/declared_diff/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/declared_reconstruction/declared_reconstruction/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/declared_reconstruction/raw_source/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/declared_reconstruction/selected_source/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/durable_region_observations/*/observation/left/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/durable_region_observations/*/observation/right/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/durable_region_observations/*/record/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/existing_full_region_equality/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/existing_model_certificate/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/existing_native_process/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/existing_runtime_binding/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/final_region_K_comparison/left/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/final_region_K_comparison/right/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/join_process/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/missing_environment_initials/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/model/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/model_join/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/model_region_join/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/native_region_join_saved_K/left/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/native_region_join_saved_K/right/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/native_result/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/domain/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/domain_ENV_next/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/domain_SYS_next/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/rhoE/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/rhoS/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/thetaE/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_bdds/thetaS/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_justices/ENV/*/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_justices/SYS/*/path",
+      "count": 18
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/original_model/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/output_outcome/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/parent_receipt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/saved_V/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/saved_WV/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/saved_comparator_inputs/*/model/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/saved_comparator_inputs/*/region/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/saved_comparator_inputs/*/result/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/source/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/source_profile/file/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/*/system_initial_witness/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/rows/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/run_receipt/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/saved_K_arena/input_pins/*/path",
+      "count": 456
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/closure/*/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/declared_reconstruction/declared_diff/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/declared_reconstruction/declared_reconstruction/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/declared_reconstruction/raw_source/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/declared_reconstruction/selected_source/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/original_model/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/source_binding_manifest/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_bindings/source_profile/file/path",
+      "count": 22
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/source_pins/*/path",
+      "count": 75680
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/supervisor_lineage/historical_supervisor_source/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/supervisor_source_pins/*/path",
+      "count": 66
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/tool_session/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/unchanged_science/producer/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/unchanged_science/wrapper/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/NATIVE_CHILD_IDENTITY.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/REQUEST.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/RLE_STDOUT_RECEIPT.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/STDOUT_CAPTURE.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_0_actual.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_0_expected.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_0_xor.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_1_actual.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_1_expected.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_1_xor.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_2_actual.bdd/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_2_expected.bdd/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_2_xor.bdd/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_3_actual.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_3_expected.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_3_xor.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_4_actual.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_4_expected.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_CPre_direct_4_xor.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_1_after.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_1_before.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_2_after.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_2_before.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_3_after.bdd/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_3_before.bdd/path",
+      "count": 3
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_4_after.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_4_before.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_5_after.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/V_iteration_5_before.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/alive.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/controller.json/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/domain.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/domain_ENV_next.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/domain_SYS_next.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/final_region.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/model.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/native_W.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_ENV_justice_0.bdd/path",
+      "count": 5
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_ENV_justice_1.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_ENV_justice_2.bdd/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_SYS_justice_0.bdd/path",
+      "count": 9
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_SYS_justice_1.bdd/path",
+      "count": 7
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_SYS_justice_2.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_initial_witness.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_missing_initials.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_rhoE.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_rhoS.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_thetaE.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/original_thetaS.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_ENV_justice_0.bdd/path",
+      "count": 5
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_ENV_justice_1.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_ENV_justice_2.bdd/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_SYS_justice_0.bdd/path",
+      "count": 9
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_SYS_justice_1.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_SYS_justice_2.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_SYS_justice_3.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/preconstructor_SYS_justice_4.bdd/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/residual_thetaE.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/residual_thetaS.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/restricted_rhoS.bdd/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/result.json/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_ENV_justice_0.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_ENV_justice_1.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_ENV_justice_2.bdd/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_SYS_justice_0.bdd/path",
+      "count": 8
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_SYS_justice_1.bdd/path",
+      "count": 6
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_SYS_justice_2.bdd/path",
+      "count": 4
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_SYS_justice_3.bdd/path",
+      "count": 2
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/solver_SYS_justice_4.bdd/path",
+      "count": 1
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/stderr.txt/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/artifacts/stdout.txt.gz/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/capture_source/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/native_child_identity/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/source_pins/*/path",
+      "count": 18920
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt/worker_source_pins_before/*/path",
+      "count": 44
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_receipt_pin/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_source_pins_before/*/path",
+      "count": 88
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_stderr/path",
+      "count": 11
+    },
+    {
+      "category": "historical_pin_location",
+      "pattern": "/worker_stdout/path",
+      "count": 11
+    },
+    {
+      "category": "historical_process_argument_location",
+      "pattern": "/argv/*",
+      "count": 198
+    },
+    {
+      "category": "historical_process_argument_location",
+      "pattern": "/command/*",
+      "count": 220
+    },
+    {
+      "category": "historical_process_argument_location",
+      "pattern": "/worker_receipt/command/*",
+      "count": 44
+    },
+    {
+      "category": "historical_runtime_class_location",
+      "pattern": "/class_identities/*/code_source",
+      "count": 242
+    },
+    {
+      "category": "historical_runtime_class_location",
+      "pattern": "/extractor_class_identities/*/code_source",
+      "count": 55
+    },
+    {
+      "category": "historical_runtime_class_location",
+      "pattern": "/solver_class_identity/code_source",
+      "count": 8
+    },
+    {
+      "category": "historical_worker_directory",
+      "pattern": "/arm_dir",
+      "count": 44
+    },
+    {
+      "category": "historical_worker_directory",
+      "pattern": "/worker_receipt/arm_dir",
+      "count": 11
+    }
+  ],
+  "scientific_executions": 0
+}

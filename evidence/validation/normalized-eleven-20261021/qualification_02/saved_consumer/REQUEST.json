@@ -1,0 +1,20 @@
+{
+  "started_utc": "2026-10-20T23:12:53.298220+00:00",
+  "argv": [
+    "origin:home/.pyenv/versions/3.10.9/bin/python3.10",
+    "-I",
+    "-B",
+    "origin:public-staging/package_rev02/seams2027-normalized-eleven-evidence/consumer/check_saved.py",
+    "--bundle",
+    "origin:public-staging/package_rev02/seams2027-normalized-eleven-evidence",
+    "--source-root",
+    "origin:public-staging/qualification_sources_01",
+    "--work-dir",
+    "origin:qualification02/saved_consumer/work"
+  ],
+  "outer_wall_cap_seconds": 300,
+  "internal_wall_cap_seconds": 60,
+  "preflight_only": false,
+  "attempt": 1,
+  "retries": 0
+}

@@ -1,0 +1,15 @@
+{
+  "id": "minepump__trivial_1",
+  "status": "PASS",
+  "outputs": {
+    "certificate": "results/minepump__trivial_1/certificate.json",
+    "certificate_comparison": "results/minepump__trivial_1/certificate_comparison.json",
+    "arena_V": "results/minepump__trivial_1/arena_V.json",
+    "arena_K": "results/minepump__trivial_1/arena_K.json",
+    "region_V": "results/minepump__trivial_1/region_V.json",
+    "region_K": "results/minepump__trivial_1/region_K.json",
+    "capture": "results/minepump__trivial_1/capture_verification.json"
+  },
+  "certificate_status": "VALID_EXPORT_CERTIFICATE",
+  "original_initializer_verdict": true
+}

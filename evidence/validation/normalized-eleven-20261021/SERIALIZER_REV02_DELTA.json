@@ -1,0 +1,51 @@
+{
+  "schema": "normalized-eleven-private-serializer-revision-v1",
+  "status": "AST_VALID_METADATA_SERIALIZER_AND_DOCUMENTATION_ONLY_NOT_EXECUTED",
+  "reason": "The first attempt rejected a diagnostic JSON pointer as an absolute filesystem path. Preserve only the unchanged comparator exact diagnostic pointer grammar in its exact output context. All other filesystem path restrictions remain.",
+  "old_freeze": {
+    "bytes": 211769,
+    "sha256": "4b379b1fc4b3b40a72587021351514531c72774bf7784aef1065a0c5ac5a2908"
+  },
+  "changed_files": [
+    {
+      "file": "MANIFEST.json",
+      "old": {
+        "bytes": 209181,
+        "sha256": "0d797ff6d3ea2900f605426c1f57755147fdfd818f8871880bcf2767db8f4c10"
+      },
+      "new": {
+        "bytes": 209181,
+        "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433"
+      }
+    },
+    {
+      "file": "README.md",
+      "old": {
+        "bytes": 7776,
+        "sha256": "c91326bdca054b72f23a5dcd1bb3776a0f181517328f9e9539cf766293282131"
+      },
+      "new": {
+        "bytes": 7909,
+        "sha256": "fbf3ea1ec18cc1d89aaa239e07967df3b2811056d56dd64a61e6bd8bf2b9b83c"
+      }
+    },
+    {
+      "file": "consumer/check_saved.py",
+      "old": {
+        "bytes": 39135,
+        "sha256": "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3"
+      },
+      "new": {
+        "bytes": 39722,
+        "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+      }
+    }
+  ],
+  "byte_identical_files": 1049,
+  "existing_scientific_module_changes": 0,
+  "science_input_changes": 0,
+  "manifest_changes": "Only README and wrapper byte/hash entries updated; member names/count unchanged.",
+  "scientific_imports": 0,
+  "scientific_executions": 0,
+  "qualification02_started": false
+}

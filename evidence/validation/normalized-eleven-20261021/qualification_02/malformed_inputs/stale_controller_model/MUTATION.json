@@ -1,0 +1,30 @@
+{
+  "case": "stale_controller_model",
+  "expected_error_substring": "Current controller/model hash binding",
+  "mutations": [
+    {
+      "file": "data/runs/arbiter__trivial_1/normalized_kind/controller.json",
+      "before": {
+        "bytes": 59106,
+        "sha256": "e8bc3274ef39b448975dbad27e004e6f6f0cc84334f39bfd1cc7cdb841e004af"
+      },
+      "after": {
+        "bytes": 59106,
+        "sha256": "352e21942a43d5b6f2ddadcd210a4bf8decb4cd347200b7b0c6e9e43d7ba5028"
+      }
+    },
+    {
+      "file": "data/runs/arbiter__trivial_1/normalized_kind/result.json",
+      "before": {
+        "bytes": 74944,
+        "sha256": "8ab5b39031d81e6f7bdf9c336fc8da710b8cf1e26c2ba0cd93b6ba4f1c2a471a"
+      },
+      "after": {
+        "bytes": 74944,
+        "sha256": "d444858be7ac37acbdf39f80d0eeb0206d5f443e1257725c30b42f7bf0ef5ce6"
+      }
+    }
+  ],
+  "member_manifest_recomputed_to_reach_binding_gate": true,
+  "frozen_bundle_unchanged": true
+}

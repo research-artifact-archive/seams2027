@@ -1,0 +1,1 @@
+{"status": "PASS", "result": "CONSUMER_RESULT.json", "completed_rows": 11, "elapsed_seconds": 2.2069513330352493}

@@ -1,0 +1,395 @@
+{
+  "schema": "original-initializer-independent-graph-certificate-v1",
+  "status": "VALID_EXPORT_CERTIFICATE",
+  "fixture_id": "minepump__trivial_1",
+  "pipeline": "normalized_kind",
+  "entry_mode": "original_initializer",
+  "checker_sha256": "3c465e4253712c6f021920e6a164ef48c63c5bf6cfb3432d17ab95fb5778ebda",
+  "source_freeze_sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10",
+  "model_sha256": "233238c0a0b95c2b21a155e8a097e1607fdc47692238f14a491c9ef80a66c5ce",
+  "result_sha256": "73fc28015b42c483d0406961feb02ee9326b0a0fc4aa027f1ffb14659c71b9e4",
+  "controller_sha256": "b0a6cb25d9500b0ae8da2a095664950b36128285c2eb7cdd0608a1fee7600b74",
+  "strict_controller_pass": true,
+  "nonconflicting_pass": true,
+  "kind_controller_pass": true,
+  "witnesses": [],
+  "failure_stage": null,
+  "refusal_scope": null,
+  "model_validated": true,
+  "controller_defects": [],
+  "trust_boundary": "Static exact exported graph; shared parser-translated BDDs. Historical native invocation and runtime execution are not established by saved JSON.",
+  "source_bindings": {
+    "scope": "exact_eleven_saved_inputs_separately_supplied_sources",
+    "public_source_binding_manifest": {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 13234,
+      "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+    },
+    "source_recipe": {
+      "file": "tools/PAPER_SOURCE_FETCH_MANIFEST.json",
+      "bytes": 10213,
+      "sha256": "b9aeb203c508f60f8d0ed56276d63087dad6ce71e652944b864ca114201bd983"
+    },
+    "external_source_bytes_verified": true,
+    "historical_source_profile_pin": {
+      "role": "origin:source-profile",
+      "profile_key": "minepump__trivial_1",
+      "bytes": 200770,
+      "sha256": "1cc14f2aa4c0c0e3e523d9ff170d6f9f0be449ca7f4d7ed0d718a5f96e6da58b"
+    },
+    "historical_raw_diff_profile_reexecuted": false,
+    "producer_reexecution": false,
+    "independent_source_compiler": false
+  },
+  "original_model_audit": {
+    "status": "PASS",
+    "typed_carrier": 16,
+    "field_count": 4,
+    "ENV_justice_count": 0,
+    "SYS_justice_count": 0,
+    "source_formula_equivalence": "NOT_INDEPENDENTLY_COMPILED",
+    "trust_boundary": "Pinned source/imports and shared translated BDDs; independent typed encoding, support and exact domain audit."
+  },
+  "initializer_audit": {
+    "ENV_empty": false,
+    "joint_empty": false
+  },
+  "normalization_audit": {
+    "status": "PASS",
+    "V_fixed_point_iterations": 1,
+    "V_empty": false,
+    "source_ENV_justice_copies": 0,
+    "source_initializers_preserved": true
+  },
+  "initial_quantification_audit": {
+    "status": "PASS",
+    "verdict": true,
+    "quantifier": "forall_ENV_exists_SYS_AUX"
+  },
+  "controller_audit": {
+    "initial_state_count": 1,
+    "initial_ENV_count": 1,
+    "initial_coverage": "PASS",
+    "state_count": 12,
+    "edge_count": 40,
+    "legal_input_count": 40,
+    "structural_safety_coverage_determinism": "PASS",
+    "strict_controller_pass": true,
+    "nonconflicting_pass": true,
+    "kind_controller_pass": true,
+    "witnesses": [],
+    "fairness": {
+      "status": "PASS",
+      "scope": "Graph fairness only; extraction, safety, coverage, response determinism, memory identity, and start mapping are external obligations.",
+      "state_count": 12,
+      "edge_count": 40,
+      "starts": [
+        "0"
+      ],
+      "reachable": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "reachable_sccs": [
+        {
+          "states": [
+            "0",
+            "1"
+          ],
+          "cyclic": true,
+          "env_justice_hits": [],
+          "accepting": true
+        },
+        {
+          "states": [
+            "10"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "11"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "2"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "3"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "4"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "5"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "6"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "7"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [],
+          "accepting": false
+        },
+        {
+          "states": [
+            "8",
+            "9"
+          ],
+          "cyclic": true,
+          "env_justice_hits": [],
+          "accepting": true
+        }
+      ],
+      "nonconflicting": {
+        "pass": true,
+        "can_reach_accepting_scc": [
+          "0",
+          "1",
+          "10",
+          "11",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "failing_states": [],
+        "first_failing_prefix": null
+      },
+      "strict_liveness": {
+        "pass": true,
+        "counterexamples": []
+      }
+    },
+    "graph": {
+      "states": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11"
+      ],
+      "edges": [
+        [
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "1"
+        ],
+        [
+          "0",
+          "2"
+        ],
+        [
+          "0",
+          "3"
+        ],
+        [
+          "1",
+          "0"
+        ],
+        [
+          "1",
+          "1"
+        ],
+        [
+          "1",
+          "2"
+        ],
+        [
+          "1",
+          "3"
+        ],
+        [
+          "2",
+          "4"
+        ],
+        [
+          "2",
+          "5"
+        ],
+        [
+          "2",
+          "6"
+        ],
+        [
+          "2",
+          "7"
+        ],
+        [
+          "3",
+          "4"
+        ],
+        [
+          "3",
+          "5"
+        ],
+        [
+          "3",
+          "6"
+        ],
+        [
+          "3",
+          "7"
+        ],
+        [
+          "4",
+          "8"
+        ],
+        [
+          "4",
+          "9"
+        ],
+        [
+          "4",
+          "10"
+        ],
+        [
+          "4",
+          "11"
+        ],
+        [
+          "5",
+          "8"
+        ],
+        [
+          "5",
+          "9"
+        ],
+        [
+          "5",
+          "10"
+        ],
+        [
+          "5",
+          "11"
+        ],
+        [
+          "6",
+          "8"
+        ],
+        [
+          "6",
+          "9"
+        ],
+        [
+          "6",
+          "10"
+        ],
+        [
+          "6",
+          "11"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "7",
+          "9"
+        ],
+        [
+          "7",
+          "10"
+        ],
+        [
+          "7",
+          "11"
+        ],
+        [
+          "8",
+          "8"
+        ],
+        [
+          "8",
+          "9"
+        ],
+        [
+          "9",
+          "8"
+        ],
+        [
+          "9",
+          "9"
+        ],
+        [
+          "10",
+          "8"
+        ],
+        [
+          "10",
+          "9"
+        ],
+        [
+          "11",
+          "8"
+        ],
+        [
+          "11",
+          "9"
+        ]
+      ],
+      "starts": [
+        "0"
+      ],
+      "env_justice": [],
+      "sys_justice": []
+    }
+  }
+}

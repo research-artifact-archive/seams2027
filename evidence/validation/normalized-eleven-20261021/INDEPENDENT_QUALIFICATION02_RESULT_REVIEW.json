@@ -1,0 +1,310 @@
+{
+  "schema": "normalized-eleven-independent-qualification02-result-review-v1",
+  "status": "PASS",
+  "findings": [],
+  "created_utc": "2026-10-20T23:15:59.542764+00:00",
+  "handoff": {
+    "file": "qualification_02/QUALIFICATION_HANDOFF.json",
+    "bytes": 15819,
+    "sha256": "3ba2c6f3727af2c94a89ae6bf241eda977f39fead27ec03d425b19b29945dd4e"
+  },
+  "consumer_result": {
+    "file": "qualification_02/saved_consumer/work/CONSUMER_RESULT.json",
+    "bytes": 10974,
+    "sha256": "de83b8a6e362515236290fbf2bbfddb3f47f10e4335b6e100eba03591b581abe"
+  },
+  "output_manifest": {
+    "file": "qualification_02/OUTPUT_MANIFEST.json",
+    "bytes": 2426409,
+    "sha256": "237a77200507c9e4f8a12234e46aa7dd63cca5c7660046befc46fbb1a6c1c3f4"
+  },
+  "exact_reviewed_wrapper": {
+    "bytes": 39722,
+    "sha256": "27015bcdc8dae8778db2ba4e52f92d38269dcec85b94d184bae5764e8b3a040e"
+  },
+  "exact_reviewed_bundle_manifest": {
+    "bytes": 209181,
+    "sha256": "f4bbb1caed55f77888044586ee2c461930a97b9385f30a71b133ea07a3f23433"
+  },
+  "review_scope": "Read-only receipt, semantic JSON and input-binding review. No BDD/graph/decoder or consumer reexecution.",
+  "process": {
+    "exit_code": 0,
+    "outer_timed_out": false,
+    "outer_wall_cap": 300,
+    "inner_wall_cap": 60,
+    "outer_seconds": 2.294182583980728,
+    "one_normal_revision02_invocation": true,
+    "two_total_including_preserved_revision01_failure": true,
+    "automatic_retries": 0
+  },
+  "closure": {
+    "qualification02_output_members": 10267,
+    "preserved_qualification01_output_members": 10181,
+    "current_copied_inputs": 952,
+    "frozen_bundle_members": 1052,
+    "frozen_archive_unchanged": true,
+    "protected_baselines": {
+      "protected_existing_E_files": 825,
+      "protected_existing_X_files": 760,
+      "public_files": 68
+    }
+  },
+  "result_counts": {
+    "refusals": 3,
+    "arenas": 22,
+    "regions": 22,
+    "captures": 11,
+    "graphs": 8
+  },
+  "rows": [
+    {
+      "id": "arbiter__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "40d204308fd8f59f0308754bfe56a254ff8e0a12801818e5e42bc572e8709a5e",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "c2d517cf1c073849a608e53236d62a03055b13311d54b2e6109aa7342258b489"
+    },
+    {
+      "id": "arbiter__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "27f2eee2d5e8381bc03dee25de1bfb15844b5497d55527cec03913be1f25e6da",
+      "original_initializer": true,
+      "graph": {
+        "states": 56,
+        "edges": 448
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 18,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "7b2eb8c8c330dda0a9d08850e93d043bf74dd57d36524c5561e0361e619d8807"
+    },
+    {
+      "id": "lift__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "d4b995c873d27f7978f5e476859eba63e5805ba8208708d7204ca125c6391af7",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 12,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "cd2ee03da150a9ef0da8b00eab47c8cdd5c9ea77726b851f630926411db85e4c"
+    },
+    {
+      "id": "lift__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "3e4d971f41e6adebf86319007e93db852b8d64db7dd891d0389f2afcaaf01d54",
+      "original_initializer": true,
+      "graph": {
+        "states": 154,
+        "edges": 1176
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 12,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "d77b3a8d496343b0863c5a88e4257867bfef21b8d5c727fd50154616bf4b3642"
+    },
+    {
+      "id": "minepump__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "7d4c990cf79bce4a5be2ad9b8c27867b55f27b9ad211cb3db6bf116cd3d8a9f1",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 16,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 4,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "e1159a4ef6c0688edee93cdbfa47ab74d4fa139369cd98fe678bff503c016ef7"
+    },
+    {
+      "id": "minepump__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "fa08d36bad14c3c22223fb8ba6a88beaa9b449ab4e0176740e2f6ffb2d9ff982",
+      "original_initializer": true,
+      "graph": {
+        "states": 12,
+        "edges": 40
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 14,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 0,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "dc6e98e76739c862b5c95098ca910c48f985c469e10b0b248446e18949d4fe79"
+    },
+    {
+      "id": "minepump__trivial_2",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "6059a5ad6b8d2d8b21d39d0b2adfbee6fc797633b3621d7f77cbd2a9a34442f1",
+      "original_initializer": true,
+      "graph": {
+        "states": 4,
+        "edges": 16
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 14,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 0,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "2a7e437fa70adcca078342310670305f20ee86218a901af196faa8b8b8610ede"
+    },
+    {
+      "id": "traffic_single__preferred",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "96bc6a0e844720323689b38d873ca418d9c1357b6c7a5fc80aef9a829cbad3fc",
+      "original_initializer": true,
+      "graph": {
+        "states": 28,
+        "edges": 152
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 22,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "c5ca5745ea52717731d47dc43f73b36c1f4225b80ad503b3ec1f20ce9e7213bf"
+    },
+    {
+      "id": "traffic_single__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "2d9e6b5444089caf702e73350c838b2eedfee64e56d4f2a8d9b594d96e095f12",
+      "original_initializer": true,
+      "graph": {
+        "states": 20,
+        "edges": 120
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 18,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 4,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "ab2d60cd229e599659e8bc2a0da30cb650691cc54df5d4aa361ae0c16e43a749"
+    },
+    {
+      "id": "traffic_updated__preferred",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "f213abd47e2a660e32b7f37807bf36c0ab82e6af49cfab01a9076a1b73b6c51c",
+      "original_initializer": true,
+      "graph": {
+        "states": 116,
+        "edges": 546
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 24,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 16,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "f32b58ca45106112fd7e4ae2b183780135f2bb644a87a433c9951c58cf227994"
+    },
+    {
+      "id": "traffic_updated__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "44f156504f1dd7a643d431eb961f6fc6c8de6ad32e2590fdd668c137ae5fadd9",
+      "original_initializer": true,
+      "graph": {
+        "states": 84,
+        "edges": 640
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "4e600008486f76b89390b584839f88bd7d703685d68c8b0bc53cc5bd423baf82"
+    }
+  ],
+  "negative_controls": [
+    {
+      "case": "wrong_source",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: External reconstructed source pin: arbiter__preferred",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    },
+    {
+      "case": "unknown_id",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: Exact row order",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    },
+    {
+      "case": "duplicate_id",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: Exact row order",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    },
+    {
+      "case": "cross_source_comparator",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: Copied model identity",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    },
+    {
+      "case": "stale_controller_model",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: Current controller/model hash binding",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    },
+    {
+      "case": "stale_result_model",
+      "expected_rejection_verified": true,
+      "actual_error": "ValueError: Pin mismatch: model.json",
+      "zero_scientific_checks": true,
+      "repinned_clone_manifest_valid": true
+    }
+  ],
+  "semantic_scope": {
+    "all11_entire_certificate_semantic_JSON_equal_to_preserved_historical_certificates": true,
+    "only_omitted_provenance_keys": [
+      "checker_sha256",
+      "controller_sha256",
+      "model_sha256",
+      "result_sha256",
+      "source_bindings",
+      "source_freeze_sha256"
+    ],
+    "all_new_provenance_fields_independently_current_pin_bound": true,
+    "all22_arena_input_pins_and_exact_ordered_predicate_rosters_bound": true,
+    "all_diagnostic_pointer_records_exact_actual_new_left_prior_right_orientation": true,
+    "all22_region_full_typed_XOR_receipts_true_and_witness_null": true,
+    "all11_capture_receipts_match_unchanged_original_receipts_and_compressed_input_pins": true,
+    "source_preparation_no_new_fetch": true,
+    "source_binder_exact11_regular_files_and33_same_location_models": true,
+    "original_initializer_forall_ENV_exists_SYS_AUX_rank0": true,
+    "three_emptyV_null_flags_not_graph_failure": true,
+    "single_graph_judge_shared_parser_BDD_no_independent_compiler": true,
+    "original14_regression_coverage_unchanged": true
+  },
+  "reviewer_execution": {
+    "scientific_imports": 0,
+    "BDD_graph_operations": 0,
+    "decoder_invocations": 0,
+    "wrapper_invocations": 0,
+    "native": 0,
+    "compiler": 0,
+    "network": 0,
+    "Full_reset": 0
+  },
+  "publication_GO": false,
+  "next_gate": "Final exact outer overlay/index/selected receipts privacy review, then Root publication adjudication.",
+  "review_script": {
+    "bytes": 19498,
+    "sha256": "a9a8553de87e7525ee27ebbfd5c3050077643af67a1ed3961c0bb5270cfa594b"
+  }
+}

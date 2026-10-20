@@ -1,0 +1,23 @@
+{
+  "finished_utc": "2026-10-20T23:04:41.452369+00:00",
+  "exit_code": 2,
+  "outer_timed_out": false,
+  "outer_elapsed_seconds": 1.0724197500385344,
+  "stdout": {
+    "bytes": 127,
+    "sha256": "3f5b34ee166fe41f1b948f5d68f5f9ef38ce665d3655c3f8d5d45b352855d979"
+  },
+  "stderr": {
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "attempts": 1,
+  "retries": 0,
+  "work_dir": "origin:qualification01/preflight_stale_controller_model/work",
+  "consumer_result": {
+    "path": "origin:qualification01/preflight_stale_controller_model/work/CONSUMER_RESULT.json",
+    "bytes": 3067,
+    "sha256": "8ec5ff4a58921ddfd1199218629908940ecf25294f366beb2eeaebf0f3ba1412"
+  },
+  "status": "FAIL_OR_INCOMPLETE"
+}

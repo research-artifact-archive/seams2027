@@ -319,3 +319,16 @@ Read evidence/validation/native-regeneration-20261021/focused_qualification_01/r
 
 DOCUMENT SNAPSHOT
 The generic 41-page technical appendix PDF and appendix-only TeX source ZIP are under documents/, bound by DOCUMENT_SNAPSHOT_MANIFEST.json. They are separate from the five scientific evidence archives.
+
+
+
+FIFTEENTH READER ROW — NORMALIZED ELEVEN (QUALIFICATION PASS)
+
+NORMALIZED-ELEVEN-ORIGINAL-INITIALIZER
+Read NORMALIZED_ELEVEN.md, NORMALIZED_ELEVEN_RESULTS.json and the archive README. The historical whole normalized route preserves original initializers: eight graphs pass strict/nonconflicting/kind checks, three empty-V refusals keep null controller flags, and all eleven original arenas and full V/K functions match saved comparators. Supply eleven exact external sources and run consumer/check_saved.py into a new work directory; the whole invocation is capped at 60 seconds. The exact final public consumer passed on the recorded Python 3.10.9 / Darwin arm64 host; six malformed-input controls were rejected before scientific imports, and the independent result review passed. No fresh native run, source fetch, independent source compiler or second graph judge is claimed. This adds no original fourteen-model regression coverage, paired rate, timing, deployment or necessity result. All preceding reader rows and five earlier scientific archives are unchanged.
+
+Qualification history: prior serializer revision incomplete; final revision PASS, two total normal invocations, zero automatic retries.
+Validation: NORMALIZED_ELEVEN_VALIDATION.json
+
+CURRENT DOCUMENT SNAPSHOT (v44)
+The separate current appendix has 42 pages. documents/technical-appendix-v44.pdf and documents/technical-appendix-v44.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json. The v43 PDF and source ZIP described above remain unchanged.

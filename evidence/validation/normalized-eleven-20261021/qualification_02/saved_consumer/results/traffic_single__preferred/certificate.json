@@ -1,0 +1,981 @@
+{
+  "schema": "original-initializer-independent-graph-certificate-v1",
+  "status": "VALID_EXPORT_CERTIFICATE",
+  "fixture_id": "traffic_single__preferred",
+  "pipeline": "normalized_kind",
+  "entry_mode": "original_initializer",
+  "checker_sha256": "3c465e4253712c6f021920e6a164ef48c63c5bf6cfb3432d17ab95fb5778ebda",
+  "source_freeze_sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10",
+  "model_sha256": "2fbc0873d0c7c448d3a67d9c2724a5896829d82a9a5616a713e641ed6c2d6b1d",
+  "result_sha256": "9973330f9aeef760265befc04890dbf038fff78c7892f833c126f97fec3463a3",
+  "controller_sha256": "c356ebd9be90fd3ed13e2bedbb84cb2910f02378694b6ada040d8d753c89ec44",
+  "strict_controller_pass": true,
+  "nonconflicting_pass": true,
+  "kind_controller_pass": true,
+  "witnesses": [],
+  "failure_stage": null,
+  "refusal_scope": null,
+  "model_validated": true,
+  "controller_defects": [],
+  "trust_boundary": "Static exact exported graph; shared parser-translated BDDs. Historical native invocation and runtime execution are not established by saved JSON.",
+  "source_bindings": {
+    "scope": "exact_eleven_saved_inputs_separately_supplied_sources",
+    "public_source_binding_manifest": {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 13234,
+      "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+    },
+    "source_recipe": {
+      "file": "tools/PAPER_SOURCE_FETCH_MANIFEST.json",
+      "bytes": 10213,
+      "sha256": "b9aeb203c508f60f8d0ed56276d63087dad6ce71e652944b864ca114201bd983"
+    },
+    "external_source_bytes_verified": true,
+    "historical_source_profile_pin": {
+      "role": "origin:source-profile",
+      "profile_key": "traffic_single__preferred",
+      "bytes": 200770,
+      "sha256": "1cc14f2aa4c0c0e3e523d9ff170d6f9f0be449ca7f4d7ed0d718a5f96e6da58b"
+    },
+    "historical_raw_diff_profile_reexecuted": false,
+    "producer_reexecution": false,
+    "independent_source_compiler": false
+  },
+  "original_model_audit": {
+    "status": "PASS",
+    "typed_carrier": 64,
+    "field_count": 6,
+    "ENV_justice_count": 2,
+    "SYS_justice_count": 2,
+    "source_formula_equivalence": "NOT_INDEPENDENTLY_COMPILED",
+    "trust_boundary": "Pinned source/imports and shared translated BDDs; independent typed encoding, support and exact domain audit."
+  },
+  "initializer_audit": {
+    "ENV_empty": false,
+    "joint_empty": false
+  },
+  "normalization_audit": {
+    "status": "PASS",
+    "V_fixed_point_iterations": 1,
+    "V_empty": false,
+    "source_ENV_justice_copies": 2,
+    "source_initializers_preserved": true
+  },
+  "initial_quantification_audit": {
+    "status": "PASS",
+    "verdict": true,
+    "quantifier": "forall_ENV_exists_SYS_AUX"
+  },
+  "controller_audit": {
+    "initial_state_count": 8,
+    "initial_ENV_count": 8,
+    "initial_coverage": "PASS",
+    "state_count": 28,
+    "edge_count": 152,
+    "legal_input_count": 152,
+    "structural_safety_coverage_determinism": "PASS",
+    "strict_controller_pass": true,
+    "nonconflicting_pass": true,
+    "kind_controller_pass": true,
+    "witnesses": [],
+    "fairness": {
+      "status": "PASS",
+      "scope": "Graph fairness only; extraction, safety, coverage, response determinism, memory identity, and start mapping are external obligations.",
+      "state_count": 28,
+      "edge_count": 152,
+      "starts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "reachable": [
+        "0",
+        "1",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "2",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "reachable_sccs": [
+        {
+          "states": [
+            "0",
+            "1",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "2",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "3",
+            "8",
+            "9"
+          ],
+          "cyclic": true,
+          "env_justice_hits": [
+            true,
+            true
+          ],
+          "accepting": true
+        },
+        {
+          "states": [
+            "4"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [
+            true,
+            true
+          ],
+          "accepting": false
+        },
+        {
+          "states": [
+            "5"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [
+            false,
+            true
+          ],
+          "accepting": false
+        },
+        {
+          "states": [
+            "6"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [
+            true,
+            true
+          ],
+          "accepting": false
+        },
+        {
+          "states": [
+            "7"
+          ],
+          "cyclic": false,
+          "env_justice_hits": [
+            false,
+            true
+          ],
+          "accepting": false
+        }
+      ],
+      "nonconflicting": {
+        "pass": true,
+        "can_reach_accepting_scc": [
+          "0",
+          "1",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "2",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "failing_states": [],
+        "first_failing_prefix": null
+      },
+      "strict_liveness": {
+        "pass": true,
+        "counterexamples": []
+      }
+    },
+    "graph": {
+      "states": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19",
+        "20",
+        "21",
+        "22",
+        "23",
+        "24",
+        "25",
+        "26",
+        "27"
+      ],
+      "edges": [
+        [
+          "0",
+          "22"
+        ],
+        [
+          "0",
+          "12"
+        ],
+        [
+          "0",
+          "24"
+        ],
+        [
+          "0",
+          "13"
+        ],
+        [
+          "0",
+          "14"
+        ],
+        [
+          "0",
+          "15"
+        ],
+        [
+          "0",
+          "16"
+        ],
+        [
+          "0",
+          "17"
+        ],
+        [
+          "1",
+          "22"
+        ],
+        [
+          "1",
+          "12"
+        ],
+        [
+          "1",
+          "24"
+        ],
+        [
+          "1",
+          "13"
+        ],
+        [
+          "1",
+          "14"
+        ],
+        [
+          "1",
+          "15"
+        ],
+        [
+          "1",
+          "16"
+        ],
+        [
+          "1",
+          "17"
+        ],
+        [
+          "2",
+          "22"
+        ],
+        [
+          "2",
+          "12"
+        ],
+        [
+          "2",
+          "24"
+        ],
+        [
+          "2",
+          "13"
+        ],
+        [
+          "2",
+          "14"
+        ],
+        [
+          "2",
+          "15"
+        ],
+        [
+          "2",
+          "16"
+        ],
+        [
+          "2",
+          "17"
+        ],
+        [
+          "3",
+          "0"
+        ],
+        [
+          "3",
+          "12"
+        ],
+        [
+          "3",
+          "2"
+        ],
+        [
+          "3",
+          "13"
+        ],
+        [
+          "3",
+          "14"
+        ],
+        [
+          "3",
+          "15"
+        ],
+        [
+          "3",
+          "16"
+        ],
+        [
+          "3",
+          "17"
+        ],
+        [
+          "4",
+          "0"
+        ],
+        [
+          "4",
+          "1"
+        ],
+        [
+          "4",
+          "2"
+        ],
+        [
+          "4",
+          "3"
+        ],
+        [
+          "5",
+          "8"
+        ],
+        [
+          "5",
+          "9"
+        ],
+        [
+          "5",
+          "10"
+        ],
+        [
+          "5",
+          "11"
+        ],
+        [
+          "6",
+          "0"
+        ],
+        [
+          "6",
+          "1"
+        ],
+        [
+          "6",
+          "2"
+        ],
+        [
+          "6",
+          "3"
+        ],
+        [
+          "7",
+          "8"
+        ],
+        [
+          "7",
+          "9"
+        ],
+        [
+          "7",
+          "10"
+        ],
+        [
+          "7",
+          "11"
+        ],
+        [
+          "8",
+          "0"
+        ],
+        [
+          "8",
+          "1"
+        ],
+        [
+          "8",
+          "2"
+        ],
+        [
+          "8",
+          "3"
+        ],
+        [
+          "9",
+          "8"
+        ],
+        [
+          "9",
+          "9"
+        ],
+        [
+          "9",
+          "10"
+        ],
+        [
+          "9",
+          "11"
+        ],
+        [
+          "10",
+          "0"
+        ],
+        [
+          "10",
+          "1"
+        ],
+        [
+          "10",
+          "2"
+        ],
+        [
+          "10",
+          "3"
+        ],
+        [
+          "11",
+          "8"
+        ],
+        [
+          "11",
+          "9"
+        ],
+        [
+          "11",
+          "10"
+        ],
+        [
+          "11",
+          "11"
+        ],
+        [
+          "12",
+          "22"
+        ],
+        [
+          "12",
+          "23"
+        ],
+        [
+          "12",
+          "24"
+        ],
+        [
+          "12",
+          "25"
+        ],
+        [
+          "12",
+          "14"
+        ],
+        [
+          "12",
+          "26"
+        ],
+        [
+          "12",
+          "16"
+        ],
+        [
+          "12",
+          "27"
+        ],
+        [
+          "13",
+          "22"
+        ],
+        [
+          "13",
+          "23"
+        ],
+        [
+          "13",
+          "24"
+        ],
+        [
+          "13",
+          "25"
+        ],
+        [
+          "13",
+          "14"
+        ],
+        [
+          "13",
+          "26"
+        ],
+        [
+          "13",
+          "16"
+        ],
+        [
+          "13",
+          "27"
+        ],
+        [
+          "14",
+          "8"
+        ],
+        [
+          "14",
+          "9"
+        ],
+        [
+          "14",
+          "10"
+        ],
+        [
+          "14",
+          "11"
+        ],
+        [
+          "15",
+          "18"
+        ],
+        [
+          "15",
+          "19"
+        ],
+        [
+          "15",
+          "20"
+        ],
+        [
+          "15",
+          "21"
+        ],
+        [
+          "16",
+          "8"
+        ],
+        [
+          "16",
+          "9"
+        ],
+        [
+          "16",
+          "10"
+        ],
+        [
+          "16",
+          "11"
+        ],
+        [
+          "17",
+          "18"
+        ],
+        [
+          "17",
+          "19"
+        ],
+        [
+          "17",
+          "20"
+        ],
+        [
+          "17",
+          "21"
+        ],
+        [
+          "18",
+          "8"
+        ],
+        [
+          "18",
+          "9"
+        ],
+        [
+          "18",
+          "10"
+        ],
+        [
+          "18",
+          "11"
+        ],
+        [
+          "19",
+          "18"
+        ],
+        [
+          "19",
+          "19"
+        ],
+        [
+          "19",
+          "20"
+        ],
+        [
+          "19",
+          "21"
+        ],
+        [
+          "20",
+          "8"
+        ],
+        [
+          "20",
+          "9"
+        ],
+        [
+          "20",
+          "10"
+        ],
+        [
+          "20",
+          "11"
+        ],
+        [
+          "21",
+          "18"
+        ],
+        [
+          "21",
+          "19"
+        ],
+        [
+          "21",
+          "20"
+        ],
+        [
+          "21",
+          "21"
+        ],
+        [
+          "22",
+          "22"
+        ],
+        [
+          "22",
+          "23"
+        ],
+        [
+          "22",
+          "24"
+        ],
+        [
+          "22",
+          "25"
+        ],
+        [
+          "22",
+          "14"
+        ],
+        [
+          "22",
+          "26"
+        ],
+        [
+          "22",
+          "16"
+        ],
+        [
+          "22",
+          "27"
+        ],
+        [
+          "23",
+          "22"
+        ],
+        [
+          "23",
+          "23"
+        ],
+        [
+          "23",
+          "24"
+        ],
+        [
+          "23",
+          "25"
+        ],
+        [
+          "23",
+          "14"
+        ],
+        [
+          "23",
+          "26"
+        ],
+        [
+          "23",
+          "16"
+        ],
+        [
+          "23",
+          "27"
+        ],
+        [
+          "24",
+          "22"
+        ],
+        [
+          "24",
+          "23"
+        ],
+        [
+          "24",
+          "24"
+        ],
+        [
+          "24",
+          "25"
+        ],
+        [
+          "24",
+          "14"
+        ],
+        [
+          "24",
+          "26"
+        ],
+        [
+          "24",
+          "16"
+        ],
+        [
+          "24",
+          "27"
+        ],
+        [
+          "25",
+          "22"
+        ],
+        [
+          "25",
+          "23"
+        ],
+        [
+          "25",
+          "24"
+        ],
+        [
+          "25",
+          "25"
+        ],
+        [
+          "25",
+          "14"
+        ],
+        [
+          "25",
+          "26"
+        ],
+        [
+          "25",
+          "16"
+        ],
+        [
+          "25",
+          "27"
+        ],
+        [
+          "26",
+          "18"
+        ],
+        [
+          "26",
+          "19"
+        ],
+        [
+          "26",
+          "20"
+        ],
+        [
+          "26",
+          "21"
+        ],
+        [
+          "27",
+          "18"
+        ],
+        [
+          "27",
+          "19"
+        ],
+        [
+          "27",
+          "20"
+        ],
+        [
+          "27",
+          "21"
+        ]
+      ],
+      "starts": [
+        "0",
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7"
+      ],
+      "env_justice": [
+        [
+          "0",
+          "2",
+          "4",
+          "6",
+          "8",
+          "10",
+          "14",
+          "16",
+          "18",
+          "20",
+          "22",
+          "24"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "8",
+          "9",
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "18",
+          "19",
+          "20",
+          "21",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27"
+        ]
+      ],
+      "sys_justice": [
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "12",
+          "13",
+          "22",
+          "23",
+          "24",
+          "25"
+        ],
+        [
+          "0",
+          "1",
+          "2",
+          "3",
+          "4",
+          "5",
+          "6",
+          "7",
+          "12",
+          "13",
+          "14",
+          "15",
+          "16",
+          "17",
+          "22",
+          "23",
+          "24",
+          "25",
+          "26",
+          "27"
+        ]
+      ]
+    }
+  }
+}

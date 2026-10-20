@@ -1,0 +1,187 @@
+{
+  "status": "EXACT_ORIGINAL_ARENA_MATCH",
+  "source_sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116",
+  "typed_metadata_exact": true,
+  "ordered_justice_lists_preserved": true,
+  "comparisons": [
+    {
+      "predicate": "domain",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_ENV_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_SYS_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "ENV_justice_0",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_0",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_1",
+      "exact_function_equal": true
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "data/comparators/arbiter__preferred/K/model.json",
+      "bytes": 85287,
+      "sha256": "a43d77a942ad26cf66a96cdce13904f0b23f8c3fa595bc6259f0b18d8c77d806"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/model.json",
+      "bytes": 85287,
+      "sha256": "4fc8d7eb9b4f57c62c0ed791b4b8237cfbc4c5d2e4b9afd16f3fe636429a6067"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_rhoE.bdd",
+      "bytes": 85,
+      "sha256": "6dc9782fc70816840a0132882d9fb3a95199c5af43a77bb58a037e579c2c81f3"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_rhoE.bdd",
+      "bytes": 85,
+      "sha256": "6dc9782fc70816840a0132882d9fb3a95199c5af43a77bb58a037e579c2c81f3"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_rhoS.bdd",
+      "bytes": 830,
+      "sha256": "de2f8b1d43ee7b7dc7a9d2fd261359647478e37a5cca8daddacf7b27153cafef"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_rhoS.bdd",
+      "bytes": 830,
+      "sha256": "de2f8b1d43ee7b7dc7a9d2fd261359647478e37a5cca8daddacf7b27153cafef"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_thetaE.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_thetaE.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_thetaS.bdd",
+      "bytes": 100,
+      "sha256": "1850d47684c7491ff87b8ff7c48f904d593b2202625e732b96f1ab514c0db6db"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_thetaS.bdd",
+      "bytes": 100,
+      "sha256": "1850d47684c7491ff87b8ff7c48f904d593b2202625e732b96f1ab514c0db6db"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_ENV_justice_0.bdd",
+      "bytes": 44,
+      "sha256": "80d570302b70f999dd0cc38340767055733e9e3f2a53d6d3e3bc29fc7224308a"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_ENV_justice_0.bdd",
+      "bytes": 44,
+      "sha256": "80d570302b70f999dd0cc38340767055733e9e3f2a53d6d3e3bc29fc7224308a"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_SYS_justice_0.bdd",
+      "bytes": 46,
+      "sha256": "f45b437f68a7229eece571698bd3975cc6301adadbc5c15413cc6e4ac35b49ab"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_SYS_justice_0.bdd",
+      "bytes": 46,
+      "sha256": "f45b437f68a7229eece571698bd3975cc6301adadbc5c15413cc6e4ac35b49ab"
+    },
+    {
+      "path": "data/comparators/arbiter__preferred/K/original_SYS_justice_1.bdd",
+      "bytes": 46,
+      "sha256": "25216b331eca11aedaf2804d1047607e9e81dda349c3af4a2c4123450f55af27"
+    },
+    {
+      "path": "data/runs/arbiter__preferred/normalized_kind/original_SYS_justice_1.bdd",
+      "bytes": 46,
+      "sha256": "25216b331eca11aedaf2804d1047607e9e81dda349c3af4a2c4123450f55af27"
+    }
+  ],
+  "method": "Canonical ROBDD equality in common saved bit encoding; no independent source compiler.",
+  "diagnostic_identity_differences": [
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@7a6ebe1e",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@3c89bb12",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@7a6ebe1e PatternConstraint_parameters: [<VariableReference: variable name: r1, reference name: r1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g1, reference name: g1> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@3c89bb12 PatternConstraint_parameters: [<VariableReference: variable name: r1, reference name: r1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g1, reference name: g1> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@7a6ebe1e",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@3c89bb12",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@7a6ebe1e PatternConstraint_parameters: [<VariableReference: variable name: r2, reference name: r2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g2, reference name: g2> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@3c89bb12 PatternConstraint_parameters: [<VariableReference: variable name: r2, reference name: r2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: g2, reference name: g2> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    }
+  ]
+}

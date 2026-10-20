@@ -1,0 +1,199 @@
+{
+  "status": "EXACT_ORIGINAL_ARENA_MATCH",
+  "source_sha256": "6a8f8220385130b2eb219ecfa33186b179d610ffcf805a30f9cab47ab204dae7",
+  "typed_metadata_exact": true,
+  "ordered_justice_lists_preserved": true,
+  "comparisons": [
+    {
+      "predicate": "domain",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_ENV_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_SYS_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_0",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_1",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_2",
+      "exact_function_equal": true
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "data/comparators/lift__trivial_1/V/model.json",
+      "bytes": 250873,
+      "sha256": "aa0b8e846d0026d42d537a558b098bd6f787261fb79ff78c2003850a17f84b20"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/model.json",
+      "bytes": 250873,
+      "sha256": "01074240e93a51484399113b00974ea05dec5fc099dcec0624d316312fea5348"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_rhoE.bdd",
+      "bytes": 738,
+      "sha256": "667ac928836515bcfd02308eb1e42c650bd19fdb28ce10429a0ced1a2a67b714"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_rhoE.bdd",
+      "bytes": 738,
+      "sha256": "667ac928836515bcfd02308eb1e42c650bd19fdb28ce10429a0ced1a2a67b714"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_rhoS.bdd",
+      "bytes": 2610,
+      "sha256": "b2aa4bd15e2bcbee0b4cbe339d7b0b6ae766d17d286183fe7313e7c8fe4e5d0d"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_rhoS.bdd",
+      "bytes": 2610,
+      "sha256": "b2aa4bd15e2bcbee0b4cbe339d7b0b6ae766d17d286183fe7313e7c8fe4e5d0d"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_thetaE.bdd",
+      "bytes": 83,
+      "sha256": "859bccf1e9139eccf619fb1552e5ebe4b2703bed62c8b28102cceec6c0bd9ecb"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_thetaE.bdd",
+      "bytes": 83,
+      "sha256": "859bccf1e9139eccf619fb1552e5ebe4b2703bed62c8b28102cceec6c0bd9ecb"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_thetaS.bdd",
+      "bytes": 127,
+      "sha256": "fbaab9e2f8ca7b690f48b18ba1e3af870f1a442c56eceb14ff6d0bb88dff7edd"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_thetaS.bdd",
+      "bytes": 127,
+      "sha256": "fbaab9e2f8ca7b690f48b18ba1e3af870f1a442c56eceb14ff6d0bb88dff7edd"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_SYS_justice_0.bdd",
+      "bytes": 64,
+      "sha256": "025dc4d5e8cdd4cefcadf41a3e6ae1ce8a8dcea32f194aecf76e896456e2fa56"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_SYS_justice_0.bdd",
+      "bytes": 64,
+      "sha256": "025dc4d5e8cdd4cefcadf41a3e6ae1ce8a8dcea32f194aecf76e896456e2fa56"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_SYS_justice_1.bdd",
+      "bytes": 64,
+      "sha256": "421779dd3376d40846859f11888af6ab095c2eaa9abfb9807e5ebf81506435cc"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_SYS_justice_1.bdd",
+      "bytes": 64,
+      "sha256": "421779dd3376d40846859f11888af6ab095c2eaa9abfb9807e5ebf81506435cc"
+    },
+    {
+      "path": "data/comparators/lift__trivial_1/V/original_SYS_justice_2.bdd",
+      "bytes": 64,
+      "sha256": "8d7e70781e6e2331dd3c2d9b8f630b56d29a5ed65c3ffa58101900ca821382f0"
+    },
+    {
+      "path": "data/runs/lift__trivial_1/normalized_kind/original_SYS_justice_2.bdd",
+      "bytes": 64,
+      "sha256": "8d7e70781e6e2331dd3c2d9b8f630b56d29a5ed65c3ffa58101900ca821382f0"
+    }
+  ],
+  "method": "Canonical ROBDD equality in common saved bit encoding; no independent source compiler.",
+  "diagnostic_identity_differences": [
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@260f2144",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@6bd16207",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@260f2144 PatternConstraint_parameters: [<VariableReference: variable name: b1, reference name: b1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f1, reference name: f1> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@6bd16207 PatternConstraint_parameters: [<VariableReference: variable name: b1, reference name: b1> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f1, reference name: f1> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@260f2144",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@6bd16207",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/1/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@260f2144 PatternConstraint_parameters: [<VariableReference: variable name: b2, reference name: b2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f2, reference name: f2> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@6bd16207 PatternConstraint_parameters: [<VariableReference: variable name: b2, reference name: b2> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f2, reference name: f2> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/2/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@260f2144",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@6bd16207",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/2/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@260f2144 PatternConstraint_parameters: [<VariableReference: variable name: b3, reference name: b3> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f3, reference name: f3> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@6bd16207 PatternConstraint_parameters: [<VariableReference: variable name: b3, reference name: b3> EQUALS <PrimitiveValue: true>, <VariableReference: variable name: f3, reference name: f3> EQUALS <PrimitiveValue: true> OR <VariableReference: variable name: c, reference name: c> EQUALS <PrimitiveValue: true>]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    }
+  ]
+}

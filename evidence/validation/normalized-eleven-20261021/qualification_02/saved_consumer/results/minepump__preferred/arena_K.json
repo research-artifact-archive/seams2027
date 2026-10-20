@@ -1,0 +1,147 @@
+{
+  "status": "EXACT_ORIGINAL_ARENA_MATCH",
+  "source_sha256": "af387f61bd2b45cf0f8003b2eb8065e8e4f5be04d83d5ff1f7454bed3e6137ed",
+  "typed_metadata_exact": true,
+  "ordered_justice_lists_preserved": true,
+  "comparisons": [
+    {
+      "predicate": "domain",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_ENV_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_SYS_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "SYS_justice_0",
+      "exact_function_equal": true
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "data/comparators/minepump__preferred/K/model.json",
+      "bytes": 66105,
+      "sha256": "43a72adba068d4202d8dd6817b6773c610f1f7900a63202c6c7ec7216e6ad7f9"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/model.json",
+      "bytes": 66105,
+      "sha256": "0bd08c4682832efb92246810e0bee41ff209c452f3b10cc71844c95c3118c944"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/original_rhoE.bdd",
+      "bytes": 105,
+      "sha256": "18633166987b2d7efd8512e2d912fe1c581cee7e8aa4c812841fbbed996f1bef"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/original_rhoE.bdd",
+      "bytes": 105,
+      "sha256": "18633166987b2d7efd8512e2d912fe1c581cee7e8aa4c812841fbbed996f1bef"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/original_rhoS.bdd",
+      "bytes": 403,
+      "sha256": "5991a86f749b4fbb9562ade3c55b9455c4d59ba46f77f538c94a1e0ba6f7e3ac"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/original_rhoS.bdd",
+      "bytes": 403,
+      "sha256": "5991a86f749b4fbb9562ade3c55b9455c4d59ba46f77f538c94a1e0ba6f7e3ac"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/original_thetaE.bdd",
+      "bytes": 41,
+      "sha256": "9b0717fe1d697bbe0357a8811c5cf297c41be94f7be35773681c517a24a0572f"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/original_thetaE.bdd",
+      "bytes": 41,
+      "sha256": "9b0717fe1d697bbe0357a8811c5cf297c41be94f7be35773681c517a24a0572f"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/original_thetaS.bdd",
+      "bytes": 53,
+      "sha256": "f3a01995f52dd28e5006773da22de20bea73f1bb59a5ff4b4bb23afd4cf4f367"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/original_thetaS.bdd",
+      "bytes": 53,
+      "sha256": "f3a01995f52dd28e5006773da22de20bea73f1bb59a5ff4b4bb23afd4cf4f367"
+    },
+    {
+      "path": "data/comparators/minepump__preferred/K/original_SYS_justice_0.bdd",
+      "bytes": 33,
+      "sha256": "b75e98992daee49dada62253eb9f2cc1f7270e2de97b8fdd19e67907bd2274c7"
+    },
+    {
+      "path": "data/runs/minepump__preferred/normalized_kind/original_SYS_justice_0.bdd",
+      "bytes": 33,
+      "sha256": "b75e98992daee49dada62253eb9f2cc1f7270e2de97b8fdd19e67907bd2274c7"
+    }
+  ],
+  "method": "Canonical ROBDD equality in common saved bit encoding; no independent source compiler.",
+  "diagnostic_identity_differences": [
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/pattern",
+      "new": "tau.smlab.syntech.gameinput.model.Pattern@659a2455",
+      "prior": "tau.smlab.syntech.gameinput.model.Pattern@5116ac09",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    },
+    {
+      "path": "/source_inventory/parsed/SYS/patterns/0/text",
+      "new": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@659a2455 PatternConstraint_parameters: [<VariableReference: variable name: methane, reference name: methane> EQUALS <PrimitiveValue: true>, PRIME(<VariableReference: variable name: pump, reference name: pump> EQUALS <PrimitiveValue: false>)]",
+      "prior": "PatternConstraint_pattern: tau.smlab.syntech.gameinput.model.Pattern@5116ac09 PatternConstraint_parameters: [<VariableReference: variable name: methane, reference name: methane> EQUALS <PrimitiveValue: true>, PRIME(<VariableReference: variable name: pump, reference name: pump> EQUALS <PrimitiveValue: false>)]",
+      "allowed_change": "Java Pattern object diagnostic identity only"
+    }
+  ]
+}

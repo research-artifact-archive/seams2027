@@ -1,0 +1,1 @@
+{"status": "FAIL_OR_INCOMPLETE", "result": "CONSUMER_RESULT.json", "completed_rows": 0, "elapsed_seconds": 0.26577512494986877}

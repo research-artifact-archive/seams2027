@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-10-20T23:12:48.388727+00:00",
+  "argv": [
+    "origin:home/.pyenv/versions/3.10.9/bin/python3.10",
+    "-I",
+    "-B",
+    "origin:qualification02/malformed_inputs/unknown_id/bundle/consumer/check_saved.py",
+    "--bundle",
+    "origin:qualification02/malformed_inputs/unknown_id/bundle",
+    "--source-root",
+    "origin:public-staging/qualification_sources_01",
+    "--work-dir",
+    "origin:qualification02/preflight_unknown_id/work",
+    "--preflight-only"
+  ],
+  "outer_wall_cap_seconds": 60,
+  "internal_wall_cap_seconds": 60,
+  "preflight_only": true,
+  "attempt": 1,
+  "retries": 0
+}

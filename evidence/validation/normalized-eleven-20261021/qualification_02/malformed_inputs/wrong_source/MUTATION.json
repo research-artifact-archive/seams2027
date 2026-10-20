@@ -1,0 +1,19 @@
+{
+  "case": "wrong_source",
+  "expected_error_substring": "External reconstructed source pin",
+  "mutations": [
+    {
+      "file": "external_sources/arbiter__preferred.spectra",
+      "before": {
+        "bytes": 886,
+        "sha256": "e412763fa69183ebadc1977768de0ea797c342f49f8717c2a5af0162046b4116"
+      },
+      "after": {
+        "bytes": 887,
+        "sha256": "bcb53e990801a44d992f1d35781307580ecc26c950f1866494e98787841b96a5"
+      }
+    }
+  ],
+  "member_manifest_recomputed_to_reach_binding_gate": true,
+  "frozen_bundle_unchanged": true
+}

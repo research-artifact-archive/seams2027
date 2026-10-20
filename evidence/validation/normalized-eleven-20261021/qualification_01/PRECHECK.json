@@ -1,0 +1,28 @@
+{
+  "utc": "2026-10-20T23:04:36.887640+00:00",
+  "pins": {
+    "frozen_files": 1052,
+    "all_original_E": 825,
+    "all_original_X": 760,
+    "all_existing_public_files": 68,
+    "sources": 11,
+    "archive": true,
+    "status": "ALL_EXPECTED_PINS_EXACT"
+  },
+  "review": {
+    "path": "origin:public-staging/INDEPENDENT_FROZEN_STATIC_REVIEW.json",
+    "bytes": 10455,
+    "sha256": "835420599bacf44eaa3e77920a5f875ce68d757a085310b4b3a5e5ac8c3bd0f3"
+  },
+  "freeze": {
+    "path": "origin:public-staging/EXACT_FREEZE_HANDOFF.json",
+    "bytes": 211769,
+    "sha256": "4b379b1fc4b3b40a72587021351514531c72774bf7784aef1065a0c5ac5a2908"
+  },
+  "python": {
+    "path": "origin:home/.pyenv/versions/3.10.9/bin/python3.10",
+    "bytes": 33816,
+    "sha256": "b75b3aa92d8a07c630e5480dd2712ef501c422cee93f1954659a3143d5993975"
+  },
+  "retry_limit": 0
+}

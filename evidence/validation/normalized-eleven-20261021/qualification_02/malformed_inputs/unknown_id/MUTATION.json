@@ -1,0 +1,19 @@
+{
+  "case": "unknown_id",
+  "expected_error_substring": "Exact row order",
+  "mutations": [
+    {
+      "file": "CONSUMER.json",
+      "before": {
+        "bytes": 17280,
+        "sha256": "997146f14fec8e1f0c91648422cc30262abd38307fbd8cdcadc619be78d51eb2"
+      },
+      "after": {
+        "bytes": 17278,
+        "sha256": "05fbaba24beb8f8f78e76af71b16bd5c4da767aaa5a5d6f79b0f8d75f46efc29"
+      }
+    }
+  ],
+  "member_manifest_recomputed_to_reach_binding_gate": true,
+  "frozen_bundle_unchanged": true
+}

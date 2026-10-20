@@ -1,0 +1,15 @@
+{
+  "id": "traffic_updated__preferred",
+  "status": "PASS",
+  "outputs": {
+    "certificate": "results/traffic_updated__preferred/certificate.json",
+    "certificate_comparison": "results/traffic_updated__preferred/certificate_comparison.json",
+    "arena_V": "results/traffic_updated__preferred/arena_V.json",
+    "arena_K": "results/traffic_updated__preferred/arena_K.json",
+    "region_V": "results/traffic_updated__preferred/region_V.json",
+    "region_K": "results/traffic_updated__preferred/region_K.json",
+    "capture": "results/traffic_updated__preferred/capture_verification.json"
+  },
+  "certificate_status": "VALID_EXPORT_CERTIFICATE",
+  "original_initializer_verdict": true
+}

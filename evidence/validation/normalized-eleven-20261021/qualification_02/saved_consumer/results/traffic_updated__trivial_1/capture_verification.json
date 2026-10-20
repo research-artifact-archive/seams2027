@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_bytes": 6423624,
+  "raw_sha256": "4e600008486f76b89390b584839f88bd7d703685d68c8b0bc53cc5bd423baf82",
+  "repeated_lines": 118951,
+  "data_records": 9,
+  "cap_reached": false,
+  "all_raw_bytes_recoverable": true,
+  "receipt_matches": true,
+  "stderr": {
+    "file": "data/runs/traffic_updated__trivial_1/normalized_kind/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

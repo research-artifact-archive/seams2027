@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_bytes": 463774,
+  "raw_sha256": "cd2ee03da150a9ef0da8b00eab47c8cdd5c9ea77726b851f630926411db85e4c",
+  "repeated_lines": 8586,
+  "data_records": 3,
+  "cap_reached": false,
+  "all_raw_bytes_recoverable": true,
+  "receipt_matches": true,
+  "stderr": {
+    "file": "data/runs/lift__preferred/normalized_kind/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

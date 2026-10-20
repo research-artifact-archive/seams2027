@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "raw_bytes": 4546962,
+  "raw_sha256": "7b2eb8c8c330dda0a9d08850e93d043bf74dd57d36524c5561e0361e619d8807",
+  "repeated_lines": 84198,
+  "data_records": 9,
+  "cap_reached": false,
+  "all_raw_bytes_recoverable": true,
+  "receipt_matches": true,
+  "stderr": {
+    "file": "data/runs/arbiter__trivial_1/normalized_kind/stderr.txt",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

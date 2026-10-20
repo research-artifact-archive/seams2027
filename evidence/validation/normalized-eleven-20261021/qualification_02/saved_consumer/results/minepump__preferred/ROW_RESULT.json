@@ -1,0 +1,15 @@
+{
+  "id": "minepump__preferred",
+  "status": "PASS",
+  "outputs": {
+    "certificate": "results/minepump__preferred/certificate.json",
+    "certificate_comparison": "results/minepump__preferred/certificate_comparison.json",
+    "arena_V": "results/minepump__preferred/arena_V.json",
+    "arena_K": "results/minepump__preferred/arena_K.json",
+    "region_V": "results/minepump__preferred/region_V.json",
+    "region_K": "results/minepump__preferred/region_K.json",
+    "capture": "results/minepump__preferred/capture_verification.json"
+  },
+  "certificate_status": "VALID_SEMANTIC_REFUSAL",
+  "original_initializer_verdict": false
+}

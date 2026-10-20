@@ -1,0 +1,14 @@
+{
+  "schema": "normalized-eleven-public-qualification-receipt-omissions-v1",
+  "selected_receipts_only": true,
+  "source_payloads_included": false,
+  "omitted": [
+    "Exact external paper specification bytes in both qualification work trees.",
+    "Copied full saved-input trees and malformed cloned bundles; current original evidence is available in the sixth archive.",
+    "Private root/supervisor authorization documents, private absolute-path inventories, complete original output trees and private runner script.",
+    "Original complete output-manifest dependency closure; selected public receipt closure is separately bound by this directory manifest."
+  ],
+  "qualification_history": "Revision01 saved consumer was incomplete due output serialization. Revision02 separately executed once and passed. Twelve total preflight controls across both revisions imported no scientific modules. No automatic retry, native, compiler or network call occurred.",
+  "qualification_input_scope": "The final archive bytes were qualified from a local extracted candidate with separately prepared exact sources; no bootstrap archive download or new source fetch was part of qualification.",
+  "historical_hashes": "Original embedded hashes remain original attestations; use PRESENTATION_TRANSFORMATIONS.json for exported-copy identities."
+}

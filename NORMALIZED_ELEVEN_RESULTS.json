@@ -1,0 +1,500 @@
+{
+  "schema": "normalized-eleven-public-results-index-v1",
+  "status": "HISTORICAL_RESULTS_AND_PUBLIC_SAVED_CONSUMER_QUALIFIED",
+  "version_tag": "normalized-eleven-evidence-20261021-v1",
+  "archive": "archives/normalized-eleven-public-20261021-v1.zip",
+  "member_prefix": "seams2027-normalized-eleven-evidence/",
+  "historical_basis": {
+    "file": {
+      "path": "RESULTS.json",
+      "bytes": 12820,
+      "sha256": "ecafc9f29c1d828c648c61068a9eac4479792634f40154f102790823ff9474e3"
+    },
+    "adopted_historical_results": true,
+    "path_convention": "All model/result/certificate/controller/historical_join paths below are relative to the archive member prefix."
+  },
+  "fixed_order": [
+    "arbiter__preferred",
+    "arbiter__trivial_1",
+    "lift__preferred",
+    "lift__trivial_1",
+    "minepump__preferred",
+    "minepump__trivial_1",
+    "minepump__trivial_2",
+    "traffic_single__preferred",
+    "traffic_single__trivial_1",
+    "traffic_updated__preferred",
+    "traffic_updated__trivial_1"
+  ],
+  "denominator": 11,
+  "original_initializer": true,
+  "historical_outcome_counts": {
+    "COMPLETE_GRAPH_CHECKED": 8,
+    "EMPTY_V_INDEPENDENT_REFUSAL": 3
+  },
+  "historical_original_arena_and_full_V_K_function_matches": 11,
+  "historical_native_attempts": 11,
+  "historical_solver_and_extraction_calls": 8,
+  "rows": [
+    {
+      "id": "arbiter__preferred",
+      "outcome": "EMPTY_V_INDEPENDENT_REFUSAL",
+      "certificate_status": "VALID_SEMANTIC_REFUSAL",
+      "strict_controller_pass": null,
+      "nonconflicting_pass": null,
+      "kind_controller_pass": null,
+      "original_initializer_verdict": false,
+      "graph": null,
+      "model": "data/runs/arbiter__preferred/normalized_kind/model.json",
+      "result": "data/runs/arbiter__preferred/normalized_kind/result.json",
+      "certificate": "data/runs/arbiter__preferred/normalized_kind/certificate.json",
+      "controller": null,
+      "historical_join": "data/runs/arbiter__preferred/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "arbiter__trivial_1",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 56,
+        "edge_count": 448,
+        "initial_state_count": 8,
+        "initial_ENV_count": 8,
+        "legal_input_count": 448
+      },
+      "model": "data/runs/arbiter__trivial_1/normalized_kind/model.json",
+      "result": "data/runs/arbiter__trivial_1/normalized_kind/result.json",
+      "certificate": "data/runs/arbiter__trivial_1/normalized_kind/certificate.json",
+      "controller": "data/runs/arbiter__trivial_1/normalized_kind/controller.json",
+      "historical_join": "data/runs/arbiter__trivial_1/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "lift__preferred",
+      "outcome": "EMPTY_V_INDEPENDENT_REFUSAL",
+      "certificate_status": "VALID_SEMANTIC_REFUSAL",
+      "strict_controller_pass": null,
+      "nonconflicting_pass": null,
+      "kind_controller_pass": null,
+      "original_initializer_verdict": false,
+      "graph": null,
+      "model": "data/runs/lift__preferred/normalized_kind/model.json",
+      "result": "data/runs/lift__preferred/normalized_kind/result.json",
+      "certificate": "data/runs/lift__preferred/normalized_kind/certificate.json",
+      "controller": null,
+      "historical_join": "data/runs/lift__preferred/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "lift__trivial_1",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 154,
+        "edge_count": 1176,
+        "initial_state_count": 2,
+        "initial_ENV_count": 2,
+        "legal_input_count": 1176
+      },
+      "model": "data/runs/lift__trivial_1/normalized_kind/model.json",
+      "result": "data/runs/lift__trivial_1/normalized_kind/result.json",
+      "certificate": "data/runs/lift__trivial_1/normalized_kind/certificate.json",
+      "controller": "data/runs/lift__trivial_1/normalized_kind/controller.json",
+      "historical_join": "data/runs/lift__trivial_1/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "minepump__preferred",
+      "outcome": "EMPTY_V_INDEPENDENT_REFUSAL",
+      "certificate_status": "VALID_SEMANTIC_REFUSAL",
+      "strict_controller_pass": null,
+      "nonconflicting_pass": null,
+      "kind_controller_pass": null,
+      "original_initializer_verdict": false,
+      "graph": null,
+      "model": "data/runs/minepump__preferred/normalized_kind/model.json",
+      "result": "data/runs/minepump__preferred/normalized_kind/result.json",
+      "certificate": "data/runs/minepump__preferred/normalized_kind/certificate.json",
+      "controller": null,
+      "historical_join": "data/runs/minepump__preferred/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "minepump__trivial_1",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 12,
+        "edge_count": 40,
+        "initial_state_count": 1,
+        "initial_ENV_count": 1,
+        "legal_input_count": 40
+      },
+      "model": "data/runs/minepump__trivial_1/normalized_kind/model.json",
+      "result": "data/runs/minepump__trivial_1/normalized_kind/result.json",
+      "certificate": "data/runs/minepump__trivial_1/normalized_kind/certificate.json",
+      "controller": "data/runs/minepump__trivial_1/normalized_kind/controller.json",
+      "historical_join": "data/runs/minepump__trivial_1/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "minepump__trivial_2",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 4,
+        "edge_count": 16,
+        "initial_state_count": 1,
+        "initial_ENV_count": 1,
+        "legal_input_count": 16
+      },
+      "model": "data/runs/minepump__trivial_2/normalized_kind/model.json",
+      "result": "data/runs/minepump__trivial_2/normalized_kind/result.json",
+      "certificate": "data/runs/minepump__trivial_2/normalized_kind/certificate.json",
+      "controller": "data/runs/minepump__trivial_2/normalized_kind/controller.json",
+      "historical_join": "data/runs/minepump__trivial_2/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "traffic_single__preferred",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 28,
+        "edge_count": 152,
+        "initial_state_count": 8,
+        "initial_ENV_count": 8,
+        "legal_input_count": 152
+      },
+      "model": "data/runs/traffic_single__preferred/normalized_kind/model.json",
+      "result": "data/runs/traffic_single__preferred/normalized_kind/result.json",
+      "certificate": "data/runs/traffic_single__preferred/normalized_kind/certificate.json",
+      "controller": "data/runs/traffic_single__preferred/normalized_kind/controller.json",
+      "historical_join": "data/runs/traffic_single__preferred/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "traffic_single__trivial_1",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 20,
+        "edge_count": 120,
+        "initial_state_count": 8,
+        "initial_ENV_count": 8,
+        "legal_input_count": 120
+      },
+      "model": "data/runs/traffic_single__trivial_1/normalized_kind/model.json",
+      "result": "data/runs/traffic_single__trivial_1/normalized_kind/result.json",
+      "certificate": "data/runs/traffic_single__trivial_1/normalized_kind/certificate.json",
+      "controller": "data/runs/traffic_single__trivial_1/normalized_kind/controller.json",
+      "historical_join": "data/runs/traffic_single__trivial_1/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "traffic_updated__preferred",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 116,
+        "edge_count": 546,
+        "initial_state_count": 8,
+        "initial_ENV_count": 8,
+        "legal_input_count": 546
+      },
+      "model": "data/runs/traffic_updated__preferred/normalized_kind/model.json",
+      "result": "data/runs/traffic_updated__preferred/normalized_kind/result.json",
+      "certificate": "data/runs/traffic_updated__preferred/normalized_kind/certificate.json",
+      "controller": "data/runs/traffic_updated__preferred/normalized_kind/controller.json",
+      "historical_join": "data/runs/traffic_updated__preferred/normalized_kind/MODEL_JOIN.json"
+    },
+    {
+      "id": "traffic_updated__trivial_1",
+      "outcome": "COMPLETE_GRAPH_CHECKED",
+      "certificate_status": "VALID_EXPORT_CERTIFICATE",
+      "strict_controller_pass": true,
+      "nonconflicting_pass": true,
+      "kind_controller_pass": true,
+      "original_initializer_verdict": true,
+      "graph": {
+        "state_count": 84,
+        "edge_count": 640,
+        "initial_state_count": 8,
+        "initial_ENV_count": 8,
+        "legal_input_count": 640
+      },
+      "model": "data/runs/traffic_updated__trivial_1/normalized_kind/model.json",
+      "result": "data/runs/traffic_updated__trivial_1/normalized_kind/result.json",
+      "certificate": "data/runs/traffic_updated__trivial_1/normalized_kind/certificate.json",
+      "controller": "data/runs/traffic_updated__trivial_1/normalized_kind/controller.json",
+      "historical_join": "data/runs/traffic_updated__trivial_1/normalized_kind/MODEL_JOIN.json"
+    }
+  ],
+  "public_saved_consumer_qualification": {
+    "status": "PASS_FIXED_ELEVEN_SAVED_CONSUMER",
+    "saved_consumer_result": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/CONSUMER_RESULT.json",
+      "bytes": 10974,
+      "sha256": "de83b8a6e362515236290fbf2bbfddb3f47f10e4335b6e100eba03591b581abe"
+    },
+    "saved_consumer_process_receipt": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PROCESS_RECEIPT.json",
+      "bytes": 704,
+      "sha256": "dc4fa1f14bf27c7194de492802c958be5cd3c666278e61efd1b8a66f70c0a915"
+    },
+    "malformed_preflight_controls": {
+      "path": "evidence/validation/normalized-eleven-20261021/qualification_02/NEGATIVE_PREFLIGHT_RESULTS.json",
+      "bytes": 7048,
+      "sha256": "997fa3a5e52660475b9ef3ad14f38f0dfeadebb5bab4fbf3c673154e2bbff899"
+    },
+    "independent_result_review": {
+      "status": "PASS",
+      "path": "evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION02_RESULT_REVIEW.json",
+      "bytes": 11916,
+      "sha256": "c997f8259a4defc12fe88a6d00561c78536a3bf40c0401f6ba6f107f3743b9f4"
+    },
+    "runtime": {
+      "python": "3.10.9 (main, Jun 16 2026, 22:18:24) [Clang 17.0.0 (clang-1700.0.13.5)]",
+      "implementation": "cpython",
+      "os": {
+        "sysname": "Darwin",
+        "release": "24.6.0",
+        "version": "Darwin Kernel Version 24.6.0: Tue Jul 21 20:51:32 PDT 2026; root:xnu-11417.140.69.711.44~1/RELEASE_ARM64_T8112",
+        "machine": "arm64"
+      }
+    },
+    "elapsed_seconds": 2.2069513330352493,
+    "external_record": {
+      "path": "NORMALIZED_ELEVEN_VALIDATION.json",
+      "bytes": 12531,
+      "sha256": "f574a1463aeaeb1b1debeed6e36ede8dd931ae27e54cacc00778cb6b048b9eff"
+    },
+    "qualification_pass_claimed": true,
+    "total_normal_invocations_across_revisions": 2,
+    "prior_failure_preserved": true
+  },
+  "expected_consumer_scope": {
+    "certificate_checks": 11,
+    "accepted_graphs": 8,
+    "empty_V_semantic_refusals": 3,
+    "original_arena_comparisons": 22,
+    "full_V_K_comparisons": 22,
+    "lossless_saved_captures": 11,
+    "all_semantic_certificate_fields_compared": true,
+    "excluded_certificate_fields": [
+      "checker_sha256",
+      "source_freeze_sha256",
+      "model_sha256",
+      "result_sha256",
+      "controller_sha256",
+      "source_bindings"
+    ]
+  },
+  "interpretation": "The complete existing normalized route succeeds on all eight cooperatively feasible tested replacements, including Lift trivial 1. Three independently checked empty-V refusals remain separate. The final public saved-input consumer reproduces all 11 certificates and all 22 original-arena/22 full-region/11 capture checks.",
+  "limits": [
+    "Whole existing original-V-restricted normalized four-fixed-point route, unchanged generic construction and original initializers; no individual algorithm change is isolated.",
+    "Comparator agreement binds original arenas and full V/K functions; no paired same-initializer 8-versus-7 rate, graph-equivalence or timing comparison.",
+    "The same-game/same-memory final-selection intervention remains a sufficient local rescue; necessity and unique extraction cause are not claimed.",
+    "Eight accepted graphs are distinct from three empty-V refusals with null controller flags and false original-initializer verdicts.",
+    "One existing graph judge and shared parser-translated BDDs; no independent source compiler, native/JVM execution or producer reconstruction by this consumer.",
+    "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
+    "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim."
+  ],
+  "actual_consumer_counts": {
+    "rows": 11,
+    "export_certificates": 8,
+    "semantic_refusals": 3,
+    "arena_comparisons": 22,
+    "full_region_comparisons": 22,
+    "lossless_captures": 11
+  },
+  "qualification_rows": [
+    {
+      "id": "arbiter__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "40d204308fd8f59f0308754bfe56a254ff8e0a12801818e5e42bc572e8709a5e",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "c2d517cf1c073849a608e53236d62a03055b13311d54b2e6109aa7342258b489"
+    },
+    {
+      "id": "arbiter__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "27f2eee2d5e8381bc03dee25de1bfb15844b5497d55527cec03913be1f25e6da",
+      "original_initializer": true,
+      "graph": {
+        "states": 56,
+        "edges": 448
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 18,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "7b2eb8c8c330dda0a9d08850e93d043bf74dd57d36524c5561e0361e619d8807"
+    },
+    {
+      "id": "lift__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "d4b995c873d27f7978f5e476859eba63e5805ba8208708d7204ca125c6391af7",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 12,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "cd2ee03da150a9ef0da8b00eab47c8cdd5c9ea77726b851f630926411db85e4c"
+    },
+    {
+      "id": "lift__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "3e4d971f41e6adebf86319007e93db852b8d64db7dd891d0389f2afcaaf01d54",
+      "original_initializer": true,
+      "graph": {
+        "states": 154,
+        "edges": 1176
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 12,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "d77b3a8d496343b0863c5a88e4257867bfef21b8d5c727fd50154616bf4b3642"
+    },
+    {
+      "id": "minepump__preferred",
+      "status": "PASS",
+      "certificate": "VALID_SEMANTIC_REFUSAL",
+      "entire_semantic_certificate_sha256": "7d4c990cf79bce4a5be2ad9b8c27867b55f27b9ad211cb3db6bf116cd3d8a9f1",
+      "original_initializer": false,
+      "graph": null,
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 16,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 4,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "e1159a4ef6c0688edee93cdbfa47ab74d4fa139369cd98fe678bff503c016ef7"
+    },
+    {
+      "id": "minepump__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "fa08d36bad14c3c22223fb8ba6a88beaa9b449ab4e0176740e2f6ffb2d9ff982",
+      "original_initializer": true,
+      "graph": {
+        "states": 12,
+        "edges": 40
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 14,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 0,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "dc6e98e76739c862b5c95098ca910c48f985c469e10b0b248446e18949d4fe79"
+    },
+    {
+      "id": "minepump__trivial_2",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "6059a5ad6b8d2d8b21d39d0b2adfbee6fc797633b3621d7f77cbd2a9a34442f1",
+      "original_initializer": true,
+      "graph": {
+        "states": 4,
+        "edges": 16
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 14,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 0,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "2a7e437fa70adcca078342310670305f20ee86218a901af196faa8b8b8610ede"
+    },
+    {
+      "id": "traffic_single__preferred",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "96bc6a0e844720323689b38d873ca418d9c1357b6c7a5fc80aef9a829cbad3fc",
+      "original_initializer": true,
+      "graph": {
+        "states": 28,
+        "edges": 152
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 22,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "c5ca5745ea52717731d47dc43f73b36c1f4225b80ad503b3ec1f20ce9e7213bf"
+    },
+    {
+      "id": "traffic_single__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "2d9e6b5444089caf702e73350c838b2eedfee64e56d4f2a8d9b594d96e095f12",
+      "original_initializer": true,
+      "graph": {
+        "states": 20,
+        "edges": 120
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 18,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 4,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "ab2d60cd229e599659e8bc2a0da30cb650691cc54df5d4aa361ae0c16e43a749"
+    },
+    {
+      "id": "traffic_updated__preferred",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "f213abd47e2a660e32b7f37807bf36c0ab82e6af49cfab01a9076a1b73b6c51c",
+      "original_initializer": true,
+      "graph": {
+        "states": 116,
+        "edges": 546
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 24,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 16,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "f32b58ca45106112fd7e4ae2b183780135f2bb644a87a433c9951c58cf227994"
+    },
+    {
+      "id": "traffic_updated__trivial_1",
+      "status": "PASS",
+      "certificate": "VALID_EXPORT_CERTIFICATE",
+      "entire_semantic_certificate_sha256": "44f156504f1dd7a643d431eb961f6fc6c8de6ad32e2590fdd668c137ae5fadd9",
+      "original_initializer": true,
+      "graph": {
+        "states": 84,
+        "edges": 640
+      },
+      "arena_comparisons": 2,
+      "original_predicates_and_ordered_justices_compared": 20,
+      "diagnostic_pointer_records_preserved_with_actual_orientation": 8,
+      "full_typed_region_comparisons": 2,
+      "capture_raw_sha256": "4e600008486f76b89390b584839f88bd7d703685d68c8b0bc53cc5bd423baf82"
+    }
+  ]
+}

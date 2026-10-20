@@ -1,0 +1,252 @@
+{
+  "schema": "normalized-eleven-independent-frozen-static-review-v1",
+  "status": "PASS",
+  "review_kind": "PREQUALIFICATION_STATIC_PRIVACY_SOURCE_BINDING_ORIGINAL_COPY_REVIEW",
+  "created_utc": "2026-10-20T23:04:11.712806+00:00",
+  "reviewer": "independent_static_review",
+  "findings": [],
+  "exact_freeze": {
+    "file": "EXACT_FREEZE_HANDOFF.json",
+    "bytes": 211769,
+    "sha256": "4b379b1fc4b3b40a72587021351514531c72774bf7784aef1065a0c5ac5a2908"
+  },
+  "archive": {
+    "file": "archives/normalized-eleven-public-20261021-v1.zip",
+    "bytes": 10958210,
+    "sha256": "31ce878616c92adbddd076df6ac8651a8b070e3e1102c7e7c1d5fe3810d7f67e"
+  },
+  "manifest": {
+    "file": "package/seams2027-normalized-eleven-evidence/MANIFEST.json",
+    "bytes": 209181,
+    "sha256": "0d797ff6d3ea2900f605426c1f57755147fdfd818f8871880bcf2767db8f4c10"
+  },
+  "bundle_members": 1052,
+  "expanded_bytes": 92524426,
+  "original_copy_audit": {
+    "files": 1040,
+    "file_classes": {
+      "byte_exact": 744,
+      "changed_json_metadata_only": 296
+    },
+    "changed_leaves": 102071,
+    "categories": {
+      "current_model_source_location": 33,
+      "historical_pin_location": 101115,
+      "historical_process_argument_location": 462,
+      "historical_worker_directory": 55,
+      "historical_capture_location": 44,
+      "historical_runtime_class_location": 305,
+      "current_result_source_location": 11,
+      "current_result_export_identity": 38,
+      "current_controller_model_identity": 8
+    },
+    "scientific_inventory": {
+      "byte_exact_existing_code_files": 16,
+      "byte_exact_BDD_files": 603
+    },
+    "source_recipe_rows": 11,
+    "models_bound": 33,
+    "current_results_bound": 11,
+    "current_controllers_bound": 8,
+    "all_original_and_copy_bytes_rehashed": true,
+    "all_unlisted_JSON_structure_types_values_unchanged": true,
+    "all_exact_pointers_old_leaf_digests_new_values_reconciled": true,
+    "source_payloads_not_distributed": true,
+    "science_execution": 0,
+    "artifact_module_imports": 0,
+    "wrapper_execution": 0,
+    "input_pins": {
+      "ORIGINAL_COPY_LEDGER.json": {
+        "bytes": 50057496,
+        "sha256": "42346c2eed7d8949b58dee331a8e7035313885cc9e7a798b0f1855275b518226"
+      },
+      "METADATA_ALLOWLIST.json": {
+        "bytes": 4332202,
+        "sha256": "c8da78c0bfc8e22672589bdb074cfc4f751b8feed1e39bb69b976ef29cc40f2c"
+      },
+      "CONSUMER.json": {
+        "bytes": 17280,
+        "sha256": "997146f14fec8e1f0c91648422cc30262abd38307fbd8cdcadc619be78d51eb2"
+      },
+      "SOURCE_BINDINGS.json": {
+        "bytes": 13234,
+        "sha256": "f72ed9f1785c6af029f68786d37a4d596a7147e1b7b6be4b5984e269af435a10"
+      },
+      "SOURCE_PIN_MANIFEST.json": {
+        "bytes": 545015,
+        "sha256": "8a539445857a998d827996d784fa7640c64fbd2f90d0238cde3fab8d6a337d5f"
+      },
+      "consumer/check_saved.py": {
+        "bytes": 39135,
+        "sha256": "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3"
+      }
+    }
+  },
+  "frozen_closure_sources_privacy": {
+    "freeze": {
+      "bytes": 211769,
+      "sha256": "4b379b1fc4b3b40a72587021351514531c72774bf7784aef1065a0c5ac5a2908"
+    },
+    "manifest": {
+      "bytes": 209181,
+      "sha256": "0d797ff6d3ea2900f605426c1f57755147fdfd818f8871880bcf2767db8f4c10"
+    },
+    "archive": {
+      "bytes": 10958210,
+      "sha256": "31ce878616c92adbddd076df6ac8651a8b070e3e1102c7e7c1d5fe3810d7f67e"
+    },
+    "complete_members": 1052,
+    "expanded_bytes": 92524426,
+    "archive_all_CRC_and_bytes_equal": true,
+    "source_provenance_pin_counts": {
+      "raw": 11,
+      "reconstructed": 11,
+      "diff": 11,
+      "historical_profile": 11
+    },
+    "omitted_source_payload_hashes": 29,
+    "privacy": {
+      "counts": {
+        "text_objects": 1987296,
+        "payloads": 1144,
+        "json_strings": 919637,
+        "files": 1052,
+        "gzip_streams": 11,
+        "base64_records": 81
+      },
+      "findings": [],
+      "email_matches": [],
+      "normalization": "JSON decoding, triple percent/entity decoding, NFC/casefold, whitespace-normalized main titles, gunzip and capture base64",
+      "limit": "Known-marker audit, not universal anonymity certification; short hostname checked only as complete JSON value"
+    },
+    "protected_baseline_files": {
+      "public_files": 68,
+      "protected_existing_E_files": 825,
+      "protected_existing_X_files": 760
+    },
+    "bundle_archive_unchanged_at_finish": true,
+    "scientific_execution": 0,
+    "wrapper_execution": 0,
+    "network": 0,
+    "native": 0
+  },
+  "static_wrapper_review": {
+    "file": "consumer/check_saved.py",
+    "bytes": 39135,
+    "sha256": "30482b836517cf95ee488c9041969e620478ec5ddb0ae6f0aed5f1742d8215e3",
+    "all_lines_read": 667,
+    "AST_parses": true,
+    "only_checker_attribute_replacements": [
+      "checker.load_profile",
+      "checker.FREEZE_SHA256"
+    ],
+    "ten_scientific_modules_byte_exact_and_original_import_layout_retained": true,
+    "six_other_adapter_sources_provenance_only": true,
+    "no_existing_scientific_code_edit": true,
+    "new_binder": "Exact fixed11 separately supplied reconstructed source bytes, no imports lexical check, copied regular nonsymlink source,33 fixture/case/variant and source identity/location checks; original private binder is not reexecuted.",
+    "scientific_entrypoints": "check_arm11; model_join22; compare_regions22; decode.verify_stream11. Original CLI/main/producer paths are not called.",
+    "certificate_comparison": "Entire canonical semantic JSON, including initializer, normalization, source AST-derived model audit and complete graph fairness evidence; only six top-level provenance fields omitted.",
+    "provenance_fields_excluded": [
+      "checker_sha256",
+      "source_freeze_sha256",
+      "model_sha256",
+      "result_sha256",
+      "controller_sha256",
+      "source_bindings"
+    ],
+    "full_region_gate": "Unchanged adapter requires identical typed fields/encodings and all current/next bit partition including logical AUX; full XOR emptiness with no witness and fixed order; no count-only or projection-only substitution.",
+    "limits_and_integrity": "Internal60second POSIX wall timer plus byte/member and supported resource caps; isolated new work writes; no native/process/network requests; exact module imports; final copied-input and complete-bundle rehash; partial/failure receipts retained."
+  },
+  "static_negative_preflight_review": [
+    {
+      "case": "wrong_external_source_bytes",
+      "gate": "stage_inputs:352 checks exact bytes and SHA256",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "unknown_fixture_or_duplicate_fixture",
+      "gate": "verify_metadata:195,204-205 requires exact fixed roster and row list order",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "cross_fixture_comparator_model",
+      "gate": "stage_inputs:366 verifies fixture_id/case_id/variant for all33 models",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "cross_source_comparator_model",
+      "gate": "stage_inputs:367 and preflight_saved_bindings verify source bytes/hash/path and copied samefile",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "stale_current_model_export",
+      "gate": "preflight_saved_bindings:403-404 and local_ref/verify_ref rehash current model against result.model_export",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "stale_current_controller_export",
+      "gate": "preflight_saved_bindings:411 verifies result.controller_export current bytes/hash",
+      "before_scientific_imports": true
+    },
+    {
+      "case": "stale_controller_model_pin_with_enclosing_repin",
+      "gate": "preflight_saved_bindings:414 compares controller.model_sha256 with current model bytes",
+      "before_scientific_imports": true
+    }
+  ],
+  "documentation_and_scope": {
+    "README_and_THIRD_PARTY_NOTICES_full_read": true,
+    "historical_adoption_language_labeled_as_historical": true,
+    "whole_route_alternative_result_only": true,
+    "same_game_same_memory_intervention_sufficient_not_necessary": true,
+    "no_ablation_paired_rate_timing_generalization": true,
+    "original_initializers_and_rank0_memory_preserved": true,
+    "eight_graphs_three_empty_V_null_flags": true,
+    "shared_parser_BDD_and_single_graph_judge_limit_explicit": true,
+    "independent_compiler_claim": false,
+    "new_producer_or_episode_or_Slugs_claim": false,
+    "original_fourteen_model_regression_extension": false,
+    "prior_public_68_files_unchanged": true,
+    "new_C15_outer_index_integration_not_yet_reviewed": true
+  },
+  "qualification_handoff": {
+    "static_review_permits_next_already_scoped_step": true,
+    "scope": "Publisher may perform Root-scoped six isolated preflight-only malformed-input controls and one all11 saved-input consumer on exactly this frozen candidate, under existing60internal/300external caps, retry0. This report is not itself an execution or publication result.",
+    "full_saved_consumer_executions_in_this_review": 0,
+    "negative_controls_executed_in_this_review": 0,
+    "public_publication_GO": false,
+    "requires_later_review": "Actual result receipts and outer public C15/index changes before final publication GO."
+  },
+  "work_performed": {
+    "artifact_scientific_module_imports": 0,
+    "BDD_or_graph_computations": 0,
+    "native": 0,
+    "compiler": 0,
+    "network": 0,
+    "wrapper_executions": 0,
+    "Full_reset": 0,
+    "source_or_SI_or_main_or_public_repo_mutations": 0
+  },
+  "supporting_review_artifacts": [
+    {
+      "file": "independent_review_20261021/independent_normalized_eleven_frozen_audit_20261021.json",
+      "bytes": 1633,
+      "sha256": "7c26ffe6928cee34726823dfe1927cfe7cfd413352f99f796b53e366ebd39ffa"
+    },
+    {
+      "file": "independent_review_20261021/independent_normalized_eleven_frozen_audit_20261021.py",
+      "bytes": 8207,
+      "sha256": "3467a41b7bd76294d7246fc9f0e10d57004ad15b30a09b30017b0def159998a0"
+    },
+    {
+      "file": "independent_review_20261021/independent_normalized_eleven_public_audit_20261021.json",
+      "bytes": 67709,
+      "sha256": "b471c0f371e1a298b467f64b69a7191baace768d7a4d55222e67f79519d48a87"
+    },
+    {
+      "file": "independent_review_20261021/independent_normalized_eleven_public_audit_20261021.py",
+      "bytes": 13336,
+      "sha256": "8f7cca22b79a747df04fbabd05b2f2e597b046ea0c081e288c8381a604ce219f"
+    }
+  ]
+}

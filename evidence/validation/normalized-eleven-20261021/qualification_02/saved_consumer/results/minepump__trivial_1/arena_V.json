@@ -1,0 +1,120 @@
+{
+  "status": "EXACT_ORIGINAL_ARENA_MATCH",
+  "source_sha256": "afbb72b7107f9de803db3a3be2fb20a1ea52d3d9999f3e41be3f108d3ddabecf",
+  "typed_metadata_exact": true,
+  "ordered_justice_lists_preserved": true,
+  "comparisons": [
+    {
+      "predicate": "domain",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_ENV_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "domain_SYS_next",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "rhoS",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaE",
+      "exact_function_equal": true
+    },
+    {
+      "predicate": "thetaS",
+      "exact_function_equal": true
+    }
+  ],
+  "input_pins": [
+    {
+      "path": "data/comparators/minepump__trivial_1/V/model.json",
+      "bytes": 26007,
+      "sha256": "233238c0a0b95c2b21a155e8a097e1607fdc47692238f14a491c9ef80a66c5ce"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/model.json",
+      "bytes": 26007,
+      "sha256": "233238c0a0b95c2b21a155e8a097e1607fdc47692238f14a491c9ef80a66c5ce"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/domain.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/domain_SYS_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/original_rhoE.bdd",
+      "bytes": 48,
+      "sha256": "9aaf4315209336fcc0b9d62ce9843e2852b8df7a5654fabab19c6eac9cef1e91"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/original_rhoE.bdd",
+      "bytes": 48,
+      "sha256": "9aaf4315209336fcc0b9d62ce9843e2852b8df7a5654fabab19c6eac9cef1e91"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/original_rhoS.bdd",
+      "bytes": 90,
+      "sha256": "a34ff760481f266e3736b789c25cbd881a7965efdf9eebf146deab59ad0ddeb8"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/original_rhoS.bdd",
+      "bytes": 90,
+      "sha256": "a34ff760481f266e3736b789c25cbd881a7965efdf9eebf146deab59ad0ddeb8"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/original_thetaE.bdd",
+      "bytes": 36,
+      "sha256": "7d60f4956f9425c22d223ed9346064dd879f885edf92bf424b05817ea1b05cd4"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/original_thetaE.bdd",
+      "bytes": 36,
+      "sha256": "7d60f4956f9425c22d223ed9346064dd879f885edf92bf424b05817ea1b05cd4"
+    },
+    {
+      "path": "data/comparators/minepump__trivial_1/V/original_thetaS.bdd",
+      "bytes": 38,
+      "sha256": "b9389f84a938bb2cae660be5e1ef26de154270ae901dde62c9d7904f91d86747"
+    },
+    {
+      "path": "data/runs/minepump__trivial_1/normalized_kind/original_thetaS.bdd",
+      "bytes": 38,
+      "sha256": "b9389f84a938bb2cae660be5e1ef26de154270ae901dde62c9d7904f91d86747"
+    }
+  ],
+  "method": "Canonical ROBDD equality in common saved bit encoding; no independent source compiler.",
+  "diagnostic_identity_differences": []
+}
