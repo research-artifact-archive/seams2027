@@ -50,7 +50,7 @@ Installed-runtime hash inventories identify the qualified host contents without 
 
 ## Technical appendix document snapshot
 
-The generic appendix PDF and appendix-only TeX source ZIP are original documentation supplied separately under `documents/`, with the included original-contribution license. Citations identify external literature without redistributing the cited paper PDFs. The main manuscript and its source tree are not included. `DOCUMENT_SNAPSHOT_MANIFEST.json` binds the document identities; this snapshot is separate from the eight scientific evidence archives.
+The generic appendix PDF and appendix-only TeX source ZIP are original documentation supplied separately under `documents/`, with the included original-contribution license. Citations identify external literature without redistributing the cited paper PDFs. The main manuscript and its source tree are not included. `DOCUMENT_SNAPSHOT_MANIFEST.json` binds the document identities; this snapshot is separate from the nine scientific evidence archives.
 
 ## Normalized-eleven addendum
 
@@ -68,3 +68,10 @@ The seventh archive retains the original corpus Elevator specification under the
 The eighth archive preserves completed graph/model/BDD evidence, two independent rooted-candidate checks, twenty Python runtime episodes, the independent event audit, six process records, and original checker/runtime/qualification code. It omits both paper-derived Lift specifications and all derived specification copies in synthetic fixtures. SOURCE_RESTORATION_REFERENCE.json binds their exact identities to the existing fourth-archive source-only recipe and records the original 59-byte append that defines the old mode. Retrieval by a reader preserves the distributor's terms and grants no additional redistribution rights. The Elevator corpus license from the separate seventh archive does not license these Lift source bytes.
 
 No runtime, upstream JAR, native binary, compiled class, source cache, full upstream extractor or third-party paper PDF is included. Only final synthetic-qualification summaries are retained, with omitted fixture targets explicitly classified. Location-only metadata normalization, including JSONL records and JSON stdout, is disclosed per file and field; original execution hashes remain historical. This is a static inspection snapshot with no new scientific execution, relocated consumer or fresh-host qualification.
+
+
+## Intruder bounded evidence snapshot
+
+The ninth archive includes the unchanged corpus CatchingIntruder specification and its exact DwyerPatterns import with the original Zenodo BSD 3-Clause notice. It retains all 135 recorded scientific output files, including failed attempts, UNKNOWN results, complete captures and the exact incomplete 16 MiB relation export. Original Python controls and Java wrapper/observer/transport sources remain exact.
+
+Both full upstream-derived extractors, GR1ObservedControllerConstructionSkip.java and GR1ContinuationPreferenceConstruction.java, are omitted and bound to exact existing fourth-archive source-only recipes. No installed runtime, dependency JAR, native library, compiled class, source cache or third-party paper PDF is distributed. JSON location fields and plain log/property lines have explicit original/copy ledgers; encoded RLE stdout remains byte-identical and its decoded literals were inspected for private locations. Historical execution hashes remain historical. This is a static inspection snapshot with no relocated replay or new scientific execution.

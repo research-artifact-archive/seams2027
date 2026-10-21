@@ -1,5 +1,5 @@
 {
-  "status": "EIGHTH_EXTENSION_STATIC_NONINITIAL_HANDOFF_WITH_DOCUMENT_SNAPSHOT",
+  "status": "NINTH_EXTENSION_STATIC_INTRUDER_BOUNDED_UNKNOWN_WITH_DOCUMENT_SNAPSHOT",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -33,6 +33,10 @@
     "NoninitialHandoff": {
       "archive": "noninitial-handoff-evidence-20261021-v1.zip",
       "member_prefix": "noninitial-handoff-evidence/"
+    },
+    "IntruderBounded": {
+      "archive": "intruder-bounded-evidence-20261021.zip",
+      "member_prefix": "seams2027-intruder-bounded-evidence/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1062,6 +1066,104 @@
         "No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.",
         "RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim."
       ]
+    },
+    {
+      "id": "INTRUDER-BOUNDED-UNKNOWN-ORIGINAL-SOURCE",
+      "archive": "IntruderBounded",
+      "claim": "On one preselected unchanged CatchingIntruder source, bounded paired and normalized native attempts yield no complete controller: all three arm verdicts remain UNKNOWN. Independent source-function correspondence passes only for the separately frozen historical original model.",
+      "source_inputs": [
+        "inputs/source/1673286053.spectra",
+        "inputs/source/imports/DwyerPatterns.spectra"
+      ],
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/SCIENTIFIC_ADOPTION.json",
+        "evidence/SCIENTIFIC_OUTPUT_FREEZE.json",
+        "evidence/SELECTION_AND_BOUNDED_RESEARCH_PROTOCOL.json",
+        "evidence/ORIGINAL_MODEL_REFERENCE.json",
+        "evidence/SOURCE355_INDEPENDENT_SEMANTIC_REVIEW.json",
+        "SOURCE_RESTORATION_REFERENCE.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "REFERENCE_CLOSURE.json",
+        "OMISSIONS.json"
+      ],
+      "input_models": [
+        "inputs/original_model/model.json",
+        "native355/runs/paired_01/native/model.json",
+        "native355/runs/normalized_01/normalized/model.json"
+      ],
+      "saved_graphs": [],
+      "saved_outputs": [
+        "evidence/native355/RUN_RECEIPT.json",
+        "native355/runs/paired_01/ROW_RESULT.json",
+        "native355/runs/normalized_01/ROW_RESULT.json",
+        "native355/runs/paired_01/native/result.json",
+        "native355/runs/normalized_01/normalized/result.json",
+        "independent_execution_01/PARENT_RECEIPT.json",
+        "independent_execution_01/source_graph_oracle/audit/RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/baseline_RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/preference_RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/normalized_RESULT.json",
+        "independent_execution_01/pair_parity/PAIR_RESULT.json",
+        "evidence/V48_INDEPENDENT_SCIENTIFIC_RECONCILIATION.json"
+      ],
+      "partial_uncertified_outputs": [
+        "native355/runs/normalized_01/normalized/restricted_rhoS.bdd"
+      ],
+      "process_receipts": [
+        "native355/runs/paired_01/native/PROCESS_RECEIPT.json",
+        "native355/runs/normalized_01/normalized/PROCESS_RECEIPT.json",
+        "independent_execution_01/source_graph_oracle/process/PROCESS_RECEIPT.json",
+        "independent_execution_01/pair_parity/process/PROCESS_RECEIPT.json",
+        "native355/build_pair/compile_process/PROCESS_RECEIPT.json",
+        "native355/build_normalized/compile_process/PROCESS_RECEIPT.json"
+      ],
+      "checker_sources": [
+        "reference/oracle355/audit355.py",
+        "reference/oracle355/source_semantics.py",
+        "reference/oracle355/symbolic_source.py",
+        "reference/oracle355/model355.py",
+        "reference/oracle355/graph355.py",
+        "reference/oracle355/activity.py",
+        "reference/oracle355/bdd_core.py",
+        "reference/oracle355/independent_core.py",
+        "reference/root/audit_pair355.py"
+      ],
+      "runtime_sources": [
+        "reference/native355/run_native355.py",
+        "reference/root/run_independent355.py",
+        "reference/native355/code/dispatch/bounded_process.py",
+        "reference/native355/code/dispatch/owned_process.py"
+      ],
+      "qualification_records": [
+        "evidence/oracle355/QUALIFICATION_03.json",
+        "evidence/oracle355/QUALIFICATION_03_SCOPE_CORRECTION.json",
+        "evidence/PAIR355_SYNTHETIC_QUALIFICATION_02.json",
+        "qualification/native355/qualification_transport_01/RESULT.json",
+        "qualification/native355/qualification_rle_deadline_01/RESULT.json",
+        "qualification/qualification_independent_launcher_01/RESULT.json"
+      ],
+      "omitted_source_inputs": [
+        "reference/native355/src/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.java",
+        "reference/native355/src/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.java"
+      ],
+      "reader_recipe": "README.md",
+      "outer_repository_saved_outputs": [
+        "INTRUDER_BOUNDED_MANIFEST.json",
+        "evidence/validation/intruder-bounded-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json"
+      ],
+      "expected_saved_result": "One preselected unchanged source; two native attempts and two independent workers; all three arm graph verdicts UNKNOWN; original-model source correspondence PASS over 524288 typed states; zero returned graphs or added qualified controllers. The exact 16777216-byte restricted_rhoS.bdd is partial and uncertified. No retry occurred.",
+      "execution_scope": "Static saved-evidence inspection of completed bounded attempts. Process capture completeness does not mean successful synthesis. Earlier replay entrypoints do not execute this extension.",
+      "selection_scope": "One public original outside the 59 qualified models was selected by a fixed comparative preflight. This is not a random or held-out population and does not enlarge the qualified denominator.",
+      "limits": [
+        "Paired attempt reached the 44-second wall cap before solver return or extraction; preference was not reached.",
+        "Normalized attempt raised a file-size exception while writing a restricted relation, before native solving; the full partial file is retained.",
+        "All three arm graph verdicts and pair parity remain UNKNOWN; no rescue, regression, feasibility or negative game verdict is established.",
+        "Only the frozen historical original model has independent source-function correspondence. Transformed correspondence, native V/K certification and actual Q comparison were not established.",
+        "The static translator-timing argument is separate from an observed controller state, actual-model BDD comparison or reachability certificate.",
+        "The existing 11 replacements, 14 controls and 59 qualified public models remain unchanged. No second active model or practical-preservation benefit is established.",
+        "This is a static inspection snapshot with original/copy location ledgers; no relocated consumer, fresh-host or performance claim is made."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1246,34 +1348,53 @@
       "producer_invocation_recreated": false,
       "relocated_consumer_qualification": false,
       "source_restoration": "Two omitted Lift specification identities and the old-mode append are bound by SOURCE_RESTORATION_REFERENCE.json to the existing fourth-archive source-only recipe; no new retrieval or reconstruction for packaging."
+    },
+    {
+      "version_tag": "intruder-bounded-evidence-20261021-v1",
+      "archive": "archives/intruder-bounded-evidence-20261021.zip",
+      "claims": [
+        "INTRUDER-BOUNDED-UNKNOWN-ORIGINAL-SOURCE"
+      ],
+      "descriptor": "INTRUDER_BOUNDED_MANIFEST.json",
+      "independent_snapshot_review": "evidence/validation/intruder-bounded-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+      "status": "FROZEN_STATIC_BOUNDED_UNKNOWN_INDEPENDENTLY_REVIEWED",
+      "producer_invocation_recreated": false,
+      "relocated_consumer_qualification": false,
+      "source_restoration": "The two omitted full upstream-derived extractors use exact existing fourth-archive recipes. The original corpus specification and import are included unchanged with their BSD notice."
     }
   ],
   "document_snapshot": {
     "manifest": "DOCUMENT_SNAPSHOT_MANIFEST.json",
-    "pdf": "documents/technical-appendix-v47.pdf",
-    "source_zip": "documents/technical-appendix-v47.zip",
-    "pages": 49,
-    "tex_source_files": 28,
-    "scope": "Generic appendix snapshot separate from eight scientific evidence archives; previous v43, v44 and v46 PDF/source ZIP files retained.",
-    "current_document_downloads_including_prior_snapshots": 8
+    "pdf": "documents/technical-appendix-v48.pdf",
+    "source_zip": "documents/technical-appendix-v48.zip",
+    "pages": 53,
+    "tex_source_files": 29,
+    "scope": "Generic appendix snapshot separate from nine scientific evidence archives; previous v43, v44, v46 and v47 PDF/source ZIP files retained.",
+    "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All 16 prior row objects and seven prior scientific archive bytes remain unchanged. The eighth archive adds one bounded noninitial handoff row, for 17 reader rows total. It preserves completed graph checks and executed episodes; packaging adds no relocated consumer or fresh-host qualification. Earlier extension qualifications retain their original scope.",
-  "new_extension_references_checked": 47,
+  "extension_note": "All 17 prior row objects, five historical extension objects and eight prior scientific archives remain unchanged. The ninth archive adds one preselected bounded UNKNOWN row, for 18 reader rows total. It preserves full failed/partial outputs and limited original-source correspondence; packaging adds no relocated replay or new scientific result.",
+  "new_extension_references_checked": 54,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
-    "version_tag": "residual-census-evidence-20261021-v1",
-    "references_checked": 54,
+    "version_tag": "noninitial-handoff-evidence-20261021-v1",
+    "references_checked": 47,
     "missing_references": [],
-    "scope": "Retained historical metadata for the seventh extension.",
+    "scope": "Retained historical metadata for the eighth extension.",
     "earlier": {
-      "version_tag": "normalized-eleven-evidence-20261021-v1",
-      "references_checked": 110,
+      "version_tag": "residual-census-evidence-20261021-v1",
+      "references_checked": 54,
       "missing_references": [],
-      "scope": "Retained historical metadata for the sixth extension."
+      "scope": "Retained historical metadata for the seventh extension.",
+      "earlier": {
+        "version_tag": "normalized-eleven-evidence-20261021-v1",
+        "references_checked": 110,
+        "missing_references": [],
+        "scope": "Retained historical metadata for the sixth extension."
+      }
     }
   },
-  "reader_row_count": 17,
-  "scientific_archive_count": 8,
-  "document_download_count": 8,
-  "directory_member_references_scope": "Retained historical index count; eighth-extension member references are separately checked in new_extension_references_checked."
+  "reader_row_count": 18,
+  "scientific_archive_count": 9,
+  "document_download_count": 10,
+  "directory_member_references_scope": "Retained historical index count; ninth-extension member references are separately checked in new_extension_references_checked."
 }

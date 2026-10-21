@@ -1,0 +1,121 @@
+{
+  "schema": "v48-independent-static-public-snapshot-review-summary-v1",
+  "status": "PASS_EXACT_STATIC_SNAPSHOT_ALL_THREE_CONTROLLER_ARMS_UNKNOWN",
+  "created_utc": "2026-10-21T09:42:02.938319+00:00",
+  "derived_from_full_local_review": {
+    "bytes": 21871,
+    "sha256": "1f2801c96e8243415ea6525477049e5ac30bb88138a7889a621e4eb154499ce9"
+  },
+  "archive": {
+    "path": "archives/intruder-bounded-evidence-20261021.zip",
+    "bytes": 8218871,
+    "sha256": "3de085e5a441c408fdeac370a87c58c9f2c1d6e432cba5dd4043b3b19a7401f1"
+  },
+  "manifest": {
+    "path": "seams2027-intruder-bounded-evidence/MANIFEST.json",
+    "bytes": 44943,
+    "sha256": "8e676a6ddecb4b5391a00f9e81f8c8a595529c9731f2db2ab3ad4d6a91d09640"
+  },
+  "checks": {
+    "ZIP_every_member_hash_bytes_CRC_mode_timestamp": "PASS",
+    "manifest_complete_no_extra_files": "PASS",
+    "all_original_delivered_copies_rehashed": "PASS",
+    "all_JSON_types_keys_order_arrays_nonlocation_values_preserved": "PASS",
+    "all_declared_location_leaf_and_line_changes_exact": "PASS",
+    "all_source_code_BDD_diff_and_RLE_bytes_exact": "PASS",
+    "all135_outputs_including_partial16MiB_retained": "PASS",
+    "all_reference_occurrences_classified_by_full_original_identity": "PASS",
+    "exact_content_aliases_and_historical_preimages": "PASS",
+    "two_omitted_extractors_exact_prior_restoration_references": "PASS",
+    "static_summary_and_reader_scope": "PASS",
+    "delivered_text_and_RLE_literal_privacy": "PASS",
+    "all284_public_files_and10tags_unchanged": "PASS"
+  },
+  "counts": {
+    "archive_members": 240,
+    "manifest_entries": 239,
+    "copied_originals": 231,
+    "byte_identical": 150,
+    "metadata_or_log_changed": 81,
+    "changed_location_fields_or_lines": 10580,
+    "actual_outputs_preserved": 135,
+    "original_reference_BDDs": 8,
+    "exact_native_Java_sources": 8,
+    "reference_identities": 1296,
+    "reference_occurrences": 5092,
+    "reference_classification": {
+      "included_original_location": 226,
+      "omitted": 1050,
+      "included_content_alias": 20
+    },
+    "pre_science_selected_pin_occurrences": 59,
+    "declared_local_omissions": 191,
+    "public_files_unchanged": 284,
+    "prior_tags_unchanged": 10,
+    "privacy_text_files": 240,
+    "immutable_source_code_BDD_diff_files": 136
+  },
+  "scientific_scope": {
+    "controller_arm_verdicts": "UNKNOWN_ALL_THREE_ARMS",
+    "pair_parity": "UNKNOWN",
+    "original_reference_correspondence": "PASS_FULL_SOURCE_NATIVE_CORRESPONDENCE_ONLY",
+    "native_V_or_K_independently_certified": false,
+    "new_controller_graphs": 0,
+    "new_active_rescue": false,
+    "negative_feasibility_result": false,
+    "static_Q_argument_is_reachability_or_activity_evidence": false
+  },
+  "RLE_literal_privacy": [
+    {
+      "path": "native355/runs/normalized_01/normalized/stdout.txt",
+      "records": 63,
+      "end_records": 1,
+      "literal_bytes_inspected_once": 3260,
+      "bounded_boundary_windows": 113,
+      "repeat_count_expansion": false,
+      "raw_hash_or_transport_semantics_revalidated": false,
+      "private_findings": []
+    },
+    {
+      "path": "native355/runs/paired_01/native/stdout.txt",
+      "records": 146,
+      "end_records": 1,
+      "literal_bytes_inspected_once": 7161,
+      "bounded_boundary_windows": 248,
+      "repeat_count_expansion": false,
+      "raw_hash_or_transport_semantics_revalidated": false,
+      "private_findings": []
+    }
+  ],
+  "omitted_extractor_restoration": [
+    {
+      "name": "GR1ObservedControllerConstructionSkip.java",
+      "bytes": 10860,
+      "sha256": "bb338afe2b38f0371967e2bd1dddf538c68bfc1d5874f98acb5a2ad962d927cb"
+    },
+    {
+      "name": "GR1ContinuationPreferenceConstruction.java",
+      "bytes": 10636,
+      "sha256": "39707e980423e888030c9f36d1251614d84a654e6f4c2d4be0123290bead9aee"
+    }
+  ],
+  "blocking_issues": [],
+  "limitations": [
+    "This audit treats all BDD payloads as opaque bytes and does not evaluate source, native, graph, fixed-point, candidate or transport semantics.",
+    "RLE base64 literal bytes and bounded adjacency/self-boundary windows are inspected for privacy; recorded repeat counts are never expanded and transport hashes are not recomputed.",
+    "Reference closure is a complete provenance classification of retained path/hash objects, not executable transitive closure. Runtime payloads and explicitly omitted historical evidence remain external.",
+    "Existing source-only restoration recipes and their exact target identities are verified against the fourth archive and unchanged local sources; no retrieval or reconstruction helper was executed.",
+    "Privacy scanning allows only the standard POSIX process-table command in two byte-identical supervisor sources and their two explicit provenance entries; it contains no user or machine identity.",
+    "Live publication, network accessibility and integration with the final appendix remain separate root gates."
+  ],
+  "operations": {
+    "scientific": 0,
+    "native": 0,
+    "compiler": 0,
+    "source_or_BDD_or_graph_evaluation": 0,
+    "network": 0,
+    "publication": 0,
+    "stage_modifications": 0,
+    "full_reset": 0
+  }
+}

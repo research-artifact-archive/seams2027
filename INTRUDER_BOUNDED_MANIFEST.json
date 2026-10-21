@@ -1,0 +1,105 @@
+{
+  "schema": "intruder-bounded-public-release-v1",
+  "status": "FROZEN_STATIC_BOUNDED_UNKNOWN_INDEPENDENTLY_REVIEWED",
+  "version_tag": "intruder-bounded-evidence-20261021-v1",
+  "member_prefix": "seams2027-intruder-bounded-evidence/",
+  "archive": {
+    "path": "archives/intruder-bounded-evidence-20261021.zip",
+    "bytes": 8218871,
+    "sha256": "3de085e5a441c408fdeac370a87c58c9f2c1d6e432cba5dd4043b3b19a7401f1",
+    "members": 240,
+    "uncompressed_bytes": 33839534
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 44943,
+    "sha256": "8e676a6ddecb4b5391a00f9e81f8c8a595529c9731f2db2ab3ad4d6a91d09640",
+    "self_excluded": true
+  },
+  "reader_guide": {
+    "path": "INTRUDER_BOUNDED_EVIDENCE.md",
+    "bytes": 4737,
+    "sha256": "8bcd2d9311d7b65f64fe42b1434362bac95804f08c8ca6fd6133fa721e24b13a"
+  },
+  "summary": {
+    "path": "SUMMARY.json",
+    "bytes": 3524,
+    "sha256": "b9dd19c40d226df4b965aca3d32a6a3c8b53fc1527596b4583c2a8ceae2d438c",
+    "outcomes": {
+      "baseline": "UNKNOWN_WALL_TIME_BEFORE_SOLVER_RETURN",
+      "preference": "NOT_REACHED_WITHIN_UNKNOWN_PAIRED_ATTEMPT",
+      "normalized": "UNKNOWN_FILE_SIZE_EXCEPTION_BEFORE_NATIVE_SOLVER",
+      "source_graph_verdicts": "UNKNOWN_ALL_THREE_ARMS",
+      "pair_parity": "UNKNOWN",
+      "preference_activity": "NOT_OBSERVED_NO_EXTRACTION",
+      "cooperative_feasibility": "UNCLASSIFIED",
+      "original_strict_feasibility": "UNCLASSIFIED"
+    },
+    "source_model_correspondence": {
+      "status": "PASS_FULL_SOURCE_NATIVE_CORRESPONDENCE",
+      "transformed": false,
+      "method": "Independent exact finite-integer source factor construction and canonical ROBDD equality",
+      "functions": [
+        "thetaE",
+        "thetaS",
+        "rhoE",
+        "rhoS"
+      ],
+      "ordered_justice_counts": {
+        "ENV": 0,
+        "SYS": 1
+      },
+      "BDD_nodes": 149675,
+      "full_typed_state_count": 524288,
+      "dense_state_pairs_enumerated": 0,
+      "all_logical_ONCE_values_retained": true,
+      "native_AST_used_to_construct_expected_functions": false
+    },
+    "full_actual_output_files": 135,
+    "new_controller_graphs": 0,
+    "new_qualified_controllers": 0
+  },
+  "partial_output": {
+    "path": "native355/runs/normalized_01/normalized/restricted_rhoS.bdd",
+    "bytes": 16777216,
+    "sha256": "7d323218e6b3840b04e2b77691f0b0785e80b73148785fe4f7577a8b349798e9",
+    "complete": false,
+    "certified": false
+  },
+  "validation": {
+    "status": "PASS_EXACT_STATIC_SNAPSHOT_ALL_THREE_CONTROLLER_ARMS_UNKNOWN",
+    "path": "evidence/validation/intruder-bounded-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+    "bytes": 5148,
+    "sha256": "224ae13ce2554a4a6936aec90e44c7e0c0fe9fee4433f6a40fef2b1affd2d766",
+    "derivation": "Exact auditor-authored anonymous summary, separately pinning the full local detailed review.",
+    "detailed_local_review": {
+      "bytes": 21871,
+      "sha256": "1f2801c96e8243415ea6525477049e5ac30bb88138a7889a621e4eb154499ce9"
+    }
+  },
+  "scope": "Static snapshot of two bounded native attempts and two independent workers; all three arm graph verdicts remain UNKNOWN. Only saved historical original-model source-function correspondence passed.",
+  "limits": [
+    "Paired attempt reached the 44-second wall cap before solver return or extraction; preference was not reached.",
+    "Normalized attempt raised a file-size exception while writing a restricted relation, before native solving; the full partial file is retained.",
+    "All three arm graph verdicts and pair parity remain UNKNOWN; no rescue, regression, feasibility or negative game verdict is established.",
+    "Only the frozen historical original model has independent source-function correspondence. Transformed correspondence, native V/K certification and actual Q comparison were not established.",
+    "The static translator-timing argument is separate from an observed controller state, actual-model BDD comparison or reachability certificate.",
+    "The existing 11 replacements, 14 controls and 59 qualified public models remain unchanged. No second active model or practical-preservation benefit is established.",
+    "This is a static inspection snapshot with original/copy location ledgers; no relocated consumer, fresh-host or performance claim is made."
+  ],
+  "negative_game_verdict_established": false,
+  "new_rescue_established": false,
+  "producer_invocation_recreated": false,
+  "relocated_or_fresh_host_replay_qualified": false,
+  "distribution": {
+    "kind": "Repository file at a new immutable versioned Git tag",
+    "tag": "intruder-bounded-evidence-20261021-v1",
+    "publication_status": "Prepared release contents; availability is established separately by the versioned repository tag."
+  },
+  "prior_evidence": {
+    "prior_scientific_archives": 8,
+    "prior_tag_refs": 10,
+    "prior_tags_unchanged": true,
+    "prior_archive_bytes_unchanged": true
+  }
+}

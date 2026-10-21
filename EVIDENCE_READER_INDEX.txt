@@ -421,8 +421,94 @@ Limits:
   No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.
   RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim.
 
-CURRENT DOCUMENT SNAPSHOT (v47)
-The separate current generic appendix has 49 pages. documents/technical-appendix-v47.pdf and documents/technical-appendix-v47.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json; the source ZIP contains 28 TeX files. The previous v43, v44 and v46 PDFs and source ZIPs remain unchanged. The collection contains eight scientific evidence archives and eight document downloads across four appendix snapshots.
+
+INTRUDER-BOUNDED-UNKNOWN-ORIGINAL-SOURCE — One preselected original; bounded UNKNOWN, limited original-source correspondence.
+Archive: intruder-bounded-evidence-20261021.zip
+Member prefix: seams2027-intruder-bounded-evidence/
+source_inputs:
+  inputs/source/1673286053.spectra
+  inputs/source/imports/DwyerPatterns.spectra
+input_navigation:
+  SUMMARY.json
+  evidence/SCIENTIFIC_ADOPTION.json
+  evidence/SCIENTIFIC_OUTPUT_FREEZE.json
+  evidence/SELECTION_AND_BOUNDED_RESEARCH_PROTOCOL.json
+  evidence/ORIGINAL_MODEL_REFERENCE.json
+  evidence/SOURCE355_INDEPENDENT_SEMANTIC_REVIEW.json
+  SOURCE_RESTORATION_REFERENCE.json
+  PRESENTATION_TRANSFORMATIONS.json
+  REFERENCE_CLOSURE.json
+  OMISSIONS.json
+input_models:
+  inputs/original_model/model.json
+  native355/runs/paired_01/native/model.json
+  native355/runs/normalized_01/normalized/model.json
+saved_graphs:
+saved_outputs:
+  evidence/native355/RUN_RECEIPT.json
+  native355/runs/paired_01/ROW_RESULT.json
+  native355/runs/normalized_01/ROW_RESULT.json
+  native355/runs/paired_01/native/result.json
+  native355/runs/normalized_01/normalized/result.json
+  independent_execution_01/PARENT_RECEIPT.json
+  independent_execution_01/source_graph_oracle/audit/RESULT.json
+  independent_execution_01/source_graph_oracle/audit/baseline_RESULT.json
+  independent_execution_01/source_graph_oracle/audit/preference_RESULT.json
+  independent_execution_01/source_graph_oracle/audit/normalized_RESULT.json
+  independent_execution_01/pair_parity/PAIR_RESULT.json
+  evidence/V48_INDEPENDENT_SCIENTIFIC_RECONCILIATION.json
+partial_uncertified_outputs:
+  native355/runs/normalized_01/normalized/restricted_rhoS.bdd
+process_receipts:
+  native355/runs/paired_01/native/PROCESS_RECEIPT.json
+  native355/runs/normalized_01/normalized/PROCESS_RECEIPT.json
+  independent_execution_01/source_graph_oracle/process/PROCESS_RECEIPT.json
+  independent_execution_01/pair_parity/process/PROCESS_RECEIPT.json
+  native355/build_pair/compile_process/PROCESS_RECEIPT.json
+  native355/build_normalized/compile_process/PROCESS_RECEIPT.json
+checker_sources:
+  reference/oracle355/audit355.py
+  reference/oracle355/source_semantics.py
+  reference/oracle355/symbolic_source.py
+  reference/oracle355/model355.py
+  reference/oracle355/graph355.py
+  reference/oracle355/activity.py
+  reference/oracle355/bdd_core.py
+  reference/oracle355/independent_core.py
+  reference/root/audit_pair355.py
+runtime_sources:
+  reference/native355/run_native355.py
+  reference/root/run_independent355.py
+  reference/native355/code/dispatch/bounded_process.py
+  reference/native355/code/dispatch/owned_process.py
+qualification_records:
+  evidence/oracle355/QUALIFICATION_03.json
+  evidence/oracle355/QUALIFICATION_03_SCOPE_CORRECTION.json
+  evidence/PAIR355_SYNTHETIC_QUALIFICATION_02.json
+  qualification/native355/qualification_transport_01/RESULT.json
+  qualification/native355/qualification_rle_deadline_01/RESULT.json
+  qualification/qualification_independent_launcher_01/RESULT.json
+omitted_source_inputs (not included; existing exact restoration reference only):
+  reference/native355/src/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.java
+  reference/native355/src/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.java
+reader_recipe: README.md
+outer_repository_saved_outputs (repository-root paths):
+  INTRUDER_BOUNDED_MANIFEST.json
+  evidence/validation/intruder-bounded-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json
+Expected saved result: One preselected unchanged source; two native attempts and two independent workers; all three arm graph verdicts UNKNOWN; original-model source correspondence PASS over 524288 typed states; zero returned graphs or added qualified controllers. The exact 16777216-byte restricted_rhoS.bdd is partial and uncertified. No retry occurred.
+Execution boundary: Static saved-evidence inspection of completed bounded attempts. Process capture completeness does not mean successful synthesis. Earlier replay entrypoints do not execute this extension.
+Selection scope: One public original outside the 59 qualified models was selected by a fixed comparative preflight. This is not a random or held-out population and does not enlarge the qualified denominator.
+Limits:
+  Paired attempt reached the 44-second wall cap before solver return or extraction; preference was not reached.
+  Normalized attempt raised a file-size exception while writing a restricted relation, before native solving; the full partial file is retained.
+  All three arm graph verdicts and pair parity remain UNKNOWN; no rescue, regression, feasibility or negative game verdict is established.
+  Only the frozen historical original model has independent source-function correspondence. Transformed correspondence, native V/K certification and actual Q comparison were not established.
+  The static translator-timing argument is separate from an observed controller state, actual-model BDD comparison or reachability certificate.
+  The existing 11 replacements, 14 controls and 59 qualified public models remain unchanged. No second active model or practical-preservation benefit is established.
+  This is a static inspection snapshot with original/copy location ledgers; no relocated consumer, fresh-host or performance claim is made.
+
+CURRENT DOCUMENT SNAPSHOT (v48)
+The separate current generic appendix has 53 pages. documents/technical-appendix-v48.pdf and documents/technical-appendix-v48.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json; the source ZIP contains 29 TeX files. The previous v43, v44, v46 and v47 PDFs and source ZIPs remain unchanged. The collection contains nine scientific evidence archives and ten document downloads across five appendix snapshots.
 
 CURRENT READER SCOPE
-EVIDENCE_READER_INDEX.json and CLAIM_TO_FILE_INDEX.json now contain 17 reader rows. Their prior 16 row objects and historical extension objects remain unchanged. The eighth archive adds static evidence of completed checks and episodes; packaging adds no relocated replay, native execution or fresh-host qualification. The earlier tools/verify_public.py integrity command checks only the original three scientific archives. Later archives have their separate descriptors; NONINITIAL_HANDOFF_MANIFEST.json binds the eighth archive and its independent static packaging review.
+EVIDENCE_READER_INDEX.json and CLAIM_TO_FILE_INDEX.json contain 18 reader rows. Their prior 17 row objects and five historical extension objects remain unchanged. The ninth archive retains bounded UNKNOWN outcomes and every failed/partial output; packaging adds no scientific rerun, relocated consumer or fresh-host qualification. The earlier tools/verify_public.py integrity command checks only the original three scientific archives. INTRUDER_BOUNDED_MANIFEST.json binds the ninth archive and its independent static packaging review.
