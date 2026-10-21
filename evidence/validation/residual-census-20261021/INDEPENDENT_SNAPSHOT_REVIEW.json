@@ -1,0 +1,86 @@
+{
+  "schema": "residual-public-independent-snapshot-review-summary-v1",
+  "status": "PASS_SCOPED_STATIC_PRIVACY_CONTENT_AND_DISTRIBUTION_PROVENANCE",
+  "derivation": "This is an auditor-authored anonymous summary of a more detailed local independent review. It is not the complete review and does not replace its byte identity.",
+  "detailed_review": {
+    "bytes": 6961,
+    "sha256": "b39f9b3c7a531c9e8bed96d48267ff633fcbb077d1e6410824b504ef106e609c"
+  },
+  "archive": {
+    "path": "residual-census-evidence-20261021-v1.zip",
+    "bytes": 2416876,
+    "sha256": "bbc9ac7969bc0d65485b79b2c61be93cfd0a65a030fc926124b22921111cc08e"
+  },
+  "inner_manifest": {
+    "path": "residual-census-evidence/MANIFEST.json",
+    "bytes": 692216,
+    "sha256": "96e81264335b3a5a5f3d45a05a79cc50f677b0012c262bed827e662eab03ffdf"
+  },
+  "packaging_script": {
+    "path": "package_residual_snapshot_stage02.py",
+    "bytes": 23108,
+    "sha256": "d4de83f7f22fac3442ff4f5fc150fc3b8d885d9dcb4dd3d955a6263da7615ff4"
+  },
+  "builder_comparison": {
+    "path": "residual-census-evidence/BUILDER_COMPARISON.json",
+    "bytes": 1170,
+    "sha256": "d638d9c03cd596a61493dbcc6e48e56cd2a6816fae3a6f47c5273dc5d3e58686"
+  },
+  "checked": {
+    "archive_members": 3635,
+    "copied_original_files": 3626,
+    "byte_identical_copies": 3418,
+    "metadata_only_JSON_copies": 208,
+    "declared_and_independently_checked_location_field_edits": 8231,
+    "entries": 11,
+    "original_initializer_compatible_entries": 3,
+    "noninitial_entries": 8,
+    "complete_graphs": 22,
+    "certificates": 44,
+    "BDD_files": 3296,
+    "printer_outputs": 22,
+    "completed_process_receipts": 56,
+    "included_reference_source_files": 9,
+    "every_ZIP_manifest_and_original_delivered_ledger_hash_verified": true,
+    "all_typed_scientific_values_graphs_BDD_bytes_and_remaining_code_unchanged": true,
+    "private_host_paths_usernames_or_email_findings": 0,
+    "original_frozen_input_files_unchanged": 1870
+  },
+  "scientific_outcome": {
+    "both_arms_strict_and_nonconflicting_for_all11entries": true,
+    "examined_candidates": 836,
+    "refined_candidates": 0,
+    "no_preferred_candidate_fallbacks": 0,
+    "changed_paired_graphs": 0,
+    "rescues": 0,
+    "regressions": 0,
+    "original_I_M_K": false,
+    "original_I_M_K_unchanged": true
+  },
+  "distribution_boundary": {
+    "upstream_derived_full_extractor_omitted": true,
+    "omitted_source_bytes": 10636,
+    "omitted_source_sha256": "39707e980423e888030c9f36d1251614d84a654e6f4c2d4be0123290bead9aee",
+    "exact_existing_external_restoration_archive_manifest_and_output_index11_verified": true,
+    "exact_original_contribution_LICENSE_and_corpus_BSD3_notice_included": true,
+    "scoped_third_party_notices_included": true,
+    "no_blanket_license_inferred_for_upstream_sources": true
+  },
+  "scope": [
+    "Static content, privacy-pattern and provenance review of the pinned evidence snapshot; no new native, compiler, solver, checker or source-fetch execution.",
+    "Original embedded hashes and byte counts remain historical. The delivered manifest and metadata-transformation ledger bind presentation copies.",
+    "Reference files are not a relocated execution kit; no fresh-host qualification or old-controller handoff is claimed.",
+    "The generic /usr/bin/env shebang and /bin/ps command are narrowly allowed in exact reference code and their explicit allowlist declarations.",
+    "Publication and final repository integration are separate from this archive review."
+  ],
+  "review_actions": {
+    "native": 0,
+    "compiler": 0,
+    "solver": 0,
+    "checker": 0,
+    "BDD_or_fairness_evaluation": 0,
+    "source_fetch": 0,
+    "network": 0,
+    "publication": 0
+  }
+}

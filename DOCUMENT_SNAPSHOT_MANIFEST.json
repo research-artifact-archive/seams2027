@@ -1,36 +1,69 @@
 {
   "schema": "generic-technical-appendix-document-snapshot-v1",
   "status": "FROZEN_DOCUMENT_SNAPSHOT",
-  "version_tag": "normalized-eleven-evidence-20261021-v1",
+  "version_tag": "residual-census-evidence-20261021-v1",
   "title": "Technical Appendix",
   "pdf": {
-    "path": "documents/technical-appendix-v44.pdf",
-    "bytes": 688880,
-    "sha256": "c90022d312f762f3ebe5d0b6839b952aa23a829c37cd7d90556fb8711a047909",
-    "pages": 42
+    "path": "documents/technical-appendix-v46.pdf",
+    "bytes": 698408,
+    "sha256": "f816e4560f74386348a8ce5039eaa6a197b42d5fd2c0817d7e65b2eed5fcfce8",
+    "pages": 45
   },
   "source_archive": {
-    "path": "documents/technical-appendix-v44.zip",
-    "bytes": 753667,
-    "sha256": "75b29c7e44260c588a74b849d9bea604fc937a04993ce9f65ad2c5444bef5403",
-    "members": 30,
-    "tex_sources": 26
+    "path": "documents/technical-appendix-v46.zip",
+    "bytes": 766200,
+    "sha256": "5708cacb46afe63f4639106702ef11244b57266d33602578a2ee4a27913484e8",
+    "members": 31,
+    "tex_sources": 27
   },
   "inner_manifest": {
-    "path": "seams2027-technical-appendix-v44/MANIFEST.json",
-    "bytes": 4843,
-    "sha256": "2aae42d8d6ac581396dcf19724e7461d3306a96a33088e9309d9ba3a5572ac7d"
+    "path": "seams2027-technical-appendix-v46/MANIFEST.json",
+    "bytes": 4806,
+    "sha256": "cee349d52e4161625476d361e10cd20b51c0de0d78c9c75586e01f0e9830cd82"
   },
-  "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the six scientific evidence archives.",
+  "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the seven scientific evidence archives.",
   "main_manuscript_included": false,
-  "layout_review": "The corrected appendix page 32 was visually reviewed; all other 41 pages were pixel-identical to the previously inspected 42-page snapshot.",
+  "layout_review": "All 45 pages visually inspected at 120 dpi; exact PDF and full 27-file TeX closure bound to final source and layout QA.",
   "identity_metadata": {
     "pdf_title": "",
     "pdf_author": ""
   },
   "scientific_executions_for_packaging": 0,
-  "revision": "v44 original-initializer normalized-eleven evidence and exact source-fetch scope",
+  "revision": "v46 full residual-state census with dormant intervention and explicit static-evidence scope",
   "previous_snapshots": [
+    {
+      "schema": "generic-technical-appendix-document-snapshot-v1",
+      "status": "FROZEN_DOCUMENT_SNAPSHOT",
+      "version_tag": "normalized-eleven-evidence-20261021-v1",
+      "title": "Technical Appendix",
+      "pdf": {
+        "path": "documents/technical-appendix-v44.pdf",
+        "bytes": 688880,
+        "sha256": "c90022d312f762f3ebe5d0b6839b952aa23a829c37cd7d90556fb8711a047909",
+        "pages": 42
+      },
+      "source_archive": {
+        "path": "documents/technical-appendix-v44.zip",
+        "bytes": 753667,
+        "sha256": "75b29c7e44260c588a74b849d9bea604fc937a04993ce9f65ad2c5444bef5403",
+        "members": 30,
+        "tex_sources": 26
+      },
+      "inner_manifest": {
+        "path": "seams2027-technical-appendix-v44/MANIFEST.json",
+        "bytes": 4843,
+        "sha256": "2aae42d8d6ac581396dcf19724e7461d3306a96a33088e9309d9ba3a5572ac7d"
+      },
+      "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the six scientific evidence archives.",
+      "main_manuscript_included": false,
+      "layout_review": "The corrected appendix page 32 was visually reviewed; all other 41 pages were pixel-identical to the previously inspected 42-page snapshot.",
+      "identity_metadata": {
+        "pdf_title": "",
+        "pdf_author": ""
+      },
+      "scientific_executions_for_packaging": 0,
+      "revision": "v44 original-initializer normalized-eleven evidence and exact source-fetch scope"
+    },
     {
       "schema": "generic-technical-appendix-document-snapshot-v1",
       "status": "FROZEN_DOCUMENT_SNAPSHOT",

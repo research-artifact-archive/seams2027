@@ -1,5 +1,5 @@
 {
-  "status": "SIXTH_EXTENSION_QUALIFIED_SAVED_ELEVEN_WITH_DOCUMENT_SNAPSHOT",
+  "status": "SEVENTH_EXTENSION_STATIC_RESIDUAL_CENSUS_WITH_DOCUMENT_SNAPSHOT",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -25,6 +25,10 @@
     "NormalizedEleven": {
       "archive": "normalized-eleven-public-20261021-v1.zip",
       "member_prefix": "seams2027-normalized-eleven-evidence/"
+    },
+    "ResidualCensus": {
+      "archive": "residual-census-evidence-20261021-v1.zip",
+      "member_prefix": "residual-census-evidence/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -885,6 +889,85 @@
         "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
         "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim."
       ]
+    },
+    {
+      "id": "RESIDUAL-ELEVATOR-11-STATE-CENSUS",
+      "archive": "ResidualCensus",
+      "claim": "All eleven saved continuation-region states of one public Elevator source yield strict and nonconflicting residual controllers in both extraction arms; all comparisons are dormant, with zero refinements, rescues or regressions.",
+      "source_inputs": [
+        "inputs/ElevatorLTL_386_Elevator.spectra"
+      ],
+      "input_models": [
+        "runs/s01/native/model.json",
+        "runs/s01/variant/model.json",
+        "runs/s02/native/model.json",
+        "runs/s02/variant/model.json",
+        "runs/s03/native/model.json",
+        "runs/s03/variant/model.json",
+        "runs/s04/native/model.json",
+        "runs/s04/variant/model.json",
+        "runs/s05/native/model.json",
+        "runs/s05/variant/model.json",
+        "runs/s06/native/model.json",
+        "runs/s06/variant/model.json",
+        "runs/s07/native/model.json",
+        "runs/s07/variant/model.json",
+        "runs/s08/native/model.json",
+        "runs/s08/variant/model.json",
+        "runs/s09/native/model.json",
+        "runs/s09/variant/model.json",
+        "runs/s10/native/model.json",
+        "runs/s10/variant/model.json",
+        "runs/s11/native/model.json",
+        "runs/s11/variant/model.json"
+      ],
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/COHORT.json",
+        "evidence/EXPERIMENT_PLAN.json",
+        "evidence/ADOPTION_SUMMARY.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "OMISSIONS.json"
+      ],
+      "saved_outputs": [
+        "evidence/INDEPENDENT_RESULT_RECONCILIATION.json",
+        "runs/s01/native/controller.json",
+        "runs/s01/variant/controller.json",
+        "runs/s02/native/controller.json",
+        "runs/s02/variant/controller.json",
+        "runs/s03/native/controller.json",
+        "runs/s03/variant/controller.json",
+        "runs/s04/native/controller.json",
+        "runs/s04/variant/controller.json",
+        "runs/s05/native/controller.json",
+        "runs/s05/variant/controller.json",
+        "runs/s06/native/controller.json",
+        "runs/s06/variant/controller.json",
+        "runs/s07/native/controller.json",
+        "runs/s07/variant/controller.json",
+        "runs/s08/native/controller.json",
+        "runs/s08/variant/controller.json",
+        "runs/s09/native/controller.json",
+        "runs/s09/variant/controller.json",
+        "runs/s10/native/controller.json",
+        "runs/s10/variant/controller.json",
+        "runs/s11/native/controller.json",
+        "runs/s11/variant/controller.json"
+      ],
+      "checker_sources": [
+        "reference/code/check_residual_source.py",
+        "reference/code/check_residual_saved_model.py"
+      ],
+      "expected_saved_result": "11 complete pairs, 3 original-initializer-compatible and 8 noninitial entries, 22 strict/nonconflicting graphs, 44 agreeing certificates; 836 examined/0 refined/0 fallback; 0 rescues/0 regressions; original I_M(K)=false.",
+      "execution_scope": "Static inspection of completed records and exact reference sources; no relocated checker replay, fresh-host validation, new solver run or executed old-controller handoff.",
+      "selection_scope": "Exhaustive fixed eleven-state saved region of one source, distinct from the eleven replacement contracts and unchanged C59/C14/R11 populations.",
+      "limits": [
+        "Static snapshot of completed local evidence; no relocated consumer, new scientific execution or fresh-host qualification.",
+        "Fresh rank-0 private memory at each residual entry; no executed old-controller or live memory-preserving handoff.",
+        "All eleven intervention comparisons are dormant; zero refinements, rescues and regressions. Original initializer I_M(K) remains false.",
+        "Source bytes from the licensed public corpus are retained with their BSD notice. The full upstream-derived extractor is omitted and referenced by the existing exact fourth-archive restoration recipe.",
+        "Embedded original execution hashes remain historical attestations. The delivered manifest and presentation ledger bind anonymous metadata copies."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1043,15 +1126,40 @@
       "status": "FROZEN_QUALIFIED_SAVED_INPUT_ELEVEN",
       "producer_invocation_recreated": false,
       "saved_consumer_qualification": "PASS"
+    },
+    {
+      "version_tag": "residual-census-evidence-20261021-v1",
+      "archive": "archives/residual-census-evidence-20261021-v1.zip",
+      "claims": [
+        "RESIDUAL-ELEVATOR-11-STATE-CENSUS"
+      ],
+      "descriptor": "RESIDUAL_CENSUS_MANIFEST.json",
+      "independent_snapshot_review": "evidence/validation/residual-census-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+      "status": "FROZEN_STATIC_SNAPSHOT_INDEPENDENTLY_REVIEWED",
+      "producer_invocation_recreated": false,
+      "relocated_consumer_qualification": false,
+      "source_restoration": "Exact omitted extractor restoration is referenced inside SOURCE_RESTORATION_REFERENCE.json; no new fetch or reconstruction for this snapshot."
     }
   ],
   "document_snapshot": {
     "manifest": "DOCUMENT_SNAPSHOT_MANIFEST.json",
-    "pdf": "documents/technical-appendix-v44.pdf",
-    "source_zip": "documents/technical-appendix-v44.zip",
-    "scope": "Generic appendix snapshot separate from six scientific evidence archives; previous v43 files retained."
+    "pdf": "documents/technical-appendix-v46.pdf",
+    "source_zip": "documents/technical-appendix-v46.zip",
+    "pages": 45,
+    "scope": "Generic appendix snapshot separate from seven scientific evidence archives; previous v43 and v44 PDF/source ZIP files retained.",
+    "current_document_downloads_including_prior_snapshots": 6
   },
-  "extension_note": "All 14 prior row objects and five prior scientific archive bytes remain unchanged. The sixth archive adds one separately scoped original-initializer row with saved-input qualification records. Revision 01 failure and revision 02 success are both retained.",
-  "new_extension_references_checked": 110,
-  "new_extension_missing_references": []
+  "extension_note": "All 15 prior row objects and six prior scientific archive bytes remain unchanged. The seventh archive adds one static eleven-state residual census row, for 16 reader rows total. It adds no relocated consumer or fresh-host qualification; the fixed preference is dormant at every residual entry. Existing extension qualification histories retain their original scope.",
+  "new_extension_references_checked": 54,
+  "new_extension_missing_references": [],
+  "prior_extension_reference_audit": {
+    "version_tag": "normalized-eleven-evidence-20261021-v1",
+    "references_checked": 110,
+    "missing_references": [],
+    "scope": "Retained historical metadata for the sixth extension."
+  },
+  "reader_row_count": 16,
+  "scientific_archive_count": 7,
+  "document_download_count": 6,
+  "directory_member_references_scope": "Retained historical index count; the seventh-extension member references are separately checked in new_extension_references_checked."
 }

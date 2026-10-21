@@ -317,7 +317,7 @@ Read NATIVE_REGENERATION.md and NATIVE_REGENERATION_VALIDATION.json, then eviden
 LIFT-NODE680-STRICT-STATE-CERTIFICATE
 Read evidence/validation/native-regeneration-20261021/focused_qualification_01/result/RESULT.json and the kit focused/INPUTS.json. The exact wrapper completed typed-bit/rank and 2048-assignment justice checks, sixteen first-input cases, and the 321-state/5136-edge complete safe residual. This witnesses one actual strict-winning source state, not equality of raw core and the entire strict winning region. Prepared public saved inputs; no new synthesis or compiler claim.
 
-DOCUMENT SNAPSHOT
+HISTORICAL DOCUMENT SNAPSHOT (v43)
 The generic 41-page technical appendix PDF and appendix-only TeX source ZIP are under documents/, bound by DOCUMENT_SNAPSHOT_MANIFEST.json. They are separate from the five scientific evidence archives.
 
 
@@ -330,5 +330,12 @@ Read NORMALIZED_ELEVEN.md, NORMALIZED_ELEVEN_RESULTS.json and the archive README
 Qualification history: prior serializer revision incomplete; final revision PASS, two total normal invocations, zero automatic retries.
 Validation: NORMALIZED_ELEVEN_VALIDATION.json
 
-CURRENT DOCUMENT SNAPSHOT (v44)
-The separate current appendix has 42 pages. documents/technical-appendix-v44.pdf and documents/technical-appendix-v44.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json. The v43 PDF and source ZIP described above remain unchanged.
+CURRENT DOCUMENT SNAPSHOT (v46)
+The separate current generic appendix has 45 pages. documents/technical-appendix-v46.pdf and documents/technical-appendix-v46.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json. The previous v43 and v44 PDFs and source ZIPs remain unchanged. The collection now contains seven scientific evidence archives and six document downloads across three appendix snapshots.
+
+SIXTEENTH READER ROW — RESIDUAL CENSUS (STATIC SNAPSHOT)
+
+RESIDUAL-ELEVATOR-11-STATE-CENSUS — Static residual-entry evidence for one public Elevator source.
+Archive: residual-census-evidence-20261021-v1.zip
+Member prefix: residual-census-evidence/
+Start with SUMMARY.json, evidence/INDEPENDENT_RESULT_RECONCILIATION.json and PRESENTATION_TRANSFORMATIONS.json. All 11 entries, 22 graphs, 44 certificates and model/memory BDDs are retained. Both arms pass; 836 examined candidates, zero refinements/fallbacks/rescues/regressions; original I_M(K)=false. Eight entries are noninitial. Reference sources are for inspection, with the full upstream-derived extractor omitted under its existing source-restoration boundary. No relocated replay, fresh-host result or live handoff is claimed.

@@ -1,0 +1,68 @@
+{
+  "schema": "residual-census-public-release-v1",
+  "status": "FROZEN_STATIC_SNAPSHOT_INDEPENDENTLY_REVIEWED",
+  "version_tag": "residual-census-evidence-20261021-v1",
+  "member_prefix": "residual-census-evidence/",
+  "archive": {
+    "path": "archives/residual-census-evidence-20261021-v1.zip",
+    "bytes": 2416876,
+    "sha256": "bbc9ac7969bc0d65485b79b2c61be93cfd0a65a030fc926124b22921111cc08e",
+    "members": 3635,
+    "uncompressed_bytes": 13797013
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 692216,
+    "sha256": "96e81264335b3a5a5f3d45a05a79cc50f677b0012c262bed827e662eab03ffdf",
+    "self_excluded": true
+  },
+  "summary": {
+    "schema": "residual-static-public-snapshot-summary-v1",
+    "scope": "Static presentation of already completed local evidence; no new native execution, checker execution, solver run, fresh-host validation or regeneration qualification.",
+    "source_count": 1,
+    "entry_count": 11,
+    "original_initializer_compatible": 3,
+    "noninitial_entries": 8,
+    "complete_graphs": 22,
+    "independent_graph_certificates": 44,
+    "all_arms_strict_and_nonconflicting": true,
+    "examined_candidates": 836,
+    "refined_candidates": 0,
+    "no_preferred_candidate_fallbacks": 0,
+    "rescues": 0,
+    "regressions": 0,
+    "original_I_M_K": false,
+    "interpretation": "The fixed preference is dormant on this census. Both arms pass from all eleven fresh residual singleton entries. This does not repair the original initializer verdict or demonstrate an executed old-controller handoff.",
+    "evidence": "evidence/INDEPENDENT_RESULT_RECONCILIATION.json",
+    "adoption": "evidence/ADOPTION_SUMMARY.json"
+  },
+  "validation": {
+    "status": "PASS_SCOPED_STATIC_PRIVACY_CONTENT_AND_DISTRIBUTION_PROVENANCE",
+    "path": "evidence/validation/residual-census-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+    "bytes": 3706,
+    "sha256": "dd8ba71c5c4d94c2a0d4e03b71e56db9d2ed00294c8fd95aee1366e81af9a955",
+    "derivation": "Exact auditor-authored anonymous summary, separately pinning the complete local detailed review.",
+    "detailed_local_review": {
+      "bytes": 6961,
+      "sha256": "b39f9b3c7a531c9e8bed96d48267ff633fcbb077d1e6410824b504ef106e609c"
+    }
+  },
+  "scope": "Static evidence snapshot of one completed fixed residual-entry census; no reader replay qualification.",
+  "limits": [
+    "Static snapshot of completed local evidence; no relocated consumer, new scientific execution or fresh-host qualification.",
+    "Fresh rank-0 private memory at each residual entry; no executed old-controller or live memory-preserving handoff.",
+    "All eleven intervention comparisons are dormant; zero refinements, rescues and regressions. Original initializer I_M(K) remains false.",
+    "Source bytes from the licensed public corpus are retained with their BSD notice. The full upstream-derived extractor is omitted and referenced by the existing exact fourth-archive restoration recipe.",
+    "Embedded original execution hashes remain historical attestations. The delivered manifest and presentation ledger bind anonymous metadata copies."
+  ],
+  "distribution": {
+    "kind": "Repository file at a new immutable versioned Git tag",
+    "tag": "residual-census-evidence-20261021-v1",
+    "publication_status": "Prepared release contents; availability is established by the versioned repository tag."
+  },
+  "prior_evidence": {
+    "prior_scientific_archives": 6,
+    "prior_tags_unchanged": true,
+    "prior_archive_bytes_unchanged": true
+  }
+}

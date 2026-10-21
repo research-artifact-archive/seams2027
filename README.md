@@ -1,6 +1,6 @@
 # Saved Controller Evidence
 
-An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements.
+An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements. The seventh preserves a separate eleven-state residual-entry census as static evidence.
 
 ## Lift causal extension
 
@@ -14,14 +14,18 @@ The [fifth addendum](NATIVE_REGENERATION.md) supplies the fixed Lift public-sour
 
 The [sixth addendum](NORMALIZED_ELEVEN.md) preserves the original initializers of all eleven replacement contracts. The existing whole normalized route produces eight complete graphs accepted for strictness and legal-prefix cooperation, plus three independently checked empty-V refusals with null controller flags. All eleven original arenas and full V/K functions match saved comparators. The exact final archive passed one bounded saved-input consumer invocation with separately supplied exact sources; an earlier serializer failure and its narrow repair are retained. [The validation record](NORMALIZED_ELEVEN_VALIDATION.json) reports both invocations, six final malformed-input controls, the independent review, and the single-host and shared-parser limits. This adds no paired 8-versus-7 success-rate, necessity or deployment claim, and leaves the original fourteen-model regression unchanged.
 
-The current [42-page generic technical appendix PDF](documents/technical-appendix-v44.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v44.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The previous v43 PDF and source ZIP remain unchanged.
+## Residual-entry census
+
+The [seventh addendum](RESIDUAL_CENSUS.md) preserves all eleven saved continuation-region entries of one public Elevator source, including eight noninitial states. Both extraction arms pass at every entry according to both retained audit routes (22 graphs, 44 certificates). The fixed preference makes no refinements among 836 examined candidates, so this is a dormant-intervention result with zero rescues and regressions; the original initializer verdict remains false. This static snapshot includes exact scientific bytes and a metadata transformation ledger, with no relocated replay, fresh-host or live-handoff claim.
+
+The current [45-page generic technical appendix PDF](documents/technical-appendix-v46.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v46.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The previous v43 and v44 PDFs and source ZIPs remain unchanged.
 
 ## Start with the public files
 
-Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/normalized-eleven-evidence-20261021-v1), which includes all six scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md). Python 3.10 or newer and its standard library are sufficient for this first check:
+Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/residual-census-evidence-20261021-v1), which includes all seven scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md); the seventh is an inspection-only [residual-entry snapshot](RESIDUAL_CENSUS.md). Python 3.10 or newer and its standard library are sufficient for this first check:
 
 ```sh
-git clone --branch normalized-eleven-evidence-20261021-v1 --depth 1 \
+git clone --branch residual-census-evidence-20261021-v1 --depth 1 \
   https://github.com/research-artifact-archive/seams2027.git
 cd seams2027
 python3 -I -S -B tools/verify_public.py --archive-dir archives
@@ -44,7 +48,7 @@ The destination must not already exist. Allow approximately 340 MB for extractio
 | [Verification addendum](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/verification-addendum-public-20261020-v1.zip) | Vehicle evidence, source-equation checks, and bounded reader recipes |
 | [Lift direct static evidence](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/lift-direct-static-public-20261020-v1.zip) | Direct source certificate, graphs, source-route history, and explicit qualification limits |
 
-[SHA256SUMS](SHA256SUMS) lists all six archive and four document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the three later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all six archives and both document snapshots; earlier tags and download bytes remain unchanged.
+[SHA256SUMS](SHA256SUMS) lists all seven archive and six document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the four later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all seven archives and all three document snapshots; earlier tags and download bytes remain unchanged.
 
 ## Find a result
 
@@ -56,6 +60,7 @@ The retained scope includes:
 - **C14:** the same 14 originals across four synthesis paths, including refusals and unknown results.
 - **R11:** the historical fixed eleven replacement candidates, with eight cooperative initializers and seven returned graphs passing both checks.
 - **Normalized eleven:** a separately scoped whole-route result preserving original initializers, with eight accepted complete graphs and three empty-V refusals. It does not form a paired rate comparison with R11.
+- **Residual-entry census:** one public source, eleven fresh residual entries, 22 accepted graphs and 44 retained certificates; the intervention is dormant at all entries and the original initializer verdict remains false.
 - **Guard:** a separate constructed control with an [unchanged 115-byte source](evidence/transition_guard.spectra), a trivial strict cooperative strategy, and a recorded native refusal by the configured route; the refusal mechanism remains unresolved.
 - **Lift T:** the separate positive source policy and complete transformed-model extension, alongside the strict but non-cooperative selected controller.
 - **Vehicle:** policy, initialization, continuation, and source-equation evidence with their individual bounds.
