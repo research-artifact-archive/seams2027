@@ -330,8 +330,8 @@ Read NORMALIZED_ELEVEN.md, NORMALIZED_ELEVEN_RESULTS.json and the archive README
 Qualification history: prior serializer revision incomplete; final revision PASS, two total normal invocations, zero automatic retries.
 Validation: NORMALIZED_ELEVEN_VALIDATION.json
 
-CURRENT DOCUMENT SNAPSHOT (v46)
-The separate current generic appendix has 45 pages. documents/technical-appendix-v46.pdf and documents/technical-appendix-v46.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json. The previous v43 and v44 PDFs and source ZIPs remain unchanged. The collection now contains seven scientific evidence archives and six document downloads across three appendix snapshots.
+HISTORICAL DOCUMENT SNAPSHOT (v46)
+The retained v46 generic appendix has 45 pages. documents/technical-appendix-v46.pdf and documents/technical-appendix-v46.zip remain bound by DOCUMENT_SNAPSHOT_MANIFEST.json, alongside the earlier v43 and v44 PDFs and source ZIPs. At the v46 release, the collection contained seven scientific evidence archives and six document downloads across three appendix snapshots; the current v47 navigation appears below.
 
 SIXTEENTH READER ROW — RESIDUAL CENSUS (STATIC SNAPSHOT)
 
@@ -339,3 +339,90 @@ RESIDUAL-ELEVATOR-11-STATE-CENSUS — Static residual-entry evidence for one pub
 Archive: residual-census-evidence-20261021-v1.zip
 Member prefix: residual-census-evidence/
 Start with SUMMARY.json, evidence/INDEPENDENT_RESULT_RECONCILIATION.json and PRESENTATION_TRANSFORMATIONS.json. All 11 entries, 22 graphs, 44 certificates and model/memory BDDs are retained. Both arms pass; 836 examined candidates, zero refinements/fallbacks/rescues/regressions; original I_M(K)=false. Eight entries are noninitial. Reference sources are for inspection, with the full upstream-derived extractor omitted under its existing source-restoration boundary. No relocated replay, fresh-host result or live handoff is claimed.
+
+
+SEVENTEENTH READER ROW — NONINITIAL HANDOFF (STATIC SNAPSHOT)
+
+LIFT-NONINITIAL-HANDOFF-10-BOUNDARY-CENSUS — On one constructed same-Lift handoff census, cooperation changes admission at every declared noninitial boundary while source/history values are preserved: strict-only retains the old controller in ten episodes; strict-and-cooperative installs the earlier eligible normalized candidate in ten episodes.
+Archive: noninitial-handoff-evidence-20261021-v1.zip
+Member prefix: noninitial-handoff-evidence/
+input_navigation:
+  SUMMARY.json
+  evidence/COHORT.json
+  evidence/EXPERIMENT_PLAN.json
+  evidence/INPUTS.json
+  SOURCE_RESTORATION_REFERENCE.json
+  PRESENTATION_TRANSFORMATIONS.json
+  REFERENCE_CLOSURE.json
+  OMISSIONS.json
+input_models:
+  inputs/native/model.json
+  inputs/normalized/model.json
+  inputs/preference/model.json
+  inputs/original_K/model.json
+saved_graphs:
+  inputs/native/controller.json
+  inputs/normalized/controller.json
+  inputs/preference/controller.json
+saved_outputs:
+  execution/old_gate_source.json
+  execution/old_gate_saved_model.json
+  execution/candidate_roots_source.json
+  execution/candidate_roots_saved_model.json
+  execution/runtime_01/RESULT.json
+  execution/runtime_01/EVENTS.jsonl
+  execution/INDEPENDENT_EVENT_AUDIT.json
+  evidence/INDEPENDENT_SCIENTIFIC_RECONCILIATION.json
+  evidence/ROOT_OLD_GATE_ADOPTION.json
+  evidence/ROOT_CANDIDATE_CERTIFICATES_ADOPTION.json
+process_receipts:
+  processes/old_gate_source_01/RECEIPT.json
+  processes/old_gate_saved_model_01/RECEIPT.json
+  processes/candidate_roots_source_01/RECEIPT.json
+  processes/candidate_roots_saved_model_01/RECEIPT.json
+  processes/runtime_01/RECEIPT.json
+  processes/event_audit_01/RECEIPT.json
+checker_sources:
+  reference/code/source_route/check_source_roots.py
+  reference/code/saved_route/check_roots.py
+  reference/code/source_route/audit_handoff_events.py
+runtime_sources:
+  reference/code/runtime/run_handoff.py
+  reference/code/root/launch_bounded.py
+qualification_records:
+  qualification/qualification_launcher_07/RESULT.json
+  qualification/qualification_runtime_abstention_interface_01/RESULT.json
+  qualification/qualification_runtime_event_interface_01/RESULT.json
+  qualification/qualification_runtime_rev02/RESULT.json
+  qualification/qualification_saved_04/RESULT.json
+  qualification/qualification_source_03/RESULT.json
+  qualification/qualification_source_events_03/RESULT.json
+  qualification/qualification_source_events_envelope_01/RESULT.json
+  qualification/qualification_source_events_full_abstention_01.json
+  qualification/qualification_source_events_full_cli_01.json
+omitted_source_inputs (not included; restoration reference only):
+  inputs/lift_new.spectra
+  inputs/lift_old_no_b3.spectra
+reader_recipe: README.md
+outer_repository_saved_outputs (repository-root paths):
+  NONINITIAL_HANDOFF_MANIFEST.json
+  evidence/validation/noninitial-handoff-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json
+Expected saved result: 10 reached old private nodes / 8 distinct source-history valuations; 26-node/120-edge old-mode graph strict and cooperative; 40 rooted candidates per independent route, all strict with input coverage. Retained-old/fresh-native cooperation 0/10 each, fresh-normalized/fresh-preference 10/10 each. 20 executed episodes, 302 events, 56 old-prefix and 44 post-change commits; all suffixes fair lassos; post-change b3=true count 0.
+Execution boundary: Completed Python runtime and independent event audit over immutable saved graphs. Static publication snapshot only; earlier public replay entrypoints do not execute this handoff experiment.
+Selection scope: One outcome-informed constructed same-Lift old mode G !b3, selected after inspection of three single-button restrictions; ten private nodes are not ten independent applications.
+Limits:
+  All three single-button restrictions were statically inspected before selecting G !b3; selection is outcome-informed, not held out.
+  The old contract is constructed by adding G !b3 to the same Lift source. This is one model with ten old private nodes/eight source-history valuations, not ten independent applications.
+  The nonzero response monitors have their response predicates already true at the boundary and clear on the next update. No unserved pending request is carried past the boundary.
+  Every executed suffix is a fair lasso under the fixed lexicographic input policy, which never chooses b3=true. No measured failure avoidance or behavioral activation by b3=true is established.
+  Normalized extraction precedes the preference candidate in the frozen pool and is selected in all ten cooperative-policy episodes; preference is eligible but never installed. Necessity of the preference extractor is not supported.
+  Fresh targets use their actually stored rank-zero private nodes. Source/history continuity does not establish arbitrary transfer of old private controller memory.
+  The original 11 replacement, 14-pair negative, and 59-case diagnostic cohorts, and the v46 Elevator residual census remain separate and unchanged.
+  No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.
+  RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim.
+
+CURRENT DOCUMENT SNAPSHOT (v47)
+The separate current generic appendix has 49 pages. documents/technical-appendix-v47.pdf and documents/technical-appendix-v47.zip are bound by DOCUMENT_SNAPSHOT_MANIFEST.json; the source ZIP contains 28 TeX files. The previous v43, v44 and v46 PDFs and source ZIPs remain unchanged. The collection contains eight scientific evidence archives and eight document downloads across four appendix snapshots.
+
+CURRENT READER SCOPE
+EVIDENCE_READER_INDEX.json and CLAIM_TO_FILE_INDEX.json now contain 17 reader rows. Their prior 16 row objects and historical extension objects remain unchanged. The eighth archive adds static evidence of completed checks and episodes; packaging adds no relocated replay, native execution or fresh-host qualification. The earlier tools/verify_public.py integrity command checks only the original three scientific archives. Later archives have their separate descriptors; NONINITIAL_HANDOFF_MANIFEST.json binds the eighth archive and its independent static packaging review.

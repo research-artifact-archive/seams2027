@@ -1,0 +1,99 @@
+{
+  "schema": "v47-independent-public-snapshot-review-public-summary-v1",
+  "status": "PASS_SCOPED_STATIC_PRIVACY_CONTENT_AND_DISTRIBUTION_PROVENANCE",
+  "created_utc": "2026-10-21T07:53:05.688049+00:00",
+  "scope": "Static byte, parsed-value, closure, privacy and declared distribution-boundary audit. No checker/runtime/solver/native/compiler/retrieval code was imported or run.",
+  "blocking_issues": [],
+  "counts": {
+    "zip_members": 152,
+    "manifest_files": 151,
+    "copied_files": 143,
+    "byte_identical": 76,
+    "metadata_changed": 67,
+    "changed_location_fields": 5737,
+    "immutable_graphs": 3,
+    "immutable_printers": 2,
+    "immutable_bdds": 43,
+    "immutable_python_sources": 21,
+    "execution_records": 7,
+    "process_files": 30,
+    "actual_processes": 6,
+    "final_qualification_records": 10,
+    "reference_targets": 3907,
+    "reference_occurrences": 5518,
+    "reference_statuses": {
+      "omitted": 3542,
+      "included_original_location": 136,
+      "included_content_alias": 229
+    },
+    "preserved_v46_protected_files": 65,
+    "preserved_prior_tracked_commit_files": 278,
+    "preserved_prior_tag_refs": 9
+  },
+  "checks": {
+    "zip_crc_and_every_member_exact": true,
+    "safe_unique_lexical_regular_members": true,
+    "all_original_and_delivered_pins_verified": true,
+    "all_json_and_jsonl_types_keys_order_membership_preserved": true,
+    "only_recognized_location_strings_changed": true,
+    "every_changed_leaf_has_exact_ledger_record": true,
+    "graphs_models_bdds_printers_results_events_scientific_values_preserved": true,
+    "all_6_processes_and_40_roots_and_20_episodes_retained": true,
+    "every_embedded_pin_occurrence_classified": true,
+    "summary_exactly_matches_adopted_counts_interpretation_limits": true,
+    "source_omission_and_exact_previous_restoration_reference": true,
+    "old_mode_append_exact_59_bytes": true,
+    "existing_artifact_license_exact": true,
+    "no_dependency_payload_or_paper_source_redistribution": true,
+    "no_private_location_or_email_patterns": true,
+    "reader_claims_and_paths_reviewed": true,
+    "prior_7_archives_and_9_tags_preserved": true
+  },
+  "privacy_findings": [],
+  "canonical_source_literals": [
+    {
+      "path": "reference/code/saved_route/check_roots.py",
+      "literal": "/usr/bin/env"
+    },
+    {
+      "path": "reference/code/saved_route/qualify_saved_roots.py",
+      "literal": "/usr/bin/env"
+    },
+    {
+      "path": "reference/code/root/launch_bounded.py",
+      "literal": "/bin/ps"
+    }
+  ],
+  "scientific_operations": 0,
+  "native_compiler_network_or_publication_operations": 0,
+  "limitations": [
+    "This is a static evidence snapshot, not a relocated runnable package. 3542 embedded reference targets are explicit omissions, chiefly synthetic fixtures.",
+    "Historical embedded execution hashes and process identities remain original; delivered metadata copies are bound by the separate manifest and transformation ledger.",
+    "Distribution review checks consistency with the existing artifact license, source omission and prior restoration policy; it is not an independent legal opinion.",
+    "No fresh-host replay, source retrieval, scientific rerun, public upload or anonymous network adoption was performed by this reviewer."
+  ],
+  "derived_from_full_local_review": {
+    "bytes": 5499,
+    "sha256": "b8880532c5350109a4718511f134a538b33b4976b797d084f9aead5b59d6055a"
+  },
+  "archive": {
+    "path": "noninitial-handoff-evidence-20261021-v1.zip",
+    "bytes": 1421188,
+    "sha256": "91173cacf4375f097865a673fee5b297979d75a755a5181ceaaac7669f565fe3"
+  },
+  "manifest": {
+    "path": "noninitial-handoff-evidence/MANIFEST.json",
+    "bytes": 26378,
+    "sha256": "bbc5c06b33d9737d7e53df3207a12fe492959bb8c843b2c3d1d27f84f0c9f820"
+  },
+  "builder": {
+    "path": "package_handoff_snapshot.py",
+    "bytes": 24948,
+    "sha256": "aea042e432590093955788087cf87c9a8eb6a430efdeddf3ba4ba2e8738857d9"
+  },
+  "outer_reader": {
+    "path": "NONINITIAL_HANDOFF.md",
+    "bytes": 3931,
+    "sha256": "b5a3975ff77cf576acd03cb23977911287ef2726c6967c54dcf35556a386b65d"
+  }
+}

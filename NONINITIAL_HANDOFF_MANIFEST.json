@@ -1,0 +1,110 @@
+{
+  "schema": "noninitial-handoff-public-release-v1",
+  "status": "FROZEN_STATIC_SNAPSHOT_INDEPENDENTLY_REVIEWED",
+  "version_tag": "noninitial-handoff-evidence-20261021-v1",
+  "member_prefix": "noninitial-handoff-evidence/",
+  "archive": {
+    "path": "archives/noninitial-handoff-evidence-20261021-v1.zip",
+    "bytes": 1421188,
+    "sha256": "91173cacf4375f097865a673fee5b297979d75a755a5181ceaaac7669f565fe3",
+    "members": 152,
+    "uncompressed_bytes": 20397320
+  },
+  "inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 26378,
+    "sha256": "bbc5c06b33d9737d7e53df3207a12fe492959bb8c843b2c3d1d27f84f0c9f820",
+    "self_excluded": true
+  },
+  "reader_guide": {
+    "path": "NONINITIAL_HANDOFF.md",
+    "bytes": 3931,
+    "sha256": "b5a3975ff77cf576acd03cb23977911287ef2726c6967c54dcf35556a386b65d"
+  },
+  "summary": {
+    "path": "SUMMARY.json",
+    "bytes": 3882,
+    "sha256": "bbca05b35c14f6220c1cabf1e3ee26366228985491992bb33122d954ee2a8806",
+    "observations": {
+      "boundary_private_nodes": 10,
+      "distinct_source_history_states": 8,
+      "candidate_roots_per_independent_checker": 40,
+      "all_boundaries_in_original_K": true,
+      "old_complete_graph_nodes": 26,
+      "old_complete_graph_edges": 120,
+      "old_strict_and_cooperative": true,
+      "complete_rooted_graph_results": {
+        "old_mode": {
+          "nodes": 26,
+          "edges": 120,
+          "strict": true,
+          "cooperative": true
+        },
+        "retained_old": {
+          "roots": 10,
+          "strict": 10,
+          "cooperative": 0
+        },
+        "fresh_native": {
+          "roots": 10,
+          "strict": 10,
+          "cooperative": 0
+        },
+        "fresh_normalized": {
+          "roots": 10,
+          "strict": 10,
+          "cooperative": 10
+        },
+        "fresh_preference": {
+          "roots": 10,
+          "strict": 10,
+          "cooperative": 10
+        }
+      },
+      "executed_episodes": 20,
+      "decisions_changed_by_cooperation_filter": 10,
+      "strict_only_retains_old": 10,
+      "strict_and_cooperative_installs_normalized": 10,
+      "executed_old_prefix_commits": 56,
+      "executed_post_change_commits": 44,
+      "all_executed_suffixes_fair_lassos": true,
+      "post_change_b3_true_inputs": 0,
+      "source_and_nonzero_logical_history_preserved": true
+    },
+    "interpretation": "On this constructed same-Lift handoff census, cooperation changes admission at every declared noninitial boundary while the executed source object and ten source/history values are preserved. The universal rooted graph certificates, not a failure observed on the bounded trace, reject retained/native candidates for cooperation."
+  },
+  "validation": {
+    "status": "PASS_SCOPED_STATIC_PRIVACY_CONTENT_AND_DISTRIBUTION_PROVENANCE",
+    "path": "evidence/validation/noninitial-handoff-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+    "bytes": 4111,
+    "sha256": "a2d46afa1734cc1c0976c72e9a44914ea768b35c7d614a3703b83711170f1ef9",
+    "derivation": "Exact auditor-authored anonymous summary, separately pinning the complete local detailed review.",
+    "detailed_local_review": {
+      "bytes": 5499,
+      "sha256": "b8880532c5350109a4718511f134a538b33b4976b797d084f9aead5b59d6055a"
+    }
+  },
+  "scope": "Static snapshot of completed saved-graph certificates and twenty executed Python handoff episodes; no relocated consumer qualification.",
+  "limits": [
+    "All three single-button restrictions were statically inspected before selecting G !b3; selection is outcome-informed, not held out.",
+    "The old contract is constructed by adding G !b3 to the same Lift source. This is one model with ten old private nodes/eight source-history valuations, not ten independent applications.",
+    "The nonzero response monitors have their response predicates already true at the boundary and clear on the next update. No unserved pending request is carried past the boundary.",
+    "Every executed suffix is a fair lasso under the fixed lexicographic input policy, which never chooses b3=true. No measured failure avoidance or behavioral activation by b3=true is established.",
+    "Normalized extraction precedes the preference candidate in the frozen pool and is selected in all ten cooperative-policy episodes; preference is eligible but never installed. Necessity of the preference extractor is not supported.",
+    "Fresh targets use their actually stored rank-zero private nodes. Source/history continuity does not establish arbitrary transfer of old private controller memory.",
+    "The original 11 replacement, 14-pair negative, and 59-case diagnostic cohorts, and the v46 Elevator residual census remain separate and unchanged.",
+    "No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.",
+    "RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim."
+  ],
+  "distribution": {
+    "kind": "Repository file at a new immutable versioned Git tag",
+    "tag": "noninitial-handoff-evidence-20261021-v1",
+    "publication_status": "Prepared release contents; availability is established by the versioned repository tag."
+  },
+  "prior_evidence": {
+    "prior_scientific_archives": 7,
+    "prior_tag_refs": 9,
+    "prior_tags_unchanged": true,
+    "prior_archive_bytes_unchanged": true
+  }
+}

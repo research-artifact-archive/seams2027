@@ -50,7 +50,7 @@ Installed-runtime hash inventories identify the qualified host contents without 
 
 ## Technical appendix document snapshot
 
-The generic appendix PDF and appendix-only TeX source ZIP are original documentation supplied separately under `documents/`, with the included original-contribution license. Citations identify external literature without redistributing the cited paper PDFs. The main manuscript and its source tree are not included. `DOCUMENT_SNAPSHOT_MANIFEST.json` binds the document identities; this snapshot is separate from the seven scientific evidence archives.
+The generic appendix PDF and appendix-only TeX source ZIP are original documentation supplied separately under `documents/`, with the included original-contribution license. Citations identify external literature without redistributing the cited paper PDFs. The main manuscript and its source tree are not included. `DOCUMENT_SNAPSHOT_MANIFEST.json` binds the document identities; this snapshot is separate from the eight scientific evidence archives.
 
 ## Normalized-eleven addendum
 
@@ -61,3 +61,10 @@ The qualification used separately prepared exact local sources and did not fetch
 ## Residual-entry census snapshot
 
 The seventh archive retains the original corpus Elevator specification under the exact Zenodo BSD 3-Clause notice supplied inside the ZIP. Original wrapper/observer and checker sources, saved graphs/models/BDD data and records are included. The full upstream-derived preference extractor is omitted; its pin and existing fourth-archive source-only restoration reference remain explicit. No JDK, Python runtime, upstream JAR, native binary, compiled class or paper PDF is distributed. Metadata-only location normalization is disclosed in a per-file and per-field ledger; historical execution hashes are not relabeled as hashes of the public copies. This is an inspection-only static snapshot, with no new scientific or reader qualification run.
+
+
+## Noninitial handoff snapshot
+
+The eighth archive preserves completed graph/model/BDD evidence, two independent rooted-candidate checks, twenty Python runtime episodes, the independent event audit, six process records, and original checker/runtime/qualification code. It omits both paper-derived Lift specifications and all derived specification copies in synthetic fixtures. SOURCE_RESTORATION_REFERENCE.json binds their exact identities to the existing fourth-archive source-only recipe and records the original 59-byte append that defines the old mode. Retrieval by a reader preserves the distributor's terms and grants no additional redistribution rights. The Elevator corpus license from the separate seventh archive does not license these Lift source bytes.
+
+No runtime, upstream JAR, native binary, compiled class, source cache, full upstream extractor or third-party paper PDF is included. Only final synthetic-qualification summaries are retained, with omitted fixture targets explicitly classified. Location-only metadata normalization, including JSONL records and JSON stdout, is disclosed per file and field; original execution hashes remain historical. This is a static inspection snapshot with no new scientific execution, relocated consumer or fresh-host qualification.

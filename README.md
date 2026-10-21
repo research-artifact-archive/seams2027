@@ -1,6 +1,6 @@
 # Saved Controller Evidence
 
-An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements. The seventh preserves a separate eleven-state residual-entry census as static evidence.
+An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements. The seventh preserves a separate eleven-state residual-entry census as static evidence. The eighth preserves a bounded executed handoff census on one constructed Lift model.
 
 ## Lift causal extension
 
@@ -18,14 +18,18 @@ The [sixth addendum](NORMALIZED_ELEVEN.md) preserves the original initializers o
 
 The [seventh addendum](RESIDUAL_CENSUS.md) preserves all eleven saved continuation-region entries of one public Elevator source, including eight noninitial states. Both extraction arms pass at every entry according to both retained audit routes (22 graphs, 44 certificates). The fixed preference makes no refinements among 836 examined candidates, so this is a dormant-intervention result with zero rescues and regressions; the original initializer verdict remains false. This static snapshot includes exact scientific bytes and a metadata transformation ledger, with no relocated replay, fresh-host or live-handoff claim.
 
-The current [45-page generic technical appendix PDF](documents/technical-appendix-v46.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v46.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The previous v43 and v44 PDFs and source ZIPs remain unchanged.
+## Noninitial handoff census
+
+The [eighth addendum](NONINITIAL_HANDOFF.md) preserves ten reached old private nodes (eight source/history valuations), forty candidate roots checked by two independent routes, and twenty executed Python handoff episodes. Strict-only admission retains the old controller ten times; adding cooperation selects the earlier eligible normalized candidate ten times. The old restriction is outcome-informed, and the nonzero response monitors already have their response predicates true at the boundary. All executed suffixes are fair lassos, with no post-change `b3=true` input, so no measured failure-avoidance or activation claim follows. This is a static snapshot; earlier public replay entrypoints do not execute these episodes.
+
+The current [49-page generic technical appendix PDF](documents/technical-appendix-v47.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v47.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The source ZIP contains 28 TeX files. The previous v43, v44 and v46 PDFs and source ZIPs remain unchanged.
 
 ## Start with the public files
 
-Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/residual-census-evidence-20261021-v1), which includes all seven scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md); the seventh is an inspection-only [residual-entry snapshot](RESIDUAL_CENSUS.md). Python 3.10 or newer and its standard library are sufficient for this first check:
+Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/noninitial-handoff-evidence-20261021-v1), which includes all eight scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md); the seventh is an inspection-only [residual-entry snapshot](RESIDUAL_CENSUS.md); and the eighth is a static [noninitial-handoff snapshot](NONINITIAL_HANDOFF.md). Python 3.10 or newer and its standard library are sufficient for this first check:
 
 ```sh
-git clone --branch residual-census-evidence-20261021-v1 --depth 1 \
+git clone --branch noninitial-handoff-evidence-20261021-v1 --depth 1 \
   https://github.com/research-artifact-archive/seams2027.git
 cd seams2027
 python3 -I -S -B tools/verify_public.py --archive-dir archives
@@ -48,7 +52,7 @@ The destination must not already exist. Allow approximately 340 MB for extractio
 | [Verification addendum](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/verification-addendum-public-20261020-v1.zip) | Vehicle evidence, source-equation checks, and bounded reader recipes |
 | [Lift direct static evidence](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/lift-direct-static-public-20261020-v1.zip) | Direct source certificate, graphs, source-route history, and explicit qualification limits |
 
-[SHA256SUMS](SHA256SUMS) lists all seven archive and six document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the four later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all seven archives and all three document snapshots; earlier tags and download bytes remain unchanged.
+[SHA256SUMS](SHA256SUMS) lists all eight archive and eight document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the five later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all eight archives and all four document snapshots; earlier tags and download bytes remain unchanged.
 
 ## Find a result
 
@@ -61,6 +65,7 @@ The retained scope includes:
 - **R11:** the historical fixed eleven replacement candidates, with eight cooperative initializers and seven returned graphs passing both checks.
 - **Normalized eleven:** a separately scoped whole-route result preserving original initializers, with eight accepted complete graphs and three empty-V refusals. It does not form a paired rate comparison with R11.
 - **Residual-entry census:** one public source, eleven fresh residual entries, 22 accepted graphs and 44 retained certificates; the intervention is dormant at all entries and the original initializer verdict remains false.
+- **Noninitial handoff:** one constructed same-Lift model, ten old private nodes, forty dual-checked candidate roots and twenty executed episodes; cooperation changes admission, while no post-change button activation or measured failure avoidance is shown.
 - **Guard:** a separate constructed control with an [unchanged 115-byte source](evidence/transition_guard.spectra), a trivial strict cooperative strategy, and a recorded native refusal by the configured route; the refusal mechanism remains unresolved.
 - **Lift T:** the separate positive source policy and complete transformed-model extension, alongside the strict but non-cooperative selected controller.
 - **Vehicle:** policy, initialization, continuation, and source-equation evidence with their individual bounds.
@@ -72,7 +77,7 @@ These are saved results. The archives distinguish incomplete runs, resource limi
 
 The original three public ZIPs omit 97 copies of third-party source text whose redistribution terms are not established here: published specification listings and their diffs, selected upstream Java/C sources, and one literature-text bundle. All retained archive members are byte-identical to their counterparts in the three earlier anonymous evidence archives named in `RELEASE_MANIFEST.json`. Earlier metadata anonymization and serialization can give these copies different hashes from their original execution files; the inner manifests and original/copy or receipt ledgers distinguish those identities. Mathematical outputs, controllers, models, and checker implementations remain in the public downloads.
 
-These omissions do not prevent reading the saved results. They do mean the original closed-package metadata check is not ready immediately after extraction. The source-fetch helpers retrieve the omitted material directly from its original distributors and verify every restored byte against the historical hash. The sixth archive omits eleven additional paper-derived specification copies and has a separate source-only restoration manifest inside that archive. Its helper verifies exact listing and reconstructed bytes; whole-HTML historical hash equality is reported without being required. No fresh source retrieval was part of its saved-input qualification.
+These omissions do not prevent reading the saved results. They do mean the original closed-package metadata check is not ready immediately after extraction. The source-fetch helpers retrieve the omitted material directly from its original distributors and verify every restored byte against the historical hash. The sixth archive omits eleven additional paper-derived specification copies and has a separate source-only restoration manifest inside that archive. Its helper verifies exact listing and reconstructed bytes; whole-HTML historical hash equality is reported without being required. No fresh source retrieval was part of its saved-input qualification. The eighth static snapshot omits both paper-derived Lift source copies; its source-restoration reference identifies the existing fourth-archive recipe and the exact old-mode append. It does not add a relocated replay entrypoint.
 
 First restore the published specification listings. This uses only the Python standard library:
 

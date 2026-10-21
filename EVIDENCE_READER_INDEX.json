@@ -1,5 +1,5 @@
 {
-  "status": "SEVENTH_EXTENSION_STATIC_RESIDUAL_CENSUS_WITH_DOCUMENT_SNAPSHOT",
+  "status": "EIGHTH_EXTENSION_STATIC_NONINITIAL_HANDOFF_WITH_DOCUMENT_SNAPSHOT",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -29,6 +29,10 @@
     "ResidualCensus": {
       "archive": "residual-census-evidence-20261021-v1.zip",
       "member_prefix": "residual-census-evidence/"
+    },
+    "NoninitialHandoff": {
+      "archive": "noninitial-handoff-evidence-20261021-v1.zip",
+      "member_prefix": "noninitial-handoff-evidence/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -968,6 +972,96 @@
         "Source bytes from the licensed public corpus are retained with their BSD notice. The full upstream-derived extractor is omitted and referenced by the existing exact fourth-archive restoration recipe.",
         "Embedded original execution hashes remain historical attestations. The delivered manifest and presentation ledger bind anonymous metadata copies."
       ]
+    },
+    {
+      "id": "LIFT-NONINITIAL-HANDOFF-10-BOUNDARY-CENSUS",
+      "archive": "NoninitialHandoff",
+      "claim": "On one constructed same-Lift handoff census, cooperation changes admission at every declared noninitial boundary while source/history values are preserved: strict-only retains the old controller in ten episodes; strict-and-cooperative installs the earlier eligible normalized candidate in ten episodes.",
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/COHORT.json",
+        "evidence/EXPERIMENT_PLAN.json",
+        "evidence/INPUTS.json",
+        "SOURCE_RESTORATION_REFERENCE.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "REFERENCE_CLOSURE.json",
+        "OMISSIONS.json"
+      ],
+      "input_models": [
+        "inputs/native/model.json",
+        "inputs/normalized/model.json",
+        "inputs/preference/model.json",
+        "inputs/original_K/model.json"
+      ],
+      "saved_graphs": [
+        "inputs/native/controller.json",
+        "inputs/normalized/controller.json",
+        "inputs/preference/controller.json"
+      ],
+      "saved_outputs": [
+        "execution/old_gate_source.json",
+        "execution/old_gate_saved_model.json",
+        "execution/candidate_roots_source.json",
+        "execution/candidate_roots_saved_model.json",
+        "execution/runtime_01/RESULT.json",
+        "execution/runtime_01/EVENTS.jsonl",
+        "execution/INDEPENDENT_EVENT_AUDIT.json",
+        "evidence/INDEPENDENT_SCIENTIFIC_RECONCILIATION.json",
+        "evidence/ROOT_OLD_GATE_ADOPTION.json",
+        "evidence/ROOT_CANDIDATE_CERTIFICATES_ADOPTION.json"
+      ],
+      "process_receipts": [
+        "processes/old_gate_source_01/RECEIPT.json",
+        "processes/old_gate_saved_model_01/RECEIPT.json",
+        "processes/candidate_roots_source_01/RECEIPT.json",
+        "processes/candidate_roots_saved_model_01/RECEIPT.json",
+        "processes/runtime_01/RECEIPT.json",
+        "processes/event_audit_01/RECEIPT.json"
+      ],
+      "checker_sources": [
+        "reference/code/source_route/check_source_roots.py",
+        "reference/code/saved_route/check_roots.py",
+        "reference/code/source_route/audit_handoff_events.py"
+      ],
+      "runtime_sources": [
+        "reference/code/runtime/run_handoff.py",
+        "reference/code/root/launch_bounded.py"
+      ],
+      "qualification_records": [
+        "qualification/qualification_launcher_07/RESULT.json",
+        "qualification/qualification_runtime_abstention_interface_01/RESULT.json",
+        "qualification/qualification_runtime_event_interface_01/RESULT.json",
+        "qualification/qualification_runtime_rev02/RESULT.json",
+        "qualification/qualification_saved_04/RESULT.json",
+        "qualification/qualification_source_03/RESULT.json",
+        "qualification/qualification_source_events_03/RESULT.json",
+        "qualification/qualification_source_events_envelope_01/RESULT.json",
+        "qualification/qualification_source_events_full_abstention_01.json",
+        "qualification/qualification_source_events_full_cli_01.json"
+      ],
+      "omitted_source_inputs": [
+        "inputs/lift_new.spectra",
+        "inputs/lift_old_no_b3.spectra"
+      ],
+      "reader_recipe": "README.md",
+      "outer_repository_saved_outputs": [
+        "NONINITIAL_HANDOFF_MANIFEST.json",
+        "evidence/validation/noninitial-handoff-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json"
+      ],
+      "expected_saved_result": "10 reached old private nodes / 8 distinct source-history valuations; 26-node/120-edge old-mode graph strict and cooperative; 40 rooted candidates per independent route, all strict with input coverage. Retained-old/fresh-native cooperation 0/10 each, fresh-normalized/fresh-preference 10/10 each. 20 executed episodes, 302 events, 56 old-prefix and 44 post-change commits; all suffixes fair lassos; post-change b3=true count 0.",
+      "execution_scope": "Completed Python runtime and independent event audit over immutable saved graphs. Static publication snapshot only; earlier public replay entrypoints do not execute this handoff experiment.",
+      "selection_scope": "One outcome-informed constructed same-Lift old mode G !b3, selected after inspection of three single-button restrictions; ten private nodes are not ten independent applications.",
+      "limits": [
+        "All three single-button restrictions were statically inspected before selecting G !b3; selection is outcome-informed, not held out.",
+        "The old contract is constructed by adding G !b3 to the same Lift source. This is one model with ten old private nodes/eight source-history valuations, not ten independent applications.",
+        "The nonzero response monitors have their response predicates already true at the boundary and clear on the next update. No unserved pending request is carried past the boundary.",
+        "Every executed suffix is a fair lasso under the fixed lexicographic input policy, which never chooses b3=true. No measured failure avoidance or behavioral activation by b3=true is established.",
+        "Normalized extraction precedes the preference candidate in the frozen pool and is selected in all ten cooperative-policy episodes; preference is eligible but never installed. Necessity of the preference extractor is not supported.",
+        "Fresh targets use their actually stored rank-zero private nodes. Source/history continuity does not establish arbitrary transfer of old private controller memory.",
+        "The original 11 replacement, 14-pair negative, and 59-case diagnostic cohorts, and the v46 Elevator residual census remain separate and unchanged.",
+        "No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.",
+        "RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1139,27 +1233,47 @@
       "producer_invocation_recreated": false,
       "relocated_consumer_qualification": false,
       "source_restoration": "Exact omitted extractor restoration is referenced inside SOURCE_RESTORATION_REFERENCE.json; no new fetch or reconstruction for this snapshot."
+    },
+    {
+      "version_tag": "noninitial-handoff-evidence-20261021-v1",
+      "archive": "archives/noninitial-handoff-evidence-20261021-v1.zip",
+      "claims": [
+        "LIFT-NONINITIAL-HANDOFF-10-BOUNDARY-CENSUS"
+      ],
+      "descriptor": "NONINITIAL_HANDOFF_MANIFEST.json",
+      "independent_snapshot_review": "evidence/validation/noninitial-handoff-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json",
+      "status": "FROZEN_STATIC_SNAPSHOT_INDEPENDENTLY_REVIEWED",
+      "producer_invocation_recreated": false,
+      "relocated_consumer_qualification": false,
+      "source_restoration": "Two omitted Lift specification identities and the old-mode append are bound by SOURCE_RESTORATION_REFERENCE.json to the existing fourth-archive source-only recipe; no new retrieval or reconstruction for packaging."
     }
   ],
   "document_snapshot": {
     "manifest": "DOCUMENT_SNAPSHOT_MANIFEST.json",
-    "pdf": "documents/technical-appendix-v46.pdf",
-    "source_zip": "documents/technical-appendix-v46.zip",
-    "pages": 45,
-    "scope": "Generic appendix snapshot separate from seven scientific evidence archives; previous v43 and v44 PDF/source ZIP files retained.",
-    "current_document_downloads_including_prior_snapshots": 6
+    "pdf": "documents/technical-appendix-v47.pdf",
+    "source_zip": "documents/technical-appendix-v47.zip",
+    "pages": 49,
+    "tex_source_files": 28,
+    "scope": "Generic appendix snapshot separate from eight scientific evidence archives; previous v43, v44 and v46 PDF/source ZIP files retained.",
+    "current_document_downloads_including_prior_snapshots": 8
   },
-  "extension_note": "All 15 prior row objects and six prior scientific archive bytes remain unchanged. The seventh archive adds one static eleven-state residual census row, for 16 reader rows total. It adds no relocated consumer or fresh-host qualification; the fixed preference is dormant at every residual entry. Existing extension qualification histories retain their original scope.",
-  "new_extension_references_checked": 54,
+  "extension_note": "All 16 prior row objects and seven prior scientific archive bytes remain unchanged. The eighth archive adds one bounded noninitial handoff row, for 17 reader rows total. It preserves completed graph checks and executed episodes; packaging adds no relocated consumer or fresh-host qualification. Earlier extension qualifications retain their original scope.",
+  "new_extension_references_checked": 47,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
-    "version_tag": "normalized-eleven-evidence-20261021-v1",
-    "references_checked": 110,
+    "version_tag": "residual-census-evidence-20261021-v1",
+    "references_checked": 54,
     "missing_references": [],
-    "scope": "Retained historical metadata for the sixth extension."
+    "scope": "Retained historical metadata for the seventh extension.",
+    "earlier": {
+      "version_tag": "normalized-eleven-evidence-20261021-v1",
+      "references_checked": 110,
+      "missing_references": [],
+      "scope": "Retained historical metadata for the sixth extension."
+    }
   },
-  "reader_row_count": 16,
-  "scientific_archive_count": 7,
-  "document_download_count": 6,
-  "directory_member_references_scope": "Retained historical index count; the seventh-extension member references are separately checked in new_extension_references_checked."
+  "reader_row_count": 17,
+  "scientific_archive_count": 8,
+  "document_download_count": 8,
+  "directory_member_references_scope": "Retained historical index count; eighth-extension member references are separately checked in new_extension_references_checked."
 }

@@ -1,36 +1,69 @@
 {
   "schema": "generic-technical-appendix-document-snapshot-v1",
   "status": "FROZEN_DOCUMENT_SNAPSHOT",
-  "version_tag": "residual-census-evidence-20261021-v1",
+  "version_tag": "noninitial-handoff-evidence-20261021-v1",
   "title": "Technical Appendix",
   "pdf": {
-    "path": "documents/technical-appendix-v46.pdf",
-    "bytes": 698408,
-    "sha256": "f816e4560f74386348a8ce5039eaa6a197b42d5fd2c0817d7e65b2eed5fcfce8",
-    "pages": 45
+    "path": "documents/technical-appendix-v47.pdf",
+    "bytes": 717018,
+    "sha256": "b495789ee1add77a33c988b140adeb9d33dbf1823e1b1d5e82d9ddeb84891cb6",
+    "pages": 49
   },
   "source_archive": {
-    "path": "documents/technical-appendix-v46.zip",
-    "bytes": 766200,
-    "sha256": "5708cacb46afe63f4639106702ef11244b57266d33602578a2ee4a27913484e8",
-    "members": 31,
-    "tex_sources": 27
+    "path": "documents/technical-appendix-v47.zip",
+    "bytes": 792224,
+    "sha256": "60803c60891efbab59633c509c78fdfa16b29722f864619c5e1d2e45d16f03a2",
+    "members": 32,
+    "tex_sources": 28
   },
   "inner_manifest": {
-    "path": "seams2027-technical-appendix-v46/MANIFEST.json",
-    "bytes": 4806,
-    "sha256": "cee349d52e4161625476d361e10cd20b51c0de0d78c9c75586e01f0e9830cd82"
+    "path": "seams2027-technical-appendix-v47/MANIFEST.json",
+    "bytes": 4964,
+    "sha256": "30b5837f8d7db5ad94f7cad4eb152f715531ded7d01ffce4ef91f6f9213dab61"
   },
-  "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the seven scientific evidence archives.",
+  "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the eight scientific evidence archives.",
   "main_manuscript_included": false,
-  "layout_review": "All 45 pages visually inspected at 120 dpi; exact PDF and full 27-file TeX closure bound to final source and layout QA.",
+  "layout_review": "All 49 pages visually inspected at 120 dpi; exact PDF and full 28-file TeX closure bound to final source and layout QA.",
   "identity_metadata": {
     "pdf_title": "",
     "pdf_author": ""
   },
   "scientific_executions_for_packaging": 0,
-  "revision": "v46 full residual-state census with dormant intervention and explicit static-evidence scope",
+  "revision": "v47 constructed noninitial handoff census with complete rooted certificates, twenty executed episodes, and explicit static-evidence scope",
   "previous_snapshots": [
+    {
+      "schema": "generic-technical-appendix-document-snapshot-v1",
+      "status": "FROZEN_DOCUMENT_SNAPSHOT",
+      "version_tag": "residual-census-evidence-20261021-v1",
+      "title": "Technical Appendix",
+      "pdf": {
+        "path": "documents/technical-appendix-v46.pdf",
+        "bytes": 698408,
+        "sha256": "f816e4560f74386348a8ce5039eaa6a197b42d5fd2c0817d7e65b2eed5fcfce8",
+        "pages": 45
+      },
+      "source_archive": {
+        "path": "documents/technical-appendix-v46.zip",
+        "bytes": 766200,
+        "sha256": "5708cacb46afe63f4639106702ef11244b57266d33602578a2ee4a27913484e8",
+        "members": 31,
+        "tex_sources": 27
+      },
+      "inner_manifest": {
+        "path": "seams2027-technical-appendix-v46/MANIFEST.json",
+        "bytes": 4806,
+        "sha256": "cee349d52e4161625476d361e10cd20b51c0de0d78c9c75586e01f0e9830cd82"
+      },
+      "scope": "Generic-title technical appendix PDF and appendix-only TeX dependency closure, README, license and manifest. Separate from the seven scientific evidence archives.",
+      "main_manuscript_included": false,
+      "layout_review": "All 45 pages visually inspected at 120 dpi; exact PDF and full 27-file TeX closure bound to final source and layout QA.",
+      "identity_metadata": {
+        "pdf_title": "",
+        "pdf_author": ""
+      },
+      "scientific_executions_for_packaging": 0,
+      "revision": "v46 full residual-state census with dormant intervention and explicit static-evidence scope"
+    },
     {
       "schema": "generic-technical-appendix-document-snapshot-v1",
       "status": "FROZEN_DOCUMENT_SNAPSHOT",
