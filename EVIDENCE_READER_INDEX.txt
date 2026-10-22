@@ -551,3 +551,26 @@ Archive: archives/three-study-evidence-20261023-v1.zip
 Prefix: three-study-evidence-20261023-v1/
   saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json
 Limits: A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics.
+
+
+PENDING-WORK NATIVE HANDOFF EXTENSION (pending-native-handoff-evidence-20261023-v1)
+Reader guide: PENDING_NATIVE_HANDOFF.md
+Descriptor: PENDING_NATIVE_HANDOFF_MANIFEST.json
+Release qualification binding: PENDING_NATIVE_HANDOFF_VALIDATION.json
+Current total: 23 reader rows, 9 extension objects, 12 scientific archives and 10 historical document downloads. Earlier CURRENT blocks retain their historical snapshot scope. All earlier row and extension objects are preserved.
+
+pending-native-handoff-all-three-obligations
+Archive: archives/pending-native-handoff-evidence-20261023-v1.zip
+Prefix: seams2027-pending-native-handoff/
+  README.txt
+  PUBLIC_BINDINGS.json
+  PUBLIC_PIN_MAP.json
+  REFERENCE_CLOSURE.json
+  qualification/REPLAY_SUMMARY.json
+  tools/restore_pending_sources.py
+  tools/bind_pending_replay.py
+  tools/run_pending_replay_stage.py
+  tools/compare_pending_replay.py
+Expected saved result: Both old initial choices give 50 states and 238 edges. All nine rooted candidates are strict; three retained-native candidates fail cooperation and six alternatives pass. All six executed handoffs complete, with 42 commits and 98 events. The newly enabled b1 input is exercised while genuinely pending b3 work survives the handoff.
+Limits: The two policies have identical source/AUX trajectories under the fixed script. No service-success, latency, failure-avoidance, performance, fresh native synthesis, arbitrary-memory transport or general deployment advantage follows. Whole-root certificates are separate from finite continuity. Revised public MANIFEST.json includes the corrected comparer and keeps ASSEMBLED_NOT_REPLAY_QUALIFIED; the final archive preserves this revised snapshot. All science and the other 142 assembly payloads are unchanged. Qualification history retains the original execution manifest, original comparer, earlier 42/44 comparison and amendment; no scientific stage was rerun. Follow README.txt for a standard fresh-session replay.
+Integrity: tools/verify_pending_handoff.py checks this new archive and current 22-download navigation without executing science. The unchanged tools/verify_certificate_finite.py targets certificate-finite-evidence-20261023-v1 and its historical 21-download contract.

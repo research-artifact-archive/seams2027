@@ -45,6 +45,10 @@
     "FiniteStudies": {
       "archive": "three-study-evidence-20261023-v1.zip",
       "member_prefix": "three-study-evidence-20261023-v1/"
+    },
+    "PendingNativeHandoff": {
+      "archive": "pending-native-handoff-evidence-20261023-v1.zip",
+      "member_prefix": "seams2027-pending-native-handoff/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1238,6 +1242,32 @@
       "limits": [
         "A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics."
       ]
+    },
+    {
+      "id": "pending-native-handoff-all-three-obligations",
+      "archive": "PendingNativeHandoff",
+      "claim": "Saved constructed Lift handoff with genuinely pending third-floor work and a newly enabled first-floor input: three boundaries, nine rooted candidate pairs and six bounded executions.",
+      "input_navigation": [
+        "README.txt",
+        "PUBLIC_BINDINGS.json",
+        "PUBLIC_PIN_MAP.json",
+        "REFERENCE_CLOSURE.json"
+      ],
+      "saved_outputs": [
+        "qualification/REPLAY_SUMMARY.json"
+      ],
+      "checkers": [
+        "tools/restore_pending_sources.py",
+        "tools/bind_pending_replay.py",
+        "tools/run_pending_replay_stage.py",
+        "tools/compare_pending_replay.py"
+      ],
+      "expected_saved_result": "Old closure 50 nodes/238 edges; all nine candidates strict; three retained-native roots noncooperative and six alternatives cooperative; six complete episodes, 42 commits and 98 events.",
+      "limits": [
+        "Outcome-informed same-source construction using saved native-produced graphs; no fresh synthesis or arbitrary private-memory transport.",
+        "Both policies have identical source/AUX trajectories on the fixed script; no service, latency, failure-avoidance or performance advantage.",
+        "Whole-root certificates are separate from finite observed continuity. The revised public assembly manifest includes the corrected comparer and retains its pre-replay status. All science and the other 142 assembly payloads are unchanged; qualification history preserves the original execution manifest, original comparer, earlier 42/44 comparison and amendment without a scientific rerun."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1457,6 +1487,17 @@
       "descriptor": "CERTIFICATE_FINITE_MANIFEST.json",
       "reader_guide": "CERTIFICATE_FINITE_EVIDENCE.md",
       "scientific_execution_during_publication": false
+    },
+    {
+      "version_tag": "pending-native-handoff-evidence-20261023-v1",
+      "archive": "archives/pending-native-handoff-evidence-20261023-v1.zip",
+      "claims": [
+        "pending-native-handoff-all-three-obligations"
+      ],
+      "descriptor": "PENDING_NATIVE_HANDOFF_MANIFEST.json",
+      "reader_guide": "PENDING_NATIVE_HANDOFF.md",
+      "validation": "PENDING_NATIVE_HANDOFF_VALIDATION.json",
+      "scientific_execution_during_navigation_staging": false
     }
   ],
   "document_snapshot": {
@@ -1494,8 +1535,14 @@
       }
     }
   },
-  "reader_row_count": 22,
-  "scientific_archive_count": 11,
+  "reader_row_count": 23,
+  "scientific_archive_count": 12,
   "document_download_count": 10,
-  "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked."
+  "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked.",
+  "pending_native_handoff_extension": {
+    "version_tag": "pending-native-handoff-evidence-20261023-v1",
+    "references_checked": 9,
+    "missing_references": [],
+    "scope": "Current totals: 12 scientific archives, 10 historical documents, 23 reader rows and 9 extension objects. Prior index status, notes and reference counts retain their historical scope."
+  }
 }

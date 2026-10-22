@@ -1,0 +1,45 @@
+{
+  "schema": "pending-handoff-public-validation-v1",
+  "status": "PASS_BOUND_RELEASE_QUALIFICATION",
+  "version_tag": "pending-native-handoff-evidence-20261023-v1",
+  "archive": {
+    "path": "archives/pending-native-handoff-evidence-20261023-v1.zip",
+    "bytes": 1086212,
+    "sha256": "a2143be83a241b2d24b78049741bed7b8c2ad8d3529a3fd928cb363c8445c2c9"
+  },
+  "gates": {
+    "scientific_results_adopted": true,
+    "exact_source_restoration_passed": true,
+    "relocated_replay_passed": true,
+    "metadata_only_transformation_verified": true,
+    "reference_closure_passed": true,
+    "privacy_review_passed": true,
+    "all_attempts_and_negative_results_retained": true,
+    "release_manifest_complete": true
+  },
+  "qualification_input": {
+    "bytes": 855,
+    "sha256": "2e86b75c2ba2b0adaa815f8c0afdba8aaca5ee7d96081ecf75d2b3c80b1639a3"
+  },
+  "replay_comparison_origin": {
+    "bytes": 25130,
+    "sha256": "f013732fd505aa944614a8d64054de8c5d6d293c1d28464f0316d01a643325ab",
+    "schema": "pending-handoff-relocated-replay-comparison-v1",
+    "status": "PASS_RELOCATED_REPLAY",
+    "checks": 44,
+    "event_count": 98,
+    "episode_count": 6,
+    "all_process_groups_reaped_and_absent": true,
+    "assembly_manifest": {
+      "bytes": 32738,
+      "sha256": "76a8124274fafc9a055f1eb26d9ed81aad33150f720e66d21a1a852f36a21680"
+    },
+    "comparer": {
+      "bytes": 21739,
+      "sha256": "ac85b67c089dc32579e869787d739043e7f338295bfdf3292c5abb0b6d011cf1"
+    }
+  },
+  "public_replay_record": "seams2027-pending-native-handoff/qualification/REPLAY_SUMMARY.json",
+  "scope": "Bound release gates and actual comparison identity; private comparison contents are not copied. The archive records the separately completed replay. Navigation staging executes no scientific code.",
+  "scientific_code_executed_by_navigation": false
+}
