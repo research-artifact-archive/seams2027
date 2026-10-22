@@ -512,3 +512,42 @@ The separate current generic appendix has 53 pages. documents/technical-appendix
 
 CURRENT READER SCOPE
 EVIDENCE_READER_INDEX.json and CLAIM_TO_FILE_INDEX.json contain 18 reader rows. Their prior 17 row objects and five historical extension objects remain unchanged. The ninth archive retains bounded UNKNOWN outcomes and every failed/partial output; packaging adds no scientific rerun, relocated consumer or fresh-host qualification. The earlier tools/verify_public.py integrity command checks only the original three scientific archives. INTRUDER_BOUNDED_MANIFEST.json binds the ninth archive and its independent static packaging review.
+
+
+CERTIFICATE AND FINITE-STUDY EXTENSION (certificate-finite-evidence-20261023-v1)
+Reader guide: CERTIFICATE_FINITE_EVIDENCE.md
+Descriptor: CERTIFICATE_FINITE_MANIFEST.json
+Historical 18 rows above retain their saved scope; current total is 22 rows across 11 scientific archives.
+
+INTRUDER-SAVED-SOURCE-CERTIFICATES
+Saved original obstruction and exact-G repaired strategy certificates with separate source qualification and selected negative controls.
+Archive: archives/intruder-certificate-evidence-20261023-v1.zip
+Prefix: seams2027-intruder-certificate-evidence-v1/
+  README.md
+  REPLAY_SUMMARY.json
+  MANIFEST.json
+Limits: No strict-only unrealizability or all-original-initializers losing claim. No complete repaired winning-region classification or fresh synthesis. Four complete programs had the recorded access audit; 17/26 selected rejection tests had narrower coverage.
+
+FINITE-REQUEST-PROTOCOL-SIX-CELLS
+Saved six-cell author-constructed request protocol and seven modeled adaptation episodes.
+Archive: archives/three-study-evidence-20261023-v1.zip
+Prefix: three-study-evidence-20261023-v1/
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/RESULT.json
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/EVENTS.json
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/SOURCE_CORRESPONDENCE.json
+Limits: Author-constructed finite protocol; no deployment, performance or independent replication claim.
+
+HUMANOID-EIGHT-ARM-GUARD-CENSUS
+Saved eight-arm Humanoid guard census from retained native arenas and exact finite-state data.
+Archive: archives/three-study-evidence-20261023-v1.zip
+Prefix: three-study-evidence-20261023-v1/
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/RESULT.json
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/SMALL_PROPAGATION_CONTROL.json
+Limits: Outcome-informed source family fixed before the eight arms; cooperative-admission result remains negative. Saved native arenas are inputs; this package does not regenerate the native toolchain.
+
+GUARD-SAVED-ARENA-CAUSAL-AUDIT
+Saved-instance comparison of the Guard fixture and retained translated arenas.
+Archive: archives/three-study-evidence-20261023-v1.zip
+Prefix: three-study-evidence-20261023-v1/
+  saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json
+Limits: A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics.

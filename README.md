@@ -2,6 +2,10 @@
 
 An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements. The seventh preserves a separate eleven-state residual-entry census as static evidence. The eighth preserves a bounded executed handoff census on one constructed Lift model. The ninth preserves a preselected CatchingIntruder attempt with bounded UNKNOWN outcomes and limited original-source correspondence.
 
+## Saved certificates and finite studies
+
+The [tenth and eleventh archives](CERTIFICATE_FINITE_EVIDENCE.md) add saved Intruder certificates and three finite studies. The new immutable tag is [`certificate-finite-evidence-20261023-v1`](https://github.com/research-artifact-archive/seams2027/tree/certificate-finite-evidence-20261023-v1). Read their delivered scope and replay qualifications before using their scientific entrypoints. The new dedicated integrity command is `python3 -I -S -B tools/verify_certificate_finite.py`. Earlier evidence and document snapshots remain available.
+
 ## Lift causal extension
 
 The separate [Lift causal extension](LIFT_CAUSAL_EXTENSION.md) adds a fixed-instance extraction comparison, six dormant controls, and an executed modeled adaptation episode. Its fourth ZIP has a Python-only saved-semantics replay, exact source restoration, and an explicit archived-producer trust boundary. [CLAIM_TO_FILE_INDEX.json](CLAIM_TO_FILE_INDEX.json) includes both the historical claims and these new groups. The original three downloads and their tags below remain unchanged.
@@ -26,14 +30,14 @@ The [eighth addendum](NONINITIAL_HANDOFF.md) preserves ten reached old private n
 
 The [ninth addendum](INTRUDER_BOUNDED_EVIDENCE.md) preserves every output from one preselected unchanged CatchingIntruder source. The paired native attempt reached its 44-second bound before solver return or extraction; the normalized attempt failed while writing a restricted relation before native solving. All three arm graph verdicts and pair parity remain UNKNOWN. Only the separately frozen historical original model passed independent source-function correspondence over its 524,288-state typed carrier. The full partial 16 MiB relation is retained as incomplete and uncertified. No additional controller, rescue or negative game verdict is established.
 
-The current [53-page generic technical appendix PDF](documents/technical-appendix-v48.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v48.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The source ZIP contains 29 TeX files. The previous v43, v44, v46 and v47 PDFs and source ZIPs remain unchanged.
+The historical [53-page generic technical appendix PDF](documents/technical-appendix-v48.pdf) and [appendix-only TeX source ZIP](documents/technical-appendix-v48.zip) form a separate document snapshot, described in [DOCUMENT_SNAPSHOT_MANIFEST.json](DOCUMENT_SNAPSHOT_MANIFEST.json). The source ZIP contains 29 TeX files. The previous v43, v44, v46 and v47 PDFs and source ZIPs remain unchanged.
 
 ## Start with the public files
 
-Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/intruder-bounded-evidence-20261021-v1), which includes all nine scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md); the seventh is an inspection-only [residual-entry snapshot](RESIDUAL_CENSUS.md); the eighth is a static [noninitial-handoff snapshot](NONINITIAL_HANDOFF.md); and the ninth is a static [bounded Intruder snapshot](INTRUDER_BOUNDED_EVIDENCE.md). Python 3.10 or newer and its standard library are sufficient for this first check:
+Clone the [versioned collection](https://github.com/research-artifact-archive/seams2027/tree/certificate-finite-evidence-20261023-v1), which includes all eleven scientific evidence ZIPs in `archives/` and the separate document snapshot in `documents/`. The following integrity command checks the three historical archives. The fourth archive has its own inspection and replay commands in the [Lift causal extension](LIFT_CAUSAL_EXTENSION.md); the fifth has separate integrity and native-regeneration instructions in the [native addendum](NATIVE_REGENERATION.md); the sixth has its own source binding and saved-input check in [normalized eleven](NORMALIZED_ELEVEN.md); the seventh is an inspection-only [residual-entry snapshot](RESIDUAL_CENSUS.md); the eighth is a static [noninitial-handoff snapshot](NONINITIAL_HANDOFF.md); and the ninth is a static [bounded Intruder snapshot](INTRUDER_BOUNDED_EVIDENCE.md). Python 3.10 or newer and its standard library are sufficient for this first check:
 
 ```sh
-git clone --branch intruder-bounded-evidence-20261021-v1 --depth 1 \
+git clone --branch certificate-finite-evidence-20261023-v1 --depth 1 \
   https://github.com/research-artifact-archive/seams2027.git
 cd seams2027
 python3 -I -S -B tools/verify_public.py --archive-dir archives
@@ -56,7 +60,7 @@ The destination must not already exist. Allow approximately 340 MB for extractio
 | [Verification addendum](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/verification-addendum-public-20261020-v1.zip) | Vehicle evidence, source-equation checks, and bounded reader recipes |
 | [Lift direct static evidence](https://github.com/research-artifact-archive/seams2027/raw/refs/tags/saved-evidence-20261020-v1/archives/lift-direct-static-public-20261020-v1.zip) | Direct source certificate, graphs, source-route history, and explicit qualification limits |
 
-[SHA256SUMS](SHA256SUMS) lists all nine archive and ten document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the six later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all nine archives and all five document snapshots; earlier tags and download bytes remain unchanged.
+[SHA256SUMS](SHA256SUMS) lists all eleven archive and ten document download hashes. [RELEASE_MANIFEST.json](RELEASE_MANIFEST.json) retains the binding for the three historical downloads in the table; the eight later archives and document snapshots have their own descriptors. The manifest also gives the original historical archive names and hashes. The new version tag fixes the repository files, all eleven archives and all five historical document snapshots; earlier tags and download bytes remain unchanged.
 
 ## Find a result
 

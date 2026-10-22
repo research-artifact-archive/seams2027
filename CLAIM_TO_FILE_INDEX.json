@@ -37,6 +37,14 @@
     "IntruderBounded": {
       "archive": "intruder-bounded-evidence-20261021.zip",
       "member_prefix": "seams2027-intruder-bounded-evidence/"
+    },
+    "IntruderCertificate": {
+      "archive": "intruder-certificate-evidence-20261023-v1.zip",
+      "member_prefix": "seams2027-intruder-certificate-evidence-v1/"
+    },
+    "FiniteStudies": {
+      "archive": "three-study-evidence-20261023-v1.zip",
+      "member_prefix": "three-study-evidence-20261023-v1/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1164,6 +1172,72 @@
         "The existing 11 replacements, 14 controls and 59 qualified public models remain unchanged. No second active model or practical-preservation benefit is established.",
         "This is a static inspection snapshot with original/copy location ledgers; no relocated consumer, fresh-host or performance claim is made."
       ]
+    },
+    {
+      "id": "INTRUDER-SAVED-SOURCE-CERTIFICATES",
+      "archive": "IntruderCertificate",
+      "claim": "Saved original obstruction and exact-G repaired strategy certificates with separate source qualification and selected negative controls.",
+      "input_navigation": [
+        "README.md",
+        "REPLAY_SUMMARY.json",
+        "MANIFEST.json"
+      ],
+      "reader_recipe": "seams2027-intruder-certificate-replay-v1/README.md",
+      "expected_saved_result": "Original: 276829 labelled states and one allowed environment initializer (0,7), ruling out joint strict/cooperative success there. Repaired: 407172 labelled states and all eight allowed initializers.",
+      "limits": [
+        "No strict-only unrealizability or all-original-initializers losing claim.",
+        "No complete repaired winning-region classification or fresh synthesis.",
+        "Four complete programs had the recorded access audit; 17/26 selected rejection tests had narrower coverage."
+      ]
+    },
+    {
+      "id": "FINITE-REQUEST-PROTOCOL-SIX-CELLS",
+      "archive": "FiniteStudies",
+      "claim": "Saved six-cell author-constructed request protocol and seven modeled adaptation episodes.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/RESULT.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/EVENTS.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/SOURCE_CORRESPONDENCE.json"
+      ],
+      "limits": [
+        "Author-constructed finite protocol; no deployment, performance or independent replication claim."
+      ]
+    },
+    {
+      "id": "HUMANOID-EIGHT-ARM-GUARD-CENSUS",
+      "archive": "FiniteStudies",
+      "claim": "Saved eight-arm Humanoid guard census from retained native arenas and exact finite-state data.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/RESULT.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/SMALL_PROPAGATION_CONTROL.json"
+      ],
+      "limits": [
+        "Outcome-informed source family fixed before the eight arms; cooperative-admission result remains negative.",
+        "Saved native arenas are inputs; this package does not regenerate the native toolchain."
+      ]
+    },
+    {
+      "id": "GUARD-SAVED-ARENA-CAUSAL-AUDIT",
+      "archive": "FiniteStudies",
+      "claim": "Saved-instance comparison of the Guard fixture and retained translated arenas.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json"
+      ],
+      "limits": [
+        "A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1361,6 +1435,28 @@
       "producer_invocation_recreated": false,
       "relocated_consumer_qualification": false,
       "source_restoration": "The two omitted full upstream-derived extractors use exact existing fourth-archive recipes. The original corpus specification and import are included unchanged with their BSD notice."
+    },
+    {
+      "version_tag": "certificate-finite-evidence-20261023-v1",
+      "archive": "archives/intruder-certificate-evidence-20261023-v1.zip",
+      "claims": [
+        "INTRUDER-SAVED-SOURCE-CERTIFICATES"
+      ],
+      "descriptor": "CERTIFICATE_FINITE_MANIFEST.json",
+      "reader_guide": "CERTIFICATE_FINITE_EVIDENCE.md",
+      "scientific_execution_during_publication": false
+    },
+    {
+      "version_tag": "certificate-finite-evidence-20261023-v1",
+      "archive": "archives/three-study-evidence-20261023-v1.zip",
+      "claims": [
+        "FINITE-REQUEST-PROTOCOL-SIX-CELLS",
+        "HUMANOID-EIGHT-ARM-GUARD-CENSUS",
+        "GUARD-SAVED-ARENA-CAUSAL-AUDIT"
+      ],
+      "descriptor": "CERTIFICATE_FINITE_MANIFEST.json",
+      "reader_guide": "CERTIFICATE_FINITE_EVIDENCE.md",
+      "scientific_execution_during_publication": false
     }
   ],
   "document_snapshot": {
@@ -1369,32 +1465,37 @@
     "source_zip": "documents/technical-appendix-v48.zip",
     "pages": 53,
     "tex_source_files": 29,
-    "scope": "Generic appendix snapshot separate from nine scientific evidence archives; previous v43, v44, v46 and v47 PDF/source ZIP files retained.",
+    "scope": "Historical v48 appendix snapshot; all five historical PDF/source ZIP pairs retained unchanged. No document snapshot is added by the certificate/finite-study extension.",
     "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All 17 prior row objects, five historical extension objects and eight prior scientific archives remain unchanged. The ninth archive adds one preselected bounded UNKNOWN row, for 18 reader rows total. It preserves full failed/partial outputs and limited original-source correspondence; packaging adds no relocated replay or new scientific result.",
-  "new_extension_references_checked": 54,
+  "extension_note": "All eighteen historical rows, six historical extension objects, nine scientific archives and ten document downloads retain their bytes or object values. Two archives add four reader groups; scientific qualification scope is defined inside those archives. Publication performs no scientific execution.",
+  "new_extension_references_checked": 16,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
-    "version_tag": "noninitial-handoff-evidence-20261021-v1",
-    "references_checked": 47,
+    "version_tag": "intruder-bounded-evidence-20261021-v1",
+    "references_checked": 54,
     "missing_references": [],
-    "scope": "Retained historical metadata for the eighth extension.",
     "earlier": {
-      "version_tag": "residual-census-evidence-20261021-v1",
-      "references_checked": 54,
+      "version_tag": "noninitial-handoff-evidence-20261021-v1",
+      "references_checked": 47,
       "missing_references": [],
-      "scope": "Retained historical metadata for the seventh extension.",
+      "scope": "Retained historical metadata for the eighth extension.",
       "earlier": {
-        "version_tag": "normalized-eleven-evidence-20261021-v1",
-        "references_checked": 110,
+        "version_tag": "residual-census-evidence-20261021-v1",
+        "references_checked": 54,
         "missing_references": [],
-        "scope": "Retained historical metadata for the sixth extension."
+        "scope": "Retained historical metadata for the seventh extension.",
+        "earlier": {
+          "version_tag": "normalized-eleven-evidence-20261021-v1",
+          "references_checked": 110,
+          "missing_references": [],
+          "scope": "Retained historical metadata for the sixth extension."
+        }
       }
     }
   },
-  "reader_row_count": 18,
-  "scientific_archive_count": 9,
+  "reader_row_count": 22,
+  "scientific_archive_count": 11,
   "document_download_count": 10,
-  "directory_member_references_scope": "Retained historical index count; ninth-extension member references are separately checked in new_extension_references_checked."
+  "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked."
 }
