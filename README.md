@@ -1,5 +1,15 @@
 # Saved Controller Evidence
 
+## Current Vehicle188 native evidence
+
+Start with [Vehicle188 native strict saved evidence](VEHICLE188_NATIVE_EVIDENCE.md) at immutable tag `vehicle188-native-evidence-20261024-v1`. One selected source/state pair outside the census gains full-native strict3FP evidence and a qualified portable saved-evidence replay. Both initial judgments remain true. The collection contains 15 evidence archives, ten historical document downloads, 27 reader rows and twelve extension objects.
+
+Run `python3 -I -S -B tools/verify_vehicle188_distribution.py` for current repository metadata and byte integrity, bound by [CURRENT_DISTRIBUTION_MANIFEST.json](CURRENT_DISTRIBUTION_MANIFEST.json). This performs no scientific execution. [Continuation evidence](CONTINUATION_EVIDENCE.md) remains the prior entrypoint for its separately scoped saved replay and lasso.
+
+Every section below is preserved historical navigation. Its uses of "current", counts and validator commands refer to its stated immutable release. Use the guide and command above for this distribution.
+
+## Historical navigation retained from continuation-evidence-20261024-v1
+
 ## Current continuation evidence
 
 Start with [the current evidence guide](CONTINUATION_EVIDENCE.md) and its single archive at immutable tag `continuation-evidence-20261024-v1`. It brings four central saved-evidence groups and the qualified saved-semantics replay scope into one current entrypoint. The collection contains 14 evidence archives, ten historical document downloads, 26 reader rows and eleven extension objects.

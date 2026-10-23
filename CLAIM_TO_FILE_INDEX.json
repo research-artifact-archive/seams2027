@@ -1,5 +1,5 @@
 {
-  "status": "CONTINUATION_SAVED_EVIDENCE_EXTENSION",
+  "status": "VEHICLE188_NATIVE_STRICT_SAVED_EVIDENCE_EXTENSION",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -59,6 +59,10 @@
     "Continuation": {
       "archive": "continuation-evidence-20261024-v1.zip",
       "member_prefix": "continuation-evidence-20261024-v1/"
+    },
+    "Vehicle188Native": {
+      "archive": "vehicle188-native-evidence-20261024-v1.zip",
+      "member_prefix": "vehicle188-native-evidence-20261024-v1/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1348,6 +1352,40 @@
         "Lasso replay checks one fixed transformed-arena trace with 19 DAGs, 23 public semantic payloads and nine projected values. Original Spectra/final-region are hash-only omissions; the original 25-pin check is not repeated. It is not a returned-controller execution or a counterexample under a theorem hypothesis that the trace violates.",
         "Qualification used the author host with source-workspace and network access denied; it is not independent external replication. Older Guard and matched Lift kits retain separate restoration and qualification requirements."
       ]
+    },
+    {
+      "id": "vehicle188-native-strict-selected-state",
+      "archive": "Vehicle188Native",
+      "claim": "For one outcome-selected public source/state outside the census, full native strict3FP records s in original W and (s,false) outside released-helper W; both original initial judgments remain true.",
+      "input_navigation": [
+        "README.txt",
+        "records/ROOT_ADOPTION.json",
+        "records/SUMMARY.json",
+        "OMITTED_HISTORICAL_CHECKS.json"
+      ],
+      "input_models": [
+        "data/native/original/native_result/model.json",
+        "data/native/released/native_result/model.json"
+      ],
+      "saved_outputs": [
+        "data/native/original/native_result/RESULT.json",
+        "data/native/released/native_result/RESULT.json",
+        "qualification/QUALIFICATION.json"
+      ],
+      "checkers": [
+        "replay.py"
+      ],
+      "expected_saved_result": "PASS_SAVED_IDENTITY_MEMBERSHIP_INITIALIZATION",
+      "checker_navigation": "After extracting the archive, run the standard-library command in README.txt; outer distribution verification checks bytes only.",
+      "limits": [
+        "No native winning fixed point, Java, solver, controller extraction or producer is executed.",
+        "Complete historical compiler/class-origin/process provenance remains recorded evidence, not portable re-execution.",
+        "K cooperation and initialized reachability are separate earlier source-policy certificates.",
+        "One outcome-selected public source and pre-existing state outside the census; no prevalence or scalability inference.",
+        "Both native initial judgments are true; no initialized-refusal or selected Kind4FP/default/frontend claim.",
+        "W counts use different full carriers; released W includes both helper values, with no helper-false slice count.",
+        "This is author-host qualification with source-workspace/network access denied, not external replication."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1610,6 +1648,22 @@
         ]
       },
       "scientific_execution_during_navigation_staging": false
+    },
+    {
+      "version_tag": "vehicle188-native-evidence-20261024-v1",
+      "archive": "archives/vehicle188-native-evidence-20261024-v1.zip",
+      "claims": [
+        "vehicle188-native-strict-selected-state"
+      ],
+      "descriptor": "VEHICLE188_NATIVE_EVIDENCE_MANIFEST.json",
+      "reader_guide": "VEHICLE188_NATIVE_EVIDENCE.md",
+      "validation": {
+        "archive": "archives/vehicle188-native-evidence-20261024-v1.zip",
+        "members": [
+          "vehicle188-native-evidence-20261024-v1/qualification/QUALIFICATION.json"
+        ]
+      },
+      "scientific_execution_during_navigation_staging": false
     }
   ],
   "document_snapshot": {
@@ -1621,7 +1675,7 @@
     "scope": "Historical v48 appendix snapshot; all five historical PDF/source ZIP pairs retained unchanged. No document snapshot is added by the certificate/finite-study extension.",
     "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All 25 preceding reader rows and ten preceding extension objects retain their values. All 13 prior evidence archives and ten historical document downloads retain exact bytes. This extension adds one archive and one current reader row; publication executes no scientific code.",
+  "extension_note": "All 26 preceding rows and eleven extension objects retain their values. All fourteen prior evidence archives, ten historical documents and historical tools retain exact bytes. One native saved-evidence archive and one reader row are added; publication executes no scientific code.",
   "new_extension_references_checked": 16,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
@@ -1647,8 +1701,8 @@
       }
     }
   },
-  "reader_row_count": 26,
-  "scientific_archive_count": 14,
+  "reader_row_count": 27,
+  "scientific_archive_count": 15,
   "document_download_count": 10,
   "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked.",
   "pending_native_handoff_extension": {
@@ -1659,11 +1713,11 @@
   },
   "current_distribution": {
     "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
-    "validator": "tools/verify_continuation_distribution.py",
+    "validator": "tools/verify_vehicle188_distribution.py",
     "tags": [
-      "continuation-evidence-20261024-v1"
+      "vehicle188-native-evidence-20261024-v1"
     ],
-    "scope": "Current evidence-only navigation; earlier validators and counts remain historical."
+    "scope": "Current metadata and byte integrity; prior validators and counts retain their immutable release scope."
   },
   "prior_status": "NINTH_EXTENSION_STATIC_INTRUDER_BOUNDED_UNKNOWN_WITH_DOCUMENT_SNAPSHOT",
   "prior_extension_note": "All eighteen historical rows, six historical extension objects, nine scientific archives and ten document downloads retain their bytes or object values. Two archives add four reader groups; scientific qualification scope is defined inside those archives. Publication performs no scientific execution.",
@@ -1694,5 +1748,26 @@
       ],
       "scope": "Evidence-only navigation update with unchanged prior scientific archives and historical documents. No new scientific execution or document snapshot."
     }
+  },
+  "vehicle188_previous_state": {
+    "status": "CONTINUATION_SAVED_EVIDENCE_EXTENSION",
+    "extension_note": "All 25 preceding reader rows and ten preceding extension objects retain their values. All 13 prior evidence archives and ten historical document downloads retain exact bytes. This extension adds one archive and one current reader row; publication executes no scientific code.",
+    "current_distribution": {
+      "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
+      "validator": "tools/verify_continuation_distribution.py",
+      "tags": [
+        "continuation-evidence-20261024-v1"
+      ],
+      "scope": "Current evidence-only navigation; earlier validators and counts remain historical."
+    }
+  },
+  "vehicle188_native_evidence": {
+    "version_tag": "vehicle188-native-evidence-20261024-v1",
+    "descriptor": "VEHICLE188_NATIVE_EVIDENCE_MANIFEST.json",
+    "archive": "archives/vehicle188-native-evidence-20261024-v1.zip",
+    "reader_guide": "VEHICLE188_NATIVE_EVIDENCE.md",
+    "references_checked": 10,
+    "missing_references": [],
+    "scope": "One selected full-native strict3FP source/state pair outside the census; saved-evidence replay and trust boundaries are defined in the archive."
   }
 }

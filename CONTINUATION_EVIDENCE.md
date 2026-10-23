@@ -1,3 +1,5 @@
+For the latest collection and the Vehicle188 native evidence extension, see [Vehicle188 native evidence](VEHICLE188_NATIVE_EVIDENCE.md); the scope, counts and verifier below describe the immutable `continuation-evidence-20261024-v1` distribution.
+
 # Continuation evidence
 
 This immutable evidence-only extension supplies one current entrypoint for four central saved-evidence groups and the separately qualified saved-semantics replay scope.

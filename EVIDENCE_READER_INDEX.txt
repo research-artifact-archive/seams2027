@@ -1,3 +1,11 @@
+CURRENT ENTRYPOINT: vehicle188-native-evidence-20261024-v1
+Guide: VEHICLE188_NATIVE_EVIDENCE.md
+15 evidence archives; 10 historical document downloads; 27 reader rows; 12 extension objects.
+Current metadata-only checker: tools/verify_vehicle188_distribution.py
+New row: vehicle188-native-strict-selected-state (Vehicle188Native archive).
+One outcome-selected public source/state outside the census; full-native strict3FP saved membership and initialization evidence. Both initial judgments are true. See the guide for replay and exact limits.
+All text below retains its historical release scope and counts.
+
 CURRENT ENTRYPOINT: continuation-evidence-20261024-v1
 Guide: CONTINUATION_EVIDENCE.md
 14 evidence archives; 10 historical document downloads; 26 reader rows; 11 extension objects.
