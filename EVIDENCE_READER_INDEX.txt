@@ -1,3 +1,9 @@
+CURRENT ENTRYPOINT: continuation-evidence-20261024-v1
+Guide: CONTINUATION_EVIDENCE.md
+14 evidence archives; 10 historical document downloads; 26 reader rows; 11 extension objects.
+Current metadata-only checker: tools/verify_continuation_distribution.py
+All text below retains its historical release scope and counts.
+
 Saved Controller Evidence — static reader index
 
 Archive names refer to the public release. For the original three archives, member prefixes and retained file bytes match the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. The current three-study v2 ZIP uses its new prefix and metadata-only privacy derivative; all scientific payloads and historical replay receipts remain byte-identical, as bound by its PRIVACY_AMENDMENT.json. Original execution hashes may differ after earlier metadata anonymization or serialization; use each package's current manifest and original/copy or receipt ledger for the relevant identity. A source_inputs entry may refer to an externally retrieved source; consult EVIDENCE_READER_INDEX.json:source_fetch_required_for_members. All mathematical models, saved outputs, graphs, and checker-source entries remain in the public archives. Run tools/verify_public.py for the public download check before attempting the historical closed-package recipes. The historical file tree is complete only after both source-fetch helpers and tools/check_restored_tree.py succeed.

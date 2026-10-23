@@ -1,5 +1,15 @@
 # Saved Controller Evidence
 
+## Current continuation evidence
+
+Start with [the current evidence guide](CONTINUATION_EVIDENCE.md) and its single archive at immutable tag `continuation-evidence-20261024-v1`. It brings four central saved-evidence groups and the qualified saved-semantics replay scope into one current entrypoint. The collection contains 14 evidence archives, ten historical document downloads, 26 reader rows and eleven extension objects.
+
+Run `python3 -I -S -B tools/verify_continuation_distribution.py` for current repository metadata and byte integrity, bound by [CURRENT_DISTRIBUTION_MANIFEST.json](CURRENT_DISTRIBUTION_MANIFEST.json). This command performs no scientific execution. Follow the new archive entrypoint for its separately qualified saved-semantics commands and limits.
+
+Every section below is preserved historical release navigation. Its uses of "current", counts, links and validator commands refer to the immutable versions stated in that section. Use the guide and command above for this distribution.
+
+## Historical release navigation
+
 ## Current pending diagnostic evidence distribution
 
 The [validated pending-work diagnostic delivery](PENDING_DIAGNOSTIC_EVIDENCE.md) adds saved patrol and extended Lift evidence under immutable tag `pending-diagnostic-evidence-20261023-v1`. The collection contains 13 scientific archives, ten historical document downloads, 25 reader rows and ten extension objects. No new document snapshot is included.

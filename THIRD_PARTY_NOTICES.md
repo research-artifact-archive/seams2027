@@ -92,3 +92,8 @@ Location and dependent hash metadata changes are recorded explicitly while scien
 ## Pending diagnostic saved-evidence extension
 
 The thirteenth scientific archive preserves the exact validated inner kit, its original notices and licenses, and four exact validation reports. Licensed patrol source text is included as documented inside the kit. Publisher-derived Lift source text remains omitted and must be restored independently under its distributor terms. The outer documentation and validation output use LICENSE-original.txt inside the inner kit; no license extends to omitted publisher material or dependencies. Original contribution notices remain intact. No new manuscript or document source snapshot is included. All twelve preceding scientific archives and ten historical document downloads retain their exact bytes. Publication runs no scientific checker.
+
+
+## Continuation evidence extension
+
+This archive contains original authored checkers, the constructed Guard input, selected saved exports/records, anonymous provenance ledgers and qualification records. No publisher PDF/HTML, paper-derived Lift specification text, upstream Java source, JDK/JAR/native binary or compiled class is included. Saved exported model JSON retains parsed/translated formula inventories and typed encoding metadata. Existing source-restoration procedures remain separately scoped and retrieve omitted inputs from their distributors with original terms. LICENSE-original.txt covers original contributions only.

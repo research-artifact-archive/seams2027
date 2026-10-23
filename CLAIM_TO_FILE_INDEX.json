@@ -1,5 +1,5 @@
 {
-  "status": "PENDING_DIAGNOSTIC_SAVED_EVIDENCE_EXTENSION",
+  "status": "CONTINUATION_SAVED_EVIDENCE_EXTENSION",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -55,6 +55,10 @@
       "member_prefix": "pending-diagnostic-evidence-v1-delivery/",
       "nested_kit": "pending-diagnostic-evidence-v1.zip",
       "nested_member_prefix": "pending-diagnostic-evidence-v1/"
+    },
+    "Continuation": {
+      "archive": "continuation-evidence-20261024-v1.zip",
+      "member_prefix": "continuation-evidence-20261024-v1/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1319,6 +1323,31 @@
         "No new controller, native translator or saved-BDD execution. Claims remain bounded by the inner kit protocols and theorem scope.",
         "The inner kit retains its original assembly-time status; separate validation reports bind the exact tested bytes."
       ]
+    },
+    {
+      "id": "continuation-evidence-current-entrypoint",
+      "archive": "Continuation",
+      "claim": "One current entrypoint connects four unchanged central record groups (Guard, Patrol, matched Lift and the software manager), qualified offline saved-semantics replay for Patrol/manager/reduced-query evidence, and a separately qualified fixed Lift lasso. The archive retains the exact historical source-member ledger, negative controls, earlier failed qualification setup, and explicit trust boundaries.",
+      "input_navigation": [
+        "REVIEWER_START_HERE.txt",
+        "claim_to_evidence.json",
+        "REPLAY_COMMANDS.txt"
+      ],
+      "saved_outputs": [
+        "qualification/QUALIFICATION_REPORT.json",
+        "lasso/qualification/QUALIFICATION.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Follow the archive current entrypoint for exact saved-semantics commands; the outer distribution checker verifies metadata and byte identity only.",
+      "expected_saved_result": "Recorded author-host saved-evidence and fixed-lasso replay qualification PASS; integrity is a separate check.",
+      "limits": [
+        "The outer repository validator verifies only metadata and byte identity; it performs no scientific execution.",
+        "Offline saved replay recomputes saved finite semantics but does not invoke native synthesis, controller extraction or a manager worker. The reduced query checks all 4,800 saved memberships without recomputing the native winning fixed point.",
+        "Patrol full-helper queries remain UNKNOWN. Constructed and reconstructed examples establish mechanisms, not occurrence rates or a general repair algorithm. Existing successful normalized synthesis remains a baseline.",
+        "Native compiler/exporter, encoding metadata and recorded native-process provenance remain trust boundaries. Omitted historical source/runtime and worker call-site/read-path checks are listed in the archive.",
+        "Lasso replay checks one fixed transformed-arena trace with 19 DAGs, 23 public semantic payloads and nine projected values. Original Spectra/final-region are hash-only omissions; the original 25-pin check is not repeated. It is not a returned-controller execution or a counterexample under a theorem hypothesis that the trace violates.",
+        "Qualification used the author host with source-workspace and network access denied; it is not independent external replication. Older Guard and matched Lift kits retain separate restoration and qualification requirements."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1564,6 +1593,23 @@
         "member": "pending-diagnostic-evidence-v1-delivery/VALIDATION_ATTESTATION.json"
       },
       "scientific_execution_during_navigation_staging": false
+    },
+    {
+      "version_tag": "continuation-evidence-20261024-v1",
+      "archive": "archives/continuation-evidence-20261024-v1.zip",
+      "claims": [
+        "continuation-evidence-current-entrypoint"
+      ],
+      "descriptor": "CONTINUATION_EVIDENCE_MANIFEST.json",
+      "reader_guide": "CONTINUATION_EVIDENCE.md",
+      "validation": {
+        "archive": "archives/continuation-evidence-20261024-v1.zip",
+        "members": [
+          "continuation-evidence-20261024-v1/qualification/QUALIFICATION_REPORT.json",
+          "continuation-evidence-20261024-v1/lasso/qualification/QUALIFICATION.json"
+        ]
+      },
+      "scientific_execution_during_navigation_staging": false
     }
   ],
   "document_snapshot": {
@@ -1575,7 +1621,7 @@
     "scope": "Historical v48 appendix snapshot; all five historical PDF/source ZIP pairs retained unchanged. No document snapshot is added by the certificate/finite-study extension.",
     "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All 23 preceding reader rows and nine preceding extension objects retain their values. All 12 prior scientific archives and ten historical document downloads retain their exact bytes. This evidence-only extension adds one archive and two rows; publication performs no scientific execution.",
+  "extension_note": "All 25 preceding reader rows and ten preceding extension objects retain their values. All 13 prior evidence archives and ten historical document downloads retain exact bytes. This extension adds one archive and one current reader row; publication executes no scientific code.",
   "new_extension_references_checked": 16,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
@@ -1601,8 +1647,8 @@
       }
     }
   },
-  "reader_row_count": 25,
-  "scientific_archive_count": 13,
+  "reader_row_count": 26,
+  "scientific_archive_count": 14,
   "document_download_count": 10,
   "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked.",
   "pending_native_handoff_extension": {
@@ -1613,11 +1659,11 @@
   },
   "current_distribution": {
     "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
-    "validator": "tools/verify_pending_diagnostic_distribution.py",
+    "validator": "tools/verify_continuation_distribution.py",
     "tags": [
-      "pending-diagnostic-evidence-20261023-v1"
+      "continuation-evidence-20261024-v1"
     ],
-    "scope": "Evidence-only navigation update with unchanged prior scientific archives and historical documents. No new scientific execution or document snapshot."
+    "scope": "Current evidence-only navigation; earlier validators and counts remain historical."
   },
   "prior_status": "NINTH_EXTENSION_STATIC_INTRUDER_BOUNDED_UNKNOWN_WITH_DOCUMENT_SNAPSHOT",
   "prior_extension_note": "All eighteen historical rows, six historical extension objects, nine scientific archives and ten document downloads retain their bytes or object values. Two archives add four reader groups; scientific qualification scope is defined inside those archives. Publication performs no scientific execution.",
@@ -1636,5 +1682,17 @@
     "nested_kit": "pending-diagnostic-evidence-v1.zip",
     "inner_reference_context": "pending-diagnostic-evidence-v1/",
     "scope": "Current totals: 13 scientific archives, ten historical document downloads, 25 reader rows and ten extension objects. Prior counts retain their historical scope."
+  },
+  "continuation_previous_state": {
+    "status": "PENDING_DIAGNOSTIC_SAVED_EVIDENCE_EXTENSION",
+    "extension_note": "All 23 preceding reader rows and nine preceding extension objects retain their values. All 12 prior scientific archives and ten historical document downloads retain their exact bytes. This evidence-only extension adds one archive and two rows; publication performs no scientific execution.",
+    "current_distribution": {
+      "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
+      "validator": "tools/verify_pending_diagnostic_distribution.py",
+      "tags": [
+        "pending-diagnostic-evidence-20261023-v1"
+      ],
+      "scope": "Evidence-only navigation update with unchanged prior scientific archives and historical documents. No new scientific execution or document snapshot."
+    }
   }
 }
