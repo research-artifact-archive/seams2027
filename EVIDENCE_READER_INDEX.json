@@ -1,5 +1,5 @@
 {
-  "status": "NINTH_EXTENSION_STATIC_INTRUDER_BOUNDED_UNKNOWN_WITH_DOCUMENT_SNAPSHOT",
+  "status": "PENDING_DIAGNOSTIC_SAVED_EVIDENCE_EXTENSION",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -49,6 +49,12 @@
     "PendingNativeHandoff": {
       "archive": "pending-native-handoff-evidence-20261023-v1.zip",
       "member_prefix": "seams2027-pending-native-handoff/"
+    },
+    "PendingDiagnostic": {
+      "archive": "seams2027-20261023-pending-diagnostic-evidence-v1.zip",
+      "member_prefix": "pending-diagnostic-evidence-v1-delivery/",
+      "nested_kit": "pending-diagnostic-evidence-v1.zip",
+      "nested_member_prefix": "pending-diagnostic-evidence-v1/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1268,6 +1274,51 @@
         "Both policies have identical source/AUX trajectories on the fixed script; no service, latency, failure-avoidance or performance advantage.",
         "Whole-root certificates are separate from finite observed continuity. The revised public assembly manifest includes the corrected comparer and retains its pre-replay status. All science and the other 142 assembly payloads are unchanged; qualification history preserves the original execution manifest, original comparer, earlier 42/44 comparison and amendment without a scientific rerun."
       ]
+    },
+    {
+      "id": "pending-diagnostic-patrol-saved-audit",
+      "archive": "PendingDiagnostic",
+      "claim": "Exploratory outcome-selected patrol mechanism case with a handwritten controller and constructed old environment; saved source, AST, complete graph and pending-request event audit.",
+      "input_navigation": [
+        "README.txt",
+        "VALIDATION_ATTESTATION.json",
+        "pending-diagnostic-evidence-v1.zip"
+      ],
+      "saved_outputs": [
+        "validation/PRIMARY277_RECHECK.json",
+        "validation/PUBLIC_QUALIFICATION.json",
+        "validation/REPLAY_RECEIPT.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Extract the nested kit and follow its README.md; inner tools are not direct outer ZIP members.",
+      "expected_saved_result": "Saved patrol audit and focused public qualification passed; exact recorded outputs are retained.",
+      "limits": [
+        "Recorded author-host relocation with original workspace accessible; not independent external replication.",
+        "No new controller, native translator or saved-BDD execution. Claims remain bounded by the inner kit protocols and theorem scope.",
+        "The inner kit retains its original assembly-time status; separate validation reports bind the exact tested bytes."
+      ]
+    },
+    {
+      "id": "pending-diagnostic-extended-lift-continuation",
+      "archive": "PendingDiagnostic",
+      "claim": "Extended Lift continuation evidence for two old initial roots, three genuinely pending boundaries, nine candidate roots and nine recorded fixed-workload episodes.",
+      "input_navigation": [
+        "README.txt",
+        "VALIDATION_ATTESTATION.json",
+        "pending-diagnostic-evidence-v1.zip"
+      ],
+      "saved_outputs": [
+        "validation/LIFT_RECHECK.json",
+        "validation/REPLAY_RECEIPT.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Extract the nested kit and follow its README.md; omitted source text must be restored outside the kit.",
+      "expected_saved_result": "Saved complete-root and episode audit passed; original pending-work, stop-rule and later-work observations are retained.",
+      "limits": [
+        "Recorded author-host relocation with original workspace accessible; not independent external replication.",
+        "No new controller, native translator or saved-BDD execution. Claims remain bounded by the inner kit protocols and theorem scope.",
+        "The inner kit retains its original assembly-time status; separate validation reports bind the exact tested bytes."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1498,6 +1549,21 @@
       "reader_guide": "PENDING_NATIVE_HANDOFF.md",
       "validation": "PENDING_NATIVE_HANDOFF_VALIDATION.json",
       "scientific_execution_during_navigation_staging": false
+    },
+    {
+      "version_tag": "pending-diagnostic-evidence-20261023-v1",
+      "archive": "archives/seams2027-20261023-pending-diagnostic-evidence-v1.zip",
+      "claims": [
+        "pending-diagnostic-patrol-saved-audit",
+        "pending-diagnostic-extended-lift-continuation"
+      ],
+      "descriptor": "PENDING_DIAGNOSTIC_MANIFEST.json",
+      "reader_guide": "PENDING_DIAGNOSTIC_EVIDENCE.md",
+      "validation": {
+        "archive": "archives/seams2027-20261023-pending-diagnostic-evidence-v1.zip",
+        "member": "pending-diagnostic-evidence-v1-delivery/VALIDATION_ATTESTATION.json"
+      },
+      "scientific_execution_during_navigation_staging": false
     }
   ],
   "document_snapshot": {
@@ -1509,7 +1575,7 @@
     "scope": "Historical v48 appendix snapshot; all five historical PDF/source ZIP pairs retained unchanged. No document snapshot is added by the certificate/finite-study extension.",
     "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All eighteen historical rows, six historical extension objects, nine scientific archives and ten document downloads retain their bytes or object values. Two archives add four reader groups; scientific qualification scope is defined inside those archives. Publication performs no scientific execution.",
+  "extension_note": "All 23 preceding reader rows and nine preceding extension objects retain their values. All 12 prior scientific archives and ten historical document downloads retain their exact bytes. This evidence-only extension adds one archive and two rows; publication performs no scientific execution.",
   "new_extension_references_checked": 16,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
@@ -1535,8 +1601,8 @@
       }
     }
   },
-  "reader_row_count": 23,
-  "scientific_archive_count": 12,
+  "reader_row_count": 25,
+  "scientific_archive_count": 13,
   "document_download_count": 10,
   "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked.",
   "pending_native_handoff_extension": {
@@ -1547,11 +1613,28 @@
   },
   "current_distribution": {
     "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
+    "validator": "tools/verify_pending_diagnostic_distribution.py",
+    "tags": [
+      "pending-diagnostic-evidence-20261023-v1"
+    ],
+    "scope": "Evidence-only navigation update with unchanged prior scientific archives and historical documents. No new scientific execution or document snapshot."
+  },
+  "prior_status": "NINTH_EXTENSION_STATIC_INTRUDER_BOUNDED_UNKNOWN_WITH_DOCUMENT_SNAPSHOT",
+  "prior_extension_note": "All eighteen historical rows, six historical extension objects, nine scientific archives and ten document downloads retain their bytes or object values. Two archives add four reader groups; scientific qualification scope is defined inside those archives. Publication performs no scientific execution.",
+  "prior_current_distribution": {
+    "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
     "validator": "tools/verify_current_distribution.py",
     "tags": [
       "certificate-finite-evidence-20261023-v2",
       "pending-native-handoff-evidence-20261023-v2"
     ],
     "scope": "Three-study metadata-only privacy derivative; historical replay and all scientific bytes preserved. Pending ZIP remains v1. No new scientific execution. Historical tags/commits remain accessible."
+  },
+  "pending_diagnostic_extension": {
+    "version_tag": "pending-diagnostic-evidence-20261023-v1",
+    "outer_reference_context": "pending-diagnostic-evidence-v1-delivery/",
+    "nested_kit": "pending-diagnostic-evidence-v1.zip",
+    "inner_reference_context": "pending-diagnostic-evidence-v1/",
+    "scope": "Current totals: 13 scientific archives, ten historical document downloads, 25 reader rows and ten extension objects. Prior counts retain their historical scope."
   }
 }

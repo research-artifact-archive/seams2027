@@ -574,3 +574,12 @@ Prefix: seams2027-pending-native-handoff/
 Expected saved result: Both old initial choices give 50 states and 238 edges. All nine rooted candidates are strict; three retained-native candidates fail cooperation and six alternatives pass. All six executed handoffs complete, with 42 commits and 98 events. The newly enabled b1 input is exercised while genuinely pending b3 work survives the handoff.
 Limits: The two policies have identical source/AUX trajectories under the fixed script. No service-success, latency, failure-avoidance, performance, fresh native synthesis, arbitrary-memory transport or general deployment advantage follows. Whole-root certificates are separate from finite continuity. Revised public MANIFEST.json includes the corrected comparer and keeps ASSEMBLED_NOT_REPLAY_QUALIFIED; the final archive preserves this revised snapshot. All science and the other 142 assembly payloads are unchanged. Qualification history retains the original execution manifest, original comparer, earlier 42/44 comparison and amendment; no scientific stage was rerun. Follow README.txt for a standard fresh-session replay.
 Integrity: tools/verify_current_distribution.py checks the current repository and 22 downloads without executing science. The unchanged tools/verify_pending_handoff.py and tools/verify_certificate_finite.py retain their respective v1-tag repository contracts. Historical tags and commits remain accessible.
+
+
+CURRENT EVIDENCE-ONLY EXTENSION: pending-diagnostic-evidence-20261023-v1
+13 scientific archives; 10 historical document downloads; 25 reader rows; 10 extensions.
+Guide: PENDING_DIAGNOSTIC_EVIDENCE.md. Descriptor: PENDING_DIAGNOSTIC_MANIFEST.json.
+Rows: pending-diagnostic-patrol-saved-audit; pending-diagnostic-extended-lift-continuation.
+The outer delivery holds a nested 76-file kit and four exact validation reports.
+Current metadata-only checker: tools/verify_pending_diagnostic_distribution.py.
+Earlier counts and checker commands above retain their historical release scope.

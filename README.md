@@ -1,5 +1,15 @@
 # Saved Controller Evidence
 
+## Current pending diagnostic evidence distribution
+
+The [validated pending-work diagnostic delivery](PENDING_DIAGNOSTIC_EVIDENCE.md) adds saved patrol and extended Lift evidence under immutable tag `pending-diagnostic-evidence-20261023-v1`. The collection contains 13 scientific archives, ten historical document downloads, 25 reader rows and ten extension objects. No new document snapshot is included.
+
+Run `python3 -I -S -B tools/verify_pending_diagnostic_distribution.py` for current metadata and byte integrity, bound by [CURRENT_DISTRIBUTION_MANIFEST.json](CURRENT_DISTRIBUTION_MANIFEST.json). Publication adds no scientific execution. The exact prior archives, documents and historical manifests remain unchanged. The guide explains the separate recorded verification, omitted source requirements and nested archive layout.
+
+The sections below preserve earlier release navigation and counts. Their uses of "current" and their validator commands refer to the immutable versions identified in those sections; use the command above for this distribution.
+
+## Earlier release navigation
+
 An anonymous collection of saved models, controllers, checker sources, and historical results. The public downloads support inspection without contacting the maintainers. Packaging preserves the recorded scientific results. The fifth archive supplies a separately qualified native-regeneration procedure. The sixth adds an original-initializer check of the existing normalized route on the fixed eleven replacements. The seventh preserves a separate eleven-state residual-entry census as static evidence. The eighth preserves a bounded executed handoff census on one constructed Lift model. The ninth preserves a preselected CatchingIntruder attempt with bounded UNKNOWN outcomes and limited original-source correspondence.
 
 ## Pending-work native handoff

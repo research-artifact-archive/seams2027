@@ -1,0 +1,29 @@
+{
+  "schema": "pending-diagnostic-evidence-download-v1",
+  "status": "FROZEN_VALIDATED_SAVED_EVIDENCE_DELIVERY",
+  "version_tag": "pending-diagnostic-evidence-20261023-v1",
+  "archive": {
+    "path": "archives/seams2027-20261023-pending-diagnostic-evidence-v1.zip",
+    "bytes": 525798,
+    "sha256": "151a8d04517d853aff771c2eb338fb72aba11ab21cfc2f43eb9c1e09ed7a398d"
+  },
+  "member_prefix": "pending-diagnostic-evidence-v1-delivery/",
+  "delivery_manifest": {
+    "path": "DELIVERY_MANIFEST.json",
+    "bytes": 1396,
+    "sha256": "ae4d8ee8bf77a9ba4662343af604c71b0c9e1a22e62ed81f9721d8fb3df7bdf6"
+  },
+  "tested_inner_archive": {
+    "path": "pending-diagnostic-evidence-v1.zip",
+    "bytes": 578706,
+    "sha256": "51b128e729b90e095ee115936a91a1366e501a7fab4151f40118d1b27ecf434c"
+  },
+  "tested_inner_manifest": {
+    "path": "MANIFEST.json",
+    "bytes": 13157,
+    "sha256": "a49211ac9a882a0270c9744f7e7338db917fbde94a5030ebf1507808cdd8caaf"
+  },
+  "recorded_validation_attestation": "pending-diagnostic-evidence-v1-delivery/VALIDATION_ATTESTATION.json",
+  "scientific_executions_for_publication": 0,
+  "scope": "Exact previously verified archive. Publication changes navigation metadata only. The author-host relocated recheck is not independent external replication, fresh controller execution, native production or saved-BDD reexecution."
+}
