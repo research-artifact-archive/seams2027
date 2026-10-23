@@ -1,8 +1,8 @@
 # Pending-work native handoff evidence
 
-Version: `pending-native-handoff-evidence-20261023-v1`.
+Current distribution: `pending-native-handoff-evidence-20261023-v2`. The pending-handoff ZIP remains the exact v1 archive. This new tag selects the current repository with the three-study privacy derivative.
 
-The [twelfth scientific archive](archives/pending-native-handoff-evidence-20261023-v1.zip) records a constructed Lift handoff from three genuinely pending boundaries. The old mode adds only `G !b1`; the change removes that restriction while preserving all ten source/AUX values. Nine rooted candidates are checked through source and saved-model routes, and the two policies execute six fixed episodes. All earlier eleven ZIPs, ten document downloads and historical tags retain their identities and scopes.
+The [twelfth scientific archive](archives/pending-native-handoff-evidence-20261023-v1.zip) records a constructed Lift handoff from three genuinely pending boundaries. The old mode adds only `G !b1`; the change removes that restriction while preserving all ten source/AUX values. Nine rooted candidates are checked through source and saved-model routes, and the two policies execute six fixed episodes. Eleven scientific ZIPs, including this pending archive, and all ten document downloads retain their bytes. The separate three-study ZIP has a metadata-only v2 privacy derivative; historical tags remain accessible.
 
 Both routes agree on the 50-state, 238-edge old closure from both original initial choices. All nine new rooted candidates pass strictness, legal-input coverage and safety. The three retained-native suffixes fail cooperation; the normalized and preference suffixes pass. Strict-only admission retains the native instance. Adding cooperation installs the saved normalized roots 72, 74 and 88 at their actual stored ranks 1, 1 and 0. Preference qualifies but is not selected.
 
@@ -13,14 +13,14 @@ All six episodes preserve an unanswered third-floor obligation at handoff and ex
 At this immutable release, run:
 
 ```sh
-python3 -I -S -B tools/verify_pending_handoff.py
+python3 -I -S -B tools/verify_current_distribution.py
 ```
 
-Expected status: `PASS_PENDING_HANDOFF_ARCHIVE_INTEGRITY_ONLY`. Python 3.10 or newer and its standard library suffice. The utility reads the new ZIP and its complete final member manifest, checks the archive root and reader references, verifies the 289 unchanged historical repository files and current navigation hashes, and verifies all 22 download hashes. Current totals are 12 scientific archives, 10 historical document downloads, 23 reader rows and 9 extension objects. It executes no evidence code and performs no network operation.
+Expected status: `PASS_CURRENT_DISTRIBUTION_INTEGRITY_ONLY`. Python 3.10 or newer and its standard library suffice. The utility checks the current repository, all 22 download hashes, the three latest archive manifests, current reader references and the three-study privacy amendment. Current totals are 12 scientific archives, 10 historical document downloads, 23 reader rows and 9 extension objects. It executes no evidence code and performs no network operation.
 
-[PENDING_NATIVE_HANDOFF_MANIFEST.json](PENDING_NATIVE_HANDOFF_MANIFEST.json) binds this archive and navigation. [PENDING_NATIVE_HANDOFF_VALIDATION.json](PENDING_NATIVE_HANDOFF_VALIDATION.json) binds the explicit release gates to this exact ZIP and to the actual relocated-replay comparison's byte count and hash. Private comparison contents are not copied into the outer navigation.
+[CURRENT_DISTRIBUTION_MANIFEST.json](CURRENT_DISTRIBUTION_MANIFEST.json) binds the current archive and navigation. The retained [PENDING_NATIVE_HANDOFF_MANIFEST.json](PENDING_NATIVE_HANDOFF_MANIFEST.json) binds the historical v1 repository. [PENDING_NATIVE_HANDOFF_VALIDATION.json](PENDING_NATIVE_HANDOFF_VALIDATION.json) binds the explicit release gates to this exact ZIP and to the actual relocated-replay comparison's byte count and hash. Private comparison contents are not copied into the outer navigation.
 
-The historical `tools/verify_certificate_finite.py` and `CERTIFICATE_FINITE_MANIFEST.json` retain their original bytes. Run that validator at `certificate-finite-evidence-20261023-v1`, where its 21-download and historical-navigation contract applies. The new release has 22 download entries and uses the new validator above. The original `tools/verify_public.py` and `RELEASE_MANIFEST.json` retain their first-three-archive scope. No historical utility is relabeled as validation of the new extension.
+The historical `tools/verify_certificate_finite.py` and `CERTIFICATE_FINITE_MANIFEST.json` retain their original bytes. Run that validator at `certificate-finite-evidence-20261023-v1`, where its 21-download and historical-navigation contract applies. The unchanged tools/verify_pending_handoff.py applies at pending-native-handoff-evidence-20261023-v1 under its historical complete-tree contract. The current distribution has 22 download entries and uses the new validator above. The original `tools/verify_public.py` and `RELEASE_MANIFEST.json` retain their first-three-archive scope. No historical utility is relabeled as validation of the new extension.
 
 ## Read the standalone archive
 

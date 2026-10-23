@@ -1,6 +1,6 @@
 Saved Controller Evidence — static reader index
 
-Archive names refer to the public release. Member prefixes and retained file bytes match the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution hashes may differ after earlier metadata anonymization or serialization; use each package's current manifest and original/copy or receipt ledger for the relevant identity. A source_inputs entry may refer to an externally retrieved source; consult EVIDENCE_READER_INDEX.json:source_fetch_required_for_members. All mathematical models, saved outputs, graphs, and checker-source entries remain in the public archives. Run tools/verify_public.py for the public download check before attempting the historical closed-package recipes. The historical file tree is complete only after both source-fetch helpers and tools/check_restored_tree.py succeed.
+Archive names refer to the public release. For the original three archives, member prefixes and retained file bytes match the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. The current three-study v2 ZIP uses its new prefix and metadata-only privacy derivative; all scientific payloads and historical replay receipts remain byte-identical, as bound by its PRIVACY_AMENDMENT.json. Original execution hashes may differ after earlier metadata anonymization or serialization; use each package's current manifest and original/copy or receipt ledger for the relevant identity. A source_inputs entry may refer to an externally retrieved source; consult EVIDENCE_READER_INDEX.json:source_fetch_required_for_members. All mathematical models, saved outputs, graphs, and checker-source entries remain in the public archives. Run tools/verify_public.py for the public download check before attempting the historical closed-package recipes. The historical file tree is complete only after both source-fetch helpers and tools/check_restored_tree.py succeed.
 
 C59 — 59 certified public originals: 49 satisfy W subset C; 10 violate it.
 Archive: saved-evidence-public-20261020-v1.zip
@@ -514,10 +514,10 @@ CURRENT READER SCOPE
 EVIDENCE_READER_INDEX.json and CLAIM_TO_FILE_INDEX.json contain 18 reader rows. Their prior 17 row objects and five historical extension objects remain unchanged. The ninth archive retains bounded UNKNOWN outcomes and every failed/partial output; packaging adds no scientific rerun, relocated consumer or fresh-host qualification. The earlier tools/verify_public.py integrity command checks only the original three scientific archives. INTRUDER_BOUNDED_MANIFEST.json binds the ninth archive and its independent static packaging review.
 
 
-CERTIFICATE AND FINITE-STUDY EXTENSION (certificate-finite-evidence-20261023-v1)
+CERTIFICATE AND FINITE-STUDY CURRENT DISTRIBUTION (certificate-finite-evidence-20261023-v2)
 Reader guide: CERTIFICATE_FINITE_EVIDENCE.md
-Descriptor: CERTIFICATE_FINITE_MANIFEST.json
-Historical 18 rows above retain their saved scope; current total is 22 rows across 11 scientific archives.
+Current descriptor: CURRENT_DISTRIBUTION_MANIFEST.json; historical v1 descriptor: CERTIFICATE_FINITE_MANIFEST.json
+The certificate extension originally had 22 rows and 11 scientific archives; current collection totals appear below. Scientific rows retain their prior values. The three-study v2 privacy amendment binds revised metadata to unchanged scientific payloads and historical replay receipts; no new replay was run.
 
 INTRUDER-SAVED-SOURCE-CERTIFICATES
 Saved original obstruction and exact-G repaired strategy certificates with separate source qualification and selected negative controls.
@@ -530,8 +530,8 @@ Limits: No strict-only unrealizability or all-original-initializers losing claim
 
 FINITE-REQUEST-PROTOCOL-SIX-CELLS
 Saved six-cell author-constructed request protocol and seven modeled adaptation episodes.
-Archive: archives/three-study-evidence-20261023-v1.zip
-Prefix: three-study-evidence-20261023-v1/
+Archive: archives/three-study-evidence-20261023-v2.zip
+Prefix: three-study-evidence-20261023-v2/
   saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/RESULT.json
   saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/EVENTS.json
   saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/SOURCE_CORRESPONDENCE.json
@@ -539,25 +539,25 @@ Limits: Author-constructed finite protocol; no deployment, performance or indepe
 
 HUMANOID-EIGHT-ARM-GUARD-CENSUS
 Saved eight-arm Humanoid guard census from retained native arenas and exact finite-state data.
-Archive: archives/three-study-evidence-20261023-v1.zip
-Prefix: three-study-evidence-20261023-v1/
+Archive: archives/three-study-evidence-20261023-v2.zip
+Prefix: three-study-evidence-20261023-v2/
   saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/RESULT.json
   saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/SMALL_PROPAGATION_CONTROL.json
 Limits: Outcome-informed source family fixed before the eight arms; cooperative-admission result remains negative. Saved native arenas are inputs; this package does not regenerate the native toolchain.
 
 GUARD-SAVED-ARENA-CAUSAL-AUDIT
 Saved-instance comparison of the Guard fixture and retained translated arenas.
-Archive: archives/three-study-evidence-20261023-v1.zip
-Prefix: three-study-evidence-20261023-v1/
+Archive: archives/three-study-evidence-20261023-v2.zip
+Prefix: three-study-evidence-20261023-v2/
   saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json
 Limits: A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics.
 
 
-PENDING-WORK NATIVE HANDOFF EXTENSION (pending-native-handoff-evidence-20261023-v1)
+PENDING-WORK NATIVE HANDOFF CURRENT DISTRIBUTION (pending-native-handoff-evidence-20261023-v2)
 Reader guide: PENDING_NATIVE_HANDOFF.md
-Descriptor: PENDING_NATIVE_HANDOFF_MANIFEST.json
+Current descriptor: CURRENT_DISTRIBUTION_MANIFEST.json; historical v1 descriptor: PENDING_NATIVE_HANDOFF_MANIFEST.json
 Release qualification binding: PENDING_NATIVE_HANDOFF_VALIDATION.json
-Current total: 23 reader rows, 9 extension objects, 12 scientific archives and 10 historical document downloads. Earlier CURRENT blocks retain their historical snapshot scope. All earlier row and extension objects are preserved.
+Current total: 23 reader rows, 9 extension objects, 12 scientific archives and 10 historical document downloads. Earlier CURRENT blocks retain their historical snapshot scope. All scientific row values are preserved. Three current extension locators identify the v2 distribution; the pending ZIP remains byte-identical v1.
 
 pending-native-handoff-all-three-obligations
 Archive: archives/pending-native-handoff-evidence-20261023-v1.zip
@@ -573,4 +573,4 @@ Prefix: seams2027-pending-native-handoff/
   tools/compare_pending_replay.py
 Expected saved result: Both old initial choices give 50 states and 238 edges. All nine rooted candidates are strict; three retained-native candidates fail cooperation and six alternatives pass. All six executed handoffs complete, with 42 commits and 98 events. The newly enabled b1 input is exercised while genuinely pending b3 work survives the handoff.
 Limits: The two policies have identical source/AUX trajectories under the fixed script. No service-success, latency, failure-avoidance, performance, fresh native synthesis, arbitrary-memory transport or general deployment advantage follows. Whole-root certificates are separate from finite continuity. Revised public MANIFEST.json includes the corrected comparer and keeps ASSEMBLED_NOT_REPLAY_QUALIFIED; the final archive preserves this revised snapshot. All science and the other 142 assembly payloads are unchanged. Qualification history retains the original execution manifest, original comparer, earlier 42/44 comparison and amendment; no scientific stage was rerun. Follow README.txt for a standard fresh-session replay.
-Integrity: tools/verify_pending_handoff.py checks this new archive and current 22-download navigation without executing science. The unchanged tools/verify_certificate_finite.py targets certificate-finite-evidence-20261023-v1 and its historical 21-download contract.
+Integrity: tools/verify_current_distribution.py checks the current repository and 22 downloads without executing science. The unchanged tools/verify_pending_handoff.py and tools/verify_certificate_finite.py retain their respective v1-tag repository contracts. Historical tags and commits remain accessible.
