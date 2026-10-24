@@ -1,0 +1,28 @@
+{
+  "version": "v69-r1",
+  "title": "Continuation Preservation in Boolean-Helper Synthesis for Controller Replacement",
+  "files": [
+    {
+      "path": "paper/main.pdf",
+      "bytes": 375820,
+      "sha256": "f3d0fc12a10f134f789bca4eb24824b51cf9b5929d0c26c1469fdd41d74463d0"
+    },
+    {
+      "path": "paper/supplement.pdf",
+      "bytes": 980097,
+      "sha256": "4a97ebd96a5cf0634e4014d07979eaa992ca9e0b988cd2d19c3c3361a15983e3"
+    },
+    {
+      "path": "paper/source.zip",
+      "bytes": 1611182,
+      "sha256": "9ba80b7eb6dc544904e19ccdc7b248647bf8086a7c6d2d7d1016d210d287b22a"
+    }
+  ],
+  "pages": {
+    "main": 11,
+    "main_body": 10,
+    "references": 1,
+    "supplement": 99
+  },
+  "publication_scope": "Anonymous paper and matching source snapshot; no conference submission or acceptance asserted."
+}
