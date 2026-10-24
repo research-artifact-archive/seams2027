@@ -1,0 +1,329 @@
+{
+  "schema": "vehicle188-whole-region-download-v1",
+  "version_tag": "vehicle188-whole-region-evidence-20261024-v1",
+  "archive": {
+    "path": "archives/vehicle188-whole-region-evidence-20261024-v1.zip",
+    "bytes": 487481,
+    "sha256": "e13fcdaac9344d7ec314f35a14ff88deeafa8f87858704ccd53127ea15db1c47"
+  },
+  "members": [
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/CITATION.bib",
+      "bytes": 423,
+      "sha256": "ecff916e3ce9f83f4ae4bbd87389133c1c78bcfda62c750be9429d242d35d0ae"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/INDEPENDENT_IO_ONLY.diff",
+      "bytes": 617,
+      "sha256": "9808517a0724e7a7ecc804294fc5b713fe48ab5a3a88b5bedfd9ea532a55bf68"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/LICENSE-original.txt",
+      "bytes": 1792,
+      "sha256": "d06fdcba0f142b4b62f3ab6618ba862e6d02ac47601193711d2637ff1447b1a9"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/MANIFEST.json",
+      "bytes": 10858,
+      "sha256": "c70ebc8d72b5ff9c423dcc678c9858c686397d4bf13f4747d7f6b5066e94e07c"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/PRIOR_NATIVE_SNAPSHOT_BINDINGS.json",
+      "bytes": 11646,
+      "sha256": "3e5e9ae96f710b580db0a768f3ac08fa45a3f46ef0ee73a4a71a4bdda49c244f"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/README.txt",
+      "bytes": 2850,
+      "sha256": "afe9dbfaa9eea16e6e6ce35054f5b7092d7f60329d3342e0234aa671b92060a7"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/REPLAY_INPUTS.json",
+      "bytes": 6333,
+      "sha256": "4c328e415d185739b665531277e003f62d4a42534d9063b0346ea6828558f724"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/THIRD_PARTY_NOTICES.txt",
+      "bytes": 601,
+      "sha256": "fe1d2530a1bc337bf90af67ffd5559bcfff2e42277549a6a3157f9d5c9e0b1ca"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/TRANSFORMATIONS.json",
+      "bytes": 85568,
+      "sha256": "b9d5a11e0e566a9d505ff41d7a4b839033fdfdc473c6ee60b33d98224e3fe345"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/domain.bdd",
+      "bytes": 169,
+      "sha256": "cc4a7e40804fbff773275ef97148b24618bd14551052ca68c318ad1c3ebd98ea"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/domain_SYS_next.bdd",
+      "bytes": 172,
+      "sha256": "d62de9f594333e07948a0139744adeabf46f6c36e7289115c0fd588284326823"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/model.json",
+      "bytes": 140076,
+      "sha256": "0a1c5c11c2887b0abc5cefb32bafb1f24e6824512aa87ac558a705ad9aab6fc3"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/native_strict_W_raw.bdd",
+      "bytes": 2530,
+      "sha256": "90419a4d87caf9acf520ba28ba09e48b47d8c24df4842f3c708786711e244c72"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/native_strict_W_typed.bdd",
+      "bytes": 2530,
+      "sha256": "90419a4d87caf9acf520ba28ba09e48b47d8c24df4842f3c708786711e244c72"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_ENV_justice_0.bdd",
+      "bytes": 123,
+      "sha256": "ad339e1379cd75be0e97f87625eac1d3a9b746a298fda3d221e76a42e2e13ad2"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_ENV_justice_1.bdd",
+      "bytes": 123,
+      "sha256": "3f08d96ddf8c8c5b0972f3d01bf873f620b05e5494c1a8a39e7afc1ad0049da3"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_ENV_justice_2.bdd",
+      "bytes": 124,
+      "sha256": "92d3ec4c85002e94f630e636c99a1ea8497db69aaa2015bfbc563a63d1b9c6dc"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_SYS_justice_0.bdd",
+      "bytes": 680,
+      "sha256": "f536b810d3e03944be210d1a4e139091f90e4ed5940299a9feeb9fb20e7aab06"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_rhoE.bdd",
+      "bytes": 243,
+      "sha256": "106910002f0851cfd13fe1f21b4959e8165d8a92b9225e642a00136241ce91cb"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_rhoS.bdd",
+      "bytes": 11320,
+      "sha256": "909ae55c4b094fe8d52d5d104c1e889ff87fd324ff1d048fa41d02a143b79583"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_thetaE.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/original/native_result/original_thetaS.bdd",
+      "bytes": 169,
+      "sha256": "cc4a7e40804fbff773275ef97148b24618bd14551052ca68c318ad1c3ebd98ea"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/domain.bdd",
+      "bytes": 175,
+      "sha256": "64c16b355f0e67bc81badb247dab7ca467b8f1d0d0a00f271a4e5e06e9281bd0"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/domain_ENV_next.bdd",
+      "bytes": 4,
+      "sha256": "a79122992d53d358e6bbbbb98883d64fa0c15df3bcb08ff7b65a0580870af424"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/domain_SYS_next.bdd",
+      "bytes": 178,
+      "sha256": "8bb1e6de1f9664569d5a894d179c47fa815f266d835bb5c1ad27892bd8f2cedb"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/model.json",
+      "bytes": 156044,
+      "sha256": "5d1706fa7d0956af44417798bf7f9fcf6f4642d3766018f7aee5d3c82bbd2c78"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/native_strict_W_raw.bdd",
+      "bytes": 3485,
+      "sha256": "8ddb87be5eb9d4bd45b7ba3ad77817f58991b81086aea1994513bac4d535ea75"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/native_strict_W_typed.bdd",
+      "bytes": 3485,
+      "sha256": "8ddb87be5eb9d4bd45b7ba3ad77817f58991b81086aea1994513bac4d535ea75"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_ENV_justice_0.bdd",
+      "bytes": 129,
+      "sha256": "2919e0e690006e0fe78740177be03524828a0e3b898c49c0775400e77b049f4a"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_ENV_justice_1.bdd",
+      "bytes": 129,
+      "sha256": "2bd34edfdff20d05f4778777fd46a8ef31004ca818c5a9ef72046f540c07a1ee"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_ENV_justice_2.bdd",
+      "bytes": 130,
+      "sha256": "fad465b745d0e1a41852426948621e186ed2a0161887aff5a2ff2af0274b7a0e"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_ENV_justice_3.bdd",
+      "bytes": 106,
+      "sha256": "4313d5614c9bd2d06565b06908bfe7b5ca999a7904a32c876bc287442d3ad86f"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_SYS_justice_0.bdd",
+      "bytes": 686,
+      "sha256": "5ee5abdd41c4b6aca1da1f3a1193e4e52c7b32446370b08a12af185abe944876"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_rhoE.bdd",
+      "bytes": 293,
+      "sha256": "14d875c5702f65fc07c8fab4f4df94e60355abe5668290de25830a4461bbc44a"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_rhoS.bdd",
+      "bytes": 16004,
+      "sha256": "a4cc23ba78c71f41205221dbd277ba4c9c2ae19577c075c37c38a434b227e0a2"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_thetaE.bdd",
+      "bytes": 106,
+      "sha256": "4313d5614c9bd2d06565b06908bfe7b5ca999a7904a32c876bc287442d3ad86f"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/data/native/arms/released/native_result/original_thetaS.bdd",
+      "bytes": 175,
+      "sha256": "64c16b355f0e67bc81badb247dab7ca467b8f1d0d0a00f271a4e5e06e9281bd0"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/independent_core.py",
+      "bytes": 18853,
+      "sha256": "8a67d5a9355aea8d821163180efe48d2c8163eb4423ef08e09d3a3c96f4efff4"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/licenses/zenodo10553249-LICENSE.txt",
+      "bytes": 1553,
+      "sha256": "b5391db405b7121333f9e3b26ca4d29144aee3f3cd2a6e0bb41ac05e68a197ec"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/producer_core.py",
+      "bytes": 22333,
+      "sha256": "ad87ce6720a79a2384040bdb9e0813c43c3d4a8ff2c942074159e67f5515ab33"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/qualification/QUALIFICATION.json",
+      "bytes": 6524,
+      "sha256": "ea3840bf39d2143594a77879ce03c29a3109aa968a49659772f340fea71f5871"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/PREREGISTRATION.json",
+      "bytes": 7863,
+      "sha256": "5fc7265c0dc9ff8a7faae45d0c57885eccb60c849e68921333a6cd3c7ee5593b"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/ROOT_ADOPTION.json",
+      "bytes": 11098,
+      "sha256": "de075ad109a6ce95dbf9930f6268da8a2b7127dfd5606f272ad6474ecd449ccb"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/AUDIT_RESULT.json",
+      "bytes": 4453,
+      "sha256": "edf51a0c1276dd08d4b660eda7589c9dbdaa5a24dbbcd6148fea6fc837f47c24"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/FIELD_ALIGNMENT.json",
+      "bytes": 24549,
+      "sha256": "3199c334f2a3d2bb8824b8d2c4dce7701400d6afecf42691a25adbef67eda633"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/INDEPENDENT_AUDIT_REPORT_JA.txt",
+      "bytes": 10346,
+      "sha256": "159d81c971dee3fd070dea21fb3f1b859ccaabb8eecdfc1796bfd3dd4ed98067"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/INITIAL_RESPONSE_FIBERS.json",
+      "bytes": 112575,
+      "sha256": "e184db9559093e6ff0f359e0f3c02f92c80e051b14a927b7000b3ce07184a6c2"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/LAUNCH_NOTES.json",
+      "bytes": 733,
+      "sha256": "080aad2940dbb3fa1afe44b9f3b604bd9eaee148f3c1dec93c2b794fbe89aa15"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/READBACK_AND_MASK_DIGESTS.json",
+      "bytes": 2195,
+      "sha256": "e410bb5f35e2e21b38fdd2c00bd874c25fabca1ac2dee117628ae82a86666442"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/SOURCE_SEMANTIC_IDENTITY.json",
+      "bytes": 5243,
+      "sha256": "4356296085bb9e2d85a543f92ad75e3e97baee83df54329248a0fb615c01f041"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/all_W_fixed_predecessors.csv",
+      "bytes": 201170,
+      "sha256": "969ddefc41183780e587bf730bdf66b65d91d1216b87b6b220eee7ed66c8dc85"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/independent_audit/all_source_states.csv",
+      "bytes": 2839202,
+      "sha256": "d238fbc206111dd31a55c2bb17a65417cf9ae4b4221562ba19155d5d4824fc42"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/producer/EXECUTION_RECEIPT.json",
+      "bytes": 487,
+      "sha256": "b3b92b44e10d27fe929ecfdb8e31ad0684a3869a79ef025cdd71a710f4668126"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/producer/PROOF_AND_SCOPE.txt",
+      "bytes": 8962,
+      "sha256": "c819e42ba606c0d82b323c51baf7c870c426e937db2cadd479f55a1daaf03b4c"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/producer/RESULT.json",
+      "bytes": 92673,
+      "sha256": "b5aea16dcb1ffc9563202f2a9864ce4514b6ba52f29a0c92103ce71609ff2cdb"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/producer/environment_all_clear.tsv",
+      "bytes": 66836,
+      "sha256": "245f0b07ef0fd0e6425750f1381077147fb6d87513532fc9f8da166604703b36"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/records/producer/state_table.tsv",
+      "bytes": 3281409,
+      "sha256": "9311b2362c878b656d6e9b90b5ec33b70756c62bfac882bd27da7cc3c61c17a5"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/replay.py",
+      "bytes": 14309,
+      "sha256": "c19da31d66aa831ee8330baba7c481050f9fc71c78e5080f093a0fafffed2666"
+    },
+    {
+      "path": "vehicle188-whole-region-evidence-20261024-v1/source/AutonomousVehicle_sprint02_ver1.spectra",
+      "bytes": 3924,
+      "sha256": "0e6faaedcd2bf8ab7b80d239231973f4588922ae5ff85a95927894cf78531e3b"
+    }
+  ],
+  "internal_manifest": {
+    "path": "vehicle188-whole-region-evidence-20261024-v1/MANIFEST.json",
+    "bytes": 10858,
+    "sha256": "c70ebc8d72b5ff9c423dcc678c9858c686397d4bf13f4747d7f6b5066e94e07c"
+  },
+  "recorded_result": {
+    "domain": 33792,
+    "original_W_equals_K": 8064,
+    "released_false_W": 6656,
+    "released_true_W": 33792,
+    "loss": 1408,
+    "gain": 0,
+    "positive_length_reachable_loss": 1408
+  },
+  "selection": "Complete within-case analysis of one previously outcome-selected public case; not a prevalence estimate.",
+  "native_solver_invocations_for_this_analysis": 0,
+  "source_package": "vehicle188-native-evidence-20261024-v1",
+  "source_package_unchanged": true
+}

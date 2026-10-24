@@ -1,3 +1,10 @@
+CURRENT SAVED-REGION EXTENSION: vehicle188-whole-region-evidence-20261024-v1
+16 archives; 10 historical documents; 28 reader rows; 13 extensions.
+Guide: VEHICLE188_WHOLE_REGION_EVIDENCE.md
+Descriptor: VEHICLE188_WHOLE_REGION_EVIDENCE_MANIFEST.json
+Metadata checker: tools/verify_vehicle188_whole_distribution.py
+Earlier blocks below keep their historical release scopes.
+
 CURRENT ENTRYPOINT: vehicle188-native-evidence-20261024-v1
 Guide: VEHICLE188_NATIVE_EVIDENCE.md
 15 evidence archives; 10 historical document downloads; 27 reader rows; 12 extension objects.

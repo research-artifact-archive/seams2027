@@ -101,3 +101,7 @@ This archive contains original authored checkers, the constructed Guard input, s
 ## Vehicle188 native strict saved-evidence extension
 
 The unchanged AutonomousVehicle_sprint02_ver1.spectra benchmark (3,924 bytes, SHA-256 0e6faaedcd2bf8ab7b80d239231973f4588922ae5ff85a95927894cf78531e3b) is from Zenodo 10553249. The original artifact README declares BSD 3-Clause; the accompanying Tel Aviv University/Software Modeling Lab notice is preserved verbatim in the new archive's licenses/zenodo10553249-LICENSE.txt. The exact source already appears in the earlier licensed public source material. It has no literal imports. Original checkers, documentation and research-output contributions retain LICENSE-original.txt. No upstream JDK, JAR, class or native binary is included or relicensed. Public copies preserve source/BDD/capture bytes and anonymize only documented private locations and administrative identities. Existing archives, source-restoration procedures and their notices remain unchanged.
+
+
+## Vehicle188 whole-region extension
+The new saved-region archive reuses the unchanged source and model evidence from the prior Vehicle188 native snapshot, with the same original BSD 3-Clause licenses. It adds original analysis, proofs and standard-library replay code. No runtime binaries or manuscript are added.

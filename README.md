@@ -1,5 +1,17 @@
 # Saved Controller Evidence
 
+## Current Vehicle188 whole-region evidence
+
+Start with [the complete Vehicle188 saved-region evidence](VEHICLE188_WHOLE_REGION_EVIDENCE.md) at immutable tag `vehicle188-whole-region-evidence-20261024-v1`. It evaluates all 33,792 source states: 1,408 of 8,064 original strict/cooperative states are lost at helper=false, with no gains. Each lost state has a source-level, per-target initialized cooperative reachability certificate. This one outcome-selected case supplies no frequency estimate.
+
+The collection contains 16 evidence archives, ten historical document downloads, 28 reader rows and thirteen extension objects. Run `python3 -I -S -B tools/verify_vehicle188_whole_distribution.py` for repository metadata and byte integrity. This executes no scientific payload. Follow the new archive's README for its separately qualified offline dual replay.
+
+All sections below retain their historical tag-specific counts and validator scopes. Earlier archives and documents are unchanged; this extension adds no manuscript or document snapshot.
+
+## Historical navigation retained from vehicle188-native-evidence-20261024-v1
+
+# Saved Controller Evidence
+
 ## Current Vehicle188 native evidence
 
 Start with [Vehicle188 native strict saved evidence](VEHICLE188_NATIVE_EVIDENCE.md) at immutable tag `vehicle188-native-evidence-20261024-v1`. One selected source/state pair outside the census gains full-native strict3FP evidence and a qualified portable saved-evidence replay. Both initial judgments remain true. The collection contains 15 evidence archives, ten historical document downloads, 27 reader rows and twelve extension objects.
