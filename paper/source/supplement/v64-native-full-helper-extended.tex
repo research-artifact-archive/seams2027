@@ -1,0 +1,64 @@
+\subsection*{U.8 One longer, unrestricted full-helper query}
+\label{supp:native-full-helper-extended}
+
+\paragraph{Declared domain and preserved model.}
+A further, separately preregistered attempt queried the exact actual-new
+Patrol arena on all 150,000,000 typed states: fourteen source fields,
+including logical auxiliaries, plus the ENV helper. This differs from
+Section~U.5, whose SYS relation included the closed-domain guard
+$D\land(\mathit{layout}\lor b)$ and therefore retained 75,004,800 states.
+The new query adds \emph{no} current/next domain, layout, $Q$ or $F$
+guard to either native transition relation. The ordered actual fairness
+roster is four ENV justices---the three original conditions plus the
+helper condition---and five SYS justices. Both actual initialization
+predicates remain unchanged.
+
+Before solver construction, all fifteen field/value encodings and
+ownership records, both safety and initialization predicates, and all
+nine ordered justices matched the frozen native export. The reached
+singleton contains the complete pending $S2$ valuation with helper false;
+it is not reset or reconstructed from initialization. The plan required
+separate reporting of this singleton's membership and the actual
+initialized verdict from the same completed query. Typed, helper-false
+and checkpoint-layout masks were reserved for post-solve inspection.
+If a region had completed, the plan also required checking every one of
+the 4,800 checkpoint-state memberships against the earlier independent
+$W_F$ set. Neither that set nor the reduced query was used to construct
+this arena.
+
+\paragraph{Execution and retained outcome.}
+One compilation and one unchanged pinned \code{GR1Game} strict call used
+the already qualified \path{ExactDiagnosticPrintStream}. No solver,
+compiler, JTLV class, cache setting or logging semantics changed.
+The budget was 600\,s hard wall time, with TERM at 598\,s; other limits
+remained 768\,MiB heap, 64\,MiB direct memory, 1\,GiB sampled
+process-group RSS, 16\,MiB per stored stream, 64\,MiB per nonstream
+artifact and 128\,MiB aggregate output.
+
+Scheduled TERM occurred at 598.038\,s and process exit at 598.112\,s,
+without KILL. Peak sampled RSS was 795,492,352 bytes. The result is
+\code{UNKNOWN\_WALL\_CAP}: no complete winning region, pending-state
+verdict or initialized verdict was produced. Consequently the planned
+4,800-state comparison is unavailable for this attempt. The retained
+\code{RUNNING} native receipt is the last checkpoint, not an active
+process. The complete encoded stdout occupies 518,359 bytes and
+represents 9,377,319,076 repeated diagnostic lines and 506,375,233,862
+decoded bytes; counts, ordering and encoded hash passed independently.
+No digest of an expanded raw stream is claimed.
+
+\paragraph{Interpretation.}
+The separate audit passed 72 binding, integrity and resource checks while
+preserving the UNKNOWN outcome. This is bounded noncompletion, not a
+proof of intractability, a solver limitation or an observed frontend
+refusal. This native query leaves its initialized verdict \code{UNKNOWN};
+Section~U.6 independently derives $I_M(W_F)=\mathit{false}$ from saved
+membership. That analytic result is not a completed full-helper solve.
+All earlier attempts remain intact; no retry followed. Compiler/exporter,
+field encodings, native solver correctness and recorded process provenance
+remain trust boundaries. The closed packet is
+\path{experiment/v64_native_full_helper_extended_20261024/}, indexed by
+\path{OUTCOME.json}, \path{REPORT.txt}, \path{CLOSURE.json} and
+\path{independent_audit/AUDIT_RESULT.json}.
+The continuation release preserves
+the selected outcome as \path{records/patrol/FULL_HELPER_UNKNOWN.json};
+its saved-replay entrypoints do not retry this query.

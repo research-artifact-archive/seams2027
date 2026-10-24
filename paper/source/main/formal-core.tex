@@ -1,0 +1,226 @@
+\begin{samepage}
+\paragraph{The literal reduction}
+Kind prints each safety assumption as
+$\rho_n^e\lor\operatorname{next}(\mathit{envHelp})$ and each safety
+guarantee as $\rho_n^s\lor\mathit{envHelp}$~\cite[Sec.~4.1]{kind}.
+Writing $b=\mathit{envHelp}$, conjoining the complete clauses and
+including helper persistence gives
+\begin{align}
+ \theta_e^R &= \theta_e\land\neg b,
+ &\theta_s^R &= \theta_s, \nonumber\\
+ \rho_e^R &= (\rho_e\lor b')\land(\neg b\lor b'),
+ &\rho_s^R &= \rho_s\lor b, \label{hpb:literal}\\
+ A^R &= A\land\mathbf{G}\mathbf{F}\neg b,
+ &G^R &= G. \nonumber
+\end{align}
+\end{samepage}
+Write $W_R(s,b)$ for the transformed strict-winning predicate.
+The \emph{complete-relation hypothesis} means that the guards apply to
+the entire safety relations, including every logical auxiliary constraint.
+It must be checked for a syntactic route after all translations.
+
+With $b=b'=0$, both original safety relations apply; with $b=b'=1$,
+both are released. A helper-false non-flip input violates transformed
+ENV safety exactly when it violates original ENV safety.
+The mismatch occurs on the first flip, $b=0,b'=1$:
+any typed $e'$ is allowed, including one disallowed by $\rho_e$,
+while $\rho_s$ still applies. Define
+\begin{equation}
+ C(s)\ \equiv\ \forall e'\in E\ \exists y'\in Y:
+                    \rho_s(s,e',y').
+ \label{hpb:C}
+\end{equation}
+There is no environmental-safety antecedent in $C$. This is a local
+response test; $W_C$ requires a source strategy that maintains $C$ while
+satisfying the original strict duties.
+Let $M_C$ have the original environmental relations and justice
+objectives, but system safety
+\begin{equation}
+ \rho_s^C(s,e',y')\ \equiv\
+ C(s)\land\rho_s(s,e',y')\land C(s').
+ \label{hpb:C-invariant}
+\end{equation}
+With $\operatorname{Win}_{\mathrm{str}}$ denoting the strict-winning
+region of its argument game, define
+$W_C=C\cap\operatorname{Win}_{\mathrm{str}}(M_C)$ independently
+of initialization. The outer intersection excludes outside-$C$
+states winning vacuously at environmental dead ends.
+
+\input{request-intuition.tex}
+
+\begin{samepage}
+\begin{theorem}[Exact strict-winning continuation region]
+\label{hpb:exact}
+Under the stated Mealy, strict, and complete-relation hypotheses,
+the reduction~\eqref{hpb:literal} has, for every $s\in D$,
+\begin{equation}
+ W_R(s,0)=W_C(s),\qquad W_R(s,1)=\mathit{true},
+ \label{hpb:exact-equation}
+\end{equation}
+identifying a region with its characteristic predicate.
+\end{theorem}
+\end{samepage}
+
+\begin{proof}
+At $b=1$, legal edges retain the helper, system safety is released,
+and every infinite legal play violates $\G\F\neg b$; hence all states win.
+
+For necessity, a winning strategy at $(s,0)$ must answer every legal
+first flip $(e',1)$ with a $\rho_s$-safe response, so $s\in C$.
+Restrict it to original-legal histories with $b=0$: these have exactly
+the original obligations. After each such finite prefix its residual
+strategy still wins, because required safety holds and B\"uchi conditions
+are prefix-independent. Repeating the first-flip argument gives $C$ at
+every reached successor. The restricted strategy therefore wins $M_C$,
+so $W_R(\cdot,0)\subseteq W_C$.
+
+Conversely, start from $s\in W_C$ and follow a winning $M_C$ strategy
+while $b=0$ and inputs are original-legal. It maintains $C$, which
+supplies a safe response to any first flip. The successor has $b=1$
+and is winning by the first paragraph. Without a flip, original safety
+and liveness coincide; transformed-illegal inputs release strict duties.
+Thus $W_C\subseteq W_R(\cdot,0)$.
+\end{proof}
+
+\begin{corollary}[Full-region preservation]
+\label{hpb:full-preservation}
+The literal reduction preserves the entire original strict-winning
+region at $b=0$ if and only if $W\subseteq C$.
+\end{corollary}
+\begin{proof}
+$W_C\subseteq W\cap C$ and Theorem~\ref{hpb:exact} give necessity.
+If $W\subseteq C$, every original-legal prefix of an original winning
+strategy has a winning residual strategy. Every reached state therefore
+belongs to $W\subseteq C$, so that strategy satisfies
+\eqref{hpb:C-invariant} and wins $M_C$. Hence $W\subseteq W_C$, proving
+sufficiency with the reverse inclusion.
+\end{proof}
+
+The exact loss $W\setminus W_C$ can exceed $W\setminus C$:
+a response possible now may force a later state outside $C$.
+The patrol update demonstrates this propagated loss at a reached
+entry with a genuinely pending request (Section~\ref{sec:patrol}).
+
+\paragraph{Preservation from the original initializer}
+For initialization of $M$ with a continuation region $T$, write
+\begin{equation}
+ I_M(T)\ \equiv\ \forall e\in E:\theta_e(e)\Rightarrow
+ \exists y\in Y:\theta_s(e,y)\land T(e,y).
+ \label{hpb:initial}
+\end{equation}
+Original and transformed initial realizability are $I_M(W)$ and
+$I_M(W_C)$, respectively, by Theorem~\ref{hpb:exact} and initial $b=0$.
+Since $W_C\subseteq W$, original unrealizability is preserved.
+Full-region preservation suffices but is unnecessary for initial
+preservation, as the initialized/reached-state contrast in Supplement~E
+demonstrates.
+
+\paragraph{When syntactic constraints remain}
+Retained constraints add three questions: where can SYS remain safe
+after the flip, which states allow safe entry there, and where can a
+source winning strategy maintain that entry condition?
+
+Let $E_{ij}(s,e')$, $S_{ij}(s,e',y')$ be the safety relations for helper
+transition $i\to j$. Retain all typed variables and logical monitors;
+the next helper is observed before the response. Assume
+$E_{00}=\rho_e$, $S_{00}=\rho_s$, $E_{10}=\mathit{false}$, and no
+next-response dependencies in $E_{ij}$. For generalized B\"uchi objectives
+$A',G'$, the transformed objectives are $A'\land\G\F\neg b$ and $G'$ globally, where the corresponding
+state predicates of $A',G'$ agree with those of $A,G$ at $b=0$;
+they may be arbitrary at $b=1$.
+For $Z\subseteq D$, $\CPre_{11}(Z)$ contains the states where every
+typed input satisfying $E_{11}$ admits a typed $S_{11}$-safe response
+into $Z$; states with no legal input qualify vacuously. Define
+\[
+\begin{aligned}
+U&=\nu Z.\,\CPre_{11}(Z),\\
+F&=\{s\mid\forall e'\in E:E_{01}(s,e')\Rightarrow{}\\
+ &\qquad\exists y'\in Y:S_{01}(s,e',y')\land(e',y')\in U\}.
+\end{aligned}
+\]
+Let $M_F$ replace system safety by $F(s)\land\rho_s(s,e',y')\land F(s')$,
+retaining original environmental relations and justices, and define
+$W_F=F\cap\operatorname{Win}_{\mathrm{str}}(M_F)$.
+Thus $U$ requires continued safety after a flip, and $F$ requires safe entry.
+\begin{proposition}[Preservation with retained constraints]\label{hpb:retained}
+Under these hypotheses,
+the strict regions are $W_R(\cdot,1)=U$ and $W_R(\cdot,0)=W_F$.
+Full preservation holds exactly when $W\subseteq F$; unchanged original
+initialization with $b=0$ gives $I_M(W_F)$.
+\end{proposition}
+
+\begin{proof}
+At $b=1$, persistence keeps the helper true, so the added assumption
+fails and only strict safety remains. The fixed point $U$ supplies safe
+responses back into $U$; conversely, states with safety-winning residual
+strategies form a post-fixed point of $\CPre_{11}$. Thus $W_R(\cdot,1)=U$.
+
+From a winning helper-false state, each legal flip must enter $U$ safely.
+The same holds after every original-legal non-flip prefix, so all reached
+states satisfy $F$. Restriction to those histories wins $M_F$.
+Conversely, from $s\in W_F$, a winning $M_F$ strategy maintains $F$ until a flip, then
+enters $U$ and switches to a uniform safety-winning strategy, available
+in this finite, fully observed game. Without a flip, original duties
+hold; afterwards safety holds and the added assumption fails. Illegal
+inputs release strict duties. This proves $W_R(\cdot,0)=W_F$.
+
+Finally, $W_F\subseteq W\cap F$ gives necessity for preservation.
+If $W\subseteq F$, every residual state of an original winning strategy
+lies in $W$, hence in $F$; that strategy wins $M_F$, proving sufficiency.
+The unchanged initializer gives $I_M(W_F)$.
+\end{proof}
+
+Uniformity follows from $U=\CPre_{11}(U)$: for each $s\in U$ and
+each $E_{11}$-legal input $e'$, fix one safe response into $U$, giving
+a common memoryless selector.
+
+Safe entry matters even when a flip response exists. With one input value,
+Boolean response $y$, true initial and justice predicates,
+$\rho_e=\mathit{true}$ and $\rho_s=y'$, we have $W=C=D$.
+Keep $E_{01}=E_{11}=\mathit{true}$ and $S_{01}=y'$, but let
+$S_{11}=\neg y\land\neg y'$. Then $U=\{y=0\}$ is proper:
+every flip forces $y'=1$ outside $U$, so $F=W_F=\varnothing$.
+By contrast, complete literal relations give $U=D,F=C$; the complete
+correction below gives $U=F=D$. Supplement~L.1 retains the full example.
+The Patrol study below applies this general criterion to actual retained
+constraints. Additional public-input checks and the full scope of each
+conversion are in Supplement~D. Conditions using $W$ do not provide a
+low-cost runtime precheck.
+
+\paragraph{The existing first-transition correction}
+A released semantic-reduction class ORs $b$ and $\neg b\land b'$
+into SYS safety when ENV safety is not universally true~\cite{spectrarelease2024};
+otherwise it skips reduction. This is an existing implementation class,
+not an established frontend option or default. Our $R^+$ formalizes this existing rule on complete relations,
+replacing only system safety by
+\begin{equation}
+ \rho_s^{R^+}=\rho_s\lor b\lor b'.
+ \label{hpb:corrected}
+\end{equation}
+For complete relations under the same hypotheses, the first flip and
+later helper-true edges release SYS safety: $S_{01}=S_{11}=\mathit{true}$.
+Proposition~\ref{hpb:retained} gives $U=F=D$, hence $W_F=W$ and
+$W_{R^+}(s,0)=W(s)$. Unchanged initializers with initial $b=0$ preserve
+initial realizability. Supplement~L.6, Proposition~L.4 gives the
+restriction-and-extension proof.
+This special case does not characterize loss under retained syntactic constraints.
+\paragraph{Why the exact encoding matters}
+Guard has Boolean input $x$, response $y$, true initial and justice
+predicates, and $\rho_e=\rho_s=x'$. A constant response is strict-winning;
+ENV can choose $x'=1$ forever after any strategy-consistent history,
+also satisfying Kind's all-history Definition~3. Yet $C=\varnothing$:
+the first-flip input $(x',b')=(0,1)$ is legal and has no safe response.
+Thus the complete printed Section~4.1 relations reject this contract.
+They differ from the construction in Kind's strict-realizability proof:
+Appendix~A instead writes $\rho_e\lor b$, while the separate semantic
+implementation uses the preserving correction above~\cite[Theorem~1,
+Appendix~A]{kind}. This is a discrepancy among constructions, not a
+counterexample to the corrected expression or the separate
+well-separation theorem.
+
+The selected released syntactic/JTLV route also reports raw-core
+unrealizability on Guard before extraction. Its saved relations independently
+show $(0,1)$ legal and $x'\lor b$ false for both responses at every
+helper-false initial state~\cite{newartifact}. That certifies strict loss
+without treating the raw cooperative-core verdict as a strict result
+or claiming a frontend-default execution.

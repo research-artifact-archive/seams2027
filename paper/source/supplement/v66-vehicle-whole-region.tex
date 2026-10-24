@@ -1,0 +1,117 @@
+\section*{X. Vehicle: complete saved regions and initialized cooperative reachability}
+This analysis~\cite{vehiclewholeartifact} extends Section~E within the same unchanged, previously
+outcome-selected public source. It evaluates the two saved native
+strict-winning regions~\cite{vehicleartifact}; it invokes no new native
+solver or game fixed point. The 33,792 typed source valuations retain
+all twelve source fields. Both independent implementations align fields
+by name, ownership, type and value encoding; the transformed model adds
+only the Boolean ENV helper. In particular, speed encodings are read
+from their value maps, not inferred from the lexicographic value order.
+
+\paragraph{Complete memberships and correspondence}
+Each implementation evaluates every source state in the original saved
+$W$ and in the transformed saved $W_R$ with $b=0$ and $b=1$ separately.
+The direct differences do not assume containment. Independent raw-DAG
+readers and Boolean operations give the same membership for every state:
+\begin{center}
+\begin{tabular}{@{}lr@{}}\toprule
+Set of source valuations & Cardinality\\\midrule
+Typed source carrier $D$ & 33,792\\
+Original strict region $W$ & 8,064\\
+$\{s\in D:W_R(s,0)\}$ & 6,656\\
+$\{s\in D:W_R(s,1)\}$ & 33,792\\
+$W\setminus\{s\in D:W_R(s,0)\}$ & 1,408\\
+$\{s\in D:W_R(s,0)\}\setminus W$ & 0\\\bottomrule
+\end{tabular}
+\end{center}
+The two helper slices sum to the earlier native total of 40,448.
+The helper-true slice is not a set of legal transformed initial states:
+the transformed ENV initializer requires $b=0$. Original initial
+predicates are true on the typed carrier, but winning initialization
+still requires a winning response to every allowed initial ENV value.
+All 1,024 initial ENV fibers have such a response, with between three
+and 33 winning SYS choices per fiber.
+
+Both implementations independently transcribe the source predicates and
+compare their canonical Boolean forms to the original saved domain,
+initializers, safety relations, three ENV justices and one SYS justice.
+The equalities include the exported typed-domain factors and invalid
+lane/speed encodings. Every state row agrees across implementations
+when aligned by all twelve named values. This checks saved memberships
+and source correspondence; it does not independently recompute the
+native winning fixed points. The native solver, exporter and typed
+metadata remain shared dependencies.
+
+\paragraph{Source-specific equality $W=K$}
+Let $e_{\mathrm{clear}}=(o,p,g,x)=(000,000,111,0)$: all lanes have
+green lights, no pedestrians or obstacles, and no crosswalk. The complete
+source ENV safety relation is
+\[
+ (o_1\Rightarrow\neg o'_2)\land
+ (o_2\Rightarrow(\neg o'_1\lor\neg o'_3))\land
+ (o_3\Rightarrow\neg o'_2).
+\]
+It contains no current or next SYS variable. Thus $e_{\mathrm{clear}}$
+is a legal next ENV value from every current value and can repeat forever.
+All three ENV justice predicates $g_i\land\neg p_i\land\neg o_i$
+hold there and are likewise SYS-independent. Source/BDD equalities and
+support checks establish these facts; direct evaluation also checks the
+all-clear transition from all 1,024 current ENV values.
+
+Fix any strict-winning policy from any $s\in W$ and any finite legal
+prefix compatible with that policy, including its reached private memory.
+Let ENV choose $e_{\mathrm{clear}}$ forever from the next step. These
+inputs remain legal and fair regardless of the policy's SYS choices.
+Under the total-policy semantics used here, a winning policy supplies a
+safe response on each legal input. Applying that same policy therefore
+gives a compatible fair continuation, and strict winning supplies SYS
+justice as well. Since the prefix was arbitrary, the policy is
+legal-prefix cooperative. Hence $W\subseteq K$; $K\subseteq W$ holds
+by definition, so $W=K$ for this source. This argument depends on its
+SYS-independent always-legal fair suffix and is not a general equivalence.
+
+\paragraph{A positive-length prefix for every winning target}
+For each $s\in W$, fix the preregistered predecessor
+\[
+ p_s=(e_{\mathrm{clear}};\ell(s),1).
+\]
+There are only three possible predecessors. Both implementations verify
+for all 8,064 targets, including all 1,408 losses, that
+\[
+ p_s\models\theta_e\land\theta_s,\qquad p_s\in W,\qquad
+ \rho_e(p_s,e(s)),\qquad \rho_s(p_s,e(s),y(s)).
+\]
+No alternative predecessor is searched. Separately, the complete
+initial-fiber check above establishes
+$\forall e_0:\theta_e(e_0)\Rightarrow
+\exists y_0:\theta_s(e_0,y_0)\land W(e_0,y_0)$.
+
+For a fixed target $s$, construct an initialized policy $\sigma_s$.
+On initial ENV value $e_{\mathrm{clear}}$, choose $p_s$'s SYS value;
+on the next input $e(s)$, choose $y(s)$ and then a winning continuation
+from $s$. For other next inputs, use a winning continuation from $p_s$.
+For every other initial ENV value, choose a certified winning response
+and its winning continuation. The designated edge is safe, and every
+branch has a winning tail. A finite prefix does not change the justice
+conditions, so $\sigma_s$ is initialized strict winning. The preceding
+all-clear argument makes it cooperative on every legal prefix.
+The legal ENV choices $e_0=e_{\mathrm{clear}}$, $e_1=e(s)$ then yield
+the one-transition compatible prefix $p_s,s$. Thus the quantifiers are
+\[
+ \forall s\in W\ \exists\text{ initialized cooperative winning }\sigma_s
+ \ \exists\text{ compatible legal play reaching }s\text{ at time }1.
+\]
+The policy and play may depend on the target. One transition is positive
+length even when it is a self-loop. Neither one common policy visiting
+all targets nor forced reachability is claimed.
+
+\paragraph{Evidence and limits}
+Complete tables retain all 33,792 membership rows, all 8,064 fixed
+predecessor checks, and every initial ENV fiber. The two implementations
+agree on every aligned row; no membership, predecessor or initial-fiber
+check fails. The computations evaluate saved native results, and the
+cooperation and reachability claims are source-level existence proofs.
+They do not synthesize or execute the stitched policies. The 1,408 lost
+states are therefore cooperatively reachable in the stated existential
+sense within this one selected case. The cardinalities are not an
+operational probability or a population-frequency estimate.

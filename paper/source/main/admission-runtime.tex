@@ -1,0 +1,32 @@
+\label{sec:runtime-admission}
+Under the constructed old Lift restriction $\G\neg b_1$, inputs
+$0010,0010$ in $(b_1,b_2,b_3,c)$ order reach native nodes
+$0\to4\to524$. The paused state is
+\[
+(b_1b_2b_3,c,f_1f_2f_3,m_1m_2m_3)=(001,0,010,001),
+\]
+with an unanswered third-floor request. Removing the restriction retains
+this valuation. Candidate node/selector pairs are native $524/1$,
+normalized $72/1$, and selection variant $524/1$; IDs are graph-local,
+and the normalized graph has no helper.
+
+At all three pending boundaries in the old closure, the manager tries
+native, normalized, then the selection variant until the first complete
+pass. Coverage, safety, monitor/memory and SCC checks withhold native,
+admit normalized and leave the third candidate untried. No source field,
+monitor or runtime state object changes during selection. The displayed
+case installs normalized root $72/1$ (Supplement~U.9).
+
+Separate bounded executions compare all nine candidate/root pairs.
+All serve the old request at step~1 and clear its monitor at~2.
+The three retained-native executions later stop after eight commits,
+with a new first-floor request pending and no legal input. The six
+alternatives complete twelve commits and reach a fair loop. Later
+continuity differs; service of the old request does not. Gated native
+episodes instead remain paused with zero commits. Workloads were fixed
+after diagnosis and before execution, not held out (Supplement~R).
+
+Candidates are prepared beforehand. Gate measurements exclude synthesis:
+4.448--5.207\,s for Patrol, and 0.039--0.059\,s per Lift candidate plus
+0.357--0.481\,s shared loading/binding. These are bounded software
+measurements, not latency guarantees (Supplement~U.4).

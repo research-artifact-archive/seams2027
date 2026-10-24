@@ -1,0 +1,116 @@
+\section*{M. Residual Elevator continuation census}
+\label{sec:supp-residual-elevator}
+This experiment asks whether the fixed final-choice preference used for
+Lift changes extraction from exact continuation states of Elevator~032.
+The source and its earlier cooperation failure were known before selection;
+the complete eleven-state cohort and preference were frozen before these
+new outcomes. This is a state census on one previously inspected source,
+not a held-out contract evaluation.
+
+\paragraph{Source and original feasibility.}
+The unchanged \code{ElevatorLTL\_386\_Elevator.spectra} from
+\cite{kindartifact} declares environment variable
+$f=\mathit{floor}\in\{\mathsf{LOWER},\mathsf{MIDDLE},
+\mathsf{UPPER},\mathsf{NONE}\}$ and system variable
+$m=\mathit{elevMot}\in\{\mathsf{FWD},\mathsf{BWD},\mathsf{STOP}\}$,
+with no logical auxiliaries. On these declared domains, its complete clauses are
+\[
+\begin{aligned}
+\theta_e&=\mathit{true},\qquad \theta_s=(m=\mathsf{STOP}),\\
+\rho_e&=(m=\mathsf{STOP}\Rightarrow f\ne\mathsf{NONE}),
+\qquad \rho_s=\mathit{true},\\
+A&=\mathit{true},\\
+G&=\G\F(m=\mathsf{FWD})\\
+&\quad{}\land\G\F(f=\mathsf{LOWER}\Rightarrow m=\mathsf{FWD})\\
+&\quad{}\land\G\F(f=\mathsf{UPPER}\Rightarrow m=\mathsf{BWD}).
+\end{aligned}
+\]
+The assumption reads current values; it does not constrain $f'$ directly.
+The three system justices retain their displayed order. The previously
+certified region is $K=V=D\setminus\{(\mathsf{NONE},\mathsf{STOP})\}$,
+where $|D|=12$. Hence the original initializer verdict remains
+$I_M(K)=\mathit{false}$: the allowed initial input $f=\mathsf{NONE}$
+forces $m=\mathsf{STOP}$, with no legal continuation. The cohort contains
+all eleven states of $K$, including three original-initializer-compatible
+states and eight incompatible states (Table~\ref{tab:residual-elevator}).
+
+\paragraph{Exact entries and paired construction.}
+For each frozen state $s=(f_s,m_s)$, only the initial predicates are replaced:
+$\theta_e^s=(f=f_s)\land\neg h$ and $\theta_s^s=(m=m_s)$, where $h$
+is the native helper. Every source value is fixed, and new controller
+private memory starts at rank~0; no old controller memory is inherited.
+The original initializer is saved separately and is not reapplied.
+The released syntactic route on Spectra \code{1.0.0.202402072123}/JTLV
+is unchanged, without semantic correction or justice normalization.
+One clean Java compilation is followed by eleven fresh JVM processes,
+one per entry, each solving once and extracting the released baseline
+and the fixed preference variant from the same game and fixed-point
+memory objects. There are 22 returned graphs and no retries or substitutions.
+Per pair, ten body BDDs and the field/domain/justice structure agree
+before and after the initializer replacement. Snapshots of 34 model and
+memory BDDs, including the winning and $X/Y/Z$ sets, agree before either
+extraction and after each; variable order and memory structure are retained.
+Objects are not shared across different entries.
+
+\paragraph{Two graph-checking routes.}
+Each returned graph receives two certificates, giving 44 checks.
+The source-specific route transcribes the clauses above and the helper
+encoding, uses its own native-BDD text reader, and compares the saved
+predicates on all 24 typed transformed states and 576 transition pairs.
+Its separate strongly connected component implementation checks graph
+fairness. This is an oracle for this pinned source, not a general source
+compiler. The saved-model route instead uses the independently decoded
+original BDD model, whole-domain correspondence, and the generic finite-graph
+fairness checker. It shares the original parser/translation exports and
+does not independently establish source compilation. Actual class loading,
+process completion, and captured-file identities are separate recorded
+provenance obligations.
+
+Both routes bind the machine graph to the complete native printer output,
+retain node identities and private rank, and derive the helper-false graph
+reachable from the exact singleton. They check every original-legal input,
+unique responses and memory updates, system safety, and strict liveness.
+No restriction to $V$ or $K$, edge repair, or state merging is applied.
+Cooperation requires every reachable node to reach an assumption-fair
+cycle. With no original environment justice, a cycle is still required:
+a finite dead end cannot pass.
+
+\begin{table}[htbp]
+\centering
+\caption{All eleven frozen entries. Raw and original graph sizes are
+nodes/edges and agree between the two outputs in each pair. ``Init.''
+means compatibility with the original source initializer. Checks and
+refinements count final candidate sets examined by the preference variant.}
+\label{tab:residual-elevator}
+\begin{tabular}{@{}lllcccrr@{}}
+\toprule
+Entry & Floor & Motor & Init. & Raw & Original & Checks & Refined\\
+\midrule
+s01 & LOWER  & BWD  & no  & 11/68 & 6/24 & 68 & 0\\
+s02 & LOWER  & FWD  & no  & 16/96 & 8/32 & 96 & 0\\
+s03 & LOWER  & STOP & yes & 11/68 & 6/24 & 68 & 0\\
+s04 & MIDDLE & BWD  & no  & 11/68 & 6/24 & 68 & 0\\
+s05 & MIDDLE & FWD  & no  & 16/96 & 8/32 & 96 & 0\\
+s06 & MIDDLE & STOP & yes & 11/68 & 6/24 & 68 & 0\\
+s07 & NONE   & BWD  & no  & 11/68 & 6/24 & 68 & 0\\
+s08 & NONE   & FWD  & no  & 16/96 & 8/32 & 96 & 0\\
+s09 & UPPER  & BWD  & no  & 11/68 & 6/24 & 68 & 0\\
+s10 & UPPER  & FWD  & no  & 13/72 & 5/20 & 72 & 0\\
+s11 & UPPER  & STOP & yes & 11/68 & 6/24 & 68 & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Observed scope.}
+Both checking routes establish strictness and cooperation for all 22
+original-contract graphs. Across 836 examined candidate sets, there are
+zero refinements and zero empty-preference fallbacks; each pair has
+identical raw graphs and printer text. All eleven comparisons are inactive.
+Thus this census supplies accepted residual controllers, including eight
+entries outside the source initializer, but no additional preference
+rescue, regression, or evidence of general effectiveness. It does not
+change $I_M(K)$, execute a handoff from an old controller, transfer reached
+private memory, or establish arbitrary-state migration. Graph construction
+from a prescribed state and execution of a replacement remain distinct
+evidence scopes.
+

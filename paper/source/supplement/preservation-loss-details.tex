@@ -1,0 +1,54 @@
+\section*{J. Exact strict-preservation losses in the certified public cohort}\label{supp:preservation-loss}
+We compute $C$ from each of the 59 certified original models by
+quantifying every typed next system and auxiliary value, followed by
+every typed next environment value. The quantifier ranges include
+environment values disallowed by $\rho_e$. We recheck the saved
+independent $W$ function and preserve exact typed domains.
+
+Forty-nine inputs satisfy $W\subseteq C$ and ten do not. The latter are
+one AMBA variant, three Humanoid variants, two PCar variants, one
+AirportShuttle variant, and three robotic-arm variants.
+By the main paper's exact preservation corollary, the complete semantic literal
+helper fails to preserve the entire original strict-winning region
+on these ten models.
+
+\input{public-loss-table.tex}
+
+We evaluate all ten condition-violating inputs, without selection by
+resulting loss or initial decision.
+Nine exact calculations complete and one reaches the fixed BDD resource
+limit. Table~\ref{tab:exact-public-loss} reports $W_C$, exact loss, and
+the original quantified initializer. Three Humanoid variants change from
+$I_M(W)=\mathit{true}$ to $I_M(W_C)=\mathit{false}$.
+Their exact losses strictly exceed $W\setminus C$ by 1211, 6112,
+and 2292 states, respectively. Thus an immediate response-totality check
+alone misses losses propagated by the invariant requirement.
+For variant 045, $W_C$ even remains nonempty (eight states), while
+none of its 20 allowed initial input choices has an initial response
+in that region. Region nonemptiness therefore does not restore the
+lost initial decision.
+
+The other six completed inputs retain strict initial feasibility.
+Every completed loss contains states existentially reachable by
+original-legal joint execution from the declared initializer. This
+establishes a possible continuation-state boundary, not reachability
+under a particular winning controller or an observed runtime execution.
+
+All ten affected original contracts already have $I_M(W_V)$ false,
+and hence $I_M(K)$ false. Every strict cooperative strategy wins
+inside $V$, so this necessary condition excludes cooperative initial
+realizability independently of the normalized four-fixed-point calculation.
+We additionally intersect the independently certified $K$ with the
+exact loss $W\setminus W_C$ for every completed calculation.
+The intersection is empty in all nine: seven have $K=\varnothing$;
+the two PCar variants each have 1636 cooperative states, all preserved.
+Thus these public results demonstrate strict-region loss and three
+strict initial flips, but no loss of a certified cooperative state
+within this cohort.
+They do not demonstrate rejection of an initially cooperative-realizable
+public contract. Guard establishes that separate possibility.
+The tenth calculation remains UNKNOWN.
+Moreover, these counts concern the complete semantic literal equations.
+They do not by themselves transfer the theorem to the released syntactic
+route, whose helper-true constraints require separate analysis.
+

@@ -1,0 +1,141 @@
+\subsection*{U.2 Lift: contract-sensitivity control}
+\label{supp:v64-lift-contrast}
+
+\paragraph{Question and predeclared change.}
+The Lift~T diagnosis depends on the recorded source contract and translation
+convention. To test that dependence, we declared a second contract before
+its execution: replace exactly the four \code{assumption} owner tokens of
+\code{one\_floor} and \code{one\_floor\_only1/2/3} by \code{guarantee}.
+Every formula and every other source byte remains unchanged, including
+button updates, current cancellation and movement guards, initializer
+assignments, and the existing reconstructed response pattern.
+This is a post-diagnosis sensitivity control, not held-out validation.
+
+Let $B$ denote the six button-update implications in Section~H, and let
+$\operatorname{One}(f)$ denote exactly one true floor. With superscripts
+$o$ and $n$ for the frozen and changed contracts, the exact translated
+original-contract difference is
+\[
+\begin{aligned}
+ \theta_e^n&=\theta_e^o,&
+ \theta_s^n&=\theta_s^o\land\operatorname{One}(f),\\
+ \rho_e^o&=\operatorname{One}(f)\land B,&
+ \rho_e^n&=B,\\
+ \rho_s^n&=\rho_s^o\land\operatorname{One}(f').
+\end{aligned}
+\]
+The added initial conjunct is redundant because the unchanged initializer
+sets $f=100$. Both legal joint initial states, with $b=000,m=000$ and
+either cancellation value, remain equal. The source ENV justice list stays
+empty; the three SYS justices remain $\G\F\neg m_i$.
+Thus the owner change also changes temporal placement: current ENV safety
+becomes initial and next-state SYS safety. This comparison does not isolate
+ownership from timing and does not compare two extractions of the same
+game across contracts.
+
+\paragraph{Matched execution within each contract.}
+Each contract receives one native solve, followed by released extraction
+and the same final-candidate continuation preference used in Section~H.
+The two extractions share the actual model and fixed-point memory objects;
+source, translation, solver and rank rules are fixed within that pair.
+The pinned harness adds only a read-only memory export to the existing
+paired harness. It captures 36 predicates for the frozen contract and 46
+for the changed contract, checks every captured BDD before and after
+preference extraction, and checks unchanged variable order.
+The snapshot boundary is \emph{after released extraction and around
+preference extraction}; it is not a pre-released-extraction snapshot or
+an independent proof of the solver's fixed points.
+Object identities, call arguments, class hashes and process receipts bind
+the common execution. Variant model/BDD files are copied from that common
+run, so byte equality alone is not the shared-execution evidence.
+The frozen released arm also reproduces all 23 historical semantic checks,
+including the complete graph and printed controller.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Lift contract sensitivity: two contracts by two extractions.
+Each cell gives native states/edges; original-view states/edges, followed
+by strict/cooperative verdicts. Every original view has two initial states.
+Each controller is judged under its own contract.}
+\label{tab:v64-lift-contrast}
+\begin{tabular}{@{}lcc@{}}
+\toprule
+Contract & Released extractor & Continuation preference\\
+\midrule
+Frozen Lift T &
+\shortstack{$794/13\,874$; $154/1170$\\pass / fail} &
+\shortstack{$778/13\,624$; $154/1176$\\pass / pass}\\[3pt]
+SYS one-floor invariant &
+\shortstack{$778/13\,624$; $154/1176$\\pass / pass} &
+\shortstack{$778/13\,624$; $154/1176$\\pass / pass}\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Availability and inactive preference.}
+Exhaustive enumeration finds 640 of the 1,024 typed original states
+without an ENV successor in the frozen contract and none in the changed
+contract. These states include seven public Boolean fields and three
+logical response monitors. The frozen count is $5\cdot16\cdot8$:
+five invalid floor valuations, sixteen input valuations and eight monitor
+valuations. In $B$, next $b_i=0$ is required only by $b_i\land f_i$,
+whereas next $b_i=1$ is required only by
+$b_i\land\neg f_i\land\neg c$. These guards cannot conflict, so
+$B$ has an ENV successor at every typed state.
+
+The saved helper-aware preference $Q$ is true on $1408/2048$ native typed
+states for the frozen contract and $2048/2048$ for the changed contract.
+Its helper-false part equals original ENV successor availability on these
+inputs; helper-true states remain available. The frozen preference refines
+726 of 13,624 candidate checks. The changed preference refines zero of
+13,624; neither run uses an empty-preference fallback.
+Within the changed contract, complete graphs agree after excluding only
+provenance labels and runtime object identities, and printer bytes are
+identical. This graph comparison is not a $G\to G\land A$ normalization
+route. Equal counts across contracts establish no game identity.
+
+\paragraph{Complete admission and separate verification.}
+Both existing auditors check all four returned controllers. The production
+auditor rebuilds BDDs from the profile AST; the other traverses saved
+decision DAGs with a separate reader and evaluates separately encoded
+source equations. Its source correspondence covers all $1{,}048{,}576$
+original current/next state pairs per arm, initial/domain identities and
+ordered justices. Both check complete native graphs, exact legal-input
+coverage, unique responses and safety. Original views are reachable
+helper-false subgraphs retaining native IDs, ranks and logical monitors,
+with 2,464 input obligations per view and no edge or memory repair.
+Their complete view and justice-label sets agree, as do the verdicts in
+Table~\ref{tab:v64-lift-contrast}.
+
+A further saved-evidence audit uses a fresh source transcription,
+integer-word BDD traversal and repeated deadend elimination to recheck
+both full source relations and all four graphs. It confirms that frozen
+released nodes 680 and 708 are exactly the original-view deadends,
+non-one-hot nodes and cooperation failures; the other views have none.
+These are distinct checking implementations, not independently authored
+experiments or independent human review. The new profile and source oracle
+were authored together; compiler exports, typing and the release's
+translation convention remain shared premises.
+
+\paragraph{Reproduction, outcomes and limits.}
+The archive \path{v64_lift_contract_contrast_20261023/} contains the
+preregistration and its hash, both source listings and exact diff,
+profiles, complete graphs, saved BDDs, memory snapshots, both auditor
+implementations and certificates, exact execution arguments and process
+receipts. \path{root_independent_audit/FACT_CHECKS.json} records the
+additional recomputation and trust bounds. All 237 preregistered input
+pins match; compilation precedes the recorded preregistration, and all
+ten child processes follow it and complete within their caps.
+Local chronology is not a third-party timestamp.
+
+Null controllers, caps, correspondence failures and checker disagreements
+were predeclared reportable outcomes; none occurred here. The retained
+first descriptive-summary attempt failed on a field-name lookup; correcting
+it repeated neither synthesis nor graph auditing. The two verbose native
+stdout files remain locally available with sizes and hashes in the receipts;
+the additional audit checked their presence and size without rereading
+their 879,283,576 bytes. A compact anonymous packaging plan retains those
+anchors and the complete semantic evidence; it is not a published artifact.
+The result bounds the diagnosis to this contract: it demonstrates no
+preference advantage after the declared change, no general synthesis repair,
+and no fairness guarantee from one-step availability alone.

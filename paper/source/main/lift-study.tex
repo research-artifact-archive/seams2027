@@ -1,0 +1,66 @@
+\FloatBarrier
+\section{A Solved Game Does Not Certify a Returned Graph}\label{sec:route}
+Lift tests the second boundary in Fig.~\ref{fig:evidence-overview}:
+a generic extractor's fixed graph. This extractor is not established to
+implement the prescribed cooperative rank/mode strategy~\cite[Eq.~(18),
+Theorem~3]{friendly}. The original contract remains feasible. Changing
+final selection below is a diagnostic intervention, not a general repair.
+
+\input{lift-source.tex}
+
+\paragraph{A matched selection diagnosis}
+We audit the chain in Table~\ref{tab:route-evidence} directly.
+
+One solve supplies the same model and memory objects to both extractors.
+Saved checks establish equal winning region, stored fixed-point sets
+$X,Y,Z$, initializers,
+transition relations and ordered justices, with unchanged variable order.
+For a candidate successor $t$ and Boolean helper $h$, define
+\[
+ Q(t)=h(t)\lor\exists e'\in E:\rho_e^{\rm native}(t,e')[h=0,h'=0].
+\]
+After the unchanged progress, goal and existing-node filters produce
+$B$, the modified copy substitutes $B\cap Q$ when nonempty, otherwise
+$B$, immediately before final response selection. Rank selection and
+private-memory updates remain unchanged. This tests immediate input
+availability, retaining helper-true candidates; complete graph audits
+establish cooperation. Source equations match the helper-false relations
+on all 1,048,576 original state pairs, initializers and ordered justices;
+both auditors share compiler exports.
+
+At the first creation of bad node 680, the final candidate floor set is
+$B=\{011,100,101,110,111\}$ and $B\cap Q=\{100\}$.
+The released extractor chooses $011$; the diagnostic selection chooses
+$100$, which permits four next inputs. At the later reused edge in
+Fig.~\ref{fig:lift-admission}, the existing-node filter leaves only
+$011$. Thus the intervention acts during extraction, including first
+creation, rather than replacing only the displayed reused edge.
+Supplement~W gives the preceding filters and exact predecessor.
+
+The initialized original-contract graphs each have 154 nodes, with
+1,170 released and 1,176 preference edges. Both complete checkers classify the released graph as strict-only and
+the preference graph as strict and cooperative
+(Table~\ref{tab:route-evidence}). The matched output difference is at final selection, but that is not
+the sole cause: the transformed game already permits the bad node.
+The intervention is inactive in six successful controls. Counts include
+two initial nodes and native memory; equal counts do not identify nodes.
+Supplements~H and T retain calls, candidates, traces and certificates.
+
+A separate contract control moves the floor-invariant clauses from
+ENV/current to SYS/next constraints. Both graphs then coincide and pass
+the audits. Ownership and timing change together, so this is a contract
+sensitivity check, not evidence that the original contract needs changing
+(Supplement~W).
+
+\paragraph{Why this is a diagnostic contrast}
+Constructed Polling has the safety assumption
+$\neg poll\Rightarrow\neg ack'$, ENV justice $\G\F ack$, and SYS
+justice $\G\F heartbeat$. An input remains available everywhere.
+Normalized synthesis on the original nonblocking arena computes exact
+$K=D$, yet the generic extractor returns a strict graph with terminal
+cycle $poll=ack=0$ and no fair ENV continuation. The helper-based
+released and selection-variant outputs also fail cooperation, with
+unchanged responses. Hence availability selection and a correct existence
+region do not certify a fixed graph. All three saved outputs fail the
+complete cooperation check (Supplement~O).
+

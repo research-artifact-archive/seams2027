@@ -1,0 +1,70 @@
+\subsection*{U.5 One bounded native strict query after diagnostic-transport qualification}
+\label{supp:native-strict-diagnostic}
+
+\paragraph{Motivation and scope.}
+The two native strict attempts in Section~U.1 ended because of diagnostic
+output: the first was manually stopped at 136.103\,s after capturing
+2.95\,GB; the second stopped at 76.739\,s when its lossless wrapper reached
+the 8\,GiB decoded-output cap. Source inspection and disassembly of the
+pinned JTLV class confirm that \code{BddCache\_lookupI} prints its cache
+class unconditionally, without a configuration switch. This motivated
+one separately authorized, bounded follow-up on the unchanged new actual
+arena. Neither previous failure demonstrated computational intractability.
+
+\paragraph{Exactly two logging hookups.}
+The copied harness replaces \path{LosslessStdoutRle} with
+\path{ExactDiagnosticPrintStream}, including its receipt filename, and
+replaces the enclosing UTF-8 \code{PrintStream} installation with
+\code{System.setOut(capture)}. Every scientific harness statement and the
+pinned JTLV/solver classes remain unchanged. The standalone wrapper counts
+only exact matching diagnostic lines, preserves their positions through
+ordered dictionary/run records, and retains every other stdout byte.
+It neither expands nor hashes repeated raw bytes; the stored stream has
+its own SHA-256. Stderr remains separate.
+
+Before the native attempt, logging-only fixtures checked byte-for-byte
+roundtrip of mixed lines, Unicode, partial writes, blank lines and final
+runs; ten million repetitions; stderr separation; and encoded-cap failure.
+The first cap fixture exposed an inconsistent completion flag. Its
+records were retained, the receipt flag corrected, and all fixtures
+passed before any scientific execution. These qualifications test log
+transport, not solver correctness.
+
+\paragraph{Same saved query.}
+Before solving, all thirteen saved initialization, safety and ordered
+justice predicates matched. A separate raw-node audit also confirms
+function equality with the previous attempt for the query domain, pending
+singleton and both solver relations. All fourteen source fields and
+logical auxiliaries remain, with request $S2$ and helper false at entry;
+no initializer or monitor is reapplied. The domain remains
+$D\land(\mathit{layout}\lor b)$: 4,800 helper-false states plus all
+75,000,000 helper-true states. The strict three-fixed-point
+\code{GR1Game} call must compute its complete winning region before the
+pending-state membership query. This is not a raw four-fixed-point or
+native frontend query.
+
+\paragraph{Caps and observed result.}
+The sole attempt used a 120\,s total budget, TERM at 118\,s and KILL at
+120\,s if needed; 768\,MiB Java heap, 64\,MiB direct memory and
+1\,GiB sampled process-group RSS; 16\,MiB per stored stream,
+64\,MiB per nonstream artifact and 128\,MiB aggregate output.
+BDD table/cache starting sizes stayed 10,000/1,000.
+TERM occurred at 118.031\,s and exit at 118.115\,s, without KILL.
+Peak sampled RSS was 777,437,184 bytes; stdout/stderr occupied
+117,195/2,898 bytes. The complete encoded log represents 1,950,438,989
+diagnostic lines and 105,323,709,165 reconstructable bytes. Counts,
+record order, receipt and encoded hash agree; the raw stream was neither
+materialized nor assigned a raw hash.
+
+The result is \code{UNKNOWN\_WALL\_CAP}: no winning region or adoptable
+strict verdict was produced. The last in-process \code{RUNNING}
+checkpoint is preserved, while the supervisor records termination.
+Removing the earlier output-cap abort did not yield completion within
+this budget; it establishes neither hardness nor frontend refusal.
+Section~U.1's separate saved-arena proof and certificates remain the
+strict-loss evidence. No further attempt was made.
+
+The closed packet is
+\path{experiment/v64_native_strict_diagnostic_20261023/}, indexed by
+\path{OUTCOME.json}, \path{REPORT.txt}, \path{CLOSURE.json},
+\path{FILE_MANIFEST.json} and \path{SHA256SUMS}.

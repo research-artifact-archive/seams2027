@@ -1,0 +1,111 @@
+\section*{V. Primary premises and the selected released route}
+\label{supp:v65-scope}
+This section distinguishes an executed controller failure from the
+premises of the abstract synthesis theorem. The primary-text reading
+and static release-code audit add no solver call or controller extraction.
+The final subsection evaluates one preregistered fixed lasso on saved
+native predicates; it is not a new synthesis or search experiment.
+
+\subsection*{V.1 Supported input and the property that fails}
+Kind's GR(1) definition permits environment safety to depend on current
+input and output variables and next input variables~\cite[Sec.~3.1]{kind}.
+Its analysis explicitly considers system-only assumptions and their
+potential to deadlock the environment~\cite[Sec.~5.1 and Appendix~A]{kind}.
+Thus Lift's current $\operatorname{One}(f)$ assumption lies within that
+stated syntax. The released validator also permits current SYS/AUX
+references in ENV safety, while rejecting next SYS/AUX dependencies;
+the invariant translator keeps the recorded current-only assumption.
+Neither fact establishes what a physical lift should mean.
+
+The saved Lift graph has an original-legal prefix ending where no legal
+next ENV input exists. It therefore violates Kind's Definition~3 for
+that fixed output and memory, under either the legal-prefix or the
+stronger all-history reading. A passing legal-prefix certificate alone
+does not establish the stronger all-history property.
+
+Kind's output-kindness theorem relies on the correctness of the
+non-conflicting synthesis construction~\cite[Theorem~3 and Appendix~A]{kind}.
+The extended TACAS statement binds the rank/mode strategy of equations
+(16) and (18), and its non-conflicting conclusion uses
+\[
+ L(H,G)\subseteq L(H,A),
+\]
+as specified in equation (13c)~\cite[Theorem~3]{friendly}.
+Replacing $G$ by $G\land A$ is the stated way to establish that sufficient
+premise when needed. Region membership or a raw four-fixed-point call
+alone does not bind an arbitrary extracted controller to that theorem.
+The premise is sufficient, not necessary; its failure does not prove
+that cooperative synthesis is impossible.
+
+\subsection*{V.2 Selected configuration and shipped default}
+The pinned released Eclipse plugin exposes \emph{Spectra: Synthesize
+Concrete Controller} and the preference \emph{Kind realizability: do not
+force any assumption violations (reduction plus 4 fixed-points)}.
+The tested settings select JTLV, no optimizations, no reordering and
+JTLV text output. The shipped defaults are instead standard GR(1), CUDD,
+all optimizations, reordering and CMP output. This is a mapping of public
+configuration and released calls, not a new GUI execution or evidence
+of default-route behavior.
+
+The validating headless parser and GUI parser both use the released
+source-to-game translator; their resource-access wrappers differ.
+The selected path invokes syntactic helper reduction before the default
+translations, generates the game, invokes \code{GR1SeparatedGame} on the
+JTLV branch, and passes its memory to
+\code{GR1ConceteControllerConstructionSkip} with default ZYX order.
+Its goal index, saved $X,Y,Z$ progress filters and final
+\code{CoreUtil.satOne} choices are not an established implementation
+binding to the TACAS rank/mode strategy. The selected raw chain does not
+replace $G$ by $G\land A$; the saved model, preconstructor and solver
+justice lists agree on one ENV helper justice and three SYS monitor
+justices. The paired modified extractor remains an explicit intervention.
+
+The preserving \code{PitermanSemanticReduction} class is present in the
+release~\cite{spectrarelease2024}. A direct-reference scan of twenty
+plugin JARs finds its class name only in its own class; no supported
+frontend choice or default invocation was established. Reflection and
+external callers were not exhaustively excluded. Its complete-relation
+rule, the printed literal reduction, the appendix's unprimed-ENV guard,
+and the actual syntactic exports must not be identified.
+
+\subsection*{V.3 One fixed lasso refutes the premise on this arena}
+The preregistered trace uses the frozen transformed Lift arena. Its
+initial state has buttons $000$, cancellation $0$, floors $100$, all
+three monitors $S0$ and helper $h=0$. The next state changes only $h$ to
+$1$, and repeats forever. Both initial predicates, all type constraints,
+and both ENV/SYS safety predicates hold on the first edge and self-loop.
+All three SYS justices hold on the loop, whereas the sole ENV justice
+$\G\F\neg h$ fails. The exact arena therefore has
+\[
+ L(H,G)\not\subseteq L(H,A).
+\]
+Evaluation checked 25 frozen input pins and 19 saved decision DAGs,
+including matching model, preconstructor and solver justice values.
+A separate source-equation evaluation agrees on the initial values,
+safety, monitor updates and helper persistence. There was one fixed
+candidate lasso, no arena enumeration, no solver call and no extraction.
+The source schema names \code{original\_bdds} and
+\code{original\_justices} refer here to the transformed native model.
+
+This witness is an arena lasso, not a returned-controller execution.
+It explains why the sufficient non-conflictingness premise cannot be
+invoked for this raw arena. The original-contract output failure still
+rests on the separately audited reachable Lift graph. These facts do
+not refute an abstract theorem under its own hypotheses.
+
+\paragraph{Records and limits.}
+The primary PDFs, relevant pages, hashes and origin checks are indexed by
+\path{experiment/v65_submission_execution_20261024/theorem_scope/PRIMARY_SCOPE_REPORT.txt}
+and its adjacent provenance records. Static release bindings are in
+\path{route_scope/ROUTE_SCOPE_AUDIT.json}; the preregistration, evaluation
+script and exact truth values are adjacent to
+\path{route_scope/LIFT_LASSO_RESULT.json}, under the same execution directory.
+The primary-source and static-route records above remain author-side
+records. The continuation release~\cite{continuationartifact} separately
+publishes the fixed-lasso saved replay described in the opening index:
+23 semantic payloads, nine metadata projection values, and 19 DAGs.
+It does not repeat the original 25-pin check: original Spectra and
+\path{final_region} are hash-only omitted, and original paths/runtime
+provenance are not revalidated. The author-host qualification adds no GUI
+run, default-failure result, theorem counterexample, returned-controller
+execution, or independent external reproduction.

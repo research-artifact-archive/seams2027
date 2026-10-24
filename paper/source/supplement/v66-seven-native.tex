@@ -1,0 +1,89 @@
+\section*{Y. Released-route binding and fixed seven-input native comparison}
+\subsection*{Y.1. Source-to-query binding}
+The pinned Spectra release is \code{1.0.0.202402072123}~\cite{spectrarelease2024}.
+The public concrete-synthesis action is \code{SynthesisAction} under
+\path{tau.smlab.syntech.syntCmpAction}. Its public Kind selection is
+\path{synthesisPitermanReduction}. The GUI input provider and the headless
+\path{SpectraInputProviderNoIDE} both feed the Spectra-to-GameInput
+translator. The selected chain calls
+\path{PitermanSyntacticReduction.doReduction} before
+\path{TranslationProvider.translate} with the default translators and
+\path{BDDGenerator.generateGameModel}. These are released source/bytecode
+bindings; they are not evidence that a GUI action completed.
+
+The strict diagnostic branch calls \code{GR1Game} for the original and
+transformed games. Raw selected-route runs instead call
+\code{GR1SeparatedGame}, test the resulting memory, and pass that memory
+and the model to \path{GR1ConceteControllerConstructionSkip} before
+concrete construction and printing. The class name's spelling is literal.
+The experiments use headless JTLV settings, not the shipped ordinary-GR(1)
+defaults. The separate \code{PitermanSemanticReduction} implements the
+complete first-flip correction; no public frontend option invoking that
+class is established. Identity with the C-backed driver used in the
+published Kind evaluation remains unestablished. Full exported relations,
+not the printed historical guards alone, bind the main paper's claims.
+
+\subsection*{Y.2. Fixed selection and protocol}
+The seven unchanged public inputs below~\cite{fixedsevennative2026} were selected from the previously
+certified inventory using the already known condition $I_M(K)=\mathit{true}$
+and a 65,536-state carrier cap.
+Their prior symbolic results already had $W=K$ and complete-literal
+preservation. The roster and commands were frozen before these native
+comparisons; this is a selected positive/control study, not a blind search.
+Exactly fourteen scientific JVM/strict-solver invocations ran: one original
+and one released-route query per input. All completed; no case was UNKNOWN
+or unattempted. No scientific query was retried. The independent audit
+used the saved BDDs and source exports, with no native solver rerun.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrrrl@{}}\toprule
+Corpus ID & $|D|$ & $|W|=|K|$ & Route source view & Initial ENV fibers & Conversion\\\midrule
+039 & 11,520 & 2,304 & 2,304 & 1 & helper\\
+040 & 11,520 & 2,528 & 2,528 & 1 & helper\\
+041 & 11,520 & 2,528 & 2,528 & 1 & helper\\
+135 & 65,520 & 63,312 & 63,312 & 60 & skip\\
+148 & 21,600 & 4,032 & 4,032 & 36 & skip\\
+150 & 43,200 & 9,440 & 9,440 & 36 & skip\\
+187 & 33,792 & 7,680 & 7,680 & 1,024 & skip\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Y.3. Complete membership and initialization checks}
+All 198,672 typed source-state rows, including AUX variables, were
+enumerated and saved. For each input, the original native $W$ equals the
+previous independently computed symbolic $W=K$, and equals the released
+route's source view. Both directions of every set difference are empty:
+loss, gain, $K\cap\mathrm{loss}$ and $K$ outside the route view are zero.
+For the three GyroAspect variants 039--041, the converter actually
+introduces the helper. The route view fixes its current value to false;
+the full native winning-region sizes are respectively 13,824, 14,048 and
+14,048, with helper-true slices of 11,520 each. These true slices count
+states only; the route initializer requires the helper to be false.
+For 135, 148, 150 and 187 the released converter skips. All metadata,
+domains, initial and safety predicates, and ordered justices match the
+original model. Their view is the whole route region; a helper slice is
+inapplicable. These four are identity controls.
+
+For every legal initial ENV assignment in the table, a SYS response
+(including AUX) was checked against the original native region, route
+region, old symbolic $W$ and old $K$. Every comparison has zero missing
+fibers, so all four initialization decisions are true on each input.
+The audit matches typed value encodings and ownership by field name,
+handles nonmonotone bit renaming in an independent raw-DAG implementation,
+and checks full predicates, ordered justices, constructor snapshots and
+the exact helper-false restriction. Raw winning BDDs intersected with
+their typed domains agree with saved typed regions. The audit rejects
+residual helper or next-variable dependence in a source view.
+
+\subsection*{Y.4. Interpretation and dependencies}
+The new evidence connects completed native strict queries to the old
+independent symbolic regions and the released conversion on this fixed
+set. It does not compute native cooperative strategies. Three active
+inputs share one program family; the other four do not exercise an active
+helper transformation. The prior cooperative-positive selection and
+known literal preservation preclude a frequency or blind-discovery
+interpretation. No target reachability, single-policy coverage, runtime
+update or deployment result follows. Zero loss here neither refutes the
+separate Vehicle188 loss nor proves preservation for other inputs.
+Shared source exports, typed metadata and native solver correctness remain
+trusted dependencies despite the independent membership implementation.

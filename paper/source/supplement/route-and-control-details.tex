@@ -1,0 +1,99 @@
+\subsection{Implementation identifiers and trace locations}\label{sec:replication}
+The two gate identifiers are
+\code{GR1SeparatedGame} and \code{isEmptyController}. The latter checks a stored
+justice-level $Z$ set before generic default-ZYX extraction uses the same
+model and memory. Section~C.4 records the historical environment-only
+initializer caveat; D the complete saved-relation checks; G--H the
+published-replacement capture limits, followup histories, and graph
+evidence.
+Section~H separately reports a nonrelease extraction variant and a
+paired comparison sharing one solved model and fixed-point memory;
+the release identifiers below continue to describe the baseline.
+
+The configured route uses Spectra \code{1.0.0.202402072123} with JTLV,
+syntactic Piterman reduction, \code{optChoice=none}, and
+\code{TraceInfo.NONE}. A headless loader replaces IDE resource access;
+the route excludes the Eclipse GUI and default CUDD backend and differs
+from the historical C-backed coverage driver~\cite{kindartifact}.
+The initial test uses the raw region, and the empty-controller gate
+rejects only an empty stored justice-level region.
+Loaded-class hashes match the release archive with the inspected
+sources; this is not an independent source-to-bytecode proof.
+
+The saved \path{SynthesisAction} bytecode checks
+\path{synthesisPitermanReduction}, then invokes
+\path{PitermanSyntacticReduction.doReduction} at offset 487 and
+\path{TranslationProvider.translate} at 596.
+Headless \path{ReleasedKindJobProducer} follows this order before BDD
+generation (\path{SOURCE_ROUTE_TRACE.tsv}), separately from Section~B's
+later-snapshot comparison.
+
+\subsection{Mechanism controls}
+Table~\ref{tab:controls} compares constructed or reconstructed controls: Guard (Section~B), Justice (\eqref{eq:justice}), Mixed, Traffic P, and Choice/Toggle. These are not independent public applications.
+
+\begin{samepage}
+For \emph{Choice}, let environment Boolean
+$e$ and system Boolean $p$ have
+\[
+\begin{aligned}
+\theta_e&=\neg e,&\theta_s&=\neg p,&\rho_e&=(e'\Rightarrow p),\\
+\rho_s&=\top,&A&=\G\F e,&G&=\G\F\neg p.
+\end{aligned}
+\]
+\end{samepage}
+From all four typed states, $p'=\neg p$ guarantees $G$; after every legal prefix, choosing $e'=p$ supplies an assumption-fair suffix under the same strategy. Thus $W=V=K=C=D$ and $I_M(K)=\mathit{true}$ independently of fixed-point computation.
+Toggle changes only system safety to $p'=\neg p$, retaining these initializers and justice objectives.
+
+Mixed has environment Boolean $e$,
+system Booleans $d,y$, $\rho_e=\neg d$, $\rho_s=\mathit{true}$,
+$A=\G\F e$, and $G=\G\F y$. Its initial predicates are $\theta_e=\neg e$ and $\theta_s=\neg d\land\neg y$. Its cooperative strategy can keep
+$d=0,y=1$ while the environment may choose $e=1$ after any prefix.
+Traffic P reconstructs a repaired traffic-light contract from~\cite{degradation}, using its original initializer rather than a residual entry from repair history.
+
+\begin{table}[t]
+\centering
+\caption{Constructed and reconstructed mechanism controls. Sizes are states/edges; original-contract checks use the helper-false view. A dash means no returned graph.}
+\label{tab:controls}
+\small
+\begin{tabular}{@{}llrrrr@{}}
+\toprule
+Input & Result & Native & View & Strict & Coop.\\
+\midrule
+Guard & False & --- & --- & --- & ---\\
+Justice & Graph & 4/10 & 2/2 & Pass & Fail\\
+Mixed & Graph & 5/16 & 3/6 & Pass & Pass\\
+Traffic P & Graph & 52/496 & 16/80 & Pass & Pass\\
+Choice & Graph & 3/7 & 1/1 & Pass & Fail\\
+Toggle & Graph & 7/18 & 3/4 & Pass & Pass\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Guard's source has environment Boolean $x$, system Boolean $p$
+(called $y$ in Section~B), trivial initial and justice predicates,
+and $\rho_e=\rho_s=x'$. The constant strategy $p=0$ is strict-winning;
+from every history, choosing $x'=1$ forever supplies a legal
+continuation. Thus $W=V=K=D$ and $I_M(K)=\mathit{true}$, independently
+of the mixed-current-invariant convention.
+The saved job result binds its input hash to this source and reports
+native refusal with unchanged initializers, one solver call, and no
+extraction or printing. A new complete saved-arena check enumerates
+all 16 original and 64 helper current/next assignments, including all
+four helper quadrants. Source equations and decoded saved predicates
+agree everywhere. The helper relations are the complete literal form:
+at any $b=0$ state, ENV can choose $b'=1,x'=0$, and both values of $p'$
+violate SYS safety. Finite safety iteration has cardinalities
+$8\to4\to4$, retaining exactly the $b=1$ slice. The saved raw
+four-fixed-point region agrees extensionally on this fixture and has
+a false quantified initializer. This establishes the first-flip
+obstruction in the saved configured run. It does not claim general
+equivalence of the raw core and strict synthesis, and no new native
+call was made. The historical partial certificates and new full check
+remain separately identified in the evidence index (Section~K).
+
+Justice's helper-false graph keeps $p=0$ and then $e=0$: strictness passes, cooperation fails, and the preceding argument separately excludes a cooperative alternative.
+
+Mixed and Traffic P pass both checks with complete input coverage,
+despite transformed unfair prefixes. Traffic P's single result also
+appears in the separate eleven-candidate comparison (Sections~G--H).
+

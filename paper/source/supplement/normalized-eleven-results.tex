@@ -1,0 +1,77 @@
+\paragraph{A separate original-initializer synthesis route.}
+\label{supp:normalized-eleven}
+After recording the historical outcomes above, we froze the same eleven
+source files, their order, and the settings for one additional route.
+It applies original-$V$ restriction and justice normalization
+$G\mapsto G\land A$, then the existing normalized four-fixed-point
+solver and unchanged generic graph constructor. It adds no helper and
+does not apply the final-choice preference used in the Lift intervention.
+The source initializers remain unchanged: every legal initial ENV choice
+must have a SYS/AUX response satisfying $\theta_s\land K$, and extracted
+controllers initialize their private rank to zero. Saved replay or
+residual entries are not substituted for these initial conditions.
+All eleven source ENV and joint initializers are nonempty.
+
+Each source received one serial native process attempt, with concurrency
+one and zero retries. Eleven attempts led to eight solver/extractor calls;
+Arbiter P, Lift P, and Minepump P stopped before those calls on independently
+confirmed empty $V$. All eleven original arenas, including initializers,
+safety, typed auxiliaries, and ordered justices, match their source-bound
+saved comparators. The full $V$ and $K$ Boolean functions also agree,
+including all AUX valuations. The comparisons use exact exported predicates
+and shared parser-translated BDDs; they are not an independent compilation.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Separate normalized-route results from the original initializer,
+in the fixed execution order. Init. counts graph initial nodes. Coop. is
+legal-prefix cooperation. Empty $V$ is an independently checked refusal
+before solver and extraction; its controller flags are null, shown as
+dashes. This table does not replace Table~\ref{tab:supp-repair-eleven}.}
+\label{tab:supp-normalized-eleven}
+\begin{tabular}{@{}lclrrcc@{}}
+\toprule
+Candidate & $I_M(K)$ & Outcome & States/edges & Init. & Strict & Coop.\\
+\midrule
+Arbiter P & F & Empty $V$ & --- & --- & --- & ---\\
+Arbiter T & T & Graph & 56/448 & 8 & Pass & Pass\\
+Lift P & F & Empty $V$ & --- & --- & --- & ---\\
+Lift T & T & Graph & 154/1176 & 2 & Pass & Pass\\
+Minepump P & F & Empty $V$ & --- & --- & --- & ---\\
+Minepump T1 & T & Graph & 12/40 & 1 & Pass & Pass\\
+Minepump T2 & T & Graph & 4/16 & 1 & Pass & Pass\\
+Traffic S P & T & Graph & 28/152 & 8 & Pass & Pass\\
+Traffic S T & T & Graph & 20/120 & 8 & Pass & Pass\\
+Traffic U P & T & Graph & 116/546 & 8 & Pass & Pass\\
+Traffic U T & T & Graph & 84/640 & 8 & Pass & Pass\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+All eight complete graphs pass the original-contract checks for initial
+coverage, legal-input coverage, safe responses, private-memory successors,
+strictness, and legal-prefix cooperation. The three refusals have false
+$I_M(K)$ and no controller verdict. This run has
+no UNKNOWN or unattempted row. Its graph certificates come from one
+original-contract checking implementation; the two-judge Lift experiment
+and the separate fourteen-input comparison retain their own scopes.
+
+\paragraph{Interpretation and limits.}
+The baseline and normalized jobs use the same original initializers.
+The new eight accepted graphs and historical seven passing outputs come
+from separate whole-route executions, not a matched extraction or
+success-rate comparison. Historical refusals, resource UNKNOWNs, and
+Lift P's released-model correspondence failure remain unchanged.
+For Lift T, the new certificate records zero copied source ENV justices
+and a 154-state, 1,176-edge graph with two initial nodes. Its equal size
+does not establish identity with the intervention graph; no graph-equivalence
+comparison was performed. The successful route supplies an existing
+alternative without the new preference, while the paired same-game,
+same-memory intervention still shows one sufficient local change.
+This whole-route comparison does not isolate the effects of $V$ restriction,
+normalization, helper removal, or extraction, and establishes
+neither preference necessity nor a general synthesis failure.
+It does not test Friendly's specialized strategy construction or add an
+eleven-case Slugs run. No new route output was installed or executed in
+the maintenance-to-service episode. The fixed correlated sources and
+single attempts establish no timing superiority or broader generality.

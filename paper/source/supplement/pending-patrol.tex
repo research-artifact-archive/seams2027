@@ -1,0 +1,197 @@
+\section*{S. Pending patrol continuation under temporary closures}
+\subsection*{S.1 Source, change, and exact entry}
+The new source is the unchanged \code{Patrolling} specification, corpus
+entry~277 of the Kind artifact~\cite{kindartifact}, with its imported
+\code{DwyerPatterns} definitions. Its 3,304 source bytes have SHA-256
+\nolinkurl{cde1b981a103047ddefbe8a963f1188d57904659a30fd0e7b678c771213be402}.
+The constructed old source appends one initial layout condition,
+$A=(0,4),B=(2,4),C=(4,4)$, and three permanent-open assumptions.
+The update removes only these ENV additions. It changes neither SYS/AUX
+clauses nor types. Coordinate persistence retains the actual layout
+after the update. No source initialization is reapplied at the boundary.
+
+All six checkpoint coordinates and two robot coordinates range over
+$\{0,\ldots,4\}$. ENV also controls three blocked flags and
+\code{isCharged}. The charging counter ranges over $0,\ldots,3$;
+the logical request monitor has states $S0,S1,S2$. This gives 75,000,000
+typed current source states and 250,000 typed next ENV valuations.
+The finite old/new controller closures use one reached layout; this does
+not restrict the typed next coordinates quantified by the helper test.
+
+In the constructed old-source scenario, the policy selects initial
+robot position $(0,0)$; its added permanent-open assumptions initialize
+the blocked flags false. These are scenario/old-model choices, not
+initial restrictions of the unchanged public new source. The latter
+permits all 25 robot positions and arbitrary initial blocked/charged
+flags, with logical initial conditions $c=0,m=S0$.
+The actual old BOOT step leaves position and counter unchanged and
+changes the monitor to $S2$ on low power. The reached entry has private
+patrol phase~0 and is noninitial because
+its logical monitor differs from the initializer. The charging response
+has not occurred: robot position is not $(4,0)$. The old policy graph
+contains both initialized power valuations and the actual BOOT edge.
+
+\subsection*{S.2 Complete source equations and policy}
+Let $p=(x,y)$ be robot position, $t_i$ the three checkpoint positions,
+$d_i$ their blocked flags, $z$ the charged flag, $c$ the counter, and
+$m\in\{S0,S1,S2\}$ the logical monitor. Write $H=(4,0)$ and
+$\operatorname{near}(p,t)\equiv\|p-t\|_\infty\le1$.
+The new ENV relation is
+\[
+\rho_e(s,e')=\bigwedge_i(t_i'=t_i)\land
+ \bigwedge_i(\operatorname{near}(p,t_i)\Rightarrow d_i'=d_i)
+ \land(c=3\Rightarrow z').
+\]
+The old relation additionally requires $\bigwedge_i\neg d_i'$;
+the pure-ENV invariant translation also initializes these flags false.
+There are three ENV justices $\G\F\neg d_i$.
+The SYS relation requires
+\[
+\|p'-p\|_1\le1,\qquad
+(p=H\land c<3)\Rightarrow p'=p,\qquad
+\bigwedge_i(d_i\Rightarrow p'\ne t_i').
+\]
+It includes the complete counter and monitor equations. The counter is
+$c'=\min(3,c+1)$ when $p=H$, and $c'=0$ otherwise. For the monitor,
+\[
+\begin{array}{c|l}
+m & m'\\\hline
+S0 & S2\text{ if }\neg z\land c\ne3\land p\ne H,\text{ else }S0\\
+S1 & S1\\
+S2 & S1\text{ if }c=3;\ S0\text{ if }c\ne3\land p=H;\ S2\text{ otherwise}.
+\end{array}
+\]
+The five SYS justices require recurring visits to each $t_i$, to $(0,0)$,
+and to $m=S0$. The private patrol phase is not a logical source variable.
+
+The manual policy visits the checkpoint row through the standoff row
+$y=2$. It waits two cells before a target while its next blocked flag is
+true. Once that flag is false, entering the one-cell neighborhood freezes
+it until after the visit and retreat. The policy then traverses the next
+standoff, returns to $(0,0)$, and visits $H$. It stays at $H$ until the
+counter reaches three. A finite phase list fixes every intermediate
+cardinal movement; the full list and every resulting edge are supplied.
+For illegal original inputs the strict strategy is completed with a
+sink only after the first illegal prefix. That convention does not
+release SYS duties on a legal first helper flip.
+
+\subsection*{S.3 Source correspondence and graph certificates}
+The pinned Spectra parser and translator export complete native ASTs for
+both sources. A separate support enumerator compares every translated
+clause to the executable source equations: 35 new clauses over 22,899
+assignments and 42 old clauses over 38,536 assignments. The seven extra
+old translated constraints are the layout initializer and the initial/next
+forms of the three permanent-open assumptions. SYS and AUX ASTs are
+identical. Enumeration includes each clause's full typed support, rather
+than only its reachable samples; unused dimensions are factored. This is
+77 clause checks and 61,435 support assignments, not full-state enumeration.
+Fifteen in-memory malformed AST/source controls are rejected for their
+expected reasons.
+
+\begin{center}
+\begin{tabular}{lrrrrcc}\toprule
+Graph & Roots & States & Edges & States in $C$ & Strict & Cooperative\\\midrule
+Old initialized &2&140&277&140&Yes&Yes\\
+New pending continuation &1&849&12,240&787&Yes&Yes\\\bottomrule
+\end{tabular}
+\end{center}
+All nodes are reachable from the declared roots; every legal input occurs
+exactly once and every response satisfies source safety and the actual
+private phase update. The independent auditor evaluates all typed SYS
+outputs where needed, rather than accepting a producer's safe-response
+list. Its cooperation check uses reachable accepting cyclic SCCs, including
+non-bottom SCCs; its strictness check excludes ENV-fair cycles avoiding
+each SYS justice. The graphs establish feasibility at the declared entries,
+not at all typed layouts. Eight malformed graph controls and three
+fairness-algorithm controls qualify the auditor.
+
+\subsection*{S.4 Exact first-flip condition and lost continuation}
+Let $T(s)$ be the movement/dwell-permitted next robot cells and
+$N(s)=|T(s)|$. Put $k(s)=\sum_i[d_i]$. The complete literal condition
+$\forall e'\exists y':\rho_s(s,e',y')$ is exactly $N(s)>k(s)$.
+If $N>k$, at most $k$ of the permitted cells can be occupied by next
+coordinates of currently blocked checkpoints, leaving a safe cell;
+the counter and monitor have unique typed updates. If $N\le k$, assign
+distinct blocked checkpoints to every cell of $T(s)$. This typed next
+ENV valuation leaves no safe position. The flip's ENV disjunction
+releases original coordinate persistence, so such relocation is legal
+for the literal flip even though illegal in the source game.
+
+The full typed check at the pending boundary covers 15,625 coordinate
+tuples and factors the sixteen irrelevant next-flag valuations, yielding
+250,000 next ENV valuations. The 4,800-state fixed-layout slice has 4,596
+states satisfying $C$ and 204 outside; these are slice counts, not full
+carrier cardinalities. Since SYS/AUX relations are identical, $C$ is
+identical for old and new models. Every reachable old policy node is in
+$C$, so its winning policy establishes $r\in W_C^{\rm old}$.
+
+For the new model a complete adversarial certificate establishes
+$r\notin W_C^{\rm new}$. While the robot has not reached $H$, keep all
+blocked flags false and $z=false$. If it avoids $H$ indefinitely,
+all ENV justices hold and monitor $S2$ never clears, violating a SYS
+justice. At the first arrival at $H$, the counter is zero. Next legally
+set $A$ blocked; $A=(0,4)$ is far from $H$. Dwell forces a stay with
+counter one, giving $N=1,k=1$ and therefore $\neg C$.
+The one-step flip witness relocates $A'$ to $H$. This is an encoding-only
+input; the actual source execution never moves $A$.
+
+The countercertificate has 26 states, 25 nonexit rows, and one
+outside-$C$ exit. The auditor tests all 300 typed SYS outputs per row and
+checks exact coverage of all 103 safe replies. Every infinite nonexit
+branch is ENV-fair and violates the pending-monitor justice; the exit
+has a typed input with zero safe replies. Combined with the main exact-region
+theorem, this proves loss for the complete literal reduction. It does
+not assert a released syntactic solver's verdict, whose retained relations
+would require separate analysis.
+
+\subsection*{S.5 Actual source handoff and qualifications}
+The single software execution retains the same plant and controller
+instances, all fourteen source fields, logical monitor, and private phase.
+It performs one old BOOT commit, pauses at the pending entry, records the
+certified diagnosis, changes the active ENV model, and resumes. No source
+or private state is reset and no controller is replaced.
+The frozen workload closes $A$ for two offers at its first standoff,
+then clears it, and closes it once during the first charger dwell.
+These are three occurrences of one complete ENV valuation, at new-mode
+steps~3, 4 and~31. They are legal under the new model and illegal under
+the old permanent-open requirement.
+
+The robot reaches $H$ at step~30, satisfying the old request, and clears
+its logical monitor at~31. That step is the single observed outside-$C$
+state, with monitor already $S0$. It must not be described as an unserved
+old request. Thereafter the fixed all-clear, charged input repeats a
+full source-state and private-phase cycle from steps~32 to~67, length~35,
+visiting all three ENV and five SYS justices. The complete graph provides
+the infinite-path guarantee; the observed cycle supplies execution evidence.
+
+The independent event auditor checks all 278 events and all 68 commits
+(one old, 67 new), each input, response, graph edge, source-monitor update,
+private update, pause/resume boundary and object identity. The actual
+positive audit and eight malformed controls pass qualification; the
+controls corrupt carried source/monitor/private values, event/summary
+bindings or continuation evidence and must be rejected. These are selected
+controls rather than exhaustive fault coverage.
+
+\subsection*{S.6 Decision, alternatives, and reproduction scope}
+At the same reached pending entry, both models have $C(r)$ and a strict
+cooperative source continuation. The old complete literal encoding admits
+it; the new one does not. The result warrants retaining the requirements
+and qualifying the converted-game refusal. Validated reuse of the old
+controller already succeeds. Direct original-game solving and the known
+complete corrected guard are alternatives; no comparative speed or
+service advantage over those methods is claimed.
+
+The scenario, policy and workload are constructed after exploratory
+search; they are not a random or prevalence sample. The new published
+source is unchanged. This is a finite source-model execution, not robot
+hardware deployment, a measured released-solver false refusal, or an
+observed human weakening decision. Source, graph and event auditors are
+separately implemented but author-visible and share recorded semantics.
+Native AST agreement depends on the pinned compiler. The accompanying
+saved-evidence package supplies source bytes, ASTs, complete graphs,
+countercertificate, event stream, checker code and relative provenance.
+The replay manifest distinguishes checks of saved ASTs and recorded
+evidence from any regeneration of finite graphs or execution of source-model
+scripts. Saved-AST validation does not rerun native parsing or synthesis;
+none of these checks constitutes physical deployment. Earlier controls and UNKNOWN records
+remain in their original archives.

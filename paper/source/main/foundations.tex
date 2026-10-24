@@ -1,0 +1,66 @@
+\section{The Replacement Decision and Its Semantics}\label{sec:running-example}
+The update boundary retains the full source state $r$, including logical
+history monitors for unfinished obligations. The \emph{original contract}
+is the candidate after the proposed environment change or repair, before
+adding synthesis auxiliaries. A replacement graph may select a new private
+root; it must match $r$ rather than restart the original initializer.
+Checking assumes a valid holding state until installation. A changing
+physical state instead needs a verified update bridge or revalidation.
+
+\paragraph{Source continuations}
+Its finite, fully observed Mealy game $M$ has nonempty typed input and
+response carriers $E,Y$, with states $D=E\times Y$. A round starts at
+$s=(e,y)$: ENV supplies the next input $e'$, SYS observes it and chooses
+$y'$, and the next state is $s'=(e',y')$. Environmental safety is
+$\rho_e(s,e')$, independent of the next response; system safety
+$\rho_s(s,e',y')$ includes every system constraint and logical-monitor
+update. Neither relation need be total. Initial predicates are
+$\theta_e(e)$ and $\theta_s(e,y)$; invalid type encodings are outside $D$.
+
+Safety specifies allowed steps. A justice condition must hold
+infinitely often; the ENV and SYS lists define generalized B\"uchi
+objectives $A$ and $G$. Under \emph{strict} semantics~\cite{gr1,kind},
+SYS must satisfy safety while the ENV safety prefix, including the
+current edge, holds, and must satisfy $A\Rightarrow G$ on infinite
+safety-compliant plays. An ENV safety violation releases the safety
+duty on that edge and thereafter. Unfairness cannot excuse an earlier
+required safety violation. Strategies retain private memory and give
+typed responses even to illegal inputs.
+
+An original-legal prefix follows the declared entry and original safety
+relations. A fixed strategy is \emph{legal-prefix cooperative} if every
+such prefix admits an infinite environment-safe continuation satisfying
+all ENV justices, with that same strategy and reached memory~\cite{cooperative,friendly}.
+For a strict strategy, this continuation also satisfies SYS justice.
+Thus a legal next input is necessary but insufficient: a controller
+may leave inputs available while preventing a required event forever.
+
+Kind's Definition~3~\cite{kind} includes illegal strategy-consistent
+histories; our positive certificates establish legal-prefix cooperation.
+Neither resets reached memory. A failure on a legal prefix also refutes
+the stronger property for that output, but does not exclude every strategy.
+
+Let $W$ contain source states admitting some strict-winning continuation,
+and $K$ those admitting some strict, legal-prefix cooperative continuation. These regions quantify over
+strategies and their memory. More generally, $\operatorname{Win}_{\rm str}(N)$
+denotes states with a strategy satisfying the strict duties of game $N$
+against every environment strategy. The regions include unreachable typed states and
+are independent of initialization; $W$ may include environmental dead
+ends through strict vacuity. An active continuation has already met ENV
+initialization, prior safety, and required SYS duties.
+
+\paragraph{What each result licenses}
+An entry is \emph{preserved for strict winning} when original winning at
+$r$ implies winning at its corresponding encoded state. With a correct
+strict solver, this implication permits a negative encoded result to
+exclude $r\in W$. Without it, an encoded refusal leaves source feasibility
+unresolved. A cooperative-core result needs its own sound correspondence;
+it cannot automatically be read as a strict-game result.
+
+A returned graph fixes private memory $q$ as well as source state $s$.
+Its admission check binds a particular $(r,q)$ and verifies every
+original-legal branch, safety, liveness and cooperation. A passing graph
+is a constructive feasibility certificate and may be installed under the
+holding assumption. A failing graph excludes that candidate, not all
+source strategies. Section~\ref{sec:replication} gives the complete checks.
+

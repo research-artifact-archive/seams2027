@@ -1,52 +1,43 @@
 # Continuation Preservation in Boolean-Helper Synthesis for Controller Replacement
 
-This anonymous research artifact accompanies the paper on preserving source continuations and admitting a replacement controller. It contains the paper and supplement, saved models and results, checker and experiment sources, and scoped replay instructions.
+Anonymous research artifact for the accompanying paper. Start with the purpose that matches your visit.
 
-## Choose your purpose
+| I want to… | Start here |
+| --- | --- |
+| Read the paper, supplement, or TeX sources | **[paper/](paper/README.md)** |
+| Find evidence for a claim or inspect a result | **[results/](results/README.md)** |
+| Read the checker and experiment code | **[tool/](tool/README.md)** |
+| Verify a download or repeat a saved-data check | **[reproduce/](reproduce/README.md)** |
+| Understand versions, citations, or source terms | **[docs/](docs/README.md)** |
 
-| I want to… | Start here | What is available |
-| --- | --- | --- |
-| Read the paper and proofs | [paper/](paper/README.md) | Current main PDF, complete supplement, and matching TeX source |
-| Find the evidence for a claim | [results/](results/README.md) | Vehicle, Patrol, Lift, comparisons, negative results, and exact evidence guides |
-| Inspect or use the code | [tool/](tool/README.md) | Checker and experiment source families, their inputs, and existing entry points |
-| Recheck saved results | [reproduce/](reproduce/README.md) | File-integrity check, offline saved-data replays, and the separately scoped native-regeneration route |
-| Understand versions and layout | [docs/](docs/README.md) | Maintained navigation, fixed evidence versions, source restoration, and historical records |
+## Paper and evidence
 
-## Read first
+[Main paper](paper/main.pdf) · [Technical supplement](paper/supplement.pdf) · [Matching source ZIP](paper/source.zip)
 
-- [Main paper](paper/main.pdf): the replacement decision, preservation theorem, Vehicle/Patrol/Lift mechanisms, and admission comparisons.
-- [Technical supplement](paper/supplement.pdf): complete bindings, proofs, source details, execution records, and limitations.
-- [Claim-to-evidence guide](results/README.md): start from the paper section or the result you want to inspect.
+The paper separates three questions: whether the source admits a continuation, whether an encoding preserves it, and whether a particular returned controller should be admitted. The [results guide](results/README.md) connects those questions to Vehicle, Patrol, Lift, the fixed comparison rosters, and negative or unresolved outcomes.
 
-The current document snapshot is **v69-r1**, bound by [paper/PAPER_MANIFEST.json](paper/PAPER_MANIFEST.json). Its publication records an artifact snapshot; it does not record conference submission or acceptance. The fixed repository snapshot for this navigation is `paper-navigation-20261024-v1`.
+The artifact includes **17 versioned evidence bundles**. Their scientific payloads are unchanged by this layout update. The current document snapshot is **v70-r1**; [its manifest](paper/PAPER_MANIFEST.json) records the exact PDF and source hashes.
 
-## What can be checked?
+## Quick start
 
-The paper distinguishes source feasibility, preservation by an encoding, and admission of a particular returned graph. The artifact keeps their evidence separate. The [reproduction guide](reproduce/README.md) distinguishes metadata/byte integrity, recomputation of saved finite semantics, and the separately documented native regeneration. A successful file check alone is not a scientific replay.
-
-The collection retains **17 evidence archives**, **10 historical document downloads**, and the new current paper/supplement/source triplet in `paper/`. Existing archives, historical documents, tools, and fixed evidence tags keep their original contents. There are no new scientific runs in this navigation release.
-
-```text
-paper/       Current paper, supplement, source ZIP, and their exact hashes
-results/     Evidence organized by the question or claim being assessed
-tool/        Entry points to checker and experiment sources
-reproduce/   Integrity verification and scoped replay instructions
-docs/        Layout, versions, source-restoration, and history guide
-archives/    Unchanged versioned scientific evidence bundles
-documents/   Unchanged historical appendix snapshots
-tools/       Unchanged historical integrity and restoration utilities
-```
-
-From the repository root, check this maintained distribution with Python 3.9 or later:
+With Python 3.9 or later, from the repository root:
 
 ```sh
-python3 -I -S -B reproduce/verify_navigation.py
+python3 -I -S -B reproduce/verify.py
 ```
 
-This checks public file bytes and navigation only. Historical validators such as `tools/verify_fixed_seven_distribution.py` require their own fixed snapshot; [reproduce/](reproduce/README.md) gives that command separately.
+This checks file integrity, navigation, and the correspondence of browsable code to the evidence bundles. To recompute saved finite results, follow a [scoped replay recipe](reproduce/README.md#recompute-saved-finite-results). Integrity checks do not run scientific computations or native synthesis.
 
-## Versions and citations
+```text
+paper/       Current PDFs and matching source
+results/     Claim guide, evidence bundles, records, and exact member index
+tool/        Browsable checker sources and their provenance
+reproduce/   Integrity checker, replay instructions, and source restoration
+docs/        Versions, citation policy, and third-party notices
+```
 
-The repository URL is the maintained reader entry point. Individual scientific claims retain their version-specific evidence citations; use the cited tag and archive to recover the exact evidence. Future navigation changes can be made on `main` while retaining these fixed snapshots. The complete previous README remains in [historical navigation](HISTORICAL_NAVIGATION.md), with each historical section's original scope and counts.
+## Cite and reuse
 
-Original artifact code, documentation, and research outputs use the [BSD 3-Clause license](LICENSE). [Third-party notices](THIRD_PARTY_NOTICES.md) describe external components and source-restoration requirements.
+Use this repository URL as the maintained reader entry point. The fixed snapshot for this layout and paper is [`reader-layout-20261024-v1`](https://github.com/research-artifact-archive/seams2027/tree/reader-layout-20261024-v1). Individual scientific claims retain their own fixed evidence tags; [versions and citations](docs/versions.md) explain how to recover them. Earlier document snapshots and superseded distribution utilities remain available at their historical tags.
+
+Original contributions use the [BSD 3-Clause license](LICENSE). See [third-party notices](docs/THIRD_PARTY_NOTICES.md) for included corpus material and externally restored sources.

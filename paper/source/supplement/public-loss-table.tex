@@ -1,0 +1,22 @@
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{4pt}
+\caption{Exact loss for all ten condition-violating public inputs. $R$ is existential reachability through original legal joint edges from the original initializer. Every original initial decision is true. The last column reports the literal complete-semantic initial decision $I_M(W_C)$. Dashes retain the one resource-limited calculation; they are not zeros. IDs identify source variants in the fixed artifact roster.}
+\label{tab:exact-public-loss}
+\begin{tabular}{@{}llrrrrrl@{}}
+\toprule
+ID & Source family & $|W|$ & $|W\setminus C|$ & $|W_C|$ & $|W\setminus W_C|$ & $|R\cap(W\setminus W_C)|$ & $I_M(W_C)$\\
+\midrule
+003 & AMBA & 34575 & 6144 & 28431 & 6144 & 2048 & True\\
+044 & Humanoid & 2387 & 1176 & 0 & 2387 & 1581 & False\\
+045 & Humanoid & 11232 & 5112 & 8 & 11224 & 7294 & False\\
+046 & Humanoid & 42312 & 37632 & 2388 & 39924 & 2667 & False\\
+059 & PCar & 5196 & 1600 & 3596 & 1600 & 200 & True\\
+060 & PCar & 5196 & 1600 & 3596 & 1600 & 200 & True\\
+072 & AirportShuttle & 4601344 & 4070400 & 530944 & 4070400 & 49352 & True\\
+159 & RoboticArm & 447213 & 355043 & --- & --- & --- & Unknown\\
+178 & RoboticArm & 892496 & 361284 & 531212 & 361284 & 24648 & True\\
+179 & RoboticArm & 892496 & 361284 & 531212 & 361284 & 100140 & True\\
+\bottomrule
+\end{tabular}
+\end{table}

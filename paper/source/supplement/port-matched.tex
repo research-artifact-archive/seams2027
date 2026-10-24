@@ -1,0 +1,82 @@
+\section*{O. Matched Port extraction and one-step-Q limits}
+\label{app:port-matched}
+PortHandshake and Polling are constructed mechanism examples outside
+the published-replacement and public-input cohorts. Their sources and
+initializers were fixed before the matched Port experiment; no ordering
+or source search was used to obtain an effect.
+
+\paragraph{Exact Port source.}
+ENV owns Boolean $ack$; SYS owns Boolean $request,gate$.
+Initial values are $ack=request=0,gate=1$. ENV safety is
+$request\Rightarrow ack'$ and $\neg gate\Rightarrow\neg ack'$;
+SYS has no additional safety and requires $\G\F request$.
+The unchanged 204-byte source gives
+$Q_{ref}=\neg request\lor gate$ exactly. After initialization, always
+choosing $request=gate=1$ is a strict cooperative source policy.
+The historical released/current-rank-safe outputs have source-legal
+sizes 3 states/2 edges and 3 states/4 edges, with strict/non-cooperative
+and strict/cooperative judgments. Their different rank handling prevents
+attributing that contrast to Q alone.
+
+\paragraph{Matched intervention and diagnostic separation.}
+R and RQ use one solve and shared fixed-point memory, the same canonical
+rank calculation, admissible progress rules, Z/Y/X ordering,
+goal/existing-state preferences, initializers, BDD order, and first-choice
+runtime. All Q-preference sites switch together: TRUE for R and
+$Q_{ref}\lor helper\_true$ for RQ. This qualified Port profile contains
+a helper; the source predicate remains unlifted.
+The unlifted source $Q_{ref}$ is separately retained in both arms;
+Q-off never changes its diagnostic truth to TRUE.
+The historical released B is a reference, not a third fresh arm or a
+same-memory control for the new pair.
+
+A local witness requires a common original-legal prefix and the same
+full source/history state, input, canonical rank/progress obligation,
+and existing-state context before Q acts. Both Q-good and Q-bad successors
+must belong to that pre-intervention progress universe. For the
+Y-rank-decrease rule, changes in the selected layer within $k<r$ are
+distinguished from within-layer selection; changes in the selected
+Z-successor Y layer are classified separately. The final post-Q pools
+need not coincide. A second
+\code{satOne} call on a raw unpreferred pool alone does not reproduce
+the full Q-off heuristic sequence.
+
+\paragraph{Bounds and judgment.}
+The Port native envelope remains 512 MiB heap, 128 MiB direct memory,
+2 GiB RSS, and 120 seconds. Scalar diagnostics use already computed
+outcomes. Additional witness inspection is bounded to 16 contexts,
+including attempted contexts, 16 records, and 256 KiB aggregate output
+across both arms. Added BDD-operation and live-temporary budgets,
+source/helper qualification, and recording-on/off parity passed before
+the primary pair; BDD references are not retained in logs. The final judgment
+separates reachable mixed opportunities, matched-context selection
+changes, and complete output strictness/cooperation. Partial diagnostic
+coverage leaves unrecorded scope UNKNOWN; a fully validated local
+witness can still establish its own selection effect.
+\input{port-matched-result.tex}
+
+\paragraph{Polling is a fairness countercontrol.}
+ENV owns $ack$, SYS owns $poll,heartbeat$; all start false.
+Safety $\neg poll\Rightarrow\neg ack'$ is always satisfiable, so
+$Q=Alive=D$ on all eight typed states. ENV justice is $\G\F ack$;
+SYS justice is $\G\F heartbeat$. The source permits the cooperative
+policy $poll=heartbeat=1$ after initialization, and the checked source
+regions are $V=K=D$. Nevertheless the three saved released, preference,
+and normalized outputs are strict and non-cooperative.
+The normalized arm starts from the original initializer and restricts
+the original arena to $V$, adds no helper, and copies ENV justice $ack$
+after SYS justice $heartbeat$, giving the ordered SYS list
+$[heartbeat,ack]$. It uses \code{GR1SeparatedGame} and the unchanged
+generic ZYX constructor. Its saved final region equals $K=D$, but the
+complete graph is $0\to1\to2\to2$, with $poll=ack=0$ throughout;
+$heartbeat$ is respectively $0,1,0$. The terminal SCC cannot satisfy
+ENV justice. Nodes 0 and 2 retain distinct private ranks despite equal
+source values. This refutes the selected output, not the existence region.
+The historical helper-based preference pair inspects ten candidate sets
+with zero refinements and identical source-legal responses; it is not
+the matched Port experiment above. The preference
+has no discriminating one-step predicate; strictness does not exclude
+preventing ENV fairness. The normalized 8-of-8 success on the eleven
+replacement contracts is therefore a cohort result, not a universal
+constructor guarantee. No execution handoff or new external-application
+generality is established by these constructed sources.

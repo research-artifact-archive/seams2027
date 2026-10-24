@@ -1,0 +1,108 @@
+\section{Admission and Existing Comparisons}\label{sec:replication}
+The distinction in Section~\ref{sec:running-example} gives a concrete
+admission rule: keep the source state and logical monitors fixed,
+bind each candidate's private root, and install the first passing graph.
+If all candidates fail or remain UNKNOWN, defer replacement without
+inferring source infeasibility. Holding continues only while valid;
+otherwise the bridge or revalidation condition in
+Section~\ref{sec:running-example} applies. Changing the contract needs a
+preserving refusal or a separate source argument.
+
+\subsection{Complete fixed-graph checks}
+The audit checks the selected root or required initial choices,
+responses to every original-legal input, source safety, logical-monitor
+and private-memory updates, strict liveness, and legal-prefix cooperation.
+In the graph of checked legal responses, an \emph{ENV-accepting} strongly
+connected component (SCC) contains a cycle and intersects every ENV justice.
+Cooperation holds exactly when every reachable node can reach such an SCC.
+Strict liveness requires that, for each SYS justice, removing the nodes
+satisfying it from the already reachable graph leaves no ENV-accepting SCC. SCCs need not be bottom
+components; a singleton needs a self-loop. Even with no ENV justices,
+a cycle is required.
+
+A model-based audit requires typed predicate correspondence; a direct
+audit uses source equations. Original-contract views of helper-based
+graphs keep the helper false and retain every original-legal input.
+Missing correspondence or exhausted resources leaves the relevant decision
+UNKNOWN; it does not invalidate an independent source certificate.
+
+\subsection{Existing synthesis as a source of alternatives}\label{sec:cooperation}
+Let $V=\nu X.(\mathit{Alive}\land\CPre(X))$, where $\mathit{Alive}$
+means some original-legal next input exists and $\CPre(X)$ requires a
+safe SYS response into $X$ for every such input. Every strict cooperative
+strategy remains in $V$. If $V=\varnothing$, then $K=\varnothing$;
+otherwise retain every original-legal input and all safe responses into
+$V$, and split rounds into input/response edges to obtain a finite total
+arena $H$. The reached states and residual strategies form a post-fixed point
+of $\mathit{Alive}\land\CPre$; restriction retains their legal prefixes
+and memory. Conversely all original-legal inputs are retained, and
+$A\Rightarrow(G\land A)\equiv A\Rightarrow G$. Thus normalization
+preserves $K$ (Supplement~L.2) and establishes the language premise
+$L(H,G\land A)\subseteq L(H,A)$~\cite{cooperative,friendly}.
+Justice labels occur only on completed states, with empty lists padded
+by true. The round correspondence identifies final regions, not
+extracted ranks (Supplements~A and L.2).
+
+The cited four-fixed-point theorem supplies a prescribed rank/mode
+witness inside $K$ and excludes every history-dependent strict
+cooperative strategy outside it~\cite[Eq.~(18), Theorem~3,
+Apps.~B.1--B.2]{friendly}. Our generic constructor has no established
+binding to that strategy; every returned graph is audited separately.
+
+
+\subsection{A paused replacement and its consequence}\label{sec:lift-episode}
+\input{admission-runtime.tex}
+
+\subsection{What the fixed comparisons establish}
+Table~\ref{tab:comparison-summary} keeps the input sets and their
+selection rules separate. Existing normalized synthesis supplies admitted
+graphs for every cooperatively feasible contract in the two fixed rosters:
+eight of eleven reconstructed listings and twelve of fourteen public inputs. These are separate
+route runs, not matched extractions, and establish available alternatives
+rather than selection-variant necessity or comparative superiority.
+
+\input{comparison-summary-table.tex}
+
+The eleven listings come from five correlated examples; T and P denote
+trivial and preferred replacements. For the selected route, Lift~T is the
+only feasible contract with a failed cooperative output. The other unadmitted listings have empty
+cooperative regions: Arbiter~P is strict-only, Minepump~P is raw-negative,
+and Lift~P has unknown route correspondence. A raw negative need not be a
+source refusal. Supplements~H (Tables~6--7) and T (Table~25) give the
+candidate and route results.
+
+The public roster's two strict-only outputs are PCar058, whose
+cooperative region is empty, and Elevator032, whose nonempty cooperative
+region fails initialization. Neither is a feasible-contract counterexample.
+Resource-UNKNOWN SmartHome1~223 is admitted by all three alternatives
+(Supplement~T).
+
+\paragraph{Selection, stopping and negative results}
+The public inventory contains 425 byte-distinct source units, including
+two pattern libraries. Representative archive-path order with per-input caps of 60\,s,
+512\,MiB heap and 128\,MiB direct memory produced 70 completed original models, 107 resource UNKNOWNs, 54 technical
+UNKNOWNs, one integrity UNKNOWN and 193 unattempted inputs. A BDD-file cap
+followed by a process-cleanup permission failure stopped the run. Of the
+70 completions, two exceeded the checker's 64-variable limit and nine
+failed array-metadata roster checks; all remaining 59 certified models
+entered the literal-preservation analysis, without outcome filtering.
+This is a stopped, resource- and certification-conditioned cohort.
+
+Among its ten strict-preservation losses, all contracts already lack
+cooperative initialization. Nine exact-loss calculations completed: seven
+have empty $K$ and two preserve every $K$ state; the tenth remains UNKNOWN.
+Thus this cohort contains no confirmed cooperative-initialization loss,
+and it supplies no incidence estimate. The separate Vehicle witness and
+constructed Polling control are outside these denominators.
+Selected Humanoid044 also has source $V=K=\varnothing$; its guard study
+does not establish a cooperative rescue (Supplement~D).
+
+\paragraph{Accessible evidence and shared dependencies}
+The archives~\cite{savedartifact,newartifact,pendingartifact,diagnosticartifact,continuationartifact}
+retain sources, graphs, certificates and saved-data replay instructions.
+Lift's separate decoders and source-equation audits share compiler exports;
+region and memory checks share a decoder. Patrol combines source, raw-BDD
+and explicit-set checks. Neither compiler independence nor external
+reproduction follows. Supplements~U--Y distinguish native execution,
+saved membership, graph audits and source proofs.
+

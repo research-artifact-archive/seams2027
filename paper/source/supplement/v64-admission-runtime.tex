@@ -1,0 +1,279 @@
+\subsection*{U.4 Executing complete-graph admission at a paused software boundary}
+\label{supp:runtime-admission}
+
+\paragraph{Question and scope.}
+This bounded demonstrator connects the admission judgment to an actual
+software pause, decision, and continuation. It reuses the frozen Patrol
+controller, Lift graphs, source predicates, and complete graph checkers;
+it adds orchestration and timing instrumentation. It does not generate a
+controller or recompute a winning region. A gate runs after an executed
+old prefix, binds the reached source values, logical monitors, and
+private controller root, and admits a candidate only when complete
+source and saved-native checks establish safety, strict liveness, and
+legal-prefix cooperation. An incomplete or unknown check cannot
+establish admission. A withheld candidate remains paused.
+The two checker routes examine complete rooted graphs, not sampled
+executions. The subsequent workload shows that the decision is enforced
+by this software adapter; it is not the proof of the graph properties.
+
+\paragraph{Frozen inputs, order, and amendments.}
+All records are under the local directory
+\path{experiment/v64_admission_runtime_20261023/}.
+The predeclaration fixes 197 input/code pins, three fresh Python
+processes, case/candidate order, expected outcomes, and resource caps.
+Each process attempts Patrol first and then Lift boundaries 524, 526,
+and 756, in each case testing retained native, saved normalized, and
+saved preference. There is no warmup, cache flush, or additional
+exploratory run. ``Fresh'' means new process/module state; it does not
+mean a cold operating-system filesystem cache.
+
+Two amendments are preserved. Before any worker execution, comparison
+with the frozen Patrol result corrected a transcription of the expected
+trace to response step 30, monitor-clear step 31, 67 new commits, and
+cycle interval $[32,67)$.
+\path{PREDECLARATION_INITIAL_UNEXECUTED.json} and
+\path{PREEXECUTION_CORRECTION.json} retain that correction;
+\path{PREDECLARATION_ATTEMPT01.json} is the declaration used by the
+first execution. That execution completed Patrol, then raised
+\code{KeyError('graph')} before any Lift episode or gate: the inherited
+runtime loader normalizes candidate descriptors. The wrapper was
+corrected to read graph/root/rank from the same frozen raw plan, after
+checking that its boundary order agrees with the loader.
+\path{EXECUTION_AMENDMENT_01.json}, \path{attempt01_code/}, and the
+first run preserve the failure and executed code.
+\path{PREDECLARATION.json} binds the corrected wrapper used by the two
+remaining, already declared trials. No fourth trial replaced the failure.
+Thus Patrol has three completed measurements; each Lift candidate at
+each root has two, with one preceding setup-only failure disclosed.
+
+\paragraph{Patrol gate and executed continuation.}
+The instrumented runtime executes the same BOOT input and pauses after
+one old commit at the fourteen-field pending state of Sections~S and
+U.1, with request monitor $S2$ and private phase~0. The gate rechecks the
+source/file bindings and saved translated-AST correspondence: 77 clauses
+and 61,435 typed support assignments. The existing source checker then
+validates the complete old graph (140 nodes, 277 edges), new graph
+(849 nodes, 12,240 edges), and exact old-to-new source/private root.
+For every reachable node it checks all legal ENV inputs exactly once,
+source SYS/AUX safety, and the frozen controller's private-phase update.
+
+A separate saved-native-table parser/evaluator loads the original old
+and new native predicates and checks the same complete graphs against
+them. It enumerates all typed next-ENV fields with exact decision-DAG
+pruning; the legal-input check is not a sample of the 250,000 typed
+next-ENV valuations. It also checks the actual old BOOT edge and that
+the pending state fails the new SYS initializer. The new query never
+reapplies that initializer. Both routes perform complete SCC fairness
+checks. Strictness excludes an ENV-fair infinite suffix avoiding a SYS
+justice; cooperation requires an ENV-fair infinite continuation from
+every reachable legal prefix. The checks consider cyclic SCCs, including
+nonbottom SCCs.
+
+Both routes pass, so the gate records \code{ADMIT} while the runtime is
+still paused. The environment is then updated and the same plant and
+controller objects resume, with source values, monitor, and phase
+preserved at the boundary. The unchanged workload makes 67 post-update
+commits, reaches the old pending response at step~30, clears its monitor
+at step~31, and reaches a repeatable fair cycle with start~32 and
+end~67. Its three newly enabled closure inputs and the one original-safe
+state outside $C$ occur at exactly the previously frozen steps.
+The complete source/private trail equals the earlier executed trail.
+The controller remains the existing handwritten, post-diagnosis policy;
+this experiment does not turn it into an independently discovered or
+previously deployed legacy controller.
+
+After successful continuation, separate diagnostic stages reverify the
+4,800-state source $C$ certificate (4,596 in $C$, 204 outside) and the
+26-state losing certificate (25 nonexit rows, 103 safe replies, one exit).
+The native check covers every safe reply and confirms the actual
+released first-flip zero-response witness. These stages do not determine
+original-controller admission and are excluded from paused-gate latency.
+No frontend refusal, new native solver result, or full-region
+recomputation is observed in this demonstrator.
+
+\paragraph{Lift gate and private-root binding.}
+The three entries use the unchanged two-commit old prefixes. All have
+an unanswered third-floor obligation: $m_3=S1$, $f_3=\mathsf{false}$,
+and cancel false. Reached native nodes 524, 526, and 756 each carry
+rank~1. Setup verifies the frozen source/native model bindings and
+existing old-gate evidence. The actual old prefix is checked while it
+executes. At the paused boundary, both current-candidate routes
+\emph{recompute} the entire original-legal reachable closure, every
+legal response obligation, safety, and SCC fairness. The source route
+examines all sixteen typed ENV inputs per reachable node; the saved
+native route uses the bound native predicates. Graph/source/model byte
+pins and exact roots are rechecked at each gate. Prior verdict files
+alone do not authorize the new continuation.
+
+\begin{center}\small
+\begin{tabular}{@{}lrrr@{}}\toprule
+Reached old root & Retained native root/rank & Normalized root/rank & Preference root/rank\\\midrule
+524 & 524/1 & 72/1 & 524/1\\
+526 & 526/1 & 74/1 & 526/1\\
+756 & 756/1 & 88/0 & 590/0\\\bottomrule
+\end{tabular}
+\end{center}
+Each candidate is tested in its own episode from the same frozen prefix;
+the wrapper does not search for an alternative within the paused episode
+after withholding. A retained candidate must be the very same reached
+controller instance and private memory. A replacement is a new graph
+controller at its exact certified stored root/rank, matching every live
+source and monitor value. The rank changes in the last table row are
+therefore explicit replacement initialization, not arbitrary transport
+of old private memory.
+
+At every entry, retained native is complete and strict but
+noncooperative, so it is withheld with zero post-change commits and the
+same paused runtime snapshot. Normalized and preference are complete,
+strict, and cooperative; each is admitted and executes the exact existing
+twelve-input workload. The pending response occurs at step~1 and its
+monitor clears at step~2. All six admitted episodes reach the previously
+recorded fair self-loop without cancel. Their offered-input sequences,
+source trajectories, private node/rank traces, and observations equal the
+corresponding frozen executions. The plant and mutable source-state
+object retain their identities across each replacement.
+
+\paragraph{Observed gate costs.}
+The host is an eight-CPU Apple M2 with 24\,GiB RAM, macOS 15.7.9 arm64,
+and CPython 3.10.9. Wall durations use \code{perf\_counter}; RSS uses
+process \code{ru\_maxrss}, with separate process-group sampling by the
+supervisor. Table~\ref{tab:supp-runtime-gates} reports median and observed
+range, not statistical uncertainty or a latency guarantee. Lift's shared
+source/native model and runtime loading/binding costs
+0.357--0.481\,s (median 0.364\,s across all three setups, including the
+first setup-only failure) in addition to the per-candidate gate.
+
+\begin{center}\small
+\begin{longtable}{@{}L{50mm}rL{28mm}r@{}}
+\caption{Complete rooted graph and paused-gate cost. Each Lift row refers
+to one candidate at one actual entry. Times are seconds.}
+\label{tab:supp-runtime-gates}\\
+\toprule Candidate/entry & Nodes/edges & Decision & Median [range]\\\midrule
+\endfirsthead
+\toprule Candidate/entry & Nodes/edges & Decision & Median [range]\\\midrule
+\endhead
+Patrol retained & 849/12,240 & Admit & 4.584 [4.448--5.207]\\
+Lift native / 524 & 154/1,170 & Withhold & .051 [.043--.059]\\
+Lift normalized / 524 & 154/1,176 & Admit & .048 [.040--.056]\\
+Lift preference / 524 & 154/1,176 & Admit & .049 [.041--.057]\\
+Lift native / 526 & 154/1,170 & Withhold & .050 [.042--.057]\\
+Lift normalized / 526 & 154/1,176 & Admit & .048 [.040--.056]\\
+Lift preference / 526 & 154/1,176 & Admit & .049 [.041--.058]\\
+Lift native / 756 & 154/1,170 & Withhold & .049 [.042--.057]\\
+Lift normalized / 756 & 154/1,176 & Admit & .048 [.039--.056]\\
+Lift preference / 756 & 154/1,176 & Admit & .049 [.041--.058]\\\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{center}\small
+\begin{longtable}{@{}L{105mm}r@{}}
+\caption{Patrol stage costs: seconds, median [observed range] over three
+executions. Coverage/safety excludes the separately measured SCC block.}
+\label{tab:supp-patrol-stage-costs}\\
+\toprule Stage & Median [range]\\\midrule
+\endfirsthead
+\toprule Stage & Median [range]\\\midrule
+\endhead
+Source file / saved native AST binding & 1.418 [1.409--1.509]\\
+Source old graph coverage and safety & .015 [.014--.017]\\
+Source new graph coverage and safety & .305 [.301--.355]\\
+Source old graph SCC fairness & .001 [.001--.001]\\
+Source new graph SCC fairness & .016 [.016--.020]\\
+Exact source boundary binding & .021 [.020--.025]\\
+Native table parsing and source binding & 1.829 [1.687--1.998]\\
+Native old graph coverage and safety & .052 [.052--.062]\\
+Native new graph coverage and safety & .920 [.919--1.198]\\
+Native old graph SCC fairness & .001 [.001--.001]\\
+Native new graph SCC fairness & .016 [.015--.021]\\\midrule
+Separate source $C$/losing-certificate check, after continuation & .442 [.335--.445]\\
+Separate native losing-certificate check, including released-model parsing & 1.081 [1.077--1.380]\\\bottomrule
+\end{longtable}
+\end{center}
+
+\begin{center}\small
+\begin{tabular}{@{}L{105mm}r@{}}\toprule
+Lift per-candidate stage & Seconds, median [range]\\\midrule
+Exact root and byte binding & .001 [.000--.002]\\
+Source coverage and safety, excluding SCC & .014 [.011--.017]\\
+Source SCC fairness & .004 [.003--.004]\\
+Saved-native coverage and safety, excluding SCC & .028 [.023--.033]\\
+Saved-native SCC fairness & .002 [.002--.003]\\\bottomrule
+\end{tabular}
+\end{center}
+The Lift stage rows pool eighteen completed gates descriptively; they
+are not eighteen independent replications of a single case. Rounding a
+small binding duration to .000 does not mean that no check ran.
+Function wrappers time the original source and Lift fairness routines.
+For Patrol's native checker, a preserved mechanical diff adds timing
+around its existing complete fairness block. Coverage/safety duration is
+the enclosing graph-call duration minus this nested block. No predicate,
+edge, or fairness check is bypassed. Overall gate duration additionally
+includes root checks, recording, and orchestration. Medians of stages
+need not sum to the median of their total.
+
+\paragraph{Event audit and resources.}
+A separate read-only audit imports neither runtime nor semantic checker.
+It checks pause--gate--decision--resume order, that no continuation commit
+precedes admission, and that withheld Lift candidates never install or
+resume. It checks exact source/native closure equality for Lift,
+source/monitor preservation, object identities as recorded above,
+certified replacement roots/ranks, and complete equality with the frozen
+admitted workload traces. It also checks that the derived Patrol
+\code{Plant} and \code{Controller} class ASTs equal their originals.
+All 21 episode checks pass: three Patrol episodes and eighteen Lift
+candidate episodes across the two complete trials. A further separately
+written standard-library audit checks all event records, 246 file anchors,
+full source/private trace equality, static semantic preservation, and
+every timing aggregate. All 25 checks pass with the metadata caveat
+below. Removing the documented flow/path/report changes reproduces the
+original Patrol runtime byte-for-byte; removing two timer lines reproduces
+the native checker byte-for-byte. Neither record audit reimplements all
+semantic algorithms. Its report is in \path{independent_audit/}.
+
+Each worker has monitored limits of 120\,s wall time, 1\,GiB
+process-group RSS, and 16\,MiB for captured streams/output; the supervisor
+samples every 0.1\,s and terminates its owned process group on a cap.
+No cap is reached, no resource UNKNOWN occurs, and cleanup records no
+owned process remaining. The three supervised process durations are
+6.695, 7.042, and 8.416\,s; the first ends with the disclosed orchestration
+failure. Whole-process peak RSS values are 334.4, 337.4, and
+329.6\,MiB. These are cumulative suite high-water marks, not incremental
+memory attributed separately to Patrol, Lift, or an individual stage.
+
+A metadata defect is retained explicitly: in each original
+\path{PROCESS.json}, the field named \code{started\_utc} was sampled
+while writing the completed receipt, so it records approximately the
+receipt-completion instant, not the start instant. The original files
+are preserved. This field must not be used as evidence of start time or
+predeclaration order. The reported elapsed durations are independently
+computed from monotonic clocks around execution and are unaffected.
+The predeclaration/amendment records, executed-code snapshots, event
+sequence numbers, and event monotonic timestamps provide the relevant
+binding and within-run order evidence; no replacement absolute start
+timestamp is invented.
+
+\paragraph{Trust, interpretation, and evidence entry points.}
+The gate trusts the saved native compiler/exporter and encoding metadata,
+the source-to-native bindings with their stated scope, and the reused
+finite-graph algorithms. Complete graph checks establish a judgment
+about the candidate rooted at the matched state; the live snapshot and
+installation checks establish that binding for this adapter. They do
+not establish the corresponding bridge for a physical robot or a native
+executable controller runtime. The three Lift roots have two distinct
+source valuations and are not a prevalence sample. Patrol's controller
+was handwritten after diagnosis; no advantage over a separately
+deployed legacy controller is established. Filesystem caches and host
+activity are uncontrolled. No real-time bound, scalability result,
+comparative performance claim, arbitrary memory-transport guarantee, or
+cost for synthesis/full-region diagnosis follows from these measurements.
+
+\path{REPORT.md} gives the descriptive tables;
+\path{RESULT_SUMMARY.json} and \path{AUDIT_COMPLETION.txt} contain the
+21-check audit and all individual timings. The two mechanical code
+diffs are \path{code/PATROL_RUNTIME.diff} and
+\path{code/NATIVE_CHECKER.diff}. Each directory under \path{runs/}
+retains \path{PROCESS.json}, stdout/stderr, and its output/event records,
+including the failed first Lift attempt. \path{MANIFEST.json} anchors
+the preserved local experiment. This complete U.4 runtime packet has not been placed
+in the published evidence archives; they remain the additional local
+snapshot indexed at the start of this supplement.

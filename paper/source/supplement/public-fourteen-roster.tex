@@ -1,0 +1,42 @@
+\paragraph{Complete fourteen-input roster.}
+The subset contains all available independently certified carriers
+of at most 4,096 states. Selection was fixed before an interrupted
+second extraction attempt, without selecting by region emptiness or
+controller outcomes; that later attempt did not change these fourteen
+inputs.
+Table~\ref{tab:fourteen-roster} lists the fixed inputs used on all four
+paths. The identifiers and source paths come from the frozen
+\path{small_native_recovery/SELECTION.json}; the same fourteen identifiers
+appear once per path in the 56 saved rows of
+\path{PUBLIC_14X4_OUTCOMES.tsv} (Section~K). Helper status is taken from the
+released-route records, with the incomplete SmartHome1 run remaining
+UNKNOWN. AutonomousVehicle~184 is distinct from the separately selected
+continuation witness AutonomousVehicle~188.
+
+\begin{table}[htbp]
+\centering\small
+\caption{The fourteen public inputs. Source suffixes are relative to
+\texttt{artifact/experiments/specs/}. ``Helper'' records the released route;
+UNKNOWN does not mean that no helper was added.}
+\label{tab:fourteen-roster}
+\begin{tabular}{@{}L{9mm}L{125mm}L{19mm}@{}}
+\toprule
+ID & Source suffix & Helper\\
+\midrule
+002 & \path{example/HumanoidLTL_377_Humanoid.spectra} & No\\
+032 & \path{syn15/ElevatorLTL_386_Elevator.spectra} & Yes\\
+034 & \path{syn15/GyroLTLVar3_702_GyroAspect.spectra} & Yes\\
+035 & \path{syn15/GyroLTL_390_GyroAspect.spectra} & Yes\\
+036 & \path{syn15/GyroLTL_486_GyroAspect.spectra} & Yes\\
+037 & \path{syn15/GyroLTL_588_GyroAspect.spectra} & Yes\\
+038 & \path{syn15/GyroLTL_590_GyroAspect.spectra} & Yes\\
+043 & \path{syn15/HumanoidLTL_409_Humanoid.spectra} & No\\
+057 & \path{syn15/PcarLTL_394_PCar.spectra} & Yes\\
+058 & \path{syn15/PcarLTL_464_PCar_fixed.spectra} & No\\
+093 & \path{syn17/AirportShuttle_AirportShuttle_49.spectra} & Yes\\
+149 & \path{syn17/SimpleVehicle_VehicleSpec_6.spectra} & No\\
+184 & \path{syn20/AutonomousVehicle_sprint01_ver1.spectra} & No\\
+223 & \path{syn20/SmartHome1_sprint01_ver1.spectra} & UNKNOWN\\
+\bottomrule
+\end{tabular}
+\end{table}

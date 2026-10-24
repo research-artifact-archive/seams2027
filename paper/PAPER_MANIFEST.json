@@ -1,28 +1,41 @@
 {
-  "version": "v69-r1",
+  "schema_version": 1,
   "title": "Continuation Preservation in Boolean-Helper Synthesis for Controller Replacement",
+  "repository": "https://github.com/research-artifact-archive/seams2027",
+  "document_layout_tag": "reader-layout-20261024-v1",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 375820,
-      "sha256": "f3d0fc12a10f134f789bca4eb24824b51cf9b5929d0c26c1469fdd41d74463d0"
+      "bytes": 375864,
+      "sha256": "4c589ce123812fd002910f8d0fac276da62429069f1a982c00938437bb3fbbaa"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 980097,
-      "sha256": "4a97ebd96a5cf0634e4014d07979eaa992ca9e0b988cd2d19c3c3361a15983e3"
+      "bytes": 980436,
+      "sha256": "270eb000fb781ffcec92286cdf869fecfced02eba73602898dfe0b49ec96125c"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1611182,
-      "sha256": "9ba80b7eb6dc544904e19ccdc7b248647bf8086a7c6d2d7d1016d210d287b22a"
+      "bytes": 1611755,
+      "sha256": "e6fd9f30686a84bd465cf8a9b1f035f718c9a1c13151a531c0be4d23fca09c43"
     }
   ],
-  "pages": {
-    "main": 11,
-    "main_body": 10,
-    "references": 1,
-    "supplement": 99
+  "main_pages": 11,
+  "supplement_pages": 99,
+  "source_entrypoints": [
+    "paper/source/main/main.tex",
+    "paper/source/supplement/main.tex"
+  ],
+  "matching_source_files": 71,
+  "zip_members": 75,
+  "validation": "Both documents rebuilt from source ZIP in a separate directory; all 110 page texts and 72-dpi images agree with supplied PDFs.",
+  "scientific_evidence_tags": "Existing individual fixed-tag citations retained.",
+  "new_scientific_executions": 0,
+  "version": "v70-r1",
+  "source_tree": {
+    "directory": "paper/source",
+    "archive_prefix": "anonymous-v70-r1-source/",
+    "files": 75
   },
-  "publication_scope": "Anonymous paper and matching source snapshot; no conference submission or acceptance asserted."
+  "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted."
 }

@@ -1,0 +1,61 @@
+\section*{G. A published learned repair tested for cooperative admission}
+We additionally test the preferred learned Arbiter solution in
+Appendix~C.4.1 of~\cite{degradation}.
+The same declared reconstruction from the eleven-candidate cohort restores the omitted response-pattern declaration: 886 bytes, no imports. After inspecting prior results, we selected the smallest candidate with empty original $V,K$ among those previously positive under residual initialization. This outcome-informed case is separate from
+the fixed 14-input public-corpus comparison. Cooperative admission adds to the degradation study's ordinary-realizability objective, which we do not dispute or historically reproduce.
+
+\paragraph{Source obstruction.}
+The environment fields are $a,r_1,r_2$, the public system fields are
+$g_1,g_2$, and two system-owned response monitors are retained. The
+original environment safety is
+\[
+ E(s)=a\lor(\neg g_1\land\neg g_2\land\neg r_1\land\neg r_2),
+ \qquad \rho_e(s,e')=E(s),\quad\theta_e=\mathit{true}.
+\]
+Because this current-only invariant refers to system variables, the
+audited StateInvTranslator leaves it as current safety; it neither
+strengthens the environment initializer nor globally primes the formula.
+Ordinary system invariants contribute current initialization and next-state
+safety. The response monitors update from current requests and grants.
+
+If $E(s)$ is false, no legal environment input exists. Otherwise every
+next input is legal, including $(a',r_1',r_2')=(0,1,0)$. If no safe
+response exists, strict winning fails. Every safe response instead reaches
+$t$ with $E(t)=\mathit{false}$, regardless of system values, auxiliary
+states, or private memory. That legal prefix has no infinite legal
+continuation, hence no assumption-fair continuation. Thus no residual
+state admits a strict cooperative strategy. The nonempty original
+initializer then excludes initial cooperative realizability; this does
+not assert failure for artificial vacuous initializers.
+
+\paragraph{Complete output and independent check.}
+The configured released job returns a complete 112-state, 1,176-edge
+native graph with eight initial states covering all initial environment choices. The reachable helper-false
+view contains 56 states and 280 edges, preserving native IDs, rank memory,
+both monitors, and initial choices.
+Its original safety and input coverage pass; strict liveness holds,
+but 21 reachable states have no assumption-fair continuation.
+An independent implementation directly evaluates the saved decision DAGs
+against source-coded equations on all 128 original states and 16,384
+state pairs. It checks the native printer, ordered justices, 1,792 native
+input candidates and 448 original-view input candidates. Bitset transitive
+closure independently establishes the graph properties. It imports no
+production BDD or fairness checker; its result was sealed before comparison
+with that checker, after which the state, edge, justice and SCC sets agreed.
+Both checks share compiler exports; this source-equation check is specific to the contract, not a general compiler proof.
+
+\paragraph{Two attempts and limits.}
+The first native attempt stopped at an 8-MiB stdout cap and remains UNKNOWN.
+A separately recorded followup kept the source, runtime, classes, synthesis
+settings, extractor, printer and checker unchanged. Native stream caps
+rose from 8 to 64 MiB, the wall bound fell from 60 to 10 seconds, and
+the output postcheck rose from 64 to 128 MiB; checker limits stayed fixed.
+It completed with all 11,927,997 stdout bytes retained, normal teardown
+and child reaping: one complete result from two attempts on one candidate.
+No transformed strict-winning region was calculated. Neither native
+acceptance nor the complete-literal $C=D$ result establishes preservation
+in this released arena. No repair learning, adaptation loop or deployment
+was executed; other cohort counts remain unchanged.
+
+\input{repair-cohort-results.tex}
+\input{repair-choice-controls.tex}

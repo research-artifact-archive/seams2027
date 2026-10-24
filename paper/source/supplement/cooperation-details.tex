@@ -1,0 +1,116 @@
+\subsection{Cooperative existence and selection}\label{sec:cooperation}
+\paragraph{Cooperation of a fixed strategy}
+For a strategy $f$ on a total legal arena $H$, let $L_v(H,f)$ be its infinite plays from $v$. Legal-prefix cooperation requires
+\begin{equation}
+\Pref L_v(H,f)=
+\Pref\bigl(L_v(H,f)\cap L_v(H,A)\bigr).
+\label{eq:nonconflict}
+\end{equation}
+Every legal prefix must have an assumption-fair suffix under the same strategy and its reached private memory. One fair play is insufficient. Input availability is a separate requirement: the infinite-extension obligation of~\cite[Definition~3]{kind} excludes finite environmental dead ends even with no justices.
+
+\paragraph{Negative conclusions under the all-history reading}
+Definition~3 of~\cite{kind} quantifies over every environment strategy
+and every position of its play with the fixed winning system strategy.
+Restricting those positions to original-legal prefixes gives our
+requirement. A legal-prefix failure therefore refutes that stronger
+property for the same original-contract strategy and reached memory.
+For a complete helper-false view retaining every original-legal input,
+the witness also survives any completion on illegal inputs; helper-true
+escapes do not extend that fixed original-contract strategy.
+This negates one output, not the existence of another strategy.
+Contract-level negation additionally requires a separate argument
+excluding every strict cooperative strategy from the original
+initializer. Conversely, a positive legal-prefix certificate alone
+does not establish the all-history property.
+
+\paragraph{Applicability of the cooperative core}
+The Kind paper invokes the non-conflicting core's correctness~\cite[Theorem~3 and Appendix~A]{kind}.
+The result of Majumdar et al.~\cite{friendly} has the sufficient premise
+\begin{equation}
+L_v(H,G)\subseteq L_v(H,A).
+\label{eq:premise}
+\end{equation}
+The established normalization $G\mapsto G\land A$ ensures this inclusion without changing $A\Rightarrow G$~\cite{friendly}. Our normalized comparison applies it to the original nonblocking arena, before helper conversion. An invocation of the raw core must separately meet its premise.
+
+\paragraph{Original-contract comparison regions}
+Strict synthesis is restricted to the
+nonblocking safety region $V=\nu X.(\mathit{Alive}\land\CPre(X))$, where
+$\mathit{Alive}(s)$ means that some original-legal next environment
+input exists. This restriction maintains system safety and future input
+availability against all original-legal inputs; it imposes no environment
+justice. Normalized non-conflicting synthesis places the environment
+justices among the system justices before invoking its four-fixed-point
+core on $V$. Denote the restricted strict-winning region by $W_V$;
+$W$ remains the unrestricted original strict-winning region. Any strict cooperative
+strategy remains in $V$: cooperation supplies legal continuations,
+and strict safety supplies safe responses to every legal input. Its
+reachable residual states therefore form a post-fixed point of the
+defining operator. In the total bipartite arena $H_V$, completed states
+are $Q_0=V$; $\delta_0$ retains every original-legal input, and $\delta_1$
+retains every original-safe response into $V$.
+\paragraph{Normalization preserves the semantic cooperation region}
+Here $K$ denotes the existence of a strict, legal-prefix cooperative
+strategy, before identifying it with any algorithmic region. If
+$V=\varnothing$, this region is empty. For nonempty $V$, the arena above
+retains all original-legal inputs and all safe responses inside $V$.
+\noindent\textbf{Lemma (cooperative normalization).}
+\emph{Restricting to this arena and replacing $G$ by $G\land A$
+preserves $K$.}
+\begin{proof}
+Fix a strict cooperative strategy. Collect its source states reachable
+by legal prefixes, keeping each prefix's residual strategy and memory.
+Cooperation supplies a legal continuation at each prefix; strict safety
+supplies a safe response to every legal input, back into that reachable
+set. This set is a post-fixed point of the nonblocking safety restriction,
+hence lies in $V$. No legal behavior of this strategy is removed.
+Conversely, a strict cooperative strategy on the restricted arena
+extends to the original game: all original-legal inputs remain, and
+illegal inputs release strict duties. Finally,
+$(A\Rightarrow(G\land A))\equiv(A\Rightarrow G)$; normalization changes
+neither legal prefixes nor assumption-fair continuations under the same
+memory. Thus both inclusions hold.
+\end{proof}
+\input{round-bridge.tex}
+Within $V$, normalization establishes~\eqref{eq:premise}, the premise of
+the non-conflicting soundness statement in~\cite[Theorem~3]{friendly}.
+Lemma~\ref{lem:round-bridge} and the union definition in~\cite[Appendix~B.1]{friendly}
+connect the normalized algorithm to that theorem; its soundness and
+completeness~\cite[Theorem~3 and Appendix~B.2]{friendly}
+identify its computed region with the semantic cooperation region $K$.
+
+\paragraph{Correcting the guard does not ensure cooperation}
+In \emph{the transformed arena}, either complete helper guard lets a strict-winning strategy answer a legal flip. Monotonicity then keeps $b=1$, releasing system safety but making $\G\F\neg b$ impossible. Normalization after helper conversion therefore cannot generally repair the pipeline. This neither refutes cooperation of an original-contract helper-false view nor alone disproves~\eqref{eq:premise}, which may hold vacuously when the system objective is impossible.
+
+\paragraph{Justice: preservation without cooperation}
+Let environment Boolean $e$ and system Boolean $p$ have true initial predicates and
+\begin{equation}
+\rho_e=(e'=p),\quad \rho_s=\neg p,\quad
+A=\G\F e,\quad G=\G\F\neg p.
+\label{eq:justice}
+\end{equation}
+Current-state safety is intentional: strict winners keep $p=0$, forcing $e'=0$; at $p=1$, a legal input exists but safety fails. Thus $W=C=W_C=\{\neg p\}$: preservation holds, but no cooperative strategy exists. The all-zero play satisfies $G$ and violates $A$, falsifying~\eqref{eq:premise}. Substitution yields raw region $\{\neg p\}$, or $\neg p\lor b$ under either helper guard, with positive initialization. The supplement gives the recurrence; this does not refute the conditional theorem of~\cite{friendly}.
+
+
+\paragraph{Complete fixed-graph admission criterion}
+The audit explores the fixed graph with reached private memory.
+For each reachable node and every original-legal next input, it checks
+the response and updates against the original equations. The graph edges
+used below are these checked original-legal, safe fixed responses. Fairness then
+becomes a graph question: can each node reach a cycle region that visits
+every ENV justice? Formally, such a strongly connected component (SCC)
+has a directed cycle, including a self-loop for a singleton, and meets
+every ENV justice set. Cooperation requires reachability of such an
+SCC from every reachable node. Strict liveness additionally excludes,
+for each SYS justice, an ENV-fair SCC in the subgraph avoiding that
+justice. Initialization, safety, and liveness are checked separately.
+
+A graph interpretation derived from a transformed model is accepted only
+after typed equality of the corresponding original predicates: initialization,
+safety, justice, and auxiliary updates. For helper-based views this comparison
+is on the helper-false slice, with any extension beyond that slice
+qualified separately.
+A direct audit can instead use original source predicates on the saved
+graph. In a helper-based graph, its \emph{original-contract view} keeps
+the helper false and retains every original-legal input, source monitor,
+native node identity, and reached private memory. A failed view refutes
+that output; it does not quantify over other controllers.

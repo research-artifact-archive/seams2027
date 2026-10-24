@@ -1,0 +1,111 @@
+{
+  "schema": "seams2027-source-browser-v1",
+  "scope": "Exact inspection copies. Run from the complete matching archive with its models and dependencies. No relocated standalone execution is asserted.",
+  "files": [
+    {
+      "path": "tool/src/vehicle188/independent_core.py",
+      "archive": "results/archives/vehicle188-whole-region-evidence-20261024-v1.zip",
+      "member": "vehicle188-whole-region-evidence-20261024-v1/independent_core.py",
+      "bytes": 18853,
+      "sha256": "8a67d5a9355aea8d821163180efe48d2c8163eb4423ef08e09d3a3c96f4efff4"
+    },
+    {
+      "path": "tool/src/vehicle188/producer_core.py",
+      "archive": "results/archives/vehicle188-whole-region-evidence-20261024-v1.zip",
+      "member": "vehicle188-whole-region-evidence-20261024-v1/producer_core.py",
+      "bytes": 22333,
+      "sha256": "ad87ce6720a79a2384040bdb9e0813c43c3d4a8ff2c942074159e67f5515ab33"
+    },
+    {
+      "path": "tool/src/vehicle188/replay.py",
+      "archive": "results/archives/vehicle188-whole-region-evidence-20261024-v1.zip",
+      "member": "vehicle188-whole-region-evidence-20261024-v1/replay.py",
+      "bytes": 14309,
+      "sha256": "c19da31d66aa831ee8330baba7c481050f9fc71c78e5080f093a0fafffed2666"
+    },
+    {
+      "path": "tool/src/fixed-seven/independent_auditor.py",
+      "archive": "results/archives/fixed-seven-native-evidence-20261024-v1.zip",
+      "member": "fixed-seven-native/independent_auditor.py",
+      "bytes": 22754,
+      "sha256": "bf92749b52f83ba79e1ae8723eaf23fee94943d9e5f023f997c0206dd50e9fc2"
+    },
+    {
+      "path": "tool/src/fixed-seven/replay.py",
+      "archive": "results/archives/fixed-seven-native-evidence-20261024-v1.zip",
+      "member": "fixed-seven-native/replay.py",
+      "bytes": 8045,
+      "sha256": "e18b8eae356f7e047af75b7bb5d5601bb36e7cfd3902d51c132924cbe9d9a83f"
+    },
+    {
+      "path": "tool/src/continuation/lasso/replay/code/independent_core.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/lasso/replay/code/independent_core.py",
+      "bytes": 7009,
+      "sha256": "aa7aa11d0ab35f9505db132db45cb9cc7832e91216e80f56651bf0b3cea8805e"
+    },
+    {
+      "path": "tool/src/continuation/lasso/replay/code/source_contracts.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/lasso/replay/code/source_contracts.py",
+      "bytes": 12584,
+      "sha256": "30d1d89c5977798601cfcf661ef8d642c3fdb7c7c7600cd9d9fa9a3a25011fc8"
+    },
+    {
+      "path": "tool/src/continuation/lasso/replay/replay_lasso.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/lasso/replay/replay_lasso.py",
+      "bytes": 14545,
+      "sha256": "b7c4e00246c4dbf6dd3bbee866ae7dc0c6b86b32c1a6f48f7b7f206c6c92b3be"
+    },
+    {
+      "path": "tool/src/continuation/records/guard/check_guard_saved_arena.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/records/guard/check_guard_saved_arena.py",
+      "bytes": 16747,
+      "sha256": "092c39a00a57b0f4ff7c2717cdf7d4c8dd3494868347a3636dde5e19cae485a2"
+    },
+    {
+      "path": "tool/src/continuation/replay/manager_semantics.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/replay/manager_semantics.py",
+      "bytes": 10214,
+      "sha256": "39284b8b186a931cb7efb2699b3f6e49a44a6a41c4438efdc41b97057fd05d01"
+    },
+    {
+      "path": "tool/src/continuation/replay/reduced_semantics.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/replay/reduced_semantics.py",
+      "bytes": 8699,
+      "sha256": "0796c1c26628f6050d6e0b0f87f34529053b353710021fc1bea89281d340ca9c"
+    },
+    {
+      "path": "tool/src/continuation/replay/replay.py",
+      "archive": "results/archives/continuation-evidence-20261024-v1.zip",
+      "member": "continuation-evidence-20261024-v1/replay/replay.py",
+      "bytes": 10938,
+      "sha256": "a6d013e20872372a0cd663ce66f84af8270721e9a5e3f2a9089c8df45b5ea969"
+    },
+    {
+      "path": "tool/src/graph-admission/initial_graph_checker.py",
+      "archive": "results/archives/normalized-eleven-public-20261021-v1.zip",
+      "member": "seams2027-normalized-eleven-evidence/code/experiment/seams_research_reframing_20261017/initial_graph_checker/initial_graph_checker.py",
+      "bytes": 35870,
+      "sha256": "3c465e4253712c6f021920e6a164ef48c63c5bf6cfb3432d17ab95fb5778ebda"
+    },
+    {
+      "path": "tool/src/graph-admission/vendor/bdd_core.py",
+      "archive": "results/archives/normalized-eleven-public-20261021-v1.zip",
+      "member": "seams2027-normalized-eleven-evidence/code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/bdd_core.py",
+      "bytes": 6655,
+      "sha256": "f9497519b8a073a29e5748c908cadc804f437080cf12d36558d9e0210462dbac"
+    },
+    {
+      "path": "tool/src/graph-admission/vendor/graph_fairness.py",
+      "archive": "results/archives/normalized-eleven-public-20261021-v1.zip",
+      "member": "seams2027-normalized-eleven-evidence/code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/graph_fairness.py",
+      "bytes": 8246,
+      "sha256": "3da6d64631bd88ae0bda4ad71ccc37c46f48de233a51dcc843a476e391981d45"
+    }
+  ]
+}

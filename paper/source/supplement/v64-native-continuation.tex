@@ -1,0 +1,199 @@
+\subsection*{U.1 Native Patrol continuation: exact relations, certificates, and limits}
+\label{supp:native-patrol-continuation}
+
+\paragraph{Question and fixed entry.}
+This additional experiment asks whether the continuation loss in
+Section~S also occurs in the \emph{actual saved arena} produced by the
+released syntactic conversion. It uses exactly the existing Patrol
+sources: the unchanged published new source has 3,304 bytes and SHA-256
+\nolinkurl{cde1b981a103047ddefbe8a963f1188d57904659a30fd0e7b678c771213be402};
+the constructed old source has 3,485 bytes and SHA-256
+\nolinkurl{312843a6d6e6f759627f5e149897d442360ecf5d88f408ea781637e518e996f8}.
+The imported pattern file is also byte-pinned. No source variant is
+substituted. The query fixes the same reached state: checkpoint coordinates
+$(0,4),(2,4),(4,4)$, all blocked flags false, \code{isCharged=false},
+robot at $(0,0)$, charging counter zero, and logical request monitor $S2$.
+All fourteen source fields are fixed. The BOOT edge from $S0$ in the
+original-old native arena establishes reachability; no initializer or
+monitor is reapplied.
+Private phase~0 is retained in the existing fixed-controller witnesses,
+not introduced into the logical winning-region calculation.
+
+\paragraph{Native exports and full-domain correspondence.}
+Four fresh model-only runs export old/new original and released arenas.
+The released route applies \code{PitermanSyntacticReduction} before the
+full \code{DefaultTranslators}, with the pinned released parser,
+translator, and BDD generator. The runs take 5.7--7.3\,s each and make no
+solver or extraction call; no initializer is manually substituted. Saved files contain
+all typed fields, their current/next encodings, initialization, safety,
+and ordered justices. A separate support-table construction composes the
+independently transcribed source equations into BDDs and compares the
+complete original predicates: 35 new clauses over 22,899 assignments and
+42 old clauses over 38,536 assignments. All initialization, safety, and
+ordered-justice comparisons pass over their full typed domains.
+These are factored clause-support counts, not enumerations of the whole
+state-pair domain.
+
+For the \emph{new} source, exact typed name/value mappings retain every
+logical auxiliary and establish
+\[
+ E_{00}=\rho_e,\quad E_{01}=E_{11}=\top,\quad E_{10}=\bot,
+ \qquad S_{00}=S_{01}=\rho_s.
+\]
+The actual $S_{11}$ is nontrivial: generated counter and request-monitor
+updates remain. Thus complete-literal relation identity is false.
+Nevertheless, the independently computed helper safety region is
+$U=D$, and its safe-entry condition is $F=C$:
+\[
+ |D|=|U|=75{,}000{,}000,\qquad |F|=|C|=71{,}812{,}500,
+ \qquad r\in C\cap F.
+\]
+Initializers and ordered original justices, with the additional
+helper justice, also match. A second checker reads the raw native BDD
+node tables without importing the producer's BDD or mapping code. It
+confirms the quadrant identities and totality of $S_{11}$: for each of
+600 typed assignments to its relevant current fields, all 25 typed next
+robot positions admit exactly one counter/monitor update, independently
+of next ENV values. This independently establishes $U=D$; with
+$E_{01}=\top$ and $S_{01}=\rho_s$, it yields $F=C$.
+
+\paragraph{Closed continuation domain and independent checks.}
+The active continuation calculation fixes only the six checkpoint
+coordinates. It retains all values of the remaining ENV fields, robot
+position, counter, and request monitor, giving 4,800 source states.
+An exact relation query proves that every typed next ENV input permitted
+by $E_{00}$ preserves those coordinates. SYS cannot write them.
+Consequently this is a closed continuation domain, not a restriction on
+adversarial choices reachable from $r$. The helper-true domain remains
+\emph{all} 75,000,000 original states; first-flip inputs may relocate
+checkpoints. A direct-helper query therefore uses
+$D\land(b\lor\mathit{layout})$, not a layout restriction after the flip.
+
+On the closed active slice, independent symbolic strict solution gives
+$|W|=3{,}280$ and $|W_F|=1{,}104$, with $r\in W\setminus W_F$.
+A separate finite-set implementation enumerates all 4,800 states,
+51,072 legal input choices and 205,056 safe responses in the new source;
+it agrees on these regions and on the slice's 4,596 states in $C$.
+These winning-region counts concern the declared slice only.
+The actual-arena decomposition from Section~L therefore excludes
+$(r,0)$ from the saved new arena's strict-winning region.
+
+A third check binds the existing finite certificates directly to the
+saved native predicates. It confirms complete input coverage, safety,
+strictness and cooperation of the original-old graph (140 states,
+277 edges) and original-new continuation graph (849 states,
+12,240 edges), including all native justices and the actual BOOT edge.
+For the countercertificate it checks all 300 typed SYS outputs at each
+of 25 nonexit rows, obtaining exactly the declared 103 safe replies
+among 26 states. Every infinite nonexit branch is ENV-fair and violates
+the pending-monitor justice; the exit permits the actual native helper
+flip and has zero safe responses. This is a direct strict-loss
+certificate for the saved arena, independent of a completed native
+solver run. Malformed-certificate controls and SCC fixtures accompany the
+checker; they are selected qualifications, not exhaustive fault coverage.
+
+\begin{center}
+\begin{tabular}{lcc}\toprule
+Route at the same pending entry & Old input & New input\\\midrule
+Original source: strict and cooperative & Yes & Yes\\
+Complete literal: strict winning & Yes & No\\
+Actual released syntactic arena: strict winning & No & No\\
+Complete first-flip correction: strict winning & Yes$^{*}$ & Yes$^{*}$\\\bottomrule
+\end{tabular}
+\end{center}
+\noindent $^{*}$The complete correction is built from each corresponding
+\emph{original} relation. The new relation's computed $U=F=D$ agrees with
+complete-guard preservation; that theorem and both source winning
+witnesses give these positive results. They are theorem-derived, not
+observed native frontend verdicts.
+On the old source slice, $|W|=3{,}280$ and $|W_C|=3{,}132$;
+the pending entry belongs to both.
+
+\paragraph{Important old-input negative.}
+The actual old export does \emph{not} satisfy the original-relation
+premise: its $E_{00}$ and ENV initialization differ from those of the
+original old source. The three added pure-ENV permanent-open invariants
+are affected by the order of syntactic guarding and invariant translation.
+At the pending entry the original old relation allows two next ENV
+valuations, whereas the released old $E_{00}$ allows sixteen. Its
+retained conditions test the current blocked flags rather than imposing
+the original next-flag conditions. The original-old graph therefore
+cannot certify admission of the released old arena.
+A separate direct binding shows that the same all-reply countercertificate
+is already legal in that old released arena, including its final losing
+helper flip. Thus the old released pending entry is already strictly
+losing. There is \emph{no old-to-new actual released refusal change} in
+this original-spelling experiment. Section~U.3 separately tests one
+equivalent old spelling, without replacing this negative result. The source/complete-literal update comparison in
+Section~S retains its stated scope; the additional new-arena result
+establishes conversion loss at a cooperatively feasible entry.
+The old correspondence failure alone is not treated as a losing verdict;
+the separate countercertificate supplies that conclusion.
+
+\paragraph{Resource outcomes and verdict scope.}
+All unsuccessful attempts are retained. Six independent full-helper BDD
+attempts reached the fixed 2,000,000-node allocation cap; they changed
+cofactor evaluation, exact compaction, or variable order, without raising
+the cap. The final decomposition-only calculation completed in 22.8\,s.
+The old-source decomposition dispatch stopped on the failed correspondence
+premise rather than applying its theorem outside its assumptions.
+
+\begin{center}
+\begin{tabular}{p{.43\linewidth}p{.12\linewidth}p{.36\linewidth}}\toprule
+Attempt(s) & Time (s) & Outcome\\\midrule
+Independent BDD attempts 1--4 &14,14,22,37& Node-cap UNKNOWN\\
+Helper-first BDD attempts 1--2 &11,33& Node-cap UNKNOWN\\
+Old correspondence-gated decomposition &14& Premise failure; no transfer\\
+Native strict three-fixed-point attempt &136& Stopped for repeated diagnostic output\\
+Native strict retry with lossless RLE &76& Decoded-output cap; UNKNOWN\\\bottomrule
+\end{tabular}
+\end{center}
+
+The native queries use \code{GR1Game}, not the raw cooperative
+four-fixed-point core. They regenerate the field universe and check every
+saved safety, initialization and justice predicate before solving;
+initializers are not changed and their initial verdict is not the
+continuation query. The first supervisor omitted its intended stream
+limit; the owned JVM was stopped after 2.95\,GB of repeated diagnostics.
+The captured bytes were losslessly compressed to 17.2\,MB and verified
+by decompression. One retry restored the pinned lossless RLE wrapper,
+an explicit 16\,MiB stored-stream cap and a 180\,s wall cap. It stopped
+after 76\,s at the wrapper's 8\,GiB decoded-output cap, storing only
+29.6\,KB stdout and 2.7\,KB stderr. Neither run produced an adoptable
+strict verdict. No further retry or raw four-fixed-point run was made
+in this original experiment; Section~U.5 records one separately bounded
+strict follow-up.
+Accordingly, the claimed strict loss rests on exact saved-arena analysis
+and independent certificates, not a measured frontend refusal.
+
+\paragraph{Reproduction and trust boundary.}
+The local artifact root is
+\path{experiment/v64_native_continuation_20261023/}.
+\path{RESULT_SUMMARY.json} indexes the unchanged input hashes, successful
+results, negative findings and UNKNOWN attempts. The immutable summary
+is linked to the final independent audit by
+\path{FINAL_AUDIT_ADDENDUM.json}; \path{COMPARISON.json}
+separates direct evidence from theorem-derived comparisons.
+\path{native/} contains the four complete exports and commands;
+\path{source_bridge/} contains source-equation correspondence;
+\path{decomposition/new/} contains the successful calculation and its
+compact exact BDD functions. \path{independent_audit/} supplies the raw
+BDD certificate checks, explicit finite regions, quadrant checks, old
+obstruction and qualification records. \path{analysis/}, \path{direct/},
+\path{native_strict/} and \path{control/} preserve incomplete attempts,
+process timings and resource incidents. \path{FILE_MANIFEST.json} and
+\path{SHA256SUMS} bind the final files. No publication or external service
+run is part of this experiment.
+Selected saved records and exported
+predicates from this experiment are now distributed through the current
+continuation release's Patrol replay (opening index). This later public
+subset does not distribute the complete original experiment or repeat its
+native executions or omitted source/runtime provenance checks.
+
+The implementations and qualifications are author-visible research
+assistance, not blinded replication. They share the pinned native source
+front end and saved export bytes, while using separately implemented
+symbolic, finite-set, and raw-node checks. These checks establish the
+stated finite model results; they do not establish hardware behavior,
+prevalence, native frontend refusal, or a service advantage over direct
+source solving or the complete correction.

@@ -1,0 +1,161 @@
+\section*{Q. Complete Humanoid first-flip guard census}
+\setcounter{subsection}{0}
+\renewcommand{\thesubsection}{Q.\arabic{subsection}}
+\renewcommand{\theHsubsection}{Q.\arabic{subsection}}
+
+\subsection{Question, fixed entry, and intervention}
+At a fixed noninitial Humanoid~044 state, the local response test
+accepts the unchanged syntactic helper, but exact continuation does
+not. Relaxing either the obstacle-response group or the history-response
+group on the first flip is sufficient at that state. This study asks
+which of eight declared policies preserve an entry or the whole strict
+region. It does not change the original source contract or seek a
+cooperative controller: the original $V=K=\varnothing$.
+
+The source is the archived HumanoidLTL\_460\_Humanoid contract and its
+saved 044 original/helper models. We retain the full typed carrier
+of 18,816 states: two ENV fields (Obstacle and InputMoveMode), four
+motor/mode outputs, and two distinct Boolean PREV auxiliaries. All
+original guarantees are current-state predicates in this saved
+translation. Their trace IDs are partitioned into three frozen groups:
+obstacle $O=\{6,10\}$, history $H=\{8,9\}$, and mode change
+$M=\{7,11,12,13,14,15,16\}$. An arm relaxes exactly the chosen source
+conjuncts in the helper quadrant $b=0,b'=1$. The other three quadrants,
+typing, history updates, initial predicates, objectives, and source
+relation at $b=b'=0$ remain fixed. All eight subsets were specified
+before their outcomes were computed; source and boundary were not
+selected by this census's results.
+
+At the fixed initialized state $u$, Obstacle is CLEAR and every mode
+and motor is FWD; both auxiliaries are false. One legal original
+transition changes only the auxiliaries to $(0,1)$, yielding the fixed
+noninitial state $r$. Both $u,r$ belong to original $W$. This is an
+existential original-legal prefix, not a claim about an installed
+controller's reachable private graph.
+
+\subsection{Complete source predicates and history order}
+Let $z$ mean Obstacle=BLOCKED; CLEAR is $\neg z$. Write $i,o$ for
+InputMoveMode and OutputMoveMode, and $\ell,r_m,h$ for LeftMotor,
+RightMotor, and HeadMotor. Abbreviate FWD, BWD, TURN\_LEFT\_1,
+TURN\_LEFT\_2 by $\mathsf F,\mathsf B,\mathsf T_1,\mathsf T_2$;
+CALIB\_FWD, CALIB\_TURN, TURN\_FWD, TURN\_BWD, STOP by
+$\mathsf C_F,\mathsf C_T,\mathsf R_F,\mathsf R_B,\mathsf S$.
+The mode domain is $\{\mathsf F,\mathsf B,\mathsf T_1,\mathsf T_2\}$;
+each leg motor has domain
+$\{\mathsf F,\mathsf B,\mathsf C_F,\mathsf C_T,\mathsf R_F,\mathsf R_B,\mathsf S\}$;
+the head has domain $\{\mathsf F,\mathsf B,\mathsf S\}$.
+Together with Boolean $z,p_0,p_1$, these give
+$2\cdot4\cdot7^2\cdot3\cdot4\cdot2^2=18,816$ states.
+
+The ordered auxiliaries are
+$p_0=\operatorname{PREV}(i=\mathsf T_2)$ and
+$p_1=\operatorname{PREV}(i\ne\mathsf T_2)$. Both initialize false;
+their updates are
+\[
+p'_0=[i=\mathsf T_2],\qquad p'_1=[i\ne\mathsf T_2].
+\]
+They are distinct variables: although complementary after a transition,
+the initialized pair is $(0,0)$. The original initializer imposes only
+this pair; all other fields are free within their types. The sole ENV
+safety predicate is $(i=\mathsf F\land p_0)\Rightarrow\neg z$.
+There are no original ENV or SYS justices.
+
+Below $g_k$ denotes the current-state predicate with saved trace ID $k$.
+Conjunctions such as $\ell=r_m=\mathsf C_T$ require both equalities.
+\begin{align*}
+O:\quad g_6&:\ (i=\mathsf F\land z)\Rightarrow
+  (o=\mathsf T_1\land\ell=r_m=\mathsf C_T),\\
+g_{10}&:\ z\Rightarrow o\ne\mathsf F;\\[2pt]
+H:\quad g_8&:\ (i=\mathsf F\land p_0)\Rightarrow\ell=r_m=\mathsf C_F,\\
+g_9&:\ (i=\mathsf F\land\neg z\land p_1)\Rightarrow\ell=r_m=\mathsf F;\\[2pt]
+M:\quad g_7&:\ (i=\mathsf B\land\neg z)\Rightarrow
+  (o=\mathsf F\land\ell=\mathsf F\land r_m=\mathsf B),\\
+g_{11}&:\ (i=\mathsf T_1)\Leftrightarrow(o=\mathsf T_2),\\
+g_{12}&:\ (i=\mathsf T_1)\Rightarrow(\ell=\mathsf F\land r_m=\mathsf R_F),\\
+g_{13}&:\ (i=\mathsf T_2)\Rightarrow(\ell=\mathsf B\land r_m=\mathsf R_B),\\
+g_{14}&:\ (i\notin\{\mathsf T_1,\mathsf T_2\})\Rightarrow\\
+&\qquad\neg(\ell=\mathsf R_B\lor r_m=\mathsf R_B
+             \lor(\ell=\mathsf R_F\land r_m=\mathsf R_F)),\\
+g_{15}&:\ (i\in\{\mathsf T_1,\mathsf T_2\})\Rightarrow h=\mathsf S,\\
+g_{16}&:\ (i=\mathsf T_2\land\neg z)\Rightarrow o=\mathsf F.
+\end{align*}
+All eleven are evaluated on the \emph{current} state. Original SYS
+safety conjoins them with the two AUX updates. The $00$ quadrant keeps
+this relation and the original ENV predicate; $01$ allows every typed
+next input and conjoins the unrelaxed $g_k$ with the same AUX updates;
+$11$ retains the AUX updates, with every typed next input allowed;
+$10$ is forbidden. The helper starts false and adds ENV justice
+$\G\F\neg b$. Thus the printed predicates determine every arm's
+first-flip and post-flip relation.
+
+At $r=(\neg z,i,\ell,r_m,h,o,p_0,p_1)
+=(1,\mathsf F,\mathsf F,\mathsf F,\mathsf F,\mathsf F,0,1)$,
+all current clauses hold, explaining the common local pass. Without
+relaxing $O$ or $H$, future input choices can force incompatible
+obstacle and history duties; the invariant computation detects this
+loss beyond the current state. The full eight-arm table reports which
+invariants survive, rather than inferring them from this local pass.
+
+\subsection{Whole-function checks and all outcomes}
+Let $S_{01}^J$ be the first-flip SYS relation after relaxing groups $J$.
+It conjoins the remaining source clauses with the unchanged auxiliary
+updates. We compute $U$, $F$, $W_F$, and the direct helper winning
+region for every arm. Exact BDD function comparisons agree with
+separately written finite-set safety iteration on all typed states;
+cardinality agreement alone is not used. Every arm has $U=D$.
+Complete source checks also compare all eleven clause predicates,
+initialization, and all helper quadrants. Five mutations test clause
+grouping, current/next timing, history update, initialized auxiliaries,
+and accidental changes to the $00$ relation. A separate two-state
+propagation control has $|W|=2,|F|=1,W_F=\varnothing$.
+
+\begin{table}[ht]
+\centering\small
+\caption{All eight Humanoid policies. Clauses counts relaxed source
+conjuncts, not runtime or repair quality. Local $F(r)$ is true in every
+row. Exact is $r\in W_F$; Init is the transformed quantified initializer.
+Original $|W|=2,387$ and $V=K=\varnothing$.}
+\label{tab:humanoid-eight}
+\begin{tabular}{@{}lrrrccc@{}}\toprule
+Relaxed & Clauses & $|F|$ & $|W_F|$ & Exact & Init & Whole $W$\\\midrule
+None & 0 & 1,211 & 0 & No & No & No\\
+$O$ & 2 & 2,277 & 1,229 & Yes & Yes & No\\
+$H$ & 2 & 2,144 & 1,217 & Yes & Yes & No\\
+$O,H$ & 4 & 3,816 & 1,841 & Yes & Yes & No\\
+$M$ & 7 & 12,966 & 0 & No & No & No\\
+$O,M$ & 9 & 15,924 & 1,235 & Yes & Yes & No\\
+$H,M$ & 9 & 14,712 & 1,217 & Yes & Yes & No\\
+$O,H,M$ & 11 & 18,816 & 2,387 & Yes & Yes & Yes\\\bottomrule
+\end{tabular}
+\end{table}
+
+The local minimum at $r$ is no relaxation; the exact minimum among
+the eight candidates has two clauses, with both $O$ and $H$ tied.
+The predefined bit-mask tie break chooses $O$, not a uniquely superior
+repair. Only the all-group endpoint preserves every original strict
+winner. Full preservation is already equivalent to $W\subseteq F$;
+computing exact $W_F$ adds entry-specific scope rather than a stronger
+global Boolean test. No runtime, implementation cost, or optimality
+outside this eight-policy set is measured.
+
+All 28 unordered policy pairs retain complete XOR predicates and
+witnesses. Twelve pairs have at least one state where both local tests
+pass but exact membership differs. Their common affected cohort has
+1,211 states; it is not twelve independent copies of that population.
+Of these, 993 are existentially reachable from the complete original
+initializer through safety-compliant original edges, including 457
+noninitial states and 536 initial states. Every such pair compares
+one of the two initializer-failing policies (none or $M$) with an
+initializer-passing policy. Thus no stronger local-plus-initializer
+distinction is observed. Only the none and $M$ arms have propagated
+loss $(W\cap F)\setminus W_F$, of size 1,211 in each; all other arms
+have $W_F=W\cap F$.
+
+The finite and BDD checks share saved translated predicates and use
+mutually visible implementations. The hand-written source factorization
+provides a separate finite comparison, not an independent compiler.
+This is strict transformation maintenance on one selected source, with
+no native solver run, cooperative rescue, executed deployment, or
+application-prevalence estimate. The all-group endpoint still retains
+typing and AUX updates; region equality does not assert relation
+identity with every complete semantic correction.

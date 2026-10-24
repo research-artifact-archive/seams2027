@@ -1,0 +1,123 @@
+\documentclass[conference,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{balance}
+\usepackage{placeins}
+\newcommand{\DoNotLoadEpstopdf}{}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\newcommand{\G}{\mathsf{G}}\newcommand{\F}{\mathsf{F}}
+\newcommand{\CPre}{\operatorname{CPre}}\newcommand{\Pref}{\operatorname{Pref}}
+\newcommand{\EPre}{\operatorname{EPre}}\newcommand{\code}[1]{\texttt{#1}}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}\newtheorem{lemma}{Lemma}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{Continuation Preservation in Boolean-Helper Synthesis for Controller Replacement}
+\author{\IEEEauthorblockN{Anonymous authors}}
+\begin{document}\raggedbottom\maketitle
+\begin{abstract}
+Controller replacement after an environment-model change must account
+for the current state and unfinished obligations. A negative synthesis
+result may concern an auxiliary encoding rather than the source contract;
+a positive existence result may still yield an unsuitable controller.
+We characterize exactly which strict-winning continuations survive a
+one-way Boolean-helper encoding, including constraints retained during
+translation. If the helper's first change releases input restrictions
+before response restrictions, winning requires maintaining the ability
+to answer every newly legal input. For one unchanged public Vehicle input,
+a whole-region audit of two saved native strict results finds 1,408 source
+states that lose strict-winning continuations. Each state is reachable
+under some initialized cooperative policy; both initial judgments remain
+positive. In a constructed Patrol update, a reusable source controller
+coexists with exclusion of its retained entry from the exported encoding.
+A complete countercertificate and reduced native query establish this
+temporal loss; the full-helper query remains UNKNOWN. A reconstructed Lift example separately
+shows why a solved game does not certify a particular extracted graph.
+Existing cooperative synthesis after normalization to a total arena supplies
+admitted alternatives for the feasible contracts in our fixed rosters. The results clarify the evidence required to retain a contract and admit
+a replacement controller.
+\end{abstract}
+\begin{IEEEkeywords}
+self-adaptive systems, reactive synthesis, specification repair,
+non-conflicting strategies, controller verification
+\end{IEEEkeywords}
+
+\section{Introduction}\label{sec:intro}
+A revised map does not erase a robot's pending charging request.
+Its current position and request history constrain replacement:
+restarting the specification would discard an obligation. Adaptation
+must decide whether the requirements still admit a continuation and
+which controller can be installed from that context~\cite{specrepair,degradation,dupdate}.
+
+A tool translates the contract, solves the encoded game and extracts a
+controller (Fig.~\ref{fig:evidence-overview}). Two decisions follow.
+First, if the encoding preserves source continuations at the retained
+entry, a correct strict solver's negative result there rules them out.
+Second, installation requires auditing the returned graph at that source
+state and selected private root; an existence result alone does not
+certify it.
+
+\input{evidence-overview-figure.tex}
+
+We study a one-way Boolean-helper encoding that releases environmental
+safety before system safety on its first change. Newly legal inputs can
+require incompatible responses. Preservation requires answering them
+throughout a winning continuation, beyond a one-step check at the entry.
+
+Our exact characterization (Theorem~\ref{hpb:exact}) extends to retained
+translation constraints (Proposition~\ref{hpb:retained}) and gives a
+necessary-and-sufficient condition for preserving the entire original
+strict-winning region. The complete first-flip correction already
+exists~\cite{spectrarelease2024}; our contribution characterizes the
+other encodings.
+
+Vehicle exposes initialization's blind spot: two completed native strict
+queries preserve both initial judgments but lose source continuations.
+This public input is outcome-selected; initialized cooperative
+reachability is existential per target. Patrol exposes the local check's
+blind spot: a reusable source controller coexists with temporal encoding
+loss. A countercertificate and reduced native query establish it; the
+full-helper query remains UNKNOWN. Lift addresses installation: a solved
+game yields an unsuitable fixed graph. Its selection intervention is a
+diagnosis, not a general repair.
+
+Existing normalized synthesis supplies admitted alternatives in the fixed
+rosters; Patrol has an audited reusable controller. Certified source
+continuations can thus justify retaining requirements despite encoding
+or output failure, without establishing deployment frequency or superiority.
+
+We define replacement, prove preservation, diagnose both boundaries, and
+report admission and comparisons in Sections~\ref{sec:running-example}--\ref{sec:replication}.
+The public artifact groups the paper, claim evidence, tool sources and
+scoped replay instructions by purpose~\cite{artifactrepository}.
+
+\input{foundations.tex}
+\section{Exact Continuation Preservation}\label{sec:formal}
+We now characterize the encoding's strict-winning region. The fresh
+Boolean input $b$ is observed before SYS responds, starts false, and can
+change to true only once. The added assumption $\G\F\neg b$ makes an
+infinite play after the change unfair, but does not excuse an earlier
+strict-safety violation. We distinguish a response possible now ($C$) from maintaining
+that condition while winning ($W_C$), then treat retained constraints.
+
+\input{formal-core.tex}
+\input{evaluation.tex}
+\input{lift-study.tex}
+\input{admission-procedure.tex}
+\input{discussion.tex}
+\input{conclusion.tex}
+\section*{Acknowledgments}
+OpenAI Codex~\cite{codex} assisted with drafting throughout this paper,
+formal reasoning (Sections~\ref{sec:running-example}--\ref{sec:replication}),
+and experiment design, derivation, implementation, execution, auditing
+and analysis (Sections~\ref{sec:evaluation}--\ref{sec:replication}).
+Claude (Fable 5.1) and ChatGPT (GPT-6 Pro) reviewed main-paper drafts;
+Fable also reviewed supplement drafts and a primary paper. The
+supplement's acknowledgments detail the workflow and limitations.
+
+\clearpage
+\nobalance
+\IEEEtriggeratref{15}
+\input{references.tex}
+\end{document}

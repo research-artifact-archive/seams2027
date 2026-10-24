@@ -1,0 +1,330 @@
+\section*{Current evidence: start here}
+This supplement supports the paper's contract, conversion, and controller
+claims with written proofs, exact source bindings, saved proof objects,
+and bounded software studies. The continuation release, separate Vehicle188
+native-pair package, and three earlier entries below identify the evidence
+to inspect first.
+Section~K retains the historical archive map; Sections~L--V give detailed
+arguments and study records. The continuation release publishes selected saved
+Patrol and sequential-manager evidence, a saved reduced-query replay, and
+one fixed-lasso replay. It does not distribute the full local Section~U
+experiment archive or establish a new native execution. The contract
+contrast, equivalent-old-source control, and complete U.4 runtime packet
+retain their local-record scope. The repository's \path{paper/},
+\path{results/}, \path{tool/}, \path{reproduce/} and \path{docs/} directories
+organize the paper, claim evidence, source code, scoped checks and version
+guidance. Evidence bundles are in \path{results/archives/}; their guides
+are in \path{results/guides/}. The document/layout snapshot is
+\href{https://github.com/research-artifact-archive/seams2027/tree/reader-layout-20261024-v1}{\nolinkurl{reader-layout-20261024-v1}}.
+Fixed-version evidence paths below remain relative to
+\url{https://github.com/research-artifact-archive/seams2027} at their stated
+immutable tags, which preserve the earlier layouts. Archive names are literal;
+fresh output directories must be new or empty as the entrypoint requires.
+
+\begin{center}\small
+\begin{tabular}{@{}L{25mm}L{61mm}L{64mm}@{}}\toprule
+Question & Start with & Meaning of the check\\\midrule
+Current continuation & Current release: Patrol, reduced query, manager, fixed lasso; Sections~U--V & Saved semantic replay; no new native execution.\\
+Vehicle native pair & Separate Vehicle188 package; Section~E & Saved full-region membership and initialization checks; no native solver rerun.\\
+Guard / certificates & Entry~1: certificate and finite-study release; Sections~L, N, P--Q & Saved source and arena checks; certificate revalidation is separate from new synthesis.\\
+Matched Lift selection & Entry~2: causal archive and native-generation kit; Sections~H, K & Saved replay checks existing graphs; the second kit regenerates one matched pair.\\
+Pending continuation & Entry~3: earlier Patrol / extended Lift kit; Sections~S and R.7 & Rechecks 76 saved files and exact external sources; no controller or native solver rerun.\\\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Current release: selected continuation evidence}
+Use \href{https://github.com/research-artifact-archive/seams2027/blob/continuation-evidence-20261024-v1/CONTINUATION_EVIDENCE.md}{\nolinkurl{continuation-evidence-20261024-v1}}~\cite{continuationartifact}.
+The guide identifies \path{archives/continuation-evidence-20261024-v1.zip};
+inside it start with \path{REVIEWER_START_HERE.txt} and
+\path{claim_to_evidence.json}. The 41 original records retain their exact
+bytes and source-member ledger. \path{quick_verify.py} checks transport
+identity and recorded properties only; its PASS is not semantic replay.
+
+For the saved Patrol, sequential-manager, and reduced-query checks, use:
+\begin{verbatim}
+python3 -B "$BUNDLE_ROOT/replay/replay.py" \
+  --bundle "$BUNDLE_ROOT/replay" --out "$FRESH_REPLAY"
+\end{verbatim}
+Here \code{BUNDLE\_ROOT} is the absolute extracted archive root and
+\code{FRESH\_REPLAY} is a new or empty external output directory.
+Python~3.9+ and the standard library suffice; optimized Python is rejected.
+Expected result: \code{PASS\_PORTABLE\_SAVED\_EVIDENCE}, with stages
+\code{patrol}, \code{manager}, and \code{reduced}. The reduced stage binds
+the saved winning output and all 4,800 layout memberships; it does not
+recompute the native winning fixed point. No native synthesis, extraction,
+manager-worker execution, or full-helper retry occurs; full-helper UNKNOWN
+is unchanged. Historical source/runtime and worker-provenance checks omitted
+from replay are listed in \path{replay/OMITTED_HISTORICAL_CHECKS.json}.
+Qualification is an author-host fresh-directory sandbox check with workspace
+and network access denied, not an external reproduction.
+
+For the separately qualified fixed lasso in Section~V, use:
+\begin{verbatim}
+python3 -I -S -B \
+  "$BUNDLE_ROOT/lasso/replay/replay_lasso.py" \
+  --bundle "$BUNDLE_ROOT/lasso/replay" \
+  --out "$FRESH_LASSO_OUTPUT" --timeout-seconds 60
+\end{verbatim}
+This Python~3.10+/POSIX standard-library check expects
+\code{PASS\_SAVED\_LASSO\_REPLAY}. It checks 23 public semantic payloads,
+nine metadata projection values and 19 DAGs, not the original 25-pin local
+verification. Original Spectra and \path{final_region} are hash-only
+omitted; source-value equality is assembly-time evidence and original
+paths/runtime provenance are not revalidated. It evaluates one fixed
+initialized transformed-arena lasso, not a returned controller.
+
+Older Guard and matched-Lift kits remain separate; use
+\path{REPLAY_COMMANDS.txt} and Entries~1--2 for their restoration steps and
+qualification boundaries. The full local R5 archive is not distributed.
+
+\subsection*{Separate evidence: Vehicle188 native strict pair}
+The separately packaged Vehicle188 records are identified by
+\href{https://github.com/research-artifact-archive/seams2027/blob/vehicle188-native-evidence-20261024-v1/VEHICLE188_NATIVE_EVIDENCE.md}{\nolinkurl{vehicle188-native-evidence-20261024-v1}}~\cite{vehicleartifact}.
+Inside the bundle, start with \path{README.txt}, \path{MANIFEST.json},
+\path{TRANSFORMATIONS.json}, and \path{OMITTED_HISTORICAL_CHECKS.json}.
+For a saved-evidence check using Python~3.10+ and its standard library:
+\begin{verbatim}
+python3 -I -S -B "$BUNDLE_ROOT/replay.py" \
+  --bundle "$BUNDLE_ROOT" --out "$FRESH_RESULT_JSON"
+\end{verbatim}
+The result file must be new and outside the immutable bundle. Expected status:
+\begin{verbatim}
+PASS_SAVED_IDENTITY_MEMBERSHIP_INITIALIZATION
+\end{verbatim}
+The check verifies transport integrity, exact saved model/function identity,
+the full fixed source state and helper-false target, saved winning-region
+membership/counts, and quantified initialization. It does not recompute a
+winning fixed point, run a native solver, or replay the separate source-policy
+certificate. Historical complete-memory, process and loaded-class checks
+remain recorded evidence. The native experiment itself is described in
+Section~E; its two calls are distinct from this saved-data check.
+The bundle preserves encoded stdout, with no raw-stream hash claim.
+Local qualification uses an isolated directory with workspace and network
+access denied, including positive and corrupted-input checks; it does not
+establish external reproduction.
+
+\subsection*{1. Guard, source certificates, and finite studies}
+Use tag
+\href{https://github.com/research-artifact-archive/seams2027/tree/certificate-finite-evidence-20261023-v2}{\nolinkurl{certificate-finite-evidence-20261023-v2}}
+and its \path{CERTIFICATE_FINITE_EVIDENCE.md}. The two downloads are
+\path{archives/three-study-evidence-20261023-v2.zip} and
+\path{archives/intruder-certificate-evidence-20261023-v1.zip}.
+From that repository version, Python~3.10+ and its standard library suffice
+for the following \emph{integrity-only} check:
+\begin{lstlisting}
+python3 -I -S -B tools/verify_current_distribution.py
+\end{lstlisting}
+It checks the version's 302-file distribution and 22 downloads, not any
+scientific result. Do not substitute the older version-bound certificate
+verifier for this v2 metadata check.
+
+\paragraph{Guard and the finite-study tree.}
+After extracting the three-study archive, set \texttt{BUNDLE} to its
+\path{three-study-evidence-20261023-v2/saved-study-inputs/} directory.
+Within it, inspect
+\path{evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json}:
+the complete audit checks 16 source and 64 helper current/next assignments,
+with safety iteration $8\to4\to4$. The same tree contains
+\path{request_protocol/results_01/RESULT.json} and
+\path{guard_census/results_01/RESULT.json} under
+\path{evidence/experiment/v58_submission_20261023/}:
+six request cells, seven modeled episodes, and eight Humanoid policies.
+Humanoid cooperative admission is negative.
+
+For a new saved-study replay, use an absolute Python path, a fresh
+external replay directory, and a POSIX host providing process groups,
+\texttt{ps}, and resource limits. No JDK is needed. The current inner
+manifest hash is
+\path{6c020cb00df8b6bc4d3be8ba0e2a0edeb61abddc83e4dc2a416440d03ef4b806}.
+The binding entry point is:
+\begin{lstlisting}
+"$PYTHON" -I -S -B "$BUNDLE/prepare_three_study_replay.py" \
+  --bundle-root "$BUNDLE" \
+  --expected-manifest-sha256 6c020cb00df8b6bc4d3be8ba0e2a0edeb61abddc83e4dc2a416440d03ef4b806 \
+  --replay-root "$FRESH_ROOT" --python "$PYTHON" \
+  --confirmed-root-controlled-binding --ordinary-usage-gate-confirmed
+\end{lstlisting}
+Inspect the generated binding and run authorization, then follow the
+three \texttt{science\_commands} and comparison command in the generated
+\path{REPLAY_PLAN.json}, as specified by the bundled README.
+The retained v1 \path{REPLAY_SUMMARY.json} records three executions,
+418 comparisons, and 66 request events. The v2 package is a metadata
+privacy derivative with 133 inner files; it retains
+\texttt{ASSEMBLED\_NOT\_REPLAY\_QUALIFIED} and was not newly replayed.
+\path{PRIVACY_AMENDMENT.json} explains the changed manifest identity.
+
+\paragraph{Intruder proof objects.}
+Within \path{seams2027-intruder-certificate-evidence-v1/}, the nested
+\path{seams2027-intruder-certificate-replay-v1/README.md} and
+\path{REPLAY_PLAN.json} give six exact commands: source-semantics checks,
+full original/repaired certificate verifiers, and two rejection suites.
+Expected certificate sizes are 276,829 labelled states for one allowed
+original initializer $(0,7)$ and 407,172 states covering all eight repaired
+initializers. The source certificates concern joint strict/cooperative
+winning, not the complete strict-winning region. Python~3.10+ and a
+suitable supervised POSIX host suffice; no Java, network, or new synthesis
+is used. Section~N states the countercertificate and repair limits.
+
+\subsection*{2. Matched Lift: saved replay or fresh native generation}
+\paragraph{Saved pair.}
+Use tag
+\href{https://github.com/research-artifact-archive/seams2027/tree/lift-causal-evidence-20261021-v1}{\nolinkurl{lift-causal-evidence-20261021-v1}}
+and \path{LIFT_CAUSAL_EXTENSION.md}. The archive is
+\path{archives/lift-causal-extension-public-20261021-v1.zip}, with root
+\path{seams2027-lift-causal-extension/}. Starting in that repository version:
+\begin{lstlisting}
+python3 -I -S -B tools/verify_lift_causal_extension.py \
+  --archive archives/lift-causal-extension-public-20261021-v1.zip \
+  --extract-to ../lift-causal-evidence
+python3 -I -S -B ../lift-causal-evidence/seams2027-lift-causal-extension/source_restoration/fetch_lift_causal_sources.py \
+  --output-root ../lift-causal-sources --cache ../lift-source-cache
+python3 -I -S -B ../lift-causal-evidence/seams2027-lift-causal-extension/consumer/replay.py \
+  --bundle ../lift-causal-evidence/seams2027-lift-causal-extension \
+  --sources ../lift-causal-sources --out ../lift-causal-replay
+\end{lstlisting}
+Python~3.10+ and its standard library are sufficient. Source restoration
+retrieves fourteen exact inputs; no JDK is needed. Key members are
+\path{evidence/CAUSAL_COMPARISON_CLOSURE.json},
+\path{evidence/SUCCESS_CONTROLS_RESULT.json}, and
+\path{evidence/adaptation_episode_04/EXECUTION_RECEIPT.json}.
+Expected results are 2,048 typed states, 28 saved memory sets
+(57,344 memberships), and 32 graph judgments on sixteen arms.
+The matched baseline has 154 states/1,170 edges and is strict but
+non-cooperative; the variant has 154/1,176 and satisfies both.
+The status is \texttt{PASS\_SAVED\_SEMANTICS\_REPLAY}.
+This recomputes saved finite-set and graph/event checks; it does not
+repeat native production, extraction, or episode execution.
+
+\paragraph{Fresh matched pair.}
+Use tag
+\href{https://github.com/research-artifact-archive/seams2027/tree/native-regeneration-evidence-20261021-v1}{\nolinkurl{native-regeneration-evidence-20261021-v1}},
+\path{NATIVE_REGENERATION.md}, and archive
+\path{archives/lift-native-regeneration-public-20261021-v1.zip}.
+Extract with
+\begin{lstlisting}
+python3 -I -S -B tools/verify_native_regeneration.py \
+  --archive archives/lift-native-regeneration-public-20261021-v1.zip \
+  --extract-to ../native-regeneration-inspection
+\end{lstlisting}
+The kit root is \path{seams2027-lift-public-regeneration-kit/}.
+Change into the extracted kit root before the following commands.
+Its \path{README.md} defines the configuration values and run-specific
+review/authorization; \path{configure_run.py} is the entry point:
+\begin{lstlisting}
+"$PINNED_PYTHON" -I -S -B configure_run.py \
+  --jdk-home "$JDK_HOME_FOR_THIS_RUN" --python "$PINNED_PYTHON" \
+  --workspace-deny-root "$EXCLUDED_WORKSPACE" \
+  --deny-probe "$EXISTING_EXCLUDED_FILE" --output "$FRESH_RUN" \
+  --deadline-utc "$UTC_DEADLINE"
+"$PINNED_PYTHON" -I -S -B "$FRESH_RUN/launch_public.py" execute
+\end{lstlisting}
+Execution requires the reviewed generated authorization, an installed
+pinned JDK~17.0.19 (565-entry inventory), pinned Python, and macOS
+\texttt{sandbox-exec}. Runtime binaries are not bundled.
+The qualified configuration fetched 165 public inputs (113,412,497 bytes),
+restored fourteen sources, compiled six custom Java sources to nineteen
+matching classes using 164 JARs, and made one native solver invocation
+with two extractors sharing the same game and memory. Four graph checks
+recover the same 154/1,170 and 154/1,176 pair; 36 model/memory BDD
+equalities and 176 supervised processes are recorded.
+\path{NATIVE_REGENERATION_VALIDATION.json} and
+\path{evidence/validation/native-regeneration-20261021/qualification_01/run_01/PAIRED_EVIDENCE.json}
+are repository-level records. This qualifies one same-host configuration,
+not another adaptation episode or the six dormant controls. Three metadata
+members were subsequently sanitized; the full final 32-file serialization
+was not executed again.
+
+\subsection*{3. New Patrol and extended Lift saved-evidence kit}
+Use tag
+\href{https://github.com/research-artifact-archive/seams2027/tree/pending-diagnostic-evidence-20261023-v1}{\nolinkurl{pending-diagnostic-evidence-20261023-v1}}
+and download
+\path{archives/seams2027-20261023-pending-diagnostic-evidence-v1.zip}.
+Its 525,798 bytes have SHA256
+\path{151a8d04517d853aff771c2eb338fb72aba11ab21cfc2f43eb9c1e09ed7a398d}.
+The outer root \path{pending-diagnostic-evidence-v1-delivery/} contains eight
+files: the delivery manifest, README, validation attestation, inner ZIP,
+and four validation records. Extract its
+\path{pending-diagnostic-evidence-v1.zip}; commands below run inside the
+resulting \path{pending-diagnostic-evidence-v1/} directory.
+
+\paragraph{Exact members and prerequisites.}
+Patrol inputs are \path{primary277/sources/new.spectra},
+\path{primary277/sources/old.spectra}, and their
+\path{primary277/sources/imports/DwyerPatterns.spectra}. The principal certificates are
+\path{primary277/graphs/C_CERTIFICATE.json} and
+\path{primary277/graphs/WC_COUNTERCERTIFICATE.json}; actual checks are
+\path{primary277/actual/SOURCE_AST_AUDIT.json},
+\path{primary277/actual/GRAPH_AUDIT.json}, and
+\path{primary277/actual/HANDOFF_AUDIT.json}.
+Extended Lift uses \path{lift/actual/RESULT.json},
+\path{lift/actual/EVENTS.jsonl}, and \path{lift/actual/EVENT_AUDIT.json}.
+The README and \path{REPLAY_SCOPE.json} separate original execution from
+consumer verification. Python~3.10+ and its standard library, two exact
+external Lift source files, and fresh output outside the kit are required.
+No JDK, compiler, native solver, or BDD package is loaded.
+
+Obtain the fourth archive in Entry~2 and the exact upstream HTML at
+\url{https://arxiv.org/html/2609.12231v1} separately. The HTML must have
+1,624,775 bytes and SHA256
+\path{78a3adba587d3179008afefa9ef7cecc9bd9eacc030d64c64a30f9171955b8ee}.
+The offline restoration helper checks both dependencies and reconstructs
+\path{lift_new.spectra} and \path{lift_old_no_b1.spectra}:
+\noindent\begin{minipage}{\linewidth}
+\begin{lstlisting}
+python3 -B lift/source_restoration/restore_pending_sources.py \
+  --fourth-archive /path/to/lift-causal-extension-public-20261021-v1.zip \
+  --paper-html /path/to/2609.12231v1.html --output ../restored-lift
+python3 -B tools/verify_manifest.py --bundle . \
+  --manifest-sha256 a49211ac9a882a0270c9744f7e7338db917fbde94a5030ebf1507808cdd8caaf
+python3 -I -B tools/compare_saved_semantics.py --bundle . \
+  --manifest-sha256 a49211ac9a882a0270c9744f7e7338db917fbde94a5030ebf1507808cdd8caaf \
+  --restored-lift ../restored-lift --output ../saved-recheck-01
+\end{lstlisting}
+\end{minipage}
+
+\paragraph{Expected result and qualification boundary.}
+The final status is \path{PASS_RELOCATED_SAVED_EVIDENCE_RECHECK},
+with \path{PRIMARY277_RECHECK.json}, \path{LIFT_RECHECK.json},
+\path{PUBLIC_QUALIFICATION.json}, and \path{REPLAY_RECEIPT.json}.
+Patrol checks 77 translated clauses against 61,435 typed support assignments,
+old/new graphs of 140/277 and 849/12,240 states/edges, and 278 saved events
+with one old and 67 new commits. Lift checks nine episodes and 180 saved
+events, eighteen old and 96 new commits, three retained-native dead ends,
+and six fair self-loops. Forty-three negative controls are rejected and
+one positive fairness control passes.
+The 76-file inner kit retains its assembly-time statuses; the outer
+validation receipt records one later successful author-host check on
+macOS~15.7.9, arm64, Python~3.10.9, using exact already available source
+copies. Fresh retrieval and restoration were not rerun for that check,
+and the original workspace remained accessible. Neither controller was
+executed anew, no native AST was regenerated, and saved BDD predicates
+were not reevaluated. Historical process/object identities remain
+historical evidence. This is not independent external replication.
+
+The nine-episode extension is separate from the six-episode native
+handoff package at tag
+\href{https://github.com/research-artifact-archive/seams2027/tree/pending-native-handoff-evidence-20261023-v2}{\nolinkurl{pending-native-handoff-evidence-20261023-v2}}.
+Its archive \path{pending-native-handoff-evidence-20261023-v1.zip} and
+README retain the ten-stage bounded execution recipe: six episodes,
+98 events, twelve old and thirty new commits, 44 semantic comparisons,
+and sixteen mutation fixtures (Section~R before R.7).
+
+\paragraph{Research workflow.}
+The added native Patrol and Lift contract-sensitivity studies are indexed
+by \path{v64_native_continuation_20261023/RESULT_SUMMARY.json} and
+\path{v64_lift_contract_contrast_20261023/CONTRAST_SUMMARY.json} in the
+local experiment snapshot. Section~U.3 adds
+\path{v64_old_spelling_control_20261023/}; Section~U.4 adds
+\path{v64_admission_runtime_20261023/RESULT_SUMMARY.json} and its
+\path{REPORT.md}. These paths are relative to the local
+\path{experiment/} directory. Section~U identifies the native exports,
+certificates, internal checks, negative results, resource-limited attempts,
+and actual paused-admission runs. The U.4 directory preserves both
+predeclaration amendments, all three trials including the first Lift
+setup failure, and the original process receipts whose
+\code{started\_utc} field was sampled at receipt completion. Its monotonic
+elapsed durations remain valid. These complete experiment directories
+remain local; selected saved Patrol records and the later sequential
+manager evidence are now distributed in the continuation release above.
+That public subset does not publish all U.1--U.4 inputs, runtime records,
+source specifications, or omitted provenance checks.

@@ -1,0 +1,1578 @@
+{
+  "archive_roots": {
+    "Core": {
+      "archive": "saved-evidence-public-20261020-v1.zip",
+      "member_prefix": "seams2027-saved-evidence/",
+      "historical_archive": "seams2027-saved-evidence-20261018-v7.zip"
+    },
+    "Verification": {
+      "archive": "verification-addendum-public-20261020-v1.zip",
+      "member_prefix": "seams2027-verification-addendum/",
+      "historical_archive": "seams2027-verification-addendum-20261018-v1.zip"
+    },
+    "Lift": {
+      "archive": "lift-direct-static-public-20261020-v1.zip",
+      "member_prefix": "seams2027-lift-direct-static-evidence/",
+      "historical_archive": "seams2027-lift-direct-static-evidence-20261018-v1.zip"
+    },
+    "LiftCausal": {
+      "archive": "lift-causal-extension-public-20261021-v1.zip",
+      "member_prefix": "seams2027-lift-causal-extension/"
+    },
+    "LiftRegeneration": {
+      "archive": "lift-native-regeneration-public-20261021-v1.zip",
+      "member_prefix": "seams2027-lift-public-regeneration-kit/"
+    },
+    "NormalizedEleven": {
+      "archive": "normalized-eleven-public-20261021-v1.zip",
+      "member_prefix": "seams2027-normalized-eleven-evidence/"
+    },
+    "ResidualCensus": {
+      "archive": "residual-census-evidence-20261021-v1.zip",
+      "member_prefix": "residual-census-evidence/"
+    },
+    "NoninitialHandoff": {
+      "archive": "noninitial-handoff-evidence-20261021-v1.zip",
+      "member_prefix": "noninitial-handoff-evidence/"
+    },
+    "IntruderBounded": {
+      "archive": "intruder-bounded-evidence-20261021.zip",
+      "member_prefix": "seams2027-intruder-bounded-evidence/"
+    },
+    "IntruderCertificate": {
+      "archive": "intruder-certificate-evidence-20261023-v1.zip",
+      "member_prefix": "seams2027-intruder-certificate-evidence-v1/"
+    },
+    "FiniteStudies": {
+      "archive": "three-study-evidence-20261023-v2.zip",
+      "member_prefix": "three-study-evidence-20261023-v2/"
+    },
+    "PendingNativeHandoff": {
+      "archive": "pending-native-handoff-evidence-20261023-v1.zip",
+      "member_prefix": "seams2027-pending-native-handoff/"
+    },
+    "PendingDiagnostic": {
+      "archive": "seams2027-20261023-pending-diagnostic-evidence-v1.zip",
+      "member_prefix": "pending-diagnostic-evidence-v1-delivery/",
+      "nested_kit": "pending-diagnostic-evidence-v1.zip",
+      "nested_member_prefix": "pending-diagnostic-evidence-v1/"
+    },
+    "Continuation": {
+      "archive": "continuation-evidence-20261024-v1.zip",
+      "member_prefix": "continuation-evidence-20261024-v1/"
+    },
+    "Vehicle188Native": {
+      "archive": "vehicle188-native-evidence-20261024-v1.zip",
+      "member_prefix": "vehicle188-native-evidence-20261024-v1/"
+    },
+    "Vehicle188Whole": {
+      "archive": "vehicle188-whole-region-evidence-20261024-v1.zip",
+      "member_prefix": "vehicle188-whole-region-evidence-20261024-v1/"
+    },
+    "FixedSevenNative": {
+      "archive": "fixed-seven-native-evidence-20261024-v1.zip",
+      "member_prefix": "fixed-seven-native/"
+    }
+  },
+  "path_convention": "Archive and member_prefix identify a ZIP under results/archives/. Each row names archive-internal source, model, output and checker members. The source_fetch_required_for_members entries are omitted source-only inputs restored by reproduce/source-restoration/. Historical pkg:/origin:/external: identities are not runtime fallback paths. Repository-level supplemental evidence is under results/evidence/. See the unchanged inner manifests for original/copy identity distinctions.",
+  "rows": [
+    {
+      "id": "C59",
+      "archive": "Core",
+      "claim": "59 certified public originals: 49 satisfy W subset C; 10 violate it.",
+      "input_models": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus002__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus003__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus032__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus034__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus035__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus036__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus037__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus038__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus039__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus040__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus041__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus042__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus043__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus044__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus045__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus046__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus047__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus049__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus050__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus054__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus055__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus056__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus057__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus058__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus059__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus060__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus061__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus062__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus063__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus065__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus072__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus093__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus094__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus102__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus103__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus121__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus122__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus125__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus135__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus139__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus140__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus145__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus146__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus147__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus148__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus149__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus150__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus151__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus159__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus164__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus178__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus179__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus184__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus185__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus186__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus187__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus223__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus225__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus226__original/model.json"
+      ],
+      "input_navigation": [
+        "PAPER_EVIDENCE_INDEX.tsv",
+        "package/MANIFEST.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus/ROSTER.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/FROZEN.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/PROTOCOL_JA.txt",
+        "package/base/MANIFEST.json",
+        "package/base/PATH_ADAPTATIONS.json"
+      ],
+      "saved_outputs": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/RUN_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/runs/corpus002__original/RESULT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/RUN_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/STOP_ACK.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/STOP_CASE_FACTS_AUDIT.json"
+      ],
+      "checker_sources": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/condition.py",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/preservation_condition_public/evidence.py",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_symbolic_independent/check_case.py"
+      ],
+      "expected_saved_result": "Aggregate eligible_count=59, 59 PASS rows, W_subset_C true for 49/false for 10. Representative corpus002: status PASS; C=W=300; W_minus_C=0.",
+      "execution_scope": "Historical result/code inspection. No claim that a documented reader recipe reruns all 59 models.",
+      "selection_scope": "ROSTER.json lists 449 source paths and 425 byte-distinct units. The RLE receipt records 70 COMPLETE_SYMBOLIC_INDEPENDENT_PENDING outputs under global_stop=true, with 162 non-complete native cases and 193 unattempted units retained. The independent STOP records retain 59 PASS, 2 UNKNOWN_RESOURCE and 9 FAIL_INTEGRITY among the 70 completed outputs. These are completion/certification stages of a stopped run, not 425 completed cases or a random sample. STOP_ACK identifies the 59 completed PASS case receipts. Historical embedded hashes identify original execution files; use package/base/MANIFEST.json and PATH_ADAPTATIONS.json for the path-adapted public copies."
+    },
+    {
+      "id": "C14",
+      "archive": "Core",
+      "claim": "The same 14 public originals across four synthesis paths.",
+      "input_models": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus002__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus032__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus034__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus035__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus036__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus037__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus038__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus043__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus057__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus058__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus093__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus149__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus184__original/model.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus_rle/runs/corpus223__original/model.json"
+      ],
+      "input_navigation": [
+        "PUBLIC_14X4_OUTCOMES.tsv",
+        "EVIDENCE_FILES.tsv",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/pcar_source_impossibility/SOURCE_PIN.json"
+      ],
+      "saved_outputs": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/RUN_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/slugs_small_recovery_contained_v2/RUN_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/runs/corpus032__original/released_kind/controller.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/small_native_recovery/runs/corpus032__original/released_kind/checker/PROCESS_RECEIPT.json",
+        "package/base/evidence/experiment/seams_research_reframing_20261017/pcar_source_impossibility/ROOT_CANDIDATE.txt"
+      ],
+      "checker_sources": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/released_kind_corpus_checker/certify.py"
+      ],
+      "expected_saved_result": "Both/strict-only/refusal/UNKNOWN: V-restricted 12/1/1/0; normalized 12/0/2/0; released 11/2/0/1; Slugs 12/0/2/0. The process receipt identifies certify.py and original/job directory binding for the representative released Elevator graph. The PCar source and saved ROOT_CANDIDATE give the initializer-only impossibility argument with arbitrary private memory; no all-carrier extension is claimed.",
+      "execution_scope": "Historical 56-row navigation and representative graph-check binding. No native replay, cross-route rerun or speed/prevalence claim.",
+      "source_inputs": [
+        "package/base/evidence/experiment/seams_research_reframing_20261017/kind_corpus/original/artifact/experiments/specs/syn15/PcarLTL_464_PCar_fixed.spectra"
+      ]
+    },
+    {
+      "id": "R11",
+      "archive": "Core",
+      "claim": "Eleven published replacements; eight cooperative initializers and seven returned graphs passing both checks.",
+      "input_models": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/inputs/arbiter__preferred/model.json"
+      ],
+      "source_inputs": [
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__preferred.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__trivial_1.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__preferred.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__trivial_1.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__preferred.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_1.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_2.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__preferred.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__trivial_1.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__preferred.spectra",
+        "package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__trivial_1.spectra"
+      ],
+      "input_navigation": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/selected_strategy_text_proposal_01/eleven-candidates.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/ORIGINAL_PROFILES.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/INPUT_MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/selected_strategy_text_proposal_01/eleven-candidates-compact.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/RESULT.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/arbiter__preferred.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261017/arbiter_preferred_released_kind_resource_followup_02/runs/arbiter__preferred/certificate.json"
+      ],
+      "checker_sources": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/certify.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/admission_checker.py",
+        "package/code/route_adapters.py",
+        "package/code/review.py"
+      ],
+      "reader_recipe": "CONSUMER_RECIPE.txt",
+      "expected_saved_result": "Fixed-eleven compact table and full join retain their historical correspondence gate. The one representative reader recipe is original_initial_K_V/arbiter__preferred: expected PASS_SAVED_EVIDENCE_RECHECK with I_M_K=false and I_M_V=false. Lift P at the historical gate remains UNKNOWN; the distinct direct certificate is the Lift row below.",
+      "execution_scope": "The eleven-source/index mapping is navigation; do not imply the representative Arbiter recipe executes every candidate or every graph checker.",
+      "repository_supplement": {
+        "id": "MINEPUMP-ORIGINAL-STRICT",
+        "location_convention": "Repository-root paths; not members added to a historical archive.",
+        "files": [
+          {
+            "path": "results/evidence/minepump-original-strict-records.json",
+            "bytes": 22626,
+            "sha256": "875b28bfd7f6d85ade71f2b90a632f056824eb149d891a19a2a829364824be72"
+          },
+          {
+            "path": "results/evidence/minepump-original-strict-records.txt",
+            "bytes": 3436,
+            "sha256": "99d86e1e70141e1740c2357d5d3b44e9976ab85862385da65fdbd85047ae9d5f"
+          }
+        ],
+        "scope": "Selected existing independent original-strict W equality records for Minepump P (28/32 states), public input binding, and a separately labeled static I_M(W)=true inference. Excerpts are not full certificates or a new checker execution."
+      }
+    },
+    {
+      "id": "GUARD-CONSTRUCTED",
+      "archive": "Core",
+      "claim": "Constructed Guard: the configured released route refuses a source contract with a trivial strict cooperative strategy; the refusal mechanism remains unresolved.",
+      "population_scope": "A constructed mechanism control, separate from the C59 originals, C14 public comparison, R11 replacements, and Vehicle witness. No population count changes.",
+      "input_models": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json"
+      ],
+      "input_navigation": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json",
+        "package/MANIFEST.json",
+        "package/ORIGIN_DIGESTS.json",
+        "package/PATH_ADAPTATIONS.json"
+      ],
+      "saved_outputs": [
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json",
+        "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json"
+      ],
+      "checker_sources": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/certify.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/code/admission_checker.py"
+      ],
+      "source_argument": "The unchanged 115-byte source has thetaE=thetaS=true, rhoE=rhoS=x', and no environment or system justice obligations. On the four-state typed carrier D of (x,p), a constant system response p'=false is strict winning. After every legal prefix the environment can continue with x'=true forever, under the same system strategy. Thus W=V=K=D and original cooperative initialization holds. This is the existing source argument, not a newly computed region or a conclusion printed by the initialization-correspondence certificate.",
+      "evidence_roles": {
+        "source_and_profile": "The repository source has the exact input_sha256 recorded by the saved result. ORIGINAL_PROFILES.json:profiles.guard records original formulas, ownership, initializers and empty justice lists.",
+        "native_result": "Records this configured run's refusal and extraction counts; it does not explain the cause.",
+        "original_certificate": "Checks original/helper-false initialization, safety and ordered-justice bindings; no controller was returned.",
+        "later_certificate": "Adds the explicit full-native-domain initialization-correspondence PASS. This is a correspondence check, not a cooperative-winning-region computation.",
+        "identity_ledgers": "Distinguish original execution digests from retained anonymous public-copy digests."
+      },
+      "record_identities": [
+        {
+          "role": "original_formula_profile",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/ORIGINAL_PROFILES.json",
+          "public_copy": {
+            "bytes": 13959,
+            "sha256": "6c0880f4e991378807c5a93e250def1b8a456268bb74306480d6ddffc2f74200"
+          },
+          "original_execution": {
+            "bytes": 13917,
+            "sha256": "86600d175be6b8c9b4a6e8f53afa4ea58dfbc5b1bbbcfbe707168ac45e77363c"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "observed_native_refusal",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/result.json",
+          "public_copy": {
+            "bytes": 26816,
+            "sha256": "69277099d8af8a617a6c4fd2f2c6512479ed553e72b17ae7573db0c1e5faf200"
+          },
+          "original_execution": {
+            "bytes": 25935,
+            "sha256": "b03b8b9234557085eb88d779c1a60d096941e57bbe9f6d6cb6482bd57fbc715e"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "helper_false_correspondence",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/certificate.json",
+          "public_copy": {
+            "bytes": 1884,
+            "sha256": "b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51"
+          },
+          "original_execution": {
+            "bytes": 1884,
+            "sha256": "b99aa3d38fa662fa0c10589a4ed9a5b2d642f1c6101cf3bbb99805d4e65c5c51"
+          },
+          "transformation": "BYTE_IDENTICAL"
+        },
+        {
+          "role": "saved_model_metadata",
+          "archive_member": "package/supplement/evidence/experiment/seams_submission_push_20261016/released_kind_pipeline_feasibility/runs/guard/model.json",
+          "public_copy": {
+            "bytes": 12952,
+            "sha256": "66e3551e66c380ab42e8a29b51123ece8127e495a942cdb3a82de936329ebdc0"
+          },
+          "original_execution": {
+            "bytes": 7934,
+            "sha256": "c2949ea5384ae67b7c4dcd90094ec6e49d0b0785550ef378b28cfcd4b427b33f"
+          },
+          "transformation": "PATH_STRINGS_ONLY"
+        },
+        {
+          "role": "later_initialization_correspondence",
+          "archive_member": "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/compatibility_preparation_01/results/guard/certificate.json",
+          "public_copy": {
+            "bytes": 2205,
+            "sha256": "aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0"
+          },
+          "original_execution": {
+            "bytes": 2205,
+            "sha256": "aa25f1e31a339817320a7748d3db1555a7e36ee8077c6ef624d70e07a5c1c0c0"
+          },
+          "transformation": "BYTE_IDENTICAL"
+        }
+      ],
+      "repository_supplement": {
+        "id": "GUARD-ORIGINAL-SOURCE",
+        "location_convention": "Repository-root path; not a member added to a historical archive.",
+        "files": [
+          {
+            "path": "results/evidence/transition_guard.spectra",
+            "bytes": 115,
+            "sha256": "b1701ea5a0d7e404a376b729bc5025a428df6d19112c1eaada8ae987e3a64d7c"
+          }
+        ],
+        "scope": "An exact copy of the already-existing constructed input. It was absent from the earlier anonymous archive and is not one of the 97 omitted third-party source copies."
+      },
+      "expected_saved_result": "Saved result: pipeline=released_syntactic_kind_job_equivalent, status=JOB_UNREALIZABLE_NO_CONTROLLER, native_initial_verdict=false, initializers_replaced=false, one historical native solver call, zero controller-extraction and printer calls. The original certificate records COMPLETE_NO_CONTROLLER and PASS helper-false correspondence. The later certificate adds initialization_correspondence=PASS over the full native typed environment domain, with original initializers unreplaced.",
+      "identity_scope": "The certificate's native_result_sha256 and original_profiles_sha256 identify original execution files, not the path-anonymized public copies. package/ORIGIN_DIGESTS.json, package/MANIFEST.json and package/PATH_ADAPTATIONS.json bind those identities. The Guard profile subtree is unchanged; the complete profile file differs only in two Traffic Single path strings. The native result differs only in input and class-origin path strings. All five listed public members retain the bytes of the earlier anonymous archive.",
+      "execution_scope": "Static inspection of existing records and an unchanged original source only. The helper certificate checks the helper-false slice, and the later certificate checks initialization correspondence; neither establishes a complete Guard released-arena relation audit or identifies the refusal mechanism. No Guard consumer rerun, new native call, experiment, or general claim about the distinct semantic implementation is added."
+    },
+    {
+      "id": "LIFT-T-SELECTED-POLICY",
+      "archive": "Core",
+      "claim": "Lift T: a separate original-initial cooperative source policy, its complete transformed-model extension, and a strict but non-cooperative returned selected graph.",
+      "source_inputs": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__trivial_1.spectra"
+      ],
+      "input_models": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/native/model.json"
+      ],
+      "saved_graphs": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/positive_witness_01/witness/CONTROLLER.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/native/controller.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/production/derived_original_graph.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent/INDEPENDENT_VIEW.json"
+      ],
+      "input_navigation": [
+        "PAPER_EVIDENCE_INDEX.tsv",
+        "package/MANIFEST.json",
+        "package/CLAIM_GUIDE.txt",
+        "CONSUMER_RECIPE.txt",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/ORIGINAL_PROFILES.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/PROSPECTIVE_POLICY.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/INPUTS.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/PROOF_AND_SCOPE.txt",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_witness_closure_01/PROOF_EN.txt",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent_inputs.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/PROTOCOL.json"
+      ],
+      "saved_outputs": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/positive_witness_01/witness/CERTIFICATE.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/ROOT_RESULT_REVIEW.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/execution_01/output/EXTENSION_RESULT.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/ROOT_RESULT_REVIEW.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/production/certificate.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_resource_followup_01/batch_01/lift__trivial_1/independent/AUDIT_RESULT.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/results_01/RESULT.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/prefix_results_01/RESULT.json",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/initial_region_check_01/saved_results_01/lift__trivial_1.json",
+        "verification/runs/06/RUN_RECEIPT.json.gz",
+        "verification/runs/12/RUN_RECEIPT.json.gz",
+        "verification/runs/15/RUN_RECEIPT.json.gz",
+        "verification/SAME_MANIFEST_32_RESULTS.tsv",
+        "verification/ROOT_ALL32_ACCEPTANCE.json.gz"
+      ],
+      "checker_sources": [
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/policy.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/witness.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/source_contracts.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/lift_positive_policy_01/code/independent_core.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/lift_full_helper_extension_01/code/extension_worker.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/frozen_execution_01/code/production/certify.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/frozen_execution_01/code/independent/audit_worker.py",
+        "package/supplement/evidence/experiment/seams_research_reframing_20261018/common_checker_01/lift_followup_comparison_01/compare.py",
+        "package/code/route_adapters.py",
+        "package/code/review.py"
+      ],
+      "expected_saved_result": "Positive source certificate: 128 states/1,020 edges, both original initial c values, three source AUX monitors and one private priority bit, all legal inputs/safety/strictness/cooperation pass. Complete extension: 49,152 policy assignments; 2,048 native typed states for initialization/domains/ordered justices; all source and complete native SYS/AUX responses safe; strict transformed strategy from original initialization with cooperative helper-false view. Separate returned native graph: 794 states/13,874 edges; original view 154 states/1,170 edges/two initial nodes; production and independent checks agree strict=true, cooperative=false. Prefix 0->10->339->438->704->680 first exits saved K=316 and V=384 on 704->680; failing nodes 680 and 708. Saved I_M(K)=true. Historical author-side saved-input rechecks for negative graph (06), positive graph (12) and extension (15) record PASS_SAVED_EVIDENCE_RECHECK.",
+      "execution_scope": "This index is static navigation only; no scientific code was executed. Core records registered saved-input routes lift_followup_independent_saved, lift_source_positive_saved_graph and lift_full_native_policy_extension_saved, each with case lift__trivial_1, and their historical author-side same-manifest PASS receipts. CONSUMER_RECIPE.txt gives a concrete one-case Arbiter P recipe plus route/case selection syntax; this row does not establish a new Lift T consumer run or additional portability qualification. Read legacy PROOF_AND_SCOPE planned-run wording with the later completed certificate/root acceptance. Saved K/V correctness remains a prior premise; the positive policy is separate from the selected graph; no post-helper-flip cooperation, arbitrary orphan-AUX liveness, native re-synthesis or selection-cause attribution is claimed."
+    },
+    {
+      "id": "V188-P1",
+      "archive": "Verification",
+      "claim": "Vehicle policy/initialization/continuation loss for the original/literal scope.",
+      "input_models": [
+        "vehicle/p1/closure/inputs/original/model.json"
+      ],
+      "source_inputs": [
+        "vehicle/p1/closure/inputs/source.spectra"
+      ],
+      "input_navigation": [
+        "vehicle/p1/closure/FROZEN_MANIFEST.json",
+        "vehicle/p1/closure/INPUT_MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "vehicle/p1/closure/expected/RESULT.json",
+        "vehicle/p1/closure/expected/FUNCTIONS.json",
+        "vehicle/p1/receipts/actual/worker/TARGET_RESULT.json.gz",
+        "vehicle/p1/receipts/actual/worker/COMPARISON.json.gz",
+        "vehicle/p1/receipts/actual/ROOT_ADOPTION.json.gz"
+      ],
+      "checker_sources": [
+        "vehicle/p1/closure/code/target_certificate.py",
+        "vehicle/p1/closure/code/adapter.py",
+        "vehicle/p1/closure/code/review.py"
+      ],
+      "reader_recipe": "P1_READER_RECIPE.txt",
+      "expected_saved_result": "30 target checks, 28 zero-failure roots, 39 canonical functions; original initial cooperation and literal initial W_C true; specified cooperative continuation lost; initial_loss=false.",
+      "execution_scope": "One bounded saved-input scope under recipe qualifications. No full-region or actual released-pair claim from P1 alone."
+    },
+    {
+      "id": "V188-P2",
+      "archive": "Verification",
+      "claim": "Vehicle saved original/released relation pair.",
+      "input_models": [
+        "vehicle/p2/closure/inputs/original/model.json",
+        "vehicle/p2/closure/inputs/released/model.json"
+      ],
+      "source_inputs": [
+        "vehicle/p2/closure/inputs/source.spectra"
+      ],
+      "input_navigation": [
+        "vehicle/p2/closure/FROZEN_MANIFEST.json",
+        "vehicle/p2/closure/INPUT_MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "vehicle/p2/closure/expected/CHECK.json",
+        "vehicle/p2/closure/expected/FUNCTIONS.json.gz",
+        "vehicle/p2/receipts/actual/worker/PAIR_RESULT.json.gz",
+        "vehicle/p2/receipts/actual/worker/COMPARISON.json.gz",
+        "vehicle/p2/receipts/actual/ROOT_ADOPTION.json.gz"
+      ],
+      "checker_sources": [
+        "vehicle/p2/closure/code/pair/map_pair.py",
+        "vehicle/p2/closure/code/pair/relations.py",
+        "vehicle/p2/closure/code/review.py"
+      ],
+      "reader_recipe": "P2_READER_RECIPE.txt",
+      "expected_saved_result": "LITERAL_ONLY, all four helper quadrants, equal full-current initializers and ordered justices, 115 canonical functions; no initial-loss claim.",
+      "execution_scope": "One bounded saved pair scope under recipe qualifications; prior original full-region UNKNOWN remains."
+    },
+    {
+      "id": "V188-P3",
+      "archive": "Verification",
+      "claim": "Eleven predicates for the pinned Vehicle original source match the saved original model.",
+      "input_models": [
+        "vehicle/source/closure/inputs/original/model.json"
+      ],
+      "source_inputs": [
+        "vehicle/source/closure/inputs/source.spectra"
+      ],
+      "input_navigation": [
+        "vehicle/source/closure/FROZEN_MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "vehicle/source/receipts/actual/worker/RESULT.json.gz",
+        "vehicle/source/receipts/actual/ROOT_ADOPTION.json.gz"
+      ],
+      "checker_sources": [
+        "vehicle/source/closure/code/source_equations.py",
+        "vehicle/source/closure/code/independent_core.py",
+        "vehicle/source/closure/code/audit.py",
+        "vehicle/source/closure/code/review.py"
+      ],
+      "reader_recipe": "SOURCE_READER_RECIPE.txt",
+      "expected_saved_result": "11 equal predicates, zero mismatches; 33,792 typed states and 1,141,899,264 full typed edges represented by exhaustive quotient; 4,729,984 saved-DAG scalar evaluations. The saved ROOT_ADOPTION.json.gz records ADOPTED_EXACT_SOURCE_TO_SAVED_ORIGINAL_CORRESPONDENCE; the worker's provisional status was deliberately left unchanged. Any new reader execution requires its own result review.",
+      "execution_scope": "One pinned Vehicle source, not the eleven replacement cohort and not general compiler correctness."
+    },
+    {
+      "id": "LIFT-P-DIRECT",
+      "archive": "Lift",
+      "claim": "Separate direct original-contract Lift P controller certificate and source obstruction.",
+      "input_models": [
+        "source-route/historical-preparation/inputs/model.json.gz",
+        "reference-route/historical-preparation/inputs/original/model.json.gz",
+        "reference-route/historical-preparation/inputs/native/model.json.gz"
+      ],
+      "source_inputs": [
+        "source-route/historical-preparation/inputs/source.spectra"
+      ],
+      "saved_graphs": [
+        "source-route/historical-preparation/inputs/controller.json.gz",
+        "source-route/historical-preparation/inputs/controller.txt",
+        "reference-route/historical-preparation/inputs/native/controller.json.gz"
+      ],
+      "input_navigation": [
+        "source-route/historical-preparation/FROZEN_MANIFEST.json.gz",
+        "reference-route/historical-preparation/FROZEN_MANIFEST.json.gz",
+        "RECEIPT_INDEX.json.gz"
+      ],
+      "saved_outputs": [
+        "source-route/actual/worker/RESULT.json.gz",
+        "reference-route/actual/worker/RESULT.json.gz",
+        "independent-comparison/COMPARISON.json.gz",
+        "root/SELECTED_CONTROLLER_ROOT_ADOPTION.json.gz",
+        "root/SOURCE_OBSTRUCTION_PROOF_V2.txt"
+      ],
+      "checker_sources": [
+        "source-route/historical-preparation/code/audit.py",
+        "source-route/historical-preparation/code/source_contracts.py",
+        "reference-route/historical-preparation/code/audit.py",
+        "reference-route/historical-preparation/code/codec.py",
+        "reference-route/historical-preparation/code/graph_fairness.py"
+      ],
+      "expected_saved_result": "Direct original view 136 states/958 edges, strict=true, cooperative=false, 16 environmental dead ends, both original initial inputs covered; 42 route comparisons agree. Whole-model original/released correspondence fails; correspondence-gated outcomes and whole-model verdict transfer remain UNKNOWN.",
+      "execution_scope": "Static inspection only. Historical manifests refer to original execution identities; anonymous gzip files have separate ledger identities. No qualified relocated scientific recipe and no rehash of omitted 220,856,594-byte stdout."
+    },
+    {
+      "id": "LIFT-T-CAUSAL",
+      "claim": "For this fixed transformed game and raw memory, the experimental extraction preference changes full-original Lift T cooperation from false to true while retaining strictness.",
+      "input_models": [
+        "evidence/runs/baseline_01/native/model.json",
+        "evidence/runs/continuation_01/lift__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/lift__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/runs/continuation_01/lift__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/lift__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/CAUSAL_COMPARISON_CLOSURE.json",
+        "evidence/core_recompute_01/RESULT.json",
+        "evidence/core_recompute_01/memory_compare_01/RESULT.json",
+        "evidence/runs/paired_observer_02/RESULT.json",
+        "evidence/runs/paired_observer_02/native/observer_trace.json",
+        "evidence/TRACE_CAUSAL_ANALYSIS.json",
+        "evidence/runs/continuation_01/lift__trivial_1/PAIRED_EVIDENCE.json",
+        "evidence/runs/continuation_01/lift__trivial_1/audits/RESULT.json"
+      ],
+      "expected_saved_result": "Raw4FP full typed region 2048/2048; 28 memory sets/57344 memberships match. Original graphs 154/1170 strict=true/cooperative=false and 154/1176 strict=true/cooperative=true.",
+      "limitations": [
+        "Fixed-instance intervention; no general repair theorem.",
+        "Intervention same-object/model-memory equality is archived producer evidence; separate raw-core and observed-memory comparisons are independent saved-data calculations."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "SIX-DORMANT-CONTROLS",
+      "claim": "All six prespecified returned native-success controls remain strict and cooperative in both arms.",
+      "input_models": [
+        "evidence/runs/continuation_01/arbiter__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/native/model.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/variant/model.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/variant/model.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/native/model.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/variant/model.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/native/model.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/runs/continuation_01/arbiter__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/native/controller.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/native/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/variant/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/native/controller.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/PRESPECIFIED_SUCCESS_CONTROLS.json",
+        "evidence/SUCCESS_CONTROLS_RESULT.json",
+        "evidence/runs/continuation_01/arbiter__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/minepump__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/minepump__trivial_2/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_single__trivial_1/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_updated__preferred/audits/RESULT.json",
+        "evidence/runs/continuation_01/traffic_updated__trivial_1/audits/RESULT.json"
+      ],
+      "expected_saved_result": "6 pass, 0 failure, 0 unknown; preference refined zero candidates in every control.",
+      "limitations": [
+        "Dormant preference regression coverage; no active repair coverage from these six cases."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "LIFT-MODELED-ADAPTATION",
+      "claim": "One executed in-process maintenance-to-normal episode installs actual candidate controllers; strict-only reaches an original-ENV dead end while strict-plus-cooperation executes a fair continuation.",
+      "input_models": [
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/native/model.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/variant/model.json"
+      ],
+      "saved_graphs": [
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/native/controller.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/variant/controller.json"
+      ],
+      "saved_outputs": [
+        "evidence/adaptation_episode_04/PLAN.json",
+        "evidence/adaptation_episode_04/execution/EVENTS.jsonl",
+        "evidence/adaptation_episode_04/execution/RESULT.json",
+        "evidence/adaptation_episode_04/native_pair_01/lift__trivial_1/audits/RESULT.json",
+        "evidence/adaptation_episode_04/independent/AUDIT_RESULT_attempt01.json",
+        "evidence/adaptation_episode_04/EXECUTION_RECEIPT.json",
+        "evidence/ADAPTATION_ATTEMPT01_FOLLOWUP.json",
+        "evidence/ADAPTATION_ATTEMPT02_FOLLOWUP.json",
+        "evidence/ADAPTATION_ATTEMPT03_FOLLOWUP.json"
+      ],
+      "expected_saved_result": "COMPLETE_EXECUTED_EPISODE and independent PASS; strict-only node 680 has zero legal ENV successors among 16 typed inputs; cooperative tail 680\u2192524\u2192544\u2192434\u2192434 hits all three SYS justices.",
+      "limitations": [
+        "Constructed in-process model, initial-compatible paused handoff, known failure prefix.",
+        "No hardware, arbitrary-state migration, held-out result or timing benchmark.",
+        "One executed lasso is separate from complete-graph judgments.",
+        "Failed attempts 01\u201303 remain preserved."
+      ],
+      "archive": "LiftCausal",
+      "checker_sources": [
+        "consumer/replay.py",
+        "code/released/independent/audit_worker.py",
+        "code/released/production/certify.py",
+        "evidence/variant_audit/independent/audit_worker.py",
+        "evidence/variant_audit/production/certify.py"
+      ],
+      "replay_scope": "Saved semantics recomputed; producer runtime/class/process assertions inspected as archived evidence only."
+    },
+    {
+      "id": "LIFT-PUBLIC-NATIVE-REGENERATION",
+      "claim": "One generated native configuration used controls and scientific inputs byte-identical to the public kit, retrieved fixed public dependencies, freshly compiled six custom Java sources and regenerated the matched Lift pair; both full-original graph checkers agreed.",
+      "archive": "LiftRegeneration",
+      "input_models": [],
+      "saved_graphs": [],
+      "saved_outputs": [
+        "evidence/local_qualification/SUMMARY.json",
+        "evidence/local_qualification/INDEPENDENT_RESULT_REVIEW.json",
+        "evidence/local_qualification/POSTFLIGHT.json",
+        "evidence/local_qualification/OWNED_PROCESS_POSTFLIGHT.json"
+      ],
+      "checker_sources": [
+        "configure_run.py",
+        "regenerate/launch_public.py",
+        "manifests/FETCH_MANIFEST.json",
+        "manifests/ARCHIVE_SELECTION.json",
+        "manifests/RUNTIME_SCIENCE_EXPECTATIONS.json"
+      ],
+      "expected_saved_result": "Qualified-original generated run: 165 requests, 14 restored sources, 6 compiled sources/19 classes, 164 JARs, 36 equal model/memory BDDs; baseline154/1170 strict true/cooperative false, variant154/1176 both true.",
+      "limitations": [
+        "One generated configuration on the pinned installed JDK/Python/macOS; no other-host/runtime/OS qualification.",
+        "The bootstrap kit itself was not fetched from public hosting; host libraries and CA store remain supplied.",
+        "Outer exported receipts are selected path-label presentation copies; embedded historical hashes do not identify their public serialization.",
+        "One fixed Lift instance with a nonrelease experimental extractor; no general repair.",
+        "Three metadata files were anonymized after execution; all 29 other member bytes are unchanged, and no full final-serialization rerun is claimed."
+      ],
+      "replay_scope": "Public-source acquisition, compilation, one native pair and four full-original graph checks on the declared host; separate from historical saved-semantics replay.",
+      "qualification": {
+        "prior_local": "COMPLETE",
+        "independent_result_review": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS",
+        "identical_controls_generated_configuration": "COMPLETE"
+      },
+      "outer_repository_saved_outputs": [
+        "results/evidence/validation/native-regeneration-20261021/qualification_01/SUMMARY.json",
+        "results/evidence/validation/native-regeneration-20261021/qualification_01/POSTFLIGHT.json",
+        "results/evidence/validation/native-regeneration-20261021/qualification_01/run_01/PAIRED_EVIDENCE.json",
+        "results/metadata/NATIVE_REGENERATION_VALIDATION.json",
+        "results/evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+        "results/evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json"
+      ]
+    },
+    {
+      "id": "LIFT-NODE680-STRICT-STATE-CERTIFICATE",
+      "claim": "A finite safe residual witnesses actual strict winning at the complete node680 source valuation with helper false, while the original legal successor set is empty.",
+      "archive": "LiftRegeneration",
+      "input_models": [],
+      "saved_graphs": [],
+      "cross_archive_inputs": [
+        {
+          "archive": "LiftCausal",
+          "input_models": [
+            "evidence/runs/continuation_01/lift__trivial_1/native/model.json"
+          ],
+          "saved_graphs": [
+            "evidence/runs/continuation_01/lift__trivial_1/native/controller.json"
+          ]
+        }
+      ],
+      "saved_outputs": [
+        "evidence/focused_original/V42_B42_NODE680_SAVED_RESIDUAL_CHECK.json"
+      ],
+      "checker_sources": [
+        "focused/check_node680.py",
+        "focused/model_bindings.py",
+        "focused/INPUTS.json"
+      ],
+      "expected_saved_result": "Identical-wrapper saved-input check: 16 source inputs with 3 safe responses each and 0 original-legal next inputs; 16 native-legal inputs all flip helper;321-state/5136-edge safe complete residual keeps helper true and sole ENV justice false.",
+      "limitations": [
+        "Executed exact distributed wrapper on prepared public saved inputs; no network/native/compiler run.",
+        "State-winning certificate only; no whole raw-core/strict-region equivalence.",
+        "No initial-reachability requirement; no unique-root-cause or general-repair claim.",
+        "Uses the pinned public decoder and verified metadata bridge, not an independent compiler."
+      ],
+      "replay_scope": "Saved finite-state inspection, separate from native generation.",
+      "qualification": {
+        "original_saved_certificate": "PASS",
+        "exact_distributed_wrapper": "PASS",
+        "independent_result_review": "PASS_INDEPENDENT_RESULT_REVIEW_NO_BLOCKING_FINDINGS"
+      },
+      "outer_repository_saved_outputs": [
+        "results/evidence/validation/native-regeneration-20261021/focused_qualification_01/result/RESULT.json",
+        "results/evidence/validation/native-regeneration-20261021/focused_qualification_01/POSTFLIGHT.json",
+        "results/metadata/NATIVE_REGENERATION_VALIDATION.json",
+        "results/evidence/validation/native-regeneration-20261021/INDEPENDENT_RESULT_REVIEW.json",
+        "results/evidence/validation/native-regeneration-20261021/METADATA_PUBLICATION_TRANSFORMATIONS.json"
+      ]
+    },
+    {
+      "id": "NORMALIZED-ELEVEN-ORIGINAL-INITIALIZER",
+      "claim": "The existing normalized four-fixed-point whole route with unchanged generic construction and original initializers has eight accepted saved graphs and three independently checked empty-V refusals; all eleven original arenas and full V/K functions match saved comparators.",
+      "archive": "NormalizedEleven",
+      "source_inputs": [
+        "sources/arbiter__preferred.spectra",
+        "sources/arbiter__trivial_1.spectra",
+        "sources/lift__preferred.spectra",
+        "sources/lift__trivial_1.spectra",
+        "sources/minepump__preferred.spectra",
+        "sources/minepump__trivial_1.spectra",
+        "sources/minepump__trivial_2.spectra",
+        "sources/traffic_single__preferred.spectra",
+        "sources/traffic_single__trivial_1.spectra",
+        "sources/traffic_updated__preferred.spectra",
+        "sources/traffic_updated__trivial_1.spectra"
+      ],
+      "input_models": [
+        "data/runs/arbiter__preferred/normalized_kind/model.json",
+        "data/comparators/arbiter__preferred/V/model.json",
+        "data/comparators/arbiter__preferred/K/model.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/model.json",
+        "data/comparators/arbiter__trivial_1/V/model.json",
+        "data/comparators/arbiter__trivial_1/K/model.json",
+        "data/runs/lift__preferred/normalized_kind/model.json",
+        "data/comparators/lift__preferred/V/model.json",
+        "data/comparators/lift__preferred/K/model.json",
+        "data/runs/lift__trivial_1/normalized_kind/model.json",
+        "data/comparators/lift__trivial_1/V/model.json",
+        "data/comparators/lift__trivial_1/K/model.json",
+        "data/runs/minepump__preferred/normalized_kind/model.json",
+        "data/comparators/minepump__preferred/V/model.json",
+        "data/comparators/minepump__preferred/K/model.json",
+        "data/runs/minepump__trivial_1/normalized_kind/model.json",
+        "data/comparators/minepump__trivial_1/V/model.json",
+        "data/comparators/minepump__trivial_1/K/model.json",
+        "data/runs/minepump__trivial_2/normalized_kind/model.json",
+        "data/comparators/minepump__trivial_2/V/model.json",
+        "data/comparators/minepump__trivial_2/K/model.json",
+        "data/runs/traffic_single__preferred/normalized_kind/model.json",
+        "data/comparators/traffic_single__preferred/V/model.json",
+        "data/comparators/traffic_single__preferred/K/model.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/model.json",
+        "data/comparators/traffic_single__trivial_1/V/model.json",
+        "data/comparators/traffic_single__trivial_1/K/model.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/model.json",
+        "data/comparators/traffic_updated__preferred/V/model.json",
+        "data/comparators/traffic_updated__preferred/K/model.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/model.json",
+        "data/comparators/traffic_updated__trivial_1/V/model.json",
+        "data/comparators/traffic_updated__trivial_1/K/model.json"
+      ],
+      "saved_graphs": [
+        "data/runs/arbiter__trivial_1/normalized_kind/controller.json",
+        "data/runs/lift__trivial_1/normalized_kind/controller.json",
+        "data/runs/minepump__trivial_1/normalized_kind/controller.json",
+        "data/runs/minepump__trivial_2/normalized_kind/controller.json",
+        "data/runs/traffic_single__preferred/normalized_kind/controller.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/controller.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/controller.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/controller.json"
+      ],
+      "saved_outputs": [
+        "RESULTS.json",
+        "data/runs/arbiter__preferred/normalized_kind/result.json",
+        "data/runs/arbiter__preferred/normalized_kind/certificate.json",
+        "data/runs/arbiter__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/result.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/certificate.json",
+        "data/runs/arbiter__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/lift__preferred/normalized_kind/result.json",
+        "data/runs/lift__preferred/normalized_kind/certificate.json",
+        "data/runs/lift__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/lift__trivial_1/normalized_kind/result.json",
+        "data/runs/lift__trivial_1/normalized_kind/certificate.json",
+        "data/runs/lift__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__preferred/normalized_kind/result.json",
+        "data/runs/minepump__preferred/normalized_kind/certificate.json",
+        "data/runs/minepump__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__trivial_1/normalized_kind/result.json",
+        "data/runs/minepump__trivial_1/normalized_kind/certificate.json",
+        "data/runs/minepump__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/minepump__trivial_2/normalized_kind/result.json",
+        "data/runs/minepump__trivial_2/normalized_kind/certificate.json",
+        "data/runs/minepump__trivial_2/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_single__preferred/normalized_kind/result.json",
+        "data/runs/traffic_single__preferred/normalized_kind/certificate.json",
+        "data/runs/traffic_single__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/result.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/certificate.json",
+        "data/runs/traffic_single__trivial_1/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/result.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/certificate.json",
+        "data/runs/traffic_updated__preferred/normalized_kind/MODEL_JOIN.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/result.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/certificate.json",
+        "data/runs/traffic_updated__trivial_1/normalized_kind/MODEL_JOIN.json"
+      ],
+      "input_navigation": [
+        "CONSUMER.json",
+        "SOURCE_BINDINGS.json",
+        "MANIFEST.json",
+        "ORIGINAL_COPY_LEDGER.json",
+        "METADATA_ALLOWLIST.json",
+        "SOURCE_PIN_MANIFEST.json"
+      ],
+      "checker_sources": [
+        "consumer/check_saved.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/initial_graph_checker.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/bdd_core.py",
+        "code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/graph_fairness.py",
+        "code/experiment/normalized_eleven_preparation_20261021/adapters_r2/common.py",
+        "code/experiment/normalized_eleven_preparation_20261021/adapters_r2/join.py",
+        "code/experiment/seams_research_reframing_20261017/corpus_comparison/model_join.py",
+        "code/experiment/seams_research_reframing_20261017/kind_corpus_rle/semantic_qualification.py",
+        "code/experiment/seams_establishment_20261013/k7_controller_independent_preparation/bdd_core.py",
+        "code/experiment/seams_submission_push_20261016/v_restricted_strict/model_identity.py",
+        "code/experiment/seams_research_reframing_20261017/kind_corpus_rle/decode.py"
+      ],
+      "reader_recipe": "README.md",
+      "expected_saved_result": "8 VALID_EXPORT_CERTIFICATE with strict/nonconflicting/kind true; 3 EMPTY_V_INDEPENDENTLY_CHECKED semantic refusals with null controller flags and false original-initializer verdicts. Verified public consumer: 22 exact original-arena matches, 22 full V/K matches, 11 lossless captures and full semantic-certificate agreement.",
+      "replay_scope": "Qualified bounded saved-input consumer on separately supplied exact sources; no native synthesis, source fetch or compilation by the consumer.",
+      "qualification": {
+        "historical_results": "ADOPTED",
+        "exact_frozen_public_consumer": "PASS",
+        "malformed_preflight_controls": "PASS_SIX_EXPECTED_REJECTIONS",
+        "independent_result_review": "PASS",
+        "prior_serializer_failure_retained": true,
+        "total_normal_invocations": 2
+      },
+      "outer_repository_saved_outputs": [
+        "results/metadata/NORMALIZED_ELEVEN_RESULTS.json",
+        "results/metadata/NORMALIZED_ELEVEN_VALIDATION.json",
+        "results/evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/CONSUMER_RESULT.json",
+        "results/evidence/validation/normalized-eleven-20261021/qualification_02/saved_consumer/PREFLIGHT_RESULT.json",
+        "results/evidence/validation/normalized-eleven-20261021/INDEPENDENT_QUALIFICATION02_RESULT_REVIEW.json",
+        "results/evidence/validation/normalized-eleven-20261021/qualification_01/saved_consumer/CONSUMER_RESULT.json"
+      ],
+      "limitations": [
+        "Whole existing original-V-restricted normalized four-fixed-point route, unchanged generic construction and original initializers; no individual algorithm change is isolated.",
+        "Comparator agreement binds original arenas and full V/K functions; no paired same-initializer 8-versus-7 rate, graph-equivalence or timing comparison.",
+        "The same-game/same-memory final-selection intervention remains a sufficient local rescue; necessity and unique extraction cause are not claimed.",
+        "Eight accepted graphs are distinct from three empty-V refusals with null controller flags and false original-initializer verdicts.",
+        "One existing graph judge and shared parser-translated BDDs; no independent source compiler, native/JVM execution or producer reconstruction by this consumer.",
+        "Exact paper-derived sources are supplied separately; fresh source retrieval is outside this saved-input qualification.",
+        "The original fourteen-model regression and prior archive identities remain unchanged; no new deployment episode, cross-host qualification or broad generality claim."
+      ]
+    },
+    {
+      "id": "RESIDUAL-ELEVATOR-11-STATE-CENSUS",
+      "archive": "ResidualCensus",
+      "claim": "All eleven saved continuation-region states of one public Elevator source yield strict and nonconflicting residual controllers in both extraction arms; all comparisons are dormant, with zero refinements, rescues or regressions.",
+      "source_inputs": [
+        "inputs/ElevatorLTL_386_Elevator.spectra"
+      ],
+      "input_models": [
+        "runs/s01/native/model.json",
+        "runs/s01/variant/model.json",
+        "runs/s02/native/model.json",
+        "runs/s02/variant/model.json",
+        "runs/s03/native/model.json",
+        "runs/s03/variant/model.json",
+        "runs/s04/native/model.json",
+        "runs/s04/variant/model.json",
+        "runs/s05/native/model.json",
+        "runs/s05/variant/model.json",
+        "runs/s06/native/model.json",
+        "runs/s06/variant/model.json",
+        "runs/s07/native/model.json",
+        "runs/s07/variant/model.json",
+        "runs/s08/native/model.json",
+        "runs/s08/variant/model.json",
+        "runs/s09/native/model.json",
+        "runs/s09/variant/model.json",
+        "runs/s10/native/model.json",
+        "runs/s10/variant/model.json",
+        "runs/s11/native/model.json",
+        "runs/s11/variant/model.json"
+      ],
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/COHORT.json",
+        "evidence/EXPERIMENT_PLAN.json",
+        "evidence/ADOPTION_SUMMARY.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "OMISSIONS.json"
+      ],
+      "saved_outputs": [
+        "evidence/INDEPENDENT_RESULT_RECONCILIATION.json",
+        "runs/s01/native/controller.json",
+        "runs/s01/variant/controller.json",
+        "runs/s02/native/controller.json",
+        "runs/s02/variant/controller.json",
+        "runs/s03/native/controller.json",
+        "runs/s03/variant/controller.json",
+        "runs/s04/native/controller.json",
+        "runs/s04/variant/controller.json",
+        "runs/s05/native/controller.json",
+        "runs/s05/variant/controller.json",
+        "runs/s06/native/controller.json",
+        "runs/s06/variant/controller.json",
+        "runs/s07/native/controller.json",
+        "runs/s07/variant/controller.json",
+        "runs/s08/native/controller.json",
+        "runs/s08/variant/controller.json",
+        "runs/s09/native/controller.json",
+        "runs/s09/variant/controller.json",
+        "runs/s10/native/controller.json",
+        "runs/s10/variant/controller.json",
+        "runs/s11/native/controller.json",
+        "runs/s11/variant/controller.json"
+      ],
+      "checker_sources": [
+        "reference/code/check_residual_source.py",
+        "reference/code/check_residual_saved_model.py"
+      ],
+      "expected_saved_result": "11 complete pairs, 3 original-initializer-compatible and 8 noninitial entries, 22 strict/nonconflicting graphs, 44 agreeing certificates; 836 examined/0 refined/0 fallback; 0 rescues/0 regressions; original I_M(K)=false.",
+      "execution_scope": "Static inspection of completed records and exact reference sources; no relocated checker replay, fresh-host validation, new solver run or executed old-controller handoff.",
+      "selection_scope": "Exhaustive fixed eleven-state saved region of one source, distinct from the eleven replacement contracts and unchanged C59/C14/R11 populations.",
+      "limits": [
+        "Static snapshot of completed local evidence; no relocated consumer, new scientific execution or fresh-host qualification.",
+        "Fresh rank-0 private memory at each residual entry; no executed old-controller or live memory-preserving handoff.",
+        "All eleven intervention comparisons are dormant; zero refinements, rescues and regressions. Original initializer I_M(K) remains false.",
+        "Source bytes from the licensed public corpus are retained with their BSD notice. The full upstream-derived extractor is omitted and referenced by the existing exact fourth-archive restoration recipe.",
+        "Embedded original execution hashes remain historical attestations. The delivered manifest and presentation ledger bind anonymous metadata copies."
+      ]
+    },
+    {
+      "id": "LIFT-NONINITIAL-HANDOFF-10-BOUNDARY-CENSUS",
+      "archive": "NoninitialHandoff",
+      "claim": "On one constructed same-Lift handoff census, cooperation changes admission at every declared noninitial boundary while source/history values are preserved: strict-only retains the old controller in ten episodes; strict-and-cooperative installs the earlier eligible normalized candidate in ten episodes.",
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/COHORT.json",
+        "evidence/EXPERIMENT_PLAN.json",
+        "evidence/INPUTS.json",
+        "SOURCE_RESTORATION_REFERENCE.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "REFERENCE_CLOSURE.json",
+        "OMISSIONS.json"
+      ],
+      "input_models": [
+        "inputs/native/model.json",
+        "inputs/normalized/model.json",
+        "inputs/preference/model.json",
+        "inputs/original_K/model.json"
+      ],
+      "saved_graphs": [
+        "inputs/native/controller.json",
+        "inputs/normalized/controller.json",
+        "inputs/preference/controller.json"
+      ],
+      "saved_outputs": [
+        "execution/old_gate_source.json",
+        "execution/old_gate_saved_model.json",
+        "execution/candidate_roots_source.json",
+        "execution/candidate_roots_saved_model.json",
+        "execution/runtime_01/RESULT.json",
+        "execution/runtime_01/EVENTS.jsonl",
+        "execution/INDEPENDENT_EVENT_AUDIT.json",
+        "evidence/INDEPENDENT_SCIENTIFIC_RECONCILIATION.json",
+        "evidence/ROOT_OLD_GATE_ADOPTION.json",
+        "evidence/ROOT_CANDIDATE_CERTIFICATES_ADOPTION.json"
+      ],
+      "process_receipts": [
+        "processes/old_gate_source_01/RECEIPT.json",
+        "processes/old_gate_saved_model_01/RECEIPT.json",
+        "processes/candidate_roots_source_01/RECEIPT.json",
+        "processes/candidate_roots_saved_model_01/RECEIPT.json",
+        "processes/runtime_01/RECEIPT.json",
+        "processes/event_audit_01/RECEIPT.json"
+      ],
+      "checker_sources": [
+        "reference/code/source_route/check_source_roots.py",
+        "reference/code/saved_route/check_roots.py",
+        "reference/code/source_route/audit_handoff_events.py"
+      ],
+      "runtime_sources": [
+        "reference/code/runtime/run_handoff.py",
+        "reference/code/root/launch_bounded.py"
+      ],
+      "qualification_records": [
+        "qualification/qualification_launcher_07/RESULT.json",
+        "qualification/qualification_runtime_abstention_interface_01/RESULT.json",
+        "qualification/qualification_runtime_event_interface_01/RESULT.json",
+        "qualification/qualification_runtime_rev02/RESULT.json",
+        "qualification/qualification_saved_04/RESULT.json",
+        "qualification/qualification_source_03/RESULT.json",
+        "qualification/qualification_source_events_03/RESULT.json",
+        "qualification/qualification_source_events_envelope_01/RESULT.json",
+        "qualification/qualification_source_events_full_abstention_01.json",
+        "qualification/qualification_source_events_full_cli_01.json"
+      ],
+      "omitted_source_inputs": [
+        "inputs/lift_new.spectra",
+        "inputs/lift_old_no_b3.spectra"
+      ],
+      "reader_recipe": "README.md",
+      "outer_repository_saved_outputs": [
+        "results/metadata/NONINITIAL_HANDOFF_MANIFEST.json",
+        "results/evidence/validation/noninitial-handoff-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json"
+      ],
+      "expected_saved_result": "10 reached old private nodes / 8 distinct source-history valuations; 26-node/120-edge old-mode graph strict and cooperative; 40 rooted candidates per independent route, all strict with input coverage. Retained-old/fresh-native cooperation 0/10 each, fresh-normalized/fresh-preference 10/10 each. 20 executed episodes, 302 events, 56 old-prefix and 44 post-change commits; all suffixes fair lassos; post-change b3=true count 0.",
+      "execution_scope": "Completed Python runtime and independent event audit over immutable saved graphs. Static publication snapshot only; earlier public replay entrypoints do not execute this handoff experiment.",
+      "selection_scope": "One outcome-informed constructed same-Lift old mode G !b3, selected after inspection of three single-button restrictions; ten private nodes are not ten independent applications.",
+      "limits": [
+        "All three single-button restrictions were statically inspected before selecting G !b3; selection is outcome-informed, not held out.",
+        "The old contract is constructed by adding G !b3 to the same Lift source. This is one model with ten old private nodes/eight source-history valuations, not ten independent applications.",
+        "The nonzero response monitors have their response predicates already true at the boundary and clear on the next update. No unserved pending request is carried past the boundary.",
+        "Every executed suffix is a fair lasso under the fixed lexicographic input policy, which never chooses b3=true. No measured failure avoidance or behavioral activation by b3=true is established.",
+        "Normalized extraction precedes the preference candidate in the frozen pool and is selected in all ten cooperative-policy episodes; preference is eligible but never installed. Necessity of the preference extractor is not supported.",
+        "Fresh targets use their actually stored rank-zero private nodes. Source/history continuity does not establish arbitrary transfer of old private controller memory.",
+        "The original 11 replacement, 14-pair negative, and 59-case diagnostic cohorts, and the v46 Elevator residual census remain separate and unchanged.",
+        "No new native/compiler execution occurred. Public delivery requires a separately audited static snapshot and must not claim the older replay entrypoint executes these new runs.",
+        "RSS bounds are sampled process checks, not an operating-system address-space cap; recorded elapsed time is not an end-to-end performance claim."
+      ]
+    },
+    {
+      "id": "INTRUDER-BOUNDED-UNKNOWN-ORIGINAL-SOURCE",
+      "archive": "IntruderBounded",
+      "claim": "On one preselected unchanged CatchingIntruder source, bounded paired and normalized native attempts yield no complete controller: all three arm verdicts remain UNKNOWN. Independent source-function correspondence passes only for the separately frozen historical original model.",
+      "source_inputs": [
+        "inputs/source/1673286053.spectra",
+        "inputs/source/imports/DwyerPatterns.spectra"
+      ],
+      "input_navigation": [
+        "SUMMARY.json",
+        "evidence/SCIENTIFIC_ADOPTION.json",
+        "evidence/SCIENTIFIC_OUTPUT_FREEZE.json",
+        "evidence/SELECTION_AND_BOUNDED_RESEARCH_PROTOCOL.json",
+        "evidence/ORIGINAL_MODEL_REFERENCE.json",
+        "evidence/SOURCE355_INDEPENDENT_SEMANTIC_REVIEW.json",
+        "SOURCE_RESTORATION_REFERENCE.json",
+        "PRESENTATION_TRANSFORMATIONS.json",
+        "REFERENCE_CLOSURE.json",
+        "OMISSIONS.json"
+      ],
+      "input_models": [
+        "inputs/original_model/model.json",
+        "native355/runs/paired_01/native/model.json",
+        "native355/runs/normalized_01/normalized/model.json"
+      ],
+      "saved_graphs": [],
+      "saved_outputs": [
+        "evidence/native355/RUN_RECEIPT.json",
+        "native355/runs/paired_01/ROW_RESULT.json",
+        "native355/runs/normalized_01/ROW_RESULT.json",
+        "native355/runs/paired_01/native/result.json",
+        "native355/runs/normalized_01/normalized/result.json",
+        "independent_execution_01/PARENT_RECEIPT.json",
+        "independent_execution_01/source_graph_oracle/audit/RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/baseline_RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/preference_RESULT.json",
+        "independent_execution_01/source_graph_oracle/audit/normalized_RESULT.json",
+        "independent_execution_01/pair_parity/PAIR_RESULT.json",
+        "evidence/V48_INDEPENDENT_SCIENTIFIC_RECONCILIATION.json"
+      ],
+      "partial_uncertified_outputs": [
+        "native355/runs/normalized_01/normalized/restricted_rhoS.bdd"
+      ],
+      "process_receipts": [
+        "native355/runs/paired_01/native/PROCESS_RECEIPT.json",
+        "native355/runs/normalized_01/normalized/PROCESS_RECEIPT.json",
+        "independent_execution_01/source_graph_oracle/process/PROCESS_RECEIPT.json",
+        "independent_execution_01/pair_parity/process/PROCESS_RECEIPT.json",
+        "native355/build_pair/compile_process/PROCESS_RECEIPT.json",
+        "native355/build_normalized/compile_process/PROCESS_RECEIPT.json"
+      ],
+      "checker_sources": [
+        "reference/oracle355/audit355.py",
+        "reference/oracle355/source_semantics.py",
+        "reference/oracle355/symbolic_source.py",
+        "reference/oracle355/model355.py",
+        "reference/oracle355/graph355.py",
+        "reference/oracle355/activity.py",
+        "reference/oracle355/bdd_core.py",
+        "reference/oracle355/independent_core.py",
+        "reference/root/audit_pair355.py"
+      ],
+      "runtime_sources": [
+        "reference/native355/run_native355.py",
+        "reference/root/run_independent355.py",
+        "reference/native355/code/dispatch/bounded_process.py",
+        "reference/native355/code/dispatch/owned_process.py"
+      ],
+      "qualification_records": [
+        "evidence/oracle355/QUALIFICATION_03.json",
+        "evidence/oracle355/QUALIFICATION_03_SCOPE_CORRECTION.json",
+        "evidence/PAIR355_SYNTHETIC_QUALIFICATION_02.json",
+        "qualification/native355/qualification_transport_01/RESULT.json",
+        "qualification/native355/qualification_rle_deadline_01/RESULT.json",
+        "qualification/qualification_independent_launcher_01/RESULT.json"
+      ],
+      "omitted_source_inputs": [
+        "reference/native355/src/tau/smlab/syntech/games/gr1/GR1ObservedControllerConstructionSkip.java",
+        "reference/native355/src/tau/smlab/syntech/games/gr1/GR1ContinuationPreferenceConstruction.java"
+      ],
+      "reader_recipe": "README.md",
+      "outer_repository_saved_outputs": [
+        "results/metadata/INTRUDER_BOUNDED_MANIFEST.json",
+        "results/evidence/validation/intruder-bounded-20261021/INDEPENDENT_SNAPSHOT_REVIEW.json"
+      ],
+      "expected_saved_result": "One preselected unchanged source; two native attempts and two independent workers; all three arm graph verdicts UNKNOWN; original-model source correspondence PASS over 524288 typed states; zero returned graphs or added qualified controllers. The exact 16777216-byte restricted_rhoS.bdd is partial and uncertified. No retry occurred.",
+      "execution_scope": "Static saved-evidence inspection of completed bounded attempts. Process capture completeness does not mean successful synthesis. Earlier replay entrypoints do not execute this extension.",
+      "selection_scope": "One public original outside the 59 qualified models was selected by a fixed comparative preflight. This is not a random or held-out population and does not enlarge the qualified denominator.",
+      "limits": [
+        "Paired attempt reached the 44-second wall cap before solver return or extraction; preference was not reached.",
+        "Normalized attempt raised a file-size exception while writing a restricted relation, before native solving; the full partial file is retained.",
+        "All three arm graph verdicts and pair parity remain UNKNOWN; no rescue, regression, feasibility or negative game verdict is established.",
+        "Only the frozen historical original model has independent source-function correspondence. Transformed correspondence, native V/K certification and actual Q comparison were not established.",
+        "The static translator-timing argument is separate from an observed controller state, actual-model BDD comparison or reachability certificate.",
+        "The existing 11 replacements, 14 controls and 59 qualified public models remain unchanged. No second active model or practical-preservation benefit is established.",
+        "This is a static inspection snapshot with original/copy location ledgers; no relocated consumer, fresh-host or performance claim is made."
+      ]
+    },
+    {
+      "id": "INTRUDER-SAVED-SOURCE-CERTIFICATES",
+      "archive": "IntruderCertificate",
+      "claim": "Saved original obstruction and exact-G repaired strategy certificates with separate source qualification and selected negative controls.",
+      "input_navigation": [
+        "README.md",
+        "REPLAY_SUMMARY.json",
+        "MANIFEST.json"
+      ],
+      "reader_recipe": "seams2027-intruder-certificate-replay-v1/README.md",
+      "expected_saved_result": "Original: 276829 labelled states and one allowed environment initializer (0,7), ruling out joint strict/cooperative success there. Repaired: 407172 labelled states and all eight allowed initializers.",
+      "limits": [
+        "No strict-only unrealizability or all-original-initializers losing claim.",
+        "No complete repaired winning-region classification or fresh synthesis.",
+        "Four complete programs had the recorded access audit; 17/26 selected rejection tests had narrower coverage."
+      ]
+    },
+    {
+      "id": "FINITE-REQUEST-PROTOCOL-SIX-CELLS",
+      "archive": "FiniteStudies",
+      "claim": "Saved six-cell author-constructed request protocol and seven modeled adaptation episodes.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/RESULT.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/EVENTS.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/request_protocol/results_01/SOURCE_CORRESPONDENCE.json"
+      ],
+      "limits": [
+        "Author-constructed finite protocol; no deployment, performance or independent replication claim."
+      ]
+    },
+    {
+      "id": "HUMANOID-EIGHT-ARM-GUARD-CENSUS",
+      "archive": "FiniteStudies",
+      "claim": "Saved eight-arm Humanoid guard census from retained native arenas and exact finite-state data.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/RESULT.json",
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_census/results_01/SMALL_PROPAGATION_CONTROL.json"
+      ],
+      "limits": [
+        "Outcome-informed source family fixed before the eight arms; cooperative-admission result remains negative.",
+        "Saved native arenas are inputs; this package does not regenerate the native toolchain."
+      ]
+    },
+    {
+      "id": "GUARD-SAVED-ARENA-CAUSAL-AUDIT",
+      "archive": "FiniteStudies",
+      "claim": "Saved-instance comparison of the Guard fixture and retained translated arenas.",
+      "input_navigation": [
+        "README.md",
+        "MANIFEST.json"
+      ],
+      "saved_outputs": [
+        "saved-study-inputs/evidence/experiment/v58_submission_20261023/guard_audit/RESULT_01.json"
+      ],
+      "limits": [
+        "A fixed-instance causal audit does not establish general equivalence of a native objective to strict semantics."
+      ]
+    },
+    {
+      "id": "pending-native-handoff-all-three-obligations",
+      "archive": "PendingNativeHandoff",
+      "claim": "Saved constructed Lift handoff with genuinely pending third-floor work and a newly enabled first-floor input: three boundaries, nine rooted candidate pairs and six bounded executions.",
+      "input_navigation": [
+        "README.txt",
+        "PUBLIC_BINDINGS.json",
+        "PUBLIC_PIN_MAP.json",
+        "REFERENCE_CLOSURE.json"
+      ],
+      "saved_outputs": [
+        "qualification/REPLAY_SUMMARY.json"
+      ],
+      "checkers": [
+        "tools/restore_pending_sources.py",
+        "tools/bind_pending_replay.py",
+        "tools/run_pending_replay_stage.py",
+        "tools/compare_pending_replay.py"
+      ],
+      "expected_saved_result": "Old closure 50 nodes/238 edges; all nine candidates strict; three retained-native roots noncooperative and six alternatives cooperative; six complete episodes, 42 commits and 98 events.",
+      "limits": [
+        "Outcome-informed same-source construction using saved native-produced graphs; no fresh synthesis or arbitrary private-memory transport.",
+        "Both policies have identical source/AUX trajectories on the fixed script; no service, latency, failure-avoidance or performance advantage.",
+        "Whole-root certificates are separate from finite observed continuity. The revised public assembly manifest includes the corrected comparer and retains its pre-replay status. All science and the other 142 assembly payloads are unchanged; qualification history preserves the original execution manifest, original comparer, earlier 42/44 comparison and amendment without a scientific rerun."
+      ]
+    },
+    {
+      "id": "pending-diagnostic-patrol-saved-audit",
+      "archive": "PendingDiagnostic",
+      "claim": "Exploratory outcome-selected patrol mechanism case with a handwritten controller and constructed old environment; saved source, AST, complete graph and pending-request event audit.",
+      "input_navigation": [
+        "README.txt",
+        "VALIDATION_ATTESTATION.json",
+        "pending-diagnostic-evidence-v1.zip"
+      ],
+      "saved_outputs": [
+        "validation/PRIMARY277_RECHECK.json",
+        "validation/PUBLIC_QUALIFICATION.json",
+        "validation/REPLAY_RECEIPT.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Extract the nested kit and follow its README.md; inner tools are not direct outer ZIP members.",
+      "expected_saved_result": "Saved patrol audit and focused public qualification passed; exact recorded outputs are retained.",
+      "limits": [
+        "Recorded author-host relocation with original workspace accessible; not independent external replication.",
+        "No new controller, native translator or saved-BDD execution. Claims remain bounded by the inner kit protocols and theorem scope.",
+        "The inner kit retains its original assembly-time status; separate validation reports bind the exact tested bytes."
+      ]
+    },
+    {
+      "id": "pending-diagnostic-extended-lift-continuation",
+      "archive": "PendingDiagnostic",
+      "claim": "Extended Lift continuation evidence for two old initial roots, three genuinely pending boundaries, nine candidate roots and nine recorded fixed-workload episodes.",
+      "input_navigation": [
+        "README.txt",
+        "VALIDATION_ATTESTATION.json",
+        "pending-diagnostic-evidence-v1.zip"
+      ],
+      "saved_outputs": [
+        "validation/LIFT_RECHECK.json",
+        "validation/REPLAY_RECEIPT.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Extract the nested kit and follow its README.md; omitted source text must be restored outside the kit.",
+      "expected_saved_result": "Saved complete-root and episode audit passed; original pending-work, stop-rule and later-work observations are retained.",
+      "limits": [
+        "Recorded author-host relocation with original workspace accessible; not independent external replication.",
+        "No new controller, native translator or saved-BDD execution. Claims remain bounded by the inner kit protocols and theorem scope.",
+        "The inner kit retains its original assembly-time status; separate validation reports bind the exact tested bytes."
+      ]
+    },
+    {
+      "id": "continuation-evidence-current-entrypoint",
+      "archive": "Continuation",
+      "claim": "One current entrypoint connects four unchanged central record groups (Guard, Patrol, matched Lift and the software manager), qualified offline saved-semantics replay for Patrol/manager/reduced-query evidence, and a separately qualified fixed Lift lasso. The archive retains the exact historical source-member ledger, negative controls, earlier failed qualification setup, and explicit trust boundaries.",
+      "input_navigation": [
+        "REVIEWER_START_HERE.txt",
+        "claim_to_evidence.json",
+        "REPLAY_COMMANDS.txt"
+      ],
+      "saved_outputs": [
+        "qualification/QUALIFICATION_REPORT.json",
+        "lasso/qualification/QUALIFICATION.json"
+      ],
+      "checkers": [],
+      "checker_navigation": "Follow the archive current entrypoint for exact saved-semantics commands; the outer distribution checker verifies metadata and byte identity only.",
+      "expected_saved_result": "Recorded author-host saved-evidence and fixed-lasso replay qualification PASS; integrity is a separate check.",
+      "limits": [
+        "The outer repository validator verifies only metadata and byte identity; it performs no scientific execution.",
+        "Offline saved replay recomputes saved finite semantics but does not invoke native synthesis, controller extraction or a manager worker. The reduced query checks all 4,800 saved memberships without recomputing the native winning fixed point.",
+        "Patrol full-helper queries remain UNKNOWN. Constructed and reconstructed examples establish mechanisms, not occurrence rates or a general repair algorithm. Existing successful normalized synthesis remains a baseline.",
+        "Native compiler/exporter, encoding metadata and recorded native-process provenance remain trust boundaries. Omitted historical source/runtime and worker call-site/read-path checks are listed in the archive.",
+        "Lasso replay checks one fixed transformed-arena trace with 19 DAGs, 23 public semantic payloads and nine projected values. Original Spectra/final-region are hash-only omissions; the original 25-pin check is not repeated. It is not a returned-controller execution or a counterexample under a theorem hypothesis that the trace violates.",
+        "Qualification used the author host with source-workspace and network access denied; it is not independent external replication. Older Guard and matched Lift kits retain separate restoration and qualification requirements."
+      ]
+    },
+    {
+      "id": "vehicle188-native-strict-selected-state",
+      "archive": "Vehicle188Native",
+      "claim": "For one outcome-selected public source/state outside the census, full native strict3FP records s in original W and (s,false) outside released-helper W; both original initial judgments remain true.",
+      "input_navigation": [
+        "README.txt",
+        "records/ROOT_ADOPTION.json",
+        "records/SUMMARY.json",
+        "OMITTED_HISTORICAL_CHECKS.json"
+      ],
+      "input_models": [
+        "data/native/original/native_result/model.json",
+        "data/native/released/native_result/model.json"
+      ],
+      "saved_outputs": [
+        "data/native/original/native_result/RESULT.json",
+        "data/native/released/native_result/RESULT.json",
+        "qualification/QUALIFICATION.json"
+      ],
+      "checkers": [
+        "replay.py"
+      ],
+      "expected_saved_result": "PASS_SAVED_IDENTITY_MEMBERSHIP_INITIALIZATION",
+      "checker_navigation": "After extracting the archive, run the standard-library command in README.txt; outer distribution verification checks bytes only.",
+      "limits": [
+        "No native winning fixed point, Java, solver, controller extraction or producer is executed.",
+        "Complete historical compiler/class-origin/process provenance remains recorded evidence, not portable re-execution.",
+        "K cooperation and initialized reachability are separate earlier source-policy certificates.",
+        "One outcome-selected public source and pre-existing state outside the census; no prevalence or scalability inference.",
+        "Both native initial judgments are true; no initialized-refusal or selected Kind4FP/default/frontend claim.",
+        "W counts use different full carriers; released W includes both helper values, with no helper-false slice count.",
+        "This is author-host qualification with source-workspace/network access denied, not external replication."
+      ]
+    },
+    {
+      "id": "vehicle188-whole-region",
+      "archive": "Vehicle188Whole",
+      "claim": "One outcome-selected public case: complete saved W/K comparison, 1408 source winners lost at helper=false and no gains; each target has a source-level initialized cooperative one-transition reachability certificate.",
+      "input_navigation": [
+        "README.txt",
+        "records/ROOT_ADOPTION.json",
+        "records/producer/PROOF_AND_SCOPE.txt",
+        "records/independent_audit/INDEPENDENT_AUDIT_REPORT_JA.txt"
+      ],
+      "input_models": [
+        "data/native/arms/original/native_result/model.json",
+        "data/native/arms/released/native_result/model.json"
+      ],
+      "saved_outputs": [
+        "records/producer/state_table.tsv",
+        "records/independent_audit/all_source_states.csv",
+        "records/independent_audit/all_W_fixed_predecessors.csv",
+        "qualification/QUALIFICATION.json"
+      ],
+      "checkers": [
+        "replay.py",
+        "producer_core.py",
+        "independent_core.py"
+      ],
+      "expected_saved_result": "PASS_WHOLE_REGION_DUAL_REPLAY",
+      "limits": [
+        "No new native solve or winning fixed point; saved memberships are evaluated.",
+        "Per-target existential policy/play, not forced reachability, common policy or observed execution.",
+        "No population frequency or deployment claim; native solver, exporter and typed maps remain shared dependencies."
+      ]
+    },
+    {
+      "id": "fixed-seven-native",
+      "archive": "FixedSevenNative",
+      "claim": "Seven preselected cooperative-positive inputs: original native W equals old symbolic W=K and route source view, with no loss/gain; three active GyroAspect variants and four identity controls.",
+      "input_navigation": [
+        "README.txt",
+        "SELECTION.json",
+        "ROSTER.json",
+        "ORIGINAL_COPY_LEDGER.json"
+      ],
+      "input_models": [
+        "cases/corpus039__original/original/native_result/model.json",
+        "cases/corpus039__original/route/native_result/model.json"
+      ],
+      "saved_outputs": [
+        "provenance/INDEPENDENT_SUMMARY.json",
+        "cases/corpus039__original/expected/AUDIT_RESULT.json",
+        "cases/corpus039__original/expected/CSV_PIN.json"
+      ],
+      "checkers": [
+        "replay.py",
+        "independent_auditor.py"
+      ],
+      "expected_saved_result": "PASS on all seven saved-data cases",
+      "limits": [
+        "Selection and old symbolic/literal outcomes were known before native comparisons.",
+        "Three active transformations share one family; four route skips are identity controls.",
+        "No native regeneration, compiler independence, reachability, frequency or general preservation claim."
+      ]
+    }
+  ],
+  "source_fetch_required_for_members": [
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_gate/fixtures/sources/pRespondsToS.from_C2_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/arbiter__preferred.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/arbiter__trivial_1.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/lift__preferred.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/lift__trivial_1.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__preferred.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__trivial_1.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/minepump__trivial_2.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_single__preferred.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_single__trivial_1.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_updated__preferred.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/diffs/traffic_updated__trivial_1.spectra.diff",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_single__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/raw/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_single__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/degradation_main_preparation/reconstructed/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_single__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/k7_population_preparation/source_inputs/reconstructed/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__original.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__original.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__original.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__original.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__original.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_submission_push_20261016/v_restricted_strict/checker/source_audit/fixtures/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_establishment_20261013/k7_controller_independent_preparation/source_audit/fixtures/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/independent_audit_01/sources/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/arbiter__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/lift__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/minepump__trivial_2.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_single__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_updated__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/experiment/seams_research_reframing_20261018/runtime_closure_01/sources/traffic_updated__trivial_1.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/inputs/source/arbiter__preferred.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/provenance/arbiter__preferred.raw.spectra",
+    "seams2027-saved-evidence/package/supplement/evidence/output/artifacts/seams2027-20261017-arbiter-audit-candidate-v1/provenance/pRespondsToS.from_C2_1.spectra",
+    "seams2027-lift-direct-static-evidence/reference-route/historical-preparation/inputs/source.spectra",
+    "seams2027-lift-direct-static-evidence/source-route/historical-preparation/inputs/source.spectra",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.gameinput/src/tau/smlab/syntech/gameinput/kind/PitermanSyntacticReduction.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.gamemodel/src/tau/smlab/syntech/gamemodel/PlayerModule.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1ConceteControllerConstructionSkip.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1Game.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1Memory.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games.gr1/src/tau/smlab/syntech/games/gr1/GR1SeparatedGame.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.games/src/tau/smlab/syntech/games/GameSolver.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_establishment_20261013/current_build_preparation/released_sources/tau.smlab.syntech.jtlv/src/net/sf/javabdd/BDDFactory.java",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/design_review_10_cooperation_authority/isolated/input/PRIMARY_THEOREMS.txt",
+    "seams2027-saved-evidence/package/base/evidence/experiment/seams_research_reframing_20261017/slugs_baseline_feasibility/work/slugs-ac09bf652d4ff47a7018d6a41627af73a67a049c/lib/cudd-3.0.0/dddmp/dddmpNodeBdd.c",
+    "seams2027-normalized-eleven-evidence/sources/arbiter__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/arbiter__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/lift__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/lift__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/minepump__trivial_2.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_single__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_single__trivial_1.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_updated__preferred.spectra",
+    "seams2027-normalized-eleven-evidence/sources/traffic_updated__trivial_1.spectra"
+  ],
+  "schema": "seams2027-evidence-index-v1",
+  "scientific_archive_count": 17,
+  "reader_row_count": 29,
+  "archive_directory": "results/archives",
+  "scope": "Member paths are relative to the named archive root; historical provenance strings are identities, not runtime paths. Repository-level supplemental paths are relocated below.",
+  "baseline_commit": "11a828f65f91a9b4950a18d189a702fb18ec8ed5"
+}

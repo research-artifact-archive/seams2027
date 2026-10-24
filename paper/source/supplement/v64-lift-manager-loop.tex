@@ -1,0 +1,104 @@
+\subsection*{U.9 Sequential candidate admission on one paused Lift runtime}
+\label{supp:sequential-lift-manager}
+
+\paragraph{Question and preregistration.}
+This bounded software experiment tests the manager loop directly: can it
+withhold one candidate, preserve the actual pending boundary, check the
+next candidate, and continue after the first passing decision?
+Each of the three previously frozen Lift boundaries has one runtime object,
+one mutable source-state object, and one executed old prefix.
+The candidate priority is fixed before execution as released native,
+saved normalized, then saved preference; selection stops at the first
+complete strict-and-cooperative pass.
+The separate packet is
+\path{experiment/v64_lift_manager_loop_20261024/}.
+Its \path{PLAN.json} fixes 70 exact input/code pins, the candidate order,
+the three existing twelve-input workloads, and one scientific execution,
+with a 120-second wall bound, 1\,GiB sampled RSS bound, 16\,MiB per-file
+bound, and 128\,MiB output-tree bound.
+
+An initial supervisor launch failed in a macOS address-space-limit
+setter before the worker was executed. No checker or runtime episode
+ran: the failure occurred in \code{preexec\_fn}, and the worker's output
+directory was never created. The original plan, supervisor, and empty
+streams are retained. A separately frozen \path{PREEXEC_AMENDMENT.json}
+removes the unsupported address-space setter while retaining the RSS,
+wall, and output limits, and places the actual execution in
+\path{run02/}. The worker code is byte-identical across this amendment.
+There is one scientific execution and no outcome-based retry.
+
+\paragraph{Fresh checks and one-object selection.}
+Before execution, both existing checker routes freshly validate the
+complete old-mode closure: 50 nodes and 238 edges, with input coverage,
+source safety, strictness, and cooperation all passing.
+The runtime then executes the frozen two-edge prefix and pauses at the
+actual pending state. At each candidate attempt, the manager rechecks
+source and model bindings, saved-native/source predicate correspondence,
+the exact ten source/monitor values, and the candidate's stored private
+node and rank. Both routes traverse the entire candidate-rooted graph
+and recompute coverage, safety, strictness, and cooperation.
+Admission requires agreement and all five Boolean fields to be true.
+No saved candidate verdict or certificate loader supplies the decision;
+an audit hook rejects reads of the prior execution certificates.
+Raw extraction-result files referenced by the inherited input manifest
+are hashed for integrity only, not interpreted as admission verdicts.
+
+All three native attempts are complete and strict but noncooperative
+(154 nodes, 1,170 edges), so the manager withholds them. Each following
+normalized attempt is complete, safe, strict, and cooperative
+(154 nodes, 1,176 edges), so it passes and is installed:
+\begin{center}
+\begin{tabular}{lccc}
+\toprule
+Reached native node/rank & First decision & Installed node/rank & Commits\\
+\midrule
+524/1 & Withhold & 72/1 & 12\\
+526/1 & Withhold & 74/1 & 12\\
+756/1 & Withhold & 88/0 & 12\\
+\bottomrule
+\end{tabular}
+\end{center}
+Across each pair of checks, the runtime identity, source-state-object
+identity, all source/monitor values, old-controller identity, private
+memory, and commit count remain unchanged; the runtime stays paused.
+The inherited installation adapter then checks the passing certificate's
+exact graph digest, node, rank, and complete source/monitor match.
+Only the selected controller object changes at installation.
+The preference candidate is explicitly recorded as unattempted after
+the first pass; this experiment makes no new claim about its verdict.
+
+\paragraph{Continuation and scope.}
+All three selected controllers execute their frozen twelve inputs.
+The old floor-3 request is answered at post-update step~1 and its monitor
+clears at step~2. No cancellation occurs, no genuinely pending obligation
+remains, and the final executed transition is a repeatable self-loop
+with all three monitors clear. The run has six fresh candidate checks,
+three installations, 36 post-update commits, and 69 saved events; no
+candidate check is unknown. The supervisor reports 0.650\,s overall
+wall time and the worker reports 74,399,744 bytes peak RSS.
+These are measurements of one instrumented run, not a latency benchmark.
+\path{run02/output/RESULT.json} and \path{run02/output/EVENTS.jsonl} preserve every
+attempt, before/after identity, certificate, installation, and trace.
+
+This extends the separate candidate episodes of Section~U.4 with a
+sequential rejection--admission loop on the same paused state.
+It demonstrates enforcement by the software adapter using the existing
+frozen graphs and predicates. It performs no synthesis, contract
+weakening, winning-region recomputation, source/monitor reset, or
+initializer reapplication at handoff. The complete-graph checks establish
+the candidate properties; the twelve-step workloads demonstrate the
+recorded continuation after those decisions.
+
+An independent saved-artifact audit checks all 69 events, exact object
+identities, rooted graph coverage, safety, and strongly connected components;
+it also compares the source predicates on all 1,048,576 source-state pairs
+using separate truth-table evaluation and native-node parsing.
+The audit confirms the sequential decisions and continuations without
+rerunning the manager or synthesis. Native exporter metadata and process
+execution provenance remain trust boundaries; the audit record is
+\path{independent_audit/AUDIT_RESULT.json} in this packet.
+The continuation release supplies selected unchanged records
+under \path{records/manager/} and the qualified \code{manager} saved-replay
+stage. It rechecks graphs, source predicates and the 69-event sequence;
+it does not execute the manager worker or revalidate the omitted original
+source/runtime pins and worker call-site/read-path provenance.

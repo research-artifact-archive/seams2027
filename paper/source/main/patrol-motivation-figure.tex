@@ -1,0 +1,19 @@
+\begin{figure*}[t]
+\centering
+\begin{tikzpicture}[>=Latex,every node/.style={font=\small,align=center},
+box/.style={draw,rounded corners=2pt,text width=4.8cm,minimum height=2.05cm,inner sep=4pt}]
+\node[box] (pending) at (0,0) {\textbf{Pending region}\\Layout $L$, any grid position $p$,\\$(d,z,c,m)=(000,0,0,S2)$.\\ENV chooses $d'=000,z'=0$.\\All safe replies stay here until $H$.};
+\node[box] (exit) at (6,0) {\textbf{A visit to charger $H$}\\ENV closes distant checkpoint $A$.\\SYS must dwell at $H$:\\$c'=1$, $m'=S0$.\\The initial request has cleared.};
+\node[box] (flip) at (12,0) {\textbf{The first helper flip}\\ENV relocates blocked $A$ to $H$.\\Dwell requires $p'=H$.\\Avoidance requires $p'\ne H$.\\\textbf{No safe response exists.}};
+\draw[->,thick] (pending.east)--node[above,font=\footnotesize]{reach\\$H$}(exit.west);
+\draw[->,thick] (exit.east)--node[above,font=\footnotesize]{$b:$\\$0\to1$}(flip.west);
+\node[align=center,text width=16.8cm] at (6,-1.8)
+{If $H$ is never reached, all checkpoints stay open (ENV fair), but $m=S2$ forever violates SYS justice.};
+\end{tikzpicture}
+\caption{Countercertificate for the new Patrol encoding: avoid $H$
+forever and violate SYS justice, or reach $H$ and face the impossible flip after the initial
+request clears. The flip relocation is source-illegal. The published new
+source is unchanged; the old restriction, layout and reusable policy
+are constructed. Evidence bindings: Table~\ref{tab:route-evidence}.}
+\label{fig:patrol-motivation}
+\end{figure*}

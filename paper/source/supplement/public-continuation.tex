@@ -1,0 +1,291 @@
+\section*{E. Public source inventory and a cooperative continuation witness}
+\paragraph{Inventory and certified cohort.}
+The archive contains 449 source paths and 425 byte-distinct units:
+423 non-library sources and two pattern libraries. Extraction used
+representative archive-path order, without prioritizing known outcome
+labels, with a fresh JVM per input and limits of 60 seconds, 512 MiB
+heap, and 128 MiB direct memory. After excessive debug output limited
+the first run, a declared rerun used reversible output compression with
+the same input order and computation limits. A BDD-file cap followed by
+a process-cleanup permission failure caused an integrity stop.
+Its saved outcomes are 70 completed original-model runs, 107 resource
+UNKNOWNs, 54 technical UNKNOWNs, one integrity UNKNOWN, and 193
+unattempted inputs. These are not a completed evaluation of all 425.
+Of the 70 completed runs, the independent checker certified 59;
+two exceeded its 64-variable limit and nine failed public-field roster
+integrity checks involving array metadata. All 59 normally terminated PASS certificates enter
+the preservation cohort, without filtering by region sizes or outcomes.
+The checker shares the compiler-exported predicates and typed encoding;
+its independent ROBDD computation does not validate the compiler.
+The C59 reader-index entry (Supplement K) links the complete roster,
+the extraction receipt, the independent checker's protocol and frozen
+inputs, and its certification and stop records. These are saved records
+of the stopped run, not evidence of a completed whole-corpus rerun.
+
+\paragraph{Selection and scope.}
+Unit 188 is the unchanged public source
+\path{AutonomousVehicle_sprint02_ver1.spectra}
+from the Kind artifact. It is outside the fixed 59-model certified cohort.
+An initial exploratory lexical screen examined the 366 units outside
+the certified cohort, including both libraries and the eleven
+uncertified completed models.
+Eleven units were read in detail, and the retained witnesses were selected
+by their outcomes. These observations support no prevalence estimate.
+The source has ten Boolean environment variables, system lane
+$\ell\in\{1,2,3\}$ and speed $v\in\{0,\ldots,10\}$, no explicit
+initializer, and no pattern imports or logical auxiliaries.
+Its typed carrier has $2^{10}\cdot3\cdot11=33792$ states.
+
+\paragraph{Source contract.}
+Write $o_i,p_i,g_i$ for obstacle, pedestrian, and green-light inputs in
+lane $i$, and let $f_i=g_i\land\neg p_i\land\neg o_i$ mean that lane
+$i$ is free. The environment safety relation is
+\[
+ (o_1\Rightarrow\neg o'_2)\land
+ (o_2\Rightarrow(\neg o'_1\lor\neg o'_3))\land
+ (o_3\Rightarrow\neg o'_2),
+\]
+and its justice assumptions are $\mathsf{GF}f_i$ for all three lanes.
+The fourteen system safety clauses require stopping for a red light or
+pedestrian in the occupied lane, positive speed in a free occupied lane,
+speed below five at a crosswalk, no direct jump between the outer lanes,
+and the following responses to current obstacles. A blocked outer lane
+forces the next lane to be the middle lane. From a blocked middle lane,
+a next obstacle on side 1 forces side 3, a next obstacle on side 3
+forces side 1, and two clear sides require an outer lane. The system
+justice is $\mathsf{GF}\bigvee_i(\ell=i\land f_i)$.
+
+Let $s$ have $\ell=2$, $v=0$, $o_2=1$, $o_1=o_3=0$, all lights green,
+no pedestrians, and no crosswalk. This state satisfies the current-state
+speed duties. The typed next input with $o'_1=o'_3=1$ is excluded by
+environment safety but requires both $\ell'=1$ and $\ell'=3$ under
+system safety. Thus no typed system response exists and $s\notin C$.
+This obstruction uses only the next-lane clauses and is independent of
+the timing convention for unprimed invariants. The policy and initializer
+checks below use the saved translation, in which the seven speed duties
+are current-state obligations.
+
+\paragraph{A sufficient invariant and policy.}
+Put $f=\bigvee_i(\ell=i\land f_i)$ and define
+\[
+ R=(f\land v=1)\lor(\neg f\land v=0),\qquad
+ P=R\land(\ell\ne2\lor\neg o_2).
+\]
+The policy selects the next lane by these ordered rules:
+\begin{enumerate}
+\item From a blocked middle lane, choose side 1 if $o'_1=0$ and side 3
+otherwise. Environment safety makes the chosen side clear.
+\item From a blocked outer lane, choose the middle lane. Environment
+safety makes the next middle lane clear.
+\item Otherwise, if $o'_2=0$, choose the middle lane.
+\item Otherwise remain in the current outer lane; from the middle lane
+choose side 1.
+\end{enumerate}
+Set the next speed to one exactly when the selected next lane is free,
+and to zero otherwise. These rules define one response to every typed
+input. From $R$, every original-legal input has a safe response that
+enters $P$. The current speed duties hold because the current state is
+in $R$, and the next speed rule establishes them at the successor.
+The lane rules meet all forced moves and exclude outer-to-outer jumps.
+
+On $P$, an input with $f'_2$ always selects lane 2. The first rule is
+inactive there; the second and third rules choose lane 2 whenever it
+is free next. Consequently $\mathsf{GF}f_2$ implies the system justice.
+The all-clear input, with all lights green and no pedestrians, is
+environment-legal from every state and may repeat forever. It satisfies
+all environment justices. The same policy therefore has an
+assumption-fair continuation after every legal prefix, including
+prefixes from $s\in R$. This proves legal-prefix cooperation.
+Here the environment assumptions are entirely system-independent:
+cooperation follows automatically from strict winning. The example
+does not demonstrate a separate strategic difficulty in cooperation.
+
+For every state in $P$, arbitrary typed inputs also admit some safe
+response: a blocked outer lane moves to the middle, a clear outer lane
+may stay, and an unblocked middle lane may move to side 1. The speed
+rule meets the state duties. Hence $P\subseteq C$. The legal policy
+preserves $P$, so it wins in the original game restricted by $C$.
+For every initial environment value, choose lane 1 with the speed
+rule. This lies in $P$ and satisfies the original initializer.
+Thus $I_M(K)$ and $I_M(W_C)$ are both true, although
+$s\in K\setminus W_C$. Membership in $K$ follows from the exhibited
+strict cooperative strategies and the main paper's legal-prefix
+characterization, which uses its round-to-alternating correspondence
+and the total-arena soundness and completeness theorem of~\cite{friendly}.
+No complete $K$, $W$, or $W_C$ region is needed for this argument.
+
+\paragraph{Reachability under one cooperative winning strategy.}
+The invariant policy itself avoids $s$. A second strategy uses one
+private bit, initially armed, and the same initial selector. If its
+first current state is all-clear, lane 1, speed 1, and its first next
+input equals the environment component of $s$, it chooses lane 2,
+speed zero. On every other first input it uses the base policy.
+It then disarms the bit and uses the base policy forever.
+The exceptional edge satisfies original environment and system safety.
+After that edge, the next legal base-policy response enters $P$.
+Thus every legal play enters $P$ within two responses, and changing
+this finite prefix does not change the justice argument. The all-clear
+continuation also establishes cooperation while the bit is armed.
+One allowed initial input and next input therefore reach $s$ under
+an initialized cooperative winning strategy. This is existential
+reachability under a specified strategy, not forced reachability,
+a synthesized native controller, or a recorded execution. The bit is
+strategy memory and is not added to the source model.
+
+\paragraph{Meaning for continuation.}
+The loss concerns re-synthesis that retains the full current state,
+including lane and speed. Fixing only the environment state allows a
+different initial system response and need not cause refusal. No
+source initializer was changed to manufacture an initial counterexample.
+There is no observed repair transaction or deployment benefit.
+The earlier full-region attempt remains recorded as resource UNKNOWN;
+the targeted certificate below did not complete it. A subsequent,
+separately bounded native pair now computes both full strict regions,
+as reported after the source-correspondence checks.
+
+\paragraph{Targeted saved-model evidence.}
+Two fresh model-only executions export the original and released
+transformed arenas before solver construction. The original has
+33792 typed states and 32 Boolean encoding variables; the transformed
+arena has 67584 states and 34 encoding variables, adding only the
+environment helper. Full typed comparisons of the environment and
+system relations in all four helper quadrants agree exactly with the
+literal complete-relation equations. Original initialization and the
+ordered justice lists also agree, with the unique added
+$\mathsf{GF}\neg b$ assumption in position four. In particular, the
+system relation is unrestricted when the current helper value is
+$b=1$. This is a separate
+case from the fixed 14-input comparison and its retained constraints.
+
+On the fresh original predicates, a targeted checker verifies thirty
+obligations implementing the preceding proof. It establishes
+$|R|=3072$, $|P|=2560$, $|C|=6656$, and singleton displayed states.
+The policy covers all $33792\cdot1024=34603008$ typed current/input
+pairs with exactly one response each. Safety and invariant entry
+are checked on every original-legal policy edge from $R$; universal
+totality alone is not treated as safety. Ordered justice identities,
+the all-clear fair continuation, the quantified initializer, the
+response obstruction at $s$, and the exceptional initialized edge
+all pass. A separate synthetic qualification has one positive case
+and nine deliberate predicate mutations, each producing exactly
+its expected failed obligations. It does not count as public-model
+evidence.
+
+The target checker performs no winning-region fixed point or
+controller extraction. Combining its invariant certificate with
+the independently audited full helper correspondence gives
+$s\in K\setminus W_R(\cdot,0)$ and
+$I_M(K)=I_M(W_R(\cdot,0))=\mathit{true}$.
+The latter equality concerns strict initial feasibility in the
+transformed arena, not cooperation there or a native four-fixed-point
+verdict. The checks retain all original variables and their typed encodings.
+
+\paragraph{Independent source correspondence.}
+A separate audit directly encodes the unchanged source's fourteen
+system-safety clauses, three environment-safety clauses, and four
+ordered justice predicates. Since the source has no explicit
+initializers, both initial predicates are true on the typed domain. Its seven speed
+constraints remain current-state obligations; no implicit next-speed
+or initial restriction is added. An independent saved-DAG branch
+reader agrees on all eleven exported predicates, including the three
+typed-domain factors. Raw-domain checks include unused lane and speed
+encodings. The initial and justice predicates agree on all 33792
+typed states. Decoded variable support justifies exact quotient
+comparisons of each safety relation over all $33792^2=1141899264$
+typed current/next pairs: system safety uses 4460544 representatives
+of multiplicity 256; environment safety uses 64 of multiplicity
+17842176. Unreachable and environment-illegal pairs are included.
+All differences are zero. Qualification uses 97 hand-derived
+source cases and 51 artificial boundary checks. This strengthens the
+source-to-original-predicate correspondence for this input; it proves
+neither general compiler correctness nor a complete winning region.
+
+\paragraph{Completed native strict pair.}
+Two preregistered calls~\cite{vehicleartifact} use the unchanged source and the fixed twelve-field
+state $s$ above, first on the full original arena and then on the full
+released syntactic-helper arena, testing target $(s,0)$. Both use the released
+\code{GR1Game} three-fixed-point strict solver with JTLV, without replacing
+initializers or conjoining any state, transition, or layout restriction.
+There is one fresh JVM per arm, no retry, no four-fixed-point call, and no
+controller extraction. Both processes exit normally and report complete
+winning memory. The results are:
+\begin{center}
+\begin{tabular}{@{}lrrrr@{}}\toprule
+Arena & Typed states & Full strict $W$ & Target in $W$ & Initializer\\\midrule
+Original & 33,792 & 8,064 & Yes & True\\
+Released helper & 67,584 & 40,448 & No & True\\\bottomrule
+\end{tabular}
+\end{center}
+The helper count includes both helper values; it is not a helper-false
+slice count. The target in the second row is $(s,0)$. Initial feasibility
+is tested separately as $\forall e:\theta_e(e)\Rightarrow
+\exists y:\theta_s(e,y)\land W(e,y)$; every one of the 1,024 allowed
+initial ENV values has a winning SYS choice in each arm.
+
+Before solving, full field/ownership/encoding, initializer, transition and
+ordered-justice comparisons bind each fresh model to its previously
+certified arena. A separate saved-DAG audit verifies these identities,
+target membership and initial quantification, using its own parser and
+Boolean operations. Loaded class origins and hashes are checked; the
+native solver, compiler/exporter and field metadata remain shared trusted
+inputs. Source cooperation and existential initialized reachability use
+the preceding policy proofs, not either native call.
+
+Each call has a 120-second wall limit, 1-GiB sampled process-group RSS
+limit, 768-MiB heap and 64-MiB direct-memory allowance. Encoded stdout and
+stderr are each capped at 16 MiB, nonstream artifacts at 64 MiB per arm,
+and combined arm outputs at 128 MiB. Elapsed times are 2.288 and 4.185
+seconds, respectively; these observations support no speed comparison.
+The complete ordered stdout is stored with the previously qualified
+lossless encoding. Encoded streams and their end receipts are checked;
+no expanded raw stdout file or raw-stream SHA-256 is claimed.
+
+This pair supplies native strict-backend corroboration for one existing
+outcome-selected public source/state. The transformed negative is correct
+for its own arena; transferring it to source infeasibility would be
+unsound. It is not a selected Kind four-fixed-point or frontend/default
+run, a wrong initialized verdict, a native cooperative controller, or
+an executed replacement. Historical UNKNOWNs, including Patrol's full
+helper queries, are unchanged.
+
+\section*{F. A residual-only public source witness}
+Unit 120, \path{ExitModule_ParkingSpec_194.spectra}, is another
+outcome-selected source outside the certified cohort. Its witness is
+source-level only; it has no newly generated or certified model.
+The environment valuation is front sensor zero, side sensor one,
+parallel parking status, side status NONE, black color, alignment true,
+and done false. The system valuation is STOP, STRAIGHT, velocity zero,
+and PARKING. All ten instantiated response-pattern monitors are at
+their initial state $S_0$.
+
+A typed next front-sensor value of one simultaneously activates an
+exit guarantee requiring next velocity one and a STOP guarantee
+requiring next velocity at most the current zero. Both constraints
+refer explicitly to next velocity, so the conflict does not depend
+on the timing convention for unprimed invariants. The input is
+environment-illegal: stopping freezes the front sensor at zero.
+Thus the full residual state lies outside $C$.
+
+On every legal input, choose PARKED, STOP, STRAIGHT, and velocity zero,
+then retain those values. Stopping freezes the relevant sensor,
+alignment, color, and done values; parallel status remains fixed and
+the unrestricted side-status input has no active effect. All ordinary
+guarantees hold, and the system parking justice holds from the first
+successor. The eight environmental response-pattern triggers require
+forwarding or reversing, so they remain inactive. In the two system
+response patterns, respectively, the response is already true at
+velocity zero or the trigger is false. Each monitor remains at $S_0$
+according to the imported \texttt{pRespondsToS} update and meets its
+$\mathsf{GF}S_0$ justice. The three ordinary environment justices
+contain the stopping disjunct. Every legal prefix therefore has a
+fair continuation under this residual strategy, with monitor state
+retained.
+
+The declared initializer requires alignment false, whereas this
+witness has alignment true. We establish neither its reachability
+from the original initializer nor initial cooperative feasibility.
+The literal semantic theorem gives residual loss for the stated
+monitor expansion. The compiler's auxiliary ownership and any support
+generated by the unused past-time definition require separate checks
+before this reasoning transfers to a saved released model. This
+source witness is not included in any computational cohort or count.

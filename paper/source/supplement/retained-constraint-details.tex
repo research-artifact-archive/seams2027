@@ -1,0 +1,20 @@
+We use the main paper's finite, fully observed typed Mealy setting and
+strict semantics~\cite{gr1,kind}, retaining all logical monitors in
+$D=E\times Y$. Let $W$ be the original strict-winning continuation region
+and $C(s)\equiv\forall e'\in E\,\exists y'\in Y:\rho_s(s,e',y')$.
+For $T\subseteq D$, let $M_T$ retain the original environmental relations
+and justice objectives while replacing system safety by
+$T(s)\land\rho_s(s,e',y')\land T(e',y')$.
+Write $W_T=T\cap\operatorname{Win}_{\mathrm{str}}(M_T)$; this outer
+intersection excludes vacuous winners outside $T$ at environmental dead ends.
+The original-initializer test is
+\[
+I_M(T)\equiv\forall e\in E:\theta_e(e)\Rightarrow
+\exists y\in Y:\theta_s(e,y)\land T(e,y).
+\]
+For relations $E_{ij},S_{ij}$, the predecessor below uses
+$\forall e'\in E:E_{ij}(s,e')\Rightarrow
+\exists y'\in Y:S_{ij}(s,e',y')\land(e',y')\in Z$.
+The following gives the full retained-constraint hypotheses, statement,
+proof, and counterexample for the result summarized in the main paper.
+\input{general-helper.tex}

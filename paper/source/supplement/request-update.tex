@@ -1,0 +1,118 @@
+\section*{P. Constructed request-enable update}
+\setcounter{subsection}{0}
+\renewcommand{\thesubsection}{P.\arabic{subsection}}
+\renewcommand{\theHsubsection}{P.\arabic{subsection}}
+
+\subsection{Frozen contracts and routes}
+This author-controlled semantic study has Boolean ENV inputs $r,a$
+(request and ready) and SYS phase $p\in\{I,P,X\}$ (idle, prepare,
+execute). Its 12-state typed carrier retains every combination.
+Both models initialize $(r,a,p)=(0,1,I)$ and have empty justice lists.
+Their environment relations are
+\[
+ \rho_e^{\rm new}=(p=X\Rightarrow a')\land(p\ne I\Rightarrow\neg r'),
+ \qquad \rho_e^{\rm old}=\rho_e^{\rm new}\land\neg r'.
+\]
+The only update removes the final request-disabling conjunct. The shared
+system relation is
+\[
+ \rho_s=(p=I\Rightarrow ((r'\land p'=P)\lor(\neg r'\land p'=I)))
+ \land(p=P\Rightarrow p'=X)
+ \land(p=X\Rightarrow(a'\land p'=I)).
+\]
+Ready is required on the edge \emph{out of} execute, not the preceding
+prepare edge. Inputs are chosen before the response. The source ASTs,
+full two-model/three-route roster, fixed boundary, routing order,
+environment scripts, and qualification controls were frozen before
+execution. There was no parameter search or held-out application.
+
+The three routes are the original strict game, the complete literal
+helper, and the complete first-flip-corrected helper. The helper is
+ENV-owned, initially false, persistent once true, and adds
+$\G\F\neg b$ to ENV justice. Literal and corrected relations are exactly
+those proved in Section~L.6; no translated residual constraints are
+added. Finite safety iteration computes the original 12-state and
+helper 24-state regions. Separately implemented predecessor and
+certificate checks compare every state. A losing-state certificate
+supplies one legal spoiling input per losing state and checks that
+\emph{every} safe SYS response descends to an earlier losing layer.
+It does not require every legal input to spoil.
+
+\subsection{Complete region and graph outcomes}
+A supplied source policy covers every legal input safely from each of
+the twelve typed roots, with a legal infinite continuation from every
+reached prefix. These twelve complete root checks certify $W=K=D$ in
+both original models. For literal conversion, a flip at $X$ can choose
+$a'=0$, leaving no safe response; hence $C=F=\{p\ne X\}$ and $U=D$.
+Old idle stays in $F$, whereas a new request forces $I\to P\to X$,
+so $W_F^{\rm old}=\{p=I\}$ and $W_F^{\rm new}=\varnothing$.
+Corrected conversion has $F=U=D$ and preserves all twelve winners.
+Table~\ref{tab:request-six} reports every frozen cell.
+
+\begin{table}[ht]
+\centering\small
+\caption{All six request cells. Entry is $s_1=(0,0,I)$; Init uses the
+declared initializer. Graph counts are reachable states/legal-input
+responses of the separately checked original-source view from $s_1$;
+both means strict and legal-prefix cooperative.
+No graph is returned at a losing entry.}
+\label{tab:request-six}
+\begin{tabular}{@{}llrrccl@{}}\toprule
+Model & Route & $|F|$ & Surviving $|W|$ & Entry & Init & Source graph\\\midrule
+Old & Original & --- & 12 & Yes & Yes & 2/4, both\\
+Old & Literal & 8 & 4 & Yes & Yes & 2/4, both\\
+Old & Corrected & 12 & 12 & Yes & Yes & 2/4, both\\
+New & Original & --- & 12 & Yes & Yes & 6/14, both\\
+New & Literal & 8 & 0 & No & No & No entry policy\\
+New & Corrected & 12 & 12 & Yes & Yes & 6/14, both\\\bottomrule
+\end{tabular}
+\end{table}
+
+Every returned helper graph is strict but fails helper cooperation:
+a legal flip makes the added ENV justice impossible. This is kept
+separate from original-source admission. The source view restricts
+to $b=0$ and original-legal inputs, then checks input coverage, safety,
+strict liveness, and legal-prefix cooperation anew. All five returned
+source views pass. The new literal cell has no winning entry policy;
+an empty table there is a refusal, not a bad returned controller.
+The old source graph checked against the new model lacks responses
+on four newly legal request inputs at its two reachable idle states.
+Its behavior is undefined there. The study does not assert that a
+separately totalized old implementation would choose an unsafe response.
+
+\subsection{Seven fixed episodes and limits}
+Every episode begins with the same old legal step
+$(0,1,I)\to(0,0,I)$ and pauses at the noninitial full state $s_1$.
+The model is updated while retaining the same source object and all
+three source fields. Policies are precomputed; the execution does not
+invoke a native solver at the boundary. The three old-route episodes
+make one post-update idle-loop commit. The new literal episode remains
+paused with zero commits. The new original, new corrected, and new
+routing-policy episodes each execute the fixed next-input script
+\[
+ (r',a')=(1,0),(0,0),(0,1),(0,0),(0,0),
+\]
+giving phases $I\to P\to X\to I\to I\to I$ and five commits.
+Thus the newly enabled request is exercised. The routing policy checks
+the literal route first, rejects its empty exact entry region, and
+then installs the corrected route only after its source-view audit.
+An event-level audit checks all 66 events across the seven episodes.
+All 54 finite-game qualification controls and six source-mutation
+controls have their expected outcomes.
+
+The complete literal $F$ functions are equal between the two models,
+but the original ENV relations differ, so their $W_F$ regions differ.
+This is consistent with the decomposition: $F$ alone does not define
+$W_F$ without the original game. Within a fixed game, equal complete
+$F$ functions must yield equal $W_F$. The simpler global condition
+$W\subseteq F$ fails for both literal models and already supports
+avoiding both routes. Their initializer verdicts also differ.
+Accordingly the study establishes an executable state-specific
+distinction beyond a local response test, with no advantage over
+initializer checking, direct original solving, global avoidance,
+or a complete graph audit. Trivial source justices limit the fairness
+claim. No compiler, BDD engine, or native synthesizer is involved.
+The runtime equations and checker are separately written but
+author-visible and share the source AST; this is not a blind independent
+implementation. Section~K locates all sources, policies, state tables,
+certificates, and event records.

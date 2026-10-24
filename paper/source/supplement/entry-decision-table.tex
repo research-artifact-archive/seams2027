@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering\small
+\caption{Patrol comparisons at the same reached state $r$, with an
+unanswered charging request. The graph check and reuse retain the same
+private controller memory. Region results and certificate-backed arena
+losses are distinct from native solver observations.}
+\label{tab:entry-decisions}
+\begin{tabular}{@{}L{27mm}L{61mm}L{63mm}@{}}\toprule
+Check or alternative & Result and evidence & Decision supported\\\midrule
+Local flip test $C(r)$ & True before and after (source/certificate check). & A flip can be answered now; future preservation is unsettled.\\
+Exact literal region $W_C$ & Old pass, new fail (complete countercertificate and Theorem~\ref{hpb:exact}). & Diagnose conversion loss; do not infer source-contract infeasibility.\\
+Actual released arenas & Original old spelling: fail/fail; equivalent old spelling: pass/new fail (native relations and certificates). & Isolate pipeline sensitivity; old contract unchanged. No frontend verdict is inferred.\\
+Validated source graph and reuse & Strict and cooperative under both models (complete checks); old request served at 30, cleared at 31 (execution). & Retain the contract and reuse this controller at its retained root.\\
+Available complete correction & Preserves this strict continuation (theorem consequence; not a native solver result). & A preserving conversion is available; any returned graph still needs cooperative admission.\\\bottomrule
+\end{tabular}
+\end{table}

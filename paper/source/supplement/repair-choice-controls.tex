@@ -1,0 +1,63 @@
+\section*{I. A declared pair separating region membership from selection}
+\label{supp:choice-pair}
+The pair was fixed before native execution and is separate from the
+eleven published candidates. Choice has one environment Boolean $e$,
+one system Boolean $p$, no logical auxiliary, and
+\[
+\begin{aligned}
+\theta_e&=\neg e,&\theta_s&=\neg p,&\rho_e&=(e'\Rightarrow p),\\
+\rho_s&=\top,& A&=\mathbf{G}\mathbf{F}e,&G&=\mathbf{G}\mathbf{F}\neg p.
+\end{aligned}
+\]
+Toggle changes only system safety to $p'\leftrightarrow\neg p$.
+
+\paragraph{Original source proof.}
+From every one of the four original typed states, policy $p'=\neg p$
+satisfies system safety and $G$ on every play in either contract.
+After every finite original-legal prefix, the environment can choose
+$e'=p$ forever; this is legal and makes $e$ alternate. Thus this same
+policy is strict and cooperative from every state, yielding
+$W=V=K=C=D$ and nonvacuous $I_M(K)=\mathit{true}$ for both contracts.
+In Choice, policy $p'=0$ instead satisfies $G$ itself but forces $e'=0$
+after reaching $p=0$, so no assumption-fair suffix remains. Every
+state of that bad policy still belongs to $K$.
+
+\paragraph{Audited complete transformed relations.}
+For helper $h$, both saved native models satisfy
+\[
+\begin{aligned}
+\theta_e^R&=\neg e\land\neg h,&\theta_s^R&=\neg p,\\
+\rho_e^R&=((e'\Rightarrow p)\lor h')\land(\neg h\lor h'),&
+\rho_s^R&=\rho_s\lor h,\\
+A^R&=\mathbf{G}\mathbf{F}e\land\mathbf{G}\mathbf{F}\neg h,&G^R&=G.
+\end{aligned}
+\]
+An independent saved-DAG check establishes these equations on all eight
+typed native states and all 64 current/next pairs in each case.
+Field ownership, domains and initialization are checked on the full
+typed native model; justice identities and order are checked at the
+original, preconstructor and solver phases. Hence
+the same $p$-toggle policy satisfies native system safety and $G$
+unconditionally, and its helper-false restriction has the cooperative
+source behavior just proved. The transformation does not exclude this
+good original-view policy. This does not demand cooperation in the full
+transformed arena after an environment-chosen helper flip.
+
+\paragraph{Actual selected outputs.}
+Choice returns three native states and seven edges. Its original view
+has only node 0, with $(e,p)=(0,0)$, rank 0, and a self-loop. It satisfies
+$G$ and fails cooperation while remaining inside $K=V=D$.
+Toggle returns seven native states and 18 edges. Its original view has
+nodes $0=(0,0)$, $1=(0,1)$ and $6=(1,0)$, all rank 0, with edges
+$0\to1$, $1\to0$, $1\to6$ and $6\to1$. It passes both checks.
+Each case received one native attempt; complete typed source
+correspondence and independent graph checks succeeded for both. Saved
+state, edge, justice, SCC and raw-node comparisons agree exactly.
+
+The pair shows that $I_M(K)$ and membership of every reached state in
+$K$ do not certify the particular output's cooperation. It does not
+attribute that selection separately to the raw fixed-point core or
+the concrete constructor. Both unnormalized original arenas admit
+legal $G$-fair, $A$-unfair plays, so they do not refute the conditional
+language-inclusion theorem of~\cite{friendly}. The pair adds no public
+candidate, learned repair, adaptation episode or deployment result.

@@ -1,0 +1,197 @@
+\section*{N. Intruder: source impossibility and a controlled repair}
+\label{app:intruder-bounded}
+The unchanged developmental snapshot and its repair answer different
+questions. The original contract cannot jointly satisfy strictness and
+legal-prefix cooperation for all permitted initial inputs. A limited
+repair admits both properties, but the compared controllers have equal
+source-legal responses. The earlier resource-limited attempts remain
+preserved technical UNKNOWN records; they are not the current semantic
+conclusion or negative game certificates.
+
+\paragraph{Fixed source, history, and intended scope.}
+The original is the 2,071-byte \path{syn23/1673286053.spectra} from
+\cite{kindartifact}, also present as a developmental CatchingIntruder
+snapshot. It is not the later completed-task source. The six coordinates
+lie in $\{0,\ldots,7\}$: ENV position $I$ and SYS positions $R_0,R_1$.
+The history bit $h$ records \code{ONCE(robot0AtButtomLeftCorner)}:
+$h\leftrightarrow[R_0=(0,7)]$ initially and
+$h'\leftrightarrow(h\lor[R_0'=(0,7)])$.
+Robot~1's move permission uses current $h$, not $h'$. The original typed
+carrier has $8^6\cdot2=524,288$ states; a separate helper doubles it.
+The sole SYS justice is recurring simultaneous orthogonal adjacency
+of both robots to the intruder. There is no ENV justice.
+The source does not encode four consecutive stationary states and
+bottom-row respawn from the task description. Our repair does not
+claim to restore that complete task.
+
+Let $Clear(u)$ exclude obstacles $(2,1),(3,1),(4,1),(5,1)$,
+$Step(I,u)$ mean a stay or orthogonal unit move within the domain,
+and $Adj$ mean orthogonal adjacency. With
+\[
+ E_i(s,u)=Adj(R_i,I)\Rightarrow
+             (u_x\ne R_{i,x}\land u_y\ne R_{i,y}),
+\]
+the original ENV relation is
+$\rho_{e0}(s,u)=Clear(u)\land Step(I,u)\land E_0(s,u)\land E_1(s,u)$.
+The conjunction in each avoidance consequence is retained; replacing it
+by noncollision's disjunction would change the contract.
+
+\paragraph{Qualification of original and translated availability.}
+The syntactic helper insertion precedes invariant translation. At
+helper $b=b'=0$, the obstacle test consequently constrains current $I$
+instead of next $u$:
+\[
+\begin{aligned}
+ \rho_{e0}(s,u)&=Clear(u)\land Step(I,u)\land E_0\land E_1,\\
+ \rho_e^{impl,00}(s,u)&=Clear(I)\land Step(I,u)\land E_0\land E_1.
+\end{aligned}
+\]
+For example, at $I=(3,0),R_0=(2,0),R_1=(7,0),h=b=0$, the only
+stay/unit input satisfying avoidance is $(3,1)$, an obstacle. Thus
+translated availability is true but original availability is false.
+This typed example does not itself establish reachability. The later
+source-Q qualification evaluates the original relation, including next
+obstacles, and checks 1,048,576 truth assignments across two BDD orders.
+The selection predicate lifts this actual source Q by helper-true;
+helper-false alone is not a test of original legality.
+
+\paragraph{What fails in the original returned controller.}
+The saved original-legal graph has 1,079 states and 3,353 edges, of which
+49 states lack cooperative continuation. Eighteen have no legal next
+move because perpendicular adjacent robots impose incompatible avoidance;
+ten have false original Q although translated Q is true; the remaining
+21 have current Q true but lead inevitably into dead ends. This acyclic
+bad region reaches a dead end within five edges. Replacing only final
+selection by exact source Q leaves the rooted legal responses unchanged.
+A canonical rank-safe early preference changes the graph to 1,089 states
+and 3,369 edges with 52 non-cooperative states. All three outputs pass
+strictness. These graph failures motivate but do not prove contract
+impossibility.
+
+\paragraph{Independent contract countercertificate.}
+A source-based checker validates an ENV counterstrategy containing
+276,829 states and all 2,415,931 legal SYS responses to its chosen moves.
+The certificate contains no SYS-goal state. Every response stays in the
+goal-free certified set or reaches a state with no legal ENV next move.
+Staying forever violates SYS justice; leaving in the latter way violates
+cooperation. The permitted ENV initializer $I=(0,7)$ has a unique legal
+SYS/history response, which is covered. This excludes every strict
+cooperative SYS strategy for that initializer, including private memory,
+and therefore refutes the universal-initialization contract. It proves
+neither strict-only impossibility nor loss from every one of the eight
+initial inputs. The independent checker uses original finite source
+semantics, without relying on the native winning set or generator's
+transition table. Seventeen malformed/invalid-certificate controls are
+rejected as specified; ten include complete semantically mutated files.
+
+\paragraph{A narrowly defined repair.}
+Write $Q_0(s)=\exists u:\rho_{e0}(s,u)$ and
+$\Delta(s,u)=\neg Q_0(s)\land(u=I)$. Repair G replaces each avoidance
+clause by $E_i\lor\Delta$. All types, obstacles, initializers, SYS rules,
+history and justice stay unchanged. Whole-domain qualification establishes
+\[
+\begin{aligned}
+\rho_{eG}&=\rho_{e0}\lor(\neg Q_0\land Clear(I)\land u=I),\\
+Q_G&=Q_0\lor Clear(I).
+\end{aligned}
+\]
+Old enabled moves are preserved; at an old dead end with clear current
+cell, exactly a stay is added. The actual source predicate is checked
+on all 262,144 coordinate valuations, including obstacle and collision
+states. There are 1,352 added coordinate stays, 1,240 on physically
+legal configurations. Minimality is only within this fixed repair
+class: preserving old moves and totalizing clear-cell states by stays.
+No global minimum repair or reconstructed task correctness is claimed.
+The narrower capture-only alternatives remain independently refuted;
+they are not retried until one succeeds.
+
+A separately generated source strategy is independently checked over
+407,172 certified states, including 966 goals, with maximum rank 35.
+Every one of 1,625,884 legal ENV moves has a legal SYS response into
+the certified set. Goal states have rank 1 and every certified non-goal
+state has rank at least 2; the chosen response to every legal ENV move
+strictly decreases rank from a non-goal state.
+Every state has Q true, and the ENV justice list is empty. Closure
+therefore supplies an infinite legal continuation from every legal
+prefix, while descent proves recurring SYS goals. All eight initial
+ENV positions $(x,7)$ are covered, each with the required unique SYS
+and history initialization. The unlabelled 117,116 typed states receive
+no winning or losing classification. Twenty-six rejection controls
+cover semantic and representation errors.
+
+\paragraph{Actual repaired outputs and the no-effect explanation.}
+One native solve supplies both saved extractors. Independent integer
+semantics match the original and helper models' complete initial,
+safety, and ordered justice predicates. The raw baseline and preference
+graphs have respectively 7,893/508,660 and 8,076/520,372 states/edges.
+Both source-legal views have 1,099 states and 3,383 edges, cover all eight
+initial inputs and every legal next input, and pass safety, strict
+liveness, and legal-prefix cooperation. A second reachability calculation
+agrees with the SCC-based checks. A complete synchronous product of
+1,099 pairs and 3,383 inputs finds no source-response difference.
+
+This equality has an additional local explanation. Any fixed G-legal
+next input is clear, so every SYS completion satisfies $Q_G$; therefore
+$C\cap Q_G=C$ for every rank/heuristic subset $C$ at that input.
+Helper-true is likewise permitted by the lifted selection predicate.
+The identity excludes direct Q filtering on legal-input candidates.
+It does not by itself imply identical raw graphs or identical controllers
+under arbitrary traversal: the compared extractors also differ in rank
+handling, and helper/illegal-input traversal can affect existing-node
+preferences. Actual legal-response equality is established separately
+by the product check. G is a specification-repair success, not evidence
+of Q superiority.
+
+\paragraph{Memory and historical execution limits.}
+First-choice extraction avoids an unused prefetched BDD iterator suffix;
+owned iterator temporaries are freed and quiet runtime is retained.
+The selected Boolean assignment preserves increasing numeric-variable-ID,
+false-first order before projection. Primitive, tiny-model, and Lift
+regressions support the change. Original Intruder then completes with
+a 2-GiB heap in 60.09 seconds, with wait4 peak RSS 2,493,972,480 bytes;
+its controllers still fail cooperation. The G pair completes in
+64.37 seconds with peak RSS 2,476,359,680 bytes, and its independent
+check in 87.24 seconds with 1,335,902,208 bytes. These are individual
+measurements, not speedups, total-memory bounds, or online guarantees.
+Post-GC occupancy in the original trial reaches 98.05\% of heap.
+
+The earlier two attempts retain their original stopping records: the
+shared pair hits 44.07 seconds before extraction; the normalized arm
+fails at a 16-MiB relation file after 24.44 seconds, before native solve.
+Their three controller judgments remain UNKNOWN, and the partial file
+and recorded viability iterations are not adopted as certificates.
+The previously public bounded snapshot preserves all 135 outputs.
+Later evidence is a separate local extension, not a silent update of
+that archive or of the 11/14/59 cohorts. Across the completed later
+runs, input pins, owned-child reaping, and final process-group absence
+are checked. Memory improvements are verification infrastructure and
+do not turn technical completion into controller correctness.
+
+\paragraph{Complete certificate delivery and relocated replay.}
+The public archive described in Section~K,
+\path{intruder-certificate-evidence-20261023-v1.zip} supplies the complete
+binary payloads, exact source/import closure, standard-library
+qualifiers and verifiers, and both rejection suites. Its root is
+\path{seams2027-intruder-certificate-evidence-v1/}; the inner kit is
+\path{seams2027-intruder-certificate-replay-v1/}. The outer README
+provides the six commands and a later replay summary. The inner
+construction manifest is preserved with its original pre-replay status;
+it is not the subsequent execution receipt.
+
+A byte-checked copy at a separate temporary location passes original
+qualification and verification, G qualification and verification,
+and the 17- and 26-case rejection suites. After driver setup, Python
+audit-event monitoring in the first four executions confines observed
+file reads to packaged scientific inputs, result output, and the Python
+standard library; writes are confined to result output, and selected
+process-launch and network-connect audit events are denied. This is an application-level
+audit hook, not an operating-system sandbox or an audit of launcher startup.
+The rejection suites spawn checker processes and therefore do not have
+that file-access audit coverage. All six runs complete under process
+supervision and leave no process group. This checks certificate replay,
+not fresh synthesis or extraction. The original certificate covers its
+single selected allowed initializer; the G certificate covers all eight.
+Neither classifies unlabelled states. Source and scalar semantic
+references are shared trust inputs, and the implementations were
+mutually visible. The new archive is distinct from the earlier
+public bounded snapshot and does not replace its UNKNOWN records.

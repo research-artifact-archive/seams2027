@@ -1,0 +1,57 @@
+\paragraph{Full relation checks}
+All 13 completed released arenas from the fixed 14-input comparison
+preserve the original strict-winning region. The remaining input keeps
+its resource UNKNOWN. We establish this by auditing the full saved
+relations and applying the safety-subgame decomposition proved in Section~L, retaining
+every original typed variable and logical auxiliary.
+
+Eight outputs introduce the helper. For each, the independently calculated
+safety region is $U=D$ and the safe-entry condition is $F=C$.
+Seven have $F\subsetneq D$, but every original winning state belongs
+to $F$, so $W_F=W$. Direct strict GR(1) solution of each full saved
+transformed arena agrees with $W_F$ at $b=0$ and $U$ at $b=1$.
+Five no-helper outputs instead satisfy complete original-model identity.
+All 13 original strict initial decisions remain true, and original
+regions match their prior independent certificates under complete
+typed name/value mappings across encodings.
+Table~\ref{tab:helper-decomposition} gives per-input cardinalities.
+
+We compare ENV and SYS safety separately over all typed current/next
+valuations in $(b,b')=00,01,10,11$ and on legal joint edges. Elevator
+matches both complete guards because its original system safety is true.
+The other seven helper cases match literal ENV safety everywhere and
+original SYS safety in $00$ and $01$, but retain nontrivial SYS constraints
+in $11$: neither complete guard matches, even on legal joint edges.
+SYS differences in environment-impossible $10$ are recorded separately.
+Original initialization and ordered justices, including helper justice,
+match throughout the typed current domain. Thus the complete-literal
+theorem alone cannot establish preservation here.
+
+Retained constraints therefore need not cause loss: here they permit
+indefinite safe responses from every helper-true state. These checks
+concern saved strict arenas, independently of the native raw
+four-fixed-point decision or cooperation of an extracted graph.
+The 14-input cohort is disjoint from the ten condition-violating models;
+its correspondence and preservation results do not transfer to them.
+
+Direct and decomposed calculations share the GR(1)/BDD engine. Finite-set qualification on 902 synthetic games covers non-Boolean types, multiple justices and environmental dead ends; it supplies a second representation, not an independently compiled public model.
+
+\paragraph{A separate condition-violating input}
+We also checked Humanoid 044, selected before its released-model run
+as the smallest of the three previously observed initial flips.
+This outcome-informed case is separate from the fixed 14-input cohort.
+The full typed mapping retains both past-time auxiliaries and verifies
+the original relations against the earlier model. The released SYS
+relation again retains constraints at $b=1$, yet $U=D$ and $F=C$.
+Direct solution and the generalized decomposition agree:
+$W_F=W_R(\cdot,0)=\varnothing$ and $W_R(\cdot,1)=D$.
+Thus all 2,387 original winning states are lost, including 1,211
+through the invariant restriction beyond the immediate loss.
+The original initial decision changes from true to false; all eight
+allowed input choices lack a winning initialized response.
+Its original
+nonblocking region $V$ was already empty, so this is not rejection
+of a cooperatively feasible contract. This model-only
+experiment makes no claim about a native four-fixed-point verdict
+or an extracted controller.
+

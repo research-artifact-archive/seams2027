@@ -1,0 +1,300 @@
+\subsection*{Lift T: controlled extraction and modeled replacement}
+\label{supp:lift-causal}
+For this Lift T instance, changing one extraction preference while
+holding the solved game and fixed-point memory fixed produces a strict,
+cooperative original-contract controller. A subsequent constructed
+execution uses the checked controller after an environment-model
+weakening. Both are followups designed after inspecting the baseline
+failure, not held-out validation or a general synthesis correction.
+
+
+\paragraph{Baseline and fixed-point agreement.}
+A fresh run reproduces all 23 saved semantic artifacts of the released
+baseline, including its complete 794-state, 13,874-edge native graph and
+154-state, 1,170-edge original-contract view. Both graph auditors again
+accept strictness and reject cooperation. A behavior-preserving observer
+uses the same model and memory objects; complete graph equality,
+semantic equality of the saved model and memory predicates, and
+unchanged variable order establish observation parity.
+
+A separate finite-set implementation evaluates the inspected raw
+four-fixed-point recurrence on all 2,048 transformed typed states.
+It uses the saved transition predicates and their original move
+quantifiers, without an \emph{Alive} restriction or justice normalization.
+Its region contains all 2,048 states, exactly matching the native region.
+The effective 12 $X$ slices, 12 $Y$ slices, three $Z$ components and final
+winning set also agree on all 57,344 state memberships.
+The recurrence uses Python integer sets; a shared saved-BDD decoder
+only reads predicate membership. These checks establish numerical
+agreement on this input, not compiler independence, the raw core's
+semantic soundness premise, or a general progress-memory theorem.
+
+\paragraph{The transformed strict game permits the dead end.}
+Node 680 belongs to the raw region and satisfies the original
+response condition $C$. A focused check of its saved residual strategy
+also witnesses membership in the actual transformed strict-winning
+region $W_R(\cdot,0)$. All 16 legal next inputs flip the helper;
+none can keep it false. The residual graph has 321 states and
+5,136 edges. At every reached node it covers exactly every legal
+input with a unique safe response, retaining all monitors and private
+memory. Every successor has the helper true and violates the added
+environment justice, so every infinite legal play satisfies the strict
+liveness implication. This uses the complete saved relations, rather
+than assuming that the syntactic arena matches the complete-literal
+theorem. The check reuses the saved-BDD decoder; it performs no new
+native generation or region solution.
+Thus the game itself permits this non-cooperative behavior. The paired
+intervention below shows that the same upstream data also permit an
+accepted output; it does not identify extraction as the unique cause.
+
+\paragraph{Where the continuable alternative is lost.}
+Here the original environment has no justice, and
+$\mathit{Alive}(s)=\exists e':\rho_e(s,e')$ equals the current one-floor
+condition. The trace records two first creations of bad nodes and two
+later reuses. At first creation, rule~a's raw successors have six floor
+patterns, including the live $001$ and $100$ alternatives. After its
+nearest-$Y$ choice, the final five-pattern candidate still contains
+$100$ but not $001$; \code{satOne} selects the dead $011$.
+Later rule~a prefers the existing dead node before the final choice.
+Thus the source-level $001$ alternative above and the final-stage $100$
+alternative have different roles. The trace contains no dropped events
+or predicate references; it does not by itself certify a fair
+continuation after any counterfactual choice.
+
+\paragraph{Single-axis intervention and complete-controller checks.}
+Immediately before transition \code{satOne}, the experimental constructor
+intersects its final candidate with an actual helper-false input-availability
+preference. It uses this intersection when nonempty, otherwise retaining
+the native candidate. With helper $h$, the preference is
+\[
+ h(s)\ \lor\
+ \exists e'\,[D_e(e')\land
+       \rho_e^{\mathrm{native}}(s,e')[h=0,h'=0]] .
+\]
+Without a helper it uses the supplied native environment relation.
+The helper-false relation is not universally identical to the original
+environment relation: Section~N gives a static translation counterexample.
+Lift's complete original-contract graph checks below establish its
+instance-specific result independently of that universal interpretation.
+This leaves helper-true candidates available. It changes no source
+clause, initializer, solver, stored $X/Y/Z$ set, variable order, rank
+rule, or earlier existing-state preference. There is no hardcoded floor
+constraint or node ID.
+
+One solver call supplies the same model and memory objects to the
+released and experimental extractions. Their initial, transition,
+ordered-justice and effective memory predicates remain semantically
+equal; the baseline again matches the saved graph. Both complete outputs
+are checked by the production and separately implemented graph auditors,
+whose mathematical checks are unchanged and whose metadata gates
+explicitly identify the nonrelease variant.
+The production reader reconstructs saved predicates as BDDs; the other
+auditor evaluates the exported decision DAG with a separate reader and
+compares it to separately encoded source equations. Each run checks all
+$1{,}048{,}576$ original current/next state pairs for correspondence and
+$2{,}464$ typed input obligations on its 154-node original view.
+The second auditor imports neither the production checker nor its
+certificate and uses a separate reachability-based fairness test.
+Both still depend on the same compiler exports, typing information,
+and recorded translation convention; implementations were mutually
+visible. The shared decoder limitations for the fixed-point and
+residual-strategy checks above are distinct from this graph-audit pair.
+Table~\ref{tab:lift-choice-intervention} reports the original-contract
+views. The experimental full native graph has 778 states and 13,624
+edges; 726 of its 13,624 final candidates are refined, with no
+empty-preference fallback. This is one code-level change affecting many
+choices, not four patched witness edges.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Paired extraction results on Lift T and six prespecified
+successful controls. Each cell gives original-view states/edges and
+strict/cooperative verdicts; P/F mean pass/fail. Refinements count
+candidate sets changed by the preference. These are overlapping
+followups, not additional members of the eleven-candidate cohort.}
+\label{tab:lift-choice-intervention}
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Input & Released & Experimental & Refinements\\
+\midrule
+Lift T & 154/1170, P/F & 154/1176, P/P & 726\\
+Arbiter T & 56/448, P/P & 56/448, P/P & 0\\
+Minepump T1 & 12/40, P/P & 12/40, P/P & 0\\
+Minepump T2 & 4/16, P/P & 4/16, P/P & 0\\
+Traffic S T & 12/80, P/P & 12/80, P/P & 0\\
+Traffic U P & 68/323, P/P & 68/323, P/P & 0\\
+Traffic U T & 56/416, P/P & 56/416, P/P & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The six controls were declared before their new executions and retain
+both verdicts with zero refinements and zero fallbacks. They establish
+preservation of those successes when the preference is dormant, not
+generality when it is active. For Lift, unchanged game, raw region and
+memory suffice for this constructor to return a checked cooperative
+view after changing concrete extraction choices. One-step availability alone is no
+fairness proof; the positive conclusion comes from complete-controller
+checks. No sole-defect, missing-$W$ cause, or general synthesis-repair
+claim follows.
+
+\paragraph{A constructed environment change and exact handoff.}
+The old contract is Lift T with the additional environment restriction
+that all current and next buttons are false. A source-coded old
+controller stays at floor $100$ and performs the actual response-monitor
+updates. Its two reachable cancellation states and four edges pass
+strictness and cooperation under this maintenance contract.
+Two modeled plants execute four old-controller steps, with next
+cancellation values $0,1,1,0$. Removing only the maintenance restriction
+then exposes the original Lift T environment. Both plants pause at
+the existing state $b=000,c=0,f=100,m=000$.
+
+After this change, a fresh paired native run generates both candidates,
+followed by four fresh graph judgments; no cached candidate is installed.
+The fixed order is released controller, then experimental controller.
+One admission policy accepts the first strict candidate; the other
+requires both strictness and cooperation. Each also requires exact
+agreement between the current full source valuation and an allowed
+initial native node. Installation preserves every source field and
+logical monitor and initializes the new controller's private memory to
+that matching node. The handoff therefore uses an already
+initial-compatible paused state; it is not arbitrary-state migration
+or a reset of pending requests.
+
+\paragraph{Executed outcomes.}
+Both arms execute the five inputs of the known failing prefix,
+in $(b,c)$ notation:
+$(010,1),(001,1),(100,0),(101,0),(101,0)$.
+The strict-only policy installs the released controller and reaches
+floor $011$ after these five post-change steps. Independent enumeration
+finds all 16 possible original next inputs illegal.
+The strict-and-cooperative policy rejects that candidate, installs the
+experimental one, and reaches floor $100$ instead.
+It then executes the lexicographically smallest legal input at each
+step, with false ordered before true in $(b_1,b_2,b_3,c)$.
+Within the declared 32-step continuation bound, four more transitions
+give native nodes
+$680\to524\to544\to434\to434$.
+The final self-loop has $b=000,c=0,f=001,m=000$, meeting all three
+system justices; there are no original environment justices.
+Native IDs are local to each graph: experimental node 680 is not the
+released graph's dead node 680.
+
+A separate no-replacement counterfactual applies $(010,0)$ twice to the
+stationary old controller under the weakened contract. The first step
+is legal; the second proposed response violates the movement guarantee
+and is rejected. Thus keeping this old controller does not solve the
+changed model.
+
+The independent episode audit imports neither the episode runner nor
+its transition implementation. It checks the 47-event log, source
+semantics, exact handoff, installed-controller hashes and actual native
+responses, and binds the four fresh full-graph judgments. It performs
+24 environment and 24 system source checks, including the rejected
+counterfactual step, and 42 native-edge/response checks. All six
+supervised processes, comprising the outer execution, one native pair
+and four judges, complete with verified cleanup.
+The executed loop witnesses one infinite continuation; the separate
+complete-graph certificates justify the controller properties.
+This is a constructed in-process episode with a known-failure prefix,
+not hardware deployment, newly learned repair, arbitrary memory
+transfer, or a runtime-cost benchmark.
+
+\paragraph{Bounds, attempts, and provenance.}
+Table~\ref{tab:lift-followup-bounds} gives the declared successful-run
+limits. Stream bounds apply separately to stdout and stderr.
+RSS caps apply to the owned process groups, not a measured aggregate
+tree; output bounds are sampled termination thresholds with final
+checks, not exact quotas. The episode's outer final \code{wait4}
+resource value can include waited descendants on this host.
+Native and checker children retain a 16-MiB per-artifact limit; the
+outer episode's per-file limit is 1~GiB so it can capture the already
+bounded native streams. Each launch requires 1~GiB of free disk space.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Bounds for the accepted diagnostic and episode runs.
+The episode includes serial child processes with their own limits.}
+\label{tab:lift-followup-bounds}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Process & Timeout (s) & RSS (GiB) & Stream (MiB) & Output (MiB)\\
+\midrule
+Fresh baseline & 10 & 1 & 256 & 512\\
+Observer / paired extraction & 30 & 1 & 512 & 768\\
+Finite-set / memory comparison & 120 & 1 & 1 & 32\\
+Production graph judge & 60 & 1 & 8 & 64\\
+Independent graph judge & 180 & 1 & 8 & 64\\
+Outer modeled episode & 600 & 2 & 8 & 1024\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Observed durations of the completed episode.}
+Table~\ref{tab:lift-episode-observed-times} extracts recorded
+\code{elapsed\_seconds} from the successful episode's process receipts.
+These are supervised wall durations including capture, finalization,
+and I/O; the timeout column is the declared cap, not an observation.
+The outer run contains the paired native generation and four serial
+graph judgments, together with modeled steps and orchestration. Its
+28.36~s must not be added to those child durations. The separate saved-event
+replay occurred later and is outside that outer run. No solver-only or
+extraction-only time is inferred from the paired process.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Recorded process durations for one completed constructed
+Lift T episode. Nested rows are components of the outer run;
+these observations are not a latency or scaling benchmark.}
+\label{tab:lift-episode-observed-times}
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Process & Observed wall (s) & Timeout (s)\\
+\midrule
+Outer modeled episode & 28.36 & 600\\
+\quad Paired native generation & 10.82 & 30\\
+\quad Released: production judge & 0.12 & 60\\
+\quad Released: separate judge & 8.60 & 180\\
+\quad Experimental: production judge & 0.15 & 60\\
+\quad Experimental: separate judge & 8.35 & 180\\
+Later saved-event replay & 0.11 & 120\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These measurements describe one completed run of the three-floor
+example after the three retained technical UNKNOWN attempts below.
+They are not a statistical sample, online adaptation latency,
+hardware-normalized comparison, worst-case guarantee, or a scaling
+result beyond the bounded models. Process-group RSS caps remain limits;
+they are not measured aggregate-tree memory consumption.
+
+The first observer attempt exceeded its 256-MiB stdout limit and
+remains UNKNOWN; a separately recorded followup raised only stream
+and output-tree limits to 512 and 768~MiB. The episode likewise retains
+three earlier attempts as technical UNKNOWNs. Attempt~01 stopped when
+the outer single-child supervisor detected a nested driver; the
+followup called the existing driver mains in the episode process while
+each native/checker child retained its own supervisor.
+Attempt~02's stream capture hit the inherited outer 16-MiB file limit;
+the next attempt raised that outer limit to 1~GiB.
+Attempt~03 produced the complete event log and five valid inner
+processes, but its final \code{wait4} RSS value of 557,793,280 bytes
+exceeded the outer 512-MiB cap, so it remains resource UNKNOWN.
+Attempt~04 raised the outer RSS cap to 2~GiB, retained all inner and
+output limits, and completed; its independent episode audit passes.
+Scientific inputs, candidate order, handoff, common input prefix and
+acceptance criteria stayed fixed. Each followup has a separate plan,
+output directory and receipt; no automatic retry rewrites an attempt.
+
+The author-side records bind source, class, model, graph, checker,
+process and event-log identities. Their entry points are
+\path{CAUSAL_COMPARISON_CLOSURE.json},
+\path{SUCCESS_CONTROLS_RESULT.json}, and
+\path{adaptation_episode_04/EXECUTION_RECEIPT.json}, followed by
+\path{adaptation_episode_04/independent/AUDIT_RESULT_attempt01.json}.
+These distinguish the original released result, experimental result
+and executed episode. The fourth public archive in Section~K
+preserves them with explicit original/copy identities. Its consumer
+replays saved semantics and the event audit; it does not regenerate
+the native producer or execute a new adaptation episode.

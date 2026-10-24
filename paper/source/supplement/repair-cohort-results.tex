@@ -1,0 +1,343 @@
+\section*{H. The fixed eleven repair candidates and selected Lift behavior}
+\label{supp:repair-eleven}
+The completed comparison covers all eleven replacements in
+Appendix~C.3--C.4 of~\cite{degradation}: five preferred learned candidates
+and six trivial alternatives from five examples. Two Minepump alternatives
+use the unchanged listings. The other nine use the declared executable
+reconstructions appending the paper's omitted response-pattern declaration;
+Traffic Single P also lowers its direct eventuality to that pattern.
+Lift's one-floor assumptions and movement guarantees are unchanged from
+the published replacement listings. Its appended pattern includes auxiliary
+initialization, deterministic updates, and justice~\cite[Appendix C.2.1, C.3.3, and C.4.3]{degradation}.
+These are correlated published candidates, not eleven independent
+applications. The constructed controls in Section~I are excluded.
+The extraction intervention and modeled episode below are later
+followups on existing inputs; they do not alter this cohort's
+released-route outcomes or denominator.
+
+\paragraph{Traffic Single's direct-eventuality lowering.}
+The learned Traffic Single guarantee $\G(s\Rightarrow\F p)$, with
+$s=\mathit{car}$ and $p=\mathit{green}$, uses the paper's response pattern.
+Writing $q=0$ for $S0$ and $q=1$ for $S1$, its deterministic monitor is
+$q_0=0$, $q'=(q\lor s)\land\neg p$, with justice $\G\F\neg q$.
+Every infinite observable word has exactly one monitor run.
+If every trigger receives a current or later response, each pending
+obligation clears; either clearances recur infinitely or $q$ eventually
+stays zero. Conversely, an unanswered trigger makes $q$ permanently
+true from the next step, violating the justice.
+Hence the two forms have the same infinite observable trace language
+after projecting out $q$. This is the saved reconstruction argument;
+compiler correspondence, auxiliary ownership, and Mealy support remain
+separate obligations. The guarantee retains SYS ownership.
+The equivalence starts at the original initializer; continuation checks
+retain the reached monitor value.
+
+\paragraph{Initialization, correspondence, and output checks.}
+For contract-feasibility checks, every case uses its original initializer,
+including all logical auxiliaries.
+For the independently certified original cooperative region $K$, we check
+\[
+ I_M(K)=\forall e:\theta_e(e)\Rightarrow
+              \exists y:\theta_s(e,y)\land K(e,y),
+\]
+where $y$ includes the logical system monitors. All eleven have nonempty
+legal initial environment domains; eight pass this predicate. The saved
+region authority uses the original nonblocking arena and the normalized
+round/alternating correspondence of Section~A. Neither a residual trace
+entry nor $K\ne\varnothing$ substitutes for initialization.
+
+\paragraph{Minepump P: strict initialization and the native refusal.}
+The saved original strict region contains 28 of the 32 typed states.
+Its three-node Boolean representation is
+\[
+ W=\neg\mathit{highwater}\lor\neg\mathit{methane}\lor\mathit{pump}.
+\]
+The original environment initializer fixes highwater and methane to
+false; the system initializer fixes pump to false, the response monitor
+to $S0$, and the previous-pump auxiliary to false. Substitution into the
+saved $W$ gives $I_M(W)=\mathit{true}$, while the existing nonblocking
+and cooperative certificates give $V=K=\varnothing$ and $I_M(K)=\mathit{false}$.
+This is a static reading of the saved region and initial predicates,
+not a new solver run. The historical residual trace entry has
+highwater and methane true and pump false, so it lies outside $W$;
+it is not an original initial state. The configured route's native
+False cannot be transferred as a claim of original strict
+unrealizability. Cooperative rejection instead follows from the empty
+$V$; no complete current released strict-arena explanation of that raw
+refusal is asserted.
+
+The released route and settings are those in the main paper. All eleven
+adopted candidate jobs retain the original initializers; earlier residual
+trace entries describe separate studies. The nine complete correspondence-
+gated views cover all original ENV initial choices. Lift P's direct graph
+audit and Minepump P's no-controller outcome are distinguished below. Complete
+native outputs are preserved in the study records. The Lift static addendum
+omits Lift P's historical 220,856,594-byte stdout, so that stream cannot
+be independently rehashed from the addendum. The correspondence-gated audit requires typed equality
+of initial, safety, auxiliary-update and ordered-justice predicates under
+identity or the helper-false mapping. The environment initializer is also
+checked over the full native typed domain. For the nine newly executed
+candidates, separate implementations check admitted graphs for original initial inputs,
+every legal next input, the selected safe response
+and private-memory successor, then strictness and cooperation. Saved
+comparisons require equal state/start/edge sets, ordered justice labels,
+SCC evidence and retained raw nodes, including ranks and auxiliaries.
+A failed correspondence or incomplete output remains UNKNOWN at this gate.
+
+Independent hand-derived source equations are also compared with saved
+initialization, safety, and ordered justice predicates over the full
+typed domains, retaining logical auxiliaries. For Arbiter P and Traffic S P,
+the prior audits use the helper-false view of the released model;
+a separate nine-candidate batch checks helper-free originals for every
+remaining candidate. These comparisons use the documented translation
+conventions. Source-to-original equality does not resolve Lift P's
+distinct released-model mismatch below.
+
+\begin{table}[htbp]
+\centering\small
+\caption{Correspondence-gated audit of the fixed eleven candidates. P denotes preferred/learned, T trivial,
+and S/U Traffic Single/Updated. Native False is the solver's negative
+verdict; dashes mean no controller. Question marks mean original
+correspondence failed. $^{b}$ denotes a reused prior baseline and
+$^{f}$ a separate Lift resource followup. This table retains the released-route baseline; the later extraction intervention and the post-hoc direct Lift P audit below are separate.}
+\label{tab:supp-repair-eleven}
+\begin{tabular}{@{}lccrcc@{}}
+\toprule
+Candidate & $I_M(K)$ & Native & View states/edges & Strict & Coop.\\
+\midrule
+Arbiter P$^{b}$ & F & Graph & 56/280 & Pass & Fail\\
+Arbiter T & T & Graph & 56/448 & Pass & Pass\\
+Lift P$^{f}$ & F & Graph & ? & ? & ?\\
+Lift T$^{f}$ & T & Graph & 154/1170 & Pass & Fail\\
+Minepump P & F & False & --- & --- & ---\\
+Minepump T1 & T & Graph & 12/40 & Pass & Pass\\
+Minepump T2 & T & Graph & 4/16 & Pass & Pass\\
+Traffic S P$^{b}$ & T & Graph & 16/80 & Pass & Pass\\
+Traffic S T & T & Graph & 12/80 & Pass & Pass\\
+Traffic U P & T & Graph & 68/323 & Pass & Pass\\
+Traffic U T & T & Graph & 56/416 & Pass & Pass\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\paragraph{Attempt history and denominator.}
+Arbiter P reuses the complete followup in Section~G; Traffic S P reuses
+its earlier 52-state/496-edge native baseline. Exact certificates and
+source-byte mappings are retained. Each remaining candidate received
+one declared native attempt. Six returned graphs passing both checks,
+Minepump P returned native false, and both Lift attempts stopped at the
+64-MiB stdout cap, not the ten-second wall bound. Those two attempts
+remain resource UNKNOWN.
+
+One separately authorized additional attempt per Lift candidate kept the
+sources, runtime, synthesis settings, extractor and audits fixed. Stream
+caps rose to 256 MiB and the per-case output threshold from 128 to
+512 MiB; the ten-second native wall and 1-GiB RSS limits were unchanged.
+Both completed with full stdout: 220,856,594 bytes for Lift P and
+219,540,020 for Lift T. The former still fails original correspondence;
+the latter has a certified strict-only view. At this gate, ten candidates return
+native graphs, nine have complete original-view certificates, seven pass
+both properties, two pass strictness only, and one returns native false.
+Followups do not add candidates or rewrite prior attempts.
+
+\input{normalized-eleven-results.tex}
+
+\input{lift-source-clauses.tex}
+
+\paragraph{Lift T: feasibility and a failing selected graph.}
+The typed original carrier has 1,024 states, including three response
+monitors $m_i\in\{S0,S1\}$. The saved regions have $|V|=384$ and
+\mbox{$|K|=316$}. Both legal initial choices, distinguished by cancellation
+input $c$, have the unique initialized system/monitor response in $K$.
+The native graph has 794 states and 13,874 edges; its original view has
+154 states, 1,170 edges and two initial nodes. Both checkers establish
+strictness and reject cooperation.
+
+Table~\ref{tab:lift-t-prefix} records the original-legal prefix
+$0\to10\to339\to438\to704\to680$.
+It first leaves both $K$ and $V$ on its last edge.
+All five prefix edges satisfy original safety and the exact current-state
+monitor updates. The final move is allowed by the next-$f_3$ disjunct
+of the current floor-2 move constraint. Its resulting two true floors
+violate the environment's current-state one-floor assumptions, making
+every next original environment input illegal. Nodes 680 and 708 are
+the only two original-view nodes outside both $K$ and $V$; each has
+zero original-view successors and 16 native successors, all helper-true.
+The original environment justice list is empty, but a finite dead end
+still fails the infinite-extension requirement.
+
+\begin{table}[ht]
+\centering\small
+\caption{Recorded original-legal Lift T prefix, starting at native
+initial node 0. Bit strings use index order 1,2,3, with $S0=0,S1=1$;
+the helper is false throughout. The recorded native system-justice
+index $r$ names $\mathbf{G}\mathbf{F}\neg m_{r+1}$,
+not a decreasing proof rank.}
+\label{tab:lift-t-prefix}
+\begin{tabular}{@{}rccccr@{}}
+\toprule
+Node & $b_1b_2b_3$ & $c$ & $f_1f_2f_3$ & $m_1m_2m_3$ & $r$\\
+\midrule
+0   & $\mathtt{000}$ & 0 & $\mathtt{100}$ & $\mathtt{000}$ & 0\\
+10  & $\mathtt{010}$ & 1 & $\mathtt{100}$ & $\mathtt{000}$ & 0\\
+339 & $\mathtt{001}$ & 1 & $\mathtt{010}$ & $\mathtt{000}$ & 0\\
+438 & $\mathtt{100}$ & 0 & $\mathtt{001}$ & $\mathtt{000}$ & 1\\
+704 & $\mathtt{101}$ & 0 & $\mathtt{010}$ & $\mathtt{100}$ & 2\\
+680 & $\mathtt{101}$ & 0 & $\mathtt{011}$ & $\mathtt{101}$ & 0\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+For the same observed next environment tuple and the same required next
+monitor tuple $(S1,S0,S1)$, changing only next $f_2$ to false gives
+$(f_1',f_2',f_3')=(0,0,1)$. This satisfies source safety and lies in
+saved $K\cap V$. It is not a selected successor of node 704, and we
+assign it no replacement native rank or private memory. This one-step
+alternative is not a repaired controller or a composed strategy.
+It is also distinct from the later extraction experiment: at first
+creation of a bad node, the final native candidate retains floor
+$100$, whereas the nearest-$Y$ progress filter in rank selection has
+already removed $001$. On the displayed
+$704\to680$ edge, reuse of an existing node has already removed every
+continuable candidate. The diagnosis below distinguishes these stages.
+
+\paragraph{A separate positive source policy.}
+A fixed, independently checked policy directly witnesses original initial
+feasibility. It always sets exactly one floor true and uses one private
+priority bit $d\in\{1,3\}$, initially 3. From floor 1 or 3 it moves to
+floor 2 exactly when another floor is requested. At floor 2 it chooses
+a requested endpoint, stays if neither is requested, and uses $d$ if
+both are requested; a departure toward $j$ sets $d'=4-j$. Decisions use
+current buttons. Encoding $S1$ as true, every logical monitor updates as
+$m_i'=(m_i\lor b_i)\land\neg(f_i\lor c)$.
+
+Every move satisfies an explicit source disjunct. The one-floor invariant
+keeps legal environment successors available. Take a state at time $t$
+with $b_i$ true. If $f_i$ or $c$ already holds, the request is answered.
+Otherwise its button persists until arrival or cancellation. An endpoint
+request can be delayed by at most one trip to the opposite endpoint
+before priority reverses, so the requested floor is reached within four
+transitions from $t$ unless cancellation occurs first. Arrival or
+cancellation makes its monitor $S0$ in the next state, because its
+update reads the current $f_i$ and $c$. All three monitors therefore visit $S0$ infinitely often. Exhaustive
+construction from both original initial states (both values of $c$, with
+all three source monitors initially $S0$) produces 128 nodes and
+1,020 edges, preserving every legal input, all ten original fields and
+the private bit. Direct source and independent finite-graph checks certify
+strictness and cooperation. This separate source-coded existence witness
+uses no native graph, rank, saved $K/V$ restriction or repair as a
+construction input; it makes no claim from arbitrary orphan monitor
+states or every state of $K$.
+
+\paragraph{Extension to the complete transformed model.}
+For an explicit cooperative suffix after any legal policy prefix, keep
+$c'=1$ and choose $b_i'=b_i\land\neg f_i\land\neg c$ at every step.
+The two ENV button implications are satisfied, the policy preserves
+exactly one floor, and current cancellation clears all monitors within
+two transitions. Continuing these choices gives an infinite ENV-safe
+suffix; the source has no ENV justices. This is a semantic witness,
+not a claim that cancellation was used in the recorded workloads.
+
+The same positive policy also extends to a strict strategy for the
+complete saved transformed model, with environment helper $h$. Keeping its exact source AUX updates
+and private priority, we checked all 49,152 prescribed transitions over
+every one-hot current floor, public input, AUX valuation, priority and
+current/next helper value. Every response satisfies both original system
+safety and complete native system safety. This includes all first-flip
+and post-flip inputs. On this one-hot carrier, which the policy preserves,
+the helper cannot revert on a native-legal edge.
+Initialization, domains and ordered justices were checked on all 2,048
+native typed states. We do not approximate native system safety by
+merely disjoining the helper into the source relation, because AUX
+updates remain required.
+
+Starting from either original initial input, a play that keeps the helper
+false is an execution of the certified 128-state source controller.
+If the helper rises, it remains true, falsifying the environment justice
+$\mathbf{G}\mathbf{F}\neg h$, while system safety continues. Thus the
+policy is native-strict and its helper-false view is cooperative. This
+establishes neither liveness from arbitrary orphan-AUX states nor
+cooperation after a helper flip. This source-policy argument alone does
+not attribute the selected controller's failure; the following paired
+experiment supplies separate evidence about extraction choices.
+
+\input{lift-causal-adaptation.tex}
+
+\input{noninitial-handoff.tex}
+
+\paragraph{Lift P: the whole-model timing mismatch.}
+Let $B=b_1\land b_2\land b_3$, $\phi=\neg c\lor\neg B$, and
+$\psi=f_1\lor\neg B$. The added source assumptions give the documented
+original translation
+\[
+\rho_e^P=E_L\land\phi(b',c')\land\psi(b,f),\qquad
+\theta_e^P=(\neg b_1\land\neg b_2\land\neg b_3)\land\phi(b,c).
+\]
+The mixed invariant $\psi$ is evaluated at the current state; the
+environment-only $\phi$ is evaluated initially and at the next input.
+Both initial cancellation values remain allowed. The reduced helper-false
+relation instead checks $\phi$ at the current input. The remaining environment clauses agree with the
+independently encoded source equations. With both helper values fixed
+false, all 2,048 assignments to the eleven original bits in the union
+of environment-relation supports are checked. The relations differ
+on 32: 24 false-to-true and eight true-to-false.
+
+One witness starts at the original joint initial state
+$(0,0,0,0;1,0,0;S0,S0,S0)$ and moves to
+$(1,1,1,1;1,0,0;S0,S0,S0)$ with helper false at both ends.
+Original environment safety is false, reduced environment safety is
+true, and both system relations are true. A control with the opposite
+environment-relation disagreement is also checked. Initializers and ordered
+justices pass their separate checks. This diagnosis exhausts the
+environment relation's support, not the full system-relation domain;
+system safety is checked at the declared witnesses. This blocks transfer
+of the native verdict at the whole-model correspondence gate. The earlier
+diagnostic export-schema failure is retained as an integration failure,
+not a semantic witness. A separate selected-graph audit follows.
+
+\paragraph{Post-hoc direct original-contract graph certificate.}
+We separately audit the same saved native graph using the original
+predicates, without transferring its native verdict. The view begins at
+both original initial nodes and retains helper-false responses to every
+original-legal input, with raw node identities, private ranks, and AUX
+values unchanged. All 16 input valuations are checked at each of its
+136 reachable states. The 958 legal-input responses are unique and satisfy
+original SYS/AUX safety; no missing response is repaired and no unsafe
+legal edge is discarded. The resulting 958-edge view passes strictness
+but fails cooperation. All 16 failing states are environmental dead ends
+with zero original-legal inputs, rather than missing controller responses.
+
+Hand-derived source predicates with bitset transitive closure agree with
+a separate original-BDD, value-decoding, and Kosaraju/reverse-reachability
+route on all saved states, edges, inputs, ordered justices, and SCC evidence.
+Both routes share the frozen graph and prior source qualification.
+The BDD route reuses the earlier saved-BDD decoder, and implementation
+code was visible across routes; this is not independent compilation
+or a blind implementation comparison.
+This certificate leaves the whole-model mismatch and the historical
+correspondence-gated table unchanged. It adds no native synthesis run,
+new candidate, or initially cooperative false-refusal example.
+
+\paragraph{A source obstruction independent of the selected graph.}
+From either legal initial input, $b=000$, $f=100$, and all monitors are
+$S0$. The environment chooses $(b',c')=(010,0)$.
+Source system safety forces $f_1'=1$. Any additional true floor immediately
+violates the environment's current one-floor assumption; otherwise the
+next state has $b=010$, $c=0$, $f=100$, and all monitors $S0$.
+The environment can then choose $(b',c')=(111,0)$: button persistence,
+button clearing, and the next-input invariant all permit this move.
+System safety forces $f_2'=1$. An additional true floor violates the
+one-floor assumption; with only $f_2'$ true, the next state instead
+violates the mixed current-state assumption
+$f_1\lor\neg(b_1\land b_2\land b_3)$.
+Thus every safe response yields an environmental dead end within two
+rounds. A strict controller that avoids the first dead end must answer
+the second legal input safely; hence no strict cooperative strategy
+exists from either original initial input,
+regardless of private memory. This written source argument is independent
+of the selected graph and does not recompute a winning region; it does
+not claim that the intermediate state lacks an existential continuation.
+The argument uses the documented translation of mixed ENV/SYS invariants
+as current-state environment safety. Initially $b=000$, and both chosen
+inputs have $c'=0$, so $\phi$ is true at every current and next valuation
+used here; its current/next timing does not affect this obstruction.

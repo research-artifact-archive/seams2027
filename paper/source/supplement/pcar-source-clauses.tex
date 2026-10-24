@@ -1,0 +1,55 @@
+The source clauses used below are explicit here. Write $\tau$ for
+\texttt{throttle}, $o$ for \texttt{obstacle}, $z$ for \texttt{sideSense},
+and $q_b,q_f$ for \texttt{spec\_b2f}, \texttt{spec\_f2b}.
+The declared domains are $o\in\{\mathsf{CLEAR},\mathsf{BLOCKED}\}$,
+$z\in\{\mathsf{CLEAR},\mathsf{P\_O},\mathsf{BLOCKED}\}$,
+$\tau\in\{\mathsf{BWD},\mathsf{FWD},\mathsf{STOP}\}$, and
+$\mathit{steer}\in\{\mathsf{LEFT},\mathsf{RIGHT},\mathsf{CENTER}\}$.
+Both direction monitors start in $S0$ and range over $\{S0,S1,S2\}$.
+Their exact source updates on these enum values are:
+\begin{center}
+\begin{tabular}{@{}c|ccc|ccc@{}}
+\toprule
+& \multicolumn{3}{c|}{next $q_b$} & \multicolumn{3}{c}{next $q_f$}\\
+current monitor & BWD & FWD & STOP & BWD & FWD & STOP\\
+\midrule
+$S0$ & $S1$ & $S0$ & $S0$ & $S0$ & $S1$ & $S0$\\
+$S1$ & $S1$ & $S2$ & $S0$ & $S2$ & $S1$ & $S0$\\
+$S2$ & $S2$ & $S2$ & $S2$ & $S2$ & $S2$ & $S2$\\
+\bottomrule
+\end{tabular}
+\end{center}
+Each subtable uses its own current monitor as the row and the current
+throttle as the column. No claim about illegal bit encodings is needed.
+For the SYS-owned Boolean response auxiliaries $r_B,r_Z$, initialization
+sets both to true, and system safety includes
+\[
+\begin{aligned}
+r_B'&\leftrightarrow (o=\mathsf{CLEAR})\lor
+ (r_B\land\tau\ne\mathsf{BWD}),\\
+r_Z'&\leftrightarrow (z=\mathsf{CLEAR})\lor
+ \bigl(r_Z\land\neg(\tau=\mathsf{FWD}\land
+ \mathit{steer}=\mathsf{CENTER}\land z=\mathsf{BLOCKED})\bigr).
+\end{aligned}
+\]
+The four environment justices are
+\[
+\mathbf{G}\mathbf{F}(q_b=S0\lor q_b=S1),\quad
+\mathbf{G}\mathbf{F}(q_f=S0\lor q_f=S1),\quad
+\mathbf{G}\mathbf{F}r_B,\quad\mathbf{G}\mathbf{F}r_Z.
+\]
+The physical system clauses require
+\[
+\begin{aligned}
+&\mathbf{G}(o=\mathsf{BLOCKED}\Rightarrow\tau\ne\mathsf{FWD}),\\
+&\mathbf{G}((o=\mathsf{CLEAR}\land z=\mathsf{CLEAR})
+ \Rightarrow\mathit{steer}=\mathsf{CENTER}),\\
+&\mathbf{G}\mathbf{F}(\tau=\mathsf{FWD}\land\mathit{steer}=\mathsf{CENTER}).
+\end{aligned}
+\]
+Original environment safety is unrestricted. The response-pattern updates
+belong to system safety even though their justices belong to the environment.
+These clauses transcribe the unchanged source
+\path{PcarLTL_464_PCar_fixed.spectra}, lines 3--15 and 22--70;
+Supplement K's C14 entry links it and the saved initializer argument.
+
