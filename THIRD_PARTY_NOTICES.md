@@ -105,3 +105,7 @@ The unchanged AutonomousVehicle_sprint02_ver1.spectra benchmark (3,924 bytes, SH
 
 ## Vehicle188 whole-region extension
 The new saved-region archive reuses the unchanged source and model evidence from the prior Vehicle188 native snapshot, with the same original BSD 3-Clause licenses. It adds original analysis, proofs and standard-library replay code. No runtime binaries or manuscript are added.
+
+
+## Fixed-seven native extension
+The archive includes unchanged public corpus source/import specifications with their original BSD 3-Clause license and attribution, saved BDD/JSON outputs, and original standard-library audit code. No runtime binaries, upstream JARs, Java sources or manuscript are added.

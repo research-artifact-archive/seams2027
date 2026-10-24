@@ -1,3 +1,10 @@
+CURRENT FIXED-SEVEN NATIVE EXTENSION: fixed-seven-native-evidence-20261024-v1
+17 archives; 10 historical documents; 29 reader rows; 14 extensions.
+Guide: FIXED_SEVEN_NATIVE_EVIDENCE.md
+Descriptor: FIXED_SEVEN_NATIVE_EVIDENCE_MANIFEST.json
+Metadata checker: tools/verify_fixed_seven_distribution.py
+Earlier blocks retain historical release scopes.
+
 CURRENT SAVED-REGION EXTENSION: vehicle188-whole-region-evidence-20261024-v1
 16 archives; 10 historical documents; 28 reader rows; 13 extensions.
 Guide: VEHICLE188_WHOLE_REGION_EVIDENCE.md

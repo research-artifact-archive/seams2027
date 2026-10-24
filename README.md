@@ -1,5 +1,17 @@
 # Saved Controller Evidence
 
+## Current fixed-seven native evidence
+
+Start with [the fixed-seven saved-data comparison](FIXED_SEVEN_NATIVE_EVIDENCE.md) at immutable tag `fixed-seven-native-evidence-20261024-v1`. Seven preselected cooperative-positive inputs preserve source-view W=K: three active GyroAspect variants and four identity controls. The separate Vehicle188 loss remains in the earlier snapshot.
+
+The collection contains 17 evidence archives, ten historical document downloads, 29 reader rows and fourteen extension objects. Run `python3 -I -S -B tools/verify_fixed_seven_distribution.py` to check repository metadata and bytes without executing scientific payloads. The new archive has a separately qualified offline saved-data replay.
+
+All earlier archives, documents and tools are unchanged. Historical sections below keep their tag-specific counts and validator scopes. No manuscript or document snapshot is added.
+
+## Historical navigation retained from vehicle188-whole-region-evidence-20261024-v1
+
+# Saved Controller Evidence
+
 ## Current Vehicle188 whole-region evidence
 
 Start with [the complete Vehicle188 saved-region evidence](VEHICLE188_WHOLE_REGION_EVIDENCE.md) at immutable tag `vehicle188-whole-region-evidence-20261024-v1`. It evaluates all 33,792 source states: 1,408 of 8,064 original strict/cooperative states are lost at helper=false, with no gains. Each lost state has a source-level, per-target initialized cooperative reachability certificate. This one outcome-selected case supplies no frequency estimate.

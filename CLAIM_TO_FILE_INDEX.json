@@ -1,5 +1,5 @@
 {
-  "status": "VEHICLE188_WHOLE_REGION_SAVED_EVIDENCE_EXTENSION",
+  "status": "FIXED_SEVEN_NATIVE_SAVED_EVIDENCE_EXTENSION",
   "candidate_independent": true,
   "archive_roots": {
     "Core": {
@@ -67,6 +67,10 @@
     "Vehicle188Whole": {
       "archive": "vehicle188-whole-region-evidence-20261024-v1.zip",
       "member_prefix": "vehicle188-whole-region-evidence-20261024-v1/"
+    },
+    "FixedSevenNative": {
+      "archive": "fixed-seven-native-evidence-20261024-v1.zip",
+      "member_prefix": "fixed-seven-native/"
     }
   },
   "path_convention": "Paths are relative to each retained historical member prefix. Public archive names differ from historical archive names. The source_fetch_required_for_members list identifies source-only entries restored by the supplied helpers. Retained archive entries preserve their bytes from the earlier anonymous evidence archives named in RELEASE_MANIFEST.json. Original execution files, anonymous copies and compressed receipt views can have different hashes; the inner manifests and original/copy or receipt ledgers distinguish these identities. Original pkg:/origin:/external: references are historical identities, not runtime fallback paths.",
@@ -1422,6 +1426,36 @@
         "Per-target existential policy/play, not forced reachability, common policy or observed execution.",
         "No population frequency or deployment claim; native solver, exporter and typed maps remain shared dependencies."
       ]
+    },
+    {
+      "id": "fixed-seven-native",
+      "archive": "FixedSevenNative",
+      "claim": "Seven preselected cooperative-positive inputs: original native W equals old symbolic W=K and route source view, with no loss/gain; three active GyroAspect variants and four identity controls.",
+      "input_navigation": [
+        "README.txt",
+        "SELECTION.json",
+        "ROSTER.json",
+        "ORIGINAL_COPY_LEDGER.json"
+      ],
+      "input_models": [
+        "cases/corpus039__original/original/native_result/model.json",
+        "cases/corpus039__original/route/native_result/model.json"
+      ],
+      "saved_outputs": [
+        "provenance/INDEPENDENT_SUMMARY.json",
+        "cases/corpus039__original/expected/AUDIT_RESULT.json",
+        "cases/corpus039__original/expected/CSV_PIN.json"
+      ],
+      "checkers": [
+        "replay.py",
+        "independent_auditor.py"
+      ],
+      "expected_saved_result": "PASS on all seven saved-data cases",
+      "limits": [
+        "Selection and old symbolic/literal outcomes were known before native comparisons.",
+        "Three active transformations share one family; four route skips are identity controls.",
+        "No native regeneration, compiler independence, reachability, frequency or general preservation claim."
+      ]
     }
   ],
   "directory_member_references": 230,
@@ -1716,6 +1750,22 @@
         ]
       },
       "scientific_execution_during_navigation_staging": false
+    },
+    {
+      "version_tag": "fixed-seven-native-evidence-20261024-v1",
+      "archive": "archives/fixed-seven-native-evidence-20261024-v1.zip",
+      "claims": [
+        "fixed-seven-native"
+      ],
+      "descriptor": "FIXED_SEVEN_NATIVE_EVIDENCE_MANIFEST.json",
+      "reader_guide": "FIXED_SEVEN_NATIVE_EVIDENCE.md",
+      "validation": {
+        "archive": "archives/fixed-seven-native-evidence-20261024-v1.zip",
+        "members": [
+          "fixed-seven-native/provenance/INDEPENDENT_SUMMARY.json"
+        ]
+      },
+      "scientific_execution_during_navigation_staging": false
     }
   ],
   "document_snapshot": {
@@ -1727,7 +1777,7 @@
     "scope": "Historical v48 appendix snapshot; all five historical PDF/source ZIP pairs retained unchanged. No document snapshot is added by the certificate/finite-study extension.",
     "current_document_downloads_including_prior_snapshots": 10
   },
-  "extension_note": "All 27 preceding reader rows, twelve extension objects, fifteen prior evidence archives, ten documents and all historical tools retain their values or exact bytes. One saved-region archive is added. Publication executes no scientific payload.",
+  "extension_note": "All 28 preceding reader rows, thirteen extension objects, sixteen prior evidence archives, ten documents and all historical tools retain their values or exact bytes. One saved-data archive is added; publication executes no scientific payload.",
   "new_extension_references_checked": 16,
   "new_extension_missing_references": [],
   "prior_extension_reference_audit": {
@@ -1753,8 +1803,8 @@
       }
     }
   },
-  "reader_row_count": 28,
-  "scientific_archive_count": 16,
+  "reader_row_count": 29,
+  "scientific_archive_count": 17,
   "document_download_count": 10,
   "directory_member_references_scope": "Retained historical count; the latest two-archive references are separately checked in new_extension_references_checked.",
   "pending_native_handoff_extension": {
@@ -1765,9 +1815,9 @@
   },
   "current_distribution": {
     "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
-    "validator": "tools/verify_vehicle188_whole_distribution.py",
+    "validator": "tools/verify_fixed_seven_distribution.py",
     "tags": [
-      "vehicle188-whole-region-evidence-20261024-v1"
+      "fixed-seven-native-evidence-20261024-v1"
     ],
     "scope": "Metadata/byte verification only; archive replay is separate."
   },
@@ -1846,6 +1896,34 @@
       "archive": "archives/vehicle188-whole-region-evidence-20261024-v1.zip",
       "members": [
         "vehicle188-whole-region-evidence-20261024-v1/qualification/QUALIFICATION.json"
+      ]
+    },
+    "scientific_execution_during_navigation_staging": false
+  },
+  "fixed_seven_previous_state": {
+    "status": "VEHICLE188_WHOLE_REGION_SAVED_EVIDENCE_EXTENSION",
+    "extension_note": "All 27 preceding reader rows, twelve extension objects, fifteen prior evidence archives, ten documents and all historical tools retain their values or exact bytes. One saved-region archive is added. Publication executes no scientific payload.",
+    "current_distribution": {
+      "manifest": "CURRENT_DISTRIBUTION_MANIFEST.json",
+      "validator": "tools/verify_vehicle188_whole_distribution.py",
+      "tags": [
+        "vehicle188-whole-region-evidence-20261024-v1"
+      ],
+      "scope": "Metadata/byte verification only; archive replay is separate."
+    }
+  },
+  "fixed_seven_native_evidence": {
+    "version_tag": "fixed-seven-native-evidence-20261024-v1",
+    "archive": "archives/fixed-seven-native-evidence-20261024-v1.zip",
+    "claims": [
+      "fixed-seven-native"
+    ],
+    "descriptor": "FIXED_SEVEN_NATIVE_EVIDENCE_MANIFEST.json",
+    "reader_guide": "FIXED_SEVEN_NATIVE_EVIDENCE.md",
+    "validation": {
+      "archive": "archives/fixed-seven-native-evidence-20261024-v1.zip",
+      "members": [
+        "fixed-seven-native/provenance/INDEPENDENT_SUMMARY.json"
       ]
     },
     "scientific_execution_during_navigation_staging": false
