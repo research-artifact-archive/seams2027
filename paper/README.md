@@ -34,7 +34,7 @@ The two Obstacle guides bind the same source query: `B_NEW_POINT_R2404`, 2,026 b
 
 The [earlier diagnostic](../results/guides/SAME_SOLVER_DIAGNOSTIC.md) remains false/UNKNOWN. It is not completed retroactively by AG. All checks must be interpreted within their guide's scope: document rebuilding, repository integrity, certificate rechecking, saved-data replay and new scientific execution are separate activities. No fresh-host scientific reproduction or operational gate benefit is claimed by this release.
 
-The PDFs and source ZIP are the frozen D11 v71-r10 triplet. This revision corrects the Figure 1 robot's face orientation and improves figure readability. The extracted `source/` tree is an exact mirror of the ZIP, including its README and bundled PDFs. Build instructions are in the ZIP's `README.txt`; document compilation does not rerun experiments.
+The PDFs and source ZIP are the frozen D12 v71-r10 triplet. This revision clarifies the lower explanation in Figure 4: the two rules simultaneously constrain the same next lane. The extracted `source/` tree is an exact mirror of the ZIP, including its README and bundled PDFs. Build instructions are in the ZIP's `README.txt`; document compilation does not rerun experiments.
 
 For case-specific executable checks, follow the [three reader tasks](../README.md#three-reader-tasks): Patrol's maintained-response obligation, Vehicle's lost continuations, and Obstacle's separately scoped source witnesses, strict comparisons, public mode observations and completed raw pair. The [results guide](../results/README.md) connects each to its exact evidence and limitations, including the unfavorable cohort and historical UNKNOWNs.
 

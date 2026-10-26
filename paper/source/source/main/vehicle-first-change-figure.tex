@@ -57,20 +57,24 @@
 \node[text=black!70] at (66,34) {clear};
 \node at (66,21) {Both outer lanes blocked};
 
-% Simultaneous lane duties are annotations, not movement trajectories.
-\node[font=\fontsize{8}{9.2}\selectfont\itshape] at (42,17) {Both rules apply:};
-\node at (21,13.5) {Left blocked next};
-\node[text=sourceblue,font=\fontsize{8}{9.2}\selectfont\bfseries]
-  at (21,9) {must choose right $\rightarrow$};
-\node at (63,13.5) {Right blocked next};
-\node[text=sourceblue,font=\fontsize{8}{9.2}\selectfont\bfseries]
-  at (63,9) {$\leftarrow$ must choose left};
-\node[text=fliporange,font=\fontsize{9}{10}\selectfont\bfseries]
-  at (42,2.5) {One next lane cannot be both: no safe response.};
+% A two-row constraint table: both rows bind the same next-lane value.
+\node[anchor=west,font=\fontsize{8}{9.2}\selectfont\itshape]
+  at (3,17) {Condition (both true)};
+\node[anchor=west,font=\fontsize{8}{9.2}\selectfont\itshape]
+  at (46,17) {Required next lane};
+\draw[black!30,line width=.35pt] (3,14.5)--(81,14.5);
+\node[anchor=west] at (3,11.3) {Left blocked next};
+\node[anchor=west,text=sourceblue] at (46,11.3)
+  {next lane $=$ \textbf{Right}};
+\node[anchor=west] at (3,7.4) {Right blocked next};
+\node[anchor=west,text=sourceblue] at (46,7.4)
+  {next lane $=$ \textbf{Left}};
+\node[text=fliporange,font=\fontsize{8.5}{10}\selectfont\bfseries]
+  at (42,1.8) {No single next lane satisfies both: no safe response.};
 \end{tikzpicture}
 \caption{Vehicle's first-change conflict. Barrier icons mark blocked lanes;
 their positions do not encode distance. The next ENV input is
-source-forbidden but helper-legal. With the middle blocked now, the two
+source-forbidden but helper-legal. With the car in the blocked middle lane now, the two
 rules require opposite next lanes simultaneously; no speed choice resolves
 the conflict. No completed car movement is shown.}
 \label{fig:vehicle-first-change}
