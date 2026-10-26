@@ -50,13 +50,18 @@
 \end{scope}
 \node[font=\footnotesize,text width=39mm] at (14,-11)
  {Visit $A$, $B$, $C$ in order.\\Circles: waiting points.};
-\node[font=\footnotesize,text width=39mm] at (57,-11)
- {At $H$, dwell until $c=3$.\\Dashed: restart at $(0,2)$.};
+% Style keys distinguish the two phases that share the same row-two edges.
+\draw[fliporange,line width=1.05pt] (39,-8.8) -- (43,-8.8);
+\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-8.8)
+ {To $H$; dwell until $c=3$.};
+\draw[sourceblue,dashed,line width=.85pt] (39,-13) -- (43,-13);
+\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-13)
+ {Restart at $(0,2)$.};
 \end{tikzpicture}
 \caption{Patrol's source policy on the same $5\times5$ grid in both
 panels ($O=(0,0)$, $H=(4,0)$; checkpoints on row four).
 Every segment consists of unit cardinal moves. Wait two cells below each
 checkpoint while its next blocked flag is true, then approach, visit and
-retreat. The charging leg restarts this cycle.}
+retreat. The charging and restart legs share row two; restart at $(0,2)$.}
 \label{fig:patrol-grid}
 \end{figure}

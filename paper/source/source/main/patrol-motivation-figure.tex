@@ -34,12 +34,12 @@
  }}]
 \path[use as bounding box] (0,0) rectangle (84,80);
 \node[font=\fontsize{8.5}{10}\selectfont\bfseries] at (42,78)
- {Every safe strategy from $r$: two exhaustive cases};
+ {Every source-safe strategy from $r$: two cases};
 
 % The alternatives are scenes, not stages on one executed route.
 \draw[black!20] (42,47)--(42,74);
 \node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (20,72)
- {Never reach $H$};
+ {(1) Never reach $H$};
 \pic at (10,62) {robot};
 \pic at (28,62) {charger};
 \node[text=sourceblue] at (28,56.6) {$H$};
@@ -50,7 +50,7 @@
  {$c=0$; request pending forever.\\\textbf{ENV fair; SYS progress fails.}};
 
 \node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (63,72)
- {First reach $H$};
+ {(2) First reach $H$};
 \pic at (49,62) {open};
 \pic at (65,62) {charger};
 \node[text=sourceblue] at (65,56.6) {$H$};
@@ -61,7 +61,7 @@
 % The next source-legal edge clears the request but not the dwell duty.
 \draw[black!25] (0,46)--(84,46);
 \node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (42,42.5)
- {After first arrival: one source-legal dwell edge};
+ {(2) continues: one source-legal dwell edge};
 \pic at (9,32) {closed};
 \pic at (29,32) {charger};
 \node[text=sourceblue] at (29,26.6) {$H$};
@@ -81,14 +81,14 @@
 \pic at (29,10) {charger};
 \pic at (29,10) {closed};
 \draw[->,fliporange,dashed,thick] (12,11) .. controls (17,14) and (21,14) .. (25,11);
-\node[text=fliporange] at (18.5,7) {$t_A'=H$};
+\node[text=fliporange] at (18,15) {Move $A$ to $H$};
 \node[text width=40mm,text=fliporange] at (21,2.5) {Input only, not a reached state.};
 \node[text width=42mm] at (63,9)
  {Dwell: $p'=H$\\Avoidance: $p'\ne H$\\\textbf{No safe response.}};
 \end{tikzpicture}
-\caption{Patrol's all-response obstruction from source-winning $r$. ENV keeps
-all checkpoints open and charging unavailable until first arrival at $H$.
-The upper alternatives cover every safe strategy. The orange scene moves
+\caption{A proof scenario from source-winning $r$ for every strategy that
+stays safe on source-legal inputs. ENV keeps all checkpoints open and
+charging unavailable until first arrival at $H$. The orange scene moves
 already blocked $A$ to $H$ in a proposed helper input, not a physical update
 or an executed successor.}
 \label{fig:patrol-motivation}

@@ -11,13 +11,15 @@
 \draw[sourceblue,line width=.9pt] (16,35) -- (25,35) -- (32,35);
 \draw[sourceblue,line width=.9pt] (16,35) -- (24,28) -- (32,28);
 \foreach \y in {28,35,42} {\draw[sourceblue,fill=white,line width=.7pt] (32,\y) circle (1.2);}
-% Retained robot, drawn as a simple top-view machine.
+% A schematic upright robot marks the retained state; no heading is encoded.
 \fill[black!75,rounded corners=.5mm] (2,31.5) rectangle (3.5,38.5);
 \fill[black!75,rounded corners=.5mm] (10.5,31.5) rectangle (12,38.5);
 \draw[sourceblue,fill=softblue,line width=.8pt,rounded corners=1mm] (3.5,31) rectangle (10.5,39);
-\draw[sourceblue,line width=.8pt] (5.2,36) -- (8.8,36);
-\fill[sourceblue] (5.5,33.8) circle (.5);
-\fill[sourceblue] (8.5,33.8) circle (.5);
+\draw[sourceblue,line width=.8pt] (7,39) -- (7,40.7);
+\fill[sourceblue] (7,41) circle (.5);
+\fill[sourceblue] (5.5,36.2) circle (.5);
+\fill[sourceblue] (8.5,36.2) circle (.5);
+\draw[sourceblue,line width=.8pt] (5.5,33.8) -- (8.5,33.8);
 \node[font=\footnotesize,anchor=north] at (7,29) {retained entry};
 \node[font=\footnotesize] at (21,21) {Query: strict or source-kind};
 % A negative answer is an observation, not already an exclusion.
