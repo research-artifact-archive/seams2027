@@ -2,11 +2,13 @@
 
 ## Current documents and fixed science
 
-The [repository URL](https://github.com/research-artifact-archive/seams2027) is the maintained reader entry point. The immutable `continuation-characterization-20261026-v1` snapshot fixes the **v71-r10** paper/source, its reading routes, and **24 scientific archives**. Seven added packages accompany the unchanged 17 earlier public ZIPs. [PAPER_MANIFEST.json](../paper/PAPER_MANIFEST.json) binds the document triplet; [MANIFEST.json](../reproduce/MANIFEST.json) binds the complete distribution.
+The [repository URL](https://github.com/research-artifact-archive/seams2027) is the maintained reader entry point. The immutable `continuation-characterization-20261026-v2` snapshot fixes the **v71-r10** paper/source, its reading routes, and **24 scientific archives**. Seven added packages accompany the unchanged 17 earlier public ZIPs. [PAPER_MANIFEST.json](../paper/PAPER_MANIFEST.json) binds the document triplet; [MANIFEST.json](../reproduce/MANIFEST.json) binds the complete distribution.
 
 R10 is a document and reader-navigation revision. AE-R6, AF-R7 and AG-R9 keep their historical scientific identifiers, archive names and bytes. AE contains the positive source certificates and mode controls. AF retains the earlier bounded false/UNKNOWN diagnostic. AG is the separate completed exact-B false/true pair; it does not erase AF's unresolved result or close earlier UNKNOWNs. No new scientific computation or relocated replay was performed during publication integration.
 
 For a scientific claim, use its fixed evidence version and the archive/member named in the [evidence index](../results/EVIDENCE_INDEX.json). Relocating an outer ZIP does not change its internal member names or an older fixed-tag URL. Pending labels inside a frozen package describe its historical freeze; later outer adoption records identify exact candidate bytes without asserting publication, new execution or fresh-host validation.
+
+Layout revision 2 removes the forced page break before References and lets Acknowledgments follow Conclusion in the same column. The main paper now has nine pages including references. Its title and prose, the supplement, and all 24 scientific archives are unchanged. The [first document layout](https://github.com/research-artifact-archive/seams2027/tree/continuation-characterization-20261026-v1) remains available with its original ten-page main PDF.
 
 ## Earlier layouts and documents
 

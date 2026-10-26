@@ -2,12 +2,12 @@
   "schema_version": 1,
   "title": "Which Winning Continuations Survive One-Way Helper Encodings?",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "continuation-characterization-20261026-v1",
+  "document_layout_tag": "continuation-characterization-20261026-v2",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 285457,
-      "sha256": "4781692fdcaac4a4573cac8ef3efc81ca4cb3113575ef7cdc9425b7ce802dd93"
+      "bytes": 285330,
+      "sha256": "1c9526af373d2d0daf9f6bf5661e19e328a23dcab57ec5c9a6783044dbc4eabf"
     },
     {
       "path": "paper/supplement.pdf",
@@ -16,11 +16,11 @@
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1759960,
-      "sha256": "80cac1290fecf1ccd203a84f4497296f9fd2176577efa3272b17c772aa1c3eea"
+      "bytes": 1760027,
+      "sha256": "02a04d347ca2936503023153ca043a7762af5eee333848914e2ff6d904466cfb"
     }
   ],
-  "main_pages": 10,
+  "main_pages": 9,
   "supplement_pages": 136,
   "source_entrypoints": [
     "paper/source/source/main/main.tex",
@@ -28,7 +28,7 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "The main paper has nine body pages and one reference page. Both documents were compiled from the closed source archive in a clean extraction; all 146 rebuilt pages matched the supplied PDFs in extracted text, decoded page content and rendered RGB pixels in the accompanying build environment. All main pages were individually inspected; the unchanged supplement inherits the reviewed byte-identical D05 PDF and source. References, numbered internal links, fonts, source closure and placeholders were checked. These are document and package checks, not scientific replay or fresh-host scientific reproduction; whole-PDF byte reproducibility across environments is not promised.",
+  "validation": "Layout revision 2 removes forced endmatter page breaks and balancing. Conclusion, Acknowledgments and References flow consecutively on page 9; the main paper has 9 total pages including references. The title and normalized full main text are unchanged, and pages 1–8 are pixel-identical to the reviewed first release. A clean build from the new source ZIP reproduces all nine main pages in text, decoded content and RGB pixels. The 136-page supplement and its 65 source files are byte-identical to the previously verified release and inherit its build/visual QA. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
   "scientific_evidence_tags": "Existing individual fixed-tag citations retained.",
   "new_scientific_executions": 0,
   "version": "v71-r10",

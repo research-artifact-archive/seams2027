@@ -4,7 +4,7 @@
 
 | Purpose | File |
 | --- | --- |
-| Read the argument and central complete proof (9 pages plus references) | [Main paper](main.pdf) |
+| Read the argument and central complete proof (9 pages including references) | [Main paper](main.pdf) |
 | Inspect supporting proofs, case details and evidence history (136 pages) | [Supplement](supplement.pdf) |
 | Browse matching sources | [source/](source/) |
 | Download matching sources and bundled PDFs | [Source ZIP](source.zip) |
@@ -12,7 +12,7 @@
 
 ## Reading the argument
 
-The main paper has nine body pages and one reference page. Its central results and complete proofs are in the main paper.
+The main paper has nine pages in total. Conclusion, Acknowledgments and References flow consecutively on page 9. Its central results and complete proofs are in the main paper.
 
 | Question | Main paper | Supporting supplement |
 | --- | --- | --- |
@@ -39,3 +39,5 @@ The PDFs and source ZIP are the frozen v71-r10 triplet. The extracted `source/` 
 For case-specific executable checks, follow the [three reader tasks](../README.md#three-reader-tasks): Patrol's maintained-response obligation, Vehicle's lost continuations, and Obstacle's separately scoped source witnesses, strict comparisons, public mode observations and completed raw pair. The [results guide](../results/README.md) connects each to its exact evidence and limitations, including the unfavorable cohort and historical UNKNOWNs.
 
 [Versions](../docs/versions.md) · [Repository](../README.md)
+
+Layout revision 2 changes only endmatter page and column flow. The supplement and scientific evidence are unchanged. Fixed-v1 citations inside the PDFs retain the original evidence release and reading map; all main section and theorem page locations remain the same. This page and the current manifest describe the revised document layout.

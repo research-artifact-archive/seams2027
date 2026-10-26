@@ -5,7 +5,7 @@ Anonymous authors
 26 October 2026
 
 Contents (all under the single v71-r10/ directory)
-  main.pdf             Main paper: 10 pages (9 body + 1 references)
+  main.pdf             Main paper: 9 pages total (references begin on page 9)
   supplement.pdf       Matching supplement: 136 pages
   source/main/         20 TeX files and the unchanged IEEEtran class
   source/supplement/   65 TeX files
@@ -36,8 +36,8 @@ Read main.pdf first. It includes complete proofs of Theorem 1, Corollary 2 and
 Proposition 3. The supplement starts with a reader guide to stable appendix
 labels, the three case-inspection tasks and their exact evidence guides.
 The accompanying artifact and paper reading map use the version identity:
-  continuation-characterization-20261026-v1
-  https://github.com/research-artifact-archive/seams2027/blob/continuation-characterization-20261026-v1/paper/README.md
+  continuation-characterization-20261026-v2
+  https://github.com/research-artifact-archive/seams2027/blob/continuation-characterization-20261026-v2/paper/README.md
 This document bundle contains the two PDFs and their closed source inputs.
 Separate experimental archives are identified by the accompanying reading map.
 
@@ -47,3 +47,10 @@ They do not establish compiler correctness, saved-region maximality or public
 procedure semantics. No fresh-host scientific reproduction is claimed. The
 supplement preserves the earlier false/UNKNOWN protocol separately from the
 completed exact-B false/true records, and all unresolved results remain UNKNOWN.
+
+Layout revision 2
+Conclusion, Acknowledgments and References flow consecutively on page 9.
+The title, prose, proofs and scientific results are unchanged. The supplement
+is byte-identical to the first release; its fixed-v1 links retain the original
+scientific evidence and reading map. This layout release has the same section
+and theorem locations, with References now sharing page 9.
