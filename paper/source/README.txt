@@ -1,4 +1,4 @@
-Controller Replacement Audit - v71-r10, D09
+Controller Replacement Audit - v71-r10, D10
 
 Auditing Controller Replacement after Environment-Model Change
 Anonymous authors
@@ -36,17 +36,18 @@ Read main.pdf first. It includes complete proofs of Theorem 1, Corollary 2 and
 Proposition 3. The supplement starts with a reader guide to stable appendix
 labels, the three case-inspection tasks and their exact evidence guides.
 The matching artifact and paper reading map use this fixed version:
-  controller-replacement-audit-20261026-v2
-  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v2/paper/README.md
+  controller-replacement-audit-20261026-v3
+  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v3/paper/README.md
 This document bundle contains the two PDFs and their closed source inputs.
 Separate experimental archives are identified by the accompanying reading map.
 
 Scope and document revision
 The paper audits candidate-exclusion reasoning during replacement planning
 after an environment-model change. The formal results, complete proofs and scientific evidence are unchanged.
-This revision clarifies the attribution of Patrol counts, the old-export result,
-the abstract hypotheses and the scope of the recorded execution. Figures 1, 3
-and 4 clarify audit obligations, the legal dwell step and the lane conflict.
+This revision redesigns all four main-paper figures as vector illustrations:
+the retained-entry question, two spatial route panels, a charging-conflict
+storyboard and a lane-level scene. The introductory figure description follows
+the new visual explanation. The established scope and evidence are unchanged.
 Patrol supplies the constructed ENV-only update. Vehicle and Obstacle supply
 distinct preservation and tool-answer checks; Obstacle changes SYS goals too.
 The candidate-exclusion contract is not implemented as a gate. Separate

@@ -1,35 +1,95 @@
 \begin{figure}[!ht]
 \centering
 \begin{tikzpicture}[>=Latex,x=1mm,y=1mm,
-every node/.style={font=\small,align=center,inner sep=1.5mm},
-wide/.style={draw=sourceblue,fill=softblue,rounded corners=2pt,text width=77mm},
-branch/.style={draw,rounded corners=2pt,text width=34mm,minimum height=21mm,anchor=north},
-phase/.style={fill=white,inner sep=.4mm}]
-\node[wide] (start) at (42,72)
- {Post-update $r$: fixed layout,\\all checkpoints open, charging unavailable.\\
- Can answer every typed first-change input safely.\\
- Consider any safe SYS strategy.};
-\node[branch,draw=fliporange,fill=softorange] (never) at (20,61)
- {\textbf{Never reach $H$}\\Counter zero; request pending.\\ENV fair; SYS justice fails.};
-\node[branch,draw=sourceblue,fill=softblue] (reach) at (64,61)
- {\textbf{First reach $H$}\\Counter zero.\\Request still pending.};
-\draw[->,thick,sourceblue] (start.south west)++(8,0)--(never.north);
-\draw[->,thick,sourceblue] (start.south east)++(-8,0)--(reach.north);
-\node[wide] (closed) at (42,25)
- {State $x$: distant $A$ closed; robot stays at $H$.\\
- Counter one: \textbf{request cleared, dwell unfinished}.\\
- Some typed first-change input has no safe response.};
-\draw[->,thick,sourceblue] (reach.south)
- --node[left,font=\scriptsize,align=right,inner sep=.6mm]
- {One legal\\dwell edge} (closed.north -| reach.south);
-\node[wide,draw=fliporange,fill=softorange] (flip) at (42,3)
- {Encoding-only first change moves blocked $A$ to $H$.\\
- Dwell requires stay; Avoidance requires leave.\\\textbf{No safe response.}};
-\draw[->,thick,fliporange,dashed] (closed.south)
- --node[phase,right] {$b:0\to1$} (flip.north);
+ every node/.style={font=\fontsize{8.2}{9.5}\selectfont,align=center,inner sep=0pt},
+ pics/robot/.style={code={
+   \fill[white] (-2.6,-1.5) rectangle (2.6,1.5);
+   \draw[sourceblue,thick,rounded corners=.6mm] (-2.6,-1.5) rectangle (2.6,1.5);
+   \fill[sourceblue] (-2.1,-2.2) rectangle (-1.2,-1.5);
+   \fill[sourceblue] (1.2,-2.2) rectangle (2.1,-1.5);
+   \draw[sourceblue] (0,1.5)--(0,2.5);
+   \fill[sourceblue] (0,2.6) circle (.35);
+   \fill[sourceblue] (-1,.4) circle (.3);
+   \fill[sourceblue] (1,.4) circle (.3);
+   \draw[sourceblue] (-.7,-.6)--(.7,-.6);
+ }},
+ pics/charger/.style={code={
+   \draw[sourceblue,fill=softblue] (0,-2.8) ellipse (4.2 and 1);
+   \draw[sourceblue,fill=white,rounded corners=.4mm] (5,-2.8) rectangle (8.5,4);
+   \fill[sourceblue] (7.3,3.1)--(5.8,.8)--(6.8,.8)--(6.2,-1.6)--(7.9,1.1)--(6.9,1.1)--cycle;
+   \draw[sourceblue] (5,-1.7)--(3.9,-1.7);
+ }},
+ pics/open/.style={code={
+   \draw[sourceblue,thick] (-2.7,-2)--(-2.7,2.1);
+   \draw[sourceblue,thick] (2.7,-2)--(2.7,.8);
+   \draw[sourceblue,thick] (-2.7,1.5)--(.8,4);
+   \node[text=sourceblue] at (0,-4.2) {$A$ open};
+ }},
+ pics/closed/.style={code={
+   \draw[fliporange,thick] (-2.7,-2.3)--(-2.7,1.5);
+   \draw[fliporange,thick] (2.7,-2.3)--(2.7,1.5);
+   \filldraw[draw=fliporange,fill=fliporange] (-3.2,.2) rectangle (3.2,2.1);
+   \draw[white,line width=.65mm] (-2.4,.3)--(-.9,2);
+   \draw[white,line width=.65mm] (.7,.3)--(2.2,2);
+ }}]
+\path[use as bounding box] (0,0) rectangle (84,80);
+\node[font=\fontsize{8.5}{10}\selectfont\bfseries] at (42,78)
+ {Every safe strategy from $r$: two exhaustive cases};
+
+% The alternatives are scenes, not stages on one executed route.
+\draw[black!20] (42,47)--(42,74);
+\node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (20,72)
+ {Never reach $H$};
+\pic at (10,62) {robot};
+\pic at (28,62) {charger};
+\node[text=sourceblue] at (28,56.6) {$H$};
+\draw[sourceblue,dashed] (6.2,59.5) .. controls (1.5,62) and (3,67) .. (10,67)
+ .. controls (17,67) and (18,62) .. (14,59.5);
+\node[text=sourceblue] at (20,64) {$\infty$};
+\node[text width=39mm] at (20,51.5)
+ {$c=0$; request pending forever.\\\textbf{ENV fair; SYS progress fails.}};
+
+\node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (63,72)
+ {First reach $H$};
+\pic at (49,62) {open};
+\pic at (65,62) {charger};
+\node[text=sourceblue] at (65,56.6) {$H$};
+\pic at (65,62) {robot};
+\node[text width=39mm] at (63,51.5)
+ {$c=0$; request still pending.};
+
+% The next source-legal edge clears the request but not the dwell duty.
+\draw[black!25] (0,46)--(84,46);
+\node[text=sourceblue,font=\fontsize{8.5}{10}\selectfont\bfseries] at (42,42.5)
+ {After first arrival: one source-legal dwell edge};
+\pic at (9,32) {closed};
+\pic at (29,32) {charger};
+\node[text=sourceblue] at (29,26.6) {$H$};
+\pic at (29,32) {robot};
+\node[text=fliporange] at (9,27.7) {$A$ closed};
+\node[text width=39mm] at (21,24.1) {Only distant $A$ closes.};
+\node[text width=43mm] at (63,32)
+ {State $x$: robot at $H$, $c=1$.\\Request cleared;\\\textbf{dwell unfinished.}};
+
+% This is a proposed next ENV valuation, never a reached unsafe state.
+\fill[softorange] (0,0) rectangle (84,21.5);
+\node[text=fliporange,font=\fontsize{8.5}{10}\selectfont\bfseries] at (42,18.5)
+ {Helper first-change input only ($b:0\to1$)};
+\begin{scope}[opacity=.35]
+ \pic at (8,10) {closed};
+\end{scope}
+\pic at (29,10) {charger};
+\pic at (29,10) {closed};
+\draw[->,fliporange,dashed,thick] (12,11) .. controls (17,14) and (21,14) .. (25,11);
+\node[text=fliporange] at (18.5,7) {$t_A'=H$};
+\node[text width=40mm,text=fliporange] at (21,2.5) {Input only, not a reached state.};
+\node[text width=42mm] at (63,9)
+ {Dwell: $p'=H$\\Avoidance: $p'\ne H$\\\textbf{No safe response.}};
 \end{tikzpicture}
-\caption{All-response loss from Patrol's source-winning entry. Solid arrows use source-legal inputs
-while $b=0$. The dashed first-change edge follows the legal edge that
-clears the request. The two branches cover every safe strategy.}
+\caption{Patrol's all-response obstruction from source-winning $r$. ENV keeps
+all checkpoints open and charging unavailable until first arrival at $H$.
+The upper alternatives cover every safe strategy. The orange scene moves
+already blocked $A$ to $H$ in a proposed helper input, not a physical update
+or an executed successor.}
 \label{fig:patrol-motivation}
 \end{figure}

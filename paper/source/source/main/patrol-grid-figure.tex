@@ -1,80 +1,62 @@
-% Legal source-policy route only. No off-assumption completion is depicted.
-% Uses the main document's TikZ, arrows.meta, sourceblue/fliporange colors.
+% Two spatial views of the same legal unit-cardinal route.
 \begin{figure}[!ht]
 \centering
-\begin{tikzpicture}[
- x=10mm,y=10mm,
- >={Latex[length=1.5mm,width=1.05mm]},
- every node/.style={font=\small,inner sep=1pt},
- patrol/.style={sourceblue,line width=.8pt,<->,shorten <=1.7mm,shorten >=1.7mm},
- charge/.style={fliporange,line width=.9pt,->,shorten <=1.7mm,shorten >=1.7mm},
- checkpoint/.style={draw=sourceblue,fill=softblue,rectangle,
-   minimum width=4.7mm,minimum height=4.2mm,font=\small\bfseries},
- standoff/.style={draw=sourceblue,fill=white,circle,
-   line width=.8pt,minimum size=3.4mm,inner sep=0pt}
-]
-\path[use as bounding box] (-.65,-.65) rectangle (7.85,4.45);
-
-% The grid points, not diagonals or geometric shortcuts, are the source states.
-\draw[step=1,black!17,line width=.3pt] (0,0) grid (4,4);
-\foreach \x in {0,...,4} {
-  \foreach \y in {0,...,4} {
-    \fill[black!40] (\x,\y) circle[radius=.35pt];
-  }
-  \node[anchor=north,text=black!75] at (\x,-.27) {$\x$};
+\begin{tikzpicture}[x=1mm,y=1mm,>=Latex,
+ every node/.style={font=\footnotesize,inner sep=.3mm,align=center}]
+\path[use as bounding box] (-3,-16) rectangle (81,39);
+\foreach \shift/\heading in {0/{(a) Visit the checkpoints},43/{(b) Charge and restart}} {
+ \begin{scope}[xshift=\shift mm]
+ \node[font=\small\bfseries] at (14,37) {\heading};
+ \draw[step=7mm,black!16,line width=.3pt] (0,0) grid (28,28);
+ \foreach \x in {0,7,14,21,28} {\foreach \y in {0,7,14,21,28}
+   {\fill[black!30] (\x,\y) circle (.25);}}
+ \foreach \x/\name in {0/A,14/B,28/C} {
+   \draw[sourceblue,line width=.7pt] (\x,28) -- (\x,32.5);
+   \path[fill=softblue,draw=sourceblue,line width=.6pt] (\x,32.5) -- (\x+4,31.2) -- (\x,30) -- cycle;
+   \node[anchor=east,font=\footnotesize\bfseries,text=sourceblue] at (\x-.6,30.8) {$\name$};
+ }
+ % Charger icon and landmark label.
+ \draw[fliporange,fill=softorange,rounded corners=.5mm,line width=.7pt] (25,-2.7) rectangle (31,2.7);
+ \draw[fliporange,line width=1pt] (28.7,1.9) -- (27.3,.3) -- (28.5,.3) -- (27.3,-1.8);
+ \node[anchor=north,text=fliporange,font=\footnotesize\bfseries] at (28,-3.3) {$H$};
+ \node[anchor=north,font=\footnotesize\bfseries] at (0,-3.3) {$O$};
+ \end{scope}
 }
-\foreach \y in {0,...,4} {
-  \node[anchor=east,text=black!75] at (-.28,\y) {$\y$};
+% (a) The paths between the three waiting points and the checkpoints.
+\draw[<->,sourceblue,line width=1pt,shorten <=1.5mm,shorten >=1.5mm] (0,0) -- (0,14);
+\draw[<->,sourceblue,line width=1pt,shorten <=1.5mm,shorten >=1.5mm] (0,14) -- (28,14);
+\foreach \x in {0,14,28} {
+ \draw[<->,sourceblue,line width=1pt,shorten <=1.6mm,shorten >=1mm] (\x,14) -- (\x,28);
+ \draw[sourceblue,fill=white,line width=.8pt] (\x,14) circle (1.5);
 }
-\node[anchor=west] at (4.30,-.35) {$x$};
-\node[anchor=south] at (-.36,4.15) {$y$};
-
-% O to the first standoff, and the return to O after the checkpoint visits.
-\foreach \y in {0,1} {
-  \draw[patrol] (0,\y)--(0,{\y+1});
-}
-% Row 2 connects the standoffs; these edges are reused on return journeys.
-\foreach \x in {0,1,2,3} {
-  \draw[patrol] (\x,2)--({\x+1},2);
-}
-% Each visit approaches through row 3 and retreats along the same unit edges.
-\foreach \x in {0,2,4} {
-  \foreach \y in {2,3} {
-    \draw[patrol] (\x,\y)--(\x,{\y+1});
-  }
-}
-% Charging: O along row 0 to H; after dwelling, H to (4,1) to (4,2).
-\foreach \x in {0,1,2,3} {
-  \draw[charge] (\x,0)--({\x+1},0);
-}
-\foreach \y in {0,1} {
-  \draw[charge] (4,\y)--(4,{\y+1});
-}
-
-\foreach \x in {0,2,4} {\node[standoff] at (\x,2) {};}
-\node[checkpoint] at (0,4) {$A$};
-\node[checkpoint] at (2,4) {$B$};
-\node[checkpoint] at (4,4) {$C$};
-\node[draw=sourceblue,fill=white,circle,minimum size=4.7mm] at (0,0) {$O$};
-\node[draw=fliporange,fill=softorange,rectangle,minimum size=4.7mm] at (4,0) {$H$};
-
-\node[anchor=north west,align=left,text width=29mm] at (4.80,4.30)
- {\textcolor{sourceblue}{\textbf{Visit cycle}}\\
- $A$, $B$, $C$ in order;\\
- return to row 2\\
- after each visit.\\[3pt]
- \textcolor{fliporange}{\textbf{Charging leg}}\\
- After $C$, via row 2\\
- and $O$ to $H$;\\
- dwell until $c=3$.\\
- Return to $(4,2)$,\\
- then $A$'s standoff.};
-\node[standoff] at (4.98,.15) {};
-\node[anchor=west] at (5.27,.15) {standoff};
+% A recognizable retained robot at O.
+\fill[black!75,rounded corners=.3mm] (-2.4,-2) rectangle (-1.4,2);
+\fill[black!75,rounded corners=.3mm] (1.4,-2) rectangle (2.4,2);
+\draw[sourceblue,fill=softblue,rounded corners=.6mm,line width=.7pt] (-1.5,-2.3) rectangle (1.5,2.3);
+\draw[sourceblue,line width=.7pt] (-.8,1) -- (.8,1);
+\node[anchor=west,text=black!60] at (30.5,14) {$y=2$};
+% (b) From C to H via the common return row and O.
+\begin{scope}[xshift=43mm]
+ \draw[fliporange,line width=1.05pt] (28,27) -- (28,14) -- (0,14) -- (0,0) -- (25,0);
+ \draw[->,fliporange,line width=1.05pt] (28,22) -- (28,18);
+ \draw[->,fliporange,line width=1.05pt] (20,14) -- (15,14);
+ \draw[->,fliporange,line width=1.05pt] (0,9) -- (0,5);
+ \draw[->,fliporange,line width=1.05pt] (8,0) -- (15,0);
+ % The restart reuses row 2 after the dwell; dashed blue marks that leg.
+ \draw[sourceblue,dashed,line width=.85pt] (28,3.2) -- (28,14) -- (0,14);
+ \draw[->,sourceblue,line width=.85pt] (28,6) -- (28,10);
+ \draw[->,sourceblue,line width=.85pt] (10,14) -- (5,14);
+ \draw[sourceblue,fill=white,line width=.8pt] (0,14) circle (1.5);
+\end{scope}
+\node[font=\footnotesize,text width=39mm] at (14,-11)
+ {Visit $A$, $B$, $C$ in order.\\Circles: waiting points.};
+\node[font=\footnotesize,text width=39mm] at (57,-11)
+ {At $H$, dwell until $c=3$.\\Dashed: restart at $(0,2)$.};
 \end{tikzpicture}
-\caption{Patrol's legal source route uses unit cardinal moves.
-Before each checkpoint visit, wait at its circled standoff while the next
-blocked flag $d_i'$ is true; otherwise approach, visit and retreat.
-The charging leg restarts the visit cycle.}
+\caption{Patrol's source policy on the same $5\times5$ grid in both
+panels ($O=(0,0)$, $H=(4,0)$; checkpoints on row four).
+Every segment consists of unit cardinal moves. Wait two cells below each
+checkpoint while its next blocked flag is true, then approach, visit and
+retreat. The charging leg restarts this cycle.}
 \label{fig:patrol-grid}
 \end{figure}

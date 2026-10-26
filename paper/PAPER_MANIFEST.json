@@ -2,22 +2,22 @@
   "schema_version": 1,
   "title": "Auditing Controller Replacement after Environment-Model Change",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "controller-replacement-audit-20261026-v2",
+  "document_layout_tag": "controller-replacement-audit-20261026-v3",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 286700,
-      "sha256": "775955ff19aa481a9340614457e813ff896b43e683d14e9a5acaa73c54fac817"
+      "bytes": 302803,
+      "sha256": "e20d6d47c7588416c821f2d185f6daeb81e01eb5814f4d63066c2e92a781ac15"
     },
     {
       "path": "paper/supplement.pdf",
       "bytes": 1168085,
-      "sha256": "4ba3c5feed6a62424bae6d59935364c672b9df82ba9720d8660ab4ef88c88d00"
+      "sha256": "faf4f0a5a466f49cf0ec91003818f8ba3365759e08e01a2859f2aa20c4263585"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1761456,
-      "sha256": "2e78caf909a0af8b260c1dea001c1750af044f14172e999abcc9d5bdbcd0cf12"
+      "bytes": 1779030,
+      "sha256": "9c6d7acbb2c549ca58fa51442b86d3a54225fe40d6b824168ecf509d2197e255"
     }
   ],
   "main_pages": 9,
@@ -28,7 +28,7 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "Thirteen of 86 source files differ from D08; all 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
+  "validation": "Eleven of 86 source files differ from D09. All four explanatory figures are redrawn; all 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
   "scientific_evidence_tags": "Historical scientific identifiers remain unchanged; matching document and reader-guide links use the current fixed snapshot.",
   "new_scientific_executions": 0,
   "version": "v71-r10",
@@ -38,5 +38,5 @@
     "files": 90
   },
   "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted.",
-  "document_revision": "D09: evidence attribution, execution scope and figure clarity"
+  "document_revision": "D10: four illustrated figures and matching document links"
 }

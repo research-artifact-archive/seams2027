@@ -1,34 +1,77 @@
+% Lane-level illustration: icon placement does not encode longitudinal distance.
+% The right panel is an ENV input, not a selected or executed car successor.
 \begin{figure}[!ht]
 \centering
 \begin{tikzpicture}[x=1mm,y=1mm,>=Latex,
-every node/.style={font=\small,align=center,inner sep=1mm},
-cell/.style={draw=black!50,minimum width=22mm,minimum height=8mm},
-blocked/.style={cell,draw=fliporange,fill=softorange}]
-\node at (28,43) {\textbf{Left}};
-\node at (51,43) {\textbf{Middle}};
-\node at (74,43) {\textbf{Right}};
-\node[anchor=east] at (15,32) {Now};
-\node[cell] at (28,32) {clear};
-\node[blocked] at (51,32) {stopped car\\+ obstacle};
-\node[cell] at (74,32) {clear};
-\node[anchor=east,align=right] at (15,19) {Next ENV\\input};
-\node[blocked] (nextleft) at (28,19) {obstacle};
-\node[cell] at (51,19) {clear};
-\node[blocked] (nextright) at (74,19) {obstacle};
-\node[draw=sourceblue,fill=softblue,text width=32mm,rounded corners=1pt] (left)
- at (31,3) {Left blocked next:\\must choose right};
-\node[draw=fliporange,fill=softorange,text width=32mm,rounded corners=1pt] (right)
- at (68,3) {Right blocked next:\\must choose left};
-\draw[->,thick,sourceblue] (nextleft.south)--(left.north);
-\draw[->,thick,fliporange] (nextright.south)--(right.north);
-\node[draw=fliporange,fill=softorange,text width=76mm,rounded corners=1pt]
- (conflict) at (48,-14)
- {Both rules constrain the same next lane.\\\textbf{No safe response.}};
-\draw[->,thick,sourceblue] (left.south) -- (conflict.north -| left.south);
-\draw[->,thick,fliporange] (right.south) -- (conflict.north -| right.south);
+ every node/.style={font=\fontsize{8}{9.2}\selectfont,align=center,inner sep=0pt},
+ car/.pic={
+   \fill[black!75] (-3,-3.2) rectangle (-2.3,-1.6);
+   \fill[black!75] (2.3,-3.2) rectangle (3,-1.6);
+   \fill[black!75] (-3,1.7) rectangle (-2.3,3.3);
+   \fill[black!75] (2.3,1.7) rectangle (3,3.3);
+   \draw[draw=sourceblue,fill=sourceblue!18,rounded corners=1.3pt,line width=.6pt]
+     (-2.6,-4.5) rectangle (2.6,4.5);
+   \path[fill=sourceblue] (-2,1.2)--(2,1.2)--(1.7,3)--(-1.7,3)--cycle;
+   \path[fill=sourceblue!65] (-1.8,-3)--(1.8,-3)--(2,-2)--(-2,-2)--cycle;
+ },
+ barrier/.pic={
+   \draw[black!65,line width=.7pt] (-2.7,-1.5)--(-2.7,.4) (2.7,-1.5)--(2.7,.4);
+   \draw[fill=fliporange,draw=fliporange,line width=.5pt]
+     (-4,-.2) rectangle (4,1.7);
+   \begin{scope}
+     \clip (-4,-.2) rectangle (4,1.7);
+     \foreach \a in {-4,-1,2} {
+       \draw[white,line width=1.05pt] (\a,-.3)--({\a+1.7},1.8);
+     }
+   \end{scope}
+ }]
+\path[use as bounding box] (0,0) rectangle (84,57);
+
+% Two schematic road panels. No connecting trajectory is asserted.
+\foreach \base in {0,48} {
+  \fill[black!3] ({\base+.2},24) rectangle ({\base+35.8},47);
+  \draw[black!45,line width=.45pt]
+    ({\base+.2},24)--({\base+.2},47)
+    ({\base+35.8},24)--({\base+35.8},47);
+  \draw[black!35,dash pattern=on 2.2mm off 1.6mm,line width=.4pt]
+    ({\base+12},24)--({\base+12},47)
+    ({\base+24},24)--({\base+24},47);
+  \node at ({\base+6},50) {Left};
+  \node at ({\base+18},50) {Middle};
+  \node at ({\base+30},50) {Right};
+}
+\node[font=\fontsize{9}{10}\selectfont\bfseries] at (18,55) {Now};
+\node[font=\fontsize{9}{10}\selectfont\bfseries] at (66,55) {Next ENV input};
+
+% Current state: one stopped car, with only the middle lane blocked.
+\pic at (18,42) {barrier};
+\pic at (18,33) {car};
+\node[text=sourceblue] at (18,26) {stopped};
+\node[text=black!70] at (6,34) {clear};
+\node[text=black!70] at (30,34) {clear};
+\node at (18,21) {Only middle blocked};
+
+% One proposed first-change ENV input. There is deliberately no next car.
+\pic at (54,42) {barrier};
+\pic at (78,42) {barrier};
+\node[text=black!70] at (66,34) {clear};
+\node at (66,21) {Both outer lanes blocked};
+
+% Simultaneous lane duties are annotations, not movement trajectories.
+\node[font=\fontsize{8}{9.2}\selectfont\itshape] at (42,17) {Both rules apply:};
+\node at (21,13.5) {Left blocked next};
+\node[text=sourceblue,font=\fontsize{8}{9.2}\selectfont\bfseries]
+  at (21,9) {must choose right $\rightarrow$};
+\node at (63,13.5) {Right blocked next};
+\node[text=sourceblue,font=\fontsize{8}{9.2}\selectfont\bfseries]
+  at (63,9) {$\leftarrow$ must choose left};
+\node[text=fliporange,font=\fontsize{9}{10}\selectfont\bfseries]
+  at (42,2.5) {One next lane cannot be both: no safe response.};
 \end{tikzpicture}
-\caption{Vehicle's first-change conflict. Both outer lanes blocked next
-is source-forbidden but helper-legal. The current middle obstacle activates
-both response rules, so no single next lane satisfies them.}
+\caption{Vehicle's first-change conflict. Barrier icons mark blocked lanes;
+their positions do not encode distance. The next ENV input is
+source-forbidden but helper-legal. With the middle blocked now, the two
+rules require opposite next lanes simultaneously; no speed choice resolves
+the conflict. No completed car movement is shown.}
 \label{fig:vehicle-first-change}
 \end{figure}
