@@ -1,23 +1,23 @@
 {
   "schema_version": 1,
-  "title": "Which Winning Continuations Survive One-Way Helper Encodings?",
+  "title": "Auditing Controller Replacement after Environment-Model Change",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "continuation-characterization-20261026-v2",
+  "document_layout_tag": "controller-replacement-audit-20261026-v1",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 285330,
-      "sha256": "1c9526af373d2d0daf9f6bf5661e19e328a23dcab57ec5c9a6783044dbc4eabf"
+      "bytes": 285397,
+      "sha256": "818004a4e3f1d1698961c7c9a82cd3484df8aa8582fd930490851f96394c21e0"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 1168637,
-      "sha256": "41809ade62d05b2ff69232807049592c9ba6fe3262831008c08d95898bae8a47"
+      "bytes": 1168089,
+      "sha256": "8d29afc50e334b196b9e3455468f61b59ff026110c44a09cef259fda48134aa8"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1760027,
-      "sha256": "02a04d347ca2936503023153ca043a7762af5eee333848914e2ff6d904466cfb"
+      "bytes": 1759646,
+      "sha256": "728bec06d7fa74d75ea52a4075929c168b2fe8154a13a32283218d63a06aaa21"
     }
   ],
   "main_pages": 9,
@@ -28,8 +28,8 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "Layout revision 2 removes forced endmatter page breaks and balancing. Conclusion, Acknowledgments and References flow consecutively on page 9; the main paper has 9 total pages including references. The title and normalized full main text are unchanged, and pages 1–8 are pixel-identical to the reviewed first release. A clean build from the new source ZIP reproduces all nine main pages in text, decoded content and RGB pixels. The 136-page supplement and its 65 source files are byte-identical to the previously verified release and inherit its build/visual QA. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
-  "scientific_evidence_tags": "Existing individual fixed-tag citations retained.",
+  "validation": "All nine main pages and changed supplement pages 1, 2 and 136 were visually inspected. The other 133 supplement pages are pixel-identical to the previously reviewed version. All 24 formal theorem/lemma/proposition/corollary/proof environment blocks are byte-identical to the preceding source. A clean extraction of the 90-member ZIP verifies 89 checksums and rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
+  "scientific_evidence_tags": "Historical scientific identifiers remain unchanged; matching document and reader-guide links use the current fixed snapshot.",
   "new_scientific_executions": 0,
   "version": "v71-r10",
   "source_tree": {
@@ -37,5 +37,6 @@
     "archive_prefix": "v71-r10/",
     "files": 90
   },
-  "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted."
+  "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted.",
+  "document_revision": "D08: title and candidate-exclusion framing aligned"
 }

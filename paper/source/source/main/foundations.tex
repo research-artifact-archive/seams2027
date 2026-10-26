@@ -1,10 +1,11 @@
-A patrol robot still owes a charging visit when its operating assumptions
-change. A replacement controller would inherit its position and the monitor
+A patrol robot still owes a charging visit when its environment model
+changes. A replacement controller would inherit its position and the monitor
 recording that request. Before excluding candidate requirements or arranging
 a controller update~\cite{specrepair,degradation,dupdate}, an adaptation
 manager therefore asks: \emph{can a controller still meet these requirements
-from the retained state?} A negative synthesis answer supports exclusion only
-if the query and its translation preserve the continuation being asked about.
+from the retained state?} We audit when a negative translated synthesis
+answer justifies excluding that continuation. This is the candidate-exclusion
+decision in replacement planning.
 
 Reactive synthesis asks for a controller that responds to environment
 inputs. GR(1) specifications combine initial conditions, safety rules and
@@ -49,20 +50,23 @@ correction. For the basic encoding, the central condition is that one winning so
 a safe first-change response available for as long as the helper may wait.
 We make three contributions:
 \begin{enumerate}
-\item \emph{Exact preservation.} We characterize the surviving strict-winning
+\item \emph{Exact preservation for exclusion.} We characterize the surviving strict-winning
 continuations, derive a necessary and sufficient whole-region condition,
 and extend the result to safety duties retained after the change. All three
 results have complete proofs in the main paper.
-\item \emph{Constructive and implementation-bound evidence.} Patrol separates
-responding now from maintaining that ability while winning. Vehicle separates
-positive initialization from preserved continuations. At a fixed Obstacle
-query, releasing only the first-change SYS duty changes the same solver's
+\item \emph{Constructive and implementation-bound evidence.} A constructed
+ENV-only Patrol update separates responding now from maintaining that ability
+while winning. Vehicle separates initialization from continuation preservation.
+At a fixed Obstacle requirements-replacement query, releasing only the
+first-change SYS duty changes the same solver's
 answer from false to true.
-\item \emph{Executable case checks.} The accompanying release connects typed model snapshots to positive
+\item \emph{An exclusion contract and executable checks.} We connect
+query/objective correspondence and preservation to candidate exclusion.
+The accompanying release binds typed model snapshots to positive
 witnesses, loss certificates and saved evidence for Vehicle, Patrol and
 Obstacle B~\cite{artifactrepository}.
 \end{enumerate}
 We first explain the Patrol challenge, give the basic strict result, then
 close Patrol's positive and negative arguments before treating retained duties.
-The cases then connect preservation to tool answers, before the exclusion
-contract and common limits.
+The cases then connect preservation to tool answers, before the
+candidate-exclusion audit and common limits.

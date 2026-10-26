@@ -1,6 +1,6 @@
-# Which Winning Continuations Survive One-Way Helper Encodings?
+# Auditing Controller Replacement after Environment-Model Change
 
-Anonymous research artifact for the accompanying paper. The paper asks when a negative answer from a helper encoding can justify discarding a winning source continuation. Its central result characterizes the continuations preserved by the encoding; the artifact supplies case-specific executable checks and the evidence needed to inspect that result.
+This artifact supports an audit of candidate exclusion in controller-replacement planning after an environment-model change. The paper asks when a negative translated synthesis answer can rule out a continuation from a retained state with pending obligations. Exact preservation results for one-way helper encodings and case-specific executable checks make that inference inspectable; the work does not claim an implemented installation gate.
 
 [Main paper](paper/main.pdf) · [Technical supplement](paper/supplement.pdf) · [Matching source ZIP](paper/source.zip)
 
@@ -36,6 +36,6 @@ Expected: `PASS_LAYOUT_AND_FILE_INTEGRITY_ONLY`. This checks file integrity, nav
 
 The current document snapshot is **v71-r10**, bound by [PAPER_MANIFEST.json](paper/PAPER_MANIFEST.json). Its **24 scientific archives** comprise the 17 earlier public ZIPs and seven additions, all preserved byte for byte. The [evidence index](results/EVIDENCE_INDEX.json) gives 36 reading routes with distinct scopes.
 
-Use this repository URL as the maintained reader entry point. The fixed snapshot is [`continuation-characterization-20261026-v2`](https://github.com/research-artifact-archive/seams2027/tree/continuation-characterization-20261026-v2). Individual scientific evidence retains its own historical identifiers and tags; [versions and citations](docs/versions.md) explain them. Historical pending labels inside frozen packages describe their freeze-time state. Separate outer adoption records bind the exact candidates and do not themselves attest a Git push or scientific replay.
+Use this repository URL as the maintained reader entry point. The fixed snapshot is [`controller-replacement-audit-20261026-v1`](https://github.com/research-artifact-archive/seams2027/tree/controller-replacement-audit-20261026-v1). Individual scientific evidence retains its own historical identifiers and tags; [versions and citations](docs/versions.md) explain them. Historical pending labels inside frozen packages describe their freeze-time state. Separate outer adoption records bind the exact candidates and do not themselves attest a Git push or scientific replay.
 
 Original contributions use the [BSD 3-Clause license](LICENSE). See [third-party notices](docs/THIRD_PARTY_NOTICES.md) for included corpus material and externally restored sources.

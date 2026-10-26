@@ -17,27 +17,27 @@
 \newtheorem{corollary}[theorem]{Corollary}\newtheorem{lemma}[theorem]{Lemma}
 \BeforeBeginEnvironment{corollary}{\Needspace{13\baselineskip}}
 \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
-\title{Which Winning Continuations Survive One-Way Helper Encodings?}
+\title{Auditing Controller Replacement after Environment-Model Change}
 \author{\IEEEauthorblockN{Anonymous authors}}
 \begin{document}\raggedbottom\maketitle
 \begin{abstract}
-A controller adapting to changed requirements must often continue from its
-current state, with obligations still pending. A negative synthesis answer
-can exclude a viable continuation if the encoding used for the query loses
-source-winning states. We characterize exactly what a one-way Boolean-helper
-encoding used in Kind synthesis preserves under strict semantics. Its added
-input permits a previously forbidden environment move one step before
-releasing the controller's safety duty. A continuation survives exactly when
+After an environment-model change, a replacement controller may need to
+continue from the current state with pending obligations. We audit when a
+negative translated synthesis answer can justify excluding such a continuation.
+For the one-way Boolean-helper encoding used in Kind synthesis, we characterize
+exactly which strict-winning source continuations survive. Its input can
+release environment safety one step before controller safety. A continuation survives exactly when
 one winning source strategy keeps a safe response to the helper's first
 change available for as long as the helper may wait.
-This gives a necessary and sufficient whole-region preservation condition
-and an extension for translations that retain safety duties after the change.
-A constructed Patrol update shows why being able to respond now is insufficient:
-a source-winning continuation can lose that ability while meeting its charging
-obligation. Released Vehicle and Obstacle inputs distinguish initialization,
-retained-state preservation and public tool answers. At one fixed Obstacle query, releasing only the first-change system duty
-changes the same solver's Boolean answer from false to true. Accompanying executable checks make the case analyses inspectable. The results establish when preservation can
-support candidate exclusion; they do not establish an operational gate benefit.
+This yields a necessary and sufficient whole-region preservation condition
+and an extension for retained safety duties. A constructed Patrol update
+shows why responding safely now is insufficient: fulfilling a charging
+obligation can destroy that response option. Separate Vehicle and Obstacle
+analyses distinguish initialization, continuation preservation and tool answers.
+At a fixed Obstacle query, releasing only the first-change system duty changes
+the same solver's answer from false to true. Executable case checks make the
+audit inspectable. The results support candidate-exclusion reasoning;
+installation guarantees and operational benefit remain outside the established scope.
 \end{abstract}
 \begin{IEEEkeywords}
 self-adaptive systems, reactive synthesis, continuation preservation,
