@@ -73,9 +73,10 @@ before applying it to Patrol's actual export.
 \input{retained-constraints.tex}
 
 \subsection{The actual export loses the same entry}
-For the 4,800 current states with the displayed layout, a completed native
-reduced calculation finds \textbf{3,280 source winners and 1,104 survivors},
-agreeing with a separate explicit all-state audit. The fixed layout limits
+On the 4,800 current states with the displayed layout, symbolic and explicit
+calculations find \textbf{3,280 source winners and 1,104 survivors}
+(Supplement~U.1). A completed native reduced solve matches the survivor set
+after the required $F$ intersection (Supplement~U.6). The fixed layout limits
 the counted current states, not the typed next inputs: the first-change
 test still permits a checkpoint to move to any typed position. The reduction enforces
 maintenance of $F$ while winning (Supplement~L.1). The same retained entry
@@ -88,7 +89,8 @@ ENV input is legal and the source SYS duty remains. Afterwards ENV is
 unrestricted; the remaining counter/monitor updates permit every typed robot
 position with a typed auxiliary update, independently of the next ENV values.
 Thus $U=D$ and $F=C$, and the all-response argument excludes $(r,0)$ from
-the export's strict-winning region. This is an export-based strict deduction, not an observed public Kind
+the export's strict-winning region. The original-spelling old export also
+loses this entry (Supplement~U.1). This is an export-based strict deduction, not an observed public Kind
 refusal; the direct full-helper attempts remain UNKNOWN (Supplements~U and AB.4).
 
 \subsection{What the retained-state execution shows}

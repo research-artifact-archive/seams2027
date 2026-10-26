@@ -3,24 +3,26 @@
 \begin{tikzpicture}[>=Latex,x=1mm,y=1mm,
 every node/.style={font=\small,align=center,inner sep=1.5mm},
 wide/.style={draw=sourceblue,fill=softblue,rounded corners=2pt,text width=77mm},
-branch/.style={draw,rounded corners=2pt,text width=34mm},
+branch/.style={draw,rounded corners=2pt,text width=34mm,minimum height=21mm,anchor=north},
 phase/.style={fill=white,inner sep=.4mm}]
 \node[wide] (start) at (42,72)
- {Post-update $r$: fixed layout,\\all checkpoints open, no charging.\\
+ {Post-update $r$: fixed layout,\\all checkpoints open, charging unavailable.\\
  Can answer every typed first-change input safely.\\
  Consider any safe SYS strategy.};
-\node[branch,draw=fliporange,fill=softorange] (never) at (20,51)
+\node[branch,draw=fliporange,fill=softorange] (never) at (20,61)
  {\textbf{Never reach $H$}\\Counter zero; request pending.\\ENV fair; SYS justice fails.};
-\node[branch,draw=sourceblue,fill=softblue] (reach) at (64,51)
+\node[branch,draw=sourceblue,fill=softblue] (reach) at (64,61)
  {\textbf{First reach $H$}\\Counter zero.\\Request still pending.};
 \draw[->,thick,sourceblue] (start.south west)++(8,0)--(never.north);
 \draw[->,thick,sourceblue] (start.south east)++(-8,0)--(reach.north);
-\node[wide] (closed) at (42,29)
+\node[wide] (closed) at (42,25)
  {State $x$: distant $A$ closed; robot stays at $H$.\\
  Counter one: \textbf{request cleared, dwell unfinished}.\\
  Some typed first-change input has no safe response.};
-\draw[->,thick,sourceblue] (reach.south)--(closed.north);
-\node[wide,draw=fliporange,fill=softorange] (flip) at (42,7)
+\draw[->,thick,sourceblue] (reach.south)
+ --node[left,font=\scriptsize,align=right,inner sep=.6mm]
+ {One legal\\dwell edge} (closed.north -| reach.south);
+\node[wide,draw=fliporange,fill=softorange] (flip) at (42,3)
  {Encoding-only first change moves blocked $A$ to $H$.\\
  Dwell requires stay; Avoidance requires leave.\\\textbf{No safe response.}};
 \draw[->,thick,fliporange,dashed] (closed.south)

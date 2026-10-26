@@ -20,22 +20,23 @@ obligation/.style={fill=white,text width=35mm,inner sep=.5mm}]
 \node[stage] (helper) at (20,13)
  {\textbf{Helper game}\\Encoded strict\\winning};
 \node[stage] (answer) at (64,13)
- {\textbf{Answering procedure}\\Public action /\\fixed raw solver calls};
+ {\textbf{Answering procedure}\\Public action or\\fixed raw solver call};
 \draw[->,thick,fliporange] (helper.east) -- (answer.west);
 
 % These are proof/use obligations, not verified data-flow arrows.
 \draw[dashed,thick] (question.south -| helper.north) -- (helper.north);
 \node[obligation] at (20,29)
- {\textbf{Preservation}\\for this query};
+ {\textbf{Preservation}\\for queried property};
 \draw[dashed,thick] (question.south -| answer.north) -- (answer.north);
 \node[obligation] at (64,29)
- {\textbf{Query/objective}\\\textbf{correspondence}};
+ {\textbf{Query/objective}\\\textbf{match required}};
 
 \node[text width=80mm] at (42,0)
- {Conceptual use; no implemented gate.};
+ {Conceptual candidate-exclusion contract.};
 \end{tikzpicture}
-\caption{Auditing candidate exclusion requires preservation of the source
-property queried and correspondence between the answering procedure and
-that query and objective. Preservation alone does not establish the latter.}
+\caption{Candidate exclusion requires preservation of the queried source
+property and a match between the chosen procedure, query and objective.
+Dashed links mark obligations; preservation alone does not establish
+query/objective correspondence.}
 \label{fig:overview}
 \end{figure}

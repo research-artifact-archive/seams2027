@@ -4,20 +4,28 @@
 every node/.style={font=\small,align=center,inner sep=1mm},
 cell/.style={draw=black!50,minimum width=22mm,minimum height=8mm},
 blocked/.style={cell,draw=fliporange,fill=softorange}]
+\node at (28,43) {\textbf{Left}};
+\node at (51,43) {\textbf{Middle}};
+\node at (74,43) {\textbf{Right}};
 \node[anchor=east] at (15,32) {Now};
 \node[cell] at (28,32) {clear};
-\node[blocked] at (51,32) {car + obstacle};
+\node[blocked] at (51,32) {stopped car\\+ obstacle};
 \node[cell] at (74,32) {clear};
-\node[anchor=east] at (15,19) {Next};
-\node[blocked] at (28,19) {obstacle};
+\node[anchor=east,align=right] at (15,19) {Next ENV\\input};
+\node[blocked] (nextleft) at (28,19) {obstacle};
 \node[cell] at (51,19) {clear};
-\node[blocked] at (74,19) {obstacle};
-\node[draw=sourceblue,fill=softblue,text width=32mm,rounded corners=1pt]
+\node[blocked] (nextright) at (74,19) {obstacle};
+\node[draw=sourceblue,fill=softblue,text width=32mm,rounded corners=1pt] (left)
  at (31,3) {Left blocked next:\\must choose right};
-\node[draw=fliporange,fill=softorange,text width=32mm,rounded corners=1pt]
+\node[draw=fliporange,fill=softorange,text width=32mm,rounded corners=1pt] (right)
  at (68,3) {Right blocked next:\\must choose left};
-\draw[->,thick,sourceblue] (28,14)--(31,10);
-\draw[->,thick,fliporange] (74,14)--(68,10);
+\draw[->,thick,sourceblue] (nextleft.south)--(left.north);
+\draw[->,thick,fliporange] (nextright.south)--(right.north);
+\node[draw=fliporange,fill=softorange,text width=76mm,rounded corners=1pt]
+ (conflict) at (48,-14)
+ {Both rules constrain the same next lane.\\\textbf{No safe response.}};
+\draw[->,thick,sourceblue] (left.south) -- (conflict.north -| left.south);
+\draw[->,thick,fliporange] (right.south) -- (conflict.north -| right.south);
 \end{tikzpicture}
 \caption{Vehicle's first-change conflict. Both outer lanes blocked next
 is source-forbidden but helper-legal. The current middle obstacle activates

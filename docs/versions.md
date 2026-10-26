@@ -2,15 +2,17 @@
 
 ## Current documents and fixed science
 
-The [repository URL](https://github.com/research-artifact-archive/seams2027) is the maintained reader entry point. The immutable `controller-replacement-audit-20261026-v1` snapshot fixes the **v71-r10** paper/source, its reading routes, and **24 scientific archives**. Seven added packages accompany the unchanged 17 earlier public ZIPs. [PAPER_MANIFEST.json](../paper/PAPER_MANIFEST.json) binds the document triplet; [MANIFEST.json](../reproduce/MANIFEST.json) binds the complete distribution.
+The [repository URL](https://github.com/research-artifact-archive/seams2027) is the maintained reader entry point. The immutable `controller-replacement-audit-20261026-v2` snapshot fixes the **v71-r10** paper/source, its reading routes, and **24 scientific archives**. Seven added packages accompany the unchanged 17 earlier public ZIPs. [PAPER_MANIFEST.json](../paper/PAPER_MANIFEST.json) binds the document triplet; [MANIFEST.json](../reproduce/MANIFEST.json) binds the complete distribution.
 
 R10 is a document and reader-navigation revision. AE-R6, AF-R7 and AG-R9 keep their historical scientific identifiers, archive names and bytes. AE contains the positive source certificates and mode controls. AF retains the earlier bounded false/UNKNOWN diagnostic. AG is the separate completed exact-B false/true pair; it does not erase AF's unresolved result or close earlier UNKNOWNs. No new scientific computation or relocated replay was performed during publication integration.
 
 For a scientific claim, use its fixed evidence version and the archive/member named in the [evidence index](../results/EVIDENCE_INDEX.json). Relocating an outer ZIP does not change its internal member names or an older fixed-tag URL. Pending labels inside a frozen package describe its historical freeze; later outer adoption records identify exact candidate bytes without asserting publication, new execution or fresh-host validation.
 
-The current document title is **Auditing Controller Replacement after Environment-Model Change**. The abstract, introduction, contribution framing, exclusion discussion and conclusion now identify the audited decision in replacement planning. The continuation results, complete proofs and all scientific payloads are retained. Both PDFs, their source bundle and reader links refer to this matching snapshot.
+The current document title is **Auditing Controller Replacement after Environment-Model Change**. D09 clarifies the attribution of Patrol counts, the old-export result, the abstract hypotheses and the scope of the recorded execution. Figures 1, 3 and 4 clarify audit obligations, the legal dwell step and the lane conflict. The candidate-exclusion contract remains distinct from the bounded admission and installation experiments in Supplement U.4 and U.9. The continuation results, complete proofs and all scientific payloads are retained. Both PDFs, their source bundle and reader links refer to this matching snapshot.
 
 ## Earlier layouts and documents
+
+The preceding [D08 title-aligned snapshot](https://github.com/research-artifact-archive/seams2027/tree/controller-replacement-audit-20261026-v1) retains the same title, a nine-page main paper and 136-page supplement. D09 updates editorial explanations, three figures and the matching reader navigation; all 24 scientific archives remain byte-identical.
 
 The preceding [continuation-characterization layout](https://github.com/research-artifact-archive/seams2027/tree/continuation-characterization-20261026-v2) used the title *Which Winning Continuations Survive One-Way Helper Encodings?* and removed forced endmatter page breaks. Its [first layout](https://github.com/research-artifact-archive/seams2027/tree/continuation-characterization-20261026-v1) remains available with the original ten-page main PDF. The current paper retains the continuous Conclusion, Acknowledgments and References flow and has nine pages including references.
 

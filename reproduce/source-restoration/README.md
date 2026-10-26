@@ -12,7 +12,7 @@ python3 -I -S -B reproduce/source-restoration/verify_public.py \
   --archive-dir results/archives --extract-to ../evidence-inspection
 ```
 
-Expected: `PASS_PUBLIC_ARCHIVE_INTEGRITY_ONLY`. This utility covers only the original three archives; the [current verifier](../README.md#verify-downloaded-files) covers all 17.
+Expected: `PASS_PUBLIC_ARCHIVE_INTEGRITY_ONLY`. This utility covers only the original three archives; the [current verifier](../README.md#verify-downloaded-files) covers all 24 scientific archives.
 
 First restore the published specification listings. This uses only the Python standard library:
 
