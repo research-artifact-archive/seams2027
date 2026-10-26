@@ -1,11 +1,13 @@
 Self-adaptive systems are expected to maintain required behavior as their
-environment changes. Adaptation may revise requirements or replace
-controllers~\cite{specrepair,degradation,dupdate}. Continuing an ongoing task
-requires accounting for the current state and pending obligations. Before
-discarding a candidate, an adaptation manager asks: \emph{can a controller
-meet these requirements from the retained state?} We audit when a negative
-translated synthesis answer justifies excluding that continuation during
-replacement planning.
+environment changes. The monitor--analyze--plan--execute loop with shared
+knowledge (MAPE-K) provides a reference architecture for this
+process~\cite{autonomic2003}. Planning may consider revised requirements or
+replacement controllers~\cite{specrepair,degradation,dupdate}. Continuing an
+ongoing task requires accounting for the current state and pending
+obligations. Before discarding a candidate, an adaptation manager asks:
+\emph{can a controller meet these requirements from the retained state?}
+Figure~\ref{fig:overview} highlights this decision; we audit when a negative
+translated synthesis answer justifies exclusion.
 
 Reactive synthesis asks for a controller that responds to environment
 inputs. GR(1) specifications combine initial conditions, safety rules and
@@ -19,11 +21,10 @@ this property \emph{source-kind} when it holds before translation; its full
 definition appears in Section~\ref{sec:source-kind}.
 
 We call the requirements before translation the \emph{source}; after an
-update, these are the candidate's updated requirements. Figure~\ref{fig:overview}
-connects this retained-state question to a translated negative answer.
-Exclusion requires source-property preservation and query/objective
-correspondence. A raw call invokes the underlying solver; a public action
-also selects the translation and solver path.
+update, these are the candidate's updated requirements. Exclusion requires
+source-property preservation and query/objective correspondence. A raw call
+invokes the underlying solver; a public action also selects the translation
+and solver path.
 \input{overview-figure.tex}
 
 The helper is an environment-controlled Boolean input that can change

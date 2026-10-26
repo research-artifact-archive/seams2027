@@ -1,44 +1,48 @@
-% Conceptual reasoning for a retained-state query; not an implemented pipeline.
+% Architectural context based on Kephart and Chess (2003), Fig. 2.
+% The highlighted planning question is this paper's focus, not a new MAPE-K implementation.
 \begin{figure}[!t]
 \centering
 \begin{tikzpicture}[x=1mm,y=1mm,>=Latex,
- every node/.style={font=\footnotesize,align=center,inner sep=.5mm}]
-\path[use as bounding box] (0,0) rectangle (84,50);
-% The change motivates the concrete continuation question below.
-\node[font=\small\bfseries] at (42,47.5) {Environment-model change};
-\draw[->,black!65,line width=.7pt] (42,45.1) -- (42,43.5);
-\draw[sourceblue,fill=softblue,line width=.6pt,rounded corners=1mm]
-  (0,31) rectangle (84,43);
-\node[font=\footnotesize\bfseries] at (42,40.5)
-  {Candidate requirements + retained state};
-\node at (42,37) {(including pending obligations)};
-\node[font=\small] at (42,33.5)
-  {Can a controller meet them from here?};
-% A negative translated answer leaves the exclusion inference to be checked.
-\draw[->,black!65,line width=.7pt] (42,31) -- (42,22.5);
-\node[fill=white,inner sep=1mm] at (42,26.8)
-  {Translation + selected synthesis procedure};
-\draw[fliporange,fill=softorange,line width=.6pt,rounded corners=1mm]
-  (12,15) rectangle (72,22);
-\node[font=\small\bfseries,text=fliporange] at (42,18.5) {Negative answer};
-\node[font=\small\bfseries] at (42,11.3) {Does this justify exclusion?};
-% Both obligations are necessary to use this answer to discard a continuation.
-\draw[draw=black!45,fill=black!2,line width=.5pt,rounded corners=1mm]
-  (0,0) rectangle (84,8);
-\draw[black!25,line width=.4pt] (42,1) -- (42,7);
-\node[circle,draw=sourceblue,text=sourceblue,font=\footnotesize\bfseries,
-  inner sep=.9mm] at (4,4) {1};
-\node[anchor=west,align=left,text width=32mm] at (8,4)
-  {\textbf{Preservation} of\\the source query};
-\node[circle,draw=sourceblue,text=sourceblue,font=\footnotesize\bfseries,
-  inner sep=.9mm] at (47,4) {2};
-\node[anchor=west,align=left,text width=29mm] at (51,4)
-  {\textbf{Query/objective match}\\for this procedure};
+ every node/.style={font=\footnotesize,align=center,inner sep=.4mm},
+ stage/.style={draw=black!55,fill=black!2,rounded corners=1mm,
+   line width=.6pt,text width=22mm,minimum height=8mm}]
+\path[use as bounding box] (-.5,-1) rectangle (84.5,50.5);
+\draw[black!40,line width=.5pt,rounded corners=1.5mm] (0,8) rectangle (84,50);
+\node[font=\small\bfseries] at (42,47) {Autonomic manager};
+\node[stage] (monitor) at (17,19) {\textbf{Monitor}\\Observe system};
+\node[stage] (analyze) at (17,37) {\textbf{Analyze}\\Assess change};
+\node[stage] (execute) at (67,17) {\textbf{Execute}\\Apply adaptation};
+% Planning is the surrounding activity; only candidate exclusion is highlighted.
+\draw[black!55,fill=black!2,rounded corners=1mm,line width=.6pt]
+  (52,26) rectangle (82,44);
+\node[font=\small\bfseries] at (67,41.5) {Plan};
+\draw[fliporange,fill=softorange,rounded corners=.8mm,line width=1pt]
+  (54,28) rectangle (80,38);
+\node[text width=25mm] at (67,33)
+  {\textbf{Candidate exclusion}\\\textcolor{fliporange}{This study}};
+% All four functions use shared knowledge; dashed links are not control flow.
+\node[draw=black!45,fill=white,rounded corners=.8mm,line width=.6pt,
+  text width=18mm,minimum height=8mm] (knowledge) at (41,25)
+  {\textbf{Knowledge}\\Shared models};
+\draw[black!45,dashed,line width=.5pt] (monitor.east) -- (knowledge.south west);
+\draw[black!45,dashed,line width=.5pt] (analyze.east) -- (knowledge.north west);
+\draw[black!45,dashed,line width=.5pt] (52,33) -- (knowledge.north east);
+\draw[black!45,dashed,line width=.5pt] (execute.west) -- (knowledge.south east);
+% A simplified process view closes through the managed system.
+\draw[->,black!70,line width=.8pt] (monitor.north) -- (analyze.south);
+\draw[->,black!70,line width=.8pt] (analyze.east) -- (52,37);
+\draw[->,black!70,line width=.8pt] (67,26) -- (execute.north);
+\node[draw=black!55,fill=black!2,rounded corners=1mm,line width=.6pt,
+  minimum width=84mm,minimum height=6mm] (managed) at (42,2)
+  {\textbf{Managed system}};
+\draw[->,black!70,line width=.8pt] (17,5) -- (monitor.south);
+\draw[->,black!70,line width=.8pt] (execute.south) -- (67,5);
+\node[fill=white,font=\scriptsize,anchor=west] at (18,10.5) {observations};
+\node[fill=white,font=\scriptsize,anchor=east] at (66,10) {actions};
 \end{tikzpicture}
-\caption{Reasoning about a retained-state continuation during replacement
-planning. A translated negative supports exclusion only after checking
-preservation of the queried source property and agreement between the
-procedure, query and objective. This is a reasoning diagram, not an
-implemented pipeline.}
+\caption{Self-adaptation architecture based on Kephart and
+Chess~\cite[Fig.~2]{autonomic2003}. The highlighted planning question is the
+focus of this paper. The surrounding loop provides architectural context;
+it is not implemented here.}
 \label{fig:overview}
 \end{figure}

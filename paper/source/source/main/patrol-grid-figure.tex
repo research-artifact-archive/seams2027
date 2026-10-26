@@ -22,11 +22,17 @@
  \node[anchor=north,font=\footnotesize\bfseries] at (0,-3.3) {$O$};
  \end{scope}
 }
-% (a) The paths between the three waiting points and the checkpoints.
-\draw[<->,sourceblue,line width=1pt,shorten <=1.5mm,shorten >=1.5mm] (0,0) -- (0,14);
-\draw[<->,sourceblue,line width=1pt,shorten <=1.5mm,shorten >=1.5mm] (0,14) -- (28,14);
+% (a) The visit phase rises from O, then moves right between waiting points.
+\draw[->,sourceblue,line width=1pt,shorten <=2.6mm,shorten >=1.6mm] (0,0) -- (0,14);
+\foreach \x/\nextx in {0/14,14/28} {
+ \draw[->,sourceblue,line width=1pt,shorten <=1.6mm,shorten >=1.6mm]
+  (\x,14) -- (\nextx,14);
+}
+% Only checkpoint approach/retreat is bidirectional in this phase.
+% Parallel strokes depict the same grid edges, offset only for visibility.
 \foreach \x in {0,14,28} {
- \draw[<->,sourceblue,line width=1pt,shorten <=1.6mm,shorten >=1mm] (\x,14) -- (\x,28);
+ \draw[->,sourceblue,line width=1pt] (\x-.8,15.6) -- (\x-.8,27);
+ \draw[->,sourceblue,line width=1pt] (\x+.8,27) -- (\x+.8,15.6);
  \draw[sourceblue,fill=white,line width=.8pt] (\x,14) circle (1.5);
 }
 % A recognizable retained robot at O.
@@ -37,15 +43,16 @@
 \node[anchor=west,text=black!60] at (30.5,14) {$y=2$};
 % (b) From C to H via the common return row and O.
 \begin{scope}[xshift=43mm]
- \draw[fliporange,line width=1.05pt] (28,27) -- (28,14) -- (0,14) -- (0,0) -- (25,0);
+ % The shared row-two edges are drawn on separate parallel tracks.
+ \draw[fliporange,line width=1.05pt] (28,27) -- (28,14.8) -- (0,14.8) -- (0,0) -- (25,0);
  \draw[->,fliporange,line width=1.05pt] (28,22) -- (28,18);
- \draw[->,fliporange,line width=1.05pt] (20,14) -- (15,14);
+ \draw[->,fliporange,line width=1.05pt] (20,14.8) -- (15,14.8);
  \draw[->,fliporange,line width=1.05pt] (0,9) -- (0,5);
  \draw[->,fliporange,line width=1.05pt] (8,0) -- (15,0);
  % The restart reuses row 2 after the dwell; dashed blue marks that leg.
- \draw[sourceblue,dashed,line width=.85pt] (28,3.2) -- (28,14) -- (0,14);
+ \draw[sourceblue,dashed,line width=.85pt] (28,3.2) -- (28,13.2) -- (0,13.2);
  \draw[->,sourceblue,line width=.85pt] (28,6) -- (28,10);
- \draw[->,sourceblue,line width=.85pt] (10,14) -- (5,14);
+ \draw[->,sourceblue,line width=.85pt] (10,13.2) -- (5,13.2);
  \draw[sourceblue,fill=white,line width=.8pt] (0,14) circle (1.5);
 \end{scope}
 % Explanatory legend is separated from the spatial panels and landmark labels.
@@ -63,8 +70,8 @@
 \end{tikzpicture}
 \caption{Patrol's source policy on the same $5\times5$ grid in both
 panels ($O=(0,0)$, $H=(4,0)$; checkpoints on row four).
-Every segment consists of unit cardinal moves. Wait two cells below each
+Arrows are offset for visibility; all moves are unit cardinal. Wait two cells below each
 checkpoint while its next blocked flag is true, then approach, visit and
-retreat. The charging and restart legs share row two; restart at $(0,2)$.}
+retreat. Charging and restart share row two; restart at $(0,2)$.}
 \label{fig:patrol-grid}
 \end{figure}
