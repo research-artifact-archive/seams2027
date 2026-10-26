@@ -31,7 +31,8 @@
 \node[font=\footnotesize] at (44,43) {exclude?};
 \node[font=\footnotesize,text=black!65] at (19,47) {pending duties retained};
 % The two obligations are displayed as a reading key, not data-flow arrows.
-\draw[black!25] (0,17.5) -- (84,17.5);
+\draw[draw=black!45,fill=black!2,line width=.5pt,rounded corners=1mm]
+  (0,.2) rectangle (84,17.5);
 \node[font=\small\bfseries] at (42,14) {Two checks before inferring exclusion};
 \node[circle,draw=sourceblue,text=sourceblue,font=\footnotesize\bfseries,inner sep=1mm] at (4,6) {1};
 \node[anchor=west,align=left,text width=34mm,font=\footnotesize] at (8,6)

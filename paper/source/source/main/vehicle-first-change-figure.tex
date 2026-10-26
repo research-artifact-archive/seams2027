@@ -25,7 +25,7 @@
      }
    \end{scope}
  }]
-\path[use as bounding box] (0,0) rectangle (84,57);
+\path[use as bounding box] (0,-5.2) rectangle (84,57);
 
 % Two schematic road panels. No connecting trajectory is asserted.
 \foreach \base in {0,48} {
@@ -57,20 +57,23 @@
 \node[text=black!70] at (66,34) {clear};
 \node at (66,21) {Both outer lanes blocked};
 
-% A two-row constraint table: both rows bind the same next-lane value.
+% The framed table is visually separate from the two road scenes.
+\draw[draw=black!45,fill=black!2,line width=.5pt,rounded corners=1mm]
+  (0,-5) rectangle (84,16);
+% Both rows bind the same next-lane value.
 \node[anchor=west,font=\fontsize{8}{9.2}\selectfont\itshape]
-  at (3,17) {Condition (both true)};
+  at (3,13) {Condition (both true)};
 \node[anchor=west,font=\fontsize{8}{9.2}\selectfont\itshape]
-  at (46,17) {Required next lane};
-\draw[black!30,line width=.35pt] (3,14.5)--(81,14.5);
-\node[anchor=west] at (3,11.3) {Left blocked next};
-\node[anchor=west,text=sourceblue] at (46,11.3)
+  at (46,13) {Required next lane};
+\draw[black!30,line width=.35pt] (3,10.5)--(81,10.5);
+\node[anchor=west] at (3,7.3) {Left blocked next};
+\node[anchor=west,text=sourceblue] at (46,7.3)
   {next lane $=$ \textbf{Right}};
-\node[anchor=west] at (3,7.4) {Right blocked next};
-\node[anchor=west,text=sourceblue] at (46,7.4)
+\node[anchor=west] at (3,3.4) {Right blocked next};
+\node[anchor=west,text=sourceblue] at (46,3.4)
   {next lane $=$ \textbf{Left}};
 \node[text=fliporange,font=\fontsize{8.5}{10}\selectfont\bfseries]
-  at (42,1.8) {No single next lane satisfies both: no safe response.};
+  at (42,-2.2) {No single next lane satisfies both: no safe response.};
 \end{tikzpicture}
 \caption{Vehicle's first-change conflict. Barrier icons mark blocked lanes;
 their positions do not encode distance. The next ENV input is

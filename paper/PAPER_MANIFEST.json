@@ -2,22 +2,22 @@
   "schema_version": 1,
   "title": "Auditing Controller Replacement after Environment-Model Change",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "controller-replacement-audit-20261026-v5",
+  "document_layout_tag": "controller-replacement-audit-20261026-v6",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 295023,
-      "sha256": "5152460a9a11e842f8d7c37df5662c0f04818229c7130cc5a87637af0799a1c5"
+      "bytes": 295689,
+      "sha256": "62e19ab643f71be94a72e7a66b46f519b7ced6b244ddf170592dacf9c7bc5fe8"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 1168093,
-      "sha256": "6067111f146ff877d2485cf380386cca0b00ca13f8bbf71a52a3f2aa9c2cca6d"
+      "bytes": 1168085,
+      "sha256": "5fdf5744b6266cca77c84bd78165bdf842f4ad8bd0c28af719578921184f3347"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1772261,
-      "sha256": "870bfd7f01405a787c14b4221ed53a18930f985b10305861c02e08b6862040fa"
+      "bytes": 1773153,
+      "sha256": "6e351ac74e74f269af2a9812e6ef278920673ba9ec03a2c90088284e87c6b538"
     }
   ],
   "main_pages": 9,
@@ -28,7 +28,7 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "7 of 86 source files differ from D11. The lower Figure 4 explanation and current-snapshot links are updated; Figures 1–3 and all 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
+  "validation": "10 of 86 source files differ from D12. All four figures use clearer visual grouping, and current-snapshot links are updated. All 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
   "scientific_evidence_tags": "Historical scientific identifiers remain unchanged; matching document and reader-guide links use the current fixed snapshot.",
   "new_scientific_executions": 0,
   "version": "v71-r10",
@@ -38,5 +38,5 @@
     "files": 90
   },
   "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted.",
-  "document_revision": "D12: clarified simultaneous lane requirements in Figure 4"
+  "document_revision": "D13: framed figure groups, clearer spacing and case labels"
 }

@@ -3,7 +3,7 @@
 \centering
 \begin{tikzpicture}[x=1mm,y=1mm,>=Latex,
  every node/.style={font=\footnotesize,inner sep=.3mm,align=center}]
-\path[use as bounding box] (-3,-16) rectangle (81,39);
+\path[use as bounding box] (-3,-20) rectangle (81,39);
 \foreach \shift/\heading in {0/{(a) Visit the checkpoints},43/{(b) Charge and restart}} {
  \begin{scope}[xshift=\shift mm]
  \node[font=\small\bfseries] at (14,37) {\heading};
@@ -48,14 +48,17 @@
  \draw[->,sourceblue,line width=.85pt] (10,14) -- (5,14);
  \draw[sourceblue,fill=white,line width=.8pt] (0,14) circle (1.5);
 \end{scope}
-\node[font=\footnotesize,text width=39mm] at (14,-11)
+% Explanatory legend is separated from the spatial panels and landmark labels.
+\draw[draw=black!45,fill=black!2,line width=.5pt] (-3,-20) rectangle (81,-8);
+\draw[black!30,line width=.4pt] (37,-20) -- (37,-8);
+\node[font=\footnotesize,text width=32mm] at (14,-14)
  {Visit $A$, $B$, $C$ in order.\\Circles: waiting points.};
 % Style keys distinguish the two phases that share the same row-two edges.
-\draw[fliporange,line width=1.05pt] (39,-8.8) -- (43,-8.8);
-\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-8.8)
+\draw[fliporange,line width=1.05pt] (39,-11.5) -- (43,-11.5);
+\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-11.5)
  {To $H$; dwell until $c=3$.};
-\draw[sourceblue,dashed,line width=.85pt] (39,-13) -- (43,-13);
-\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-13)
+\draw[sourceblue,dashed,line width=.85pt] (39,-16) -- (43,-16);
+\node[anchor=west,align=left,font=\footnotesize,text width=34mm] at (44,-16)
  {Restart at $(0,2)$.};
 \end{tikzpicture}
 \caption{Patrol's source policy on the same $5\times5$ grid in both
