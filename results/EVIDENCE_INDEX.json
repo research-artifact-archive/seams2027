@@ -72,6 +72,34 @@
     "FixedSevenNative": {
       "archive": "fixed-seven-native-evidence-20261024-v1.zip",
       "member_prefix": "fixed-seven-native/"
+    },
+    "AA-COMPILED44": {
+      "archive": "v71-compiled-cohort-evidence-20261026.zip",
+      "member_prefix": "aa_compiled44/"
+    },
+    "AC-OBSTACLE8CERT98": {
+      "archive": "v71-obstacle-evidence-20261026.zip",
+      "member_prefix": "ac_obstacle8cert98/"
+    },
+    "Z-HISTORICAL-PATROL": {
+      "archive": "v71-historical-patrol-source-20261026.zip",
+      "member_prefix": "z_historical_patrol/"
+    },
+    "AD-PUBLIC-KIND-GUI": {
+      "archive": "v71-public-kind-gui-evidence-20261026.zip",
+      "member_prefix": "ad_gui_kind_ab/"
+    },
+    "AE-R6-POSITIVE-CONTROLS": {
+      "archive": "v71-r6-positive-certificates-and-controls-20261026.zip",
+      "member_prefix": "r6_positive_certificates_and_controls/"
+    },
+    "AF-R7-SAME-SOLVER-DIAGNOSTIC": {
+      "archive": "same-solver-diagnostic-20261026-v1.zip",
+      "member_prefix": "r7_same_solver_diagnostic/"
+    },
+    "AG-R9-COMPLETED-SAME-OBSERVER-PAIR": {
+      "archive": "r9-completed-same-observer-pair-20261026-v1.zip",
+      "member_prefix": "r9_completed_pair/"
     }
   },
   "path_convention": "Archive and member_prefix identify a ZIP under results/archives/. Each row names archive-internal source, model, output and checker members. The source_fetch_required_for_members entries are omitted source-only inputs restored by reproduce/source-restoration/. Historical pkg:/origin:/external: identities are not runtime fallback paths. Repository-level supplemental evidence is under results/evidence/. See the unchanged inner manifests for original/copy identity distinctions.",
@@ -680,12 +708,12 @@
         "evidence/ADAPTATION_ATTEMPT02_FOLLOWUP.json",
         "evidence/ADAPTATION_ATTEMPT03_FOLLOWUP.json"
       ],
-      "expected_saved_result": "COMPLETE_EXECUTED_EPISODE and independent PASS; strict-only node 680 has zero legal ENV successors among 16 typed inputs; cooperative tail 680\u2192524\u2192544\u2192434\u2192434 hits all three SYS justices.",
+      "expected_saved_result": "COMPLETE_EXECUTED_EPISODE and independent PASS; strict-only node 680 has zero legal ENV successors among 16 typed inputs; cooperative tail 680→524→544→434→434 hits all three SYS justices.",
       "limitations": [
         "Constructed in-process model, initial-compatible paused handoff, known failure prefix.",
         "No hardware, arbitrary-state migration, held-out result or timing benchmark.",
         "One executed lasso is separate from complete-graph judgments.",
-        "Failed attempts 01\u201303 remain preserved."
+        "Failed attempts 01–03 remain preserved."
       ],
       "archive": "LiftCausal",
       "checker_sources": [
@@ -1457,6 +1485,321 @@
         "Three active transformations share one family; four route skips are identity controls.",
         "No native regeneration, compiler independence, reachability, frequency or general preservation claim."
       ]
+    },
+    {
+      "id": "AA-COMPILED44",
+      "archive": "AA-COMPILED44",
+      "claim": "Conditioned compiled cohort: 44 registered arms, 43 saved native candidates, 40 accepted arms and four UNKNOWN outcomes; nine sources have four accepted arms. No prevalence or all-eleven completion claim.",
+      "registered_counts": {
+        "sources": 11,
+        "registered_arms": 44,
+        "native_candidates": 43,
+        "accepted_arms": 40,
+        "unknown_arms": 4
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.txt",
+        "COHORT_INDEX.json",
+        "SOURCE_RESTORATION.json",
+        "PUBLIC_PACKAGING_AMENDMENT.json"
+      ],
+      "saved_outputs": [
+        "summary/FINAL_COHORT_SUMMARY.json"
+      ],
+      "checker_sources": [
+        "checkers/audit_core.py",
+        "replay_saved.py"
+      ],
+      "reader_recipe": "README.txt",
+      "execution_scope": "Saved records and static integrity only; no new scientific replay performed for publication."
+    },
+    {
+      "id": "AC-OBSTACLE8CERT98",
+      "archive": "AC-OBSTACLE8CERT98",
+      "claim": "Eight theorem-based saved certificates and all98 switch states. Eight earlier independent exported-game FP attempts (two source and six helper variants) remain UNKNOWN; the initial certificate failure and seven unattempted slots remain separate.",
+      "registered_counts": {
+        "saved_certificates": 8,
+        "switch_states_per_arm": 98,
+        "prior_fixed_point_unknown": 8,
+        "prior_certificate_unknown": 1,
+        "prior_certificate_not_attempted": 7
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.txt",
+        "HISTORICAL_INPUT_CLOSURE.json",
+        "SOURCE_RESTORATION.json",
+        "PUBLIC_PACKAGING_AMENDMENT.json"
+      ],
+      "saved_outputs": [
+        "published_update/direct_certificate_check/amendment_01/FINAL_CERTIFICATE_SUMMARY.json",
+        "published_update/direct_certificate_check/amendment_01/ALL98_FIXED8_MEMBERSHIP.json",
+        "published_update/independent_correspondence/FINAL_STRICT_AUDIT_SUMMARY.json",
+        "published_update/direct_certificate_check/HISTORICAL_PROTOCOL_01.json"
+      ],
+      "checker_sources": [
+        "published_update/direct_certificate_check/amendment_01/check_saved.py",
+        "replay_saved_certificates.py"
+      ],
+      "reader_recipe": "README.txt",
+      "execution_scope": "Saved records and static integrity only; no new scientific replay performed for publication."
+    },
+    {
+      "id": "Z-HISTORICAL-PATROL",
+      "archive": "Z-HISTORICAL-PATROL",
+      "claim": "Historical reported Patrol TRUE/FALSE pair and static provenance only; no rerun or current-default equivalence.",
+      "registered_counts": {
+        "new_executions": 0
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.txt",
+        "SOURCE_RESTORATION.json",
+        "PUBLIC_PACKAGING_AMENDMENT.json"
+      ],
+      "saved_outputs": [
+        "historical/ORIGINAL_ARTIFACT_PATROL_EVIDENCE.json",
+        "historical/AUDIT.json"
+      ],
+      "checker_sources": [],
+      "reader_recipe": "README.txt",
+      "execution_scope": "Saved records and static integrity only; no new scientific replay performed for publication."
+    },
+    {
+      "id": "AD-PUBLIC-KIND-GUI",
+      "archive": "AD-PUBLIC-KIND-GUI",
+      "claim": "Two fixed public GUI observations: old original initializer and updated point r2404 each returned false under selected Kind/JTLV/none/none. Original preparation supervisor UNKNOWN and missing OS exit remain separate from saved predicate adoption.",
+      "registered_counts": {
+        "gui_actions": 2,
+        "A_actions": 1,
+        "B_actions": 1,
+        "preparation_supervisor_unknown": 1
+      },
+      "sibling_dependencies": [
+        "AC-OBSTACLE8CERT98"
+      ],
+      "input_navigation": [
+        "README.txt",
+        "SCIENTIFIC_DISPOSITION.json",
+        "DEPENDENCIES.json",
+        "EXISTING_PACKAGE_BASELINES.json",
+        "SOURCE_RESTORATION.json",
+        "RUNTIME_RESTORATION.json",
+        "PUBLIC_PACKAGING_AMENDMENT.json"
+      ],
+      "saved_outputs": [
+        "gui/A/RESULT.json",
+        "gui/B/RESULT.json",
+        "gui/A/COMPLETION_AUDIT_PUBLIC.json",
+        "gui/B/COMPLETION_AUDIT_PUBLIC.json",
+        "preparation/EXPORT_SUPERVISOR_PUBLIC.json",
+        "preparation/SAVED_GATE_ADOPTION.json",
+        "preparation/SAVED_EXPORT_VERIFICATION.json",
+        "theory/SOURCE_KIND_LEMMA.txt",
+        "theory/LEMMA_ADOPTION.json"
+      ],
+      "checker_sources": [
+        "checkers/check_saved_predicates.py"
+      ],
+      "reader_recipe": "README.txt",
+      "execution_scope": "Saved records and static integrity only; no new scientific replay performed for publication.",
+      "static_verification_siblings": [
+        "aa_compiled44",
+        "ac_obstacle8cert98",
+        "z_historical_patrol"
+      ],
+      "input_models": [
+        "preparation/export/native_result/model.json"
+      ]
+    },
+    {
+      "id": "AE-R6-POSITIVE-CONTROLS",
+      "archive": "AE-R6-POSITIVE-CONTROLS",
+      "claim": "Positive source-winning strategies for exact A/B plus separate all-domain ENV-totality/source binding. Two ordinary-mode true observations contrast with prior selected-Kind false answers. These records do not establish winning-region maximality or all negative states, isolate an exclusive cause, demonstrate controller handoff, close the eight earlier UNKNOWNs, or support an incidence or performance claim.",
+      "registered_counts": {
+        "positive_certificates": 2,
+        "A_states": 5016,
+        "A_policy_edges": 12656,
+        "B_states": 5015,
+        "B_policy_edges": 12672,
+        "rank_maximum_each_phase": 17,
+        "all_domain_states": 6272,
+        "typed_ENV_candidates_each": 98,
+        "legal_ENV_edges": 9536,
+        "malformed_expected_rejections": 50,
+        "qualification_positive_controls": 2,
+        "ordinary_GUI_actions": 2,
+        "ordinary_TRUE": 2,
+        "prior_Kind_FALSE": 2,
+        "direct_rejection_input_hashes": 48,
+        "duplicate_key_null_input_hashes": 2,
+        "prior_fixed_point_UNKNOWN": 8
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.txt",
+        "SCIENTIFIC_DISPOSITION.json",
+        "SOURCE_RESTORATION.json",
+        "PRIOR_EVIDENCE_REFERENCES.json",
+        "TRANSFORMATION_LEDGER.json",
+        "PUBLIC_QUALIFICATION_INPUT_MAP.json",
+        "FUTURE_REPLAY_COMMANDS.txt",
+        "certificates/A.json",
+        "certificates/B.json",
+        "inputs/retained_point_appendix.txt",
+        "theory/FINITE_POSITIVE_PROOF.txt",
+        "theory/INDEPENDENT_CHECKER_RATIONALE.md",
+        "replay/VERIFICATION_ADDENDUM.txt",
+        "replay/INPUT_BINDINGS.json",
+        "replay/QUALIFICATION_REPLAY_INPUT_MAP.json",
+        "replay/TRANSFORMATION_LEDGER.json",
+        "replay/input_identity/V1_PAYLOAD_MAP.json",
+        "verify_replay_integrity.py"
+      ],
+      "saved_outputs": [
+        "c1/stages/checker_A/CHECK_RECEIPT.json",
+        "c1/stages/checker_B/CHECK_RECEIPT.json",
+        "c1/stages/source_ENV_totality_binding/TOTALITY_BINDING_RECEIPT.json",
+        "c1/stages/checker_qualification/qualification/qualification_summary.json",
+        "c1/record_audit/RECORD_AUDIT.json",
+        "c2/A/RESULT.json",
+        "c2/B/RESULT.json",
+        "c2/A/CONSOLE_VISUAL_TRANSCRIPTION.txt",
+        "c2/B/CONSOLE_VISUAL_TRANSCRIPTION.txt",
+        "c2/TRANSCRIPTION_AND_SETTINGS_ATTESTATION.json",
+        "c2/ARCHIVED_SOURCE_BINDING.json",
+        "c2/runtime/PREFS_ORDINARY_APPLIED.txt",
+        "c2/runtime/PREFERENCE_INITIALIZER_JAVAP.txt",
+        "prior_kind/A/RESULT.json",
+        "prior_kind/B/RESULT.json",
+        "replay/records/ROOT_PUBLIC_REPLAY_ADOPTION.json",
+        "replay/records/PUBLIC_REPLAY_EXECUTION_AUDIT.txt",
+        "replay/records/EXACT_ARGV.json",
+        "replay/records/RESTORATION_RECEIPT.json",
+        "replay/runs/public_checker_A/CHECK_RECEIPT.json",
+        "replay/runs/public_checker_B/CHECK_RECEIPT.json",
+        "replay/runs/public_source_ENV_totality_binding/TOTALITY_BINDING_RECEIPT.json",
+        "replay/runs/public_checker_qualification/qualification/qualification_summary.json"
+      ],
+      "checker_sources": [
+        "checkers/check_certificate.py",
+        "checkers/qualify_rejections.py"
+      ],
+      "reader_recipe": "README.txt",
+      "execution_scope": "Original scientific executions plus adopted existing-host replay of exact public v1 scientific inputs; v2 is a later container not scientifically replayed. Static integrity does not re-establish scientific claims. Inner pending labels describe the fixed 2026-10-25T19:15:58.993443+00:00 freeze; the outer dated adoption binding records later candidate adoption only.",
+      "qualification_input_binding": "48 direct original input hashes; two duplicate-key parsing failures have null receipt hashes bound through the verified driver/archive chain.",
+      "referenced_prior_archives": [
+        "AC-OBSTACLE8CERT98",
+        "AD-PUBLIC-KIND-GUI"
+      ]
+    },
+    {
+      "id": "AF-R7-SAME-SOLVER-DIAGNOSTIC",
+      "archive": "AF-R7-SAME-SOLVER-DIAGNOSTIC",
+      "claim": "With the same pinned released raw four-fixed-point solver at exact query B, the unchanged arm completed and returned false. The sole typed-S01-release arm entered the call but stopped at the predeclared raw-stdout capture cap before returning a Boolean and remains UNKNOWN. The intervention effect is unresolved. The old v4 cross UNKNOWN and its two never-entered solve slots remain distinct from the later v5 events. This does not recover historical GUI/dispatch identity or establish exclusive cause, raw-region identity, extracted strategy correctness, or time/memory infeasibility.",
+      "registered_counts": {
+        "executed_history_events": 7,
+        "old_v4_never_entered_solve_slots": 2,
+        "total_models": 5,
+        "raw_calls_entered": 2,
+        "raw_calls_returned": 1,
+        "unchanged_false": 1,
+        "S01_UNKNOWN": 1,
+        "packaging_science_executions": 0,
+        "portable_execution_adapters": 0
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.txt",
+        "REPRODUCTION.txt",
+        "inputs/FIXED_INPUT_BINDINGS.json",
+        "inputs/ORIGINAL_TO_PUBLIC.json",
+        "inputs/REFERENCE_DISPOSITIONS.json",
+        "TRANSFORMATION_LEDGER.json",
+        "source/SOURCE_INDEX.json",
+        "dependencies/DEPENDENCIES.json",
+        "dependencies/SOURCE_RESTORATION.json",
+        "dependencies/THIRD_PARTY_NOTICES.md",
+        "verify_integrity.py"
+      ],
+      "saved_outputs": [
+        "records/HISTORY.json",
+        "records/CAPTURE_INTEGRITY.json",
+        "records/history/v4/UNRUN_SOLVES.json",
+        "records/v5/v5_cross_arm_gate_revalidation.json",
+        "records/v5/v5_solve_unchanged.json",
+        "records/v5/v5_solve_S01_release.json"
+      ],
+      "checker_sources": [
+        "source/v5/cross_arm_gate.py",
+        "source/v5/java/ExactBSameSolverDiagnostic.java",
+        "source/v5/java/BoundedDiagnosticPrintStream.java"
+      ],
+      "reader_recipe": "REPRODUCTION.txt",
+      "execution_scope": "Saved original headless NoIDE observations and disclosed metadata derivatives; no scientific execution or replay during packaging or integration. Exact original harness source is inspection evidence; no portable execution adapter or fresh-host validation is supplied. Frozen inner pending labels are historical; any later root candidate adoption is recorded separately outside the unchanged ZIP."
+    },
+    {
+      "id": "AG-R9-COMPLETED-SAME-OBSERVER-PAIR",
+      "archive": "AG-R9-COMPLETED-SAME-OBSERVER-PAIR",
+      "claim": "At exact B_NEW_POINT_R2404 with its point initializers, the same pinned released raw four-fixed-point solver, backend, ordered justices, fields/bits, translator, lossless observer and finite limits, the sole typed S01 SYS-safety release changes the returned Boolean from false to true. Each arm completed one model and one returned raw call in a separate fresh process. This is a local controlled intervention result.",
+      "registered_counts": {
+        "new_models": 2,
+        "new_raw_calls_entered": 2,
+        "new_raw_calls_returned": 2,
+        "unchanged_false": 1,
+        "S01_true": 1,
+        "complete_captures": 2,
+        "cumulative_models": 7,
+        "cumulative_entered_calls": 4,
+        "cumulative_returned_calls": 3,
+        "remaining_model_slots": 0,
+        "remaining_raw_call_slots": 0,
+        "integration_scientific_executions": 0,
+        "integration_raw_expansion_bytes": 0
+      },
+      "sibling_dependencies": [],
+      "input_navigation": [
+        "README.md",
+        "REPRODUCTION.md",
+        "RESULT_SUMMARY.json",
+        "CLAIM_SUPPORT.json",
+        "SOURCE_INDEX.json",
+        "dependencies/DEPENDENCIES.json",
+        "ORIGINAL_TO_PUBLIC_MAPPING.json",
+        "REFERENCE_AVAILABILITY.json",
+        "TRANSFORMATIONS.json",
+        "verify_public_package.py"
+      ],
+      "saved_outputs": [
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/root_review_integration/ROOT_R9_PAIR_FINAL_SCIENTIFIC_RESULT_ADOPTION.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_unchanged/native_result/RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_unchanged/SUPERVISOR_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/root_launches/solve_unchanged_LAUNCH.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/executions/solve_unchanged/GUARDIAN_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/executions/solve_unchanged/WORKER_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_unchanged/stdout.txt",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_S01_release/native_result/RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_S01_release/SUPERVISOR_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/root_launches/solve_S01_release_LAUNCH.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/executions/solve_S01_release/GUARDIAN_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/executions/solve_S01_release/WORKER_RESULT.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_S01_release/stdout.txt"
+      ],
+      "input_models": [
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_unchanged/native_result/baseline/model.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_unchanged/native_result/arm/model.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_S01_release/native_result/baseline/model.json",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/runs/solve_S01_release/native_result/arm/model.json"
+      ],
+      "checker_sources": [
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/java/ExactBSameSolverDiagnostic.java",
+        "evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/java/BoundedDiagnosticPrintStream.java",
+        "evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/capture_qa.py",
+        "verify_public_package.py"
+      ],
+      "reader_recipe": "REPRODUCTION.md",
+      "execution_scope": "Adopted existing local exact-B same-observer false/true pair. Public verification hashes package/encoded bytes and checks recorded metadata only; full raw integrity is inherited from the previously completed root QA. No new science, raw expansion, relocated replay, fresh-host validation or external publication."
     }
   ],
   "source_fetch_required_for_members": [
@@ -1570,8 +1913,8 @@
     "seams2027-normalized-eleven-evidence/sources/traffic_updated__trivial_1.spectra"
   ],
   "schema": "seams2027-evidence-index-v1",
-  "scientific_archive_count": 17,
-  "reader_row_count": 29,
+  "scientific_archive_count": 24,
+  "reader_row_count": 36,
   "archive_directory": "results/archives",
   "scope": "Member paths are relative to the named archive root; historical provenance strings are identities, not runtime paths. Repository-level supplemental paths are relocated below.",
   "baseline_commit": "11a828f65f91a9b4950a18d189a702fb18ec8ed5"

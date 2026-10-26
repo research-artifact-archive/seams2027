@@ -1,0 +1,140 @@
+{
+  "schema": "v71-r9-completed-pair-package-adoption-binding-v1",
+  "status": "ROOT_ADOPTED_EXACT_AG_COMPLETED_PAIR_PUBLIC_PACKAGE_CANDIDATE",
+  "adopted_utc": "2026-10-26T02:53:24.854683+00:00",
+  "package_frozen_utc": "2026-10-26T00:19:55.097633+00:00",
+  "archive": {
+    "path": "results/archives/r9-completed-same-observer-pair-20261026-v1.zip",
+    "bytes": 10966131,
+    "sha256": "b548e45835d5e52be6c0f68b60b3ada4cd016afa6d8ca448348d768d68445603"
+  },
+  "package_manifest": {
+    "member": "r9_completed_pair/MANIFEST.json",
+    "bytes": 261043,
+    "sha256": "b2b7834bc66408b3c510be49972dc9d68d6141bad958024b96327be1770d293d"
+  },
+  "package_handoff_pin": {
+    "bytes": 16525,
+    "sha256": "8bdf55e3e1e480d2d86fd927de3dfea99c0d8dca4fdcbcc330bd09ac3d7f2aaf"
+  },
+  "scientific_adoption_pin": {
+    "bytes": 13667,
+    "sha256": "a9a938c5a86ad285535a8a35faa5b981ec6a8ec9c9a205b97e1d4ed2d8ab0cb0"
+  },
+  "independent_review_pins": [
+    {
+      "bytes": 10060,
+      "sha256": "ed5b5f0c52df7210adc6497f75ec623ae81b8e095d0d2cae89db184b1ccf0f3f"
+    },
+    {
+      "bytes": 6503,
+      "sha256": "a346c1bf2154fa8e761097fadad7c37f4d542e839fa7a52f0479f5b561fedd10"
+    },
+    {
+      "bytes": 4625,
+      "sha256": "343a66a37051bcacd2509e54a2192b88370d8f77c5f69ece796cfd6da0c312d6"
+    },
+    {
+      "bytes": 4395,
+      "sha256": "a4bcdd16905398b4e100e92fb4fd241463b939d232569dcd534b2523816c9eba"
+    },
+    {
+      "bytes": 2258,
+      "sha256": "0cdc02becc32fea43a1e0c6319cffcb3e886512d9d7fac322252539ab3164b55"
+    }
+  ],
+  "root_adoption_record": {
+    "bytes": 6200,
+    "sha256": "1f0332ad54f18b700543c44697daed01e1363adbfbc153fef3c2a4ffecaa181a"
+  },
+  "root_review_evidence_pins": [
+    {
+      "bytes": 10060,
+      "sha256": "ed5b5f0c52df7210adc6497f75ec623ae81b8e095d0d2cae89db184b1ccf0f3f"
+    },
+    {
+      "bytes": 6503,
+      "sha256": "a346c1bf2154fa8e761097fadad7c37f4d542e839fa7a52f0479f5b561fedd10"
+    },
+    {
+      "bytes": 4625,
+      "sha256": "343a66a37051bcacd2509e54a2192b88370d8f77c5f69ece796cfd6da0c312d6"
+    },
+    {
+      "bytes": 4395,
+      "sha256": "a4bcdd16905398b4e100e92fb4fd241463b939d232569dcd534b2523816c9eba"
+    },
+    {
+      "bytes": 2258,
+      "sha256": "0cdc02becc32fea43a1e0c6319cffcb3e886512d9d7fac322252539ab3164b55"
+    },
+    {
+      "bytes": 5424,
+      "sha256": "a00413f842ad0e7ae2f68399ca58a7dce96665b3cd1dbeb42cacd3e36aa69142"
+    },
+    {
+      "bytes": 2445,
+      "sha256": "e569539c74b9a47d7024fad2c3321bf831c2157bffb0ab8223b57adfd8bf926b"
+    }
+  ],
+  "public_input_adoption_pin": {
+    "bytes": 5426,
+    "sha256": "93616547b41597ca5e2fdc691c79ec4f3e9c5ea3745174aaa64c8d5dfedf5b03"
+  },
+  "public_input_descriptor_pin": {
+    "bytes": 6168,
+    "sha256": "1e07802f90e0a2db2558429dd41be7d7a42f8f7453eef40a24f4216ef695004c"
+  },
+  "public_input_review_evidence_pins": [
+    {
+      "bytes": 10060,
+      "sha256": "ed5b5f0c52df7210adc6497f75ec623ae81b8e095d0d2cae89db184b1ccf0f3f"
+    },
+    {
+      "bytes": 6503,
+      "sha256": "a346c1bf2154fa8e761097fadad7c37f4d542e839fa7a52f0479f5b561fedd10"
+    },
+    {
+      "bytes": 4625,
+      "sha256": "343a66a37051bcacd2509e54a2192b88370d8f77c5f69ece796cfd6da0c312d6"
+    },
+    {
+      "bytes": 4395,
+      "sha256": "a4bcdd16905398b4e100e92fb4fd241463b939d232569dcd534b2523816c9eba"
+    },
+    {
+      "bytes": 2258,
+      "sha256": "0cdc02becc32fea43a1e0c6319cffcb3e886512d9d7fac322252539ab3164b55"
+    },
+    {
+      "bytes": 5424,
+      "sha256": "a00413f842ad0e7ae2f68399ca58a7dce96665b3cd1dbeb42cacd3e36aa69142"
+    },
+    {
+      "bytes": 2445,
+      "sha256": "e569539c74b9a47d7024fad2c3321bf831c2157bffb0ab8223b57adfd8bf926b"
+    }
+  ],
+  "scope": {
+    "adoption_kind": "exact_AG_completed_pair_public_package_candidate",
+    "unchanged_outcome": false,
+    "S01_outcome": true,
+    "both_call_returns_present": true,
+    "both_captures_complete": true,
+    "same_observer_within_new_pair": true,
+    "local_exact_B_intervention_only": true,
+    "cumulative_models": 7,
+    "cumulative_entered_calls": 4,
+    "cumulative_returned_calls": 3,
+    "remaining_model_attempts": 0,
+    "remaining_raw_call_slots": 0,
+    "full_raw_integrity_inherited_from_prior_root_QA": true,
+    "raw_SHA256_recomputed_during_public_integrity": false,
+    "historical_GUI_identity_or_exclusive_cause_established": false,
+    "full_corrected_pipeline_or_strategy_transfer_established": false,
+    "relocated_replay_or_fresh_host_validation": false,
+    "scientific_execution_during_packaging_or_integration": false,
+    "external_publication_asserted": false
+  },
+  "historic_status_interpretation": "Frozen pending labels describe the AG package freeze. This outer record records subsequent root candidate/privacy-input adoption only; it grants no scientific execution, replay or external publication."
+}

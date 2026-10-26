@@ -1,0 +1,32 @@
+\subsection{Cohort: which losses are ruled out by the certified sample?}
+\label{sec:cohort}
+The cohort asks where loss can be ruled out, rather than how often it occurs.
+Loss of all-history source-kind winners is excluded in 58 models for the
+\emph{literal strict target}, although ten models have strict-state losses.
+The remaining model's exact cooperative-loss intersection is UNKNOWN.
+Table~\ref{tab:cohort} shows the complete 49/9/1 partition.
+
+Here \emph{legal-prefix cooperation} means that after every source-legal
+prefix induced by one strict-winning strategy, that same strategy at its
+reached memory permits an ENV-safe, fair continuation. All-history
+source-kind winners form a subset, because they also require cooperation
+after violations.
+\begin{table}[!ht]
+\caption{Stopped, completion-and-certificate-conditioned cohort.
+The preservation target is the complete literal strict encoding.}
+\label{tab:cohort}\centering\small
+\begin{tabular}{@{}rL{69mm}@{}}\toprule
+Models & Established outcome\\\midrule
+49 & Entire strict source-winning region preserved.\\[3pt]
+9 & Strict-state losses occur, but no legal-prefix cooperative source winner is lost.\\[3pt]
+1 & Strict loss is known; the exact cooperative-loss intersection remains UNKNOWN (corpus159, RoboticArm).\\\bottomrule
+\end{tabular}
+\end{table}
+
+No cooperative-initialization loss is confirmed. Of 425 public units,
+70 completed and 59 remained after eleven certification exclusions, without
+outcome filtering within the eligible set. All three cases lie outside this
+stopped cohort. Completion and certification conditioning preclude an
+incidence or rarity estimate for operational Kind/update states or public
+actions. Supplement~AB.5 records case selection and Patrol277's certificate
+exclusion, which its later proof does not undo.

@@ -1,0 +1,75 @@
+\paragraph{Preservation with retained constraints}
+When constraints remain at $b=1$, preservation depends on both
+safe entry and continued safety.
+Let $E_{ij}(s,e')$ and $S_{ij}(s,e',y')$ be the transformed safety
+relations with current helper $i$ and next helper $j$.
+Assume $E_{00}=\rho_e$, $S_{00}=\rho_s$, and $E_{10}=\mathit{false}$.
+All original typed variables and logical monitors remain in $D$;
+the next helper is observed before the system responds.
+Let $A'$ and $G'$ be generalized B\"uchi objectives whose corresponding
+state predicates agree with $A$ and $G$ on $b=0$ states, respectively.
+Require $A^R=A'\land\G\F\neg b$ and $G^R=G'$ globally;
+the predicates may otherwise be arbitrary on $b=1$ states.
+The relations in $01$ and $11$ may otherwise be arbitrary, with
+no next-system dependencies in their environmental component.
+
+Let $U$ be the strict safety-winning region for the helper-true
+subgame, and let $F$ characterize safe entry to that region:
+\begin{align}
+ U &= \nu Z.\,\CPre_{11}(Z),\label{eq:helper-U}\\
+ F &= \{s\in D\mid\forall e'\in E:\ E_{01}(s,e')\Rightarrow{}\nonumber\\
+   &\hspace{25mm}\exists y'\in Y:\ S_{01}(s,e',y')\land(e',y')\in U\}.
+ \label{eq:helper-F}
+\end{align}
+Here $\CPre_{11}$ uses $E_{11}$ and $S_{11}$ with the same typed
+quantifiers and dead-end convention as $\CPre$.
+Define $W_F$ by replacing $C$ with $F$ in the definition of $W_C$,
+including the outer intersection with $F$.
+
+\begin{proposition}[Preservation with retained helper-true constraints]
+\label{prop:general-helper}
+Under these hypotheses,
+\[
+ W_R(\cdot,1)=U,\qquad W_R(\cdot,0)=W_F.
+\]
+Consequently, full original-region preservation holds exactly when
+$W\subseteq F$. If the original initializer is preserved and $b$
+starts at zero, the transformed initial decision is $I_M(W_F)$.
+\end{proposition}
+\begin{proof}
+At $b=1$, persistence keeps the helper true, so the added assumption
+fails and only strict safety remains. The fixed point $U$ supplies safe
+responses back into $U$; conversely, states with safety-winning residual
+strategies form a post-fixed point of $\CPre_{11}$. Thus $W_R(\cdot,1)=U$.
+
+From a winning helper-false state, each legal flip must enter $U$ safely.
+The same holds after every original-legal non-flip prefix, so all reached
+states satisfy $F$. Restriction to those histories wins $M_F$.
+Conversely, from $s\in W_F$, a winning $M_F$ strategy maintains $F$ until a flip, then
+enters $U$ and switches to a uniform safety-winning strategy, available
+in this finite, fully observed game. Without a flip, original duties
+hold; afterwards safety holds and the added assumption fails. Illegal
+inputs release strict duties. This proves $W_R(\cdot,0)=W_F$.
+
+Finally, $W_F\subseteq W\cap F$ gives necessity for preservation.
+If $W\subseteq F$, every state reached by an original winning strategy
+along original-legal histories lies in $W$, hence in $F$; that strategy
+wins $M_F$, proving sufficiency.
+The unchanged initializer gives $I_M(W_F)$.
+\end{proof}
+
+This is standard safety-game reasoning for a one-way helper,
+not a new solving algorithm.
+A nontrivial $S_{11}$ can still give $U=D$; even a proper $U$ can
+permit every winning active state to enter it. Conversely, the
+existence of an immediate $S_{01}$ response does not suffice if
+that response cannot reach $U$. For example, use one input value,
+a Boolean response $y$, true original initial and justice predicates,
+$\rho_e=\mathit{true}$, and $\rho_s=y'$. Then $W=C=D$.
+Let $E_{01}=E_{11}=\mathit{true}$,
+$S_{01}=\rho_s$, and $S_{11}=\neg y\land\neg y'$.
+Every state permits a flip response, but each response reaches
+$y=1$, outside $U=\{y=0\}$. Thus $F$ and the active winning region
+are empty, despite preserving the original first-flip relation.
+In the complete literal case $U=D$ and $F=C$; in the
+complete corrected case $U=F=D$.

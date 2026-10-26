@@ -1,0 +1,106 @@
+\subsection{Obstacle: can one first-change duty alter a solver answer?}
+At exact query B, releasing that duty changes the fixed raw answer from
+false to true. Unlike Patrol's later loss of an initially available response,
+Obstacle has an immediate first-change obstruction at every state. It tests
+the implementation consequence and the effect of releasing the duty.
+
+The published Obstacle Evasion old/update pair~\cite{dupdate} changes
+forbidden locations and recurring SYS visit goals. We consider two exact
+queries, each fixing its input specification and initializer. A uses the old source and its authored initializer. B uses the
+updated ordinary projection---the source with only the parse-time switch
+declaration removed---and fixes a retained point: obstacle $(3,5)$,
+\code{obsWait=true}, robot $(5,5)$. A uses obstacle $(7,7)$,
+\code{obsWait=false}, robot $(1,1)$. Each query has one ENV initial value
+and the specified SYS response; the full universal-ENV/existential-SYS
+initial obligation is retained. B's point was fixed by a seven-edge legal
+prefix in the old winning region before computing the new region. The old
+initializer is not conjoined. This is full requirements replacement,
+not an ENV-only update or preservation of the old pending goals.
+
+\paragraph{Both exact queries have source-kind witnesses}
+Each direct-source certificate alternates between two goal phases; for B
+these mean visiting $(3,7)$ and $(4,8)$, with a finite nonnegative rank that
+is zero exactly at the current goal. A separately implemented checker
+enumerates every legal ENV input and checks the supplied response for full
+SYS safety and closure within the certified states, strict rank decrease with unchanged phase away from
+the goal, and a phase switch at the goal, where no rank decrease is required.
+It also checks the full initial quantifiers: the accepted certificates
+establish a winning strategy for each exact query, not a maximal region.
+The ENV relation is independent of the next SYS response, total on all
+6,272 typed states, and has no justice assumptions. Consequently every
+history of a typed-total completion of the strict witness admits an ENV-safe,
+fair suffix using that same strategy and reached memory. Both exact queries
+therefore have source-kind witnesses (Supplement~AC.5--AC.7).
+
+What a negative tool answer says about those witnesses depends on the
+comparison. Table~\ref{tab:obstacle-comparisons} keeps the three experiments
+separate.
+
+\begin{table}[!ht]
+\caption{Three completed Obstacle comparisons: fixed-strict regions,
+public-mode answers and the exact-B raw intervention.
+The separate exported-game audit group has eight UNKNOWNs.}
+\label{tab:obstacle-comparisons}\centering\small
+\begin{tabular}{@{}L{18mm}L{29mm}L{33mm}@{}}\toprule
+Question & Procedure / change & Result\\\midrule
+Strict survival & Fixed strict solver; source + three helper games & Release and correction recover source regions.\\[4pt]
+Public answer & Ordinary vs Kind; translation and solver change & Ordinary: true; Kind: false (A, B).\\[4pt]
+Raw effect at B & Fixed cooperative solver; duty kept $\to$ released & False $\to$ true.\\\bottomrule
+\end{tabular}
+\end{table}
+
+
+\paragraph{Release and correction recover both strict source regions}
+Table~\ref{tab:obstacle-regions} gives the completed comparison under the
+same released strict GR1Game solver, with source requirements and types fixed.
+The syntactic helper loses every strict source winner. These are strict
+regions, not cooperative regions returned by the public Kind procedure.
+Source avoidance excludes the current robot from the next obstacle footprint.
+On a first helper change a typed input can place the footprint over that
+robot, regardless of its response. Export relation checks bind this
+obstruction to both syntactic games. First-change release removes the SYS duty only on the $0\to1$ quadrant;
+complete correction guards the whole SYS relation. Both recover the source regions state by state.
+These exports have $U=D$.
+
+\begin{table}[!ht]
+\caption{Completed fixed strict-solver comparison: winning-state counts.
+The update region has no initializer; exact point query B is separate.}
+\label{tab:obstacle-regions}\centering\small
+\begin{tabular}{@{}lrr@{}}\toprule
+Game & Old & Update\\\midrule
+Source & 5,016 & 5,015\\
+Syntactic helper, $b=0$ & 0 & 0\\
+First-change release, $b=0$ & 5,016 & 5,015\\
+Complete correction, $b=0$ & 5,016 & 5,015\\\bottomrule
+\end{tabular}
+\end{table}
+
+The old query retains its authored initializer. B's point lies in the recovered
+update region and its singleton initial quantifiers give the corresponding
+strict conclusion. This fixed-strict comparison completed two source and
+six translated native queries (Supplement~AC.2--AC.4).
+
+\paragraph{Public ordinary mode is positive and Kind mode negative}
+For each of A and B, the public ordinary-GR(1) action returned true and the
+Kind action false, once per mode under the same release and backend
+settings. Mode selection changes \emph{both} translation and solver, so
+this comparison alone does not isolate a cause. Code and console records
+identify a static syntactic-reduction/raw-solver path, separate from the
+complete correction. A was already negative before the update
+(Supplement~AE).
+
+\paragraph{Releasing one duty changes the raw answer at B}
+At exact B, two fresh processes called the same cooperative four-fixed-point
+raw solver and completed normally: unchanged returned \textbf{false};
+first-change release returned \textbf{true}. Input and initializer checks
+bind the source certificate and separate ENV-totality result to both raw
+arms' source query, with the helper initially false.
+With translation/backend settings fixed, typed comparisons verify all other
+relations, domains, initializers and ordered justices unchanged; quadrant
+differences verify complete SYS release only on typed $0\to1$, with typed
+$1\to1$ already true. Supplement~AG records this local intervention and
+execution protocol; AF retains the separate earlier false/UNKNOWN protocol.
+
+If used as a continuation gate at B, the public Kind negative would reject
+the source-kind witness above. The raw pair establishes a local intervention
+effect; exclusion still requires the query-and-objective correspondence below.

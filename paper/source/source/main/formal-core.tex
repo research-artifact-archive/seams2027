@@ -1,0 +1,67 @@
+\subsection{Winning while keeping the response option}
+Every typed input is legal on the first change. Define its immediate
+safe-response condition by
+\begin{equation}
+C(s)\quad\Longleftrightarrow\quad
+\forall e'\in E\ \exists y'\in Y:\rho_s(s,e',y').
+\label{hpb:C}
+\end{equation}
+There is no ENV-safety antecedent. A state in $W\cap C$ can win in the
+source and can answer a first change now. Those two facts need not be
+realized by a strategy that keeps the response option available.
+
+Let $W_C$ be the set of states from which there exists \emph{one source
+strict-winning strategy} such that every source-legal finite play prefix
+induced by that strategy ends in $C$, including the length-zero prefix
+consisting of its initial state. The same strategy and its evolving private
+memory must both win and maintain this option. We do not replace the strategy
+or reset its memory at each prefix. Including the initial state also requires
+$C$ at an ENV dead end. This direct definition is the game-based definition
+in Supplement~L.6, expressed as a strategy obligation.
+
+The proof separates what happens if the helper changes from what happens
+if it keeps waiting. It must account for both possibilities with one strategy.
+\begin{theorem}[Exact continuation preservation]\label{hpb:exact}
+Under the stated Mealy, strict and complete-relation hypotheses,
+$(s,0)$ is strict-winning in the encoded game exactly when $s\in W_C$.
+Every state $(s,1)$ is strict-winning.
+\end{theorem}
+\begin{proof}
+At $b=1$, legal edges keep the helper true. All SYS safety duties are
+released, and every infinite legal play violates $\G\F\neg b$.
+Hence every such state is winning.
+
+For necessity, take a winning strategy from $(s,0)$ and restrict it to
+source-legal histories on which the helper stays false. These histories
+have exactly the source safety and liveness obligations, so the restriction
+is source strict-winning. At every finite prefix, including the initial
+state, its winning residual must safely answer every typed first-change
+input. The residual is winning because required safety has held and the
+B\"uchi objectives are prefix-independent. Therefore every state reached
+by this same restricted strategy belongs to $C$, proving $s\in W_C$.
+
+For sufficiency, take a source strict-winning strategy witnessing
+$s\in W_C$. Follow it while the helper remains false and inputs are
+source-legal. It maintains $C$, so at a first change SYS can choose a safe
+response to every typed input. The successor has helper true and is winning
+by the first paragraph. If the helper never changes, the source obligations
+apply unchanged. An encoded-illegal input releases strict duties. This
+strategy wins the encoded game.
+\end{proof}
+
+\begin{corollary}[Whole-region preservation]\label{hpb:full-preservation}
+The encoding preserves the entire source strict-winning region at helper
+false if and only if $W\subseteq C$.
+\end{corollary}
+\begin{proof}
+Necessity follows from $W_C\subseteq W\cap C$. Conversely, every state
+reached by a source-winning strategy along a source-legal prefix has a
+winning residual and therefore belongs to $W$. If $W\subseteq C$, the
+same strategy stays in $C$ and witnesses membership in $W_C$.
+Thus every source winner is preserved.
+\end{proof}
+This is a condition for the \emph{whole region}. It does not say that
+one state in $W\cap C$ survives: the strategy may need to leave $C$ in
+order to win. Patrol will show exactly that. Nor does equality of initial
+answers imply region preservation; initialization may choose its responses
+entirely within the surviving region.

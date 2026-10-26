@@ -1,0 +1,81 @@
+\section{A Continuation That Should Not Be Discarded}
+\label{sec:motivation}
+Consider a robot that repeatedly visits three checkpoints and a charger on a
+$5\times5$ grid. Charging requires a dwell period, and a request monitor
+records whether a charging visit is owed. These duties come from the public
+Patrolling specification, corpus~277~\cite{kindartifact}. We use its unchanged
+source as the new model and construct an old model that additionally fixes
+the displayed layout and keeps all checkpoints open. Removing those old ENV
+restrictions leaves system requirements, types and monitors unchanged.
+Checkpoint positions still remain fixed from one round to the next, but a
+distant checkpoint may now close. This update scenario and reuse policy
+were constructed after diagnosis.
+
+\subsection{The retained entry and two safety rules}
+An allowed old-model step reaches entry $r$: the robot is at the origin
+$O=(0,0)$, all checkpoints are open, charging is unavailable, the dwell
+counter $c$ is zero and the charging request is pending. Its retained route phase
+is ready to visit checkpoint $A$. The checkpoints are at
+$(0,4),(2,4),(4,4)$ and the charger at $H=(4,0)$
+(Fig.~\ref{fig:patrol-grid}).
+\input{patrol-grid-figure.tex}
+
+Write $p$ for the robot position and $z$ for charging availability; primes denote next values. A checkpoint $i$ has
+blocked flag $d_i$ and position $t_i$. Two SYS safety duties will conflict:
+\begin{equation}
+\begin{aligned}
+\text{Dwell:}\quad &(p=H\land c<3)\Rightarrow p'=H,\\
+\text{Avoidance:}\quad &d_i\Rightarrow p'\ne t_i'.
+\end{aligned}
+\label{eq:patrol-conflict}
+\end{equation}
+Avoidance combines the \emph{current} blocked flag with the \emph{next}
+checkpoint position. Source-legal inputs keep positions fixed and cannot
+change a flag while the robot is within one cell of that checkpoint.
+The complete ENV justice list requires only that each of the three
+checkpoints reopen infinitely often. There is \emph{no charging-availability
+justice}: availability is governed by the safety rule $c=3\Rightarrow z'$,
+using the current counter.
+
+\subsection{Responding now is not enough}
+At $r$, staying at $O$ is safe even for an arbitrary typed next input:
+the robot is not dwelling and every current blocked flag is false.
+It also has a source policy that visits the checkpoints, waits for reopening
+when needed, and charges repeatedly; Section~\ref{sec:patrol} proves this
+using the displayed route.
+
+The helper encoding adds an internal ENV Boolean $b$, initially false,
+that can change to true once. This is a game input, not the physical update.
+Table~\ref{tab:timing} shows the challenge: the first change releases ENV
+safety immediately while SYS still owes one safe response. The strict
+meaning of that duty is defined in Section~\ref{sec:formal}.
+\input{helper-timing-table.tex}
+
+Table~\ref{tab:patrol-entry} shows how a legal source prefix reaches the
+point where that response fails.
+ENV keeps the checkpoints open and charging unavailable until the first
+arrival at $H$, then legally closes distant checkpoint $A$ on the next round.
+\begin{table}[!ht]
+\caption{Milestones of Patrol's legal prefix. Reaching $H$ may take
+several rounds; the next row is one dwell edge later. At $x$ the request
+has cleared but the dwell is unfinished.}
+\label{tab:patrol-entry}\centering\small
+\begin{tabular}{@{}L{32mm}ccL{23mm}@{}}\toprule
+State / event & $p$ & $c$ & Request\\\midrule
+Retained entry $r$ & $O$ & 0 & pending\\
+First arrival at $H$ & $H$ & 0 & pending\\
+Next legal dwell; $A$ closes ($x$) & $H$ & 1 & cleared (idle)\\\bottomrule
+\end{tabular}
+\end{table}
+
+Clearing the request records the visit; it does not finish the dwell duty,
+which remains active until the counter reaches three. From $x$, a first-change input places the already blocked checkpoint at
+$H$: Dwell requires the robot to stay there and Avoidance forbids it.
+That input belongs to the translated game; moving a checkpoint is not
+source-legal. A different safe strategy cannot avoid the issue: never
+reaching $H$ leaves the request pending forever, whereas first reaching
+$H$ permits the same legal next round and conflict
+(Fig.~\ref{fig:patrol-motivation}). The proof will cover every safe strategy.
+The question is whether a winning policy can \emph{keep} a response available,
+not only whether the retained state has one now.
+\input{patrol-motivation-figure.tex}

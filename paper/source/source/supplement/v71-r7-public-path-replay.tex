@@ -1,0 +1,202 @@
+\clearpage
+\section*{AE. Public-path correspondence and exact-input replay}
+\label{supp:r7-public-path-replay}
+
+\subsection*{AE.1 What the selected public Kind path establishes}
+\label{supp:r7-static-public-path}
+Kind's printed algorithm applies four fixed points to a reduced
+specification~\cite[Sec.~4.1, p.~4]{kind}. Its authored safety guards are
+$\rho_e\lor b'$ and $\rho_s\lor b$. On the first change $b=0,b'=1$,
+these formulas release ENV safety but retain SYS safety, although the
+accompanying prose describes release from the change onward.
+This timing deduction concerns the printed formulas; it does not identify
+the strict region of the reduced game with the final cooperative region.
+
+The installed source and saved bytecode evidence for release
+\code{1.0.0.202402072123} identifies the selected public action more precisely
+than its preference label alone.
+The \code{Check Realizability} action tests
+\code{synthesisPitermanReduction}, invokes the shipped
+\code{PitermanSyntacticReduction} on the game input, and then applies
+the default translators before constructing the game model.
+For the recorded JTLV configuration, the job invokes
+\code{GR1SeparatedGame}; the exact A/B consoles corroborate that solver branch.
+The default translation list includes state-invariant, pattern, monitor,
+counter and other normalizing translations.
+
+The separate shipped \code{PitermanSemanticReduction} class implements
+the complete-relation correction whose SYS relation is
+$\rho_s\lor b\lor b'$~\cite{spectrarelease2024}.
+It is not selected on this identified static action path.
+The syntactic class acts on authored constraints before the default
+translators; therefore a particular complete exported relation still needs
+its own gate for types, logical auxiliaries, initialization and ordered
+justices. The case-specific gates in AC.4 and AC.6 provide that separate
+saved-model evidence. The presence of a correction class in a release
+does not establish that a public preference calls it.
+
+The adopted static clarification rechecked the retained release/source
+bindings: 20 installed JARs, 16 pinned members, six bundled source copies
+and nine saved disassemblies matched their pins.
+A bounded constant-pool inspection of 690 classes found the public action's
+direct reference to the syntactic class, with no direct reference to the
+separate semantic class in that set.
+This last absence does not exclude reflection, another bundle or runtime
+class substitution. Static control flow is not a historical trace of
+actual class-definition origins.
+
+No intermediate \emph{live GUI} game model was captured for the historical
+A/B actions. The separately saved NoIDE predicates therefore are not
+retroactive observations of that GUI object.
+Both paths use the pinned Spectra input translator but have distinct
+resource-provider initialization and recorded Java versions.
+The ordinary control in AC.7 changes both reduction and solver:
+its observed \code{GR1GameMemoryless} differs from the selected Kind path.
+Consequently the mode contrast does not isolate an exclusive cause of
+the public negative answers.
+
+These distinctions also constrain the negative-answer contract.
+The complete literal characterization and $W\subseteq C$ certify
+\emph{strict-region} preservation for the stated encoding.
+They do not alone certify the soundness of a negative public
+\code{GR1SeparatedGame}/Kind answer for either strict or source-kind
+existence. A contract for a particular oracle must state its returned
+region, the initialization quantifier and the required semantic
+correspondence. The job's final quantified initial test does not by itself
+identify its raw four-fixed-point region $Q$ with $W$, legal-prefix $K$
+or all-history Kind.
+The source-kind positive premises for exact A/B remain the independently
+checked certificates and source-specific bridge in AC.5--AC.7.
+The headless same-\emph{strict}-solver comparisons in AC.2 remain a distinct
+experiment.
+Section~AF preserves the historical exact-B false/UNKNOWN diagnostic.
+Section~AG reports a distinct completed pair with the same observer and
+fixed raw four-fixed-point solver: unchanged false, sole typed-$S_{01}$
+release true. This local intervention effect leaves the historical
+public-action cause unresolved.
+
+\subsection*{AE.2 Recorded replay of exact public v1 inputs}
+\label{supp:r7-exact-public-replay}
+After the original AC.7 stages, the coordinating task performed one
+recorded restoration and the four planned checker stages on the existing
+host, using the exact public v1 checker, qualifier, certificates and
+fixed control bytes. This is a later scoped scientific recheck of
+those inputs. The adopted outcomes were:
+\begin{center}\small
+\begin{tabular}{@{}L{37mm}L{109mm}@{}}\toprule
+Stage & Accepted scope\\\midrule
+Positive A & Positive strategy existence; 5,016 certificate states and 12,656 policy edges.\\
+Positive B & Positive strategy existence; 5,015 certificate states and 12,672 policy edges.\\
+ENV totality / binding & All 6,272 typed states and 98 candidate ENV moves per state; 9,536 legal edges, outdegree 1--9; exact source binding.\\
+Fixed qualification & Two unmodified positive controls accepted and all 50 predetermined malformed inputs rejected with the expected codes.\\\bottomrule
+\end{tabular}
+\end{center}
+A separate record audit passed 1,455 of 1,455 checks. The 50 malformed-input
+rejections measure the fixed checker's observed sensitivity, not negative
+source realizability. The earlier scientific records, original certificates,
+proof text, scientific programs and controls remain unchanged.
+
+\paragraph{Which bytes were replayed.}
+The replayed v1 ZIP has 2,347,279 bytes and SHA-256
+\[
+\text{\path{e1359c08454430ff19c8af2a8322a426d089b8a1c0cd180a2c631f267782ac8b}} .
+\]
+Its 312 payload files are identified in
+\path{replay/input_identity/V1_PAYLOAD_MAP.json} of the later record package.
+Five source inputs were restored once from the already-local official ZIP
+using the exact member selection, 45-byte projection and 124-byte
+point-initializer recipe. All five lengths and hashes matched the frozen
+inputs. No network retrieval was used for that restoration.
+Actual explicit source arguments identify the restored files read by the
+checker. The unchanged \path{source.path} fields in scientific receipts are
+historical logical labels, not the actual read paths when an explicit source
+override is supplied.
+
+The later v2 record package retains these prior scientific payload bytes
+and adds the replay records; the v2 archive itself was not scientifically
+replayed. It is identified as
+\path{v71-r6-positive-certificates-and-controls-20261026.zip},
+2,729,454 bytes, SHA-256
+\[
+\text{\path{7a71e382afb1bca414b107545c8b410ff5b8b9437a6b76aaf67f119937f218a3}} .
+\]
+Its top directory is \path{r6_positive_certificates_and_controls/}.
+Within it, \path{replay/VERIFICATION_ADDENDUM.txt} has SHA-256
+\[
+\text{\path{252cfe0914383b376dcfe8cb79da03cf37b8f87326d3abd913153ed7ab0c5beb}} .
+\]
+These version-specific identities distinguish the later records from the
+immutable v1 release referenced in the opening evidence index.
+The scientific replay was adopted; publication binding of the v2 package
+is a separate decision. We do not infer an unrecorded public tag or claim
+that the old v1 tag identifies the v2 bytes.
+
+\paragraph{Retained replay records and source correspondence.}
+The package's \path{replay/records/} includes the root adoption, input
+freezes, restoration receipt, execution audit and exact argument records.
+\path{replay/runs/} retains the four stage records and the 52 new
+qualification receipts.
+\path{replay/TRANSFORMATION_LEDGER.json} maps original record lengths
+and hashes to their location-sanitized public derivatives.
+Only private location prefixes were replaced; embedded hashes continue
+to identify original records and are resolved through that ledger.
+The original science records in \path{c1/} and \path{c2/} were not rewritten.
+
+All 50 actual replay malformed gzip inputs match the existing public
+controls in both compressed and decompressed bytes.
+\path{replay/QUALIFICATION_REPLAY_INPUT_MAP.json} binds those reused controls
+to the new receipts. Forty-eight receipts directly contain their input hash.
+The two duplicate-key cases fail during parsing before that receipt field
+is assigned, so their hash field remains null. Their raw inputs, frozen
+driver construction and archive/summary bindings retain their provenance;
+the null fields are not replaced with invented values.
+The document source ZIP contains none of these experiment bundles,
+private logs or upstream source bodies.
+
+\paragraph{Resource and execution limits.}
+The four replay stages had wall budgets of 180, 180, 180 and 300 seconds,
+respectively, with CPU limits enforced \emph{per process} by
+\code{RLIMIT\_CPU}; they were not aggregate hard CPU limits across the
+process tree.
+Each qualifier child checker had at most 180 seconds of wall and
+per-process CPU time within the driver's remaining wall budget.
+The 64-MiB per-file limit was distinct from the sampled 1-GiB process-tree
+RSS, 128-MiB stage-output and 512-MiB total-output caps.
+
+All 70 supervisor samples were below their configured caps.
+RSS and directory sizes were sampled, not continuously measured peaks
+or hard memory isolation. The configured interval was 0.25 seconds and the
+largest observed gap was about 0.2941 seconds. Stage and total directory scans
+were sequential, so their values were neither simultaneous nor necessarily
+monotonic during compression and deletion. These diagnostics establish
+no performance advantage.
+
+The four outer scientific invocations used \code{-I -S -B}.
+The adapter started under ordinary Python, and the frozen qualifier's
+52 child checker invocations did not inherit those flags.
+The cleaned environment therefore does not establish fully hermetic
+child startup. The single-attempt statement concerns the recorded
+reservations, ordered invocations and owned run roots, not a
+machine-wide execution census.
+
+\paragraph{Checking the distribution and reading the result.}
+From the v2 package root, the two commands
+\begin{verbatim}
+python3 -I -S -B verify_integrity.py
+python3 -I -S -B verify_replay_integrity.py
+\end{verbatim}
+perform static integrity and replay-record-binding checks.
+They do not execute a scientific checker, qualifier, source restorer
+or GUI action. Their own zero-replay counters do not erase the separately
+recorded historical replay. The package's
+\path{FUTURE_REPLAY_COMMANDS.txt} describes optional future scientific
+interfaces; this manuscript reports the completed historical run only.
+
+The added evidence is existing-host rechecking of the exact public v1
+scientific inputs and their direct-source correspondence.
+It establishes no fresh-host or external reproduction, fully hermetic
+execution, maximal winning region, negative realizability proof,
+closure of the eight previous exported-game UNKNOWNs, exclusive GUI cause,
+deployed handoff or performance advantage. Packaging the v2 records
+performed no further source restoration, scientific rerun or public action.
+

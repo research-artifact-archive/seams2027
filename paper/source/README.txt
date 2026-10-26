@@ -1,36 +1,49 @@
-Anonymous research snapshot: continuation preservation
+Continuation Characterization — v71-r10
 
-Entry points: main/main.tex and supplement/main.tex. This source package
-contains both complete local TeX input closures and their matching PDFs.
-IEEEtran.cls accompanies the main paper; the supplement uses the standard
-article class. Unused historical source files are excluded.
+Which Winning Continuations Survive One-Way Helper Encodings?
+Anonymous authors
+26 October 2026
 
-This snapshot is prepared for anonymous public research-artifact distribution.
-It does not assert submission, acceptance or independent external reproduction.
-The repository's purpose-based pages guide readers to the paper, saved results,
-tool resources, documented checks and provenance. Existing versioned evidence
-references identify the original archived records even if navigation changes.
-The evidence archives themselves are distributed separately from this source
-package. Author-side review records and private research logs are not included.
+Contents (all under the single v71-r10/ directory)
+  main.pdf             Main paper: 10 pages (9 body + 1 references)
+  supplement.pdf       Matching supplement: 136 pages
+  source/main/         20 TeX files and the unchanged IEEEtran class
+  source/supplement/   65 TeX files
+  SHA256SUMS           SHA-256 of every other archived file
 
-Scientific definitions, hypotheses, statements, central proof bodies,
-numerical results, witnesses, negative results and UNKNOWNs are unchanged
-from the verified v69-r1 snapshot. This revision aligns navigation and citation
-text with the public artifact organization. Tool-work disclosures remain in
-Acknowledgments; prior reviews do not rate this new document snapshot.
+Build from a clean extraction
+A standard TeX Live installation with pdfLaTeX and the packages named in each
+main.tex is required. Figures use TeX/TikZ; bibliography entries are included.
+No private data, scientific computation or shell escape is needed.
 
-Build with pdfLaTeX and standard AMS/table, microtype, hyperref, balance,
-placeins, TikZ/PGF, geometry, xurl and listings packages. TeX Live 2025 was
-used. No external bitmap image or BibTeX run is needed. From each source
-folder, run twice:
-  pdflatex -no-shell-escape -halt-on-error -interaction=nonstopmode main.tex
+Inside v71-r10/, create build/main and build/supplement. From source/main,
+run the following three times:
+  pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape -recorder -output-directory=../../build/main main.tex
+From source/supplement, run the following three times:
+  pdflatex -interaction=nonstopmode -halt-on-error -no-shell-escape -recorder -output-directory=../../build/supplement main.tex
+For the frozen build date, set SOURCE_DATE_EPOCH=1792886400 and FORCE_SOURCE_DATE=1
+in the build environment. Generated PDFs appear in the build folders.
+Container identifiers may vary across locations or TeX versions; whole-file
+PDF byte reproducibility is not promised. Document page text, decoded content
+and rendered pixels were compared for the accompanying build environment.
 
-The author-side validation extracts this ZIP into a separate folder, rebuilds
-both documents and compares every page's text and 72-dpi image against the
-included reference PDFs. This validates document reconstruction, not a new
-native solver run or external scientific reproduction. PDF timestamps and
-identifiers may differ. The validation receipt is kept outside this package.
-
-Verify all packaged files except SHA256SUMS itself from this directory:
+Verify integrity from v71-r10/ with a SHA-256 checker, for example on macOS:
   shasum -a 256 -c SHA256SUMS
-or use sha256sum where available.
+The checksum file does not checksum itself.
+
+Reading order and accompanying evidence
+Read main.pdf first. It includes complete proofs of Theorem 1, Corollary 2 and
+Proposition 3. The supplement starts with a reader guide to stable appendix
+labels, the three case-inspection tasks and their exact evidence guides.
+The accompanying artifact and paper reading map use the version identity:
+  continuation-characterization-20261026-v1
+  https://github.com/research-artifact-archive/seams2027/blob/continuation-characterization-20261026-v1/paper/README.md
+This document bundle contains the two PDFs and their closed source inputs.
+Separate experimental archives are identified by the accompanying reading map.
+
+Scope
+Document compilation and integrity checks are distinct from scientific replay.
+They do not establish compiler correctness, saved-region maximality or public
+procedure semantics. No fresh-host scientific reproduction is claimed. The
+supplement preserves the earlier false/UNKNOWN protocol separately from the
+completed exact-B false/true records, and all unresolved results remain UNKNOWN.

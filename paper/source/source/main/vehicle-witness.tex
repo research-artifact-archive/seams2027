@@ -1,0 +1,36 @@
+\subsection{Vehicle: can positive initialization hide lost continuations?}
+Yes. Both the source and syntactic-helper initialized strict queries are
+positive, yet \textbf{1,408 of 8,064 saved source winners are lost}.
+The audit covers all 33,792 typed states, finding 6,656 survivors and zero
+gains~\cite{vehiclewholeartifact}. Zero gains agrees with $W_C\subseteq W$.
+Vehicle188 was outcome-selected in an exploratory sweep~\cite{vehicleartifact};
+the whole-region audit was preregistered. Complete relation checks bind the
+translation to Eq.~\eqref{hpb:literal}, and both region queries use the
+released GR1Game solver~\cite{spectra}.
+
+A retained state nevertheless exposes an immediate loss. The car is stopped
+in the middle lane, only that lane has an obstacle, all lights are green,
+and there are no pedestrians or crosswalk. Its two response rules say:
+if the middle lane is blocked and the left lane is blocked next, move right;
+if the middle lane is blocked and the right lane is blocked next, move left.
+The source ENV rule forbids both outer lanes from being blocked next in
+this situation. A first helper change permits precisely that input, so the
+two SYS rules require different next lanes at once
+(Fig.~\ref{fig:vehicle-first-change}). No speed choice can resolve the conflict.
+\input{vehicle-first-change-figure.tex}
+
+The source can win from this state. A source-legal next input leaves an
+obstacle-free outer lane. Choose it. Thereafter obey the forced lane moves;
+otherwise choose an obstacle-free middle lane. If the middle is blocked,
+stay in the current outer lane or move from the middle to an outer lane. Set speed to one when the selected lane has a green
+light, no pedestrian and no obstacle, and to zero otherwise. After the first
+response the policy selects the middle whenever that lane is free, so its
+recurring availability implies the recurring free-lane goal.
+Supplement~E supplies the invariant, all speed duties and full proof.
+
+For \emph{each} saved source winner, including each loss, there exists an
+initialized Kind strategy and a compatible source-legal play reaching that
+target at time one. Both may depend on the target: this is neither a common
+controller nor forced reachability. Supplements~X and AD.3 give the
+target-specific predecessor and all-history completion proofs. No update,
+public Kind query or replacement execution was performed for Vehicle.

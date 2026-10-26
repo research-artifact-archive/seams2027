@@ -1,0 +1,81 @@
+\documentclass[conference,10pt]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm,booktabs,array,microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{placeins,balance,needspace,etoolbox}
+\newcommand{\DoNotLoadEpstopdf}{}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta,positioning}
+\definecolor{sourceblue}{RGB}{29,83,135}
+\definecolor{fliporange}{RGB}{166,76,0}
+\definecolor{softblue}{RGB}{237,244,250}
+\definecolor{softorange}{RGB}{255,244,232}
+\newcommand{\G}{\mathsf{G}}\newcommand{\F}{\mathsf{F}}
+\newcommand{\CPre}{\operatorname{CPre}}\newcommand{\Pref}{\operatorname{Pref}}
+\newcommand{\EPre}{\operatorname{EPre}}\newcommand{\code}[1]{\texttt{#1}}
+\newtheorem{theorem}{Theorem}\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}\newtheorem{lemma}[theorem]{Lemma}
+\BeforeBeginEnvironment{corollary}{\Needspace{13\baselineskip}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\title{Which Winning Continuations Survive One-Way Helper Encodings?}
+\author{\IEEEauthorblockN{Anonymous authors}}
+\begin{document}\raggedbottom\maketitle
+\begin{abstract}
+A controller adapting to changed requirements must often continue from its
+current state, with obligations still pending. A negative synthesis answer
+can exclude a viable continuation if the encoding used for the query loses
+source-winning states. We characterize exactly what a one-way Boolean-helper
+encoding used in Kind synthesis preserves under strict semantics. Its added
+input permits a previously forbidden environment move one step before
+releasing the controller's safety duty. A continuation survives exactly when
+one winning source strategy keeps a safe response to the helper's first
+change available for as long as the helper may wait.
+This gives a necessary and sufficient whole-region preservation condition
+and an extension for translations that retain safety duties after the change.
+A constructed Patrol update shows why being able to respond now is insufficient:
+a source-winning continuation can lose that ability while meeting its charging
+obligation. Released Vehicle and Obstacle inputs distinguish initialization,
+retained-state preservation and public tool answers. At one fixed Obstacle query, releasing only the first-change system duty
+changes the same solver's Boolean answer from false to true. Accompanying executable checks make the case analyses inspectable. The results establish when preservation can
+support candidate exclusion; they do not establish an operational gate benefit.
+\end{abstract}
+\begin{IEEEkeywords}
+self-adaptive systems, reactive synthesis, continuation preservation,
+controller replacement, verification artifacts
+\end{IEEEkeywords}
+\section{Introduction}\label{sec:intro}
+\input{foundations.tex}
+\input{patrol-entry.tex}
+\FloatBarrier
+\section{What the Encoding Preserves}\label{sec:formal}
+\input{game-model.tex}
+\input{mechanism.tex}
+\input{formal-core.tex}
+\FloatBarrier
+\input{primary-patrol.tex}
+\FloatBarrier
+\section{Evidence and Tool Answers}\label{sec:evidence}
+\input{evidence-overview.tex}
+\input{vehicle-witness.tex}
+\input{published-update.tex}
+\input{cohort.tex}
+\FloatBarrier
+\input{discussion.tex}
+\newpage
+\balance
+\input{conclusion.tex}
+\section*{Acknowledgments}
+OpenAI Codex~\cite{codex} assisted with drafting, formal reasoning, experiment
+design, derivation, implementation, execution, auditing and analysis.
+Claude Code (Opus 5.5) independently drafted an alternate manuscript candidate.
+Claude (Fable 5.1) and ChatGPT Pro reviewed earlier main-paper drafts and both
+candidates; Fable also reviewed supplement drafts and a primary paper.
+Coordinating
+and separate Codex agents reviewed the all-history source-kind additions,
+completed-pair evidence and this revision's editorial plan. These internal
+AI reviews are not human or proof-assistant verification. The supplement
+records the workflow and evidence scope.
+\clearpage
+\nobalance
+\input{references.tex}
+\end{document}

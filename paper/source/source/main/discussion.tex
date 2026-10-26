@@ -1,0 +1,116 @@
+\section{Using and Inspecting the Result}\label{sec:discussion}
+\subsection{An exclusion contract}
+A negative answer can exclude a source continuation only when the query,
+translation and answering procedure support that inference. The result gives
+an implementer's reasoning contract with three steps.
+
+\paragraph{Fix the query and objective}
+Decide whether the question is about a retained state or about all allowed
+initial ENV values and their selectable SYS responses. Also distinguish strict
+winning from a cooperation requirement such as Kind. For a retained entry,
+fields and pending monitors are part of the state. Initial realizability
+cannot substitute for this query, and installing a particular controller
+additionally requires compatible private memory.
+
+\paragraph{Establish preservation for that query}
+Check that the actual translation has the required typed relations, auxiliary
+updates, initializers and ordered justices. For a fixed retained state $s$,
+preservation means $s\in W\Rightarrow s\in W_C$, or
+$s\in W\Rightarrow s\in W_F$ under retained duties
+(Theorem~\ref{hpb:exact} and Proposition~\ref{hpb:retained}). A strategy may
+leave a queried set and must still maintain its response option; immediate
+responses alone are insufficient.
+
+With unchanged initializers and initial $b=0$, initialized strict synthesis
+instead compares the $\forall$ENV$\exists$SYS initial decisions. For an
+initially realizable source, the decision is preserved exactly when every
+allowed ENV initial value admits at least one allowed SYS response in $W_C$
+(or $W_F$). It need not preserve every winning initial response. Source
+initial unrealizability is already preserved by $W_C,W_F\subseteq W$.
+
+Whole-region preservation holds exactly when $W\subseteq C$ or
+$W\subseteq F$. This is sufficient, but generally not necessary, for
+initial-decision preservation. Checking these conditions can require game solving; no inexpensive online
+test is implied.
+
+\paragraph{Establish what the negative answer rules out}
+With the corresponding preservation obligation, a sound negative
+\emph{strict} answer rules out the source property queried: winning from
+the fixed retained state, or initialized realizability. A public Kind procedure
+has a different intended objective; its negative answer needs its own
+correspondence to that source objective. Our strict theorem does not supply
+it.
+
+To rule out source-kind existence, it suffices that such existence imply
+a positive encoded strict answer for the same retained state or initial
+quantifiers. Preserving all strict source winners is therefore conservative.
+Missing preservation or correspondence means exclusion lacks support;
+that is neither a positive source result nor a solver UNKNOWN.
+
+Patrol gives the concrete obstruction: a positive source query lies outside
+$W_F$, so its encoded strict negative cannot exclude it. Obstacle adds a
+source-kind positive premise and negative public answer, with a local
+answer-changing intervention at B. That intervention does not replace the
+query-and-objective correspondence required by the contract.
+
+\subsection{Inspecting the accompanying artifact}\label{sec:artifact}
+The accompanying release~\cite{artifactrepository} provides three checks.
+Vehicle checks saved loss membership and target-specific predecessors.
+Patrol checks the positive policy, all-response countercertificate and typed
+export premises. Obstacle B checks the shared query and sole SYS release
+behind the positive witness and raw false/true pair.
+The supplement reader guide and artifact reading map give the
+detailed tasks and evidence locations.
+
+These checks reuse saved native results and case certificates; file integrity
+and document source closure remain separate from scientific replay.
+
+\section{Scope and Relation to Prior Work}\label{sec:scope}
+\subsection{Limits shared by the cases}
+The cases and conditioned cohort do not estimate operational incidence.
+Positive certificates establish existence, not maximality, while saved-region
+comparisons share native-solver, exporter and type-metadata dependencies;
+the case checks independently validate neither saved-region maximality
+nor the compiler. The exact-B intervention does not reconstruct a historical
+GUI game or establish a corrected public pipeline, controller extraction
+or transfer.
+
+The recorded execution reused Patrol's legal policy; it demonstrated no
+gate-mediated update or new controller installation. The off-assumption
+completion is not a physical recovery demonstration. Existence does not
+transfer arbitrary old-controller memory. We assume prepared candidate
+requirements and a valid hold of the retained entry; a changed state needs
+a verified update bridge or revalidation before installation. Inspection
+cost, benefit over direct source solving, gate/installation benefit and
+performance advantages remain open.
+
+\subsection{Relation to prior work}\label{sec:related}
+Adaptation methods construct choices: multi-tier control prepares alternatives,
+exploration discovers environment behavior, and weakening, degradation and
+recovery change requirements~\cite{dippolito2014multitier,keegan2022discovery,weakening2023,graceful2024}.
+Interpolation and permissive assumptions refine admissible ENV
+behavior~\cite{cavezza2017interpolation,anand2023apa}.
+Our characterization addresses a different step: when a translated negative
+answer justifies excluding a source continuation from those choices.
+
+Dynamic-update synthesis constructs controller
+bridges~\cite{nahabedian2020dynamic,dupdate}; runtime verification retains
+monitors across requirement changes~\cite{runtimeverification2023}.
+These works explain why reached states and pending obligations matter.
+Preservation is a condition to establish before using an encoded negative
+to reject a candidate for such a bridge or installation.
+
+Cooperative synthesis, well-separation and best-effort GR(1) address
+assumption handling and fairness opportunities~\cite{cooperative,friendly,wellsep,besteffort}.
+Kind adds an all-history condition~\cite{kind}; we establish that positive
+source premise separately from strict-region preservation. Extraction has
+additional hypotheses: IROS constrains middle-fixed-point choices
+\cite[author appendix, p.~9]{iros}, while acceleration assumes language
+inclusion~\cite[Secs.~2.3,~4.1]{accelerating}. We do not derive those guarantees
+from the preservation theorem.
+
+Earlier GR(1) work studies preprocessing false negatives, completeness
+conditions and a correction~\cite{klein2011revisiting}, distinguishing
+implication and strict realizability. Our source and encoded games both use
+strict semantics; the existing helper correction and our preservation
+contribution are distinguished in Section~\ref{sec:intro}.

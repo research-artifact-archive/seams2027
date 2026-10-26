@@ -1,0 +1,23 @@
+\subsection{Source-kind witnesses and tool evidence}\label{sec:source-kind}
+Kind adds cooperation to strict winning~\cite{kind}. After \emph{every}
+history induced by the strategy, including histories after ENV initialization
+or safety violations, the same strategy at its actually reached private
+memory must still permit an ENV-safe, fair future. That future reapplies no
+initializer, repairs no past violation and restarts no strict duty. A source
+strict-winning strategy with this additional property is \emph{source-kind}.
+
+Sections~\ref{sec:formal}--\ref{sec:patrol} characterize strict-game
+preservation. We now distinguish source-kind witnesses from public-mode
+and raw solver answers (Fig.~\ref{fig:overview}). A \emph{raw answer} is the
+cooperative four-fixed-point procedure's Boolean for a fixed initialized
+query, not a strict-region count or an extracted controller.
+
+\paragraph{Patrol also has a source-kind continuation}
+The legal policy extends to a source-kind strategy for the same
+point-initialized entry and retained route phase. Its typed-total completion
+covers ENV initialization and safety violations while preserving every
+legal-history output and phase update, and the exact source counter/monitor
+updates throughout. From every induced history, that same strategy at its
+reached memory permits a safe, fair ENV future; Supplements~AD.4--AD.6 give
+the construction and proof. The completion was not implemented or executed,
+and it does not waive the encoded first-change SYS duty.

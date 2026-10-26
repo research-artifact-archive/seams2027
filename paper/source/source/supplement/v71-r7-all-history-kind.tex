@@ -1,0 +1,365 @@
+\clearpage
+\section*{AD. All-history source-kind completions}
+\label{supp:r7-all-history-kind}
+\setcounter{lemma}{0}
+\renewcommand{\thelemma}{AD.\arabic{lemma}}
+\renewcommand{\theHlemma}{AD.\arabic{lemma}}
+
+This section strengthens two source-strategy existence statements without
+changing any saved winning region or execution record. For Vehicle, a universal
+fair input extends each target-specific initialized policy in Section~X.
+For Patrol, a specified completion extends the \emph{new-source continuation}
+at the exact retained entry and reached private phase in Sections~S and U.
+The latter completion is a mathematical construction; it has not been
+implemented, executed or mechanically qualified.
+
+\subsection*{AD.1 All-history cooperation keeps the same strategy}
+\label{supp:r7-kind-definition}
+Let a complete source state be $s=(e,y)$ in the nonempty typed carrier
+$D=E\times Y$. ENV offers the next input $e'$ before SYS chooses $y'$.
+A typed-total strategy supplies a typed response on every typed input history,
+including histories after an ENV assumption violation.
+
+Kind's Definition~3~\cite[Def.~3, p.~4]{kind} requires a strict-winning
+system strategy $S$ to satisfy an additional condition: for every ENV strategy
+and every position $i$ of the induced play, alternative future ENV choices
+can produce an infinite suffix from the reached state $s_i$ satisfying
+\[
+ \G\rho_e\ \land\ \bigwedge_n\G\F J^e_n .
+\]
+There is no ENV initializer $\theta_e$ in this suffix formula. The strategy
+functions in~\cite[p.~3]{kind} retain the history: at a future time $t$ the
+response is $S_T(s_0,\ldots,s_i,\ldots,s_t,e_{t+1})$.
+A finite-memory representation therefore uses its actual reached memory and
+the same strategy's specified updates. Replacing future ENV behavior neither
+reapplies initialization nor discards source monitors or private memory.
+
+For clarity, the separate strict requirement of~\cite[Def.~1]{kind} is
+\[
+\begin{aligned}
+ &(\theta_e\Rightarrow\theta_s)
+ \ \land\
+ \bigl(\theta_e\Rightarrow
+       \G((\mathsf H\rho_e)\Rightarrow\rho_s)\bigr)\\
+ &\qquad{}\land\
+ \left[
+  \left(\theta_e\land\G\rho_e\land\bigwedge_n\G\F J^e_n\right)
+  \Rightarrow\bigwedge_j\G\F J^s_j
+ \right].
+\end{aligned}
+\]
+The historical operator $\mathsf H$ includes the current edge. At the first
+ENV-safety violation its antecedent becomes false and remains false thereafter;
+the whole-play liveness antecedent containing $\G\rho_e$ is also false.
+If $\theta_e$ failed initially, its guarded duties were absent from the start.
+A later locally legal suffix does not repair that history or restore those
+antecedents. This permits strict-preserving completion outside assumption
+compliance. It does not make an arbitrary absorbing completion kind.
+
+The legal-prefix set $K$ used elsewhere in this supplement concerns only
+source-legal prefixes. The all-history condition also concerns positions after
+ENV violations. The following implications are source-specific; they do not
+assert a general equality between these notions or characterize a raw
+four-fixed-point solver region.
+
+\subsection*{AD.2 A universal fair-input lemma}
+\begin{lemma}[Universal fair input]
+\label{supp:r7-universal-fair-input}
+Assume that $\rho_e(s,e')$ is independent of the next SYS response.
+Suppose some typed ENV value $e_*$ satisfies
+\[
+ \forall s\in D:\rho_e(s,e_*),
+ \qquad
+ \forall y\in Y\ \forall n:J^e_n(e_*,y).
+\]
+Then every typed-total strict-winning source strategy is Kind.
+In particular, any typed-total completion of a strict-winning policy that
+preserves its strict obligations has the all-history property.
+\end{lemma}
+\begin{proof}
+Fix the completed strategy $S$, an arbitrary ENV strategy and any induced
+position $i$. The current state need not lie in the source-winning region or
+follow a legal prefix. Keep the full history and $S$'s reached memory, and
+offer $e_*$ forever from the next input onward. The first edge is ENV-legal
+from the actual $s_i$, independently of SYS's response. Totality supplies a
+typed successor in $D$, so the same argument applies inductively.
+The resulting suffix is infinite and satisfies $\G\rho_e$.
+Every ENV justice holds at every state from the first successor onward,
+independently of the SYS output, hence every $\G\F J^e_n$ holds even when
+$J^e_n$ was false at $s_i$.
+This is exactly Definition~3's additional condition. Strict winning is the
+separate premise, retained by the stipulated completion. No restoration of
+SYS fairness after an earlier ENV violation is used.
+\end{proof}
+
+\paragraph{General selector form relocated from the main paper.}
+The following state-dependent form and its proof were in the previous main
+paper. They are retained here without changing the special-case lemmas or
+their historical numbers.
+\newtheorem*{rtenfairselector}{Lemma}
+\begin{rtenfairselector}[Fair ENV selector]
+Suppose $f:D\to E$ is ENV-legal at every typed source state:
+$\rho_e(s,f(s))$. From every typed starting state, suppose every infinite
+path choosing $e'=f(s)$, with arbitrary typed SYS responses, satisfies
+all ENV justices. Then every typed-total strict-winning strategy for the
+source query is Kind.
+\end{rtenfairselector}
+\begin{proof}
+Fix such a strategy, any induced history and a position in it.
+Keep the full prefix and reached memory, and choose $f(s)$ thereafter.
+The first edge is ENV-legal independently of SYS's response. Typed totality
+leaves a state in $D$, so this construction continues indefinitely.
+The selector premise makes the suffix ENV-fair. The same SYS strategy
+therefore satisfies the all-history condition; strict winning remains its
+separate premise. No initializer is reapplied.
+\end{proof}
+With empty ENV justice, all-domain ENV totality supplies such a selector.
+A universally legal constant input satisfying all ENV justices independently
+of SYS is another instance. These are the existing arguments in Supplements
+AC.5 and AD.2. A partial winning policy must first be completed without
+changing initializer responses or response/memory updates that still carry
+strict duties. Patrol instead used a strategy-specific completion;
+the lemma is not being applied to arbitrary Patrol strategies.
+
+\subsection*{AD.3 Vehicle: initialized Kind reachability for each target}
+\label{supp:r7-vehicle-kind-targets}
+The unchanged Vehicle source in Sections~E and X has ten Boolean ENV fields,
+a three-valued lane and speed in $0..10$, with no logical auxiliary fields
+or explicit initializer~\cite{vehicleartifact,vehiclewholeartifact}.
+Write $o_i,p_i,g_i$ for obstacle, pedestrian and green-light inputs for
+lane $i$, and $x$ for the crosswalk input. Its complete ENV safety relation is
+\[
+ \rho_e=
+ (o_1\Rightarrow\neg o'_2)
+ \land(o_2\Rightarrow(\neg o'_1\lor\neg o'_3))
+ \land(o_3\Rightarrow\neg o'_2),
+\]
+and its three ENV justice predicates are $g_i\land\neg p_i\land\neg o_i$.
+The all-clear value
+\[
+ e_{\rm clear}=(o,p,g,x)=(000,000,111,0)
+\]
+makes every consequent in $\rho_e$ true from \emph{every typed current state}
+and makes all three justices true for every typed SYS output.
+Lemma~\ref{supp:r7-universal-fair-input} applies on the full source carrier,
+including states outside $W$. The complete source-predicate correspondence
+and support checks in E and X, and the existing all-clear check over all
+1,024 current ENV values, bind these equations to the saved study.
+This argument does not reuse Obstacle's empty-ENV-justice premise.
+
+For each saved source-winning target $s$, Section~X supplies the predecessor
+\[
+ p_s=(e_{\rm clear};\operatorname{lane}(s),1)
+\]
+that is initially allowed and in $W$, with an original-legal, original-safe
+edge to $s$. Its initial-fiber check also supplies a winning SYS response
+for every allowed initial ENV value. Form the target-specific strategy $S_s$
+as follows. On initial $e_{\rm clear}$ choose $p_s$. On the next input $e(s)$
+take the certified edge and follow a winning continuation from $s$.
+On other next inputs use a winning strategy from $p_s$; on other initial
+ENV inputs choose their certified winning response and continuation.
+Every branch has a winning tail, and the finite designated safe prefix
+does not change a B\"uchi objective. Thus the initialized strategy is strict
+winning.
+
+Complete $S_s$ on ENV-illegal histories without changing its valid
+initializer responses or any response and ordinary memory update still
+carrying a strict duty. Such a typed-total completion exists: after the first
+ENV violation choose typed lane and speed values, preserving the entire
+legal behavior; there is no source AUX update to override.
+Lemma~\ref{supp:r7-universal-fair-input} makes the completed strategy Kind.
+In particular, its designated legal edge is unchanged. The exact conclusion is
+\[
+ \forall s\in W\quad
+ \exists\hbox{ initialized Kind strategy }S_s\quad
+ \exists\hbox{ compatible legal play }\sigma:
+ \quad \sigma_1=s .
+\]
+Here membership in the saved $W$ remains the computational premise described
+in Section~X. Its 8,064 states include the 1,408 saved helper-false losses.
+The strategy and play may depend on $s$; this is neither one shared strategy
+visiting all targets nor forced reachability against every ENV choice.
+The proof adds no native computation, maximality certificate or controller
+execution. The saved solver/exporter/type-map dependencies and
+outcome-based case selection are unchanged.
+
+\subsection*{AD.4 Patrol source equations and the retained seed}
+\label{supp:r7-patrol-kind-source}
+Use the \emph{new} public Patrol source~\cite{kindartifact} with checkpoint
+positions $t_1,t_2,t_3$, blocked flags $d_1,d_2,d_3$, charged flag $z$,
+robot position $p$, charging counter $c$ and request monitor $m$.
+Position coordinates range over $\{0,\ldots,4\}$,
+$c\in\{0,1,2,3\}$ and $m\in\{S0,S1,S2\}$.
+Let $H=(4,0)$ and
+$\operatorname{near}(p,t)\equiv\|p-t\|_\infty\le1$.
+The complete new-source ENV relation is
+\[
+ \rho_e(s,e')=
+ \bigwedge_{i=1}^3(t_i'=t_i)
+ \land
+ \bigwedge_{i=1}^3
+   \bigl(\operatorname{near}(p,t_i)\Rightarrow d_i'=d_i\bigr)
+ \land(c=3\Rightarrow z'),
+\]
+with the three ENV justices $\G\F\neg d_i$.
+The deterministic source updates are
+\[
+ F_c(s)=
+ \begin{cases}
+  \min(3,c+1),&p=H,\\
+  0,&p\ne H,
+ \end{cases}
+\]
+and, writing $T\equiv\neg z\land c\ne3\land p\ne H$,
+\[
+ F_m(s)=
+ \begin{cases}
+  S2,&m=S0\land T,\\
+  S0,&m=S0\land\neg T,\\
+  S1,&m=S1,\\
+  S1,&m=S2\land c=3,\\
+  S0,&m=S2\land c\ne3\land p=H,\\
+  S2,&m=S2\land c\ne3\land p\ne H .
+ \end{cases}
+\]
+These are unique typed values for every typed \emph{current} state.
+They do not depend on the newly offered ENV value or on the selected next
+robot position. In particular, the $c=3$ test has priority in state $S2$,
+and $S1$ remains absorbing.
+
+The retained seed is
+\[
+\begin{aligned}
+ r:\quad &(t_1,t_2,t_3)=((0,4),(2,4),(4,4)),\\
+ & (d_1,d_2,d_3)=(0,0,0),\ z=0,\quad
+ p=(0,0),\ c=0,\ m=S2,\qquad \mu_r=0 .
+\end{aligned}
+\]
+Here $\mu_r$ is the private route phase actually reached at the boundary.
+Sections~S and U certify a strict-winning, legal-prefix cooperative
+continuation at this seed, with the same phase updates.
+Its complete new-source legal graph has 849 states and 12,240 edges:
+legal-input coverage, safety, strict fairness, private-phase identity and
+an ENV-fair continuation from every graph state are checked.
+Section~U.1 binds the source rules and AUX updates to the native predicates.
+We use these existing facts as premises; no graph is recomputed here.
+The source monitor remains $S2$ at $r$ and is not reset to its original
+initializer $S0$.
+
+\subsection*{AD.5 A completion for the new Patrol continuation}
+\begin{lemma}[Patrol completion at the retained seed]
+\label{supp:r7-patrol-kind-completion}
+The certified new-source policy from $(r,\mu_r)$ has a typed-total
+completion that is strict winning and satisfies Definition~3's all-history
+ENV-suffix condition at every position induced from that seed.
+It preserves every legal-history output and private-phase update, and the
+exact counter and monitor update equations on every transition.
+\end{lemma}
+\begin{proof}
+\begingroup\interlinepenalty=10000
+Let
+$Q=\{(0,0),(0,4),(4,0),(4,4)\}$.
+A checkpoint can be near at most one member of $Q$: distinct corners have
+Chebyshev distance four, whereas a point near both would bound that distance
+by two. Three checkpoints therefore leave at least one corner outside all
+three neighborhoods. Let $q(t_1,t_2,t_3)$ select the first such corner in a
+fixed order. This is a total deterministic function for every typed layout,
+including coincident checkpoints and layouts violating the original initializer.
+\par\endgroup
+
+Keep the original private route memory $\mu$ and add a private Boolean
+$\beta$, initially false at the retained seed. Equivalently, $\beta$ records
+an actual ENV-safety violation in the complete history.
+It is strategy memory, not a logical source field or the reduction's helper.
+Given current $s$ and the offered typed input $e'$, set
+\[
+ \beta'=\beta\lor\neg\rho_e(s,e').
+\]
+If $\beta'=0$, use exactly the certified policy's response and private-phase
+update. If $\beta'=1$, choose
+\[
+ p'=q(t_1',t_2',t_3'),\qquad
+ c'=F_c(s),\qquad m'=F_m(s),\qquad \mu'=\mu .
+\]
+Once true, $\beta$ remains true; the original phase is frozen, never reset
+or resumed at an invented phase. The rule is defined for every typed input,
+including repeated checkpoint relocations. Every resulting state with
+$\beta=1$ has $p=q(t_1,t_2,t_3)$, outside all current checkpoint neighborhoods.
+The current-state AUX equations remain exact, including an absorbing $S1$.
+
+Before any actual ENV violation, the completion is precisely the certified
+strict-winning policy. At the first violating edge and thereafter, the
+historical strict-safety antecedent and the whole-play liveness antecedent
+containing $\G\rho_e$ are false. The possibly nonlocal response to $q$ is used
+only on those edges. It does not release movement, dwell or avoidance duties
+on a source-legal prefix. All earlier required responses are unchanged, and
+the AUX equations are preserved even after strict duties are released.
+Thus the completed strategy is strict winning from the seed.
+
+Now fix an arbitrary induced history and position $i$ and keep this same
+completed strategy and its reached memory $(\mu_i,\beta_i)$.
+If $\beta_i=0$, the position belongs to a legal prefix of the certified policy.
+Its legal-prefix cooperation supplies an ENV-safe, ENV-fair suffix from
+precisely that reached phase. Along this suffix the completion follows the
+same policy and $\beta$ remains false.
+
+If $\beta_i=1$, retain all checkpoint coordinates and choose all next blocked
+flags false and the next charged flag true, forever.
+On the first edge the neighborhood-freeze antecedents are false,
+coordinate persistence holds, and $c=3\Rightarrow z'$ holds.
+Because the layout is retained, the next robot position is the same selected
+corner. Induction gives an infinite ENV-safe suffix.
+Every state from its first successor onward satisfies all three $\neg d_i$,
+so all ENV justices hold. This works for every reached $c,m$ and private
+phase: $z'=1$ handles $c=3$, and no ENV condition constrains $m$.
+The same strategy keeps $\beta=1$ and the reached phase.
+No source initializer, monitor initializer or private-memory initializer
+is reapplied when ENV changes its future choices. The suffix need not restore
+SYS fairness after the past violation and does not make that past legal.
+Both cases establish Definition~3's condition.
+\end{proof}
+
+\subsection*{AD.6 Initialization, execution and proof-review limits}
+\label{supp:r7-patrol-kind-limits}
+Lemma~\ref{supp:r7-patrol-kind-completion} concerns a continuation from the
+actual retained state and reached phase. An initialized mathematical form uses
+the explicit point-continuation predicates
+\[
+ \theta_e^r(e)\equiv e=e_r,\qquad
+ \theta_s^r(e,y)\equiv y=y_r
+\]
+and the original \emph{new-source} transition and justice relations.
+For the matching ENV initial value choose the seeded output and $\mu_r$
+with $\beta=0$.
+For any other typed ENV initial value $\theta_e^r$ is false: choose
+$p=q(t_1,t_2,t_3)$, retain $c_r,m_r,\mu_r$, and set $\beta=1$.
+Its point-initializer-guarded strict duties are absent and the bad-initialization
+branch has the same fair suffix proved above.
+This is the initialized form of the same continuation-existence statement,
+not reapplication of the public source initializer or a runtime reset.
+
+The public new initializer admits other checkpoint layouts; the certificate
+at $r$ does not provide winning responses for all of them.
+We assert neither full original-initializer Kind realizability of that source,
+nor old-source initialized all-history Kind, nor kindness of arbitrary sinks.
+For example, a constant-position sink can remain near a blocked checkpoint
+forever, forcing its blocked flag to stay true on every legal ENV suffix;
+then its $\G\F\neg d_i$ assumption cannot hold. Exact AUX updates alone do
+not remove that obstruction. This example does not diagnose the completion
+of an uninspected executable controller.
+
+The new $\beta/q$ completion has not been implemented, executed or mechanically
+qualified. The recorded graph and software handoff certify the original
+policy's legal behavior, not execution of this new completion.
+Its nonlocal move after an ENV violation is formal off-assumption behavior,
+not a physical-recovery claim. Vehicle likewise retains its target-dependent
+existential quantifiers and its saved-region trust boundaries.
+Neither proof supplies a transformed-game Kind identity, a raw-four-fixed-point
+or public-GUI answer, a new native region, a maximality certificate,
+an incidence estimate or a resolution of any recorded UNKNOWN.
+
+These source-level arguments were checked in the coordinating Codex review
+and a separate Codex proof review against the primary Kind definition and
+source equations. They are proof-only additions, not proof-assistant
+verification, independent human review or new scientific execution.
+

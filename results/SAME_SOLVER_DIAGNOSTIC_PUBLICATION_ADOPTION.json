@@ -1,0 +1,113 @@
+{
+  "schema": "v71-r8-diagnostic-package-adoption-binding-v1",
+  "status": "ROOT_ADOPTED_EXACT_AF_DIAGNOSTIC_PUBLIC_PACKAGE_CANDIDATE",
+  "adopted_utc": "2026-10-25T22:27:17.406441+00:00",
+  "package_frozen_utc": "2026-10-25T22:04:05.077925+00:00",
+  "archive": {
+    "path": "results/archives/same-solver-diagnostic-20261026-v1.zip",
+    "bytes": 6109453,
+    "sha256": "a63007acd7fc444cf245c015a6e1a7c8352729702c3fd60a6d6cc62cab16b951"
+  },
+  "package_manifest": {
+    "member": "r7_same_solver_diagnostic/MANIFEST.json",
+    "bytes": 80548,
+    "sha256": "b735ea6ce441d908cafb650e6c09fded6dc966973199ff40f8301d503e721d8a"
+  },
+  "public_input_adoption_pin": {
+    "bytes": 3802,
+    "sha256": "86d7dcf058974a72e878d1165042d6486df1e92ce99b0797472eac0b4e076c91"
+  },
+  "public_input_descriptor_pin": {
+    "bytes": 9872066,
+    "sha256": "e4e177bba4ba979e2149bf77bb077f43f3d3431ae352b2a412e0404a68c483aa"
+  },
+  "privacy_review_pin": {
+    "bytes": 15858,
+    "sha256": "b33171534b44e2899433eae230cc9fa9b15f3aa376f85d1c7507914aec36d5ef"
+  },
+  "public_input_review_evidence_pins": [
+    {
+      "bytes": 4465,
+      "sha256": "925a8a9657487da0fc54275ef3500331f86b58bbeb45c46ff62ba7994d40372b"
+    },
+    {
+      "bytes": 15858,
+      "sha256": "b33171534b44e2899433eae230cc9fa9b15f3aa376f85d1c7507914aec36d5ef"
+    },
+    {
+      "bytes": 11682,
+      "sha256": "d2bd9af73bfa46e6efd4f7e2b958ac6b638ae826ac6d7249332dfad2e6537a96"
+    },
+    {
+      "bytes": 11158,
+      "sha256": "09d93aaa8f2419ebca83e46e88a805e455bc712575eded8fe7b16f8285b0f78a"
+    },
+    {
+      "bytes": 30403,
+      "sha256": "4cba66210005479c7fd05bfee3a16c9ba2ce2f20ccf1df1818cc60cd9e59a4fd"
+    },
+    {
+      "bytes": 1066605,
+      "sha256": "c2692028956c82ffefeca891b89faa650d66814f03049a27e50d8fe9df12ea90"
+    }
+  ],
+  "package_handoff_pin": {
+    "bytes": 27644,
+    "sha256": "48acd641397d3f28e52665d1d2e10ddc4b236d4beeac85b84a0ba61e2a8b2be8"
+  },
+  "scientific_adoption_pins": [
+    {
+      "bytes": 14018,
+      "sha256": "05d09f697e8b74fc2f54369a9ee56c8e0ee8cb2c0814385cede43a4fc6351a84"
+    },
+    {
+      "bytes": 1600,
+      "sha256": "276b812323c4e7983031ff01c48b5b60ffdf0d4c7f51fc21088a4225aa33602d"
+    }
+  ],
+  "root_adoption_record": {
+    "bytes": 4363,
+    "sha256": "395a2ee138a677b489d2b78d5e317ae75882afadf0b9f80dc9d8e776c5659299"
+  },
+  "root_review_evidence_pins": [
+    {
+      "bytes": 4465,
+      "sha256": "925a8a9657487da0fc54275ef3500331f86b58bbeb45c46ff62ba7994d40372b"
+    },
+    {
+      "bytes": 11682,
+      "sha256": "d2bd9af73bfa46e6efd4f7e2b958ac6b638ae826ac6d7249332dfad2e6537a96"
+    },
+    {
+      "bytes": 11158,
+      "sha256": "09d93aaa8f2419ebca83e46e88a805e455bc712575eded8fe7b16f8285b0f78a"
+    },
+    {
+      "bytes": 15858,
+      "sha256": "b33171534b44e2899433eae230cc9fa9b15f3aa376f85d1c7507914aec36d5ef"
+    },
+    {
+      "bytes": 2063,
+      "sha256": "e54ec6e9b83db380c6acaef4c5174c5c190131b2471bf722b9b2e785aab0bf55"
+    }
+  ],
+  "scope": {
+    "adoption_kind": "exact_AF_diagnostic_public_package_candidate",
+    "unchanged_outcome": false,
+    "S01_outcome": "UNKNOWN",
+    "S01_Boolean_present": false,
+    "S01_capture_complete": false,
+    "S01_immediate_observed_failure": "RAW_STDOUT_CAP",
+    "intervention_effect": "UNRESOLVED",
+    "executed_history_events": 7,
+    "prior_v4_cross_status": "UNKNOWN",
+    "prior_v4_never_entered_solve_slots": 2,
+    "scientific_execution_during_packaging_or_integration": false,
+    "portable_execution_adapter_supplied": false,
+    "relocated_scientific_replay": false,
+    "fresh_host_validation": false,
+    "historical_GUI_cause_resolved": false,
+    "external_publication_asserted": false
+  },
+  "historic_status_interpretation": "Pending/unadopted labels inside the frozen AF archive describe its freeze-time state. This outer record records subsequent root candidate adoption only; it does not assert publication or scientific replay."
+}

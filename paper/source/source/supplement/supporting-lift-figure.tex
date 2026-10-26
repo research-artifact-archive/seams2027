@@ -1,0 +1,17 @@
+\begin{figure}[!ht]
+\centering
+\begin{tikzpicture}[>=Latex,every node/.style={font=\small,align=center},
+state/.style={draw,rounded corners=2pt,text width=2.8cm,minimum height=1.15cm,inner sep=4pt}]
+\node[state,fill=softblue,draw=sourceblue] (before) at (0,0)
+ {Floor 2 only\\Both endpoint\\buttons pressed};
+\node[state,fill=softorange,draw=fliporange] (after) at (4.0,0)
+ {Floors 2 and 3\\No legal\\next input};
+\draw[->,thick] (before.east)--(after.west);
+\node[font=\footnotesize] at (2,1.05) {SYS-safe response};
+\end{tikzpicture}
+\caption{A source-safe Lift response makes the ENV-owned floor invariant
+false. The returned graph fails cooperation; another policy for the same
+source contract passes. Full source values and the initialized prefix
+are in Supplement~H.}
+\label{fig:si-lift-admission}
+\end{figure}

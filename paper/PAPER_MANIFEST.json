@@ -1,41 +1,41 @@
 {
   "schema_version": 1,
-  "title": "Continuation Preservation in Boolean-Helper Synthesis for Controller Replacement",
+  "title": "Which Winning Continuations Survive One-Way Helper Encodings?",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "reader-layout-20261024-v1",
+  "document_layout_tag": "continuation-characterization-20261026-v1",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 375864,
-      "sha256": "4c589ce123812fd002910f8d0fac276da62429069f1a982c00938437bb3fbbaa"
+      "bytes": 285457,
+      "sha256": "4781692fdcaac4a4573cac8ef3efc81ca4cb3113575ef7cdc9425b7ce802dd93"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 980436,
-      "sha256": "270eb000fb781ffcec92286cdf869fecfced02eba73602898dfe0b49ec96125c"
+      "bytes": 1168637,
+      "sha256": "41809ade62d05b2ff69232807049592c9ba6fe3262831008c08d95898bae8a47"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1611755,
-      "sha256": "e6fd9f30686a84bd465cf8a9b1f035f718c9a1c13151a531c0be4d23fca09c43"
+      "bytes": 1759960,
+      "sha256": "80cac1290fecf1ccd203a84f4497296f9fd2176577efa3272b17c772aa1c3eea"
     }
   ],
-  "main_pages": 11,
-  "supplement_pages": 99,
+  "main_pages": 10,
+  "supplement_pages": 136,
   "source_entrypoints": [
-    "paper/source/main/main.tex",
-    "paper/source/supplement/main.tex"
+    "paper/source/source/main/main.tex",
+    "paper/source/source/supplement/main.tex"
   ],
-  "matching_source_files": 71,
-  "zip_members": 75,
-  "validation": "Both documents rebuilt from source ZIP in a separate directory; all 110 page texts and 72-dpi images agree with supplied PDFs.",
+  "matching_source_files": 86,
+  "zip_members": 90,
+  "validation": "The main paper has nine body pages and one reference page. Both documents were compiled from the closed source archive in a clean extraction; all 146 rebuilt pages matched the supplied PDFs in extracted text, decoded page content and rendered RGB pixels in the accompanying build environment. All main pages were individually inspected; the unchanged supplement inherits the reviewed byte-identical D05 PDF and source. References, numbered internal links, fonts, source closure and placeholders were checked. These are document and package checks, not scientific replay or fresh-host scientific reproduction; whole-PDF byte reproducibility across environments is not promised.",
   "scientific_evidence_tags": "Existing individual fixed-tag citations retained.",
   "new_scientific_executions": 0,
-  "version": "v70-r1",
+  "version": "v71-r10",
   "source_tree": {
     "directory": "paper/source",
-    "archive_prefix": "anonymous-v70-r1-source/",
-    "files": 75
+    "archive_prefix": "v71-r10/",
+    "files": 90
   },
   "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted."
 }

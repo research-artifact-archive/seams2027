@@ -109,3 +109,25 @@ The new saved-region archive reuses the unchanged source and model evidence from
 
 ## Fixed-seven native extension
 The archive includes unchanged public corpus source/import specifications with their original BSD 3-Clause license and attribution, saved BDD/JSON outputs, and original standard-library audit code. No runtime binaries, upstream JARs, Java sources or manuscript are added.
+
+## V71 compiled cohort, Obstacle and historical Patrol additions
+
+The compiled cohort references exact corpus source/import members and shared original checker modules in the unchanged Core and FixedSevenNative archives. Their original notices remain applicable. The Obstacle bundle omits distributor specification text: its inspected source ZIP supplied no license notice, and this publication does not infer permission from public availability. Hash-bound local restoration instructions do not extend source rights. Original saved model/BDD research outputs, original code and documented metadata derivatives remain scoped by their notices.
+
+The historical Patrol bundle is a source-binding and reported-result package; despite its filename, it omits third-party specification, README, JAR/DLL/class, disassembly and publisher document bytes. It adds no artifact execution. The GUI bundle records two prior fixed actions and shares saved inputs with the adjacent Obstacle bundle. It redistributes no installed Eclipse/JDK/JAR/native runtime. Any derived observation or path-normalized receipt has an explicit original/public identity ledger; missing process exit information is not repaired by publication.
+
+Current package READMEs and PUBLIC_PACKAGING_AMENDMENT records distinguish publication wording from preserved historical preparation statuses. Historical scientific results, UNKNOWNs and runtime boundaries remain unchanged.
+
+## V71 positive source certificates and public mode controls
+
+The fifth V71 addition includes original positive certificate data, unchanged original checker and qualification code, proof text, selected recorded outputs and disclosed metadata derivatives. Third-party specification bodies, raw UI images, AX captures and installed runtime binaries are omitted. `SOURCE_RESTORATION.json` inside its archive binds five exact source inputs and the disclosed projection/point-initializer operations without granting rights to distributor material. Only the original point-initializer appendix is included.
+
+The package retains exact GUI logger XML and labels console text as visual transcription from unedited, withheld images. `TRANSFORMATION_LEDGER.json` distinguishes original execution hashes from public derivative hashes; `PUBLIC_QUALIFICATION_INPUT_MAP.json` records the 48 direct input hashes and two parsing-failure null hashes. Prior selected-Kind records are exact public copies from the preceding GUI package. No source restoration or scientific replay occurred during packaging. Original contributions retain their included `LICENSE-original.txt`; external source and runtime terms remain separate.
+
+## Same-solver diagnostic
+
+The sixth addition preserves original code, including 64 original harness/helper class members, selected recorded outputs and disclosed metadata derivatives. Read its `dependencies/THIRD_PARTY_NOTICES.md`, six-route source-restoration map and transformation ledger for exact provenance and redistribution scope. External specification bodies, dependency JARs and full installed runtimes are not supplied by this overlay. Exact original harness sources are provided for inspection; no portable execution adapter or relocated scientific replay is supplied.
+
+## AG completed-pair evidence
+
+AG preserves the same external 164 JAR dependencies, host runtime pins, upstream-source restoration routes and license limits cataloged in its `dependencies/DEPENDENCIES.json`. Full external runtimes/JARs and complete upstream specification bodies are not redistributed. Exact source/class/public derivative distinctions and license notices remain in the AG archive. Current supplier URL availability and fresh-host reproduction were not checked.

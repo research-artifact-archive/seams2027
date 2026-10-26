@@ -1,0 +1,31 @@
+\subsection{The first-change edge}
+The helper $b$ starts false, is offered with the next ENV input and is
+observed before SYS responds. It can become true only once. Kind's printed
+clause guards relax ENV safety with the \emph{next} helper and SYS safety
+with the \emph{current} helper~\cite[Sec.~4.1]{kind}. When these guards cover
+the \emph{complete} safety relations, including all auxiliaries, the encoded
+relations and objectives are
+\begin{equation}
+\begin{aligned}
+\rho_e^R&=(\rho_e\lor b')\land(\neg b\lor b'),&
+\rho_s^R&=\rho_s\lor b,\\
+A^R&=A\land\G\F\neg b,&G^R&=G.
+\end{aligned}\label{hpb:literal}
+\end{equation}
+Initialization is unchanged except that ENV also fixes $b=0$.
+The factor $\neg b\lor b'$ makes the change one-way. ``Complete'' describes
+the guards' coverage, not whether a safe response exists.
+
+
+Table~\ref{tab:timing} showed the timing consequence: on the first-change
+edge, ENV has already been released but SYS has not. The added ENV justice $\G\F\neg b$ becomes
+impossible after a permanent change to true. Strict semantics nevertheless
+requires the safe response on that legal edge: future unfairness does not
+waive present safety.
+
+The existing correction uses
+$\rho_s^{R^+}=\rho_s\lor b\lor b'$~\cite{spectrarelease2024}.
+It releases the first-change duty and preserves the source strict region
+(Supplement~L.6). The theorem below characterizes the encoded \emph{strict
+game}; the public cooperative procedure is a separate object considered
+in Section~\ref{sec:evidence}.

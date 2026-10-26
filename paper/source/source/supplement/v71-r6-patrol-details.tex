@@ -1,0 +1,56 @@
+\subsection*{AB.6. Patrol route retained from the main paper}
+The route shown is the source-policy witness used by the main paper's
+Patrol proof. Its standoffs, waiting rule, counter/monitor behavior and
+all-response loss argument retain their original scope. The main paper
+specifies the coordinates and complete source rules directly.
+
+\begin{figure}[!t]
+\centering
+\begin{tikzpicture}[x=13mm,y=11mm,>=Latex,
+ every node/.style={font=\small,inner sep=1.2pt},
+ visit/.style={sourceblue,thick},
+ charge/.style={black!60,thick,dashed}]
+\draw[step=1,gray!25,thin] (0,0) grid (4,4);
+\foreach \x in {0,...,4} {\node[below,text=black!60,font=\scriptsize] at (\x,-.18) {\x};}
+\foreach \y in {0,...,4} {\node[left,text=black!60,font=\scriptsize] at (-.14,\y) {\y};}
+\node[below,font=\scriptsize] at (2,-.62) {$x$};
+\node[left,font=\scriptsize] at (-.48,2) {$y$};
+
+% Source tour: rise to the first standoff, visit A/B/C, then return.
+\draw[visit,->] (-.07,.12)--(-.07,1.83);
+\draw[visit,->] (-.07,2.15)--(-.07,3.80);
+\draw[visit,->] (.08,3.80)--(.08,2.15);
+\draw[visit,->] (.17,2.07)--(1.82,2.07);
+\draw[visit,->] (1.93,2.15)--(1.93,3.80);
+\draw[visit,->] (2.08,3.80)--(2.08,2.15);
+\draw[visit,->] (2.17,2.07)--(3.82,2.07);
+\draw[visit,->] (3.93,2.15)--(3.93,3.80);
+\draw[visit,->] (4.08,3.80)--(4.08,2.15);
+
+% Return through row 2 and O, visit H, then restart at the first standoff.
+\draw[charge,->] (3.80,1.91)--(.19,1.91);
+\draw[charge,->] (.09,1.81)--(.09,.18);
+\draw[charge,->] (.22,.07)--(3.73,.07);
+\draw[charge,->] (4.07,.22)--(4.07,1.78);
+
+\foreach \x in {0,2,4} {\filldraw[fill=white,draw=sourceblue,thick] (\x,2) circle (2.2pt);}
+\node[fill=white,text=sourceblue,above right] at (.16,2.15) {wait};
+\node[fill=white,text=sourceblue,above right] at (2.16,2.15) {wait};
+\node[fill=white,text=sourceblue,right] at (4.16,2) {wait};
+\node[draw,fill=white,rounded corners=1pt] at (0,4) {$A$};
+\node[draw,fill=white,rounded corners=1pt] at (2,4) {$B$};
+\node[draw,fill=white,rounded corners=1pt] at (4,4) {$C$};
+\node[draw=sourceblue,fill=softblue,rounded corners=1pt] at (0,0) {$O$};
+\node[draw=sourceblue,fill=softblue,rounded corners=1pt] at (4,0) {$H$};
+\node[align=center,anchor=north,font=\footnotesize] at (2,-.91)
+ {Solid: checkpoint visits.\ Dashed: return, charge, restart.};
+\end{tikzpicture}
+\caption{The source patrol route on the fixed $5\times5$ layout. The
+robot waits two cells below each checkpoint, visits it when entry is
+safe, then retreats. After $A,B,C$ it returns to $O$, visits charger $H$,
+dwells, and returns along row~2 to the first waiting point.
+The main paper's Patrol section gives the complete waiting, safety and fairness
+argument. This source route witnesses feasibility; the loss proof covers
+every safe strategy.}
+\label{fig:patrol-map}
+\end{figure}

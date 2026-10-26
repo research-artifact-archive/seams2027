@@ -1,0 +1,97 @@
+{
+  "schema": "v71-r9-saved-historical-tag-observation-v1",
+  "observed_at_jst": "2026-10-26T08:01:16.954348+09:00",
+  "tags": [
+    {
+      "ref": "refs/tags/artifact-identities-20261020-v1",
+      "object": "6dfcf9a3240f74390058b6f08c262d50d032626b"
+    },
+    {
+      "ref": "refs/tags/certificate-finite-evidence-20261023-v1",
+      "object": "4d4f4e4425b06eb772c41fe6af5359d22a3727eb"
+    },
+    {
+      "ref": "refs/tags/certificate-finite-evidence-20261023-v2",
+      "object": "3b7c7be60bac7f1c1af928ff9b596a36323de60a"
+    },
+    {
+      "ref": "refs/tags/continuation-evidence-20261024-v1",
+      "object": "42c64f7348d27e3c930eca82a49cd797e15210ba"
+    },
+    {
+      "ref": "refs/tags/fixed-seven-native-evidence-20261024-v1",
+      "object": "9e62e3d7da65de0644f6e66c27cc5f9e425aba79"
+    },
+    {
+      "ref": "refs/tags/guard-evidence-20261021-v1",
+      "object": "8bf5d18fd0803d78c5c4afc3d8349ae0a6e137d3"
+    },
+    {
+      "ref": "refs/tags/intruder-bounded-evidence-20261021-v1",
+      "object": "1dbc6928f93813495f0dbbc52cd51822deaf5259"
+    },
+    {
+      "ref": "refs/tags/lift-causal-evidence-20261021-v1",
+      "object": "8eec7ac8812a734e1f5813885a4b7bcdd30b9a86"
+    },
+    {
+      "ref": "refs/tags/minepump-records-20261020-v1",
+      "object": "4ca771169a4d32f99ca4d7a5067413941cef0161"
+    },
+    {
+      "ref": "refs/tags/native-regeneration-evidence-20261021-v1",
+      "object": "ad64eecbe0767e6b003b92cac43b3456c1509295"
+    },
+    {
+      "ref": "refs/tags/noninitial-handoff-evidence-20261021-v1",
+      "object": "d4ae88d916acb85920b2772a85acdf3f74fea6ea"
+    },
+    {
+      "ref": "refs/tags/normalized-eleven-evidence-20261021-v1",
+      "object": "b53454bb9e4e74f878a04cf2bc023bc07f23429c"
+    },
+    {
+      "ref": "refs/tags/paper-navigation-20261024-v1",
+      "object": "11a828f65f91a9b4950a18d189a702fb18ec8ed5"
+    },
+    {
+      "ref": "refs/tags/pending-diagnostic-evidence-20261023-v1",
+      "object": "24ff3d58194c8037b8dfa64bf7c6cdb068712763"
+    },
+    {
+      "ref": "refs/tags/pending-native-handoff-evidence-20261023-v1",
+      "object": "d510bebdadc9862165205a693c5e4f00861a43c0"
+    },
+    {
+      "ref": "refs/tags/pending-native-handoff-evidence-20261023-v2",
+      "object": "3b7c7be60bac7f1c1af928ff9b596a36323de60a"
+    },
+    {
+      "ref": "refs/tags/reader-index-20261020-v2",
+      "object": "a168657bd86f2ad53d12769238fd01133ee83e49"
+    },
+    {
+      "ref": "refs/tags/reader-layout-20261024-v1",
+      "object": "6910aa3bab51656d2f3a662d381687f871c31f7f"
+    },
+    {
+      "ref": "refs/tags/residual-census-evidence-20261021-v1",
+      "object": "c4766884d152de2dfa1a13f732ae668af2df8d65"
+    },
+    {
+      "ref": "refs/tags/saved-evidence-20261020-v1",
+      "object": "9d70c917f3dc5cdfc8ddde5354221da9e7ab30eb"
+    },
+    {
+      "ref": "refs/tags/vehicle188-native-evidence-20261024-v1",
+      "object": "533a50a147c87a1ccdfefaa7a5104a8621731638"
+    },
+    {
+      "ref": "refs/tags/vehicle188-whole-region-evidence-20261024-v1",
+      "object": "cffffeb3d7bb989ab89a16b8a048b6b06f93c2c3"
+    }
+  ],
+  "current_remote_state_rechecked": false,
+  "prospective_tag": "continuation-characterization-20261026-v1",
+  "scope": "Exact saved observation only; integration neither reads Git nor creates, moves or deletes tags. Recheck current remote state separately before any publication."
+}

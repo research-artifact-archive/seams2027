@@ -1,0 +1,99 @@
+\section{Returning to Patrol}\label{sec:patrol}
+The same retained entry now separates the theorem's two conditions. We
+first show a winning source policy and an immediate safe response. We then
+show that \emph{every} safe strategy either fails its recurring obligation
+or reaches a state with no first-change response.
+
+\subsection{The positive continuation}
+The route in Fig.~\ref{fig:patrol-grid} waits two cells below each checkpoint
+until its \emph{next} blocked flag is false, approaches through row three,
+visits and retreats to row two. After the three visits it returns via $O$
+to $H$, dwells until the counter reaches three, and returns through $(4,1)$,
+$(4,2)$ and row two to the first standoff. All moves are unit cardinal steps.
+
+The source rules justify each part of this policy. Positions of checkpoints
+are fixed. When the robot enters a checkpoint's one-cell neighborhood its
+flag is false; neighborhood stability keeps it false through the visit and
+retreat. The rest of the route avoids the checkpoints and obeys Dwell.
+ENV fairness ends each wait, so the visits recur.
+
+For charging, the counter increments, capped at three, when the \emph{current}
+position is $H$ and is zero on every other successor. The monitor is idle,
+pending or failed. An idle monitor becomes pending when charging is unavailable,
+the current counter is not three and the robot is off the charger. A pending
+monitor first tests whether the counter is three, entering the absorbing failed
+state if so; otherwise it clears to idle when the current position is $H$.
+It remains pending otherwise. The complete SYS justice list requires infinitely many idle states
+and visits to each of the three checkpoints and $O$ (five predicates). The complete source equations
+are in Supplements~S and AB.6.
+
+First arrival at $H$ has counter zero. The pending request clears on the
+first dwell edge, before the counter reaches three, and cannot retrigger at
+$H$. The source requires charging to become available on an edge whose
+current counter is three. Departure therefore carries counter three, an idle
+monitor and available charging. On the next off-charger edge the current
+counter prevents retriggering while it resets. The monitor never fails and
+is idle infinitely often. Thus the same policy meets both safety and progress:
+$r\in W$.
+
+At $r$, any typed next ENV input permits staying at $O$, keeping counter zero
+and the request pending. Dwell is inactive and all current blocked flags are
+false. Hence $C(r)$ also holds. What is missing is the ability to maintain
+$C$ while winning.
+
+\subsection{Why every safe strategy loses that option}
+Let ENV keep the displayed layout, every checkpoint open and charging
+unavailable until the first arrival at $H$. This is source-legal; keeping every checkpoint open also satisfies all
+three ENV justices. Figure~\ref{fig:patrol-motivation} divides all safe
+strategies into two cases.
+
+\emph{Never reach the charger.} Every safe response keeps the counter zero
+and the request pending: the updates inspect the current off-charger position.
+The resulting ENV-fair play never clears the request, violating SYS justice.
+Thus a source-winning strategy cannot choose this branch forever.
+
+\emph{First reach the charger.} The arrival still has counter zero and a
+pending request. On the next edge ENV legally closes only distant checkpoint
+$A$. Dwell keeps the robot at $H$; the counter becomes one and the request
+clears. Call this state $x$. Now a typed first-change input places that
+already blocked checkpoint at $H$. Dwell requires $p'=H$ and Avoidance
+requires $p'\ne H$. No response exists, so $x\notin C$.
+The contradiction occurs \emph{after the request clears}, while the dwell
+is still unfinished.
+
+The two branches cover all safe responses, not just the route we displayed.
+Consequently $r\in W\cap C$ but $r\notin W_C$. Theorem~\ref{hpb:exact}
+excludes $(r,0)$ from the complete literal game, even though the source can
+continue from the same entry. The loss is caused by having to keep a response
+available until an adversary chooses the first change.
+
+This proves the loss for complete literal relations. Tool exports may
+retain auxiliary duties after the helper changes. We extend the argument
+before applying it to Patrol's actual export.
+\input{retained-constraints.tex}
+
+\subsection{The actual export loses the same entry}
+For the 4,800 current states with the displayed layout, a completed native
+reduced calculation finds \textbf{3,280 source winners and 1,104 survivors},
+agreeing with a separate explicit all-state audit. The fixed layout limits
+the counted current states, not the typed next inputs: the first-change
+test still permits a checkpoint to move to any typed position. The reduction enforces
+maintenance of $F$ while winning (Supplement~L.1). The same retained entry
+is excluded by the actual syntactic export, by the following relation checks.
+
+The export retains auxiliary updates, so Proposition~\ref{hpb:retained}
+applies. Complete typed checks establish source agreement before the change
+and unchanged helper-false ordered justices. At the first change every typed
+ENV input is legal and the source SYS duty remains. Afterwards ENV is
+unrestricted; the remaining counter/monitor updates permit every typed robot
+position with a typed auxiliary update, independently of the next ENV values.
+Thus $U=D$ and $F=C$, and the all-response argument excludes $(r,0)$ from
+the export's strict-winning region. This is an export-based strict deduction, not an observed public Kind
+refusal; the direct full-helper attempts remain UNKNOWN (Supplements~U and AB.4).
+
+\subsection{What the retained-state execution shows}
+The recorded update reused the legal policy under the old and then new
+ENV model at the same retained query, preserving plant/controller objects,
+source fields, monitors and private phase. It completed the pending request
+and entered a recurring justice-satisfying cycle. The separate source-kind
+existence argument follows in Section~\ref{sec:source-kind}.

@@ -1,0 +1,165 @@
+\clearpage
+\section*{AA. Compiled four-arm comparison on a conditioned eleven-source subset}
+\label{supp:compiled-cohort}
+\paragraph{Selection and questions.}
+The fixed roster is drawn from the 59 previously certified completed
+source cases, not from a new independent population. Eligibility requires
+at most 262,144 typed source states, including AUX, and a parsed ENV
+\code{SAFETY}/\code{STATE\_INV} trigger for helper conversion. The prior
+public-fourteen and fixed-seven rosters and the separate Vehicle188 witness
+are excluded. There is no additional filter on source winning or cooperative
+outcomes, but those prior outcomes and completion/certification status were
+already known. This is therefore a conditioned extension, not a random or
+outcome-blind sample, and it supports no incidence or prevalence estimate.
+Seven of the eleven sources retain AUX fields. Nine prior source
+cooperative initializer checks are false and two are true.
+
+Each source has four registered arms: A is the original game; B is the
+selected syntactic helper route; C releases SYS safety on the first helper
+change only, leaving the other helper quadrants unchanged; D is the existing
+complete semantic correction. C is a mechanism-isolation intervention and
+D is an existing correction; neither is a new synthesis method. Source
+initializers and monitors are retained without reset or projection.
+
+\paragraph{All registrations and acceptance boundary.}
+All 44 registrations remain visible. There are 43 saved native results,
+but only 40 independently audited PASS arms are adopted. The three
+transformed arms of source 003 exceeded the independent BDD node budget;
+their saved native values remain unaccepted candidates. Source 059 arm C
+has no native result: the supervisor's \code{ps} call timed out before a
+recorded solver call, and no retry was made. These four terminal UNKNOWNs
+are not negative synthesis answers. Nine sources have all four arms
+independently certified. Tables below separate source metadata, native
+saved values and accepted audit results.
+
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}rL{64mm}rrrc@{}}
+\caption{Fixed source roster. $|D|$ includes AUX. $|K|$ and $I_M(K)$ are
+prior source certificates, not newly recomputed cooperative regions.}
+\label{tab:compiled-cohort-roster}\\
+\toprule ID & Unchanged source filename & $|D|$ & AUX & Prior $|K|$ & Prior $I_M(K)$\\\midrule
+\endfirsthead
+\toprule ID & Unchanged source filename & $|D|$ & AUX & Prior $|K|$ & Prior $I_M(K)$\\\midrule
+\endhead
+003 & \path{amba_ahb_realizable_amba_ahb_1.spectra} & 65536 & 0 & 0 & F \\
+044 & \path{HumanoidLTL_460_Humanoid.spectra} & 18816 & 2 & 0 & F \\
+045 & \path{HumanoidLTL_462_Humanoid.spectra} & 102400 & 2 & 0 & F \\
+054 & \path{PCarLTL_Unrealizable_V_2.0_882_PCar_fixed.spectra} & 5184 & 2 & 16 & F \\
+059 & \path{PcarLTL_552_PCar.spectra} & 20736 & 3 & 1636 & F \\
+060 & \path{PcarLTL_553_PCar.spectra} & 20736 & 3 & 1636 & F \\
+061 & \path{PcarLTL_758_PCar_fixed.spectra} & 7776 & 2 & 42 & F \\
+062 & \path{PcarLTL_763_PCar_fixed.spectra} & 5184 & 2 & 16 & F \\
+164 & \path{roboticarm_Robot_232.spectra} & 31250 & 0 & 0 & F \\
+225 & \path{SmartHome1_sprint02_ver2.spectra} & 82944 & 0 & 3510 & T \\
+226 & \path{SmartHome1_sprint02_ver3.spectra} & 82944 & 0 & 3510 & T \\
+\bottomrule
+\end{longtable}
+\endgroup
+
+\begingroup\small\setlength{\tabcolsep}{3pt}
+\begin{longtable}{@{}rcrrccrrrrr@{}}
+\caption{All 44 registered arms. Native $W_0$ denotes source $W$ for A
+and helper-false winning states for B/C/D; native $W_1$ is inapplicable to A.
+$I$ is the native strict initializer judgment. Audit columns are populated
+only for PASS. P=PASS; BUD=independent BDD-budget UNKNOWN;
+SUP=supervisor UNKNOWN. T/F=true/false; dashes mean inapplicable or
+unavailable. Daggered native values are not adopted.
+Loss/gain compare the accepted helper-false region with source $W$.}
+\label{tab:compiled-cohort-all44}\\
+\toprule ID & Arm & Native $W_0$ & Native $W_1$ & $I$ & Audit & $|U|$ & $|F|$ & $|W_F|$ & Loss & Gain\\\midrule
+\endfirsthead
+\toprule ID & Arm & Native $W_0$ & Native $W_1$ & $I$ & Audit & $|U|$ & $|F|$ & $|W_F|$ & Loss & Gain\\\midrule
+\endhead
+003 & A & 34575 & --- & T & P & --- & --- & --- & --- & --- \\
+003 & B & $28431^{\dagger}$ & $65536^{\dagger}$ & $T^{\dagger}$ & BUD & --- & --- & --- & --- & --- \\
+003 & C & $34575^{\dagger}$ & $65536^{\dagger}$ & $T^{\dagger}$ & BUD & --- & --- & --- & --- & --- \\
+003 & D & $34575^{\dagger}$ & $65536^{\dagger}$ & $T^{\dagger}$ & BUD & --- & --- & --- & --- & --- \\
+\addlinespace[2pt]
+044 & A & 2387 & --- & T & P & --- & --- & --- & --- & --- \\
+044 & B & 0 & 18816 & F & P & 18816 & 1211 & 0 & 2387 & 0 \\
+044 & C & 2387 & 18816 & T & P & 18816 & 18816 & 2387 & 0 & 0 \\
+044 & D & 2387 & 18816 & T & P & 18816 & 18816 & 2387 & 0 & 0 \\
+\addlinespace[2pt]
+045 & A & 11232 & --- & T & P & --- & --- & --- & --- & --- \\
+045 & B & 8 & 102400 & F & P & 102400 & 6120 & 8 & 11224 & 0 \\
+045 & C & 11232 & 102400 & T & P & 102400 & 102400 & 11232 & 0 & 0 \\
+045 & D & 11232 & 102400 & T & P & 102400 & 102400 & 11232 & 0 & 0 \\
+\addlinespace[2pt]
+054 & A & 470 & --- & T & P & --- & --- & --- & --- & --- \\
+054 & B & 470 & 5184 & T & P & 5184 & 470 & 470 & 0 & 0 \\
+054 & C & 470 & 5184 & T & P & 5184 & 5184 & 470 & 0 & 0 \\
+054 & D & 470 & 5184 & T & P & 5184 & 5184 & 470 & 0 & 0 \\
+\addlinespace[2pt]
+059 & A & 5196 & --- & T & P & --- & --- & --- & --- & --- \\
+059 & B & 3596 & 20736 & T & P & 20736 & 4544 & 3596 & 1600 & 0 \\
+059 & C & --- & --- & --- & SUP & --- & --- & --- & --- & --- \\
+059 & D & 5196 & 20736 & T & P & 20736 & 20736 & 5196 & 0 & 0 \\
+\addlinespace[2pt]
+060 & A & 5196 & --- & T & P & --- & --- & --- & --- & --- \\
+060 & B & 3596 & 20736 & T & P & 20736 & 4544 & 3596 & 1600 & 0 \\
+060 & C & 5196 & 20736 & T & P & 20736 & 20736 & 5196 & 0 & 0 \\
+060 & D & 5196 & 20736 & T & P & 20736 & 20736 & 5196 & 0 & 0 \\
+\addlinespace[2pt]
+061 & A & 496 & --- & T & P & --- & --- & --- & --- & --- \\
+061 & B & 496 & 7776 & T & P & 7776 & 500 & 496 & 0 & 0 \\
+061 & C & 496 & 7776 & T & P & 7776 & 7776 & 496 & 0 & 0 \\
+061 & D & 496 & 7776 & T & P & 7776 & 7776 & 496 & 0 & 0 \\
+\addlinespace[2pt]
+062 & A & 470 & --- & T & P & --- & --- & --- & --- & --- \\
+062 & B & 470 & 5184 & T & P & 5184 & 470 & 470 & 0 & 0 \\
+062 & C & 470 & 5184 & T & P & 5184 & 5184 & 470 & 0 & 0 \\
+062 & D & 470 & 5184 & T & P & 5184 & 5184 & 470 & 0 & 0 \\
+\addlinespace[2pt]
+164 & A & 31250 & --- & T & P & --- & --- & --- & --- & --- \\
+164 & B & 31250 & 31250 & T & P & 31250 & 31250 & 31250 & 0 & 0 \\
+164 & C & 31250 & 31250 & T & P & 31250 & 31250 & 31250 & 0 & 0 \\
+164 & D & 31250 & 31250 & T & P & 31250 & 31250 & 31250 & 0 & 0 \\
+\addlinespace[2pt]
+225 & A & 3510 & --- & T & P & --- & --- & --- & --- & --- \\
+225 & B & 3510 & 82944 & T & P & 82944 & 3510 & 3510 & 0 & 0 \\
+225 & C & 3510 & 82944 & T & P & 82944 & 82944 & 3510 & 0 & 0 \\
+225 & D & 3510 & 82944 & T & P & 82944 & 82944 & 3510 & 0 & 0 \\
+\addlinespace[2pt]
+226 & A & 3510 & --- & T & P & --- & --- & --- & --- & --- \\
+226 & B & 3510 & 82944 & T & P & 82944 & 3510 & 3510 & 0 & 0 \\
+226 & C & 3510 & 82944 & T & P & 82944 & 82944 & 3510 & 0 & 0 \\
+226 & D & 3510 & 82944 & T & P & 82944 & 82944 & 3510 & 0 & 0 \\
+\addlinespace[2pt]
+\bottomrule
+\end{longtable}
+\endgroup
+
+\paragraph{What the completed comparisons establish.}
+Among the ten independently certified B arms, sources 044, 045, 059 and
+060 lose strict source states, with no gained state. Sources 044 and 045
+also change the strict initializer judgment from true to false; 059 and
+060 retain positive strict initialization despite their region loss.
+The other six completed B arms preserve the source region. Every completed
+B arm has $U=D$, including those retaining AUX. All nine completed C arms
+and ten completed D arms preserve the exact source region: independent
+canonical equality checks establish set equality, not merely matching
+cardinalities. Thus these inputs do not demonstrate a proper $U$ caused
+by retained AUX, or insufficiency of first-change release on this set.
+
+All four B-loss sources have prior $I_M(K)=\mathit{false}$, but that does
+not mean their cooperative regions are empty: sources 059 and 060 each
+have 1,636 prior $K$ states. This experiment does not recompute $K$ or
+establish a new cooperative-initialization loss. It does not replace the
+prior 59-source cohort's null cooperative-loss result and UNKNOWN boundary.
+The 11-source, 10-B, 9-C and 10-D denominators answer different questions;
+none is a population-frequency estimate.
+
+\paragraph{Execution, independence and availability.}
+The comparisons use the pinned headless selected configuration and shared
+compiler outputs; they establish neither GUI/default execution nor
+identity with the public default route. The independent audit imports
+saved primitive relations and uses separate Boolean, quantification and
+fixed-point code. This is not independent compilation or external
+reproduction. The native constructor normalizes only metadata-empty
+justice lists to a TRUE justice; this normalization is recorded explicitly,
+and the remaining predicate-preservation checks remain in force.
+The bounded failures above remain UNKNOWN, without retries or replacement
+by favorable native candidate values. There is no natural-adaptation,
+performance, new-method or deployment-frequency claim. Packaging of these
+additional records is pending; no already-updated public replay bundle is
+claimed here.

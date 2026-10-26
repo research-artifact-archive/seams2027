@@ -1,0 +1,134 @@
+\clearpage
+\section*{AF. Historical same-solver diagnostic at exact B}
+\label{supp:r8-same-solver-diagnostic}
+
+\paragraph{Question and scope.}
+This historical v5 diagnostic asked whether releasing the first-change SYS duty
+alters the answer of one fixed released raw four-fixed-point solver at
+the exact retained query B of AC.6. The unchanged arm returned
+\emph{false}. The release arm entered the solver but stopped at the
+predeclared raw-output capture cap before returning a Boolean; its answer
+is \emph{UNKNOWN}. That interrupted comparison left the effect unresolved;
+Section~AG reports a distinct completed pair.
+The result is separate from AC.2's completed same-\emph{strict}-solver
+comparisons and from the historical public GUI observations.
+
+\subsection*{AF.1 Fixed input, intervention and pre-call checks}
+Both arms use the 2,026-byte query from AC.6, SHA-256
+\begin{center}\small
+\path{212309df489c3ddc7bf7ec6a750aed2d0da4fb7e26995e5ee3a0405c9897e1d5}.
+\end{center}
+It consists of the 1,902-byte ordinary projection of the published update
+and the fixed 124-byte point-initializer appendix. The joint initial point
+is obstacle $(3,5)$, \code{obsWait=true}, robot $(5,5)$, helper $b=0$;
+its source ID is 2404. The ENV and SYS initial predicates are separately
+nonempty, and initialization retains universal ENV and existential SYS
+quantification. No old initializer or controller memory is transferred.
+AC.1 and AC.6 specify the original archive, projection and endpoint selection.
+
+Each arm constructs its model through the same pinned released syntactic
+reduction and default translators in a private NoIDE provider. The sole
+intervention replaces the complete SYS relation in the typed quadrant
+$b=0,b'=1$ by unrestricted typed responses. It adds edges, removes none,
+and changes no edge outside that quadrant. The unchanged arm has zero
+delta. In both arms $S_{00},S_{10},S_{11}$ are preserved, with
+$S_{11}=\top$. The full ENV relation, typed domains, point initializers
+and ordered justices are fixed. The ENV justice is $\neg b$; the two SYS
+justices remain visits to $(3,7)$ and $(4,8)$ in that order.
+This intervention does not invoke the separate semantic-correction class
+or replace the complete translation pipeline.
+
+Before either call, the recorded comparisons bind the full relations,
+all helper quadrants, source correspondence, point initialization,
+ordered justices and exact-B baseline to the adopted saved predicates.
+There are 61 successful native comparison records per arm, including
+checks against its adopted arm before and after solver construction.
+The recorded dispatch uses JTLV's Java backend, \code{SINGLE\_FUNC}
+ENV/SYS relations and both simultaneous-conjunction flags false.
+Both calls use Java 17.0.19 and the same released
+\code{GR1SeparatedGame} class, whose SHA-256 is
+\begin{center}\small
+\path{6ce9b49dc638e4b03de10662c5dcd28ef470019f25cb7e2151afac77d0d7b502}.
+\end{center}
+The later independent audit checked saved guard records, source ordering,
+runtime identities, hashes and manifests. It did not recompute these
+predicates or run a solver. A saved-predicate cross gate passed before
+the two serial solve attempts.
+
+\subsection*{AF.2 Completed answer and interrupted output}
+\begin{center}\small
+\begin{tabular}{@{}L{30mm}L{31mm}L{86mm}@{}}\toprule
+Arm & Answer & Recorded completion\\\midrule
+Unchanged & false & Solver returned; complete native raw-output capture.\\
+Typed $S_{01}$ release & UNKNOWN & Call entered; no Boolean and no return event; raw-output cap interrupted capture.\\\bottomrule
+\end{tabular}
+\end{center}
+The unchanged status is \path{PASS_ONE_RAW_FOUR_FP_RESULT}.
+Its Boolean is \code{realizable=false}, and a call-returned event is
+present. The complete raw capture has 62,483,773 bytes.
+The release record has status \path{UNKNOWN_DIAGNOSTIC_CAPTURE};
+the \code{realizable} field is absent. Its exception is
+\path{RAW_STDOUT_CAP} during \path{ONE_RAW_FOUR_FP_CALL_BEGIN},
+inside the raw solver call.
+
+The raw-output limit was 64 MiB (67,108,864 bytes).
+The saved release prefix contains 67,108,819 raw bytes; the next whole
+54-byte diagnostic record exceeded the 45 remaining bytes.
+Independent decoding verified the complete unchanged stream and every
+recorded release-prefix byte, respectively. Their raw SHA-256 values are
+\begin{center}\small
+\begin{tabular}{@{}lL{125mm}@{}}
+Unchanged & \path{c2c67f96ced727d211f90d69dec3b74a3ef5b60f3fb6b06ee44d4c6b1e193f17}\\[3pt]
+Release prefix & \path{2b27620bcbfc9c9d3a4dd6830ad74cb0c21defe34a4d8104b7008cbc24b455c4}
+\end{tabular}
+\end{center}
+The lossless encodings have 4,219 and 4,220 bytes, respectively, with
+78 records each. A complete final encoding frame proves integrity of
+the saved prefix, not completion of the interrupted solver output.
+Likewise, \code{PROCESS\_FINISHED}, completed teardown and complete
+supervisor pipe draining describe cleanup and transport; none supplies
+the missing release-arm Boolean. A counter set on entry to the winning-region
+routine does not prove that routine returned.
+
+The fixed solve bounds were 300 seconds wall time, 240 seconds CPU
+\emph{per process}, 512 MiB Java heap, sampled 1 GiB process-tree RSS,
+and 64 MiB stream caps. The raw-output cap was the observed interruption;
+no time- or memory-infeasibility conclusion follows. Sampled RSS and
+per-process CPU are not hard aggregate process-tree peak guarantees.
+No controller extraction or native strict-solver call occurred.
+
+\subsection*{AF.3 Retained history and interpretation limits}
+The earlier cross-gate attempt in preparation v4 remains
+\path{UNKNOWN_STAGE}, with exit code 2. Its native output, manifest and
+launch receipt are preserved. It was not relabeled successful when a
+later saved-predicate cross revalidation in v5 passed. The legacy v4
+solve slots were never entered. Only the subsequent two v5 raw calls
+were entered, in the fixed order unchanged then release, once each.
+The history contains five model constructions: one preliminary model,
+two original gate models and the two solve models. Of the two entered
+raw calls, only one returned. No result was selected away. This protocol
+ended without a retry, alternative arm or cap increase.
+
+This historical observation is false/UNKNOWN, not a completed two-Boolean comparison.
+It establishes neither the unreturned answer nor an intervention magnitude,
+eventual termination, global equality of the raw region with $W_F$, $K$
+or all-history Kind, or correctness of an extracted strategy.
+The private headless provider is not a recovered historical GUI game or
+dispatch trace. This result does not isolate a solver-only cause of the
+public A/B negatives, demonstrate the complete corrected pipeline, refute
+source-kind existence, or show an installed controller handoff.
+Earlier Obstacle fixed-point, Patrol full-helper and cohort-159 UNKNOWNs
+remain unchanged.
+
+\paragraph{Evidence locator and publication boundary.}
+The stable evidence identifier is
+\path{AF-R7-SAME-SOLVER-DIAGNOSTIC}, with this section as its logical
+appendix locator. The accompanying release~\cite{artifactrepository}
+identifies its separate experimental archive,
+\path{results/archives/same-solver-diagnostic-20261026-v1.zip}, and
+\href{https://github.com/research-artifact-archive/seams2027/blob/continuation-characterization-20261026-v1/results/guides/SAME_SOLVER_DIAGNOSTIC.md}{diagnostic guide}.
+The guide gives the exact package identity and checking scope; earlier
+public tags do not identify these records.
+The document source ZIP includes this account, not private experimental
+logs, runtime inputs or an executable diagnostic bundle. No public replay,
+fresh-host reproduction or additional scientific execution is claimed here.

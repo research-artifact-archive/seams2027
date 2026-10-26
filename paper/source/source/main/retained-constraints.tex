@@ -1,0 +1,61 @@
+\subsection{If safety duties remain after the change}
+A syntactic translator may leave counter or monitor constraints unguarded.
+Let $U\subseteq D$ be exactly the states admitting a SYS strategy that
+satisfies all remaining safety duties along every legal helper-true ENV
+prefix. ENV dead ends are winning vacuously. Write $\rho_e^{01}$ and
+$\rho_s^{01}$ for the complete encoded ENV and SYS safety relations with
+$b=0,b'=1$. The exact safe-entry condition is
+\begin{equation}
+\begin{aligned}
+ F(s)\Longleftrightarrow{}&\forall e'\in E:\ \rho_e^{01}(s,e')\Rightarrow{}\\
+ &\exists y'\in Y:\ \rho_s^{01}(s,e',y')\land(e',y')\in U.
+\end{aligned}
+\label{hpb:F}
+\end{equation}
+Thus every legal first-change input must admit a safe successor in $U$.
+Define $W_F$ by replacing $C$ with $F$ in the maintained-response
+definition of $W_C$, including its initial-state requirement.
+
+\begin{proposition}[Preservation with retained duties]\label{hpb:retained}
+Suppose the safety relations on $0\to0$ edges agree with the source.
+Apart from the added $\G\F\neg b$ ENV assumption, the ENV and SYS justice
+lists agree with the source at helper false and may be arbitrary at
+helper true. The helper is one-way, its next value is observed before
+SYS responds, and ENV legality has no next-SYS dependence.
+Then the helper-true strict-winning region is $U$ and the helper-false
+region is $W_F$. Whole-region preservation holds exactly when $W\subseteq F$.
+\end{proposition}
+\begin{proof}
+At helper true, persistence makes $\G\F\neg b$ false on every infinite
+legal play. Strict winning is therefore exactly safety winning, namely $U$.
+
+Restrict a winning helper-false strategy to source-legal histories where
+the helper stays false. Their obligations coincide with the source.
+Every such prefix, including the initial state, has a winning residual
+with its reached memory: required safety has held and the B\"uchi
+objectives are prefix-independent. Every legal first change must
+therefore receive a safe response into $U$. This same restricted strategy
+wins the source while maintaining $F$, proving membership in $W_F$.
+
+Conversely, follow one source-winning strategy witnessing $W_F$, with
+its evolving memory, until a first change. Then $F$ supplies a safe response
+into $U$; continue with a safety-winning strategy on $U$. Without a change,
+source obligations hold unchanged. An encoded-illegal input releases
+strict duties on that edge and thereafter. This proves both region equalities.
+
+Finally, $W_F\subseteq W\cap F$ gives necessity for whole-region
+preservation. If $W\subseteq F$, every source-legal prefix of a source-winning
+strategy has a winning residual, so every reached state lies in
+$W\subseteq F$. The same strategy witnesses $W_F$, proving sufficiency.
+\end{proof}
+
+Supplement~L.1 gives an example with two source states, one always-legal input
+value, a Boolean SYS output, and true source initial and justice predicates:
+source steps and first-change responses must set the next output to true.
+Every subsequent helper-true transition requires both current and next
+outputs to be false. Thus both source states win and admit an immediate
+safe first-change response, but that response enters a state with no safe
+next response, so neither state survives the encoding.
+Supplement~L.1 gives the complete relational formulation and fixed-point
+construction. For complete literal relations, $U=D$ and $F=C$; these
+identities must be checked for an actual export.

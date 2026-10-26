@@ -1,0 +1,68 @@
+A patrol robot still owes a charging visit when its operating assumptions
+change. A replacement controller would inherit its position and the monitor
+recording that request. Before excluding candidate requirements or arranging
+a controller update~\cite{specrepair,degradation,dupdate}, an adaptation
+manager therefore asks: \emph{can a controller still meet these requirements
+from the retained state?} A negative synthesis answer supports exclusion only
+if the query and its translation preserve the continuation being asked about.
+
+Reactive synthesis asks for a controller that responds to environment
+inputs. GR(1) specifications combine initial conditions, safety rules and
+recurring goals for the environment and controller. Under \emph{strict}
+semantics, the controller owes safety on every prefix that respects ENV
+initialization and safety; later unfairness cannot excuse an earlier unsafe
+response. Kind adds cooperation to strict winning: after every history the
+strategy induces, even after an environment violation, that same strategy
+at its reached memory must permit a safe, fair environment future. We call
+this property \emph{source-kind} when it holds before translation; its full
+definition appears in Section~\ref{sec:source-kind}.
+
+We call the requirements before translation the \emph{source}; after an
+update, these are the candidate's updated requirements. Figure~\ref{fig:overview}
+separates the source question from the translated game and the procedure
+answering it. A raw call invokes the underlying solver, whereas a public
+action also selects a translation and solver path. Preservation and
+query/objective correspondence are separate obligations in this picture.
+\input{overview-figure.tex}
+
+The helper is an environment-controlled Boolean input that can change
+permanently from false to true. Its first change releases ENV safety one
+edge before SYS safety, so the controller must still answer safely on that edge.
+
+Patrol exposes why this timing matters. At the retained state the robot can
+answer every input allowed by the first helper change. Yet meeting its
+charging obligation lets the environment steer it into a conflict: remain
+at the charger and avoid a blocked checkpoint placed there. That placement
+is forbidden by the source but permitted by the helper. Thus being able to
+respond now differs from maintaining that ability while winning.
+
+An existing complete-relation correction releases both duties on the
+first-change edge and preserves the whole source strict-winning
+region~\cite{spectrarelease2024}. Our question is which continuations survive
+the original printed encoding, including exports that retain auxiliary
+duties; correcting the encoding does not characterize those survivors.
+The public Kind path inspected for the Obstacle inputs also uses a syntactic
+reduction and raw solver separately from that correction
+(Section~\ref{sec:evidence}). We give exact preservation conditions and a
+local intervention on that solver query, rather than a new solver or
+correction. For the basic encoding, the central condition is that one winning source strategy keep
+a safe first-change response available for as long as the helper may wait.
+We make three contributions:
+\begin{enumerate}
+\item \emph{Exact preservation.} We characterize the surviving strict-winning
+continuations, derive a necessary and sufficient whole-region condition,
+and extend the result to safety duties retained after the change. All three
+results have complete proofs in the main paper.
+\item \emph{Constructive and implementation-bound evidence.} Patrol separates
+responding now from maintaining that ability while winning. Vehicle separates
+positive initialization from preserved continuations. At a fixed Obstacle
+query, releasing only the first-change SYS duty changes the same solver's
+answer from false to true.
+\item \emph{Executable case checks.} The accompanying release connects typed model snapshots to positive
+witnesses, loss certificates and saved evidence for Vehicle, Patrol and
+Obstacle B~\cite{artifactrepository}.
+\end{enumerate}
+We first explain the Patrol challenge, give the basic strict result, then
+close Patrol's positive and negative arguments before treating retained duties.
+The cases then connect preservation to tool answers, before the exclusion
+contract and common limits.

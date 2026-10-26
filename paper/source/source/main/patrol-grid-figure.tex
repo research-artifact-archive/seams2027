@@ -1,0 +1,80 @@
+% Legal source-policy route only. No off-assumption completion is depicted.
+% Uses the main document's TikZ, arrows.meta, sourceblue/fliporange colors.
+\begin{figure}[!ht]
+\centering
+\begin{tikzpicture}[
+ x=10mm,y=10mm,
+ >={Latex[length=1.5mm,width=1.05mm]},
+ every node/.style={font=\small,inner sep=1pt},
+ patrol/.style={sourceblue,line width=.8pt,<->,shorten <=1.7mm,shorten >=1.7mm},
+ charge/.style={fliporange,line width=.9pt,->,shorten <=1.7mm,shorten >=1.7mm},
+ checkpoint/.style={draw=sourceblue,fill=softblue,rectangle,
+   minimum width=4.7mm,minimum height=4.2mm,font=\small\bfseries},
+ standoff/.style={draw=sourceblue,fill=white,circle,
+   line width=.8pt,minimum size=3.4mm,inner sep=0pt}
+]
+\path[use as bounding box] (-.65,-.65) rectangle (7.85,4.45);
+
+% The grid points, not diagonals or geometric shortcuts, are the source states.
+\draw[step=1,black!17,line width=.3pt] (0,0) grid (4,4);
+\foreach \x in {0,...,4} {
+  \foreach \y in {0,...,4} {
+    \fill[black!40] (\x,\y) circle[radius=.35pt];
+  }
+  \node[anchor=north,text=black!75] at (\x,-.27) {$\x$};
+}
+\foreach \y in {0,...,4} {
+  \node[anchor=east,text=black!75] at (-.28,\y) {$\y$};
+}
+\node[anchor=west] at (4.30,-.35) {$x$};
+\node[anchor=south] at (-.36,4.15) {$y$};
+
+% O to the first standoff, and the return to O after the checkpoint visits.
+\foreach \y in {0,1} {
+  \draw[patrol] (0,\y)--(0,{\y+1});
+}
+% Row 2 connects the standoffs; these edges are reused on return journeys.
+\foreach \x in {0,1,2,3} {
+  \draw[patrol] (\x,2)--({\x+1},2);
+}
+% Each visit approaches through row 3 and retreats along the same unit edges.
+\foreach \x in {0,2,4} {
+  \foreach \y in {2,3} {
+    \draw[patrol] (\x,\y)--(\x,{\y+1});
+  }
+}
+% Charging: O along row 0 to H; after dwelling, H to (4,1) to (4,2).
+\foreach \x in {0,1,2,3} {
+  \draw[charge] (\x,0)--({\x+1},0);
+}
+\foreach \y in {0,1} {
+  \draw[charge] (4,\y)--(4,{\y+1});
+}
+
+\foreach \x in {0,2,4} {\node[standoff] at (\x,2) {};}
+\node[checkpoint] at (0,4) {$A$};
+\node[checkpoint] at (2,4) {$B$};
+\node[checkpoint] at (4,4) {$C$};
+\node[draw=sourceblue,fill=white,circle,minimum size=4.7mm] at (0,0) {$O$};
+\node[draw=fliporange,fill=softorange,rectangle,minimum size=4.7mm] at (4,0) {$H$};
+
+\node[anchor=north west,align=left,text width=29mm] at (4.80,4.30)
+ {\textcolor{sourceblue}{\textbf{Visit cycle}}\\
+ $A$, $B$, $C$ in order;\\
+ return to row 2\\
+ after each visit.\\[3pt]
+ \textcolor{fliporange}{\textbf{Charging leg}}\\
+ After $C$, via row 2\\
+ and $O$ to $H$;\\
+ dwell until $c=3$.\\
+ Return to $(4,2)$,\\
+ then $A$'s standoff.};
+\node[standoff] at (4.98,.15) {};
+\node[anchor=west] at (5.27,.15) {standoff};
+\end{tikzpicture}
+\caption{Patrol's legal source route uses unit cardinal moves.
+Before each checkpoint visit, wait at its circled standoff while the next
+blocked flag $d_i'$ is true; otherwise approach, visit and retreat.
+The charging leg restarts the visit cycle.}
+\label{fig:patrol-grid}
+\end{figure}

@@ -1,0 +1,117 @@
+\subsection*{AB.4. Computation provenance}
+This section retains the detailed audit and cohort account behind the
+main paper's evidence summary. It introduces no new execution or result.
+
+\paragraph{Named computations and separate checks.}
+
+The preceding proofs explain the mechanisms. This section and the current
+evidence index distinguish the computations that corroborate them from
+other checks that remain incomplete. A result is always attached to a named game or
+validation procedure. A solve computes a winning region. A saved-region
+audit checks an existing result. A theorem certificate here derives the
+claimed region from checked relations and an independently precomputed
+source region; it does not solve the transformed game anew. An independent
+fixed-point audit instead attempts to recompute the region.
+
+
+
+\paragraph{Implementation and answer.}
+The strict winning-region calculations use JTLV and Spectra release
+\code{1.0.0.202402072123}~\cite{spectrarelease2024}. The headless syntactic conversion runs
+before default translation and BDD construction. Static source and
+bytecode inspection bind this conversion to the \emph{public opt-in Kind
+option}; shipped defaults use ordinary GR(1). The winning-region queries
+here use released \code{GR1Game} with strict semantics. They establish
+answers for the checked games. Corresponding Kind frontend answers for
+Vehicle and Patrol remain unobserved. Section~AC
+reports two separate public Kind realizability checks for Obstacle.
+AC.7 adds completed ordinary-GR(1) controls for the same exact A/B queries,
+using JTLV with optimizations and reordering disabled. These use the
+installed default synthesis mode; they do not test every default setting
+or backend. Vehicle and Patrol have no corresponding public-mode
+observations. The separate complete-correction class exists in the
+release; its supported frontend invocation remains unestablished.
+
+\emph{UNKNOWN} means that the named query or validation attempt did not
+establish a definitive answer under its recorded stopping rule. It is
+never a negative synthesis verdict. A native result can be saved while
+a separate audit remains UNKNOWN. Unattempted work and processing
+exceptions retain separate statuses and causes.
+
+
+
+\paragraph{Dependencies and test objects.}
+The checks bind typed domains, source predicates, initializers, ordered
+justices and helper transitions to the queried relations. In Vehicle,
+full relation checks establish the complete literal form; two evaluators
+then inspect the same saved native sets. In Patrol, the hand proof uses
+the displayed source equations, and separate full-domain export checks
+establish the identities used in the main paper's Patrol section.
+Obstacle also has source-equation winning regions computed before the
+native candidates. A saved-set audit or theorem certificate does not
+recompute a winning fixed point. Shared compiler exports and typed-domain
+metadata remain dependencies of the corresponding checks
+(Supplements~B, E, U, V, W, X and AC).
+
+For Patrol, source-legal steps preserve the reached checkpoint layout.
+The 4,800-state restriction covers source-legal prefixes; the first-change
+test $F$ still uses every typed input, including relocated checkpoints,
+through the full-domain relations. Writing $D_L$ for that closed source domain, exact calculations give
+$|W\cap D_L|=3,280$ and $|W_F\cap D_L|=1,104$. A completed native $M_F$ query agrees with
+a separate explicit calculation and membership audit on all states
+(Supplements~U.1 and U.6). It corroborates the maintained-response
+calculation. The loss in the actual helper game follows from the source
+all-response proof, the checked export identities and
+the main paper's retained-duty preservation proposition. Direct full-helper attempts remain UNKNOWN
+and supply no observed refusal. Their distinct stopping records are
+retained in Supplement~U.5.
+
+
+\subsection*{AB.5. Wider comparisons and selection}
+
+A stopped 425-unit inventory yielded 70 completed models and,
+after eleven certification exclusions, 59 analyzed models without
+outcome filtering. Ten have literal strict losses; all ten lack
+cooperative initialization. Of nine completed exact-loss calculations,
+seven have empty $K$ and two preserve all $K$ states; one remains UNKNOWN.
+This cohort therefore confirms no cooperative-initialization loss.
+Vehicle, Patrol~277 and the published Obstacle update pair all lie outside
+this frozen cohort. The primary Patrol NEW source is byte-identical to
+corpus~277 (Section~Z); its later case-specific proof does not change the
+59-model denominator. At selection, Patrol had no eligible authoritative
+independent region certificate: the recorded status was
+\path{UNKNOWN_NO_AUTHORITATIVE_INDEPENDENT_W}, with prior status
+\path{UNKNOWN_NATIVE_NOT_ARRIVED} and no BDD worker started for this
+condition check. A separately recorded native attempt stopped at its raw-output
+cap; that later resource UNKNOWN is not the cohort-selection reason.
+The cohort is conditioned on completion and certification under the stopped
+resource protocol, not a sample establishing corpus-wide incidence.
+
+The remaining 49 cohort models satisfy $W\subseteq C$, so the literal
+strict encoding preserves all their source winners. In the nine
+completed exact-loss rows, $K\cap(W\setminus W_C)=\varnothing$:
+seven have empty $K$, and the other two preserve every $K$ state.
+Let $K_{\rm all}$ denote source states admitting Kind's all-history
+cooperation requirement, as distinct from the legal-prefix set $K$ used
+in this supplement. Since $K_{\rm all}\subseteq K$, these existing facts
+exclude $K_{\rm all}\setminus W_C$ in 58 cohort models. The exact
+intersection for the single remaining corpus model 159 (RoboticArm) is UNKNOWN.
+This is a consequence for the literal strict target, not a zero-of-59
+incidence result, a Kind-to-Kind preservation theorem, or an observation
+about public Kind actions. The existing reachability relation uses legal
+joint edges; it is not the reached set of a winning or deployed
+controller and carries no private memory.
+
+A conditioned eleven-source subset has 40 certified results and four
+UNKNOWNs across 44 encoding variants. Four of ten certified syntactic
+variants lose strict states, and two also lose strict initialization;
+all four loss sources already lack cooperative initialization. All ten have
+$U=D$. The checked first-change and complete corrections preserve
+their source regions. Supplement~AA gives every variant and unresolved
+operation. These conditioned comparisons supply no incidence estimate;
+the small proper-$U$ example establishes a logical need, not its
+frequency in those exports. Supporting comparisons and output diagnoses
+are in Supplement~AB, and fixed-seven native controls in
+Supplement~Y~\cite{fixedsevennative2026}. Claim-specific saved records and
+scoped replays remain separately identified (see the current evidence index).
+

@@ -1,0 +1,183 @@
+\clearpage
+\section*{AG. Completed same-observer pair at exact B}
+\label{supp:r9-completed-pair}
+
+The sole typed-$S_{01}$ release changed the returned answer of the fixed
+raw four-fixed-point solver at exact query B from \emph{false} to
+\emph{true}. Both fresh runs completed under one predeclared observer and
+finite budget. This is a new paired experiment, separate from AF's
+historical false/UNKNOWN diagnostic, AC.2's strict-region comparisons,
+and the public-mode observations in AC.5--AC.7.
+
+\subsection*{AG.1 Exact query and sole intervention}
+The input is \path{B_NEW_POINT_R2404}: the same 2,026 bytes pinned in
+AF.1, comprising the 1,902-byte ordinary projection of the updated source
+and the 124-byte point-initializer appendix. Its SHA-256 is
+\begin{center}\small
+\path{212309df489c3ddc7bf7ec6a750aed2d0da4fb7e26995e5ee3a0405c9897e1d5}.
+\end{center}
+The joint point is obstacle $(3,5)$, \code{obsWait=true}, robot $(5,5)$,
+and helper $b=0$, with source ID 2404. Both separate initial predicates
+are nonempty; initialization retains universal ENV and existential SYS
+quantification. No old initializer or controller memory is transferred.
+This is the updated point query, not query A or a whole-update-region
+calculation. AC.1 and AC.6 retain the source and endpoint binding.
+
+Each arm constructs a fresh model with the same pinned released syntactic
+reduction and default translators through the private NoIDE provider.
+The intervention changes only the complete SYS relation on the typed
+quadrant $b=0,b'=1$: it permits every typed response there. It adds edges,
+removes none, and changes no edge outside $S_{01}$. The unchanged arm has
+zero delta. The other quadrants $S_{00},S_{10},S_{11}$ are preserved;
+typed $S_{11}$ is already $\top$.
+The full ENV relation, typed domains, six-field metadata and bit order,
+point initializers and ordered justices are fixed. The single ENV justice
+is $\neg b$; the two SYS justices are visits to $(3,7)$ and $(4,8)$ in that
+order. Neither source/monitor reset nor $G\land A$ normalization is applied.
+The intervention does not select the separate semantic-correction class
+or substitute a corrected public translation pipeline.
+
+Both arms use Java 17.0.19, the pinned
+\code{net.sf.javabdd.JTLVJavaFactory} backend, and the same released
+\code{GR1SeparatedGame} class with SHA-256
+\begin{center}\small
+\path{6ce9b49dc638e4b03de10662c5dcd28ef470019f25cb7e2151afac77d0d7b502}.
+\end{center}
+The observed ENV/SYS dispatch is \code{SINGLE\_FUNC}; both simultaneous-
+conjunction/abstraction flags are false. The recorded path uses
+\code{yieldStatesOrig}/\code{predSingleTrans}, without decomposed
+transition partitions. Each arm makes one raw
+\code{checkRealizability} call. No native strict-solver call or
+controller extraction occurs.
+
+\subsection*{AG.2 Semantic checks and serialized-byte scope}
+All 39 recorded raw/typed in-model comparisons pass per arm: ten for the
+exact original B baseline, nine for preserved components, and ten each
+for the adopted arm before and after solver construction. These checks
+bind the complete relations, helper quadrants, initialization, domains
+and ordered justices to the original adopted gate. They support the
+specified intervention and preserved components within each newly
+generated model. The later saved-record audit checked the executed
+comparisons and their provenance; it did not independently reconstruct
+saved predicates or generate another model.
+
+All four new exported \path{model.json} files are byte-identical to their
+corresponding old-v5 solve exports. Both baseline exports and the
+unchanged arm also match their original native-gate exports byte for
+byte. The release arm differs from its original gate only in the SHA
+values of the serialized \path{domain} and \path{domain_ENV_next}
+descriptors. Descriptor sizes, node counts, flags, support and other
+metadata agree. Thus the successful complete in-model raw/typed
+comparisons support original-gate semantic identity; universal
+serialized-byte identity is not claimed. Static file hashing is a
+separate provenance check, not a replacement for those executed comparisons.
+
+\subsection*{AG.3 Completed runs and predeclared bounds}
+The two fresh processes ran in the fixed order unchanged, then release.
+The second launch required completion of the first, regardless of its
+Boolean value. Each process generated one model, entered one raw call
+and returned from that call. There was no retry or selection of a
+preferred outcome.
+\begin{center}\small
+\begin{tabular}{@{}L{32mm}L{22mm}L{93mm}@{}}\toprule
+Arm & Boolean & Completion\\\midrule
+Unchanged & false & Normal call return, OS exit 0, normal teardown, full capture.\\[3pt]
+Typed $S_{01}$ release & true & Normal call return, OS exit 0, normal teardown, full capture.\\\bottomrule
+\end{tabular}
+\end{center}
+No limit or stop signal occurred. Finalized native counters and the
+ordered launch, return and cleanup records agree with these completions.
+
+Both arms used the same lossless observer and the same limits declared
+before either new run: 64 GiB (68,719,476,736 bytes) raw output,
+64 MiB (67,108,864 bytes) each for encoded stdout and stderr,
+300 seconds wall time, 240 seconds CPU per process, 512 MiB Java heap,
+and sampled 1 GiB process-tree RSS. Sampled RSS and per-process CPU do
+not establish hard aggregate process-tree peaks. The new raw ceiling
+belongs to this distinct pair; AF's 64-MiB protocol and interrupted
+release remain unchanged. The new release result is paired with the new
+unchanged run, not with AF's earlier unchanged run.
+
+\subsection*{AG.4 Complete capture integrity}
+\begin{center}\small
+\begin{tabular}{@{}L{58mm}rr@{}}\toprule
+Retained stream measure & Unchanged & $S_{01}$ release\\\midrule
+Raw bytes & 62,483,773 & 3,578,789,826\\
+Encoded bytes & 4,219 & 7,899\\
+Encoding records & 78 & 146\\
+Repeated diagnostic lines & 1,157,084 & 66,273,862\\
+Literal bytes & 1,237 & 1,278\\\bottomrule
+\end{tabular}
+\end{center}
+Each encoding contains exactly one terminal end, with no unparsed or
+unflushed bytes. Independent totals agree with both the native receipts
+and the terminal records. The raw SHA-256 values are
+\begin{center}\small
+\begin{tabular}{@{}L{22mm}L{125mm}@{}}
+Unchanged & \path{c2c67f96ced727d211f90d69dec3b74a3ef5b60f3fb6b06ee44d4c6b1e193f17}\\[3pt]
+Release & \path{45c2dca9246b60e089163977156674f931ff6e8da7971128d8d36b0246ec8a67}
+\end{tabular}
+\end{center}
+The corresponding encoded SHA-256 values are
+\begin{center}\small
+\begin{tabular}{@{}L{22mm}L{125mm}@{}}
+Unchanged & \path{71f5e374f4c5ad2fa5a6be8da8015be16fffff63abe9151ef3b010ef3f749c7e}\\[3pt]
+Release & \path{7b66ac436a64519eca7fd618047dbd2dddc26dff6edf4b56980e3e0db8415ebc}
+\end{tabular}
+\end{center}
+The coordinating task executed the reviewed finite streaming QA once
+per arm under separate pinned allowances. Each guardian/worker completed
+with exit 0, confirmed cleanup and no limit, error or signal; all 24
+listed completion conditions passed. The streaming check hashed every
+admitted raw byte in order and matched both raw and encoded digests.
+The independently reviewed code and actual execution evidence establish
+complete coverage of 3,641,273,599 raw bytes. Neither expanded raw stream
+was written to disk, and the independent reviewer did not repeat the
+raw expansion. Tiny encoded storage alone is not the integrity argument.
+These are saved-output checks, not additional solver calls or a
+performance comparison.
+
+Native stderr is nonempty and retained: 288 bytes/four lines unchanged,
+7,913 bytes/108 lines for the release. Every byte was classified against
+the pinned loaded JTLV default garbage-collection format, with sequential
+counters and consistent cumulative times. The relevant source and loaded
+class identities were checked; no non-GC stderr was ignored.
+
+\subsection*{AG.5 History, inference and evidence boundary}
+\begin{center}\small
+\begin{tabular}{@{}L{68mm}rrr@{}}\toprule
+Diagnostic lineage & Models & Calls entered & Calls returned\\\midrule
+Historical v5 (AF) & 5 & 2 & 1\\
+Distinct completed pair (AG) & 2 & 2 & 2\\
+Cumulative & 7 & 4 & 3\\\bottomrule
+\end{tabular}
+\end{center}
+AF's earlier v4 cross-gate failure and v5 false/UNKNOWN observation
+remain in their original history. All new scientific slots and the two
+separate QA allowances were consumed once; the remaining model/call
+slots are zero and no further execution or retry is authorized.
+
+The supported conclusion is a positive local intervention effect: at
+this exact B and fixed configuration, releasing only typed $S_{01}$
+changes the raw-solver Boolean from false to true. It does not identify
+an exclusive cause or live-model identity for the historical GUI
+negatives, establish universal raw/strict/Kind equivalence, validate the
+full corrected public pipeline or extracted/transferred controller,
+or demonstrate operational gate benefit, installation, incidence or
+performance gain. The eight other Obstacle exported-game audits,
+Patrol full-helper attempts and cohort-159 UNKNOWNs retain their distinct
+statuses and reasons.
+
+The protocol identifier is
+\path{v71-r9-distinct-same-observer-exact-B-pair-v1}; it is an evidence
+identifier, not an appendix label. The root scientific adoption and
+independent result review bind the exact inputs, native run records,
+streaming-QA receipts and byte manifests. The accompanying
+release~\cite{artifactrepository} identifies the separate experimental archive
+\path{results/archives/r9-completed-same-observer-pair-20261026-v1.zip}
+and its \href{https://github.com/research-artifact-archive/seams2027/blob/continuation-characterization-20261026-v1/results/guides/COMPLETED_SAME_OBSERVER_PAIR.md}{completed-pair guide},
+which records the exact package identity and checking scope.
+The document source ZIP contains this account and its build inputs,
+not private logs, runtime inputs or an executable scientific bundle.
+No publication, fresh-host reproduction or new scientific execution
+is performed by this document revision.

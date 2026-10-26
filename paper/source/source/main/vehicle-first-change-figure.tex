@@ -1,0 +1,26 @@
+\begin{figure}[!ht]
+\centering
+\begin{tikzpicture}[x=1mm,y=1mm,>=Latex,
+every node/.style={font=\small,align=center,inner sep=1mm},
+cell/.style={draw=black!50,minimum width=22mm,minimum height=8mm},
+blocked/.style={cell,draw=fliporange,fill=softorange}]
+\node[anchor=east] at (15,32) {Now};
+\node[cell] at (28,32) {clear};
+\node[blocked] at (51,32) {car + obstacle};
+\node[cell] at (74,32) {clear};
+\node[anchor=east] at (15,19) {Next};
+\node[blocked] at (28,19) {obstacle};
+\node[cell] at (51,19) {clear};
+\node[blocked] at (74,19) {obstacle};
+\node[draw=sourceblue,fill=softblue,text width=32mm,rounded corners=1pt]
+ at (31,3) {Left blocked next:\\must choose right};
+\node[draw=fliporange,fill=softorange,text width=32mm,rounded corners=1pt]
+ at (68,3) {Right blocked next:\\must choose left};
+\draw[->,thick,sourceblue] (28,14)--(31,10);
+\draw[->,thick,fliporange] (74,14)--(68,10);
+\end{tikzpicture}
+\caption{Vehicle's first-change conflict. Both outer lanes blocked next
+is source-forbidden but helper-legal. The current middle obstacle activates
+both response rules, so no single next lane satisfies them.}
+\label{fig:vehicle-first-change}
+\end{figure}

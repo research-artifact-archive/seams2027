@@ -1,0 +1,519 @@
+\section*{AC. Published Obstacle Evasion requirements-update pair}
+\subsection*{AC.1 Source provenance and the ordinary-game projection}
+We use the exact old/update example distributed with Amram et al.'s
+\emph{Dynamic Update for Synthesized GR(1) Controllers}~\cite{dupdate}.
+The author site and source archive are
+\url{https://smlab.cs.tau.ac.il/syntech/dupdate/} and
+\url{https://smlab.cs.tau.ac.il/syntech/dupdate/Specifications.zip}.
+The archive is 6,517 bytes; its SHA-256 is
+\path{16483e1d023bdaea9201209639b67eb9b654ab367fa7eac51d62966f2b5916c4}.
+The original files are
+\path{Specifications/Obstacle Evasion/MovingObstacleEvasion.spectra} and
+\path{Specifications/Obstacle Evasion/MovingObstacleEvasionUpdate.spectra}.
+The old source hash is
+\path{19c71d970b05fec41f0fa60fce155bf136b33836ffd785a65c2c436a712c3ac1};
+the unprojected update source hash is
+\path{bf2836d68e9a7b019b8f2c9499ccf1ad8dccdc56f5c31ff78ea7d80e45b1a228}.
+
+The paper motivates changing forbidden and repeatedly visited robot
+locations while avoiding a moving obstacle. Its update semantics replaces
+old SYS goals. The old forbidden positions $(3,5),(4,5)$ become
+$(6,4),(8,7)$; recurring targets $(5,2),(2,3)$ become $(3,7),(4,8)$.
+ENV transitions and SYS movement/collision clauses are unchanged.
+This is a published full-SYS requirements replacement, not an ENV-only
+update, a same-pending-obligation continuation, or an observed industrial
+workload. No link from this standalone pair to one particular pair in
+the paper's larger evaluation is established.
+
+The five scalar fields are obstacle coordinates in $1..7$, Boolean
+\code{obsWait}, and robot coordinates in $1..8$, giving
+$7^2\cdot2\cdot8^2=6,272$ typed states. No source monitor, pattern or AUX
+field is declared. The old initializer fixes obstacle $(7,7)$,
+\code{obsWait=false}, robot $(1,1)$. The update intentionally omits
+initializers and declares the switch robot=$(5,5)$.
+For the ordinary Spectra game parser, exactly the 45-byte switch declaration
+is removed from the update; the remaining 1,902-byte source has hash
+\path{be0eaddf7b165df254d417dcb8cfcd962307f859f1ac3d26514c4a26c4b3954b}.
+The declaration remains boundary metadata, never an inserted initializer.
+Old-source projection is identity. Independent source-to-export checks
+cover domain, initializers, safety and ordered justices, including the
+current/next component interpretation of array predicates.
+
+\subsection*{AC.2 Region and initializer evidence}
+The four registered arms are A: source, B: released syntactic helper,
+C: release only the $0\to1$ SYS obligations, and D: existing complete
+semantic correction. C leaves the other quadrants and initializer/justice
+conditions of B unchanged. Both variants use the headless released
+Spectra/JTLV route described in the main paper; these are strict games,
+not the separate public Kind checks reported in AC.6 or a default GUI experiment.
+The original source initializers, including their absence in the new
+source, are preserved. Helper introduction binds initialization to $b=0$.
+
+\begin{center}\small
+\begin{tabular}{@{}llrrrrl@{}}\toprule
+Source & Arm & $|W_R(\cdot,0)|$ & $|W_R(\cdot,1)|$ & Loss & Gain & Initial\\\midrule
+old & A & 5,016 & -- & 0 & 0 & true\\
+old & B & 0 & 6,272 & 5,016 & 0 & false\\
+old & C & 5,016 & 6,272 & 0 & 0 & true\\
+old & D & 5,016 & 6,272 & 0 & 0 & true\\
+new & A & 5,015 & -- & 0 & 0 & true\\
+new & B & 0 & 6,272 & 5,015 & 0 & false\\
+new & C & 5,015 & 6,272 & 0 & 0 & true\\
+new & D & 5,015 & 6,272 & 0 & 0 & true\\
+\bottomrule\end{tabular}
+\end{center}
+For A, the first count means source $|W|$ and no helper is present.
+Every helper-introducing arm has $U=D$.
+For B, the one-step entry condition is $F=\varnothing$, so $W_F=\varnothing$.
+For C and D, $F=D$ and $W_F=W$; every state membership, not just the
+cardinality, agrees with the independently computed source region.
+The difference between source counts 5,016 and 5,015 does not imply that
+the regions differ in only one state.
+
+The immediate obstruction is already in both sources. For current robot
+$(x,y)$, choose next obstacle $(\min(x,7),\min(y,7))$. Its occupied
+$2\times2$ square includes the current robot. The source
+\code{robotAvoidsObstacle} clause compares the current robot against next
+obstacle coordinates; it contains no next SYS variable. Thus some
+avoidance conjunct is false for every response. Under B's checked first
+change, that input is legal. C removes exactly the conflicting response
+duty at that transition; its success here is not a universal sufficiency
+claim when retained helper-true constraints may give proper $U$.
+
+Both source ENV relations are total on typed states and have zero ENV
+justice assumptions. After any legal prefix of a strict winner, its
+residual remains winning and ENV has a next legal input. Repeatedly choosing
+legal inputs supplies an infinite legal continuation; the empty ENV
+justice conjunction holds automatically. Hence $W\subseteq K$, and
+$K\subseteq W$ by definition: $K=W$ for both sources. Independently
+enumerating the authored initializer quantifiers gives
+$I_M(K)=I_M(W)=\mathit{true}$ in each, but false initialization for B.
+This argument establishes the paper's legal-prefix cooperation.
+Section~AC.5 separately proves the stronger all-history property for
+these source contracts. Neither argument identifies the result of a
+raw four-fixed-point implementation.
+
+\subsection*{AC.3 A sealed old-only prefix and the complete switch roster}
+Before any source/compiler/solver calculation, the published switch
+robot=$(5,5)$ was completed with all 98 obstacle/\code{obsWait} valuations
+in fixed lexicographic order. No winning, reachability, safety or
+initializer filter changes that denominator. Source initialization is
+not reapplied at the replacement boundary.
+
+Using only the old source and old $W$, a FIFO search with lexicographic
+ENV/SYS edges selected the following seven-edge legal prefix and sealed
+it before new-source evaluation. Every state is old-winning. The terminal
+state is also new-winning and belongs to new A/C/D, but not B.
+This establishes a possible old winning prefix; it does not establish an
+extracted controller, its private memory or an installed handoff.
+
+\begin{center}\small
+\begin{tabular}{@{}rrrrr@{}}\toprule
+Step & Obstacle & \code{obsWait} & Robot & Source ID\\\midrule
+0 & $(7,7)$ & false & $(1,1)$ & 6144\\
+1 & $(6,6)$ & true & $(1,2)$ & 5185\\
+2 & $(6,6)$ & false & $(1,3)$ & 5122\\
+3 & $(5,5)$ & true & $(1,4)$ & 4163\\
+4 & $(5,5)$ & false & $(2,5)$ & 4108\\
+5 & $(4,6)$ & true & $(3,4)$ & 3411\\
+6 & $(4,6)$ & false & $(4,4)$ & 3355\\
+7 & $(3,5)$ & true & $(5,5)$ & 2404\\
+\bottomrule\end{tabular}
+\end{center}
+The complete boundary partitions into 48 old-W-prefix-reachable states
+winning in both sources, 30 states winning in both but not old-W-prefix
+reachable, and 20 states outside both winning sets. The 30 are not an
+old/new winning-region discrepancy. In each variant A/C/D accept the
+same 78 boundary states and B accepts zero. The obstruction is present
+before and after the update; these results do not show update-caused loss.
+
+The following table lists every frozen completion. Robot is $(5,5)$
+throughout. ``W/ACD'' means membership in both source regions and all
+six helper-false A/C/D source views; these are identical for these 98 rows.
+``Reach'' means old-W-prefix reachability. All 98 helper-false B entries
+are false in both variants; all helper-true B/C/D entries are true.
+Thus the table and these constants specify all 784 source/helper-false arm memberships.
+
+{\small
+\begin{longtable}{@{}rrrrrr@{}}
+\toprule No. & Obstacle & \code{obsWait} & Source ID & W/ACD & Reach\\\midrule
+\endfirsthead
+\toprule No. & Obstacle & \code{obsWait} & Source ID & W/ACD & Reach\\\midrule
+\endhead
+\bottomrule\endfoot
+1 & $(1,1)$ & 0 & 36 & 1 & 0\\
+2 & $(1,1)$ & 1 & 100 & 1 & 0\\
+3 & $(1,2)$ & 0 & 164 & 1 & 0\\
+4 & $(1,2)$ & 1 & 228 & 1 & 0\\
+5 & $(1,3)$ & 0 & 292 & 1 & 1\\
+6 & $(1,3)$ & 1 & 356 & 1 & 0\\
+7 & $(1,4)$ & 0 & 420 & 1 & 1\\
+8 & $(1,4)$ & 1 & 484 & 1 & 0\\
+9 & $(1,5)$ & 0 & 548 & 1 & 1\\
+10 & $(1,5)$ & 1 & 612 & 1 & 0\\
+11 & $(1,6)$ & 0 & 676 & 1 & 0\\
+12 & $(1,6)$ & 1 & 740 & 1 & 0\\
+13 & $(1,7)$ & 0 & 804 & 1 & 0\\
+14 & $(1,7)$ & 1 & 868 & 1 & 0\\
+15 & $(2,1)$ & 0 & 932 & 1 & 0\\
+16 & $(2,1)$ & 1 & 996 & 1 & 0\\
+17 & $(2,2)$ & 0 & 1060 & 1 & 1\\
+18 & $(2,2)$ & 1 & 1124 & 1 & 1\\
+19 & $(2,3)$ & 0 & 1188 & 1 & 1\\
+20 & $(2,3)$ & 1 & 1252 & 1 & 1\\
+21 & $(2,4)$ & 0 & 1316 & 1 & 1\\
+22 & $(2,4)$ & 1 & 1380 & 1 & 1\\
+23 & $(2,5)$ & 0 & 1444 & 1 & 1\\
+24 & $(2,5)$ & 1 & 1508 & 1 & 1\\
+25 & $(2,6)$ & 0 & 1572 & 1 & 1\\
+26 & $(2,6)$ & 1 & 1636 & 1 & 1\\
+27 & $(2,7)$ & 0 & 1700 & 1 & 0\\
+28 & $(2,7)$ & 1 & 1764 & 1 & 0\\
+29 & $(3,1)$ & 0 & 1828 & 1 & 1\\
+30 & $(3,1)$ & 1 & 1892 & 1 & 0\\
+31 & $(3,2)$ & 0 & 1956 & 1 & 1\\
+32 & $(3,2)$ & 1 & 2020 & 1 & 1\\
+33 & $(3,3)$ & 0 & 2084 & 0 & 0\\
+34 & $(3,3)$ & 1 & 2148 & 1 & 1\\
+35 & $(3,4)$ & 0 & 2212 & 0 & 0\\
+36 & $(3,4)$ & 1 & 2276 & 1 & 1\\
+37 & $(3,5)$ & 0 & 2340 & 0 & 0\\
+38 & $(3,5)$ & 1 & 2404 & 1 & 1\\
+39 & $(3,6)$ & 0 & 2468 & 0 & 0\\
+40 & $(3,6)$ & 1 & 2532 & 1 & 1\\
+41 & $(3,7)$ & 0 & 2596 & 1 & 1\\
+42 & $(3,7)$ & 1 & 2660 & 1 & 1\\
+43 & $(4,1)$ & 0 & 2724 & 1 & 1\\
+44 & $(4,1)$ & 1 & 2788 & 1 & 0\\
+45 & $(4,2)$ & 0 & 2852 & 1 & 1\\
+46 & $(4,2)$ & 1 & 2916 & 1 & 1\\
+47 & $(4,3)$ & 0 & 2980 & 0 & 0\\
+48 & $(4,3)$ & 1 & 3044 & 1 & 1\\
+49 & $(4,4)$ & 0 & 3108 & 0 & 0\\
+50 & $(4,4)$ & 1 & 3172 & 0 & 0\\
+51 & $(4,5)$ & 0 & 3236 & 0 & 0\\
+52 & $(4,5)$ & 1 & 3300 & 0 & 0\\
+53 & $(4,6)$ & 0 & 3364 & 0 & 0\\
+54 & $(4,6)$ & 1 & 3428 & 1 & 1\\
+55 & $(4,7)$ & 0 & 3492 & 1 & 1\\
+56 & $(4,7)$ & 1 & 3556 & 1 & 1\\
+57 & $(5,1)$ & 0 & 3620 & 1 & 1\\
+58 & $(5,1)$ & 1 & 3684 & 1 & 0\\
+59 & $(5,2)$ & 0 & 3748 & 1 & 1\\
+60 & $(5,2)$ & 1 & 3812 & 1 & 1\\
+61 & $(5,3)$ & 0 & 3876 & 0 & 0\\
+62 & $(5,3)$ & 1 & 3940 & 1 & 1\\
+63 & $(5,4)$ & 0 & 4004 & 0 & 0\\
+64 & $(5,4)$ & 1 & 4068 & 0 & 0\\
+65 & $(5,5)$ & 0 & 4132 & 0 & 0\\
+66 & $(5,5)$ & 1 & 4196 & 0 & 0\\
+67 & $(5,6)$ & 0 & 4260 & 0 & 0\\
+68 & $(5,6)$ & 1 & 4324 & 1 & 1\\
+69 & $(5,7)$ & 0 & 4388 & 1 & 1\\
+70 & $(5,7)$ & 1 & 4452 & 1 & 1\\
+71 & $(6,1)$ & 0 & 4516 & 1 & 0\\
+72 & $(6,1)$ & 1 & 4580 & 1 & 0\\
+73 & $(6,2)$ & 0 & 4644 & 1 & 1\\
+74 & $(6,2)$ & 1 & 4708 & 1 & 1\\
+75 & $(6,3)$ & 0 & 4772 & 0 & 0\\
+76 & $(6,3)$ & 1 & 4836 & 1 & 1\\
+77 & $(6,4)$ & 0 & 4900 & 0 & 0\\
+78 & $(6,4)$ & 1 & 4964 & 1 & 1\\
+79 & $(6,5)$ & 0 & 5028 & 0 & 0\\
+80 & $(6,5)$ & 1 & 5092 & 1 & 1\\
+81 & $(6,6)$ & 0 & 5156 & 0 & 0\\
+82 & $(6,6)$ & 1 & 5220 & 1 & 1\\
+83 & $(6,7)$ & 0 & 5284 & 1 & 0\\
+84 & $(6,7)$ & 1 & 5348 & 1 & 0\\
+85 & $(7,1)$ & 0 & 5412 & 1 & 0\\
+86 & $(7,1)$ & 1 & 5476 & 1 & 0\\
+87 & $(7,2)$ & 0 & 5540 & 1 & 0\\
+88 & $(7,2)$ & 1 & 5604 & 1 & 0\\
+89 & $(7,3)$ & 0 & 5668 & 1 & 1\\
+90 & $(7,3)$ & 1 & 5732 & 1 & 1\\
+91 & $(7,4)$ & 0 & 5796 & 1 & 1\\
+92 & $(7,4)$ & 1 & 5860 & 1 & 1\\
+93 & $(7,5)$ & 0 & 5924 & 1 & 1\\
+94 & $(7,5)$ & 1 & 5988 & 1 & 1\\
+95 & $(7,6)$ & 0 & 6052 & 1 & 0\\
+96 & $(7,6)$ & 1 & 6116 & 1 & 0\\
+97 & $(7,7)$ & 0 & 6180 & 1 & 0\\
+98 & $(7,7)$ & 1 & 6244 & 1 & 0\\
+\end{longtable}}
+
+\subsection*{AC.4 Independent certificate, retained failures and limits}
+The evidence in this subsection is a distinct post-hoc theorem certificate
+for saved native regions. Section~AC.7 adds later positive rank/response
+witnesses and ordinary-mode controls without changing these records. Independent source-equation winning regions were computed
+before the native candidates. Exact canonical-Boolean correspondence
+checks bind source predicates, typed fields, initializers, ordered justices,
+helper quadrants and immutable snapshot identities. The certificate proves
+$U=D$ from typed $S_{11}$ totality, computes one $\CPre_{01}(D)$ per
+helper arm, and uses only the sufficient endpoints $F=\varnothing$ or
+$F=D$. It never substitutes $W\cap F$ for $W_F$ at a proper $F$.
+All typed source/helper states and all Boolean current-state encodings
+are checked, including raw/typed/domain/helper-false export masks.
+Initializer enumeration uses one SYS response satisfying both its
+initializer and winning membership for each admissible initial ENV value.
+
+All eight certificates pass. The method performs six one-step predecessor
+calls but no new native/source solve or fixed-point iteration. It was
+introduced after observing native candidates and resource caps, so it is
+not a preregistered replacement or an independently recomputed transformed
+fixed point. The eight original independent fixed-point attempts retain
+UNKNOWN at the fixed 500,000-node limit. A first distinct certificate
+attempt retains an old/A serialization exception and seven not-attempted
+slots. A separately authorized amendment removes the duplicate output
+keyword and repeats the fixed eight certificates without changing the
+earlier evidence or its status. Independent pre-execution and result
+reviews check that separation and the interpretation of the saved records.
+
+Saved records include \path{FINAL_CERTIFICATE_SUMMARY.json},
+\path{FINAL_CERTIFICATE_TABLE.csv}, \path{ALL98_FIXED8_MEMBERSHIP.json},
+\path{ALL98_FIXED8_MEMBERSHIP.csv}, and per-arm certificates, membership
+tables and process receipts. The frozen-input manifest, source/native
+outputs, original failures and all subsequent checks remain available
+alongside the fixed protocol. This is one published example pair, not
+prevalence, external reproduction, comparative performance, default
+frontend behavior or demonstrated deployment. No controller extraction
+or private-memory transfer is inferred from finite source-state prefixes.
+
+
+\subsection*{AC.5 Source strict winning and all-history kindness}
+The legal-prefix requirement used for $K$ is generally weaker than
+Kind's Definition~3~\cite{kind}. That definition additionally asks for an
+ENV-safe, ENV-fair continuation from every position of a play induced by
+the winning system strategy and an arbitrary ENV strategy, including
+histories after an ENV violation. The continuation uses the same residual
+system strategy. It does not reapply the source initializer or repair the
+already elapsed prefix. For the two Obstacle sources, the following
+argument establishes this stronger property.
+
+\paragraph{Lemma (total ENV safety without ENV justice).}
+Consider a finite Mealy source with nonempty typed domain $D=E\times Y$.
+Assume that $\rho_e(s,e')$ does not depend on the next SYS response and
+that every $s\in D$ admits at least one $e'$ satisfying $\rho_e(s,e')$.
+The latter condition is required on all typed states, not merely on $W$.
+Assume that the ENV justice list is empty, or contains only identically
+true padding. Let $S$ be a strict-winning source strategy. If initially
+partial, extend it to a strategy $\bar S$ returning a typed response on
+every typed history. The extension must preserve its initial response
+for every input satisfying $\theta_e$, and its responses and ordinary
+memory updates on histories where the original strict duties apply.
+For an already total $S$, take $\bar S=S$. Then $\bar S$ satisfies the
+additional all-history requirement of
+Kind's Definition~3. Consequently, strict-winning and kind strategy
+existence coincide for this source.
+
+\begin{proof}
+Choose a legal ENV selector $f:D\to E$ with
+$\rho_e(s,f(s))$ for every $s\in D$. Such a selector exists by finiteness
+and totality. Fix any history $h=(s_0,\ldots,s_i)$ induced by $\bar S$
+and any ENV strategy. The history may contain an ENV initializer or
+safety violation. From position $i$ onward, choose
+$e_{t+1}=f(s_t)$ and let SYS use
+\[
+ y_{t+1}=\bar S_T(s_0,\ldots,s_i,\ldots,s_t,e_{t+1}).
+\]
+This retains the full prefix and the strategy memory reached along it;
+it neither invokes the initial selector again nor resets memory.
+Next-response independence means that SYS cannot falsify the chosen
+ENV edge. Typed totality puts the successor back in $D$, so the same
+argument can repeat indefinitely. The resulting suffix is ENV-safe,
+and the empty or identically true ENV justice list makes it ENV-fair.
+The construction works from every induced history and position.
+
+Strict realizability is preserved because the extension leaves the
+initial output and all responses carrying strict duties unchanged.
+An initially invalid ENV input disables those duties; after a first
+ENV safety violation, arbitrary typed completion creates no new strict
+SYS safety or justice obligation. This does not erase initial or
+pre-violation duties already incurred. Thus $\bar S$ remains strict-winning
+and satisfies the additional kindness condition. The converse follows
+because Definition~3 already requires strict winning.
+\end{proof}
+
+The source strategy functions in the primary definition are already
+total. The completion condition states what is needed when starting
+from a partial implementation. It does not require a safe SYS response
+at every typed state: after an ENV violation the strict source duties
+have been released. An implementation that instead stops there is not
+thereby certified as a typed-total strategy.
+
+\paragraph{A selector for both Obstacle sources.}
+Let $o=(o_0,o_1)\in\{1,\ldots,7\}^2$ be the obstacle position,
+$p=(p_0,p_1)\in\{1,\ldots,8\}^2$ the current robot position, and
+$w=\code{obsWait}$. If $w$ is true, keep $o'=o$ and set $w'=\mathit{false}$.
+Otherwise set $w'=\mathit{true}$ and, independently for each coordinate,
+choose
+\[
+ o_j'=\begin{cases}
+ o_j-1,&o_j>p_j,\\
+ o_j+1,&o_j<p_j-1,\\
+ o_j,&\text{otherwise}.
+ \end{cases}
+\]
+The decrement case has $o_j\ge2$; the increment case has $o_j\le6$.
+Both stay within $1..7$ and move by at most one. In the remaining case,
+$p_j-1\le o_j\le p_j$, so neither directed-motion antecedent applies.
+Together with the wait flag choice, these cases satisfy every ENV
+wait, motion and directed-motion clause. They use only current robot
+coordinates, not the next SYS response. This proves totality over all
+6,272 typed states without assuming source winning or reachability.
+The old and new sources have the same ENV transition relation and empty
+ENV justice lists. Their initializers differ: the old ENV initializer
+fixes $o=(7,7),w=\mathit{false}$; the new source has no ENV initial
+restriction.
+
+\paragraph{Application and boundary.}
+The existing strict source results therefore establish kind strategy
+existence for both authored initializers. The retained state
+$r=(o=(3,5),w=\mathit{true};p=(5,5))$, source ID~2404, belongs to both
+source winning regions. The lemma also applies to a separately defined
+continuation query fixing that current state. This does not reset to the
+old initializer, construct an installed controller, or establish a
+private-memory transfer. The proof preserves the residual memory of the
+chosen strategy; it says nothing about an arbitrary existing controller
+memory.
+
+This is a source-game argument. Helper conversion adds
+$\G\F\neg b$: at $b=1$, the one-way safety rule prevents any ENV-safe
+suffix satisfying that justice. The lemma therefore does not apply to
+the transformed game. It neither equates a raw four-fixed-point result
+$Q$ with source $W$ or $K$, nor establishes a frontend answer or an
+extracted controller's correctness. The strengthening above is a
+mathematical consequence of the existing source relations and strict
+results, not a new solver execution.
+
+\clearpage
+\subsection*{AC.6 Two fixed public Kind realizability checks}
+The source-kind lemma permits a comparison beyond ordinary strict
+winning: both queries below admit a strategy satisfying the all-history
+source requirement of Kind's Definition~3. We separately tested the
+published tool's \emph{Check Realizability} action on those fixed inputs.
+Both returned \emph{Specification is unrealizable}. This is an observed
+answer from a selected public checking path, not a new strict-region
+certificate or a controller-handoff experiment.
+
+\paragraph{Queries and exact initial meaning.}
+The first query uses the unchanged 2,097-byte published old source from
+AC.1. Its ENV initializer fixes obstacle $(7,7)$ and
+$\mathit{obsWait}=\mathit{false}$; its SYS initializer fixes robot $(1,1)$.
+The joint state is source ID~6144 and belongs to the accepted old winning
+region. The ENV initial domain is nonempty, and the required initial
+response exists for its sole input. Thus the initialized existence
+claim retains the universal-ENV/existential-SYS initial quantifiers.
+
+The second query uses the 1,902-byte ordinary projection of the update,
+followed by this fixed 124-byte appendix:
+\begin{lstlisting}
+asm retainedBoundaryEnv:
+obstacle[0] = 3 & obstacle[1] = 5 & obsWait;
+gar retainedBoundarySys:
+robot[0] = 5 & robot[1] = 5;
+\end{lstlisting}
+It fixes exactly the previously selected state
+$r=(o=(3,5),w=\mathit{true};p=(5,5))$, source ID~2404, without conjoining
+the old initializer. The input is 2,026 bytes, with SHA-256
+\path{212309df489c3ddc7bf7ec6a750aed2d0da4fb7e26995e5ee3a0405c9897e1d5}.
+Its first 1,902 bytes are identical to the accepted update projection;
+all noninitial source clauses are unchanged. It is not the byte-unchanged
+public update, nor an execution of that file's switch declaration.
+The seven-edge old-only prefix in AC.3 fixed this endpoint before
+new-source evaluation. No input was changed in response to a GUI result.
+
+The accepted new strict region contains $r$. Applying AC.5 to this
+separately initialized source query establishes a kind continuation.
+The lemma retains the full history and residual memory of the chosen
+strategy; it does not show that an arbitrary installed old controller's
+memory is suitable for the new strategy. No such old-controller memory
+was extracted or transferred.
+
+\paragraph{Binding the point query to the accepted predicates.}
+Before the second public action, a separate NoIDE export generated
+saved predicates for the fixed input without constructing a solver or
+computing a winning fixed point. A saved-data comparison checked the
+source clause inventory, full ENV/SYS safety relations, typed domains,
+all four helper-transition quadrants, ordered justices, and the
+helper-false source relation against the accepted records. The ENV and
+SYS initial predicates were each nonempty; their conjunction fixed
+exactly $r$ with helper false. The point initializer therefore does not
+obtain a result through an empty initial domain or an old-source restart.
+
+The export supervisor nevertheless ended with
+\path{UNKNOWN_SUPERVISOR_EXCEPTION}: its final process snapshot raced
+with process exit. The OS return code was not recorded and is not
+inferred to be zero. That original status remains unchanged. Before
+the GUI action, a separate review adopted the saved mathematical objects
+after checking their structure, predicate equality and complete capture:
+257 checks and 55 pinned files passed in that review. This was a
+saved-data acceptance, not a conversion of the supervisor record into
+PASS. It ran no new Java process, model generation, solver or fixed point.
+
+The NoIDE exporter and Eclipse use the same pinned release translator
+but different resource providers and Java versions (17.0.19 and 17.0.9).
+No live GUI BDD model was exported. The saved predicate correspondence
+is therefore not an observation that every internal GUI predicate is
+identical to the NoIDE export.
+
+\paragraph{Selected public path and completed observations.}
+Both actions used the installed Spectra release
+\code{1.0.0.202402072123}, Kind selected by
+\code{synthesisPitermanReduction}, JTLV, no optimizations and no
+reordering. The public command was \code{tau.smlab.syntech.checkRealAction}.
+The installed source and saved bytecode identify the static path: the shipped
+syntactic reduction precedes the default translators, and the recorded JTLV
+branch invokes \code{GR1SeparatedGame}. Both actual consoles displayed that
+class and \code{JTLVJavaFactory 1.3}. The separate complete-correction class
+represented by $R^+$ is not selected on this path. Section~AE.1 distinguishes
+this static fact from live-model equality and runtime class origins.
+
+\begin{center}\small
+\begin{tabular}{@{}L{57mm}L{37mm}L{49mm}@{}}\toprule
+Fixed query & Source existence evidence & Public observation\\\midrule
+Old source, authored initialization &
+Strict source certificate plus AC.5 &
+Unrealizable; 1,011 ms\\[3pt]
+Updated projection, point initialization at $r=2404$ &
+Strict source certificate at $r$ plus AC.5 &
+Unrealizable; 745 ms\\\bottomrule
+\end{tabular}
+\end{center}
+Each input received one public action, with no retry and no controller
+extraction. The times are plugin diagnostic computation times, not a
+performance benchmark. Exact input snapshots, final settings, full
+console screenshots, action logs, release-file checks and completion
+records bind the observations. Separate read-only completion audits
+found no discrepancy.
+
+The old-input logger has one start/done pair and two identical source
+snapshots. The retained-query logger has one start/done pair in one XML
+file and one archived source snapshot; its same-second storage does not
+provide two independently retained snapshots. That snapshot and the
+prepared/current input all match the fixed hash above. Both GUI runs
+completed without a recorded exception or resource-stop signal. These
+GUI completion records are separate from the earlier export supervisor's
+UNKNOWN and do not alter it. Console text is a visual transcription of
+the unedited screenshots, not text obtained from the accessibility API.
+
+\paragraph{Decision consequence and limits.}
+For the old original initialization and for the fixed updated point
+query, source-kind strategy existence is established independently of
+the observed Boolean answers. If the selected public path is used as a
+source-level continuation-feasibility gate at $r$, its false answer
+would reject a continuation whose existence is separately proved.
+This comparison does not rely only on the weaker legal-prefix set $K$.
+The finite old prefix identifies a possible reached source valuation;
+it does not establish a running old controller, its private memory,
+an installed update, or an actual deployment rejecting the candidate.
+
+The old query was already negative, so the update is not shown to
+introduce the obstruction. The two observations neither export an
+all-state raw four-fixed-point region $Q$ nor identify $Q$ with $W$ or
+$K$. The headless correction certificates remain separate evidence for
+the strict-game mechanism; the GUI observations do not isolate one
+internal defect as the exclusive cause. They establish neither default
+or all-backend behavior, incidence, deployment benefit, nor tool-author
+intent. The eight earlier independent fixed-point UNKNOWNs and the
+certificate-processing exception with seven then-unattempted slots in
+AC.4 remain unchanged.

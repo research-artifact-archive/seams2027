@@ -1,0 +1,30 @@
+\subsection{The game and the meaning of a continuation}\label{sec:semantics}
+A finite, fully observed Mealy game has nonempty typed input and response
+carriers $E,Y$ and states $s=(e,y)\in D=E\times Y$, including all logical
+monitors. In one round ENV chooses $e'$; SYS observes it and chooses $y'$,
+reaching $s'=(e',y')$. ENV safety $\rho_e(s,e')$ is independent of the next
+SYS response. SYS safety $\rho_s(s,e',y')$ includes every system constraint
+and monitor update. A typed input is in its declared domain; a
+\emph{source-legal} input also satisfies $\rho_e$. Neither safety relation
+need be total. Invalid type encodings are outside $D$.
+
+The ENV and SYS justice lists define generalized B\"uchi objectives $A,G$:
+each listed predicate must hold infinitely often. Under \emph{strict}
+semantics~\cite{gr1,kind}, when ENV initialization holds, SYS owes its
+initializer and safety on every edge whose entire ENV-safety prefix,
+including that edge, is legal. An actual ENV safety violation releases the safety duty on the violating
+edge and thereafter. On infinite plays satisfying
+ENV initialization and safety, SYS must satisfy $A\Rightarrow G$.
+Future ENV unfairness cannot excuse an earlier required safety violation.
+Strategies may use history and private memory and supply typed responses
+even after ENV violations.
+
+Let $W$ be the set of states from which SYS has a strict-winning source
+continuation. Such an \emph{active} entry has met ENV initialization, prior
+ENV safety and the required SYS duties. Membership in $W$ says neither that
+the state is reachable nor that it is an allowed initializer; ENV dead ends
+may win vacuously. Initial synthesis instead asks whether \emph{each} allowed
+ENV initial value admits \emph{some} allowed SYS response in the winning
+region. A retained-state query fixes both components, including the pending
+obligations. It cannot select a different initial response. These distinct
+questions will matter in Vehicle and Obstacle.

@@ -106,6 +106,83 @@
       "member": "seams2027-normalized-eleven-evidence/code/experiment/seams_research_reframing_20261017/initial_graph_checker/vendor/graph_fairness.py",
       "bytes": 8246,
       "sha256": "3da6d64631bd88ae0bda4ad71ccc37c46f48de233a51dcc843a476e391981d45"
+    },
+    {
+      "path": "tool/src/compiled-cohort/audit_core.py",
+      "bytes": 23691,
+      "sha256": "6c8ac63861fbb645ccf6d965cdafac17a8ab849f44132589368b38e04212a22f",
+      "archive": "results/archives/v71-compiled-cohort-evidence-20261026.zip",
+      "member": "aa_compiled44/checkers/audit_core.py"
+    },
+    {
+      "path": "tool/src/obstacle/check_saved.py",
+      "bytes": 10241,
+      "sha256": "c666c281fb4e1c841d3eff9d80535e3e82d13acf9ab765ae7321f1c94eef5851",
+      "archive": "results/archives/v71-obstacle-evidence-20261026.zip",
+      "member": "ac_obstacle8cert98/published_update/direct_certificate_check/amendment_01/check_saved.py"
+    },
+    {
+      "path": "tool/src/obstacle-positive/check_certificate.py",
+      "archive": "results/archives/v71-r6-positive-certificates-and-controls-20261026.zip",
+      "member": "r6_positive_certificates_and_controls/checkers/check_certificate.py",
+      "bytes": 23802,
+      "sha256": "9618f0cbbe7dafb92f963e200f2304f802629aef248f563de0e039eda23ce28d"
+    },
+    {
+      "path": "tool/src/obstacle-positive/qualify_rejections.py",
+      "archive": "results/archives/v71-r6-positive-certificates-and-controls-20261026.zip",
+      "member": "r6_positive_certificates_and_controls/checkers/qualify_rejections.py",
+      "bytes": 15211,
+      "sha256": "4ff6c3beb4e04050e87b0c401ae6bf6fc90a6bfcd0bb7b4a10ffad8c7f5be4cf"
+    },
+    {
+      "path": "tool/src/same-solver-diagnostic/cross_arm_gate.py",
+      "archive": "results/archives/same-solver-diagnostic-20261026-v1.zip",
+      "member": "r7_same_solver_diagnostic/source/v5/cross_arm_gate.py",
+      "bytes": 38940,
+      "sha256": "e461bd85d2c34e7adc9367e772bb241cd2018e6b9a919247d1cfa337a3c3c3d5"
+    },
+    {
+      "path": "tool/src/same-solver-diagnostic/java/ExactBSameSolverDiagnostic.java",
+      "archive": "results/archives/same-solver-diagnostic-20261026-v1.zip",
+      "member": "r7_same_solver_diagnostic/source/v5/java/ExactBSameSolverDiagnostic.java",
+      "bytes": 21449,
+      "sha256": "9cabff333c4d19a54619c19fa96b998610553adf4f0e1289f0b816689cabc9e7"
+    },
+    {
+      "path": "tool/src/same-solver-diagnostic/java/BoundedDiagnosticPrintStream.java",
+      "archive": "results/archives/same-solver-diagnostic-20261026-v1.zip",
+      "member": "r7_same_solver_diagnostic/source/v5/java/BoundedDiagnosticPrintStream.java",
+      "bytes": 4846,
+      "sha256": "2f6aadfbc690f5a4bc55c8f3d9401598c7b282069eb7096a676a7e0e93e59daf"
+    },
+    {
+      "path": "tool/src/completed-same-observer-pair/java/ExactBSameSolverDiagnostic.java",
+      "archive": "results/archives/r9-completed-same-observer-pair-20261026-v1.zip",
+      "member": "r9_completed_pair/evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/java/ExactBSameSolverDiagnostic.java",
+      "bytes": 24189,
+      "sha256": "105d8e80dc88f496c55f8bb81f213cfb41b41460937567c1bec7e104df69fb7e"
+    },
+    {
+      "path": "tool/src/completed-same-observer-pair/java/BoundedDiagnosticPrintStream.java",
+      "archive": "results/archives/r9-completed-same-observer-pair-20261026-v1.zip",
+      "member": "r9_completed_pair/evidence/experiment/v71_acceptance_cycle_20261025/research_strategy_after_r6/r9_same_observer_pair_preparation_v1/java/BoundedDiagnosticPrintStream.java",
+      "bytes": 4846,
+      "sha256": "2f6aadfbc690f5a4bc55c8f3d9401598c7b282069eb7096a676a7e0e93e59daf"
+    },
+    {
+      "path": "tool/src/completed-same-observer-pair/capture_qa.py",
+      "archive": "results/archives/r9-completed-same-observer-pair-20261026-v1.zip",
+      "member": "r9_completed_pair/evidence/experiment/v71_acceptance_cycle_20261025/reviews/internal_r9_dual/distinct_pair_saved_output_qa_preparation/capture_qa.py",
+      "bytes": 14407,
+      "sha256": "3e168606e147c579c39f6191fdc236408956bd1f984829bf147df43450f378a4"
+    },
+    {
+      "path": "tool/src/completed-same-observer-pair/verify_public_package.py",
+      "archive": "results/archives/r9-completed-same-observer-pair-20261026-v1.zip",
+      "member": "r9_completed_pair/verify_public_package.py",
+      "bytes": 6786,
+      "sha256": "e0934198114fc7b95102d878f5a9e0912f7b99fc86f7c12b99d054f536193d9d"
     }
   ]
 }

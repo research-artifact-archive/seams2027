@@ -1,0 +1,63 @@
+\clearpage
+\section*{Z. Historical report for the unchanged Patrolling input}
+This section records public evidence confirmed during the current revision.
+It does not change the earlier outcome-informed selection, constructed
+old model, post-diagnosis reuse policy or workload of the Patrol study.
+The evidence is a historical reported result from the original Kind
+artifact~\cite{kindartifact}, not a new native execution.
+
+\paragraph{Exact source and result binding}
+The downloaded artifact ZIP has SHA-256
+\path{65abe41fcca3694a31967d409e642cb2b5785156aed5f464db380c7e3bb98712}.
+Its source member
+\path{artifact/experiments/specs/syn23/1670358790.spectra}
+has 3,304 bytes and SHA-256
+\path{cde1b981a103047ddefbe8a963f1188d57904659a30fd0e7b678c771213be402}.
+It is byte-identical to the unchanged new Patrolling source indexed as
+\code{corpus277\_\_original} in our roster.
+The member
+\path{artifact/raw_results/4fp_cover/_results_4fp_cover23.csv}
+has 5,710 bytes and SHA-256
+\path{259adc380dad00301e79c8b18eae4faf9447d8120a666570cb76b7434903805e}.
+Its header and line~40 are
+\begin{verbatim}
+Filename,4FP,R+4FP
+1670358790.spectra,TRUE,FALSE
+\end{verbatim}
+The artifact README, lines~112 and~115, identifies the columns as
+algorithm realizability outputs. Its SHA-256 is
+\path{6476e8ad59dadeae771e1344f9e0afcf373c56f80fcc1d4f34b11642b8c81289}.
+Here \code{R+4FP} means \emph{reduction plus four fixed points}; it does
+not denote the preserving $R^+$ defined in the main paper.
+
+\paragraph{What the packaged driver establishes}
+A static inspection of the packaged Java driver finds separate
+\code{checkRealizability} Boolean answers on the same reparsed source.
+The paired true/false branch is separate from the caught-exception
+record; the Java path has no watchdog or timeout-to-false branch.
+The C-backed game implementation delegates to the factory Boolean.
+This supports reading the CSV row as the artifact's reported pair of
+algorithm answers, rather than a timeout token in that driver.
+It does not replace a historical runtime receipt.
+
+Both arms request CUDD~3.0, SIFT and the same optimization settings.
+The driver rewrites ENV safety declarations to state invariants,
+invokes \code{DefaultTranslators}, and only then applies syntactic
+reduction before the C-backed four-fixed-point game.
+That order, backend and platform differ from our fixed-option headless
+JTLV route. The archive has no loaded-factory/runtime logs establishing
+identity of the historical execution. Native DLL behavior was not audited;
+the base factory method can return false if unimplemented.
+The first-arm TRUE is inconsistent with a simple identical-factory
+fallback in both arms, but does not prove what was loaded historically.
+The published CSV uses uppercase Booleans whereas the packaged driver
+emits lowercase text, so the row is not a byte-for-byte raw execution receipt.
+
+\paragraph{Supported interpretation}
+The original public artifact reports different answers with and without
+reduction for the same source used here. This supplies concrete historical
+context for the input. It does not establish a default or frontend run,
+identity with the current strict-query harness, or the strict-semantic
+cause of the historical difference. The source/export/countercertificate
+arguments in Sections~S and U independently support our current Patrol
+claims. No historical timing is used to predict present execution time.

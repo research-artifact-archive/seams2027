@@ -1,0 +1,245 @@
+\subsection*{AC.7 Direct-source strategy certificates and matched public controls}
+\label{supp:r6-obstacle-certificates}
+
+\paragraph{Scope and exact queries.}
+This additional study supplies explicit positive strategy certificates for
+the same two initialized queries used in AC.6, and ordinary-GR(1) public
+controls on the same input bytes. These are separate from the earlier
+saved-region/theorem certificates in AC.4.
+Query A is the unchanged 2,097-byte published old source, initialized at
+$(o=(7,7),w=\mathit{false};p=(1,1))$.
+Query B is the 2,026-byte retained-point update query, initialized at
+$(o=(3,5),w=\mathit{true};p=(5,5))$.
+Both start the certificate strategy in phase zero.
+
+The checker binds the exact source length, SHA-256, case name, explicit
+query tuple and initial tuple. Its separate source-binding check also
+confirms the byte identities: A equals published old; the 1,947-byte
+published update equals the 1,902-byte ordinary projection plus its
+45-byte switch suffix; B equals that projection plus the fixed 124-byte
+point initializer. Thus B preserves all noninitial source clauses and
+does not conjoin the old initializer. These identities do not execute
+the switch declaration or prove a controller handoff.
+
+\paragraph{An independently implemented source checker.}
+The checker imports only Python standard-library modules. It transcribes
+the original source equations directly and imports no generator module,
+old source evaluator, predecessor or fixed-point routine, saved graph,
+or candidate-winning-set truth. Certificate provenance is informational,
+not a proof premise. Its independence is from those implementations;
+the mathematical argument still depends on the correctness of the
+source transcription, the adopted declaration semantics, the checker
+and its runtime. This is not an independent general-purpose Spectra
+compiler.
+
+The explicit state tuple is $(o_0,o_1,w,p_0,p_1)$, with obstacle coordinates
+in $1..7$, a Boolean wait flag, and robot coordinates in $1..8$.
+There are 98 typed ENV valuations, 64 typed SYS valuations and 6,272
+typed states. Integer and Boolean types are checked separately.
+The ENV predicate is the complete conjunction of wait alternation,
+waiting-position persistence, obstacle movement by at most one per
+coordinate, and the four
+directed-motion implications listed in AC.5.
+
+For SYS, the checker verifies current-state collision avoidance and
+the two authored forbidden-location safety clauses: $(3,5),(4,5)$ for A,
+and $(6,4),(8,7)$ for B. The declarations named
+\path{AvoidInfinitely} are globally enforced safety clauses, despite
+their names. Transition checks limit each robot coordinate's change
+to at most one and preserve
+\code{robotAvoidsObstacle}, which tests the \emph{current} robot against
+the \emph{next} obstacle. Closure also checks successor current-state
+safety, hence the next robot against the next obstacle. These are
+distinct obligations. The two recurring SYS goals, in source order,
+are $(5,2),(2,3)$ for A and $(3,7),(4,8)$ for B. Both ENV justice lists
+are empty.
+
+\paragraph{Certificate obligations and the winning argument.}
+A certificate supplies a nonempty set $R$ of explicit typed states,
+one bit of goal phase $q\in\{0,1\}$, two integer rank functions, and
+one SYS response for each legal ENV input at each state and phase.
+Ranks lie in $0..6271$; only finite nonnegative values are needed for
+the well-foundedness argument. Write $G_q$ for the current phase's
+source goal. The checker requires
+$\operatorname{rank}_q(s)=0$ exactly when $s\in G_q$.
+
+For each $s\in R$ and each phase, the checker independently enumerates
+all 98 typed next ENV tuples. The supplied response keys must equal
+the entire set satisfying the source ENV predicate: missing, duplicate
+or extra inputs are rejected. This legal-input set must be nonempty.
+Every response is typed, satisfies the complete source SYS transition
+relation, and reaches a state $s'\in R$. Outside $G_q$, it must retain
+phase $q$ and satisfy
+\[
+ \operatorname{rank}_q(s')<\operatorname{rank}_q(s).
+\]
+At $G_q$, the next phase must be $1-q$; no descent is required across
+that phase change.
+
+Consequently, every source-legal play stays safe in $R$. A phase cannot
+avoid its goal forever, because that would produce an infinite strictly
+decreasing sequence of nonnegative integers. The next step changes
+phase, and the same argument repeats, giving infinitely many visits
+to both source goals. This covers every legal ENV branch, not a
+selected execution or merely one cycle.
+
+Initialization is checked separately over all 98 ENV assignments and,
+for each allowed initial ENV value, all 64 SYS assignments. Every
+allowed ENV value must have a source-initial SYS witness in $R$.
+Both exact queries have one admissible initial pair, present with
+phase zero. The accepted results are:
+\begin{center}\small
+\begin{tabular}{@{}lrrrrl@{}}\toprule
+Query & $|R|$ & \shortstack{Policy edges\\over two phases} &
+Maximum rank & Initial pairs & Checker result\\\midrule
+A & 5,016 & 12,656 & 17 & 1 & accept\\
+B & 5,015 & 12,672 & 17 & 1 & accept\\\bottomrule
+\end{tabular}
+\end{center}
+Both receipts report \path{ACCEPT_POSITIVE_EXISTENCE}.
+They certify positive strategy existence for the exact queries and
+the checked strategy on $R$. They do not prove that $R$ is a maximal
+winning region or exclude any state outside it. The coincidence of
+these cardinalities with the earlier region counts does not change
+that scope; complete-region claims retain their earlier computational
+premises.
+
+\paragraph{Typed completion and the separate all-history bridge.}
+The strategy has an ENV-violation latch in addition to the goal phase.
+Both are private strategy memory, not additional source variables.
+On an invalid ENV initial value or after the first ENV safety violation,
+it latches the violation and forever returns typed SYS value $(1,1)$
+with phase zero; it does not resume the certificate when ENV later
+becomes legal. Otherwise unreachable histories use the same specified
+fallback. The checked policy applies throughout every induced legal
+prefix, preserving valid initial outputs and all responses and ordinary
+memory updates carrying strict duties. Completion creates no new
+SYS safety obligation after an ENV violation and erases none already owed.
+
+The positive winning check does \emph{not} itself prove global ENV
+totality. A separate check, bound to both exact sources, enumerates all
+6,272 typed states and all 98 next ENV tuples at each state, including
+states outside $R$ and states reachable by fallback. It reports
+\path{ACCEPT_SOURCE_ENV_TOTALITY_ONLY}: 9,536 legal ENV edges, with
+minimum outdegree one and maximum nine. The source ENV relation is
+independent of the next SYS response and has no justice assumptions.
+
+Combining this totality result with the typed-total certificate strategy
+and AC.5 gives the source-specific all-history Kind property: after any
+induced history, repeatedly select a legal ENV input while retaining
+the same strategy, full prefix and reached phase/latch memory. Typed
+successors remain in the domain, so this yields an ENV-safe infinite
+suffix; empty ENV justice makes it fair. Initialization is not restarted.
+The strict positive certificate and the ENV-totality argument are
+logically separate premises. Neither supplies a general Kind-preservation
+theorem or transfers arbitrary memory from an installed old controller.
+
+\paragraph{Fixed malformed-certificate qualification.}
+Two unmodified positive controls were accepted. For each source, the
+frozen qualification roster supplied 25 malformed certificates; all
+50 were rejected with their expected reason codes. The roster covers:
+\begin{center}\small
+\begin{tabular}{@{}L{30mm}L{100mm}r@{}}\toprule
+Group & Mutations & Per source\\\midrule
+ENV coverage &
+Missing input, extra illegal input, duplicate input & 3\\
+Safety and closure &
+Unsafe robot step, unsafe current state, missing successor & 3\\
+Ranks &
+Negative, oversized or Boolean rank; zero off goal; no decrease & 5\\
+Phase &
+Wrong phase, phase stuck at a goal, missing phase policy & 3\\
+Query binding &
+Wrong query, case, source hash or source path; initial state missing & 5\\
+Value types &
+Integer wait value, Boolean SYS coordinate & 2\\
+State and schema &
+Duplicate state, extra metadata key, duplicate JSON key & 3\\
+Completion &
+Wrong completion declaration & 1\\\bottomrule
+\end{tabular}
+\end{center}
+These checks measure observed rejection sensitivity of this fixed
+roster, not complete checker correctness and not negative source
+realizability.
+
+Forty-eight rejection receipts directly contain the checked input hash.
+The two duplicate-JSON-key inputs fail during parsing before the input
+hash is returned to the receipt, leaving \path{certificate_sha256}
+null. Their retained compressed inputs were checked against the exact
+frozen mutation construction and the qualification driver's archive
+hashes; the saved receipts and output report
+\path{DUPLICATE_JSON_KEY}. Thus those two rejections have an explicit
+driver/input provenance chain, not a populated receipt input-hash field.
+
+Six frozen supervised stages completed once each: the two generations,
+the two positive checks, the separate totality/binding check, and
+qualification. Each positive-check stage and the totality/binding stage
+had 180-second wall and per-process CPU budgets. The qualification stage had
+300-second wall and per-process CPU budgets. The owned-process
+supervisor monitored the process tree against a 1-GiB sampled RSS budget.
+RSS samples, particularly for short stages with only two samples, do
+not establish instantaneous peak memory or a continuous hard RSS bound.
+These records support no performance claim.
+
+\paragraph{Matched public ordinary-GR(1) controls.}
+Using the same A/B bytes and installed release as AC.6, the public
+\emph{Check Realizability} action was run once per query in
+\emph{Original GR(1)} mode, with JTLV, optimizations disabled and
+reordering disabled. Both answers were \emph{Specification is realizable}.
+The previous selected Kind-mode answers remain false:
+\begin{center}\small
+\begin{tabular}{@{}llll@{}}\toprule
+Query & Ordinary GR(1) & Previous Kind & Ordinary console time\\\midrule
+A & true, one action & false, one action & 10,391 ms\\
+B & true, one action & false, one action & 14,221 ms\\\bottomrule
+\end{tabular}
+\end{center}
+The times are diagnostic provenance, not a benchmark.
+The ordinary consoles identify \path{GR1GameMemoryless},
+\code{JTLVJavaFactory 1.3}, and the diagnostics
+\code{env 7 / sys 6 / aux 0}. Exact source archives, one start/done XML
+pair per query, screenshots and owned-process monitoring bind the
+observations. The preference UI, installed default-initializer bytecode
+and runtime console establish ordinary-mode selection; the serialized
+\code{synthesisMethod} preference is absent because ordinary GR(1) is
+the installed default.
+
+This is a matched-input mode contrast. Mode selection changes both
+reduction and solver, so the contrast does not isolate one exclusive
+internal cause. No live GUI intermediate BDD or predicate export was
+obtained. The installed-code mapping and saved source correspondence
+are distinct from observing those live intermediate predicates.
+A was already negative in Kind mode; the update is not shown to
+introduce that obstruction.
+
+\paragraph{Evidence identity and retained limits.}
+The checker file \path{check_certificate.py} has SHA-256
+\path{9618f0cbbe7dafb92f963e200f2304f802629aef248f563de0e039eda23ce28d};
+the qualification driver \path{qualify_rejections.py} has SHA-256
+\path{4ff6c3beb4e04050e87b0c401ae6bf6fc90a6bfcd0bb7b4a10ffad8c7f5be4cf}.
+The original execution-input A and B certificate hashes are respectively
+\path{25a6412edbf3ef5a3024eb2b0e3854a688572417c867b5e7af13342b2e07dc60}
+and
+\path{d9ccee3264c87f09cd3b71ee981bb6fc925eb3dc18c4259ffd9207fbd9dc7641}.
+The receipts bind the original execution inputs and exact sources.
+The public certificates change only local provenance metadata; their
+different byte hashes are listed separately in the public manifest and
+transformation ledger. The hashes above identify the original inputs.
+
+The fifth package in the current-evidence index contains the positive
+certificates, checker, qualification records, ordinary controls and prior
+Kind results at the fixed document release. It omits upstream source bodies,
+raw screenshots and AX captures, supplying restoration pins and recipes,
+authored console transcriptions and logger XML. Its guide separates
+validation status from the original scientific executions. A later
+existing-host replay of the exact public v1 inputs rechecked A/B,
+all-typed ENV totality and the fixed controls. Section~AE.2 gives its
+adopted scope and distinguishes the v1 inputs from the later v2 records.
+
+The eight earlier independent exported-game fixed-point attempts remain
+UNKNOWN. The new certificates prove existence, not maximal regions or
+new negative-game results. Public controls establish neither raw
+four-fixed-point regions nor corpus incidence, installed replacement,
+deployed rejection or arbitrary private-memory handoff. The finite old
+prefix, old native evidence and failure statuses are unchanged.

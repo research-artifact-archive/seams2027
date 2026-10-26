@@ -1,0 +1,56 @@
+{
+  "schema": "v71-public-v2-package-adoption-binding-v1",
+  "status": "ROOT_ADOPTED_EXACT_PUBLIC_V2_PACKAGE_CANDIDATE",
+  "adopted_utc": "2026-10-25T19:26:23.272134+00:00",
+  "package_frozen_utc": "2026-10-25T19:15:58.993443+00:00",
+  "archive": {
+    "path": "results/archives/v71-r6-positive-certificates-and-controls-20261026.zip",
+    "bytes": 2729454,
+    "sha256": "7a71e382afb1bca414b107545c8b410ff5b8b9437a6b76aaf67f119937f218a3"
+  },
+  "package_manifest": {
+    "member": "r6_positive_certificates_and_controls/MANIFEST.json",
+    "bytes": 116230,
+    "sha256": "20e045f1f3d7dfc44322f0f72eb34abd285a976d40a8533e5aefe912518cc32d"
+  },
+  "replayed_v1_zip": {
+    "bytes": 2347279,
+    "sha256": "e1359c08454430ff19c8af2a8322a426d089b8a1c0cd180a2c631f267782ac8b"
+  },
+  "root_adoption_record": {
+    "bytes": 2643,
+    "sha256": "9cf5e5f9b5c3b62c978e06db942d051f0cb64739ee6ca974c51178474defd3e6"
+  },
+  "root_review_evidence_pins": [
+    {
+      "bytes": 13993,
+      "sha256": "ae36109c05d192e5880d4aeb9d6a051434e1ea1637d2abaecc1522319c29f616"
+    },
+    {
+      "bytes": 6448,
+      "sha256": "216dc6f10a4c9e010677c79b42dc47c721d7957ab52ea57436ce1d92e319e83f"
+    },
+    {
+      "bytes": 688278,
+      "sha256": "400566a090f920e6fa20359f5947b2e46d823deafef72a1f1692e52b3f063f7d"
+    },
+    {
+      "bytes": 273,
+      "sha256": "a60ee909eca4ef2cec506227e8798d837e0b241de437a0f17cbfc38b77027881"
+    },
+    {
+      "bytes": 4909,
+      "sha256": "bb5b092a59cd3d089ba2989a88613e56ed4cf4ff6fdc38e40187105155ffaff5"
+    }
+  ],
+  "scope": {
+    "adoption_kind": "exact_public_v2_package_candidate",
+    "replayed_scientific_inputs": "exact_public_v1_existing_host",
+    "v2_container_scientifically_replayed": false,
+    "fresh_host_or_external_reproduction": false,
+    "fully_hermetic_execution": false,
+    "external_publication_asserted": false,
+    "push_release_or_conference_status": "not_attested_by_this_record"
+  },
+  "historic_status_interpretation": "Pending/unpublished candidate labels inside the frozen archive record its freeze-time state. This outer record records later root candidate adoption only."
+}

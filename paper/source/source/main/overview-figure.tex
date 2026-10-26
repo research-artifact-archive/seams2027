@@ -1,0 +1,42 @@
+% Introductory object map. Uses the main paper's existing TikZ setup.
+% No region notation, Kind definition, solver internals, or gate implementation.
+\begin{figure}[!t]
+\centering
+\begin{tikzpicture}[>=Latex,x=1mm,y=1mm,
+every node/.style={font=\small,align=center,inner sep=1.2mm},
+question/.style={draw=sourceblue,fill=softblue,rounded corners=2pt,
+ text width=77mm},
+stage/.style={draw=fliporange,fill=softorange,rounded corners=2pt,
+ text width=33mm,minimum height=16mm},
+obligation/.style={fill=white,text width=35mm,inner sep=.5mm}]
+\node[text width=80mm] (entry) at (42,56)
+ {Retained entry and candidate requirements};
+\node[question] (question) at (42,43)
+ {\textbf{Source continuation question}\\
+  Source strict or source-kind\\
+  Can a controller continue from this entry?};
+\draw[->,thick,sourceblue] (entry.south) -- (question.north);
+
+\node[stage] (helper) at (20,13)
+ {\textbf{Helper game}\\Encoded strict\\winning};
+\node[stage] (answer) at (64,13)
+ {\textbf{Answering procedure}\\Public action /\\fixed raw solver calls};
+\draw[->,thick,fliporange] (helper.east) -- (answer.west);
+
+% These are proof/use obligations, not verified data-flow arrows.
+\draw[dashed,thick] (question.south -| helper.north) -- (helper.north);
+\node[obligation] at (20,29)
+ {\textbf{Preservation}\\for this query};
+\draw[dashed,thick] (question.south -| answer.north) -- (answer.north);
+\node[obligation] at (64,29)
+ {\textbf{Query/objective}\\\textbf{correspondence}};
+
+\node[text width=80mm] at (42,0)
+ {Conceptual use; no implemented gate.};
+\end{tikzpicture}
+\caption{Using a negative answer requires two separate justifications:
+the encoding must preserve the source property queried, and the answering
+procedure must correspond to that query and objective. The preservation
+result alone does not establish the latter.}
+\label{fig:overview}
+\end{figure}
