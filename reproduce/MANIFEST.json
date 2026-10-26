@@ -1,7 +1,7 @@
 {
   "schema": "seams2027-purpose-layout-v1",
   "baseline_commit": "11a828f65f91a9b4950a18d189a702fb18ec8ed5",
-  "release_tag": "controller-replacement-audit-20261026-v9",
+  "release_tag": "controller-replacement-audit-20261026-v10",
   "paper_version": "v71-r10",
   "files": [
     {
@@ -16,8 +16,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 4682,
-      "sha256": "27212ea8da47ca3ef36a420d78bfed19ccb5864ba24a3232b426ca789310df69"
+      "bytes": 4684,
+      "sha256": "62678d3b337a142d63d4becb142a35efe45649cc0bb9d17f334f1a59dfdede6c"
     },
     {
       "path": "docs/HISTORICAL_TAG_SNAPSHOT.json",
@@ -41,43 +41,43 @@
     },
     {
       "path": "docs/versions.md",
-      "bytes": 8416,
-      "sha256": "82ee52d1e504309b55a6c6022d8467df4fffbea94fc475cd829d5fe96f3bcebe"
+      "bytes": 8897,
+      "sha256": "1cf07064071f09180c15c453545845c1d5944be9040467cf6a31691409bde590"
     },
     {
       "path": "paper/PAPER_MANIFEST.json",
-      "bytes": 2605,
-      "sha256": "0cac42ba019c07fcd74e2acb08182ca24f092439523e5e32a56970461095496d"
+      "bytes": 2541,
+      "sha256": "b8dfc32963f24a33fba1d1e71f7698df5ffa2432e561267cb2dce83709ee0ffd"
     },
     {
       "path": "paper/README.md",
-      "bytes": 7558,
-      "sha256": "1c100351d1e42ad2bf245b4a3d0b389cdd30ef2ff9f959d8182967e260be2fed"
+      "bytes": 7462,
+      "sha256": "062e7511a0a2d7b12c8c3368809f2044b0c72f9d8a510be7af3980231b87572f"
     },
     {
       "path": "paper/main.pdf",
-      "bytes": 294847,
-      "sha256": "aa6054f3aa3a16c5727b84a2c8894403ea4136c13292c450e104a5241f809a24"
+      "bytes": 294957,
+      "sha256": "1cef9ae6448e8817467db692c643bf90bee06b5147d89942d143f6dcb07aca67"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1772667,
-      "sha256": "0ea10a691e25a3a9cdf111decfe801167904805f7095d34dfabdd81b897f76fe"
+      "bytes": 1772815,
+      "sha256": "fe9bb348d97a5fe85691c0a26742f08d7bc0ad8ac3b4ac68854e8ff05e4e72fc"
     },
     {
       "path": "paper/source/README.txt",
-      "bytes": 3977,
-      "sha256": "ad43c117ce90c0749bf013fd5c841efc8ba52b09ba68740b79e1fadb98c0f27b"
+      "bytes": 4030,
+      "sha256": "1947251e1181778521c6ebef06af85f6df6eee1e3426d13f0e9bdb0be649fe1f"
     },
     {
       "path": "paper/source/SHA256SUMS",
       "bytes": 9379,
-      "sha256": "e2aa1967d6585bebbf485afef22e013764fc2b6d0c64f426db9068a9a9cf34dc"
+      "sha256": "76515ca7603a76776330698292d87914a164b3f679c65dc69ce4a0b7ae22162c"
     },
     {
       "path": "paper/source/main.pdf",
-      "bytes": 294847,
-      "sha256": "aa6054f3aa3a16c5727b84a2c8894403ea4136c13292c450e104a5241f809a24"
+      "bytes": 294957,
+      "sha256": "1cef9ae6448e8817467db692c643bf90bee06b5147d89942d143f6dcb07aca67"
     },
     {
       "path": "paper/source/source/main/IEEEtran.cls",
@@ -126,8 +126,8 @@
     },
     {
       "path": "paper/source/source/main/main.tex",
-      "bytes": 3634,
-      "sha256": "1eef9449fa5e61d9b11513dc868dcfc78f0287d0c3ce96059e245f9a9c6f1bbb"
+      "bytes": 3601,
+      "sha256": "fc93d063ddd67b8b337d53804476509c070ead05336cd2a70c532e7a297b1504"
     },
     {
       "path": "paper/source/source/main/mechanism.tex",
@@ -166,8 +166,8 @@
     },
     {
       "path": "paper/source/source/main/references.tex",
-      "bytes": 7574,
-      "sha256": "77f446897ab4862e0dbd740413a1bb29d21853f85eea3af2eca565b4da9ed019"
+      "bytes": 7753,
+      "sha256": "03e39f08f732cd43bf3f39d22b6eaca7c3f28d0a13bcd782676c29e58d8e5c36"
     },
     {
       "path": "paper/source/source/main/retained-constraints.tex",
@@ -196,8 +196,8 @@
     },
     {
       "path": "paper/source/source/supplement/current-evidence-index.tex",
-      "bytes": 26026,
-      "sha256": "6db803a1580db182d26014d920f527100ff6e506d824c3b543fcc603c502d9d4"
+      "bytes": 26029,
+      "sha256": "f471bf47eb24726386985a19211373dbe2aae17669318e85f012420e4b83e4aa"
     },
     {
       "path": "paper/source/source/supplement/decision-table.tex",
@@ -256,8 +256,8 @@
     },
     {
       "path": "paper/source/source/supplement/main.tex",
-      "bytes": 44851,
-      "sha256": "effe68aa2af44050a3c69e41c11783bdba2359469a901a2c99ff4f5ef4f1430d"
+      "bytes": 44852,
+      "sha256": "58f7308cfc7d0870bd3e180cdf6523541591633c4f374f87f98df1caaed043d1"
     },
     {
       "path": "paper/source/source/supplement/noninitial-handoff.tex",
@@ -321,8 +321,8 @@
     },
     {
       "path": "paper/source/source/supplement/r10-reader-guide.tex",
-      "bytes": 5509,
-      "sha256": "afda02df48c2bedfd11ab43c7bb3f6f21f94846c4d114e4a696f29e4c36509af"
+      "bytes": 5514,
+      "sha256": "202af84a2d3ed1b5bd61b280f42d82be0ee85f75ae4d24b1605cf9731f13f80a"
     },
     {
       "path": "paper/source/source/supplement/released-arena-details.tex",
@@ -496,13 +496,13 @@
     },
     {
       "path": "paper/source/source/supplement/v71-r8-same-solver-diagnostic.tex",
-      "bytes": 7705,
-      "sha256": "61d5c78cc9f44390c20dd75a33993ec4558ebadccba75789043e1586230794e9"
+      "bytes": 7706,
+      "sha256": "cc1e6b95bdd1103e633bd83e24058a5425a26f3d24116516d8bbf711f1c92953"
     },
     {
       "path": "paper/source/source/supplement/v71-r9-completed-pair.tex",
-      "bytes": 9990,
-      "sha256": "5fc97bece97fafdafc141e2c369142ca1ed165f785eba6512fa2fca9b5516712"
+      "bytes": 9991,
+      "sha256": "8330ece2dd6b37124a439e78ba63a8a712225544c49c79a51a75023ca5ac683e"
     },
     {
       "path": "paper/source/source/supplement/variant-guide.tex",
@@ -511,13 +511,13 @@
     },
     {
       "path": "paper/source/supplement.pdf",
-      "bytes": 1168187,
-      "sha256": "1f4dd45b61dac1ffd369cb1bebf2d31131b65d2a4e663f3ecd8919c5c86d4765"
+      "bytes": 1168168,
+      "sha256": "57b72f1a8f9cd799ce90bc5fb49fe8512100a16d06342f80fd86f234d0f819a6"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 1168187,
-      "sha256": "1f4dd45b61dac1ffd369cb1bebf2d31131b65d2a4e663f3ecd8919c5c86d4765"
+      "bytes": 1168168,
+      "sha256": "57b72f1a8f9cd799ce90bc5fb49fe8512100a16d06342f80fd86f234d0f819a6"
     },
     {
       "path": "reproduce/README.md",

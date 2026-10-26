@@ -2,22 +2,22 @@
   "schema_version": 1,
   "title": "Auditing Controller Replacement after Environment-Model Change",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "controller-replacement-audit-20261026-v9",
+  "document_layout_tag": "controller-replacement-audit-20261026-v10",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 294847,
-      "sha256": "aa6054f3aa3a16c5727b84a2c8894403ea4136c13292c450e104a5241f809a24"
+      "bytes": 294957,
+      "sha256": "1cef9ae6448e8817467db692c643bf90bee06b5147d89942d143f6dcb07aca67"
     },
     {
       "path": "paper/supplement.pdf",
-      "bytes": 1168187,
-      "sha256": "1f4dd45b61dac1ffd369cb1bebf2d31131b65d2a4e663f3ecd8919c5c86d4765"
+      "bytes": 1168168,
+      "sha256": "57b72f1a8f9cd799ce90bc5fb49fe8512100a16d06342f80fd86f234d0f819a6"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1772667,
-      "sha256": "0ea10a691e25a3a9cdf111decfe801167904805f7095d34dfabdd81b897f76fe"
+      "bytes": 1772815,
+      "sha256": "fe9bb348d97a5fe85691c0a26742f08d7bc0ad8ac3b4ac68854e8ff05e4e72fc"
     }
   ],
   "main_pages": 9,
@@ -28,7 +28,7 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "11 of 86 source files differ from D15: the reviewed MAPE-K context in Figure 1 and two Introduction passages, removal of one obsolete Figure 1 reference, one new primary bibliography entry, Figure 2 code and caption, one exact artifact GitHub citation insertion in the acknowledgment, and six current-snapshot link files. The bibliography file has both the new entry and a snapshot-link update. Visual offsets separate overlapping phases without changing the grid routes. Figures 3 and 4, the title and abstract are unchanged. All other acknowledgment content is preserved. The relocated replay adapter remains unexecuted. All 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
+  "validation": "7 of 86 source files differ from D16: one exact acknowledgment replacement that adds the Claude Code citation and compacts wording without changing its meaning, one appended official-product bibliography entry, reference column-break control, and six current-snapshot link files. The bibliography file has both the new entry and a snapshot-link update. All 28 existing reference numbers are preserved. The title, abstract, Introduction and all four figures are unchanged. The acknowledgment retains its technical scope and review limits. The relocated replay adapter remains unexecuted. All 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
   "scientific_evidence_tags": "Historical scientific identifiers remain unchanged; matching document and reader-guide links use the current fixed snapshot.",
   "new_scientific_executions": 0,
   "version": "v71-r10",
@@ -38,5 +38,5 @@
     "files": 90
   },
   "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted.",
-  "document_revision": "D16: cited MAPE-K context and planning highlight in Figure 1, clear Figure 2 arrows, and artifact GitHub citation"
+  "document_revision": "D17: Claude Code citation, compact acknowledgment and reference column-break control"
 }

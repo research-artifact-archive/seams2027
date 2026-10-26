@@ -1,4 +1,4 @@
-Controller Replacement Audit - v71-r10, D16
+Controller Replacement Audit - v71-r10, D17
 
 Auditing Controller Replacement after Environment-Model Change
 Anonymous authors
@@ -36,19 +36,20 @@ Read main.pdf first. It includes complete proofs of Theorem 1, Corollary 2 and
 Proposition 3. The supplement starts with a reader guide to stable appendix
 labels, the three case-inspection tasks and their exact evidence guides.
 The matching artifact and paper reading map use this fixed version:
-  controller-replacement-audit-20261026-v9
-  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v9/paper/README.md
+  controller-replacement-audit-20261026-v10
+  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v10/paper/README.md
 This document bundle contains the two PDFs and their closed source inputs.
 Separate experimental archives are identified by the accompanying reading map.
 
 Scope and document revision
 The paper audits candidate-exclusion reasoning during replacement planning
 after an environment-model change. The formal results, complete proofs and scientific evidence are unchanged.
-This revision places the candidate-exclusion question within a cited
-self-adaptation architecture in Figure 1 and the Introduction. Figure 2's
-visit-phase directions and overlapping arrows are clarified. The Acknowledgments
-cite the GitHub artifact reference. The title, abstract, Figures 3 and 4,
-and all formal and scientific results are retained.
+This revision adds a Claude Code citation in the Acknowledgments and a
+matching official-product bibliography entry, following the existing Codex
+citation style. Acknowledgment wording is compacted without changing its
+stated purposes or evidence boundary; references may break across columns.
+The title, abstract, technical body, all four figures, and all formal
+and scientific results are retained.
 The AA saved-record availability correction remains; the relocated replay adapter
 remains unexecuted.
 The established scope, mathematical claims and scientific evidence are unchanged.
