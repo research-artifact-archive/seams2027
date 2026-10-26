@@ -1,11 +1,11 @@
-A patrol robot still owes a charging visit when its environment model
-changes. A replacement controller would inherit its position and the monitor
-recording that request. Before excluding candidate requirements or arranging
-a controller update~\cite{specrepair,degradation,dupdate}, an adaptation
-manager therefore asks: \emph{can a controller still meet these requirements
-from the retained state?} We audit when a negative translated synthesis
-answer justifies excluding that continuation. This is the candidate-exclusion
-decision in replacement planning.
+Self-adaptive systems are expected to maintain required behavior as their
+environment changes. Adaptation may revise requirements or replace
+controllers~\cite{specrepair,degradation,dupdate}. Continuing an ongoing task
+requires accounting for the current state and pending obligations. Before
+discarding a candidate, an adaptation manager asks: \emph{can a controller
+meet these requirements from the retained state?} We audit when a negative
+translated synthesis answer justifies excluding that continuation during
+replacement planning.
 
 Reactive synthesis asks for a controller that responds to environment
 inputs. GR(1) specifications combine initial conditions, safety rules and
@@ -20,10 +20,10 @@ definition appears in Section~\ref{sec:source-kind}.
 
 We call the requirements before translation the \emph{source}; after an
 update, these are the candidate's updated requirements. Figure~\ref{fig:overview}
-illustrates why a negative tool answer does not by itself settle the source
-continuation question. A raw call invokes the underlying solver, whereas a public
-action also selects a translation and solver path. Preservation and
-query/objective correspondence are separate obligations in this picture.
+connects this retained-state question to a translated negative answer.
+Exclusion requires source-property preservation and query/objective
+correspondence. A raw call invokes the underlying solver; a public action
+also selects the translation and solver path.
 \input{overview-figure.tex}
 
 The helper is an environment-controlled Boolean input that can change

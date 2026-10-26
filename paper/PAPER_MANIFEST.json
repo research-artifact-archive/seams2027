@@ -2,22 +2,22 @@
   "schema_version": 1,
   "title": "Auditing Controller Replacement after Environment-Model Change",
   "repository": "https://github.com/research-artifact-archive/seams2027",
-  "document_layout_tag": "controller-replacement-audit-20261026-v7",
+  "document_layout_tag": "controller-replacement-audit-20261026-v8",
   "files": [
     {
       "path": "paper/main.pdf",
-      "bytes": 295689,
-      "sha256": "e3cf7a2d322e296cb1389f52af8d47a7cac2e44c98236895e3580e0c9b4d7794"
+      "bytes": 294685,
+      "sha256": "882a76fe079bf998e91ce90027742c040234090c401e47ec3c2ca8e81ee80409"
     },
     {
       "path": "paper/supplement.pdf",
       "bytes": 1168187,
-      "sha256": "3371f7fa20ae1921230adabb373c1aa7afe913c47227763c2c06f05f5a215633"
+      "sha256": "1579c7cd6cdc544a399eed2c812b729941b46897eac34f8038867cdd2be97461"
     },
     {
       "path": "paper/source.zip",
-      "bytes": 1773375,
-      "sha256": "4b1ca7e518e82a180b836ca3a3f4ecc55b3e42869d0db363c63b88340ea296d8"
+      "bytes": 1772091,
+      "sha256": "c28e180135e723fc33cfa9a542f74a02c2f5cbf26b5fd93543074f5a105553d9"
     }
   ],
   "main_pages": 9,
@@ -28,7 +28,7 @@
   ],
   "matching_source_files": 86,
   "zip_members": 90,
-  "validation": "7 of 86 source files differ from D13: the exact AA saved-record availability correction and six current-snapshot link files. All four figures, the title and abstract are unchanged. The relocated replay adapter remains unexecuted. All 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
+  "validation": "9 of 86 source files differ from D14: two exact Introduction paragraph replacements, the reviewed Figure 1 redesign, the exact AI acknowledgment replacement and six current-snapshot link files. Figures 2–4, the title and abstract are unchanged. The relocated replay adapter remains unexecuted. All 24 formal theorem/lemma/proposition/corollary/definition/proof environment blocks remain byte-identical. The matching 90-member source ZIP verifies all 89 internal checksums. A clean extraction rebuilds all 145 document pages with identical text, decoded content and RGB pixels in the recorded environment. All 24 scientific archives remain byte-identical. No scientific execution or whole-PDF byte reproducibility across environments is claimed.",
   "scientific_evidence_tags": "Historical scientific identifiers remain unchanged; matching document and reader-guide links use the current fixed snapshot.",
   "new_scientific_executions": 0,
   "version": "v71-r10",
@@ -38,5 +38,5 @@
     "files": 90
   },
   "publication_scope": "Anonymous paper and matching source snapshot; no conference acceptance asserted.",
-  "document_revision": "D14: submission check and AA saved-record availability correction"
+  "document_revision": "D15: general self-adaptation introduction, clearer Figure 1 and technical AI acknowledgment"
 }

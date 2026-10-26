@@ -1,4 +1,4 @@
-Controller Replacement Audit - v71-r10, D14
+Controller Replacement Audit - v71-r10, D15
 
 Auditing Controller Replacement after Environment-Model Change
 Anonymous authors
@@ -36,17 +36,20 @@ Read main.pdf first. It includes complete proofs of Theorem 1, Corollary 2 and
 Proposition 3. The supplement starts with a reader guide to stable appendix
 labels, the three case-inspection tasks and their exact evidence guides.
 The matching artifact and paper reading map use this fixed version:
-  controller-replacement-audit-20261026-v7
-  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v7/paper/README.md
+  controller-replacement-audit-20261026-v8
+  https://github.com/research-artifact-archive/seams2027/blob/controller-replacement-audit-20261026-v8/paper/README.md
 This document bundle contains the two PDFs and their closed source inputs.
 Separate experimental archives are identified by the accompanying reading map.
 
 Scope and document revision
 The paper audits candidate-exclusion reasoning during replacement planning
 after an environment-model change. The formal results, complete proofs and scientific evidence are unchanged.
-This revision corrects a stale packaging-status statement in Supplement AA.
-The saved records are published; the relocated replay adapter remains unexecuted.
-The main-paper title, abstract, scholarly body and all four figures are retained.
+This revision introduces the general requirements of self-adaptive systems
+before the continuation question and redesigns Figure 1 around that reasoning. The Acknowledgments now describe
+technical AI assistance and its verification limits in a concise paragraph.
+The title, abstract, Figures 2-4 and all formal and scientific results are retained.
+The AA saved-record availability correction remains; the relocated replay adapter
+remains unexecuted.
 The established scope, mathematical claims and scientific evidence are unchanged.
 Patrol supplies the constructed ENV-only update. Vehicle and Obstacle supply
 distinct preservation and tool-answer checks; Obstacle changes SYS goals too.
